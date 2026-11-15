@@ -1,0 +1,30 @@
+[
+  {
+    "body": "moon_fecunpit",
+    "catalogue": "https://data.lroc.im-ldi.com/lroc/view_rdr_product/NAC_DTM_FECUNPIT_CONF",
+    "assets": [
+      {
+        "url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/FECUNPIT/NAC_DTM_FECUNPIT_CONF.IMG",
+        "path": "data\\raw\\discovery_v10\\moon_fecunpit\\NAC_DTM_FECUNPIT_CONF.IMG",
+        "bytes": 30421940,
+        "sha256": "8ec814894287dff37420459f92e7da501cfeb67a1488fce7b9a9b15d051bea24"
+      }
+    ],
+    "state": "acquired_unvalidated",
+    "feature_polygon": null
+  },
+  {
+    "body": "moon_ingeniipit",
+    "catalogue": "https://data.lroc.im-ldi.com/lroc/view_rdr_product/NAC_DTM_INGENIIPIT_CONF",
+    "assets": [
+      {
+        "url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/INGENIIPIT/NAC_DTM_INGENIIPIT_CONF.IMG",
+        "path": "data\\raw\\discovery_v10\\moon_ingeniipit\\NAC_DTM_INGENIIPIT_CONF.IMG",
+        "bytes": 55482831,
+        "sha256": "53dd513946ba615e09440787f823eee81b7b35662b704cfbc9e109944caf5ccf"
+      }
+    ],
+    "state": "acquired_unvalidated",
+    "feature_polygon": null
+  }
+]

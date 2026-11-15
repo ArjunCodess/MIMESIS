@@ -1,0 +1,14 @@
+[
+  {
+    "name": "jingpo2026",
+    "url": "https://mdpi-res.com/d_attachment/remotesensing/remotesensing-18-00512/article_deploy/remotesensing-18-00512.pdf",
+    "http_status": 200,
+    "pdf": true
+  },
+  {
+    "name": "asymmetry2026",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0019103526002034/pdfft?isDTMRedir=true&download=true",
+    "http_status": 403,
+    "pdf": false
+  }
+]

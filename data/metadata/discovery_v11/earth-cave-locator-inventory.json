@@ -1,0 +1,986 @@
+{
+  "attribution": "OpenStreetMap contributors, ODbL; locator accuracy not established",
+  "regions": [
+    {
+      "region": "craters_of_the_moon",
+      "bbox": [
+        -113.56,
+        43.43,
+        -113.51,
+        43.46
+      ],
+      "map_url": "https://api.openstreetmap.org/api/0.6/map",
+      "sha256": "af66fbdc8e9d09930493fe1432e94e579a424663a7b2d1ddb0cbfd628456ec5f",
+      "locators": [
+        {
+          "id": "OSM_NODE_859542223",
+          "region": "craters_of_the_moon",
+          "name": "Indian Cave",
+          "latitude": 43.4424289,
+          "longitude": -113.5298932,
+          "osm_version": "4",
+          "osm_timestamp": "2024-06-13T21:34:19Z",
+          "source_url": "https://www.openstreetmap.org/node/859542223",
+          "source_tags": {
+            "access": "permit",
+            "name": "Indian Cave",
+            "natural": "cave_entrance",
+            "source": "local_knowledge"
+          },
+          "source_map": "data/metadata/discovery_v11/craters_of_the_moon-locator-map-f0182b618e.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_891415140",
+          "region": "craters_of_the_moon",
+          "name": "Boy Scout Cave",
+          "latitude": 43.4452977,
+          "longitude": -113.5264126,
+          "osm_version": "3",
+          "osm_timestamp": "2024-06-13T23:25:12Z",
+          "source_url": "https://www.openstreetmap.org/node/891415140",
+          "source_tags": {
+            "access": "restricted",
+            "name": "Boy Scout Cave",
+            "natural": "cave_entrance",
+            "source": "NPS map"
+          },
+          "source_map": "data/metadata/discovery_v11/craters_of_the_moon-locator-map-f0182b618e.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_891415164",
+          "region": "craters_of_the_moon",
+          "name": "Indian Tunnel South Entrance",
+          "latitude": 43.4411118,
+          "longitude": -113.5301533,
+          "osm_version": "3",
+          "osm_timestamp": "2024-06-13T23:25:12Z",
+          "source_url": "https://www.openstreetmap.org/node/891415164",
+          "source_tags": {
+            "access": "permit",
+            "name": "Indian Tunnel South Entrance",
+            "natural": "cave_entrance",
+            "source": "NPS map"
+          },
+          "source_map": "data/metadata/discovery_v11/craters_of_the_moon-locator-map-f0182b618e.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_891415184",
+          "region": "craters_of_the_moon",
+          "name": "Beauty Cave",
+          "latitude": 43.4468294,
+          "longitude": -113.5244798,
+          "osm_version": "4",
+          "osm_timestamp": "2024-06-13T23:25:12Z",
+          "source_url": "https://www.openstreetmap.org/node/891415184",
+          "source_tags": {
+            "access": "restricted",
+            "name": "Beauty Cave",
+            "natural": "cave_entrance",
+            "source": "NPS map"
+          },
+          "source_map": "data/metadata/discovery_v11/craters_of_the_moon-locator-map-f0182b618e.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_4928422883",
+          "region": "craters_of_the_moon",
+          "name": "Dewdrop Cave",
+          "latitude": 43.4441815,
+          "longitude": -113.5286003,
+          "osm_version": "2",
+          "osm_timestamp": "2024-06-13T23:25:12Z",
+          "source_url": "https://www.openstreetmap.org/node/4928422883",
+          "source_tags": {
+            "access": "permit",
+            "name": "Dewdrop Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/craters_of_the_moon-locator-map-f0182b618e.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_8060364510",
+          "region": "craters_of_the_moon",
+          "name": "Indian Tunnel North Entrance",
+          "latitude": 43.4424815,
+          "longitude": -113.5299384,
+          "osm_version": "3",
+          "osm_timestamp": "2024-06-13T21:34:19Z",
+          "source_url": "https://www.openstreetmap.org/node/8060364510",
+          "source_tags": {
+            "access": "permit",
+            "name": "Indian Tunnel North Entrance",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/craters_of_the_moon-locator-map-f0182b618e.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        }
+      ]
+    },
+    {
+      "region": "el_malpais",
+      "bbox": [
+        -108.13,
+        34.93,
+        -108.07,
+        34.97
+      ],
+      "map_url": "https://api.openstreetmap.org/api/0.6/map",
+      "sha256": "42e5bb3c2284ee13c5ec5fe2658033da858462cabe16c092766afbf855d17c6f",
+      "locators": [
+        {
+          "id": "OSM_NODE_7967084654",
+          "region": "el_malpais",
+          "name": "Big Skylight Cave",
+          "latitude": 34.945383,
+          "longitude": -108.1012339,
+          "osm_version": "1",
+          "osm_timestamp": "2020-10-02T19:43:09Z",
+          "source_url": "https://www.openstreetmap.org/node/7967084654",
+          "source_tags": {
+            "access": "permit",
+            "direction": "320",
+            "fee": "no",
+            "geological": "volcanic_lava_tube",
+            "name": "Big Skylight Cave",
+            "name:en": "Big Skylight Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/el_malpais-locator-map-f0b9ab716c.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_13011812910",
+          "region": "el_malpais",
+          "name": "Skylight",
+          "latitude": 34.9450428,
+          "longitude": -108.1008199,
+          "osm_version": "1",
+          "osm_timestamp": "2025-07-19T15:28:21Z",
+          "source_url": "https://www.openstreetmap.org/node/13011812910",
+          "source_tags": {
+            "geological": "volcanic_lava_tube",
+            "name": "Skylight",
+            "natural": "sinkhole"
+          },
+          "source_map": "data/metadata/discovery_v11/el_malpais-locator-map-f0b9ab716c.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_13011812951",
+          "region": "el_malpais",
+          "name": "Giant Ice Cave",
+          "latitude": 34.9468563,
+          "longitude": -108.1004747,
+          "osm_version": "1",
+          "osm_timestamp": "2025-07-19T15:28:21Z",
+          "source_url": "https://www.openstreetmap.org/node/13011812951",
+          "source_tags": {
+            "geological": "volcanic_lava_tube",
+            "name": "Giant Ice Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/el_malpais-locator-map-f0b9ab716c.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_13188887010",
+          "region": "el_malpais",
+          "name": "Ice Cave",
+          "latitude": 34.9302187,
+          "longitude": -108.086172,
+          "osm_version": "1",
+          "osm_timestamp": "2025-10-02T14:53:11Z",
+          "source_url": "https://www.openstreetmap.org/node/13188887010",
+          "source_tags": {
+            "name": "Ice Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/el_malpais-locator-map-f0b9ab716c.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        }
+      ]
+    },
+    {
+      "region": "lava_beds",
+      "bbox": [
+        -121.65,
+        41.65,
+        -121.4,
+        41.85
+      ],
+      "map_url": "https://api.openstreetmap.org/api/0.6/map",
+      "sha256": "7cd73485cf8065f68896f812d15e8d4b18414f28db8a546b1b982f9e1c3a8a28",
+      "locators": [
+        {
+          "id": "OSM_NODE_33113431",
+          "region": "lava_beds",
+          "name": "Merrill Ice Cave",
+          "latitude": 41.7283728,
+          "longitude": -121.5488892,
+          "osm_version": "3",
+          "osm_timestamp": "2025-01-29T05:50:19Z",
+          "source_url": "https://www.openstreetmap.org/node/33113431",
+          "source_tags": {
+            "created_by": "JOSM",
+            "name": "Merrill Ice Cave",
+            "natural": "cave_entrance",
+            "wikidata": "Q124613125"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59946476",
+          "region": "lava_beds",
+          "name": "Big Painted Cave",
+          "latitude": 41.7318623,
+          "longitude": -121.5230064,
+          "osm_version": "2",
+          "osm_timestamp": "2008-09-21T03:48:59Z",
+          "source_url": "https://www.openstreetmap.org/node/59946476",
+          "source_tags": {
+            "created_by": "JOSM",
+            "name": "Big Painted Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59946477",
+          "region": "lava_beds",
+          "name": "Symbol Bridge",
+          "latitude": 41.7333245,
+          "longitude": -121.5262611,
+          "osm_version": "2",
+          "osm_timestamp": "2008-09-21T03:49:00Z",
+          "source_url": "https://www.openstreetmap.org/node/59946477",
+          "source_tags": {
+            "created_by": "JOSM",
+            "name": "Symbol Bridge",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59946478",
+          "region": "lava_beds",
+          "name": "Skull Cave",
+          "latitude": 41.73138,
+          "longitude": -121.5106595,
+          "osm_version": "4",
+          "osm_timestamp": "2025-01-29T05:50:23Z",
+          "source_url": "https://www.openstreetmap.org/node/59946478",
+          "source_tags": {
+            "name": "Skull Cave",
+            "natural": "cave_entrance",
+            "source": "USGS topographic map",
+            "wikidata": "Q69623908"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59948745",
+          "region": "lava_beds",
+          "name": "Balcony Cave",
+          "latitude": 41.7449982,
+          "longitude": -121.5451806,
+          "osm_version": "3",
+          "osm_timestamp": "2017-06-14T23:15:49Z",
+          "source_url": "https://www.openstreetmap.org/node/59948745",
+          "source_tags": {
+            "name": "Balcony Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59948746",
+          "region": "lava_beds",
+          "name": "Boulevard Cave",
+          "latitude": 41.7455583,
+          "longitude": -121.544782,
+          "osm_version": "3",
+          "osm_timestamp": "2017-06-14T23:15:49Z",
+          "source_url": "https://www.openstreetmap.org/node/59948746",
+          "source_tags": {
+            "name": "Boulevard Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59949964",
+          "region": "lava_beds",
+          "name": "Heppe Cave",
+          "latitude": 41.6978071,
+          "longitude": -121.546408,
+          "osm_version": "3",
+          "osm_timestamp": "2009-07-07T22:41:42Z",
+          "source_url": "https://www.openstreetmap.org/node/59949964",
+          "source_tags": {
+            "created_by": "JOSM",
+            "name": "Heppe Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59949988",
+          "region": "lava_beds",
+          "name": "Valentine Cave",
+          "latitude": 41.7092587,
+          "longitude": -121.4777875,
+          "osm_version": "3",
+          "osm_timestamp": "2015-08-28T03:21:14Z",
+          "source_url": "https://www.openstreetmap.org/node/59949988",
+          "source_tags": {
+            "name": "Valentine Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59950611",
+          "region": "lava_beds",
+          "name": "Golden Dome",
+          "latitude": 41.7104797,
+          "longitude": -121.5134778,
+          "osm_version": "3",
+          "osm_timestamp": "2010-06-15T01:21:14Z",
+          "source_url": "https://www.openstreetmap.org/node/59950611",
+          "source_tags": {
+            "name": "Golden Dome",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59950612",
+          "region": "lava_beds",
+          "name": "Hopkins Chocolate Cave",
+          "latitude": 41.7091239,
+          "longitude": -121.5140063,
+          "osm_version": "3",
+          "osm_timestamp": "2010-06-15T01:21:14Z",
+          "source_url": "https://www.openstreetmap.org/node/59950612",
+          "source_tags": {
+            "name": "Hopkins Chocolate Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59950615",
+          "region": "lava_beds",
+          "name": "Blue Grotto",
+          "latitude": 41.7074284,
+          "longitude": -121.5142907,
+          "osm_version": "3",
+          "osm_timestamp": "2017-06-14T23:15:52Z",
+          "source_url": "https://www.openstreetmap.org/node/59950615",
+          "source_tags": {
+            "name": "Blue Grotto",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59950617",
+          "region": "lava_beds",
+          "name": "Catacombs",
+          "latitude": 41.7050515,
+          "longitude": -121.5152125,
+          "osm_version": "4",
+          "osm_timestamp": "2017-06-14T23:15:53Z",
+          "source_url": "https://www.openstreetmap.org/node/59950617",
+          "source_tags": {
+            "name": "Catacombs",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59950618",
+          "region": "lava_beds",
+          "name": "Paradise Alleys",
+          "latitude": 41.7041535,
+          "longitude": -121.5164093,
+          "osm_version": "4",
+          "osm_timestamp": "2017-06-14T23:15:53Z",
+          "source_url": "https://www.openstreetmap.org/node/59950618",
+          "source_tags": {
+            "name": "Paradise Alleys",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59950620",
+          "region": "lava_beds",
+          "name": "Ovis",
+          "latitude": 41.7040378,
+          "longitude": -121.5169727,
+          "osm_version": "4",
+          "osm_timestamp": "2017-06-14T23:15:53Z",
+          "source_url": "https://www.openstreetmap.org/node/59950620",
+          "source_tags": {
+            "name": "Ovis",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59950621",
+          "region": "lava_beds",
+          "name": "Sunshine",
+          "latitude": 41.702838,
+          "longitude": -121.5194544,
+          "osm_version": "3",
+          "osm_timestamp": "2010-06-15T01:09:18Z",
+          "source_url": "https://www.openstreetmap.org/node/59950621",
+          "source_tags": {
+            "name": "Sunshine",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59950622",
+          "region": "lava_beds",
+          "name": "Hercules Leg",
+          "latitude": 41.7031253,
+          "longitude": -121.5154931,
+          "osm_version": "4",
+          "osm_timestamp": "2017-06-14T23:15:53Z",
+          "source_url": "https://www.openstreetmap.org/node/59950622",
+          "source_tags": {
+            "name": "Hercules Leg",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59950623",
+          "region": "lava_beds",
+          "name": "Juniper",
+          "latitude": 41.7065377,
+          "longitude": -121.5114813,
+          "osm_version": "3",
+          "osm_timestamp": "2010-06-15T01:21:14Z",
+          "source_url": "https://www.openstreetmap.org/node/59950623",
+          "source_tags": {
+            "name": "Juniper",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59950624",
+          "region": "lava_beds",
+          "name": "Sentinel Cave (Upper Entrance)",
+          "latitude": 41.7084975,
+          "longitude": -121.5111533,
+          "osm_version": "3",
+          "osm_timestamp": "2015-08-28T03:37:30Z",
+          "source_url": "https://www.openstreetmap.org/node/59950624",
+          "source_tags": {
+            "fee": "yes",
+            "name": "Sentinel Cave (Upper Entrance)",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59950625",
+          "region": "lava_beds",
+          "name": "Sentinel Cave (Lower Entrance)",
+          "latitude": 41.7101777,
+          "longitude": -121.508801,
+          "osm_version": "5",
+          "osm_timestamp": "2017-06-14T23:15:53Z",
+          "source_url": "https://www.openstreetmap.org/node/59950625",
+          "source_tags": {
+            "name": "Sentinel Cave (Lower Entrance)",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59950626",
+          "region": "lava_beds",
+          "name": "Thunderbolt",
+          "latitude": 41.7128207,
+          "longitude": -121.5109164,
+          "osm_version": "3",
+          "osm_timestamp": "2008-09-21T03:37:32Z",
+          "source_url": "https://www.openstreetmap.org/node/59950626",
+          "source_tags": {
+            "created_by": "JOSM",
+            "name": "Thunderbolt",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59950627",
+          "region": "lava_beds",
+          "name": "Lava Brook",
+          "latitude": 41.7133395,
+          "longitude": -121.5096616,
+          "osm_version": "3",
+          "osm_timestamp": "2008-09-21T03:37:32Z",
+          "source_url": "https://www.openstreetmap.org/node/59950627",
+          "source_tags": {
+            "created_by": "JOSM",
+            "name": "Lava Brook",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_59950629",
+          "region": "lava_beds",
+          "name": "Mushpot Cave",
+          "latitude": 41.7136294,
+          "longitude": -121.5087395,
+          "osm_version": "5",
+          "osm_timestamp": "2025-01-29T05:50:22Z",
+          "source_url": "https://www.openstreetmap.org/node/59950629",
+          "source_tags": {
+            "name": "Mushpot Cave",
+            "natural": "cave_entrance",
+            "wikidata": "Q67166156"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_773021768",
+          "region": "lava_beds",
+          "name": "Labyrinth",
+          "latitude": 41.7137433,
+          "longitude": -121.5094154,
+          "osm_version": "1",
+          "osm_timestamp": "2010-06-15T01:21:13Z",
+          "source_url": "https://www.openstreetmap.org/node/773021768",
+          "source_tags": {
+            "name": "Labyrinth",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_1878660778",
+          "region": "lava_beds",
+          "name": "Bertha's Cupboard Cave",
+          "latitude": 41.6890724,
+          "longitude": -121.530649,
+          "osm_version": "1",
+          "osm_timestamp": "2012-08-23T02:10:28Z",
+          "source_url": "https://www.openstreetmap.org/node/1878660778",
+          "source_tags": {
+            "name": "Bertha's Cupboard Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_1878660879",
+          "region": "lava_beds",
+          "name": "Tickner Cave",
+          "latitude": 41.6877464,
+          "longitude": -121.5316599,
+          "osm_version": "1",
+          "osm_timestamp": "2012-08-23T02:10:31Z",
+          "source_url": "https://www.openstreetmap.org/node/1878660879",
+          "source_tags": {
+            "name": "Tickner Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_3717878982",
+          "region": "lava_beds",
+          "name": "Indian Well Cave (Upper Entrance)",
+          "latitude": 41.7126258,
+          "longitude": -121.5069303,
+          "osm_version": "1",
+          "osm_timestamp": "2015-08-28T03:25:46Z",
+          "source_url": "https://www.openstreetmap.org/node/3717878982",
+          "source_tags": {
+            "name": "Indian Well Cave (Upper Entrance)",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_3717879897",
+          "region": "lava_beds",
+          "name": "Labyrinth Cave (historic entrance)",
+          "latitude": 41.7126483,
+          "longitude": -121.5107625,
+          "osm_version": "1",
+          "osm_timestamp": "2015-08-28T03:33:29Z",
+          "source_url": "https://www.openstreetmap.org/node/3717879897",
+          "source_tags": {
+            "name": "Labyrinth Cave (historic entrance)",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_3717882219",
+          "region": "lava_beds",
+          "name": "Indian Well Cave",
+          "latitude": 41.7133862,
+          "longitude": -121.5068743,
+          "osm_version": "1",
+          "osm_timestamp": "2015-08-28T03:38:20Z",
+          "source_url": "https://www.openstreetmap.org/node/3717882219",
+          "source_tags": {
+            "name": "Indian Well Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_3717884225",
+          "region": "lava_beds",
+          "name": "Sentinel Bridge",
+          "latitude": 41.7083839,
+          "longitude": -121.5113379,
+          "osm_version": "1",
+          "osm_timestamp": "2015-08-28T03:37:30Z",
+          "source_url": "https://www.openstreetmap.org/node/3717884225",
+          "source_tags": {
+            "name": "Sentinel Bridge",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_4915732658",
+          "region": "lava_beds",
+          "name": "Captain Jack's Ice Cave",
+          "latitude": 41.7475783,
+          "longitude": -121.494965,
+          "osm_version": "2",
+          "osm_timestamp": "2026-07-10T18:27:59Z",
+          "source_url": "https://www.openstreetmap.org/node/4915732658",
+          "source_tags": {
+            "access": "no",
+            "name": "Captain Jack's Ice Cave",
+            "natural": "cave_entrance",
+            "source": "USGS topographic map"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_4915732659",
+          "region": "lava_beds",
+          "name": "Frozen River Cave",
+          "latitude": 41.7416586,
+          "longitude": -121.4955229,
+          "osm_version": "2",
+          "osm_timestamp": "2026-07-10T18:27:59Z",
+          "source_url": "https://www.openstreetmap.org/node/4915732659",
+          "source_tags": {
+            "access": "no",
+            "name": "Frozen River Cave",
+            "natural": "cave_entrance",
+            "source": "USGS topographic map"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_4915734210",
+          "region": "lava_beds",
+          "name": "Fern Cave",
+          "latitude": 41.8123281,
+          "longitude": -121.4549786,
+          "osm_version": "2",
+          "osm_timestamp": "2026-07-10T18:27:59Z",
+          "source_url": "https://www.openstreetmap.org/node/4915734210",
+          "source_tags": {
+            "access": "no",
+            "fee": "yes",
+            "name": "Fern Cave",
+            "natural": "cave_entrance",
+            "phone": "+1 530 667-8113",
+            "website": "https://www.nps.gov/labe/planyourvisit/fern-cave-tours.htm"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_4915939710",
+          "region": "lava_beds",
+          "name": "Caldwell Ice Cave",
+          "latitude": 41.6918702,
+          "longitude": -121.4764909,
+          "osm_version": "1",
+          "osm_timestamp": "2017-06-15T05:06:26Z",
+          "source_url": "https://www.openstreetmap.org/node/4915939710",
+          "source_tags": {
+            "name": "Caldwell Ice Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_4915939711",
+          "region": "lava_beds",
+          "name": "Caldwell Ice Cave",
+          "latitude": 41.6947763,
+          "longitude": -121.4722005,
+          "osm_version": "1",
+          "osm_timestamp": "2017-06-15T05:06:27Z",
+          "source_url": "https://www.openstreetmap.org/node/4915939711",
+          "source_tags": {
+            "name": "Caldwell Ice Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_9882168919",
+          "region": "lava_beds",
+          "name": "Cox Ice Cave",
+          "latitude": 41.7157497,
+          "longitude": -121.499669,
+          "osm_version": "1",
+          "osm_timestamp": "2022-07-12T01:31:00Z",
+          "source_url": "https://www.openstreetmap.org/node/9882168919",
+          "source_tags": {
+            "access": "yes",
+            "fee": "no",
+            "name": "Cox Ice Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_9882238052",
+          "region": "lava_beds",
+          "name": "Craig's Cave & Temple",
+          "latitude": 41.7189135,
+          "longitude": -121.455658,
+          "osm_version": "2",
+          "osm_timestamp": "2026-07-10T18:27:59Z",
+          "source_url": "https://www.openstreetmap.org/node/9882238052",
+          "source_tags": {
+            "access": "no",
+            "fee": "no",
+            "name": "Craig's Cave & Temple",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        }
+      ]
+    },
+    {
+      "region": "newberry",
+      "bbox": [
+        -121.22,
+        43.89,
+        -121.14,
+        43.96
+      ],
+      "map_url": "https://api.openstreetmap.org/api/0.6/map",
+      "sha256": "c4c5ef5c9137c9210b94ca35af264f26a4056bf483aedfac290871634068f1f0",
+      "locators": [
+        {
+          "id": "OSM_NODE_2773174396",
+          "region": "newberry",
+          "name": "Boyd Cave",
+          "latitude": 43.9421644,
+          "longitude": -121.1983375,
+          "osm_version": "3",
+          "osm_timestamp": "2020-10-06T17:02:08Z",
+          "source_url": "https://www.openstreetmap.org/node/2773174396",
+          "source_tags": {
+            "access": "permissive",
+            "name": "Boyd Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/newberry-locator-map-4b3723271a.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_2773224766",
+          "region": "newberry",
+          "name": "Skeleton Cave",
+          "latitude": 43.9502017,
+          "longitude": -121.1774634,
+          "osm_version": "5",
+          "osm_timestamp": "2023-01-05T15:48:09Z",
+          "source_url": "https://www.openstreetmap.org/node/2773224766",
+          "source_tags": {
+            "access": "no",
+            "name": "Skeleton Cave",
+            "natural": "cave_entrance",
+            "wikidata": "Q7534391",
+            "wikipedia": "en:Skeleton Cave (Oregon)"
+          },
+          "source_map": "data/metadata/discovery_v11/newberry-locator-map-4b3723271a.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_2806721318",
+          "region": "newberry",
+          "name": "Arnold Ice Cave",
+          "latitude": 43.9052303,
+          "longitude": -121.1589199,
+          "osm_version": "1",
+          "osm_timestamp": "2014-04-21T16:51:26Z",
+          "source_url": "https://www.openstreetmap.org/node/2806721318",
+          "source_tags": {
+            "name": "Arnold Ice Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/newberry-locator-map-4b3723271a.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_2806721319",
+          "region": "newberry",
+          "name": "Wind Cave",
+          "latitude": 43.9191379,
+          "longitude": -121.1437654,
+          "osm_version": "2",
+          "osm_timestamp": "2015-01-02T02:55:49Z",
+          "source_url": "https://www.openstreetmap.org/node/2806721319",
+          "source_tags": {
+            "barrier": "gate",
+            "name": "Wind Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/newberry-locator-map-4b3723271a.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_2865881227",
+          "region": "newberry",
+          "name": "Charcoal Cave",
+          "latitude": 43.9041114,
+          "longitude": -121.1619819,
+          "osm_version": "1",
+          "osm_timestamp": "2014-05-18T08:45:09Z",
+          "source_url": "https://www.openstreetmap.org/node/2865881227",
+          "source_tags": {
+            "name": "Charcoal Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/newberry-locator-map-4b3723271a.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        },
+        {
+          "id": "OSM_NODE_2865881228",
+          "region": "newberry",
+          "name": "Hidden Forest Cave",
+          "latitude": 43.9028328,
+          "longitude": -121.162264,
+          "osm_version": "1",
+          "osm_timestamp": "2014-05-18T08:45:09Z",
+          "source_url": "https://www.openstreetmap.org/node/2865881228",
+          "source_tags": {
+            "name": "Hidden Forest Cave",
+            "natural": "cave_entrance"
+          },
+          "source_map": "data/metadata/discovery_v11/newberry-locator-map-4b3723271a.osm",
+          "geometry_state": "Public entrance locator, not a rim or a pit center",
+          "process_label": "requires an independent geological/park source before eligibility"
+        }
+      ]
+    }
+  ]
+}

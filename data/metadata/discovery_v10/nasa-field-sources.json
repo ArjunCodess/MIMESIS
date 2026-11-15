@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://ti.arc.nasa.gov/dataset/caves/data/COTM_Supplemental_Info.pdf",
+    "status": 200,
+    "path": "data\\raw\\discovery_v10\\earth\\COTM_Supplemental_Info.pdf",
+    "bytes": 3074308,
+    "sha256": "ab11e9285a52fcc58072556790c18d52baf6f25ddeb117501fa2d92c77cc6c48"
+  },
+  {
+    "url": "https://ti.arc.nasa.gov/dataset/caves/data/COTM_IndianTunnel_surface/IndianTunnel_surface.rar",
+    "status": 200,
+    "path": "data\\raw\\discovery_v10\\earth\\IndianTunnel_surface.rar",
+    "bytes": 1140325469,
+    "sha256": "0c3486cb2c810e006c764aee219df52946d768ad2f28f4f6e21b448e67d1d5b1"
+  }
+]

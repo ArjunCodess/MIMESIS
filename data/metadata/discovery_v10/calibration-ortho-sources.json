@@ -1,0 +1,30 @@
+[
+  {
+    "body": "moon_ortho",
+    "catalogue": "https://data.lroc.im-ldi.com/lroc/view_rdr_product/NAC_DTM_TRANQPIT1_M152655237_60CM",
+    "assets": [
+      {
+        "url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/EXTRAS/BROWSE/NAC_DTM/TRANQPIT1/NAC_DTM_TRANQPIT1_M152655237_60CM.TIF",
+        "path": "data\\raw\\discovery_v10\\moon_ortho\\NAC_DTM_TRANQPIT1_M152655237_60CM.TIF",
+        "bytes": 379492499,
+        "sha256": "b5a241f7f1804f3499a93b73706f58ee216005a9e853f0d83fca92b44d220517"
+      }
+    ],
+    "state": "acquired_unvalidated",
+    "feature_polygon": null
+  },
+  {
+    "body": "moon_ortho_check",
+    "catalogue": "https://data.lroc.im-ldi.com/lroc/view_rdr_product/NAC_DTM_TRANQPIT1_M152662021_2M",
+    "assets": [
+      {
+        "url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/EXTRAS/BROWSE/NAC_DTM/TRANQPIT1/NAC_DTM_TRANQPIT1_M152662021_2M.TIF",
+        "path": "data\\raw\\discovery_v10\\moon_ortho_check\\NAC_DTM_TRANQPIT1_M152662021_2M.TIF",
+        "bytes": 34167549,
+        "sha256": "208029d1dec9c53650d197c32cfbaf044a8ef0cb479cfcd46c551633b7d735a4"
+      }
+    ],
+    "state": "acquired_unvalidated",
+    "feature_polygon": null
+  }
+]

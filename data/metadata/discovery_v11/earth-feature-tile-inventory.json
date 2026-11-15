@@ -1,0 +1,598 @@
+{
+  "cases": [
+    {
+      "id": "OSM_NODE_859542223",
+      "region": "craters_of_the_moon",
+      "name": "Indian Cave",
+      "latitude": 43.4424289,
+      "longitude": -113.5298932,
+      "osm_version": "4",
+      "osm_timestamp": "2024-06-13T21:34:19Z",
+      "source_url": "https://www.openstreetmap.org/node/859542223",
+      "source_tags": {
+        "access": "permit",
+        "name": "Indian Cave",
+        "natural": "cave_entrance",
+        "source": "local_knowledge"
+      },
+      "source_map": "data/metadata/discovery_v11/craters_of_the_moon-locator-map-f0182b618e.osm",
+      "geometry_state": "Public entrance locator, not a rim or a pit center",
+      "process_label": "requires an independent geological/park source before eligibility",
+      "query_url": "https://tnmaccess.nationalmap.gov/api/v1/products?bbox=-113.53089320000001%2C43.441428900000005%2C-113.5288932%2C43.4434289&datasets=Digital+Elevation+Model+%28DEM%29+1+meter&max=30&outputFormat=JSON",
+      "catalogue_path": "data/metadata/discovery_v11/OSM_NODE_859542223-tnm.json",
+      "terrain_products": [
+        {
+          "title": "USGS 1 Meter 12 x29y482 ID_SouthernGaps_D23",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/ID_SouthernGaps_D23/TIFF/USGS_1M_12_x29y482_ID_SouthernGaps_D23.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/69e6ddc8b66b01f903b6b08a",
+          "publicationDate": "2026-04-03",
+          "sourceId": "69e6ddc8b66b01f903b6b08a",
+          "boundingBox": {
+            "minX": -113.59768380699995,
+            "maxX": -113.47043300599995,
+            "minY": 43.41347357800004,
+            "maxY": 43.506167308000045
+          }
+        },
+        {
+          "title": "USGS 1 Meter 12 x29y482 ID_SouthernID_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/ID_SouthernID_2018_D19/TIFF/USGS_1M_12_x29y482_ID_SouthernID_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/6659670ad34ef3137d363f70",
+          "publicationDate": "2024-05-27",
+          "sourceId": "6659670ad34ef3137d363f70",
+          "boundingBox": {
+            "minX": -113.59768380699995,
+            "maxX": -113.47043300599995,
+            "minY": 43.41347357800004,
+            "maxY": 43.506167308000045
+          }
+        }
+      ],
+      "state": "source_candidates_found"
+    },
+    {
+      "id": "OSM_NODE_891415184",
+      "region": "craters_of_the_moon",
+      "name": "Beauty Cave",
+      "latitude": 43.4468294,
+      "longitude": -113.5244798,
+      "osm_version": "4",
+      "osm_timestamp": "2024-06-13T23:25:12Z",
+      "source_url": "https://www.openstreetmap.org/node/891415184",
+      "source_tags": {
+        "access": "restricted",
+        "name": "Beauty Cave",
+        "natural": "cave_entrance",
+        "source": "NPS map"
+      },
+      "source_map": "data/metadata/discovery_v11/craters_of_the_moon-locator-map-f0182b618e.osm",
+      "geometry_state": "Public entrance locator, not a rim or a pit center",
+      "process_label": "requires an independent geological/park source before eligibility",
+      "query_url": "https://tnmaccess.nationalmap.gov/api/v1/products?bbox=-113.5254798%2C43.4458294%2C-113.52347979999999%2C43.447829399999996&datasets=Digital+Elevation+Model+%28DEM%29+1+meter&max=30&outputFormat=JSON",
+      "catalogue_path": "data/metadata/discovery_v11/OSM_NODE_891415184-tnm.json",
+      "terrain_products": [
+        {
+          "title": "USGS 1 Meter 12 x29y482 ID_SouthernGaps_D23",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/ID_SouthernGaps_D23/TIFF/USGS_1M_12_x29y482_ID_SouthernGaps_D23.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/69e6ddc8b66b01f903b6b08a",
+          "publicationDate": "2026-04-03",
+          "sourceId": "69e6ddc8b66b01f903b6b08a",
+          "boundingBox": {
+            "minX": -113.59768380699995,
+            "maxX": -113.47043300599995,
+            "minY": 43.41347357800004,
+            "maxY": 43.506167308000045
+          }
+        },
+        {
+          "title": "USGS 1 Meter 12 x29y482 ID_SouthernID_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/ID_SouthernID_2018_D19/TIFF/USGS_1M_12_x29y482_ID_SouthernID_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/6659670ad34ef3137d363f70",
+          "publicationDate": "2024-05-27",
+          "sourceId": "6659670ad34ef3137d363f70",
+          "boundingBox": {
+            "minX": -113.59768380699995,
+            "maxX": -113.47043300599995,
+            "minY": 43.41347357800004,
+            "maxY": 43.506167308000045
+          }
+        }
+      ],
+      "state": "source_candidates_found"
+    },
+    {
+      "id": "OSM_NODE_4928422883",
+      "region": "craters_of_the_moon",
+      "name": "Dewdrop Cave",
+      "latitude": 43.4441815,
+      "longitude": -113.5286003,
+      "osm_version": "2",
+      "osm_timestamp": "2024-06-13T23:25:12Z",
+      "source_url": "https://www.openstreetmap.org/node/4928422883",
+      "source_tags": {
+        "access": "permit",
+        "name": "Dewdrop Cave",
+        "natural": "cave_entrance"
+      },
+      "source_map": "data/metadata/discovery_v11/craters_of_the_moon-locator-map-f0182b618e.osm",
+      "geometry_state": "Public entrance locator, not a rim or a pit center",
+      "process_label": "requires an independent geological/park source before eligibility",
+      "query_url": "https://tnmaccess.nationalmap.gov/api/v1/products?bbox=-113.5296003%2C43.4431815%2C-113.52760029999999%2C43.4451815&datasets=Digital+Elevation+Model+%28DEM%29+1+meter&max=30&outputFormat=JSON",
+      "catalogue_path": "data/metadata/discovery_v11/OSM_NODE_4928422883-tnm.json",
+      "terrain_products": [
+        {
+          "title": "USGS 1 Meter 12 x29y482 ID_SouthernGaps_D23",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/ID_SouthernGaps_D23/TIFF/USGS_1M_12_x29y482_ID_SouthernGaps_D23.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/69e6ddc8b66b01f903b6b08a",
+          "publicationDate": "2026-04-03",
+          "sourceId": "69e6ddc8b66b01f903b6b08a",
+          "boundingBox": {
+            "minX": -113.59768380699995,
+            "maxX": -113.47043300599995,
+            "minY": 43.41347357800004,
+            "maxY": 43.506167308000045
+          }
+        },
+        {
+          "title": "USGS 1 Meter 12 x29y482 ID_SouthernID_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/ID_SouthernID_2018_D19/TIFF/USGS_1M_12_x29y482_ID_SouthernID_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/6659670ad34ef3137d363f70",
+          "publicationDate": "2024-05-27",
+          "sourceId": "6659670ad34ef3137d363f70",
+          "boundingBox": {
+            "minX": -113.59768380699995,
+            "maxX": -113.47043300599995,
+            "minY": 43.41347357800004,
+            "maxY": 43.506167308000045
+          }
+        }
+      ],
+      "state": "source_candidates_found"
+    },
+    {
+      "id": "OSM_NODE_7967084654",
+      "region": "el_malpais",
+      "name": "Big Skylight Cave",
+      "latitude": 34.945383,
+      "longitude": -108.1012339,
+      "osm_version": "1",
+      "osm_timestamp": "2020-10-02T19:43:09Z",
+      "source_url": "https://www.openstreetmap.org/node/7967084654",
+      "source_tags": {
+        "access": "permit",
+        "direction": "320",
+        "fee": "no",
+        "geological": "volcanic_lava_tube",
+        "name": "Big Skylight Cave",
+        "name:en": "Big Skylight Cave",
+        "natural": "cave_entrance"
+      },
+      "source_map": "data/metadata/discovery_v11/el_malpais-locator-map-f0b9ab716c.osm",
+      "geometry_state": "Public entrance locator, not a rim or a pit center",
+      "process_label": "requires an independent geological/park source before eligibility",
+      "query_url": "https://tnmaccess.nationalmap.gov/api/v1/products?bbox=-108.1022339%2C34.944383%2C-108.10023389999999%2C34.946383&datasets=Digital+Elevation+Model+%28DEM%29+1+meter&max=30&outputFormat=JSON",
+      "catalogue_path": "data/metadata/discovery_v11/OSM_NODE_7967084654-tnm.json",
+      "terrain_products": [
+        {
+          "title": "USGS 1 Meter 12 x76y388 NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17/TIFF/USGS_1M_12_x76y388_NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/6651707dd34e702fe8748fcf",
+          "publicationDate": "2024-05-23",
+          "sourceId": "6651707dd34e702fe8748fcf",
+          "boundingBox": {
+            "minX": -108.15324773599997,
+            "maxX": -108.04064302799998,
+            "minY": 34.93657183700003,
+            "maxY": 35.02924878700003
+          }
+        },
+        {
+          "title": "USGS 1 Meter 12 x76y388 NM_SouthCentral_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_SouthCentral_2018_D19/TIFF/USGS_1M_12_x76y388_NM_SouthCentral_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/6627430dd34ea70bd5efb038",
+          "publicationDate": "2024-03-29",
+          "sourceId": "6627430dd34ea70bd5efb038",
+          "boundingBox": {
+            "minX": -108.15324773599997,
+            "maxX": -108.04064302799998,
+            "minY": 34.93657183700003,
+            "maxY": 35.02924878700003
+          }
+        },
+        {
+          "title": "USGS 1 Meter 13 x21y388 NM_NorthWest_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_NorthWest_2018_D19/TIFF/USGS_1M_13_x21y388_NM_NorthWest_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/621f0ad1d34ee0c6b389b010",
+          "publicationDate": "2022-02-26",
+          "sourceId": "621f0ad1d34ee0c6b389b010",
+          "boundingBox": {
+            "minX": -108.17827933099994,
+            "maxX": -108.06546502199996,
+            "minY": 34.93104903100004,
+            "maxY": 35.02390470600005
+          }
+        },
+        {
+          "title": "USGS 1 Meter 13 x21y388 NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17/TIFF/USGS_1M_13_x21y388_NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/66517106d34e702fe874904f",
+          "publicationDate": "2024-05-23",
+          "sourceId": "66517106d34e702fe874904f",
+          "boundingBox": {
+            "minX": -108.17827933099994,
+            "maxX": -108.06546502199996,
+            "minY": 34.93104903100004,
+            "maxY": 35.02390470600005
+          }
+        },
+        {
+          "title": "USGS 1 Meter 13 x21y388 NM_SouthCentral_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_SouthCentral_2018_D19/TIFF/USGS_1M_13_x21y388_NM_SouthCentral_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/662752f2d34ea70bd5efc1e8",
+          "publicationDate": "2024-03-29",
+          "sourceId": "662752f2d34ea70bd5efc1e8",
+          "boundingBox": {
+            "minX": -108.17827933099994,
+            "maxX": -108.06546502199996,
+            "minY": 34.93104903100004,
+            "maxY": 35.02390470600005
+          }
+        }
+      ],
+      "state": "source_candidates_found"
+    },
+    {
+      "id": "OSM_NODE_13011812951",
+      "region": "el_malpais",
+      "name": "Giant Ice Cave",
+      "latitude": 34.9468563,
+      "longitude": -108.1004747,
+      "osm_version": "1",
+      "osm_timestamp": "2025-07-19T15:28:21Z",
+      "source_url": "https://www.openstreetmap.org/node/13011812951",
+      "source_tags": {
+        "geological": "volcanic_lava_tube",
+        "name": "Giant Ice Cave",
+        "natural": "cave_entrance"
+      },
+      "source_map": "data/metadata/discovery_v11/el_malpais-locator-map-f0b9ab716c.osm",
+      "geometry_state": "Public entrance locator, not a rim or a pit center",
+      "process_label": "requires an independent geological/park source before eligibility",
+      "query_url": "https://tnmaccess.nationalmap.gov/api/v1/products?bbox=-108.10147470000001%2C34.9458563%2C-108.0994747%2C34.9478563&datasets=Digital+Elevation+Model+%28DEM%29+1+meter&max=30&outputFormat=JSON",
+      "catalogue_path": "data/metadata/discovery_v11/OSM_NODE_13011812951-tnm.json",
+      "terrain_products": [
+        {
+          "title": "USGS 1 Meter 12 x76y388 NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17/TIFF/USGS_1M_12_x76y388_NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/6651707dd34e702fe8748fcf",
+          "publicationDate": "2024-05-23",
+          "sourceId": "6651707dd34e702fe8748fcf",
+          "boundingBox": {
+            "minX": -108.15324773599997,
+            "maxX": -108.04064302799998,
+            "minY": 34.93657183700003,
+            "maxY": 35.02924878700003
+          }
+        },
+        {
+          "title": "USGS 1 Meter 12 x76y388 NM_SouthCentral_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_SouthCentral_2018_D19/TIFF/USGS_1M_12_x76y388_NM_SouthCentral_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/6627430dd34ea70bd5efb038",
+          "publicationDate": "2024-03-29",
+          "sourceId": "6627430dd34ea70bd5efb038",
+          "boundingBox": {
+            "minX": -108.15324773599997,
+            "maxX": -108.04064302799998,
+            "minY": 34.93657183700003,
+            "maxY": 35.02924878700003
+          }
+        },
+        {
+          "title": "USGS 1 Meter 13 x21y388 NM_NorthWest_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_NorthWest_2018_D19/TIFF/USGS_1M_13_x21y388_NM_NorthWest_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/621f0ad1d34ee0c6b389b010",
+          "publicationDate": "2022-02-26",
+          "sourceId": "621f0ad1d34ee0c6b389b010",
+          "boundingBox": {
+            "minX": -108.17827933099994,
+            "maxX": -108.06546502199996,
+            "minY": 34.93104903100004,
+            "maxY": 35.02390470600005
+          }
+        },
+        {
+          "title": "USGS 1 Meter 13 x21y388 NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17/TIFF/USGS_1M_13_x21y388_NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/66517106d34e702fe874904f",
+          "publicationDate": "2024-05-23",
+          "sourceId": "66517106d34e702fe874904f",
+          "boundingBox": {
+            "minX": -108.17827933099994,
+            "maxX": -108.06546502199996,
+            "minY": 34.93104903100004,
+            "maxY": 35.02390470600005
+          }
+        },
+        {
+          "title": "USGS 1 Meter 13 x21y388 NM_SouthCentral_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_SouthCentral_2018_D19/TIFF/USGS_1M_13_x21y388_NM_SouthCentral_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/662752f2d34ea70bd5efc1e8",
+          "publicationDate": "2024-03-29",
+          "sourceId": "662752f2d34ea70bd5efc1e8",
+          "boundingBox": {
+            "minX": -108.17827933099994,
+            "maxX": -108.06546502199996,
+            "minY": 34.93104903100004,
+            "maxY": 35.02390470600005
+          }
+        }
+      ],
+      "state": "source_candidates_found"
+    },
+    {
+      "id": "OSM_NODE_13188887010",
+      "region": "el_malpais",
+      "name": "Ice Cave",
+      "latitude": 34.9302187,
+      "longitude": -108.086172,
+      "osm_version": "1",
+      "osm_timestamp": "2025-10-02T14:53:11Z",
+      "source_url": "https://www.openstreetmap.org/node/13188887010",
+      "source_tags": {
+        "name": "Ice Cave",
+        "natural": "cave_entrance"
+      },
+      "source_map": "data/metadata/discovery_v11/el_malpais-locator-map-f0b9ab716c.osm",
+      "geometry_state": "Public entrance locator, not a rim or a pit center",
+      "process_label": "requires an independent geological/park source before eligibility",
+      "query_url": "https://tnmaccess.nationalmap.gov/api/v1/products?bbox=-108.08717200000001%2C34.9292187%2C-108.085172%2C34.931218699999995&datasets=Digital+Elevation+Model+%28DEM%29+1+meter&max=30&outputFormat=JSON",
+      "catalogue_path": "data/metadata/discovery_v11/OSM_NODE_13188887010-tnm.json",
+      "terrain_products": [
+        {
+          "title": "USGS 1 Meter 12 x76y387 NM_SouthCentral_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_SouthCentral_2018_D19/TIFF/USGS_1M_12_x76y387_NM_SouthCentral_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/6627430fd34ea70bd5efb03c",
+          "publicationDate": "2024-03-29",
+          "sourceId": "6627430fd34ea70bd5efb03c",
+          "boundingBox": {
+            "minX": -108.15635556699999,
+            "maxX": -108.04388418399998,
+            "minY": 34.84651603700007,
+            "maxY": 34.93918587600007
+          }
+        },
+        {
+          "title": "USGS 1 Meter 13 x21y387 NM_SouthCentral_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_SouthCentral_2018_D19/TIFF/USGS_1M_13_x21y387_NM_SouthCentral_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/662752f4d34ea70bd5efc1ec",
+          "publicationDate": "2024-03-29",
+          "sourceId": "662752f4d34ea70bd5efc1ec",
+          "boundingBox": {
+            "minX": -108.17479935499995,
+            "maxX": -108.06211929699998,
+            "minY": 34.84101159000005,
+            "maxY": 34.93385954100006
+          }
+        },
+        {
+          "title": "USGS 1 Meter 13 x21y388 NM_NorthWest_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_NorthWest_2018_D19/TIFF/USGS_1M_13_x21y388_NM_NorthWest_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/621f0ad1d34ee0c6b389b010",
+          "publicationDate": "2022-02-26",
+          "sourceId": "621f0ad1d34ee0c6b389b010",
+          "boundingBox": {
+            "minX": -108.17827933099994,
+            "maxX": -108.06546502199996,
+            "minY": 34.93104903100004,
+            "maxY": 35.02390470600005
+          }
+        },
+        {
+          "title": "USGS 1 Meter 13 x21y388 NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17/TIFF/USGS_1M_13_x21y388_NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/66517106d34e702fe874904f",
+          "publicationDate": "2024-05-23",
+          "sourceId": "66517106d34e702fe874904f",
+          "boundingBox": {
+            "minX": -108.17827933099994,
+            "maxX": -108.06546502199996,
+            "minY": 34.93104903100004,
+            "maxY": 35.02390470600005
+          }
+        },
+        {
+          "title": "USGS 1 Meter 13 x21y388 NM_SouthCentral_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_SouthCentral_2018_D19/TIFF/USGS_1M_13_x21y388_NM_SouthCentral_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/662752f2d34ea70bd5efc1e8",
+          "publicationDate": "2024-03-29",
+          "sourceId": "662752f2d34ea70bd5efc1e8",
+          "boundingBox": {
+            "minX": -108.17827933099994,
+            "maxX": -108.06546502199996,
+            "minY": 34.93104903100004,
+            "maxY": 35.02390470600005
+          }
+        }
+      ],
+      "state": "source_candidates_found"
+    },
+    {
+      "id": "OSM_NODE_59946478",
+      "region": "lava_beds",
+      "name": "Skull Cave",
+      "latitude": 41.73138,
+      "longitude": -121.5106595,
+      "osm_version": "4",
+      "osm_timestamp": "2025-01-29T05:50:23Z",
+      "source_url": "https://www.openstreetmap.org/node/59946478",
+      "source_tags": {
+        "name": "Skull Cave",
+        "natural": "cave_entrance",
+        "source": "USGS topographic map",
+        "wikidata": "Q69623908"
+      },
+      "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+      "geometry_state": "Public entrance locator, not a rim or a pit center",
+      "process_label": "requires an independent geological/park source before eligibility",
+      "query_url": "https://tnmaccess.nationalmap.gov/api/v1/products?bbox=-121.51165950000001%2C41.730380000000004%2C-121.5096595%2C41.73238&datasets=Digital+Elevation+Model+%28DEM%29+1+meter&max=30&outputFormat=JSON",
+      "catalogue_path": "data/metadata/discovery_v11/OSM_NODE_59946478-tnm.json",
+      "terrain_products": [
+        {
+          "title": "USGS 1 Meter 10 x62y463 CA_NorthernCA_B22",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/CA_NorthernCA_B22/TIFF/USGS_1M_10_x62y463_CA_NorthernCA_B22.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/69c49746b66b016badda3f38",
+          "publicationDate": "2026-03-24",
+          "sourceId": "69c49746b66b016badda3f38",
+          "boundingBox": {
+            "minX": -121.55729627899996,
+            "maxX": -121.43492522199995,
+            "minY": 41.721179652000046,
+            "maxY": 41.81279340300006
+          }
+        }
+      ],
+      "state": "source_candidates_found"
+    },
+    {
+      "id": "OSM_NODE_59949988",
+      "region": "lava_beds",
+      "name": "Valentine Cave",
+      "latitude": 41.7092587,
+      "longitude": -121.4777875,
+      "osm_version": "3",
+      "osm_timestamp": "2015-08-28T03:21:14Z",
+      "source_url": "https://www.openstreetmap.org/node/59949988",
+      "source_tags": {
+        "name": "Valentine Cave",
+        "natural": "cave_entrance"
+      },
+      "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+      "geometry_state": "Public entrance locator, not a rim or a pit center",
+      "process_label": "requires an independent geological/park source before eligibility",
+      "query_url": "https://tnmaccess.nationalmap.gov/api/v1/products?bbox=-121.47878750000001%2C41.7082587%2C-121.4767875%2C41.7102587&datasets=Digital+Elevation+Model+%28DEM%29+1+meter&max=30&outputFormat=JSON",
+      "catalogue_path": "data/metadata/discovery_v11/OSM_NODE_59949988-tnm.json",
+      "terrain_products": [
+        {
+          "title": "USGS 1 Meter 10 x62y462 CA_NorthernCA_B22",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/CA_NorthernCA_B22/TIFF/USGS_1M_10_x62y462_CA_NorthernCA_B22.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/69c49748b66b016badda3f40",
+          "publicationDate": "2026-03-24",
+          "sourceId": "69c49748b66b016badda3f40",
+          "boundingBox": {
+            "minX": -121.55930623799998,
+            "maxX": -121.43711239899994,
+            "minY": 41.631141409000065,
+            "maxY": 41.722751722000055
+          }
+        }
+      ],
+      "state": "source_candidates_found"
+    },
+    {
+      "id": "OSM_NODE_59950624",
+      "region": "lava_beds",
+      "name": "Sentinel Cave (Upper Entrance)",
+      "latitude": 41.7084975,
+      "longitude": -121.5111533,
+      "osm_version": "3",
+      "osm_timestamp": "2015-08-28T03:37:30Z",
+      "source_url": "https://www.openstreetmap.org/node/59950624",
+      "source_tags": {
+        "fee": "yes",
+        "name": "Sentinel Cave (Upper Entrance)",
+        "natural": "cave_entrance"
+      },
+      "source_map": "data/metadata/discovery_v11/lava_beds-locator-map-b261ee7842.osm",
+      "geometry_state": "Public entrance locator, not a rim or a pit center",
+      "process_label": "requires an independent geological/park source before eligibility",
+      "query_url": "https://tnmaccess.nationalmap.gov/api/v1/products?bbox=-121.51215330000001%2C41.7074975%2C-121.5101533%2C41.7094975&datasets=Digital+Elevation+Model+%28DEM%29+1+meter&max=30&outputFormat=JSON",
+      "catalogue_path": "data/metadata/discovery_v11/OSM_NODE_59950624-tnm.json",
+      "terrain_products": [
+        {
+          "title": "USGS 1 Meter 10 x62y462 CA_NorthernCA_B22",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/CA_NorthernCA_B22/TIFF/USGS_1M_10_x62y462_CA_NorthernCA_B22.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/69c49748b66b016badda3f40",
+          "publicationDate": "2026-03-24",
+          "sourceId": "69c49748b66b016badda3f40",
+          "boundingBox": {
+            "minX": -121.55930623799998,
+            "maxX": -121.43711239899994,
+            "minY": 41.631141409000065,
+            "maxY": 41.722751722000055
+          }
+        }
+      ],
+      "state": "source_candidates_found"
+    },
+    {
+      "id": "OSM_NODE_2773174396",
+      "region": "newberry",
+      "name": "Boyd Cave",
+      "latitude": 43.9421644,
+      "longitude": -121.1983375,
+      "osm_version": "3",
+      "osm_timestamp": "2020-10-06T17:02:08Z",
+      "source_url": "https://www.openstreetmap.org/node/2773174396",
+      "source_tags": {
+        "access": "permissive",
+        "name": "Boyd Cave",
+        "natural": "cave_entrance"
+      },
+      "source_map": "data/metadata/discovery_v11/newberry-locator-map-4b3723271a.osm",
+      "geometry_state": "Public entrance locator, not a rim or a pit center",
+      "process_label": "requires an independent geological/park source before eligibility",
+      "query_url": "https://tnmaccess.nationalmap.gov/api/v1/products?bbox=-121.1993375%2C43.941164400000005%2C-121.19733749999999%2C43.9431644&datasets=Digital+Elevation+Model+%28DEM%29+1+meter&max=30&outputFormat=JSON",
+      "catalogue_path": "data/metadata/discovery_v11/OSM_NODE_2773174396-tnm.json",
+      "terrain_products": [],
+      "state": "no_one_metre_products_returned"
+    },
+    {
+      "id": "OSM_NODE_2773224766",
+      "region": "newberry",
+      "name": "Skeleton Cave",
+      "latitude": 43.9502017,
+      "longitude": -121.1774634,
+      "osm_version": "5",
+      "osm_timestamp": "2023-01-05T15:48:09Z",
+      "source_url": "https://www.openstreetmap.org/node/2773224766",
+      "source_tags": {
+        "access": "no",
+        "name": "Skeleton Cave",
+        "natural": "cave_entrance",
+        "wikidata": "Q7534391",
+        "wikipedia": "en:Skeleton Cave (Oregon)"
+      },
+      "source_map": "data/metadata/discovery_v11/newberry-locator-map-4b3723271a.osm",
+      "geometry_state": "Public entrance locator, not a rim or a pit center",
+      "process_label": "requires an independent geological/park source before eligibility",
+      "query_url": "https://tnmaccess.nationalmap.gov/api/v1/products?bbox=-121.1784634%2C43.9492017%2C-121.17646339999999%2C43.9512017&datasets=Digital+Elevation+Model+%28DEM%29+1+meter&max=30&outputFormat=JSON",
+      "catalogue_path": "data/metadata/discovery_v11/OSM_NODE_2773224766-tnm.json",
+      "terrain_products": [],
+      "state": "no_one_metre_products_returned"
+    },
+    {
+      "id": "OSM_NODE_2806721318",
+      "region": "newberry",
+      "name": "Arnold Ice Cave",
+      "latitude": 43.9052303,
+      "longitude": -121.1589199,
+      "osm_version": "1",
+      "osm_timestamp": "2014-04-21T16:51:26Z",
+      "source_url": "https://www.openstreetmap.org/node/2806721318",
+      "source_tags": {
+        "name": "Arnold Ice Cave",
+        "natural": "cave_entrance"
+      },
+      "source_map": "data/metadata/discovery_v11/newberry-locator-map-4b3723271a.osm",
+      "geometry_state": "Public entrance locator, not a rim or a pit center",
+      "process_label": "requires an independent geological/park source before eligibility",
+      "query_url": "https://tnmaccess.nationalmap.gov/api/v1/products?bbox=-121.1599199%2C43.9042303%2C-121.1579199%2C43.9062303&datasets=Digital+Elevation+Model+%28DEM%29+1+meter&max=30&outputFormat=JSON",
+      "catalogue_path": "data/metadata/discovery_v11/OSM_NODE_2806721318-tnm.json",
+      "terrain_products": [],
+      "state": "no_one_metre_products_returned"
+    }
+  ],
+  "scope": "Twelve source-intake seeds; no rims, fine terrain outcomes or selection ranks read",
+  "setting_change": "Newberry is an additional US source setting; it does not establish completion of the proposed Lanzarote route",
+  "eligibility": "Requires independent mapped landforms, process evidence, source QA and source-ancestry grouping"
+}

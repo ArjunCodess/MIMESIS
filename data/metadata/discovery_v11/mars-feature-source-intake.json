@@ -1,0 +1,149 @@
+[
+  {
+    "product": "DTEEC_014327_1675_013971_1675_A01",
+    "page": "https://www.uahirise.org/dtm/dtm.php?ID=ESP_014327_1675",
+    "state": "acquired_not_measured",
+    "assets": [
+      {
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_014300_014399/ESP_014327_1675_ESP_013971_1675/DTEEC_014327_1675_013971_1675_A01.IMG",
+        "path": "data/raw/discovery_v11/mars/DTEEC_014327_1675_013971_1675_A01/DTEEC_014327_1675_013971_1675_A01.IMG",
+        "bytes": 218611720,
+        "sha256": "6d6aa9c880519176fb0a7b32918e1aab47d7f7caa1517229a6c90a447715f784"
+      },
+      {
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_014300_014399/ESP_014327_1675_ESP_013971_1675/ESP_013971_1675_IRB_A_01_ORTHO.JP2",
+        "path": "data/raw/discovery_v11/mars/DTEEC_014327_1675_013971_1675_A01/ESP_013971_1675_IRB_A_01_ORTHO.JP2",
+        "bytes": 128544067,
+        "sha256": "e09cc9aa74577a8c90d514aa4891a5fa745cc8176b90a35e15db43b59b68c3e7"
+      }
+    ],
+    "source_ancestry": "Ortho uses the DTM stereo observations; not an independent validation acquisition",
+    "exposure": "Native terrain arrays not decoded by this acquisition step"
+  },
+  {
+    "product": "DTEEC_023531_1840_023953_1840_A01",
+    "page": "https://www.uahirise.org/dtm/dtm.php?ID=ESP_023531_1840",
+    "state": "acquired_not_measured",
+    "assets": [
+      {
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_023500_023599/ESP_023531_1840_ESP_023953_1840/DTEEC_023531_1840_023953_1840_A01.IMG",
+        "path": "data/raw/discovery_v11/mars/DTEEC_023531_1840_023953_1840_A01/DTEEC_023531_1840_023953_1840_A01.IMG",
+        "bytes": 86787376,
+        "sha256": "74f3910c1e029d313e239fac822fe995fa36f2bca22643619d08dd4ae800dc91"
+      },
+      {
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_023500_023599/ESP_023531_1840_ESP_023953_1840/ESP_023531_1840_RED_A_01_ORTHO.JP2",
+        "path": "data/raw/discovery_v11/mars/DTEEC_023531_1840_023953_1840_A01/ESP_023531_1840_RED_A_01_ORTHO.JP2",
+        "bytes": 62106046,
+        "sha256": "c49aaebd3ada803eb2c29a8a7a19604f19d4ee6d59e25113d51ed2b24c24cc57"
+      }
+    ],
+    "source_ancestry": "Ortho uses the DTM stereo observations; not an independent validation acquisition",
+    "exposure": "Native terrain arrays not decoded by this acquisition step"
+  },
+  {
+    "product": "DTEEC_046730_2110_055169_2110_A01",
+    "page": "https://www.uahirise.org/dtm/dtm.php?ID=ESP_046730_2110",
+    "state": "acquired_not_measured",
+    "assets": [
+      {
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_046700_046799/ESP_046730_2110_ESP_055169_2110/DTEEC_046730_2110_055169_2110_A01.IMG",
+        "path": "data/raw/discovery_v10/mars/DTEEC_046730_2110_055169_2110_A01.IMG",
+        "bytes": 86496732,
+        "sha256": "0189f89224ecdfc23714769c7a00eb5edefb4301788de6aa890baa19a677445f"
+      },
+      {
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_046700_046799/ESP_046730_2110_ESP_055169_2110/ESP_046730_2110_IRB_A_01_ORTHO.JP2",
+        "path": "data/raw/discovery_v11/mars/DTEEC_046730_2110_055169_2110_A01/ESP_046730_2110_IRB_A_01_ORTHO.JP2",
+        "bytes": 103633787,
+        "sha256": "3a794367fd7fa860a79895a57107b26ad61041f9c1422d8306a402fe3b800779"
+      }
+    ],
+    "source_ancestry": "Ortho uses the DTM stereo observations; not an independent validation acquisition",
+    "exposure": "Native terrain arrays not decoded by this acquisition step"
+  },
+  {
+    "product": "DTEEC_052638_2020_060379_2020_U01",
+    "page": "https://www.uahirise.org/dtm/dtm.php?ID=ESP_052638_2020",
+    "state": "acquired_not_measured",
+    "assets": [
+      {
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_052600_052699/ESP_052638_2020_ESP_060379_2020/DTEEC_052638_2020_060379_2020_U01.IMG",
+        "path": "data/raw/discovery_v11/mars/DTEEC_052638_2020_060379_2020_U01/DTEEC_052638_2020_060379_2020_U01.IMG",
+        "bytes": 146686200,
+        "sha256": "53f29a966e2cc0441272e152d3fe524f07a7d6876362caf8834c0301ee9586c4"
+      },
+      {
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_052600_052699/ESP_052638_2020_ESP_060379_2020/ESP_052638_2020_RED_A_01_ORTHO.JP2",
+        "path": "data/raw/discovery_v11/mars/DTEEC_052638_2020_060379_2020_U01/ESP_052638_2020_RED_A_01_ORTHO.JP2",
+        "bytes": 130618082,
+        "sha256": "9f0134f2c19b2eb45b191d342cb51078d58d736326beffd398863314f11c0cb6"
+      }
+    ],
+    "source_ancestry": "Ortho uses the DTM stereo observations; not an independent validation acquisition",
+    "exposure": "Native terrain arrays not decoded by this acquisition step"
+  },
+  {
+    "product": "DTEEC_055209_2015_060260_2015_U01",
+    "page": "https://www.uahirise.org/dtm/dtm.php?ID=ESP_055209_2015",
+    "state": "acquired_not_measured",
+    "assets": [
+      {
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_055200_055299/ESP_055209_2015_ESP_060260_2015/DTEEC_055209_2015_060260_2015_U01.IMG",
+        "path": "data/raw/discovery_v11/mars/DTEEC_055209_2015_060260_2015_U01/DTEEC_055209_2015_060260_2015_U01.IMG",
+        "bytes": 221049648,
+        "sha256": "82538cd378e84732e0da430f166fe6e5e32bbdb2d614b35e6cc451d4e2658be2"
+      },
+      {
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_055200_055299/ESP_055209_2015_ESP_060260_2015/ESP_055209_2015_RED_A_01_ORTHO.JP2",
+        "path": "data/raw/discovery_v11/mars/DTEEC_055209_2015_060260_2015_U01/ESP_055209_2015_RED_A_01_ORTHO.JP2",
+        "bytes": 273040203,
+        "sha256": "337da191bc616b659f41bf54ebe24198223e776c6cc347760582eb2301043576"
+      }
+    ],
+    "source_ancestry": "Ortho uses the DTM stereo observations; not an independent validation acquisition",
+    "exposure": "Native terrain arrays not decoded by this acquisition step"
+  },
+  {
+    "product": "DTEEC_069174_2045_001420_2045_A01",
+    "page": "https://www.uahirise.org/dtm/dtm.php?ID=ESP_069174_2045",
+    "state": "acquired_not_measured",
+    "assets": [
+      {
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_069100_069199/ESP_069174_2045_PSP_001420_2045/DTEEC_069174_2045_001420_2045_A01.IMG",
+        "path": "data/raw/discovery_v11/mars/DTEEC_069174_2045_001420_2045_A01/DTEEC_069174_2045_001420_2045_A01.IMG",
+        "bytes": 332229120,
+        "sha256": "f73087e6b049af38af888a7e6c8c19280d33e55d421b204c02287094444a4b96"
+      },
+      {
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_069100_069199/ESP_069174_2045_PSP_001420_2045/ESP_069174_2045_IRB_A_01_ORTHO.JP2",
+        "path": "data/raw/discovery_v11/mars/DTEEC_069174_2045_001420_2045_A01/ESP_069174_2045_IRB_A_01_ORTHO.JP2",
+        "bytes": 199586950,
+        "sha256": "6b650f30284e55b09bb8985aebb1e9035282668f3f053485041ffab84e326a96"
+      }
+    ],
+    "source_ancestry": "Ortho uses the DTM stereo observations; not an independent validation acquisition",
+    "exposure": "Native terrain arrays not decoded by this acquisition step"
+  },
+  {
+    "product": "DTEEC_081500_2090_046738_2090_A01",
+    "page": "https://www.uahirise.org/dtm/dtm.php?ID=ESP_081500_2090",
+    "state": "acquired_not_measured",
+    "assets": [
+      {
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_081500_081599/ESP_081500_2090_ESP_046738_2090/DTEEC_081500_2090_046738_2090_A01.IMG",
+        "path": "data/raw/discovery_v11/mars/DTEEC_081500_2090_046738_2090_A01/DTEEC_081500_2090_046738_2090_A01.IMG",
+        "bytes": 122968320,
+        "sha256": "ac34818cf17d86803971798e175bf340e33fc8455e4ea88123d2cf570f6af965"
+      },
+      {
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_081500_081599/ESP_081500_2090_ESP_046738_2090/ESP_046738_2090_IRB_A_01_ORTHO.JP2",
+        "path": "data/raw/discovery_v11/mars/DTEEC_081500_2090_046738_2090_A01/ESP_046738_2090_IRB_A_01_ORTHO.JP2",
+        "bytes": 80020396,
+        "sha256": "62ec5b9bedfa2aad64c8d6c979d5773dcc1c928358acec70b582f2cc407d4b21"
+      }
+    ],
+    "source_ancestry": "Ortho uses the DTM stereo observations; not an independent validation acquisition",
+    "exposure": "Native terrain arrays not decoded by this acquisition step"
+  }
+]

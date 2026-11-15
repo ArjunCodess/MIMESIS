@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "path": "Sheepridge.rar",
+      "bytes": 344101546,
+      "sha256": "93e61c86e5255db86a15c29878eef37352f8d9473a4f7d3e2033723f6c752c6e"
+    },
+    {
+      "path": "SheepridgeVolume.rar",
+      "bytes": 11534568,
+      "sha256": "5838c0bcb57457f36c178af87edaa5ec0912a56287eba879e968b3c1d6a0bbd0"
+    },
+    {
+      "path": "CAVES_code.rar",
+      "bytes": 6912,
+      "sha256": "6d890c3bb5f707d02b66dea0e56a2c6d0cc32181d985ea1b709f333c1b026105"
+    },
+    {
+      "path": "COTM_Supplemental_Info.pdf",
+      "bytes": 3074308,
+      "sha256": "ab11e9285a52fcc58072556790c18d52baf6f25ddeb117501fa2d92c77cc6c48"
+    }
+  ],
+  "findings": {
+    "CAVES_code": "point-cloud read/write, voxelization and filtering; no world-registration transform found",
+    "SheepridgeVolume": "VRML mesh and MATLAB vertices/faces; not Indian Tunnel registration",
+    "COTM_Supplemental_Info": "identical SHA256 to previously downloaded survey notes"
+  }
+}

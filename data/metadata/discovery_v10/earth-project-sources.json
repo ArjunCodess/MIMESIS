@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/metadata/ID_SouthernID_2018_D19/ID_SouthernID_9_2018/reports/USGS_ID_SouthernID_9_2018_Summary_Report.pdf",
+    "path": "data/metadata/discovery_v10/earth-project/USGS_ID_SouthernID_9_2018_Summary_Report.pdf",
+    "sha256": "d8059922428700d3c1be6ae8973228fda165e3798fd1b2c5b6aaca0dc9d339c2"
+  },
+  {
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/metadata/ID_SouthernID_2018_D19/ID_SouthernID_9_2018/reports/vendor_provided_xml/ClassifiedPointCloud_300074.xml",
+    "path": "data/metadata/discovery_v10/earth-project/ClassifiedPointCloud_300074.xml",
+    "sha256": "7ba0d70fc7399a6e3c6eb06614f97726eac023bee7d605941c1d7dd6f830b080"
+  },
+  {
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/metadata/ID_SouthernID_2018_D19/ID_SouthernID_9_2018/reports/vendor_provided_xml/DEM_300074.xml",
+    "path": "data/metadata/discovery_v10/earth-project/DEM_300074.xml",
+    "sha256": "f8ea122e98e564a2d6604895e48427c710afde62fdcd4abbecd896fc9325dbd2"
+  }
+]

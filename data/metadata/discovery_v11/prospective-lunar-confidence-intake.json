@@ -1,0 +1,44 @@
+[
+  {
+    "body": "moon_prclrmpit01",
+    "catalogue": "https://data.lroc.im-ldi.com/lroc/view_rdr_product/NAC_DTM_PRCLRMPIT01_CONF",
+    "assets": [
+      {
+        "url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/PRCLRMPIT01/NAC_DTM_PRCLRMPIT01_CONF.IMG",
+        "path": "data\\raw\\discovery_v10\\moon_prclrmpit01\\NAC_DTM_PRCLRMPIT01_CONF.IMG",
+        "bytes": 44511780,
+        "sha256": "829cfe96bfe8bb6a1a40868234b24db781c3db9bd1c1662184c7d03520153662"
+      }
+    ],
+    "state": "acquired_unvalidated",
+    "feature_polygon": null
+  },
+  {
+    "body": "moon_iridiumpit1",
+    "catalogue": "https://data.lroc.im-ldi.com/lroc/view_rdr_product/NAC_DTM_IRIDIUMPIT1_CONF",
+    "assets": [
+      {
+        "url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/IRIDIUMPIT1/NAC_DTM_IRIDIUMPIT1_CONF.IMG",
+        "path": "data\\raw\\discovery_v10\\moon_iridiumpit1\\NAC_DTM_IRIDIUMPIT1_CONF.IMG",
+        "bytes": 42121343,
+        "sha256": "98771a28b6a797b73ccaf466db4ed3d8918091aa3477f83dcc758ab3ca34a4ac"
+      }
+    ],
+    "state": "acquired_unvalidated",
+    "feature_polygon": null
+  },
+  {
+    "body": "moon_fecnditats2",
+    "catalogue": "https://data.lroc.im-ldi.com/lroc/view_rdr_product/NAC_DTM_FECNDITATS2_CONF",
+    "assets": [
+      {
+        "url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/FECNDITATS2/NAC_DTM_FECNDITATS2_CONF.IMG",
+        "path": "data\\raw\\discovery_v10\\moon_fecnditats2\\NAC_DTM_FECNDITATS2_CONF.IMG",
+        "bytes": 189149170,
+        "sha256": "92322d94c522ca724bcc503c5d83ee3792bf760c00beaea8431d6b0f0b1143ca"
+      }
+    ],
+    "state": "acquired_unvalidated",
+    "feature_polygon": null
+  }
+]

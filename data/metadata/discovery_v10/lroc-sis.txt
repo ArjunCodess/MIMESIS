@@ -1,0 +1,2508 @@
+ 
+1
+ 
+Lunar Reconnaissance Orbiter 
+ 
+ 
+ 
+ 
+ 
+ 
+LROC 
+Reduced Data Record 
+ Products 
+Software Interface Specification 
+ 
+ 
+ 
+ 
+Version 1.6 
+August 22, 2020 
+ 
+Updated by: 
+ 
+Megan Henriksen 
+Arizona State University 
+ 
+Prepared by: 
+ 
+Ernest Bowman-Cisneros 
+Arizona State University 
+ 
+Eric Eliason 
+University of Arizona 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                     
+       
+
+ 
+2
+Signature Page 
+ 
+Prepared by: 
+ 
+ 
+Nick Estes                                        Date 
+SOC Manager, LROC                             
+Arizona State University 
+Prepared by: 
+ 
+ 
+Megan Henriksen                               Date 
+RDR Manager, LROC                             
+Arizona State University 
+Reviewed by: 
+ 
+ 
+Mark Robinson                                 Date 
+Principal Investigator, LROC                 
+Arizona State University 
+Reviewed by: 
+ 
+ 
+Scott Brylow                                     Date 
+Instrument Manager, LROC                      
+Malin Space Science Systems 
+Reviewed by: 
+ 
+ 
+Chris Isbell                                       Date 
+Imaging Node, Planetary Data System         
+U.S. Geological Survey 
+Reviewed by: 
+ 
+ 
+Stan Scott                                           Date  
+Data Manager, LRO 
+Goddard Space Flight Facility 
+Approved by: 
+ 
+ 
+Ed Grayzeck                                       Date 
+Program Manager, Planetary Data System   
+Goddard Space Flight Facility 
+ 
+ 
+ 
+ 
+ 
+
+ 
+3
+ 
+ 
+Document Change Control 
+Date 
+Who 
+Sections 
+Descriptions 
+03/13/2008 
+Eric E. 
+All  
+Draft Outline. 
+04/21/2008 
+Eric E. 
+All 
+Draft complete for review by LROC 
+team. 
+05/15/2008 
+Eric E. 
+All 
+LROC team comments incorporated 
+into SIS. DRAFT Version 1.0 
+completed for PDS review 
+07/05/2008 
+Eric E. 
+All 
+Incorporated PDS review-team 
+comments into SIS. 
+07/15/2008 
+Ernest B-C. 
+Table 2.2 
+ 
+11/03/2008 
+Ernest B-C. 
+ 
+ 
+12/01/2008 
+Ernest B-C. 
+ 
+Added Scott Brylow to Signature Page 
+04/30/2009 
+EBC 
+MSR 
+MT 
+Various 
+Sections 
+Corrected numbers for instrument in 
+text and various tables/figures. 
+Completed all TBD items. 
+01/04/2011 
+Ernest B-C. 
+Various 
+Sections 
+Updates incorporating new knowledge 
+of RDR products based on acquired 
+LROC images. Key changes: 
+- 
+No longer creating JPEG 2000 
+products, but will create 
+standard PDS image products 
+with various detached headers 
+to support GIS work 
+- 
+Change in tiling for N/S Pole 
+NAC mosaics 
+03/08/2011 
+Ernest B-C. 
+Various 
+Sections 
+Final edits based on RDR product 
+generation. 
+08/20/2012 
+Ernest B-C. 
+ 
+Added sections for NAC DTM and 
+WAC DTM.  
+5/29/2018 
+M. Henriksen 
+Various 
+Sections 
+Reorganized and Updated all sections. 
+ 
+ 
+TBD Items and Open Issues 
+# 
+Description 
+ 
+ 
+ 
+ 
+ 
+
+ 
+4
+Table of Contents 
+1 
+Introduction ................................................................................................................. 7 
+1.1 
+Applicable Documents and References .............................................................. 7 
+1.2 
+Configuration Management ................................................................................ 9 
+2 
+Instrument Overview .................................................................................................. 9 
+3 
+Product Overview ..................................................................................................... 16 
+3.1 
+READMEs ........................................................................................................ 18 
+3.2 
+Browse Products ............................................................................................... 18 
+4 
+Product Generation ................................................................................................... 19 
+4.1 
+Map Projection and Layout ............................................................................... 19 
+4.1.1 
+NAC Polar Products .................................................................................. 19 
+4.1.2 
+NAC Regional Products ............................................................................ 21 
+4.1.3 
+WAC Map Products .................................................................................. 21 
+4.1.4 
+WAC Illumination Movie Products .......................................................... 22 
+4.2 
+Radiometric Calibration Correction .................................................................. 23 
+4.3 
+Photometric Normalization ............................................................................... 25 
+4.4 
+Geometric Processing ....................................................................................... 25 
+4.5 
+Brightness Equalization .................................................................................... 26 
+4.6 
+Mosaicking and Quadrangle Assembly ............................................................ 26 
+5 
+Standards ................................................................................................................... 26 
+5.1 
+PDS Standards .................................................................................................. 26 
+5.2 
+GeoTIFF Standard ............................................................................................ 26 
+5.3 
+Data Storage Conventions................................................................................. 27 
+5.3.1 
+Reading 16-bit Data .................................................................................. 27 
+5.4 
+Time Standards ................................................................................................. 27 
+5.5 
+Geodetic and Cartographic Standards ............................................................... 27 
+6 
+Derived Product Specification .................................................................................. 28 
+6.1 
+Data Volume ..................................................................................................... 28 
+6.2 
+Data Validation ................................................................................................. 29 
+6.3 
+Product Identification and File Naming Conventions ...................................... 30 
+6.4 
+PDS labels ......................................................................................................... 34 
+Appendix A – PDS Label Definitions .............................................................................. 36 
+Appendix B – Map Projection Equations ......................................................................... 43 
+Equirectangular Projection........................................................................................ 43 
+Polar Stereographic Projection ................................................................................. 44 
+Orthographic Projection ............................................................................................ 45 
+
+ 
+5
+ACRONYMS AND ABBREVIATIONS 
+2D 
+Two-dimensional 
+ASCII 
+American Standard Code for Information Interchange 
+BDR 
+Basic Data Record 
+CCD 
+Charged Coupled Device 
+CDR 
+Calibrated Data Record 
+CLAT 
+Center latitude of the map projection 
+CLON 
+Center longitude of the map projection 
+DN 
+Digital Number 
+DTM 
+Digital Terrain Model 
+EDR 
+Experimental Data Record 
+EXTRA 
+Extra data product 
+FOV 
+Field of View 
+FPGA 
+Field Programmable Gate Array 
+FWHM 
+Full Width at Half Maximum 
+GB 
+Gigabyte 
+GeoTIFF 
+Interchange format for georeferenced raster imagery. Name derived
+from Georeferenced Tagged Image File Format. 
+GIS 
+Geographic Information Systems 
+GRAIL 
+Gravity and Interior Laboratory 
+I/F 
+Intensity/Flux (Radiance Factor) 
+IFOV 
+Instantaneous Field of View 
+LDWG 
+LRO Data Working Group 
+LGCWG 
+Lunar Geodesy and Cartography Working Group 
+LPRP 
+Lunar Precursor Robotic Program 
+LRO 
+Lunar Reconnaissance Orbiter 
+LROC 
+Lunar Reconnaissance Orbiter Camera 
+MB 
+Megabytes 
+MDR 
+Multispectral Data Record 
+MPEG 
+Moving Picture Experts Group Audio/visual file format 
+MTF 
+Modulation Transfer Function 
+NAC 
+Narrow Angle Camera 
+NAC-L 
+Narrow Angle Camera - Left 
+NAC-R 
+Narrow Angle Camera - Right 
+NAIF 
+Navigation and Ancillary Information Facility 
+PDS 
+Planetary Data System 
+PSR 
+Permanently Shadowed Region (near lunar poles) 
+RDR 
+Reduced Data Record 
+ROI 
+Region of Interest 
+SCS 
+Sequence and Compressor System 
+SDP 
+Special Data Product 
+SIS 
+Software Interface Specification 
+SNR 
+Signal-to-Noise Ratio 
+SOC 
+Science Operations Center 
+SPICE 
+Spacecraft, Planet, Instrument, C-matrix Pointing, and Event 
+TBD 
+To Be Determined 
+
+ 
+6
+TIFF 
+Tagged Image File Format 
+UTC 
+Coordinated Universal Time 
+UTF-8 
+Unicode (Universal Coded Character Set) Transformation Format –
+8-bit 
+UUID 
+Universally Unique Identifier 
+UV 
+Ultraviolet 
+VIS 
+Visible 
+WAC 
+Wide Angle Camera 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+7
+1 Introduction 
+The Lunar Reconnaissance Orbiter Camera (LROC) was designed to address two of the 
+prime Lunar Reconnaissance Orbiter (LRO) measurement requirements. 1) Assess meter- 
+and smaller-scale features to facilitate safety analysis for potential lunar landing sites near 
+polar resources, and elsewhere on the Moon; 2) Acquire multi-temporal synoptic imaging 
+of the poles every orbit to characterize the polar illumination environment (100 m/pixel 
+scale), identifying regions of permanent shadow and permanent or near-permanent 
+illumination over a full year. The LROC consists of two co-aligned narrow-angle cameras 
+(NACs) to provide 0.5 m/pixel scale panchromatic images over a 5 km swath and a wide-
+angle camera (WAC) component to provide images at a scale of 75 m/pixel in five visible 
+bandpasses and 400 m/pixel in two ultraviolet bandpasses (from an orbital altitude of 50 
+km). 
+To meet the measurement requirements summarized in Lunar Reconnaissance Orbiter 
+Camera (LROC) Instrument Overview [1], the LROC team generates digital map products 
+and image mosaics from a subset of the collected archive of images. Additionally, 
+radiometrically-calibrated individual images, described in the "LROC EDR/CDR Data 
+Product Software Interface Specification" companion document, are provided as part of 
+the archive of LROC data products. The team maintains internal RDR products until data 
+calibration and data processing methods are science ready, then releases them in an 
+appropriate manner for public access including their final deposition to NASA's Planetary 
+Data System (PDS). A nominal delivery of RDR derived data products occurs on or before 
+the 15th of every third month (March, July, September, December). 
+This Software Interface Specification (SIS) provides a description of the derived products 
+provided by the LROC Science Team. It is intended to offer enough information to enable 
+users to read and understand the products. The SIS describes how products are processed, 
+formatted, labeled, and uniquely identified. The document details standards used in 
+generating the products. The SIS also provides a specification of the products delivered to 
+the PDS. Finally, examples of the product labels are provided. Additional documentation 
+about each individual product is available in an archived README file. 
+1.1 Applicable Documents and References 
+The LROC Derived Data SIS is consistent with the following documents: 
+ 
+1. Robinson, M., et al. (2010) Lunar Reconnaissance Orbiter Camera (LROC) Instrument 
+Overview, Space Science Reviews, Vol. 105, Issue 1-4, pp 81-124. doi:10.1007/s11214-
+010-9634-2 
+2. Speyerer, E.J., et al. (2016) Pre-flight and On-orbit Geometric Calibration of the Lunar 
+Reconnaissance Orbiter Camera, Space Science Reviews, Vol. 200, Issue 1-4, pp 357-
+392. doi:10.1007/s11214-014-0073-3 
+3. Lunar Reconnaissance Orbiter Project Data Management and Archive Plan, 431-
+PLAN-000182. 
+4. LROC Instrument Team Data Management and Archive Plan, 
+LROC_SOC_PLAN_001, January 5, 2007. 
+
+ 
+8
+5. LROC EDR/CDR/RDR Archive Volume Software Interface Specification, 
+LROC_SOC_SPEC_0002, Version 1.14, May 25, 2018. 
+6. Planetary Data System Data Standards Reference, Version 3.7, JPL D-7669, Part 2, 
+March 20, 2006. 
+7. Planetary Science Data Dictionary Document, JPL D-7116, Rev. E, August 28, 2002. 
+8. Planetary Data System Archive Preparation Guide, Version 1.1, JPL D-31224, 
+August 29, 2006. 
+9. Snyder, J.P. (1987), Map Projections, U.S. Geological Survey Professional Paper 1395.  
+10. Speyerer, E. J., et al. (2013) Persistently illuminated regions at the lunar poles: Ideal 
+sites for future exploration. Icarus, 222(1), 122-136. doi: 
+10.1016/j.icarus.2012.10.010 
+11. Humm, D.C., et al. (2016) Flight Calibration of the LROC Narrow Angle Camera, 
+Space Science Reviews, Vol. 200, Issue 1-4, pp 431–473. doi:10.1007/s11214-015-
+0201-8 
+12. Mahanti, P., et al. (2016) Inflight Calibration of the Lunar Reconnaissance Orbiter 
+Camera Wide Angle Camera, Space Science Reviews, Vol. 200, Issue 1-4, pp 393–430. 
+doi:10.1007/s11214-015-0197-0 
+13. Minnaert, M. (1961) Photometry of the Moon, in Planets and Satellites, ed: G.P. 
+Kuiper, B.M. Middlehurst, p 601 1961 
+14. Hapke, B., (1993) Theory of Reflectance and Emittance Spectroscopy. Cambridge 
+university press.  
+15. Sato, H., (2014) Resolved Hapke parameter maps of the Moon, J. Geophys. Res., 
+Planets doi:10.1002/2013JE004580 
+16. Boyd, A.K. and M.S. Robinson (2017) LROC NAC Photometry: A Global Photometric 
+Function, 3rd Planetary Data Workshop, Abstract #7076. [available at: 
+https://www.hou.usra.edu/meetings/planetdata2017/pdf/7076.pdf ] 
+17. Acton, Jr., C.H., (1996), Ancillary data services of NASA’s Navigation and Ancillary 
+Information Facility, Planet. Space Sci., Vol. 44, No. 1, pp. 65-70. 
+18. Lemoine, F.G., et al. (2014) GRGM900C: A degree 900 lunar gravity model from 
+GRAIL primary and extended mission data, Geophys. Res. Lett. Vol 41, pp 3382–3389. 
+doi:10.1002/2014GL060027 
+19. LRO Project (2008), A Standardized Lunar Coordinate System for the Lunar 
+Reconnaissance Orbiter, LRO Project White Paper, version 4 of May 14 [available at 
+http://lunar.gsfc.nasa.gov/library/451-SCI-000958.pdf.] 
+20. LGCWG (2009), Recommendations for Formatting Large Lunar Datasets, April 28, 
+draft. 
+21. Williams, J.G., Boggs, D.H., Folkner, W.M., 2008. DE421 Lunar Orbit, Physical 
+Librations, and Surface Coordinates. JPL Mem. IOM 335-JW, DB, WF-20080314-001, 
+14 March, Jet Propulsion Lab., Calif. Inst. of Technol., Pasadena, Calif. 
+
+ 
+9
+1.2 Configuration Management 
+The LROC Software Development Team controls this document. Requests for changes to 
+its scope and contents are made to the LROC Science Operations Center Manager, 
+Nicholas Estes. An engineering change request will be evaluated against its impact on the 
+LROC ground data processing system before acceptance.  
+The SIS has undergone a formal PDS peer review where it was determined that the products 
+described herein meet PDS data product standards. Members from the PDS Imaging and 
+Engineering Nodes along with additional members from the planetary science community 
+comprised the review panel. 
+2 Instrument Overview 
+The LROC consists of two narrow-angle cameras (NACs), a wide-angle camera (WAC), 
+and a common Sequence and Compressor System (SCS). 
+Each NAC (see Figure 2.1) has a 700 mm focal-length Cassegrain (Ritchey-Chretien) 
+telescope that images onto a 5,064 pixel charge coupled device (CCD) line-array providing 
+a cross-track field-of-view (FOV) of 2.86°. The NAC readout noise is better than 76 e- and 
+the data are sampled at 12 bits. By ground command, these 12-bit pixel values are 
+companded to 8-bit pixels using one of several selectable piecewise linear mappings during 
+readout from the CCD. The NAC internal buffer holds 256 MB of uncompressed data, 
+enough for a full-resolution image 52,224 lines long (26 km from 50 km orbit). NAC 
+specifications are summarized in Table 2.1. 
+The WAC electronics are a copy of those flown on Mars Climate Orbiter, Mars Polar 
+Lander, Mars Odyssey, and Mars Reconnaissance Orbiter. The WAC (see Figure 2.2) has 
+two lenses imaging onto the same 1,024 x 1,024 pixel, electronically shuttered CCD area-
+array, one imaging in the visible/near infrared (VIS), and the other in the ultraviolet (UV). 
+In monochrome mode, 1,024 x 14 pixels are read out in one visible band (typically 643 
+nm). In color mode, only the center 704 x 14 visible pixels and 512 x 16 UV pixels, which 
+are binned to 128 x 4, are read out for each band. The VIS optics have a cross-track FOV 
+of 89.9° (monochrome) and 61.2° (color), and the UV optics a 58.3° FOV. From an altitude 
+of 50 km, the WAC provides a nadir ground sample distance of 74.6 m/pixel in the visible, 
+and a swath width of 99.9 km (visible monochrome), 59.1 km (visible color) and 55.8 km 
+(UV color). The orbit of LRO has varied throughout the mission (Figure 2.3). After an 
+initial quasi-stable 30x200 km elliptical orbit during the commissioning phase, LRO 
+entered into a quasi-circular 50-km circular orbit from 15 September 2009. To conserve 
+fuel, the spacecraft was then transitioned back into a more stable elliptical orbit on 11 
+December 2011. 
+The seven-band color capability of the WAC is provided by a color filter array (see Figure 
+2.4) mounted directly over the detector, providing different sections of the CCD with 
+different filters. Consequently, the instrument has no moving parts; it acquires data in the 
+seven channels in a “pushframe” mode, with scanning of the WAC FOV provided by 
+motion of the spacecraft and target. Continuous color coverage of the lunar surface is 
+possible by repeated imaging such that each of the narrow framelets of each color band 
+overlap. The WAC has a readout noise less than 72 e- and, as with the NAC, pixel values 
+are digitized to 12 bits and are then companded to 8 bit values through a square-root-like 
+
+ 
+10
+lookup table. WAC specifications are summarized in Table 2.2 and the spectral 
+transmissivity of all seven WAC filters are displayed in Figure 2.5. The two UV bands 
+(321 and 360 nm) undergo 4x4 pixel on-chip analog summing before digitization to achieve 
+better signal-to-noise ratio. Thus, UV pixels are recorded at reduced 385.5 m/pixel 
+sampling at a 50 km orbit but have improved signal properties. WAC band passes are 
+arranged first UV (321, 360) then VIS (415, 566, 604, 643, 689) with respect to the 
+spacecraft’s positive x-axis.  
+The two NACs and the WAC interface with the Sequencing and Compressor System 
+(SCS), the third element of the instrument (see Figure 2.6). As the name implies, the SCS 
+commands individual image acquisition by the NACs and WAC from a stored sequence, 
+and losslessly compresses the NAC and WAC data as they are read out and passed to the 
+spacecraft data system. The SCS provides a single command and data interface between 
+the LROC and the LRO spacecraft data system through a SpaceWire interface.   
+The NACs have a combined mass of 16.4 kg, the WAC a mass of 0.9 kg, and the SCS is 
+1.2 kg, for a total LROC mass of 18.5 kg. Each NAC has a peak power consumption of 
+9.3 W and 6.4 W on average per orbit; the WAC has a peak power consumption of 2.7 W 
+and 2.6 W on average, and the SCS will use 4.0 W on average and 4.5 W peak, for a total 
+LROC power dissipation of 16.5 W peak, 13 W average. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 2.1 - LROC Narrow Angle Camera, 70 cm by 24 cm diameter 
+
+ 
+11
+Table 2.1 - LROC NAC Specifications 
+* Of the 5,064 pixels, 39 masked pixels on the right and 21 masked pixels on the left are 
+used for dark reference. 
+ 
+ 
+ 
+NAC-L 
+NAC-R 
+FOV 
+2.8502° 
+2.8412° 
+IFOV 
+10.0042 rad 
+9.9764 rad 
+Image scale at 50 km altitude 
+0.5 m/pixel 
+Maximum Image size at 50 km 
+altitude 
+2.49 x 26.1 km 
+2.48 x 26.1 km 
+f/# (Ritchey-Chretien) 
+3.577 
+3.590 
+Effective Focal Length 
+699.62 ± 0.08 mm 
+701.57 ± 0.09 mm 
+Distortion coefficient 
+0.0000181 ± 
+0.0000005 
+0.0000183 ± 
+0.0000005 
+Optical center location 
+sample 2,548 ± 8 
+sample 2,496 ± 8 
+Primary Mirror Diameter 
+195 mm 
+MTF (Nyquist) cross, down 
+0.19, 0.23 
+0.18, 0.22 
+Gain 
+98 +/- 5 e-/DN 
+102 +/- 4 e-/DN 
+Noise 
+1.2 +/- 0.2 DN 
+1.1 +/- 0.1 DN 
+Detector fullwell 
+380,000 +/- 20,000 e- 
+380,000 +/- 20,000 e- 
+SNR (400-750 nm) 
+> 48 
+> 39 
+Detector Digitization 
+12 bit, encoded to 8 bits 
+Compression 
+1.7:1 
+Structure + baffle 
+Graphite-cyanate composite 
+Detector 
+Kodak KLI-5001G 
+Pixel format 
+1 x 5,064* 
+Analog/Digital Converter 
+Honeywell ADC9225 
+FPGA 
+Actel RT54SX32-S 
+Voltage 
+28 ± 7V DC 
+Peak Power 
+9.3 W 
+Orbit Average Power 
+6.4 W 
+Mass (both NACs) 
+16.4 kg 
+Volume (length x diameter) 
+118 cm x 27 cm (incl. radiator) 
+
+ 
+12
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Table 2.2 – LROC WAC Specifications 
+ 
+Visible 
+UV 
+FOV (monochrome / color) 
+91.9° / 61.4° 
+59.0° 
+IFOV 
+1.498 mrad 
+7.672 mrad (4x4 binned) 
+Image scale (nadir, 50 km 
+altitude) 
+74.9 m/pixel 
+383.5 m/pixel (binned) 
+Image frame width 
+monochrome 
+104.6 km 
+- 
+Image frame width 7-band 
+color 
+59.6 km 
+56.8 km 
+Image format monochrome 
+1,024 samples x 14 lines 
+- 
+Image format color (for each 
+band) 
+704 samples x 14 lines  
+128 samples x 4 lines 
+(binned) 
+f/# 
+5.052 
+5.65 
+Effective Focal Length 
+6.013 mm 
+4.693 mm 
+Entrance Pupil Diameter 
+1.19 mm 
+0.85 mm 
+System MTF (Nyquist)  
+0.37 
+Figure 2.2 - LROC Wide Angle Camera 
+
+ 
+13
+ 
+Visible 
+UV 
+Gain 
+25.9± 0.7 e-/DN 
+Noise 
+66 ± 4 e- 
+Detector fullwell 
+46,100 ± 3,600 e- 
+Band ± FWHM 
+321 ± 32.3 nm 
+360 ± 14.9 nm 
+415 ± 36.1 nm 
+566 ± 20.1 nm 
+604 ± 20.4 nm 
+643 ± 22.5 nm 
+689 ± 38.6 nm 
+SNR (at 1000 DN) 
+> 150 
+Detector Digitization 
+11 bit, encoded to 8 bits 
+Compression 
+1.7:1 
+Electronics 
+4 circuit boards 
+Detector 
+Kodak KAI-1001 
+Pixel format 
+1,024 x 1,024 
+Voltage 
+28±7 V DC 
+Peak Power 
+2.7 W 
+Orbit Average Power 
+2.6 W 
+Mass 
+0.9 kg 
+Volume (width x length x 
+height) 
+15.8 cm x 23.2 cm x 32.3 cm (incl. radiator) 
+ 
+ 
+ 
+Figure 2.3 - General orbit apoapsides and periapses over time for LRO. 
+
+ 
+14
+ 
+Figure 2.4 - Diagram of LROC Wide Angle Camera filter assembly 
+ 
+
+ 
+15
+ 
+Figure 2.5 - The spectral transmissivity of the 7 WAC filters. The values of the y-axis 
+represent the relative system throughput for each wavelength. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WAC 
+SCS 
+NAC 
+Figure 2.6 - LROC components include the WAC, NAC, and SCS 
+
+ 
+16
+3 Product Overview 
+LROC derived products, summarized in Table 3.1, are organized into four data set types: 
+1) Map-projected single-band basemaps (BDR) derived from NAC and WAC single-band 
+imaging; 2) Map-projected multispectral basemaps (MDR) from WAC seven-band 
+imaging; 3) Special data products (SDP) are higher order derived products such as digital 
+terrain models, mineral abundance maps, and illumination maps; and 4) Extra data products 
+(EXTRA) include products that do not conform to PDS file formats or are not map-
+projected. EXTRAs include NAC anaglyphs, vector maps in the Esri shapefile format and 
+video time-lapse movies of the north and south pole organized in the MPEG-2 and 
+QuickTime video formats. Many products are in directories with more specific names than 
+those provided in Table 3.1 - Product Summary below. This keeps a group of all the 
+associated products (including lower resolution options) together, and allows for one 
+README specific to those products. See Table 6.2 - Hierarchal List of Possible Product 
+Name Elements for more details related to product naming conventions. 
+ 
+Table 3.1 - Product Summary 
+Type 
+Product  
+Name 
+Description 
+Purpose 
+BDR 
+NAC_POLE 
+NAC 1.0 m/pixel uncontrolled best-
+effort mosaics of polar regions 90 to 
+85.5˚ latitude 
+Provide detailed synoptic 
+maps of polar regions 
+BDR 
+NAC_POLE_PSR 
+NAC 20 m/pixel best-effort mosaics 
+of permanently shadowed regions 
+(PSRs) ≥10 km in diameter for each 
+pole. 
+Provide detailed maps of 
+PSRs 
+BDR 
+NAC_ROI 
+NAC high-resolution controlled and 
+semi-controlled image mosaics are 
+created in support of high-priority 
+landing site areas and other regions 
+of interest at 0.5 – 2.0 m/pixel 
+sampling.  
+Support science 
+investigations. Assess meter-
+scale features to facilitate 
+safety analysis of potential 
+landing sites.  
+BDR 
+WAC_GLOBAL 
+WAC monochrome global 
+uncontrolled best-effort basemap 
+mosaic of high-incidence angle 
+imaging (48˚-72˚ at the equator) at 
+100.0 m/pixel scale 
+High-incidence angle 
+imaging supports 
+morphological analysis of the 
+lunar surface  
+BDR 
+WAC_ORBITS 
+WAC monochrome global 
+uncontrolled mosaics at 1 km/pixel 
+scale created from images taken 
+during a single month. 
+Provides information about 
+WAC coverage and views of 
+the surface under illumination 
+conditions that vary each 
+month 
+BDR 
+WAC_ROI 
+Regional WAC monochrome 
+uncontrolled basemap mosaics 
+covering specific regions with 
+internally consistent illumination 
+conditions at 100 m/pixel scale. 
+Illumination conditions for 
+each ROI were selected to 
+facilitate analyses of high 
+scientific interest 
+BDR 
+WAC_MOVIE 
+WAC single-band multi-temporal 
+uncontrolled synoptic mosaics of 
+polar regions at 100 m/pixel scale  
+Identify regions of permanent 
+shadow and permanent or 
+near-permanent illumination 
+over a full lunar year  
+
+ 
+17
+MDR 
+WAC_EMP 
+WAC uncontrolled mosaics at 64 
+pixel/degree (~400 m) for each of 
+the 7 WAC spectral bands, 
+photometrically normalized using 
+an empirically derived photometric 
+function. 
+Supports multispectral 
+analysis of the lunar surface 
+MDR 
+WAC_HAPKE 
+WAC uncontrolled mosaics at 64 
+pixel/degree (~400 m/pixel) for 
+each of the 7 WAC spectral bands, 
+photometrically normalized using 
+Hapke parameter maps  
+Supports multispectral 
+analysis of the lunar surface 
+SDP 
+WAC_HAPKEPARAMMAP 
+Hapke parameter maps in 1°/pixel 
+tiles with 9 parameters for each of 
+the 7 WAC spectral bands 
+Supports multispectral 
+analysis of the lunar surface 
+SDP 
+NAC_DTM 
+NAC Digital Terrain Models 
+(DTM) and orthophotos created 
+from geometric stereo observations 
+at 2-5 m/pixel.  
+Supports high resolution 
+topographic and photometric 
+analysis 
+SDP 
+NAC_PHO 
+Geometrically controlled NAC 
+products for photometric series. 
+Product includes calibrated, map-
+projected image (band 1) and 
+backplanes for incidence (2), 
+emission (3), and phase (4). 
+Controlled images facilitate 
+photometric studies of 
+scientific ROIs 
+SDP 
+WAC_CSHADE 
+Color-shaded relief map of the 
+WAC GLD100 product at 100 
+m/pixel with the LOLA gridded 
+product (originally 30 m/pixel) used 
+for the poles. 
+Supports visualization of 
+lunar topography 
+SDP 
+WAC_GLD100 
+WAC Digital Terrain Model (DTM) 
+constructed from WAC stereo 
+images. This map is called the 
+Global Lunar DTM 100 m 
+topographic model, or "GLD100", 
+and covers 98.2% of the lunar 
+surface.  
+Facilitates map-projection 
+and supports topographic 
+analysis of the Moon 
+SDP 
+WAC_POLE_ILL 
+WAC polar illumination maps 
+constructed from multi-temporal 
+images acquired during a single 
+lunar year at 100 m/pixel extending 
+2° from each pole. 
+Supports identification of 
+PSRs and permanent or near-
+permanent illumination over a 
+full lunar year 
+SDP 
+WAC_TIO2 
+WAC TiO2 abundance map in units 
+of weight % TiO2, derived from 
+Hapke normalized WAC 321/415 
+nm band ratio at 400 m/pixel. 
+Supports compositional 
+analysis 
+EXTRA 
+ANAGLYPH 
+NAC 3-band anaglyph created from 
+geometric stereo observations with 
+the right eye in band 1 and the left 
+eye in bands 2 and 3 in GeoTIFF 
+format. 
+Facilitates visualization of 
+geometric stereo images  
+EXTRA 
+SHAPEFILE 
+Vector maps in Esri shapefile 
+format of key observations and 
+features. 
+Facilitates location of key 
+types of observations and 
+geologic features, as well as 
+supporting geospatial analysis 
+
+ 
+18
+EXTRA 
+ 
+WAC_MOVIE 
+WAC_MOVIE mosaics organized 
+as a movie formatted in the MPEG-
+2 and QuickTime video formats. 
+Identify regions of permanent 
+shadow and permanent or 
+near-permanent illumination 
+over a full lunar year  
+ 
+The BDR and MDR products are mosaics of individual LROC observations that have been 
+radiometrically calibrated, photometrically normalized to standard illumination conditions, 
+and resampled to a standard map projection. Radiometric calibration corrects for varying 
+instrument detector sensitivities, dark current, and nonlinearity, enabling the conversion of 
+pixel values to reflectance. The radiometric calibration is discussed in more detail in 
+section 4.2. Observations that compose a mosaic are typically acquired under varying 
+illumination conditions so a photometric normalization is applied in order to balance the 
+overall brightness of the images. The photometric normalization is discussed in more detail 
+in section 4.3. The basemaps produced by the LROC team are geodetically uncontrolled, 
+except for regional NAC mosaics. This means observations are map-projected using the 
+spacecraft ephemerides and instrument-pointing data provided by the LRO project and a 
+lunar ephemeris, and are not tied to a geodetic control system. A basemap’s positional 
+accuracy is limited by the overall accuracy of these data; however, most WAC images have 
+sub-pixel geodetic accuracy [2]. Geometric processing is described in more detail in section 
+4.5. READMEs (section 3.1) containing specific details on data generation for each product 
+are archived alongside the data.  
+SDPs are higher order, derived products that use non-standard processing. Processing is 
+unique to each type of SDP. This may, but does not necessarily, include standard 
+processing such as radiometric calibration, photometric normalization, and map projection. 
+For specific details on each data product, refer to the README archived alongside the 
+data.  
+The MDR, BDR, and SDP products are formatted and organized according to the LRO 
+Archive Plan [3,4,5] and the PDS standards [6,7,8]. They are stored in the PDS image 
+format convention [6]. 
+3.1 READMEs 
+There are many different types of products archived in the LROC RDR PDS Volume; 
+therefore READMEs in UTF-8 formatting are archived for each data product alongside the 
+data products in the DATA directory and provide specific details about product generation. 
+A README text file contains any additional information about the product and its creation 
+that is not otherwise mentioned in this SIS. This includes information on the naming 
+scheme, a list of images or information on image selection, any available resolutions, and 
+applicable tiling schemes. It will also contain citations for any papers or abstracts 
+describing the product as well as references and links to this SIS. Separate images lists 
+stored at UTF-8 formatted text files may also be archived with the READMEs and data 
+products, especially for datasets derived from a large number of LROC images. 
+3.2 Browse Products 
+The Browse products are reduced-size, easily viewed versions of data products to be used 
+to help identify products of interest. Browse products are intended for viewing purposes 
+only and should not be used for measurement and analysis. The lowest-resolution browse 
+
+ 
+19
+products are stored as 8-bit unsigned integer values (0 to 255) in PNG format and have 
+file names ending .BROWSE.PNG. Additional full-resolution TIFF browse products are 
+also available, primarily created for use with the LROC website.  For very large mosaics, 
+these TIFs may be down-sampled to fit within the size limits of the TIFF format (4 GB). 
+They are stored as 8-bit unsigned integer values (0 to 255) in GeoTIFF and Pyramidal 
+TIFF formats. Masks for null pixels are also available in TIFF format. For products with 
+more than 3 bands, a single band or subset of 3 bands is used to make the browse 
+products. BROWSE products are located in the BROWSE sub-directory inside the 
+EXTRAS directory, due to some incompatibility of the file-formats with PDS3 standards. 
+ 
+4 Product Generation 
+4.1 Map Projection and Layout 
+ 
+LROC digital map products use the Equirectangular and Polar Stereographic map 
+projections [9]. The Polar Stereographic projection, ideal for maps covering polar regions, 
+minimizes scale and shape distortion at high-latitudes. The Equirectangular projection is 
+typically used at middle and lower latitudes. With this projection, all lines of latitude are 
+parallel and evenly spaced; the same is true for lines of longitude. Additional products in 
+Orthographic map projection are available for many of the WAC mosaics. The 
+Orthographic projection is a perspective projection, and depicts a single hemisphere of a 
+sphere. It is primarily included for use in visualizations. The transformation equations for 
+these projections are discussed in Appendix B – Map Projection Equations.  
+Many of the LROC digital basemaps and other large area products are organized into map 
+quadrangles (or tiles) with each quadrangle covering a subarea of the lunar globe. Map 
+quadrangles are then stored as image files where the column and row coordinate of the 
+image array can be translated to a geographic latitude and longitude coordinate through a 
+map transformation equation (see Appendix B – Map Projection Equations). The sizes and 
+areal extents of the map quadrangles are chosen to accommodate a reasonable areal extent 
+while having manageable image file sizes. The quadrangle layouts for the basemap mosaics 
+are summarized below. For specific details on map projection and quadrangle layout as 
+well as other pertinent details, refer to the READMEs that accompany each derived 
+product. 
+4.1.1 NAC Polar Products 
+NAC polar basemap mosaics are organized into quadrangles such that the non-compressed 
+pyramidal TIFFs (included with the Browse products; section 3.2) are less than 4 GB, and 
+the latitude and longitude boundaries are round numbers. At l meter pixel scales, products 
+are organized into 40 quadrangles for each pole covering 90 to 85.5˚ (N or S) latitude and 
+0 to 360˚ longitude as shown in Figure 4.1. The four quadrangles adjacent to the pole cover 
+1.5° of latitude, while each of the other quadrangles cover 1.0˚ of latitude. The longitude 
+range for each quadrangle depends on the latitude coverage. At 1-meter scale the images 
+will typically be about 45,000 x 45,000 pixels or about 2,000 megapixels.  At lower 
+resolutions, mosaics are organized to have similar quadrangle sizes. For the 20-meter 
+scaled NAC_POLE_PSR mosaics of the permanently shadowed regions with a latitude 
+
+ 
+20
+range of 80° (N or S) to the pole, each mosaic is stored as a single quadrangle with a file 
+size of 3.44 GB for the PDS product. The basemaps are available in a Polar Stereographic 
+projection. For the Polar Stereographic projection, the quadrangles share the same 
+reference center latitude (CLAT = ±90.0) and longitude (CLON = 0.0). With a common 
+reference, it is possible to generate composite quadrangles by mosaicking individual 
+quadrangles without the need for reprojection.  
+ 
+ 
+ 
+Figure 4.1 - Quadrangle layout of NAC_POLE basemap with 40 quadrangles covering 
+latitude range 90 - 85.5° at each pole. Quadrangle longitude ranges depend on latitude 
+coverage as shown in the table below. 
+Latitude Range 
+# Quads 
+Quadrangle Longitude Coverage  
+90.0 – 88.5 
+  4 
+  90˚    /  0-90, 90-180, 180-270, 270-360 
+88.5 – 87.5 
+ 8 
+  45˚    /  0-45, 45-90, 90-135, etc. 
+
+ 
+21
+87.5 – 86.5 
+ 12 
+  30˚    /  0-30, 30-60, 60-90, etc. 
+86.5 – 85.5 
+16 
+  22.5°/  0-22.5, 22.5-45, 45-67.5, etc. 
+Total: 
+40 
+ 
+ 
+4.1.2 NAC Regional Products 
+NAC regional products include map-projected derived products such as NAC region of 
+interest (NAC_ROI) basemap mosaics, NAC photometry series (NAC_PHO), and NAC 
+digital terrain models (NAC_DTM). Polar regions and areas with center latitudes above 
+65˚N and below 65°S latitude are mapped to the Polar Stereographic projection. For other 
+latitude regions, the Equirectangular projection is used. To minimize scale and shape 
+distortion, center latitude and longitude are selected to be at the center of the map. The 
+image size of each mosaic will depend on the chosen areal coverage of the mosaic and the 
+pixel scale of the input images. Whenever possible, products are generated at native pixel 
+scales (0.5-2 m/pixel). Because these high-resolution products often create very large files, 
+these NAC_ROI products are also available at 5 meter and 20 meter pixel scales. The long 
+exposure images used to generate products of permanently shadowed regions are much 
+lower resolution and result in 10-20 m/pixel scales. NAC DTMs are generated at a 
+minimum of 3 times the native pixel scale of the input stereo observations (2 – 5 m).  
+ 
+4.1.3 WAC Map Products 
+WAC products are frequently at a pixel scale (up to 100 m/pixel) and of an area that would 
+result in an inconveniently large file if stored as a single image. Therefore, the global WAC 
+tiling scheme consists of 10 quadrangles, 8 covering equatorial regions of the lunar globe 
+and 2 covering the polar regions as shown in Figure 4.2. The quadrangles are chosen so 
+that at 100 m/pixel, the files are < 2 GB. Each equatorial quadrangle has 60˚ of latitude and 
+90˚ longitude coverage mapped into the Equirectangular projection with center reference 
+latitude 0˚ (CLAT = 0.0) and center reference longitude 180˚ (CLON = 180.0). Polar 
+quadrangles have latitudes of 60˚ to the pole with center reference latitude ±90˚ (CLAT = 
+±90.0) and center reference longitude 0˚ (CLON = 0.0) mapped into the Polar 
+Stereographic projection. When orthographic tiles are included, there are six maps in 
+orthographic projections centered every 60° of longitude at 0.0° latitude and two maps in 
+orthographic projections centered at each pole for a global WAC product. This tiling 
+scheme is used for basemap, multispectral, and special data products. Global map products 
+using this tiling scheme include WAC_GLOBAL, WAC_ORBITS, and WAC_CSHADE. 
+For WAC products not covering the entire lunar globe, the same tiling scheme is used, 
+including quadrangle sizes, extents, and map projections. An exception is made if the 
+mosaic does not exceed ±70° in latitude and the pixel scale of the WAC product allows for 
+quadrangle file sizes of 2 GB or less, such as was done for the 400 m/pixel WAC Hapke 
+normalized basemaps (WAC_HAPKE). Often, lower resolution versions of a WAC 
+product are also available, which may have different quadrangle extents. READMEs 
+(section 3.1) provided with each RDR product contains the specific details for pixel scale, 
+included quadrangles, possible lower resolution versions, as well as other pertinent 
+information. 
+
+ 
+22
+ 
+ 
+Figure 4.2 - Quadrangle layout of the WAC_GLOBAL basemap with 8 quadrangles 
+covering -60° to 60° latitude (equatorial region) mapped in the Equirectangular projection 
+and 2 quadrangles in Polar Stereographic projection covering ±60° latitude to the poles. 
+4.1.4 WAC Illumination Movie Products 
+The WAC_MOVIE products, made from the WAC’s 643-nm imaging, are used in the 
+generation of uncontrolled illumination movies at both poles with an average time interval 
+between each frame of approximately two hours. The movie sequence is intended to 
+identify regions of permanent shadow and permanent or near-permanent illumination over 
+a full lunar year. WAC_MOVIE is mapped into the Polar Stereographic projection and 
+scaled at 100-m/pixel with latitude coverage of 80˚ to 90˚. The image dimensions are about 
+6,060 x 6,060 pixels. Approximately 8,700 images are map-projected for each pole. The 
+WAC FOV covers a swath ~100 km wide, resulting in repeat coverage every orbit for the 
+region between 88˚ and 90˚ at each pole. Figure 4.3 shows two WAC footprints taken 156 
+hours apart overlaid on the WAC North Pole basemap (summer). The individual frames 
+for each pole are compiled into a movie sequence formatted in MPEG-2 and QuickTime 
+video formats. PDS3 standards do not exist for video formats so these products are 
+available in the EXTRAS directory of the archive volume of the LROC Derived Data 
+Products.  
+
+ 
+23
+ 
+Figure 4.3 - Two WAC swaths (one shown in blue and one shown in red) taken 156 hours 
+apart at the North Pole. Every orbit has repeat coverage between 88° and 90° latitude [10]. 
+ 
+4.2 Radiometric Calibration Correction 
+Before launch, members of the LROC Instrument Development and Science Team 
+calibrated the NAC and WAC at Malin Space Science Systems. Complete details of the 
+pre-flight derived radiometric calibration corrections can be found in the peer-reviewed 
+publication Lunar Reconnaissance Orbiter Camera (LROC) Instrument Overview [1]. 
+After launch, additional observations were collected and used to further refine the 
+radiometric calibration for each camera. Those results are highlighted in two peer-reviewed 
+papers:  Flight Calibration of the LROC Narrow Angle Camera [11] and Inflight 
+Calibration of the Lunar Reconnaissance Orbiter Camera Wide Angle Camera [12]. 
+
+ 
+24
+Due to the different detector characteristics and formats (NAC’s linear array vs. WAC’s 
+2D array), the approach to apply the radiometric correction differs for the NAC and WAC. 
+During standard processing, the corrections are applied using a series of pipeline 
+procedures that convert the decompanded digital number (DN) value into a calibrated 
+signal in radiance units of W/(cm2srnm).  
+For the NAC, the radiometric calibration correction is expressed with the following 
+equation:   
+, 
+where: 
+Ical(x,τ,T) is the calibrated signal value of pixel x in radiance units of W/(cm2srnm), 
+Iraw(x,τ,T) is the pixel’s raw signal in DN (already decompanded from 8-bit to 12-bit 
+values), 
+τ is the exposure time, 
+m is the mean DN value of the masked pixels, 
+D(x,τ,T) is the library dark image correction array, 
+S(x) is the non-linearity offset array, 
+L(x) is the logistic function value for low-signal non-linearity correction (only if I(x, τ)raw 
+< 400 DN), 
+F(x) is the sensitivity non-uniformity array (flat-field), and 
+r is the spectral responsivity for conversion of DN into radiance units. 
+ 
+For the WAC, the radiometric calibration correction is expressed with the following 
+equation:   
+, 
+where Ical(x,y,f,τ,T) is the calibrated signal of the pixel at position (x,y) in radiance units of 
+W/(cm2srnm), 
+Iraw (x,y,f,τ,T) is the pixel’s raw signal in DN (already decompanded from 8-bit to 11-bit 
+values), 
+f is the filter, 
+τ is the exposure time, 
+T is the temperature, 
+D(x,y,f,τ,T) is the library dark image, 
+N(x,y,f) is non-linearity correction (term above some DN) 
+Ical(x,t,T) = (Iraw(x,t,T) - mI (t,T))-(D(x,t,T) - mD(t,T)) - S(x) - L(x)
+F(x)× t × r
+Ical(x,y, f ,t,T) = Iraw(x,y, f ,t,T) - D(x,y, f ,t,T) + N(x,y, f )
+F(x,y, f )× t × rf
+
+ 
+25
+F(x,y,f) is the sensitivity non-uniformity correction matrix (flat-field), and 
+rf is a filter’s responsivity coefficient to convert DN to radiance 
+Not represented in the correction is the decompanding from 8-bit to 11-bit values. In a 
+further post-processing step the radiometrically calibrated WAC bandpasses of several 
+frames can be combined into a color image of a chosen point on the lunar surface.  
+After the radiometric calibration is applied to a NAC and WAC observation, the radiance 
+values calculated in the previous equations are converted into reflectivity (I/F) [13], with I 
+being the observed radiance depending on the observational geometry and the solar 
+radiance F coming from a normally illuminated Lambertian surface. The I/F term is 
+sometimes referred to as the radiance factor [14] and can be calculated with the following 
+equation: 
+ 
+where, 
+IL is the spectral radiance of the lunar surface  
+d is the Sun-Moon distance (AU) 
+ ΦE is the solar irradiance at 1 AU 
+4.3 Photometric Normalization 
+In addition to radiometric calibration, a photometric normalization is required for most 
+WAC and occasional NAC observations due to variations in viewing and illumination 
+geometries. This process is vital when constructing global and other large-scale mosaics 
+derived from tens to thousands of observations. The photometric normalization for most 
+WAC products is based on the work of Sato et al. [15], while the NAC products are based 
+on Boyd et al. [16]. These processes use the local illumination angles (incidence, emission 
+and phase) of a spherical or topographic model. The photometric correction adjusts the I/F 
+values to a common geometry. 
+4.4 Geometric Processing 
+Following photometric normalization, geometric processing corrects for the optical 
+distortion of the instrument and projects the image from spacecraft viewing orientation to 
+the map projections described in section 4.1 and Appendix B – Map Projection Equations. 
+Geometric processing employs the NAIF Toolkit (http://naif.jpl.nasa.gov) using 
+reconstructed SPICE kernels [17] generated by the LRO project as well as updated 
+ephemeris derived using the gravity fields modeled from the Gravity and Interior 
+Laboratory (GRAIL) mission [18]. Using the best digital terrain model (DTM) available at 
+the time of the production, the geometry processing performs orthorectification wherein 
+the geometric distortion introduced by the varying terrain is minimized. The map-projected 
+products are generally uncontrolled and are not tied to a surface control net so there may 
+be small spatial displacements among the images in the mosaic due to uncertainties in 
+spacecraft pointing and position and lunar ephemeris as found in the SPICE kernels. 
+However, refinement of the camera distortions and relative orientation by Speyerer et al. 
+
+ 
+26
+[2] reduce the displacements to less than 20 m in the NAC and 40 m (sub-pixel) in WAC. 
+During transformation from camera to object space, a cubic convolution resampling is 
+used, unless otherwise mentioned in a product’s README (section 3.1). There are a few 
+types of products that are always controlled, including NAC_DTMs, a majority of 
+NAC_ROIs, and NAC_PHOs. If a product is geometrically controlled, it will be mentioned 
+in the product’s README. 
+4.5 Brightness Equalization 
+The radiometric calibration and photometric normalization processing steps for local NAC 
+mosaics may not be perfect, and as a result, residual brightness differences can exist among 
+neighboring NAC images mosaicked together into a regional mosaic. To minimize the 
+residual brightness differences, an empirical method is employed. Following geometric 
+processing, image statistics (mean and standard deviation) are compiled for each of the 
+overlapping areas of all neighborhood images. Typically, each image in a mosaic might 
+have 1-5 neighbors where there is spatial overlap. Ideally, if the calibration and photometric 
+normalization were perfect then the statistics of the overlap areas would be identical and 
+no additional processing would be required. However, experience shows this situation may 
+not be the case. With the statistics computed for each overlap area, multiplicative 
+adjustments are determined to minimize the brightness differences of the overlap regions. 
+These corrections are then applied to the image collection before the final mosaic assembly. 
+4.6 Mosaicking and Quadrangle Assembly 
+The final step in the processing is to mosaic together the individual map-projected 
+brightness-equalized images that make up a regional mosaic. In this process, an empty 
+image file is initially created. The images that go into the mosaic are then individually 
+placed into the map at the appropriate spatial location. The geometric processing step 
+ensures all of the images in the map have identical scale and map projection parameters. In 
+overlap areas among neighboring images, the last image placed into the mosaic will 
+generally overwrite the common area of the images previously inserted into the mosaic.  
+ 
+5 Standards  
+5.1 PDS Standards 
+The LROC Derived Data products comply with the LRO Archive Plan [3, 4, 5] and the 
+PDS standards [6, 7, 8] for file formats and metadata labels, specifically using the PDS 
+image object.  
+5.2 GeoTIFF Standard 
+The GeoTIFF standard is an extension to the TIFF (Tagged Image File Format) format that 
+contains additional TIFF tags relating the (x, y) Cartesian coordinates to geographic 
+(latitude and longitude) positions on planetary surfaces. GeoTIFF is an industry standard 
+recognized by many Geographic Information Systems (GIS) software packages. The 
+GeoTIFF UUID box is identified by its first sixteen UUID byte values (shown here in 
+hexadecimal notation): B1, 4B, F8, BD, 08, 3D, 4B, 43, A5, AE, 8C, D7, D5, A6, CE, 03. 
+
+ 
+27
+The remainder of the box contains a standard TIFF data set composed of TIFF tags with 
+geospatial reference information derived from the IMAGE_MAP_PROJECTION 
+parameters of the PDS label. The details of the GeoTIFF specification, and other related 
+information, can be found at the Remote Sensing organization GeoTIFF web site 
+(http://www.remotesensing.org/geotiff/). 
+5.3 Data Storage Conventions 
+The LROC derived data products contain binary data. Image pixel values are generally 
+stored as 32-bit floating-point values. Exceptions include stretched versions of products 
+and false color products stored in 8-bit values and WAC GLD100 quadrangles and NAC 
+DTM orthophotos, which are stored in 16-bit signed values. The PDS label sections are 
+stored as ASCII character strings conforming to the requirements defined in the PDS 
+Standards Reference. PDS labels are stored as attached labels for images in PDS image 
+format. Images in the GeoTIFF format and Legends in TIFF format are stored with 
+detached PDS labels. READMEs describing each RDR product and image lists are also 
+stored as UTF-8 character strings. 
+ 
+5.3.1 Reading 16-bit Data 
+Pixel values have been scaled to fit in the 16-bit range. Where pixel values have been 
+stored as 16-bit integers, they must be scaled to recover the original floating-point value. 
+To convert the 16-bit digital number (DN) values back to original units (e.g. radiance 
+factor (I/F)), a multiplicative and additive constant is applied. The SCALING_FACTOR 
+and OFFSET values, found in the PDS label IMAGE object, are used for the conversion. 
+The equation is as follows: 
+ 
+ 
+ORIGINAL UNITS = (DN * SCALING_FACTOR) + OFFSET 
+ 
+ 
+5.4 
+Time Standards 
+LROC labels include time specifications in Coordinated Universal Time (UTC). The UTC 
+has uniform seconds defined by the International Atomic Time, with leap second changes 
+announced at irregular intervals to compensate for the Earth's varying rotation. Processing 
+at the LROC Science Operations Center (SOC) converts onboard spacecraft clock counts 
+to UTC time using the NAIF toolkit [15]. Start and stop times, where provided, refer to the 
+observation acquisition times of the collection of source products used to compile the 
+derived products.  
+5.5 Geodetic and Cartographic Standards 
+The LROC derived products are compatible with the recommendations of the LRO Data 
+Working Group (LDWG) [19] and draft recommendations and mapping conventions 
+identified by the Lunar Geodesy and Cartography Working Group (LGCWG) [20]. The 
+coordinate system used is the mean Earth/polar axis system, using planetocentric latitude 
+and east positive longitude direction. The planetocentric latitude is the angle from the 
+
+ 
+28
+equator to a point on the surface of an oblate planet. The longitude increases from west to 
+east (left to right on an Equirectangular projection). 
+ 
+The planetary constants used in the camera model to produce the LROC derived products 
+are obtained from the NAIF SPICE kernels. The SPICE kernel de421.bsp and associated 
+Euler angles are used for the Moons ephemeris definition [21]. For more information 
+regarding 
+the 
+planetary 
+constants 
+please 
+refer 
+to 
+the 
+NAIF 
+Node 
+at 
+http://naif.jpl.nasa.gov/naif/ 
+ 
+6 Derived Product Specification 
+6.1 Data Volume 
+Table 6.1 - Product summarizes the typical product sizes for each of the product types 
+described in the SIS. The number of products and data volumes may vary as image 
+campaigns are further refined. 
+ 
+Table 6.1 - Product Sizes 
+Product Type 
+Typical 
+Product Size  
+Comments 
+NAC_DTM 
+6.5 GB 
+Map boundaries and areal coverage tailored to 
+study areas. Size is given for the DTM and all 
+associated subproducts. 
+NAC_PHO 
+85 GB 
+Map boundaries and areal coverage tailored to 
+study areas. Size is given for a typical 
+photometric series.  
+NAC_POLE 
+8.5 GB 
+North and South Pole coverage from 90˚ to 
+85.5˚ Latitude. Approximate size for one 
+NAC_POLE quadrangle at 1 m/pixel. 
+NAC_POLE_PSR 
+3.5 GB  
+North and South Pole PSR coverage from 90° 
+to 80° Latitude 
+NAC_PSR 
+5 GB 
+Map boundaries and areal coverage tailored to 
+study areas. 
+NAC_ROI 
+8 GB 
+Map boundaries and areal coverage tailored to 
+study areas. Size given for full-resolution PDS 
+formatted file. 
+WAC_CSHADE 
+100 MB 
+Global coverage in Equirectangular projection. 
+Polar coverage from 90˚ to 60˚ latitude in Polar 
+Stereographic projection. Orthographic 
+coverage is every 60˚ of longitude.  
+WAC_EMP 
+2 GB (304 
+ppd) 
+85 MB (64 
+ppd) 
+Coverage in Equirectangular projection from 
+65°S to 65°N. Size provided for a quadrangle 
+of the high resolution 643 nm band mosaic and 
+the lower resolution mosaics available for each 
+of the 7 bands. 
+
+ 
+29
+WAC_HAPKE 
+139 MB 
+Coverage in Equirectangular projection from 
+70°S to 70°N. Size provided for one 
+quadrangle of a single band mosaic at 400 
+m/pixel. 
+WAC_HAPKEPARAMMAP 
+1.8 MB 
+Coverage in Equirectangular projection from 
+70°S to 70°N. Size provided for the set of 
+Hapke parameters for a single WAC band at 1 
+pixel/degree. 
+WAC_GLD100 
+1 GB 
+Coverage in Equirectangular projection from 
+60°S to 60°N. Polar coverage from 79˚ to 60˚ 
+latitude in Polar Stereographic projection. Size 
+provided for one quadrangle at 100 m/pixel. 
+WAC_GLOBAL 
+2 GB 
+Global coverage in Equirectangular projection. 
+Polar coverage from 90˚ to 60˚ latitude in Polar 
+Stereographic projection. Size provided for a 
+single quadrangle at 100 m/pixel. 
+WAC_MOVIE 
+141 MB 
+ 
+Movie frames spaced ~2 hours over a lunar 
+year. Polar coverage for each pole from 90˚ to 
+80˚. Size provided for a single movie frame (1 
+WAC image). 
+WAC_ORBITS 
+247 MB 
+Global coverage in Equirectangular projection. 
+Size provided for a single mosaic. 
+WAC_POLE_ILL 
+6.5 MB 
+Polar coverage from 90° to 88°. Size provided 
+for a single illumination map at 100 m/pixel. 
+WAC_ROI 
+2.5 GB 
+Coverage in Equirectangular projection from 
+60°S to 60°N. Polar coverage from 90˚ to 60˚ 
+latitude in Polar Stereographic projection. Size 
+provided for a single quadrangle at 100 
+m/pixel. 
+WAC_TIO2 
+139 MB 
+Coverage in Equirectangular projection from 
+70°S to 70°N. Size provided for a single 
+quadrangle. 
+ 
+6.2 Data Validation 
+The LRO Data Working Group (LDWG) oversees and coordinates the validation of 
+instrument team data products for release to the PDS in a process by which the science 
+teams and the PDS participate. The LROC team is responsible for verifying that the 
+products meet their science and engineering objectives and technical specifications 
+identified in the SIS. The PDS Imaging Node verifies that the products conform to this SIS. 
+The LROC team has made data products available to the LROC Data Node starting March 
+15, 2011 and continues to release them every three months as new products are generated. 
+The LROC SOC data processing pipeline includes data validation steps in the processing 
+flow to help ensure engineering and technical specifications for these data are met.   
+ 
+
+ 
+30
+6.3 Product Identification and File Naming Conventions 
+Each LROC derived product is uniquely identified with a product identifier 
+(PRODUCT_ID keyword in PDS labels). The file names are built directly from this unique 
+identifier. The product identifier is constructed using some, but not all, the elements of a 
+ordered list of the element in Table 6.2 for a total character count ≤ 32 characters. Figure 
+6.1 shows examples of how the product IDs are constructed. For example, the NAC_POLE 
+quadrangle centered at 88.0˚ North latitude and 27.0˚ East longitude in the Equirectangular 
+projection would have the product identification "NAC_POLE_E880N0270". The file 
+name for the GeoTIFF or TIFF image product would have the extension ".TIF" and the 
+detached PDS label would have the extension ".LBL". Additional file name examples are 
+shown in Table 6.3. For details specific to each data product, see the README (section 
+3.1) archived alongside the data. 
+ 
+ 
+Table 6.2 - Hierarchal List of Possible Product Name Elements 
+Name Element 
+Comments 
+Instrument 
+Typically WAC or NAC 
+Product_Type 
+See Table 3.1 for examples. These can have underscores.  
+Unique_Attribute 
+Generally related to the site’s name or a short description of the 
+product 
+Band 
+For multispectral Products; formatted as XXXNM or 3BAND, 
+where XXX is the WAC filter. 
+Location 
+Includes projection and center lat/lon information. Formatted as 
+PXXXHxxxx where: 
+• P is the projection (E=equirectangular, P=Polar 
+Stereographic or O=Orthopgraphic) 
+• XXX is the 3 digit representation of center latitude 
+multiplied by 10 to retain the geographic position to the 
+nearest 10th of a degree 
+• H is the center latitude’s hemisphere (N=north and 
+S=south) 
+• xxxx is the 4 digit representation of center longitude, 
+always in 0 to 360, positive east. Center longitude is also 
+multiplied by 10 to retain the geographic position to the 
+nearest 10th of a degree. 
+See Figure 6.1 for examples. Map center here is defined as the 
+center of the product bounding box. 
+
+ 
+31
+Image_Name 
+Derived from the target, mission elapse time, and instrument 
+mode. 
+Resolution 
+1-3 digits followed by a unit of measurement designator: M for 
+meters/pixel, CM for centimeters/pixel, and P for pixels/degree. 
+More_Description 
+Additional descriptor, usually used for sub-products. Examples 
+include CLRSHDE (for colorshade), STRETCH (stretched 
+version), or GRID (gridded version) 
+ 
+
+ 
+32
+ 
+Figure 6.1 - Illustration for how RDR file names are constructed 
+ 
+For temporal products, such as WAC_MOVIE products, the product identification includes 
+a date and time stamp prefaced by the product name (see Figure 6.1). The UTC time of the 
+earliest observation in the mosaic is used in the construction of the file name. An "S" or 
+"N" is inserted in front of the time field to indicate a North or South Pole frame. For 
+example, if a polar movie product at the North pole were created whose earliest observation 
+
+ 
+33
+was at UTC time 2009-11-08T02:30:23.406, then the product identification would be: 
+"WAC_MOVIE_N20091108T0230". 
+ 
+Table 6.3 - Example product identifications for LROC derived products 
+PRODUCT_ID 
+Lat.  
+Center 
+(degrees) 
+Lon. 
+Center 
+(degrees) 
+Description 
+NAC_POLE_SOUTH_README 
+ 
+ 
+README archived with each 
+data product. In this example, 
+the readme belongs with the 
+NAC_POLE_SOUTH polar 
+basemap. The portion of the 
+name that comes before 
+_README will match the 
+name of the data product’s 
+directory  
+WAC_GLOBAL_E300S0450_100M 
+-30.0 
+45.0 
+One of the WAC Global 
+mosaics quadrangles in the 
+Equirectangular Projection at 
+100 m/pixels 
+NAC_POLE_P860N0045 
+86.0 
+4.5 
+One of 40 quadrangles of the 
+NAC high-resolution north 
+polar basemap in the Polar 
+Stereographic projection 
+NAC_POLE_PSR_SOUTH 
+-90 
+0 
+A NAC south pole PSR mosaic 
+in Polar Stereographic 
+projection. 
+WAC_ROI_NORTH_SUMMER_100M 
+90 
+0 
+A WAC North pole summer 
+mosaic in Polar Stereographic 
+projection at 100 m/pixel. 
+NAC_ROI_APOLBASNLOA_E202S1005 
+-37.0 
+206.3 
+A NAC Region of Interest 
+mosaic mapped in the 
+Equirectangular projection with 
+low-Sun. An 8-character region 
+of interest name 
+("APOLBASN" in the example) 
+is included in the file name. 
+NAC_PHO_E190N0050_M1234567890 
+19.0 
+5.0 
+NAC photometry product map 
+in Equirectangular Projection 
+created from the NAC 
+M1234567890 observation. 
+WAC_ORBITS_05360_05788 
+0 
+180 
+Monthly WAC global mosaic of 
+images taken during orbits 5360 
+to 5788. 
+WAC_MOVIE_S20090708T0230 
+-90.0 
+0.0 
+WAC polar movie for the south 
+pole whose first image was 
+acquired on UTC 2009-07-
+08T02:30:23.406. 
+Browse products have the same base name as their data products with file extensions of 
+.BROWSE.PNG for low-resolution PNGs, .TIF for the 8-bit GeoTIFF, .PYR.TIF for the 
+Pyramidal TIFF, and .MASK.TIF for the mask. 
+
+ 
+34
+6.4 PDS labels 
+An example derived product label from the WAC global morphology mosaic quadrangle 
+centered on 30°N and 135°E in PDS form is shown below. Appendix A – PDS Label 
+Definitions provides a definition of each keyword listed. 
+************************ Example PDS Label **************************** 
+ 
+ 
+PDS_VERSION_ID            = PDS3 
+ 
+/* The source image data definition. */ 
+RECORD_TYPE   = FIXED_LENGTH 
+RECORD_BYTES  = 109164 
+FILE_RECORDS  = 18195 
+LABEL_RECORDS = 1 
+^IMAGE        = 2 
+ 
+/* Identification Information  */ 
+DATA_SET_ID               = LRO-L-LROC-5-RDR-V1.0 
+DATA_SET_NAME             = "LRO MOON LROC 5 RDR V1.0" 
+VOLUME_ID                 = LROLRC_2001 
+PRODUCER_INSTITUTION_NAME = "ARIZONA STATE UNIVERSITY" 
+PRODUCER_ID               = LRO_LROC_TEAM 
+PRODUCER_FULL_NAME        = "MARK ROBINSON, PH.D" 
+PRODUCT_ID                = WAC_GLOBAL_E300N1350_100M 
+PRODUCT_VERSION_ID        = v1.2 
+PRODUCT_TYPE              = RDR 
+INSTRUMENT_HOST_NAME      = "LUNAR RECONNAISSANCE ORBITER" 
+INSTRUMENT_HOST_ID        = LRO 
+INSTRUMENT_NAME           = "LUNAR RECONNAISSANCE ORBITER CAMERA" 
+INSTRUMENT_ID             = LROC 
+TARGET_NAME               = MOON 
+MISSION_PHASE_NAME        = ("NOMINAL MISSION", "SCIENCE MISSION") 
+RATIONALE_DESC            = "Created at the request of NASA's Exploration 
+                            Systems Mission Directorate to support future 
+                            human exploration" 
+SOFTWARE_NAME             = "ISIS 3.4.3 with SER enhancements" 
+ 
+/* Time Parameters */ 
+START_TIME                   = "N/A" 
+STOP_TIME                    = "N/A" 
+SPACECRAFT_CLOCK_START_COUNT = "N/A" 
+SPACECRAFT_CLOCK_STOP_COUNT  = "N/A" 
+PRODUCT_CREATION_TIME        = 2015-07-28T02:54:18 
+ 
+/* NOTE:                                                                   */ 
+/* This raster image is composed of a set of pixels that represent finite  */ 
+/* areas, and not discrete points.  The center of the upper left pixel is  */ 
+/* defined as line and sample (1.0,1.0). The                               */ 
+/* [LINE,SAMPLE]_PROJECTION_OFFSET elements are the pixel offset from line */ 
+/* and sample (1.0,1.0) to the map projection origin (defined by the       */ 
+/* CENTER_LATITUDE and CENTER_LONGITUDE elements).  These offset values    */ 
+/* are positive when the map projection origin is to the right or below    */ 
+/* the center of the upper left pixel. This definition was adopted in      */ 
+/* November 2011 by the LROC team.                                         */ 
+ 
+OBJECT = IMAGE_MAP_PROJECTION 
+    ^DATA_SET_MAP_PROJECTION     = DSMAP.CAT 
+    MAP_PROJECTION_TYPE          = EQUIRECTANGULAR 
+    PROJECTION_LATITUDE_TYPE     = PLANETOCENTRIC 
+    A_AXIS_RADIUS                = 1737.4 <KM> 
+    B_AXIS_RADIUS                = 1737.4 <KM> 
+    C_AXIS_RADIUS                = 1737.4 <KM> 
+    COORDINATE_SYSTEM_NAME       = PLANETOCENTRIC 
+    POSITIVE_LONGITUDE_DIRECTION = EAST 
+    KEYWORD_LATITUDE_TYPE        = PLANETOCENTRIC 
+    /* NOTE:  CENTER_LATITUDE and CENTER_LONGITUDE describe the location   */ 
+
+ 
+35
+    /* of the center of projection, which is not necessarily equal to the  */ 
+    /* location of the center point of the image.                          */ 
+    CENTER_LATITUDE              = 0.0 <DEG> 
+    CENTER_LONGITUDE             = 0.0 <DEG> 
+    LINE_FIRST_PIXEL             = 1 
+    LINE_LAST_PIXEL              = 18194 
+    SAMPLE_FIRST_PIXEL           = 1 
+    SAMPLE_LAST_PIXEL            = 27291 
+    MAP_PROJECTION_ROTATION      = 0.0 <DEG> 
+    MAP_RESOLUTION               = 303.23350424149 <PIX/DEG> 
+    MAP_SCALE                    = 100.0 <METERS/PIXEL> 
+    MAXIMUM_LATITUDE             = 59.999966182861 <DEG> 
+    MINIMUM_LATITUDE             = 0.0 <DEG> 
+    EASTERNMOST_LONGITUDE        = 179.99989854858 <DEG> 
+    WESTERNMOST_LONGITUDE        = 89.999949274291 <DEG> 
+    LINE_PROJECTION_OFFSET       = 18193.5 <PIXEL> 
+    SAMPLE_PROJECTION_OFFSET     = -27291.5 <PIXEL> 
+END_OBJECT = IMAGE_MAP_PROJECTION 
+ 
+OBJECT = IMAGE 
+    DESCRIPTION                = "WAC monochrome global mosaic with large 
+                                 incidence angles (53-70 degrees at the 
+                                 equator) to support morphologic 
+                                 interpretations of the lunar surface (see 
+                                 [SPEYERERETAL2011]). Simple Cylindrical 
+                                 projection tile of the north-western quadrant 
+                                 of the far side at 100 m/px."  
+    LINES                      = 18194 
+    LINE_SAMPLES               = 27291 
+    SAMPLE_TYPE                = PC_REAL 
+    SAMPLE_BITS                = 32 
+    SAMPLE_BIT_MASK            = 2#11111111111111111111111111111111# 
+    CORE_NULL                  = 16#FF7FFFFB# 
+    CORE_LOW_REPR_SATURATION   = 16#FF7FFFFC# 
+    CORE_LOW_INSTR_SATURATION  = 16#FF7FFFFD# 
+    CORE_HIGH_REPR_SATURATION  = 16#FF7FFFFF# 
+    CORE_HIGH_INSTR_SATURATION = 16#FF7FFFFE# 
+ 
+    BAND_STORAGE_TYPE          = BAND_SEQUENTIAL 
+    BANDS                      = 1 
+    CENTER_FILTER_WAVELENGTH   = 643 
+    FILTER_NAME                = "643" 
+    BANDWIDTH                  = 23 
+ 
+ 
+END_OBJECT = IMAGE 
+END 
+ 
+ 
+ 
+ 
+ 
+
+ 
+36
+Appendix A – PDS Label Definitions 
+ 
+Table A – Definition of keywords used in the LROC Product Labels 
+Keyword 
+Definition 
+PDS_VERSION_ID 
+Always "PDS3", the version number of the PDS 
+standards used in the construction of the labels. 
+ 
+DATA_SET_ID 
+"LRO-L-LROC-3-RDR-V1.0" 
+ 
+The DATA_SET_ID element is a unique alphanumeric 
+identifier for a data set or a data product. The 
+value for a given data set or product is 
+constructed according to flight project naming 
+conventions.  
+ 
+DATA_SET_NAME 
+" LRO MOON LROC 5 RDR V1.0" 
+ 
+The DATA_SET_NAME element provides the full name 
+given to a data set or a data product.  
+ 
+PRODUCER_INSTITUTION_NAME 
+"ARIZONA STATE UNIVERSITY", “UNIVERSITY OF 
+ARIZONA”, or “German Aerospace Center (DLR)” 
+ 
+The PRODUCER_INSTITUTION_NAME element identifies 
+university, research center, NASA center or other 
+institution associated with the production of a 
+data set. 
+ 
+PRODUCER_ID 
+LRO_LROC_TEAM 
+ 
+The PRODUCER_ID element provides a short name or 
+acronym for the producer or producing team/group 
+of a data set. 
+ 
+PRODUCER_FULL_NAME 
+“MARK ROBINSON, PH.D” 
+ 
+The PRODUCER_FULL_NAME element provides the full 
+name of the individual mainly responsible for the 
+production of a data set. 
+ 
+PRODUCT_ID 
+The PRODUCT_ID data element represents a 
+permanent, unique identifier assigned to a data 
+product by its producer.  
+ 
+PRODUCT_VERSION_ID 
+The PRODUCT_VERSION_ID element identifies the 
+version of an individual product within a data 
+set.  
+ 
+INSTRUMENT_HOST_NAME 
+Always "LUNAR RECONNAISSANCE ORBITER" 
+ 
+The INSTRUMENT_HOST_NAME element provides the 
+full name of the host on which an instrument is 
+based. This host can be either a spacecraft or an 
+Earth base. 
+ 
+INSTRUMENT_HOST_ID 
+Always "LRO" 
+ 
+The INSTRUMENT_HOST_ID element provides a unique 
+identifier for the host where an instrument is 
+mounted. 
+ 
+INSTRUMENT_NAME 
+Always "LUNAR RECONNAISSANCE ORBITER CAMERA" 
+ 
+The INSTRUMENT_NAME element provides the full 
+name of an instrument. 
+ 
+INSTRUMENT_ID 
+Always "LROC" 
+
+ 
+37
+ 
+The INSTRUMENT_ID element provides an abbreviated 
+name or acronym that identifies an instrument. 
+ 
+TARGET_NAME 
+"MOON", "EARTH", etc.  
+ 
+The TARGET_NAME element identifies the primary 
+target of the observation.  
+ 
+MISSION_PHASE_NAME 
+"COMMISSIONING", “NOMINAL MISSION”, “SCIENCE 
+MISSION”, “EXTENDED SCIENCE MISSION”, “SECOND 
+EXTENDED SCIENCE MISSION”, or “THIRD EXTENDED 
+SCIENCE MISSION” 
+ 
+The MISSION_PHASE_NAME element provides the 
+commonly used identifier of a mission phase. 
+ 
+SOURCE_PRODUCT_ID 
+The SOURCE_PRODUCT_ID data element identifies a 
+product used as input to create a new product.  
+ 
+RATIONALE_DESC 
+The RATIONALE_DESC element describes the 
+rationale for the provided product. 
+ 
+SOFTWARE_NAME  
+The SOFTWARE_NAME element identifies data 
+processing software such as a program or a 
+program library. 
+ 
+START_TIME 
+For LROC mosaic products this is the START_TIME 
+of the earliest acquired observation in the 
+mosaic. The time is in the UTC system, formatted 
+as:  
+YYYY-MM-DDThh:mm:ss.fff. 
+ 
+SPACECRAFT_CLOCK_START_COUNT 
+Always "N/A" 
+ 
+This required keyword is not applicable for LROC 
+mosaic products. 
+ 
+STOP_TIME 
+For LROC mosaic products, this is the STOP_TIME 
+of the latest acquired observation in the mosaic. 
+The time is in the UTC system, formatted as:  
+YYYY-MM-DDThh:mm:ss.fff. 
+ 
+SPACECRAFT_CLOCK_STOP_COUNT 
+Always "N/A" 
+ 
+This required keyword is not applicable for LROC 
+mosaic products. 
+ 
+PRODUCT_CREATION_TIME 
+The PRODUCT_CREATION_TIME element defines the UTC 
+system format time when a product was created, 
+formatted as: YYYY-MM-DDThh:mm:ss.fff. 
+ 
+IMAGE_MAP_PROJECTION 
+Object within label 
+^DATA_SET_MAP_PROJECTION 
+The DATA_SET_MAP_PROJECTION object is one of two 
+distinct objects that define the map projection 
+used in creating the digital images in a PDS data 
+set. The name of other associated object that 
+completes the definition is called 
+IMAGE_MAP_PROJECTION. The map projection 
+information resides in these two objects, 
+essentially to reduce data redundancy and at the 
+same time allow the inclusion of elements needed 
+to process the data at the image level. Static 
+information applicable to the complete data set 
+resides in the DATA_SET_MAP_PROJECTION object, 
+while dynamic information that is applicable to 
+the individual images resides in the 
+IMAGE_MAP_PROJECTION object. The 
+DATA_SET_MAP_PROJECTION object is to be included 
+in an Archive Quality Data Product Label, and 
+
+ 
+38
+used to load the map projection catalog data into 
+a PDS Catalog. 
+ 
+MAP_PROJECTION_TYPE 
+"EQUIRECTANGULAR", "POLAR STEROGRAPHIC", or 
+“ORTHOGRAPHIC” 
+ 
+The MAP_PROJECTION_TYPE element identifies the 
+type of projection characteristic of a given map. 
+PROJECTION_LATITUDE_TYPE 
+"PLANETOCENTRIC" 
+ 
+Identifies the type of latitude that is sampled 
+in equal increments by successive image lines.  
+ 
+A_AXIS_RADIUS 
+1737.4 <KM> 
+ 
+The A_AXIS_RADIUS element provides the value of 
+the semimajor axis of the ellipsoid that defines 
+the approximate shape of a target body. 'A' is 
+usually in the equatorial plane. 
+ 
+B_AXIS_RADIUS 
+1737.4 <KM> 
+ 
+The B_AXIS_RADIUS element provides the value of 
+the intermediate axis of the ellipsoid that 
+defines the approximate shape of a target body. 
+'B' is usually in the equatorial plane. 
+ 
+C_AXIS_RADIUS 
+1737.4 <KM> 
+ 
+The C_AXIS_RADIUS element provides the value of 
+the semiminor axis of the ellipsoid that defines 
+the approximate shape of a target body. 'C' is 
+normal to the plane defined by 'A' and 'B'. 
+ 
+COORDINATE_SYSTEM_NAME 
+PLANETOCENTRIC 
+ 
+The COORDINATE_SYSTEM_NAME element provides the 
+full name of the coordinate system to which the 
+state vectors are referenced. PDS has currently 
+defined body-fixed rotating coordinate systems. 
+    
+The Planetocentric system has an origin at the 
+center of mass of the body. The planetocentric 
+latitude is the angle between the equatorial 
+plane and a vector connecting the point of 
+interest and the origin of the coordinate system. 
+Latitudes are defined to be positive in the 
+northern hemisphere of the body, where north is 
+in the direction of Earth's angular momentum 
+vector (i.e., pointing toward the hemisphere 
+north of the solar system invariant plane). 
+Longitudes increase toward the east making the 
+Planetocentric system right-handed. 
+ 
+Note that the reference coordinate system used is 
+the mean Earth/polar axis system. 
+    
+POSITIVE_LONGITUDE_DIRECTION 
+"EAST" 
+ 
+The POSITIVE_LONGITUDE_DIRECTION element 
+identifies the direction of longitude (e.g. EAST, 
+WEST) for a body. 
+ 
+KEYWORD_LATITUDE_TYPE 
+"PLANETOCENTRIC" 
+ 
+Identifies the type of latitude (planetographic 
+or planetocentric) used in the labels (e.g., for 
+the maximum, minimum, center, reference, and 
+standard-parallel latitudes). 
+
+ 
+39
+ 
+ 
+CENTER_LATITUDE 
+The CENTER_LATITUDE element provides the 
+reference latitude of the map projection. The 
+MAP_SCALE (or MAP_RESOLUTION) is typically 
+defined at the CENTER_LATITUDE and 
+CENTER_LONGITUDE of the map projection.  
+ 
+CENTER_LONGITUDE 
+The CENTER_LONGITUDE element provides a reference 
+longitude for certain map projections. For 
+example, in an Orthographic projection, the 
+CENTER_LONGITUDE, along with the CENTER_LATITUDE, 
+defines the point or tangency between the sphere 
+of the planet and the plane of the projection. 
+The MAP_SCALE (or MAP_RESOLUTION) is typically 
+defined at the CENTER_LATITUDE and 
+CENTER_LONGITUDE. In unprojected images, 
+CENTER_LONGITUDE represents the longitude at the 
+center of the image frame. 
+ 
+LINE_FIRST_PIXEL 
+The LINE_FIRST_PIXEL element provides the line 
+(row) index for the first pixel that was 
+physically recorded at the beginning of the image 
+array. Note: For a fuller explanation on the use 
+of this data element in the Image Map Projection 
+Object, please refer to the PDS Standards 
+Reference.  
+ 
+LINE_LAST_PIXEL 
+The LINE_LAST_PIXEL element provides the line 
+(rows) index for the last pixel that was 
+physically recorded at the end of the image 
+array. Note: For a fuller explanation on the use 
+of this data element in the Image Map Projection 
+Object, please refer to the PDS Standards 
+Reference. 
+ 
+SAMPLE_FIRST_PIXEL 
+The SAMPLE_FIRST_PIXEL element provides the 
+sample (column) index for the first pixel that 
+was physically recorded at the beginning of the 
+image array. Note: For a fuller explanation on 
+the use of this data element in the Image Map 
+Projection Object, please refer to the PDS 
+Standards Reference. 
+ 
+SAMPLE_LAST_PIXEL 
+The SAMPLE_LAST_PIXEL element provides the sample 
+(column) index for the last pixel that was 
+physically recorded at the end of the image 
+array. Note: For a fuller explanation on the use 
+of this data element in the Image Map Projection 
+Object, please refer to the PDS Standards 
+Reference. 
+ 
+MAP_PROJECTION_ROTATION 
+Always 0.0 
+ 
+The MAP_PROJECTION_ROTATION element provides the 
+clockwise rotation, in degrees, of the line and 
+sample coordinates with respect to the map 
+projection origin (LINE_PROJECTION_OFFSET, 
+LINE_PROJECTION_OFFSET). 
+ 
+MAP_RESOLUTION 
+The MAP_RESOLUTION element identifies the 
+resolution of a map in pixels/degree at the 
+center latitude and longitude of the projection.  
+ 
+MAP_SCALE 
+The MAP_SCALE element identifies the scale of a 
+given map in meters/pixel at the center latitude 
+and longitude of the projection. 
+ 
+
+ 
+40
+MAXIMUM_LATITUDE 
+The MAXIMUM_LATITUDE element specifies the 
+northernmost latitude of the map. 
+ 
+MINIMUM_LATITUDE 
+The MINIMUM_LATITUDE element specifies the 
+southernmost latitude of a spatial area, such as 
+a map, mosaic, bin, feature, or region. 
+ 
+LINE_PROJECTION_OFFSET 
+The LINE_PROJECTION_OFFSET element provides the 
+line offset value of the map projection origin 
+position from the line and sample 1,1 (line and 
+sample 1,1 is considered the upper left corner of 
+the upper left pixels of the digital array) Note: 
+that the positive direction is to the right and 
+down. 
+ 
+SAMPLE_PROJECTION_OFFSE0T 
+The SAMPLE_PROJECTION_OFFSET element provides the 
+sample offset value of the map projection origin 
+position from line and sample 1,1 (line and 
+sample 1,1 is considered the upper left corner of 
+the digital array). Note: that the positive 
+direction is to the right and down. 
+ 
+EASTERNMOST_LONGITUDE 
+The following definitions describe easternmost 
+longitude for the body-fixed, rotating coordinate 
+systems: 
+ 
+For Planetocentric coordinates and for 
+Planetographic coordinates in which longitude 
+increases toward the east, the easternmost 
+(rightmost) longitude of a spatial area (e.g., a 
+map, mosaic, bin, feature or region) is the 
+maximum numerical value of longitude unless it 
+crosses the Prime Meridian. 
+ 
+WESTERNMOST_LONGITUDE 
+The following definitions describe westernmost 
+longitude for the body-fixed, rotating coordinate 
+systems: 
+ 
+For Planetocentric coordinates and for 
+Planetographic coordinates in which longitude 
+increases toward the east, the westernmost 
+(leftmost) longitude of a spatial area (e.g., a 
+map, mosaic, bin, feature or region) is the 
+minimum numerical value of longitude unless it 
+crosses the Prime Meridian. 
+ 
+IMAGE 
+Object within label 
+DESCRIPTION 
+Description of the product.  
+ 
+LINES 
+Number of image lines (rows) in the image object. 
+ 
+LINE_SAMPLES 
+Number of samples (columns) per image line. This 
+dimension is the most rapidly varying dimension 
+of the image array. 
+ 
+BANDS 
+Number of bands. 
+ 
+SAMPLE_TYPE 
+“PC_REAL”, "LSB_UNSIGNED_INTEGER" 
+ 
+Sample or pixel type.  
+ 
+SAMPLE_BITS 
+32, 16, or 8: number of bits per sample or pixel. 
+ 
+SAMPLE_BIT_MASK 
+Always 2#1111111111111111# 
+ 
+The SAMPLE_BIT_MASK element identifies the active 
+bits in each sample. Note: The domain of 
+
+ 
+41
+SAMPLE_BIT_MASK is dependent upon the currently 
+described value in the SAMPLE_BITS element and 
+only applies to integer values. 
+ 
+SCALING_FACTOR 
+The SCALING_FACTOR and OFFSET elements provide 
+the constant values by which the stored pixel 
+values are converted to their original units 
+(i.e. I/F or elevation) 
+Note: Expressed as an equation: true value = 
+offset value + (scaling factor x stored value).  
+ 
+OFFSET 
+See SCALING_FACTOR keyword above. 
+ 
+BAND_STORAGE_TYPE 
+Always "BAND_SEQUENTIAL" 
+ 
+The BAND_STORAGE_TYPE element indicates the 
+storage sequence of lines, samples and bands in 
+an image. The values describe, for example, how 
+different samples are interleaved in image lines, 
+or how samples from different bands are arranged 
+sequentially. Example values: "BAND SEQUENTIAL", 
+"SAMPLE INTERLEAVED", "LINE INTERLEAVED". 
+ 
+CENTER_FILTER_WAVELENGTH 
+The CENTER_FILTER_WAVELENGTH element provides the 
+middle point wavelength value between the minimum 
+and maximum instrument filter wavelength values. 
+ 
+CORE_NULL 
+The CORE_NULL element identifies a special value 
+whose presence indicates missing data. 
+ 
+CORE_LOW_REPR_SATURATION 
+The CORE_LOW_REPR_SATURATION element identifies a 
+special value whose presence indicates the true 
+value cannot be represented in the chosen data 
+type and length. 
+ 
+CORE_LOW_INSTR_SATURATION 
+The CORE_LOW_INSTR_SATURATION element identifies 
+a special value whose presence indicates the 
+measuring instrument was saturated at the low 
+end. 
+ 
+CORE_HIGH_REPR_SATURATION 
+The CORE_HIGH_REPR_SATURATION element identifies 
+a special value whose presence indicates the true 
+value cannot be represented in the chosen data 
+type and length. 
+ 
+CORE_HIGH_INSTR_SATURATION 
+The CORE_HIGH_INSTR_SATURATION element identifies 
+a special value whose presence indicates the 
+measuring instrument was saturated at the high 
+end. 
+ 
+FILTER_NAME 
+WAC band pass: 321, 360, 415, 566, 604, 643, 
+and/or 689; NAC: BROADBAND 
+ 
+The FILTER_NAME element provides the commonly 
+used name of the instrument filter through which 
+an image or measurement was acquired or which is 
+associated with a given instrument mode. 
+ 
+BANDWIDTH 
+The BANDWIDTH element provides a measure of the 
+spectral width of a filter or channel.  
+ 
+BAND_NAME 
+The BAND_NAME is the name given to a single band 
+in a multi-band image.  
+ 
+Note: Keyword is used for multi-band files that 
+contain non-spectral bands. Examples include: 
+
+ 
+42
+Local Incidence Angle, Phase Angle, w (Hapke 
+parameter), and phi (Hapke parameter). 
+ 
+ 
+ 
+ 
+
+ 
+43
+Appendix B – Map Projection Equations 
+ 
+ 
+Equirectangular Projection 
+The Equirectangular projection is based on the formula for a sphere. To eliminate 
+confusion in the IMAGE_MAP_PROJECTION object we have set all three values, 
+A_AXIS_RADIUS, B_AXIS_RADIUS, and C_AXIS_RADIUS to the same number, 
+which is R below.  
+ 
+The Equirectangular projection [9] is a simple projection providing a linear relationship 
+between the geographic coordinates of latitude and longitude and the Cartesian space of 
+the map. In continuous form, the equations relating map coordinates (x, y) to geographic 
+coordinates (Lat, Lon) are:  
+ 
+ 
+x = R·(Lon-LonP)·COS(LatP)  
+ 
+ 
+y = R·Lat 
+ 
+where LonP is the center longitude of the map projection, LatP is the center latitude of 
+the projection at which scale is given, and R the radius of the body. For the Moon R is 
+assumed to be 1734.4 km [19].  
+  
+The inverse formulas for Lat and Lon from x and y position in the projection are:  
+ 
+ 
+Lat = y/R 
+ 
+ 
+Lon = LonP + x/(R·COS(LatP)) 
+ 
+The Conversion from (x, y) map coordinates to image array coordinates (sample, line) is 
+standard for all map projections and is: 
+ 
+ 
+x      = (Sample-S0)·Scale 
+ 
+ 
+y      = (-L0-Line)·Scale 
+ 
+where "Scale" is the map resolution in km/pixel (located at the center planetocentric 
+latitude of the projection). "Line" and "Sample" are the coordinates of the image array, and 
+line (L0) and sample offsets (S0) are the respective image coordinate displacements from 
+pixel (1,1) to the origin of the projection (x,y) = (0,0). Please note, pixel (1,1) is spatially 
+located in the upper-left corner of the image array.  
+ 
+The equations from (x, y) to (Sample, Line) are: 
+ 
+ 
+Sample      = x/Scale+S0+1 
+ 
+ 
+Line        = -y/Scale-L0+1 
+ 
+
+ 
+44
+The equation from (Sample, Line) to (Lat, Lon) is: 
+ 
+ 
+Lat = y/R 
+ 
+y   = (1-L0-Line)·Scale 
+ 
+Lat = (1-L0-Line)·Scale/R 
+ 
+ 
+Lon = LonP + x/(R·COS(LatP)) 
+ 
+x   = (Sample-S0-1)·Scale 
+ 
+Lon = LonP + (Sample-S0-1)·Scale/(R·COS(LatP)) 
+ 
+The keywords corresponding to the Equirectangular projection parameters are located in 
+the IMAGE_MAP_PROJECTION object found in the PDS labels. The keywords for each 
+equation parameter are shown below 
+ 
+Table B - PDS Keywords for corresponding 
+Equirectangular projection equation parameters 
+Equation 
+Keyword 
+LonP 
+CENTER_LONGITUDE 
+LatP 
+CENTER_LATITUDE 
+L0 
+LINE_PROJECTION_OFFSET 
+S0 
+SAMPLE_PROJECTION_OFFSET 
+Scale 
+MAP_SCALE 
+R 
+A_AXIS_RADIUS (same as 
+B_AXIS_RADIUS and C_AXIS_RADIUS) 
+ 
+Polar Stereographic Projection 
+The Polar Stereographic projection [9], used for observations acquired at higher latitudes, 
+is ideally suited for observations near the poles as shape and scale distortion are minimized. 
+The LROC derived products in Polar Stereographic projection use the ellipsoid form of the 
+equations.  
+ 
+In continuous form, the spherical equations relating map coordinates (x, y) to 
+planetocentric coordinates (Lat, Lon) are: 
+ 
+North Polar Stereographic: 
+ 
+ 
+x =  2·R·TAN(Pi/4-Lat/2)·SIN(Lon-LonP) 
+ 
+ 
+y = -2·R·TAN(Pi/4-Lat/2)·COS(Lon-LonP) 
+ 
+South Polar Stereographic: 
+ 
+ 
+x =  2·R·TAN(Pi/4+Lat/2)·SIN(Lon-LonP) 
+ 
+ 
+y =  2·R·TAN(Pi/4+Lat/2)·COS(Lon-LonP) 
+ 
+ 
+
+ 
+45
+Where LonP is the central longitude, LatP is the latitude of true scale and is always 90 or -
+90, and R is the polar radius of the Moon, or 1,737.4 km [19]. 
+ 
+The spherical inverse formulas for Lat and Lon from X and Y position in the image array 
+are:  
+ 
+ 
+Lat = ARCSIN[COS(C)·SIN(LatP)+y·SIN(C)·COS(LatP)/P] 
+ 
+North Polar Stereographic: 
+ 
+ 
+Lon = LonP + ARCTAN[x/(-y)] 
+ 
+South Polar Stereographic: 
+ 
+ 
+Lon = LonP + ARCTAN[x/y] 
+ 
+where: 
+ 
+P = SQRT(x2 + y2) 
+       
+C =2·ARCTAN(P/2*R) 
+ 
+recall: 
+ 
+ 
+x = (Sample-S0-1)·Scale 
+ 
+y = (1-L0-Line)·Scale 
+ 
+The keywords corresponding to the equation parameters for the Polar Stereographic 
+projection are located in the IMAGE_MAP_PROJECTION object found in the PDS labels. 
+The keywords for each equation parameter are shown above. 
+ 
+Orthographic Projection 
+The Orthographic projection is based on the formula for a sphere. To eliminate confusion 
+in the IMAGE_MAP_PROJECTION object we have set all three values, 
+A_AXIS_RADIUS, B_AXIS_RADIUS, and C_AXIS_RADIUS to the same number, 
+which is R below.  
+ 
+The Orthographic projection [9] is a perspective azimuthal projection. It is not very useful 
+for measurements with severe distortion near the edges in both area and shape, but it is 
+commonly used for pictorial representations. In continuous form, the equations relating 
+map coordinates (x, y) to geographic coordinates (Lat, Lon) are:  
+ 
+x = R COS(Lon) SIN(Lon – LonP) 
+y = R[COS(LatP)SIN(Lat) – SIN(LatP)COS(Lat)COS(Lon-LonP) 
+ 
+where LonP is the center longitude of the map projection, LatP is the center latitude of 
+the projection, and R the radius of the body. For the Moon R is assumed to be 1,737.4 km 
+[19].  
+  
+The inverse formulas for Lat and Lon from x and y position in the projection are:  
+
+ 
+46
+Lat = ARCSIN[COS(c)SIN(LatP) + (y SIN(c)COS(LatP/ρ)] 
+ 
+If LatP is not ±90°: 
+Lon = LonP + ARCTAN[x SIN(c)/(ρ COS(LatP)COS(c) – y SIN(LonP)SIN(c)] 
+ 
+If LatP is 90°: 
+ 
+Lon = LonP + ARCTAN[x/-y] 
+ 
+If LatP is -90°: 
+ 
+Lon = LonP + ARCTAN(x/y) 
+ 
+Where: 
+ 
+ρ = SQRT(x2 + y2) 
+ 
+c = 2ARCTAN(ρ/2R) 
+ 
+recall: 
+ 
+ 
+x      = (Sample-S0)·Scale 
+ 
+ 
+y      = (-L0-Line)·Scale 
+ 
+The keywords corresponding to the equation parameters for the Orthographic projection 
+are located in the IMAGE_MAP_PROJECTION object found in the PDS labels. The 
+keywords for each equation parameter are shown above. 

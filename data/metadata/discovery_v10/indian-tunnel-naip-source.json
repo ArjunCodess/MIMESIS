@@ -1,0 +1,104 @@
+{
+  "source_service": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer",
+  "request": {
+    "f": "json",
+    "bbox": "295000,4812600,295650,4813400",
+    "bboxSR": 26912,
+    "imageSR": 26912,
+    "size": "1084,1334",
+    "format": "tiff",
+    "pixelType": "U8",
+    "interpolation": "RSP_NearestNeighbor",
+    "bandIds": "0,1,2,3",
+    "adjustAspectRatio": "false",
+    "mosaicRule": "{\"mosaicMethod\": \"esriMosaicLockRaster\", \"lockRasterIds\": [48953, 48955]}"
+  },
+  "export_response": {
+    "href": "https://imagery.nationalmap.gov/arcgis/rest/directories/imagery_output/USGSNAIPImagery_ImageServer/_ags_a84608b3_55a9_4e36_8507_54279b5200ea.tif",
+    "width": 1084,
+    "height": 1334,
+    "extent": {
+      "xmin": 295000,
+      "ymin": 4812600,
+      "xmax": 295650,
+      "ymax": 4813400,
+      "spatialReference": {
+        "wkid": 26912,
+        "latestWkid": 26912
+      }
+    },
+    "scale": 0
+  },
+  "source_frames": [
+    {
+      "OBJECTID": 48953,
+      "Name": "m_4311336_ne_12_060_20210619",
+      "MinPS": 0,
+      "MaxPS": 19.1,
+      "Category": 1,
+      "CenterX": -12638246.00335012,
+      "CenterY": 5383598.134008201,
+      "State": "ID",
+      "Year": 2021,
+      "raster_name": "m_4311336_ne_12_060_20210619",
+      "download_url": "https://earthexplorer.usgs.gov/download/options/naip/3126177",
+      "acquisition_date": 1624060800000,
+      "agency": "USDA",
+      "vendor": "USDA-FSA-APFO",
+      "resolution_value": 0.6,
+      "resolution_units": "METER",
+      "band_count": 4,
+      "sensor_type": "CNIR",
+      "projection_name": "UTM",
+      "projection_zone": "12N",
+      "datum": "NAD83"
+    },
+    {
+      "OBJECTID": 48955,
+      "Name": "m_4311336_se_12_060_20210619",
+      "MinPS": 0,
+      "MaxPS": 19.1,
+      "Category": 1,
+      "CenterX": -12638244.617267951,
+      "CenterY": 5374015.738780132,
+      "State": "ID",
+      "Year": 2021,
+      "raster_name": "m_4311336_se_12_060_20210619",
+      "download_url": "https://earthexplorer.usgs.gov/download/options/naip/3126179",
+      "acquisition_date": 1624060800000,
+      "agency": "USDA",
+      "vendor": "USDA-FSA-APFO",
+      "resolution_value": 0.6,
+      "resolution_units": "METER",
+      "band_count": 4,
+      "sensor_type": "CNIR",
+      "projection_name": "UTM",
+      "projection_zone": "12N",
+      "datum": "NAD83"
+    }
+  ],
+  "path": "data/raw/discovery_v10/earth/IndianTunnel_NAIP2021_service_crop.tif",
+  "sha256": "4343210a6d4aa1507b57ecc6c70de1ffc2f9094ca972f63fc211bd72ff8e7482",
+  "qa": {
+    "crs_wkt": "PROJCS[\"NAD83 / UTM zone 12N\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101004,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-111],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"26912\"]]",
+    "bounds": [
+      295000.0,
+      4812600.0,
+      295650.0,
+      4813400.0
+    ],
+    "pixel_spacing_m": [
+      0.5996309963099631,
+      0.5997001499250375
+    ],
+    "bands": 4,
+    "valid_mask_fraction": 1.0
+  },
+  "exposure": "calibration source; inspected before any nominations or validation freeze",
+  "limits": [
+    "Service-generated resampled crop, not a native original frame.",
+    "Image validity does not distinguish shadows, vegetation or anthropogenic surfaces.",
+    "Two neighbouring frames from one acquisition do not constitute independent validation cases.",
+    "No rim has yet been delineated or independently validated."
+  ]
+}

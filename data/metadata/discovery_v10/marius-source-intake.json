@@ -1,0 +1,36 @@
+[
+  {
+    "body": "moon_marius",
+    "catalogue": "https://data.lroc.im-ldi.com/lroc/view_rdr_product/NAC_DTM_MARIUSPIT01",
+    "assets": [
+      {
+        "url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/MARIUSPIT01/NAC_DTM_MARIUSPIT01.LBL",
+        "path": "data\\raw\\discovery_v10\\moon_marius\\NAC_DTM_MARIUSPIT01.LBL",
+        "bytes": 3583,
+        "sha256": "5d3fa5ea9c32c6542e250aa9f5e08eca4b152b48c6ed36ac941849bb63a1354e"
+      },
+      {
+        "url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/MARIUSPIT01/NAC_DTM_MARIUSPIT01.TIF",
+        "path": "data\\raw\\discovery_v10\\moon_marius\\NAC_DTM_MARIUSPIT01.TIF",
+        "bytes": 167037299,
+        "sha256": "db5daada9b38ae7a0316a6e289f2cfe9b78b708c52e3bafb345849e1975aa374"
+      }
+    ],
+    "state": "acquired_unvalidated",
+    "feature_polygon": null
+  },
+  {
+    "body": "moon_marius",
+    "catalogue": "https://data.lroc.im-ldi.com/lroc/view_rdr_product/NAC_DTM_MARIUSPIT01_CONF",
+    "assets": [
+      {
+        "url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/MARIUSPIT01/NAC_DTM_MARIUSPIT01_CONF.IMG",
+        "path": "data\\raw\\discovery_v10\\moon_marius\\NAC_DTM_MARIUSPIT01_CONF.IMG",
+        "bytes": 41740761,
+        "sha256": "156cab7f1f96e18eb946a7a662ce45dba9c1611b784a75eb475d8543416b61cc"
+      }
+    ],
+    "state": "acquired_unvalidated",
+    "feature_polygon": null
+  }
+]

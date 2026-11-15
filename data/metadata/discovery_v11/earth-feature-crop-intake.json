@@ -1,0 +1,631 @@
+[
+  {
+    "id": "OSM_NODE_859542223",
+    "name": "Indian Cave",
+    "region": "craters_of_the_moon",
+    "latitude": 43.4424289,
+    "longitude": -113.5298932,
+    "source": {
+      "title": "USGS 1 Meter 12 x29y482 ID_SouthernGaps_D23",
+      "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/ID_SouthernGaps_D23/TIFF/USGS_1M_12_x29y482_ID_SouthernGaps_D23.tif",
+      "metaUrl": "https://www.sciencebase.gov/catalog/item/69e6ddc8b66b01f903b6b08a",
+      "publicationDate": "2026-04-03",
+      "sourceId": "69e6ddc8b66b01f903b6b08a",
+      "boundingBox": {
+        "minX": -113.59768380699995,
+        "maxX": -113.47043300599995,
+        "minY": 43.41347357800004,
+        "maxY": 43.506167308000045
+      }
+    },
+    "path": "data/raw/discovery_v11/earth/OSM_NODE_859542223-3DEP-native-crop.tif",
+    "sha256": "6ea32eb2fcd4052bb41ea80d57ed4b01e5a18e2b9b1ecd47696ebdb6dd0f5a6e",
+    "native_crs": "EPSG:26912",
+    "pixel_m": 1.0,
+    "shape": [
+      2000,
+      2000
+    ],
+    "native_valid_fraction": 1.0,
+    "source_trials": [
+      {
+        "source": {
+          "title": "USGS 1 Meter 12 x29y482 ID_SouthernGaps_D23",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/ID_SouthernGaps_D23/TIFF/USGS_1M_12_x29y482_ID_SouthernGaps_D23.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/69e6ddc8b66b01f903b6b08a",
+          "publicationDate": "2026-04-03",
+          "sourceId": "69e6ddc8b66b01f903b6b08a",
+          "boundingBox": {
+            "minX": -113.59768380699995,
+            "maxX": -113.47043300599995,
+            "minY": 43.41347357800004,
+            "maxY": 43.506167308000045
+          }
+        },
+        "native_valid_fraction": 1.0
+      }
+    ],
+    "state": "native_crop_acquired; not a qualified pit case",
+    "exposure": "Native heights read for lossless crop and finite-mask QA only; no fine descriptors or ranks computed",
+    "remaining": [
+      "mapped rim and feature identity",
+      "process evidence",
+      "local ground density and interpolation",
+      "vegetation and disturbance masks",
+      "source accuracy and epoch",
+      "independent corroboration"
+    ]
+  },
+  {
+    "id": "OSM_NODE_891415184",
+    "name": "Beauty Cave",
+    "region": "craters_of_the_moon",
+    "latitude": 43.4468294,
+    "longitude": -113.5244798,
+    "source": {
+      "title": "USGS 1 Meter 12 x29y482 ID_SouthernGaps_D23",
+      "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/ID_SouthernGaps_D23/TIFF/USGS_1M_12_x29y482_ID_SouthernGaps_D23.tif",
+      "metaUrl": "https://www.sciencebase.gov/catalog/item/69e6ddc8b66b01f903b6b08a",
+      "publicationDate": "2026-04-03",
+      "sourceId": "69e6ddc8b66b01f903b6b08a",
+      "boundingBox": {
+        "minX": -113.59768380699995,
+        "maxX": -113.47043300599995,
+        "minY": 43.41347357800004,
+        "maxY": 43.506167308000045
+      }
+    },
+    "path": "data/raw/discovery_v11/earth/OSM_NODE_891415184-3DEP-native-crop.tif",
+    "sha256": "30390cfebdeab4233a89f7983d2489b08ccb27dae9958e02da329e82e5e0d5ec",
+    "native_crs": "EPSG:26912",
+    "pixel_m": 1.0,
+    "shape": [
+      2000,
+      2000
+    ],
+    "native_valid_fraction": 1.0,
+    "source_trials": [
+      {
+        "source": {
+          "title": "USGS 1 Meter 12 x29y482 ID_SouthernGaps_D23",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/ID_SouthernGaps_D23/TIFF/USGS_1M_12_x29y482_ID_SouthernGaps_D23.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/69e6ddc8b66b01f903b6b08a",
+          "publicationDate": "2026-04-03",
+          "sourceId": "69e6ddc8b66b01f903b6b08a",
+          "boundingBox": {
+            "minX": -113.59768380699995,
+            "maxX": -113.47043300599995,
+            "minY": 43.41347357800004,
+            "maxY": 43.506167308000045
+          }
+        },
+        "native_valid_fraction": 1.0
+      }
+    ],
+    "state": "native_crop_acquired; not a qualified pit case",
+    "exposure": "Native heights read for lossless crop and finite-mask QA only; no fine descriptors or ranks computed",
+    "remaining": [
+      "mapped rim and feature identity",
+      "process evidence",
+      "local ground density and interpolation",
+      "vegetation and disturbance masks",
+      "source accuracy and epoch",
+      "independent corroboration"
+    ]
+  },
+  {
+    "id": "OSM_NODE_4928422883",
+    "name": "Dewdrop Cave",
+    "region": "craters_of_the_moon",
+    "latitude": 43.4441815,
+    "longitude": -113.5286003,
+    "source": {
+      "title": "USGS 1 Meter 12 x29y482 ID_SouthernGaps_D23",
+      "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/ID_SouthernGaps_D23/TIFF/USGS_1M_12_x29y482_ID_SouthernGaps_D23.tif",
+      "metaUrl": "https://www.sciencebase.gov/catalog/item/69e6ddc8b66b01f903b6b08a",
+      "publicationDate": "2026-04-03",
+      "sourceId": "69e6ddc8b66b01f903b6b08a",
+      "boundingBox": {
+        "minX": -113.59768380699995,
+        "maxX": -113.47043300599995,
+        "minY": 43.41347357800004,
+        "maxY": 43.506167308000045
+      }
+    },
+    "path": "data/raw/discovery_v11/earth/OSM_NODE_4928422883-3DEP-native-crop.tif",
+    "sha256": "e7ace59faba6b06d603e75a4b014d552ea83480fc1ac68947e346b019c8fa35e",
+    "native_crs": "EPSG:26912",
+    "pixel_m": 1.0,
+    "shape": [
+      2000,
+      2000
+    ],
+    "native_valid_fraction": 1.0,
+    "source_trials": [
+      {
+        "source": {
+          "title": "USGS 1 Meter 12 x29y482 ID_SouthernGaps_D23",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/ID_SouthernGaps_D23/TIFF/USGS_1M_12_x29y482_ID_SouthernGaps_D23.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/69e6ddc8b66b01f903b6b08a",
+          "publicationDate": "2026-04-03",
+          "sourceId": "69e6ddc8b66b01f903b6b08a",
+          "boundingBox": {
+            "minX": -113.59768380699995,
+            "maxX": -113.47043300599995,
+            "minY": 43.41347357800004,
+            "maxY": 43.506167308000045
+          }
+        },
+        "native_valid_fraction": 1.0
+      }
+    ],
+    "state": "native_crop_acquired; not a qualified pit case",
+    "exposure": "Native heights read for lossless crop and finite-mask QA only; no fine descriptors or ranks computed",
+    "remaining": [
+      "mapped rim and feature identity",
+      "process evidence",
+      "local ground density and interpolation",
+      "vegetation and disturbance masks",
+      "source accuracy and epoch",
+      "independent corroboration"
+    ]
+  },
+  {
+    "id": "OSM_NODE_7967084654",
+    "name": "Big Skylight Cave",
+    "region": "el_malpais",
+    "latitude": 34.945383,
+    "longitude": -108.1012339,
+    "source": {
+      "title": "USGS 1 Meter 13 x21y388 NM_SouthCentral_2018_D19",
+      "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_SouthCentral_2018_D19/TIFF/USGS_1M_13_x21y388_NM_SouthCentral_2018_D19.tif",
+      "metaUrl": "https://www.sciencebase.gov/catalog/item/662752f2d34ea70bd5efc1e8",
+      "publicationDate": "2024-03-29",
+      "sourceId": "662752f2d34ea70bd5efc1e8",
+      "boundingBox": {
+        "minX": -108.17827933099994,
+        "maxX": -108.06546502199996,
+        "minY": 34.93104903100004,
+        "maxY": 35.02390470600005
+      }
+    },
+    "path": "data/raw/discovery_v11/earth/OSM_NODE_7967084654-3DEP-native-crop.tif",
+    "sha256": "0aa53a5bd58e037db3bb83018c1fa47eecc1b3f08f4f9311dce51aaff60bcecd",
+    "native_crs": "EPSG:26913",
+    "pixel_m": 1.0,
+    "shape": [
+      2000,
+      2000
+    ],
+    "native_valid_fraction": 1.0,
+    "source_trials": [
+      {
+        "source": {
+          "title": "USGS 1 Meter 13 x21y388 NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17/TIFF/USGS_1M_13_x21y388_NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/66517106d34e702fe874904f",
+          "publicationDate": "2024-05-23",
+          "sourceId": "66517106d34e702fe874904f",
+          "boundingBox": {
+            "minX": -108.17827933099994,
+            "maxX": -108.06546502199996,
+            "minY": 34.93104903100004,
+            "maxY": 35.02390470600005
+          }
+        },
+        "native_valid_fraction": 0.0
+      },
+      {
+        "source": {
+          "title": "USGS 1 Meter 12 x76y388 NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17/TIFF/USGS_1M_12_x76y388_NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/6651707dd34e702fe8748fcf",
+          "publicationDate": "2024-05-23",
+          "sourceId": "6651707dd34e702fe8748fcf",
+          "boundingBox": {
+            "minX": -108.15324773599997,
+            "maxX": -108.04064302799998,
+            "minY": 34.93657183700003,
+            "maxY": 35.02924878700003
+          }
+        },
+        "native_valid_fraction": 0.0
+      },
+      {
+        "source": {
+          "title": "USGS 1 Meter 13 x21y388 NM_SouthCentral_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_SouthCentral_2018_D19/TIFF/USGS_1M_13_x21y388_NM_SouthCentral_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/662752f2d34ea70bd5efc1e8",
+          "publicationDate": "2024-03-29",
+          "sourceId": "662752f2d34ea70bd5efc1e8",
+          "boundingBox": {
+            "minX": -108.17827933099994,
+            "maxX": -108.06546502199996,
+            "minY": 34.93104903100004,
+            "maxY": 35.02390470600005
+          }
+        },
+        "native_valid_fraction": 1.0
+      }
+    ],
+    "state": "native_crop_acquired; not a qualified pit case",
+    "exposure": "Native heights read for lossless crop and finite-mask QA only; no fine descriptors or ranks computed",
+    "remaining": [
+      "mapped rim and feature identity",
+      "process evidence",
+      "local ground density and interpolation",
+      "vegetation and disturbance masks",
+      "source accuracy and epoch",
+      "independent corroboration"
+    ]
+  },
+  {
+    "id": "OSM_NODE_13011812951",
+    "name": "Giant Ice Cave",
+    "region": "el_malpais",
+    "latitude": 34.9468563,
+    "longitude": -108.1004747,
+    "source": {
+      "title": "USGS 1 Meter 13 x21y388 NM_SouthCentral_2018_D19",
+      "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_SouthCentral_2018_D19/TIFF/USGS_1M_13_x21y388_NM_SouthCentral_2018_D19.tif",
+      "metaUrl": "https://www.sciencebase.gov/catalog/item/662752f2d34ea70bd5efc1e8",
+      "publicationDate": "2024-03-29",
+      "sourceId": "662752f2d34ea70bd5efc1e8",
+      "boundingBox": {
+        "minX": -108.17827933099994,
+        "maxX": -108.06546502199996,
+        "minY": 34.93104903100004,
+        "maxY": 35.02390470600005
+      }
+    },
+    "path": "data/raw/discovery_v11/earth/OSM_NODE_13011812951-3DEP-native-crop.tif",
+    "sha256": "2409967838bd612e2100b62cc4bc55f028f9436efe8b0678932ad17895fd2629",
+    "native_crs": "EPSG:26913",
+    "pixel_m": 1.0,
+    "shape": [
+      2000,
+      2000
+    ],
+    "native_valid_fraction": 1.0,
+    "source_trials": [
+      {
+        "source": {
+          "title": "USGS 1 Meter 13 x21y388 NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17/TIFF/USGS_1M_13_x21y388_NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/66517106d34e702fe874904f",
+          "publicationDate": "2024-05-23",
+          "sourceId": "66517106d34e702fe874904f",
+          "boundingBox": {
+            "minX": -108.17827933099994,
+            "maxX": -108.06546502199996,
+            "minY": 34.93104903100004,
+            "maxY": 35.02390470600005
+          }
+        },
+        "native_valid_fraction": 0.0
+      },
+      {
+        "source": {
+          "title": "USGS 1 Meter 12 x76y388 NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17/TIFF/USGS_1M_12_x76y388_NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/6651707dd34e702fe8748fcf",
+          "publicationDate": "2024-05-23",
+          "sourceId": "6651707dd34e702fe8748fcf",
+          "boundingBox": {
+            "minX": -108.15324773599997,
+            "maxX": -108.04064302799998,
+            "minY": 34.93657183700003,
+            "maxY": 35.02924878700003
+          }
+        },
+        "native_valid_fraction": 0.0
+      },
+      {
+        "source": {
+          "title": "USGS 1 Meter 13 x21y388 NM_SouthCentral_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_SouthCentral_2018_D19/TIFF/USGS_1M_13_x21y388_NM_SouthCentral_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/662752f2d34ea70bd5efc1e8",
+          "publicationDate": "2024-03-29",
+          "sourceId": "662752f2d34ea70bd5efc1e8",
+          "boundingBox": {
+            "minX": -108.17827933099994,
+            "maxX": -108.06546502199996,
+            "minY": 34.93104903100004,
+            "maxY": 35.02390470600005
+          }
+        },
+        "native_valid_fraction": 1.0
+      }
+    ],
+    "state": "native_crop_acquired; not a qualified pit case",
+    "exposure": "Native heights read for lossless crop and finite-mask QA only; no fine descriptors or ranks computed",
+    "remaining": [
+      "mapped rim and feature identity",
+      "process evidence",
+      "local ground density and interpolation",
+      "vegetation and disturbance masks",
+      "source accuracy and epoch",
+      "independent corroboration"
+    ]
+  },
+  {
+    "id": "OSM_NODE_13188887010",
+    "name": "Ice Cave",
+    "region": "el_malpais",
+    "state": "no_source_crop_passes_finite_coverage",
+    "source_trials": [
+      {
+        "source": {
+          "title": "USGS 1 Meter 13 x21y388 NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17/TIFF/USGS_1M_13_x21y388_NM_Rio_San_Jose_FEMA_R6_Lidar_2016_D17.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/66517106d34e702fe874904f",
+          "publicationDate": "2024-05-23",
+          "sourceId": "66517106d34e702fe874904f",
+          "boundingBox": {
+            "minX": -108.17827933099994,
+            "maxX": -108.06546502199996,
+            "minY": 34.93104903100004,
+            "maxY": 35.02390470600005
+          }
+        },
+        "native_valid_fraction": 0.0
+      },
+      {
+        "source": {
+          "title": "USGS 1 Meter 13 x21y388 NM_SouthCentral_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_SouthCentral_2018_D19/TIFF/USGS_1M_13_x21y388_NM_SouthCentral_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/662752f2d34ea70bd5efc1e8",
+          "publicationDate": "2024-03-29",
+          "sourceId": "662752f2d34ea70bd5efc1e8",
+          "boundingBox": {
+            "minX": -108.17827933099994,
+            "maxX": -108.06546502199996,
+            "minY": 34.93104903100004,
+            "maxY": 35.02390470600005
+          }
+        },
+        "native_valid_fraction": 0.3305
+      },
+      {
+        "source": {
+          "title": "USGS 1 Meter 13 x21y387 NM_SouthCentral_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_SouthCentral_2018_D19/TIFF/USGS_1M_13_x21y387_NM_SouthCentral_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/662752f4d34ea70bd5efc1ec",
+          "publicationDate": "2024-03-29",
+          "sourceId": "662752f4d34ea70bd5efc1ec",
+          "boundingBox": {
+            "minX": -108.17479935499995,
+            "maxX": -108.06211929699998,
+            "minY": 34.84101159000005,
+            "maxY": 34.93385954100006
+          }
+        },
+        "native_valid_fraction": 0.6755
+      },
+      {
+        "source": {
+          "title": "USGS 1 Meter 12 x76y387 NM_SouthCentral_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_SouthCentral_2018_D19/TIFF/USGS_1M_12_x76y387_NM_SouthCentral_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/6627430fd34ea70bd5efb03c",
+          "publicationDate": "2024-03-29",
+          "sourceId": "6627430fd34ea70bd5efb03c",
+          "boundingBox": {
+            "minX": -108.15635556699999,
+            "maxX": -108.04388418399998,
+            "minY": 34.84651603700007,
+            "maxY": 34.93918587600007
+          }
+        },
+        "native_valid_fraction": 0.912
+      },
+      {
+        "source": {
+          "title": "USGS 1 Meter 13 x21y388 NM_NorthWest_2018_D19",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NM_NorthWest_2018_D19/TIFF/USGS_1M_13_x21y388_NM_NorthWest_2018_D19.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/621f0ad1d34ee0c6b389b010",
+          "publicationDate": "2022-02-26",
+          "sourceId": "621f0ad1d34ee0c6b389b010",
+          "boundingBox": {
+            "minX": -108.17827933099994,
+            "maxX": -108.06546502199996,
+            "minY": 34.93104903100004,
+            "maxY": 35.02390470600005
+          }
+        },
+        "native_valid_fraction": 0.0
+      }
+    ]
+  },
+  {
+    "id": "OSM_NODE_59946478",
+    "name": "Skull Cave",
+    "region": "lava_beds",
+    "latitude": 41.73138,
+    "longitude": -121.5106595,
+    "source": {
+      "title": "USGS 1 Meter 10 x62y463 CA_NorthernCA_B22",
+      "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/CA_NorthernCA_B22/TIFF/USGS_1M_10_x62y463_CA_NorthernCA_B22.tif",
+      "metaUrl": "https://www.sciencebase.gov/catalog/item/69c49746b66b016badda3f38",
+      "publicationDate": "2026-03-24",
+      "sourceId": "69c49746b66b016badda3f38",
+      "boundingBox": {
+        "minX": -121.55729627899996,
+        "maxX": -121.43492522199995,
+        "minY": 41.721179652000046,
+        "maxY": 41.81279340300006
+      }
+    },
+    "path": "data/raw/discovery_v11/earth/OSM_NODE_59946478-3DEP-native-crop.tif",
+    "sha256": "160fbea32ba7b11fcd8e69f9f6ba334868a7c76c9d85dc979d9db579adde8f3a",
+    "native_crs": "EPSG:26910",
+    "pixel_m": 1.0,
+    "shape": [
+      2000,
+      2000
+    ],
+    "native_valid_fraction": 1.0,
+    "source_trials": [
+      {
+        "source": {
+          "title": "USGS 1 Meter 10 x62y463 CA_NorthernCA_B22",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/CA_NorthernCA_B22/TIFF/USGS_1M_10_x62y463_CA_NorthernCA_B22.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/69c49746b66b016badda3f38",
+          "publicationDate": "2026-03-24",
+          "sourceId": "69c49746b66b016badda3f38",
+          "boundingBox": {
+            "minX": -121.55729627899996,
+            "maxX": -121.43492522199995,
+            "minY": 41.721179652000046,
+            "maxY": 41.81279340300006
+          }
+        },
+        "native_valid_fraction": 1.0
+      }
+    ],
+    "state": "native_crop_acquired; not a qualified pit case",
+    "exposure": "Native heights read for lossless crop and finite-mask QA only; no fine descriptors or ranks computed",
+    "remaining": [
+      "mapped rim and feature identity",
+      "process evidence",
+      "local ground density and interpolation",
+      "vegetation and disturbance masks",
+      "source accuracy and epoch",
+      "independent corroboration"
+    ]
+  },
+  {
+    "id": "OSM_NODE_59949988",
+    "name": "Valentine Cave",
+    "region": "lava_beds",
+    "latitude": 41.7092587,
+    "longitude": -121.4777875,
+    "source": {
+      "title": "USGS 1 Meter 10 x62y462 CA_NorthernCA_B22",
+      "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/CA_NorthernCA_B22/TIFF/USGS_1M_10_x62y462_CA_NorthernCA_B22.tif",
+      "metaUrl": "https://www.sciencebase.gov/catalog/item/69c49748b66b016badda3f40",
+      "publicationDate": "2026-03-24",
+      "sourceId": "69c49748b66b016badda3f40",
+      "boundingBox": {
+        "minX": -121.55930623799998,
+        "maxX": -121.43711239899994,
+        "minY": 41.631141409000065,
+        "maxY": 41.722751722000055
+      }
+    },
+    "path": "data/raw/discovery_v11/earth/OSM_NODE_59949988-3DEP-native-crop.tif",
+    "sha256": "1bf212e1d71573f9ae9b4ddbee54f1f99236393a251100161af6a4b22259bf6f",
+    "native_crs": "EPSG:26910",
+    "pixel_m": 1.0,
+    "shape": [
+      2000,
+      2000
+    ],
+    "native_valid_fraction": 1.0,
+    "source_trials": [
+      {
+        "source": {
+          "title": "USGS 1 Meter 10 x62y462 CA_NorthernCA_B22",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/CA_NorthernCA_B22/TIFF/USGS_1M_10_x62y462_CA_NorthernCA_B22.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/69c49748b66b016badda3f40",
+          "publicationDate": "2026-03-24",
+          "sourceId": "69c49748b66b016badda3f40",
+          "boundingBox": {
+            "minX": -121.55930623799998,
+            "maxX": -121.43711239899994,
+            "minY": 41.631141409000065,
+            "maxY": 41.722751722000055
+          }
+        },
+        "native_valid_fraction": 1.0
+      }
+    ],
+    "state": "native_crop_acquired; not a qualified pit case",
+    "exposure": "Native heights read for lossless crop and finite-mask QA only; no fine descriptors or ranks computed",
+    "remaining": [
+      "mapped rim and feature identity",
+      "process evidence",
+      "local ground density and interpolation",
+      "vegetation and disturbance masks",
+      "source accuracy and epoch",
+      "independent corroboration"
+    ]
+  },
+  {
+    "id": "OSM_NODE_59950624",
+    "name": "Sentinel Cave (Upper Entrance)",
+    "region": "lava_beds",
+    "latitude": 41.7084975,
+    "longitude": -121.5111533,
+    "source": {
+      "title": "USGS 1 Meter 10 x62y462 CA_NorthernCA_B22",
+      "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/CA_NorthernCA_B22/TIFF/USGS_1M_10_x62y462_CA_NorthernCA_B22.tif",
+      "metaUrl": "https://www.sciencebase.gov/catalog/item/69c49748b66b016badda3f40",
+      "publicationDate": "2026-03-24",
+      "sourceId": "69c49748b66b016badda3f40",
+      "boundingBox": {
+        "minX": -121.55930623799998,
+        "maxX": -121.43711239899994,
+        "minY": 41.631141409000065,
+        "maxY": 41.722751722000055
+      }
+    },
+    "path": "data/raw/discovery_v11/earth/OSM_NODE_59950624-3DEP-native-crop.tif",
+    "sha256": "296ef93da84d8ee493f169c2cf22bac6685c4b487cf85df9637b42d1e02b494a",
+    "native_crs": "EPSG:26910",
+    "pixel_m": 1.0,
+    "shape": [
+      2000,
+      2000
+    ],
+    "native_valid_fraction": 1.0,
+    "source_trials": [
+      {
+        "source": {
+          "title": "USGS 1 Meter 10 x62y462 CA_NorthernCA_B22",
+          "downloadURL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/CA_NorthernCA_B22/TIFF/USGS_1M_10_x62y462_CA_NorthernCA_B22.tif",
+          "metaUrl": "https://www.sciencebase.gov/catalog/item/69c49748b66b016badda3f40",
+          "publicationDate": "2026-03-24",
+          "sourceId": "69c49748b66b016badda3f40",
+          "boundingBox": {
+            "minX": -121.55930623799998,
+            "maxX": -121.43711239899994,
+            "minY": 41.631141409000065,
+            "maxY": 41.722751722000055
+          }
+        },
+        "native_valid_fraction": 1.0
+      }
+    ],
+    "state": "native_crop_acquired; not a qualified pit case",
+    "exposure": "Native heights read for lossless crop and finite-mask QA only; no fine descriptors or ranks computed",
+    "remaining": [
+      "mapped rim and feature identity",
+      "process evidence",
+      "local ground density and interpolation",
+      "vegetation and disturbance masks",
+      "source accuracy and epoch",
+      "independent corroboration"
+    ]
+  },
+  {
+    "id": "OSM_NODE_2773174396",
+    "name": "Boyd Cave",
+    "region": "newberry",
+    "state": "no_source_crop_passes_finite_coverage",
+    "source_trials": []
+  },
+  {
+    "id": "OSM_NODE_2773224766",
+    "name": "Skeleton Cave",
+    "region": "newberry",
+    "state": "no_source_crop_passes_finite_coverage",
+    "source_trials": []
+  },
+  {
+    "id": "OSM_NODE_2806721318",
+    "name": "Arnold Ice Cave",
+    "region": "newberry",
+    "state": "no_source_crop_passes_finite_coverage",
+    "source_trials": []
+  }
+]

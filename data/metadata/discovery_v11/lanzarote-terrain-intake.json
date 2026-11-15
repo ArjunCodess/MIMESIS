@@ -1,0 +1,14 @@
+{
+  "request": "https://servicios.idee.es/wcs-inspire/mdt?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=Elevacion4083_5&SUBSET=x%28649235%2C653235%29&SUBSET=y%283224715%2C3228715%29&FORMAT=image%2Ftiff",
+  "native_crs": "EPSG:4083",
+  "posting_m": 5,
+  "bounds_requested": [
+    649235,
+    3224715,
+    653235,
+    3228715
+  ],
+  "path": "data/raw/discovery_v11/earth/Lanzarote_MDT05_WCS.tif",
+  "sha256": "e1a2f214e5422dd069c9dfea0d6beae205314d39f8defad8a30c0b5e093b3255",
+  "state": "acquired; datum, units, epoch and local interpolation quality require source review"
+}

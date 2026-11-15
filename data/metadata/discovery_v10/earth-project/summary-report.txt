@@ -1,0 +1,73 @@
+Data Validation Report
+from the National Geospatial Technical Operations Center in
+Support of the 3D Elevation Program
+ID_SouthernID_9_2018
+2023-02-10
+1 of 3
+Project Name:
+ID_SouthernID_2018_D19
+Report Date: 2023-02-10
+
+Based on this review, the delivered data is EXPECTED
+TO MEET 3D Elevation Program requirements.
+Work Unit Summary Information
+Project Name: ID_SouthernID_2018_D19
+Project ID: 183648
+WU Name: ID_SouthernID_9_2018
+Work Unit ID: 300074
+Mechanism: GPSC
+Lidar Base Spec: 1.3
+Quality Level: 1
+P-Method: 7 - Linear-Mode Lidar
+Horizontal EPSG Code: 6341
+Vertical EPSG Code: 5703
+Geoid Model: GEOID12B
+The National Map Help Desk Email: tnm_help@usgs.gov
+The U.S. Geological Survey evaluates absolute vertical accuracy of the lidar and lidar-derived bare earth
+digital elevation model (DEM) data at the project level. Data are produced to meet 9.8 cm absolute vertical
+accuracy at the 95-percent confidence level in non-vegetated, open terrain. To review vertical accuracy
+results, please see the project report
+Breaklines
+Based on this Review, the USGS-NGTOC ACCEPTS the Breaklines
+Breaklines are visually reviewed in conjunction with the bare earth DEM for spatial and geometric accuracy.
+Breaklines are confirmed to be three dimensional (3D) features and that elevations are at or just below the
+immediately surrounding terrain. Single- and double-line drainages are reviewed to ensure downstream
+flow. The USGS recognizes that differences in collection methodology, resampling techniques, and other
+factors that are unique to proprietary production do occur, and these will result in minor horizontal and
+vertical differences between breaklines derived on the fly.
+Reporting Metadata
+Based on this Review, the USGS-NGTOC ACCEPTS the Reporting Metadata
+Reports from the contractor, including calibration, collection, and processing methods, are reviewed for
+accurate information. For more information, please see the work units metadata.
+FGDC XML Metadata
+Based on this Review, the USGS-NGTOC ACCEPTS the FGDC XML Metadata
+CSGDM .xml metadata are parsed using the USGS Geospatial Metadata Validation Service and reviewed for
+accurate information. CSDGM is maintained by the Federal Geographic Data Committee (FGDC).
+Spatial Metadata
+Based on this Review, the USGS-NGTOC ACCEPTS the Spatial Metadata
+Spatial metadata from the contractor, including raster and vector datasets, are evaluated together with
+pertinent deliverables for geometric fidelity and attribution accuracy. For more information, please see the
+work units metadata.
+2 of 3
+Project Name:
+ID_SouthernID_2018_D19
+Report Date: 2023-02-10
+
+DEM
+Based on this Review, the USGS-NGTOC ACCEPTS the DEM
+Visual review is performed on .tif bare earth rasters at a 1:5,000 or larger viewing scale to validate point
+cloud geometry, raster processing methodology, point classification, and breaklines. Comprehensive review
+is completed to ensure consistency and accuracy across all files. For additional information, please see this
+work units metadata folder.
+Pointcloud
+Based on this Review, the USGS-NGTOC ACCEPTS the Pointcloud
+Visual and statistical review is performed on classified .las files to validate adherence to contracted
+specifications. A comprehensive review is completed to ensure consistency and accuracy across all files,
+including the spatial reference system. Classification verification is limited to the minimum required by
+applicable Lidar Base Specification. Classifications beyond the minimum are not verified by USGS. LAS files
+are evaluated to ensure the public header block, point data records, and variable/extended variable length
+records are correctly populated. For additional information, please see the work units metadata folder.
+3 of 3
+Project Name:
+ID_SouthernID_2018_D19
+Report Date: 2023-02-10

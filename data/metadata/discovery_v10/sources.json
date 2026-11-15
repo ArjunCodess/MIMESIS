@@ -1,0 +1,62 @@
+[
+  {
+    "body": "moon",
+    "catalogue": "https://data.lroc.im-ldi.com/lroc/view_rdr_product/NAC_DTM_TRANQPIT1",
+    "assets": [
+      {
+        "url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/TRANQPIT1/NAC_DTM_TRANQPIT1.LBL",
+        "path": "data\\raw\\discovery_v10\\moon\\NAC_DTM_TRANQPIT1.LBL",
+        "bytes": 3569,
+        "sha256": "22854a291673835b55dd4d6968551d105c4c016311538b03c9c224682e9086eb"
+      },
+      {
+        "url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/TRANQPIT1/NAC_DTM_TRANQPIT1.TIF",
+        "path": "data\\raw\\discovery_v10\\moon\\NAC_DTM_TRANQPIT1.TIF",
+        "bytes": 136629119,
+        "sha256": "3cf53c33783cb43d8788d71837c43e322ce015d9ef4b3f0f61709e9e98fbc662"
+      }
+    ],
+    "state": "acquired_unvalidated",
+    "feature_polygon": null
+  },
+  {
+    "body": "moon_quality",
+    "catalogue": "https://data.lroc.im-ldi.com/lroc/view_rdr_product/NAC_DTM_TRANQPIT1_CONF",
+    "assets": [
+      {
+        "url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/EXTRAS/BROWSE/NAC_DTM/TRANQPIT1/NAC_DTM_TRANQPIT1_CONF.PYR.TIF",
+        "path": "data\\raw\\discovery_v10\\moon_quality\\NAC_DTM_TRANQPIT1_CONF.PYR.TIF",
+        "bytes": 51325726,
+        "sha256": "c22d4b3667aab84e8ad9c9a2a437b888f9b144e41525dd003e1faf680c3ad900"
+      },
+      {
+        "url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/EXTRAS/BROWSE/NAC_DTM/TRANQPIT1/NAC_DTM_TRANQPIT1_CONF.TIF",
+        "path": "data\\raw\\discovery_v10\\moon_quality\\NAC_DTM_TRANQPIT1_CONF.TIF",
+        "bytes": 34167349,
+        "sha256": "55d769b99b452ceadbcd368b5f2658f951bff81475dc1e37a6135b303a5389d6"
+      }
+    ],
+    "state": "acquired_unvalidated",
+    "feature_polygon": null
+  },
+  {
+    "body": "mars",
+    "catalogue": "https://www.uahirise.org/dtm/dtm.php?ID=ESP_046730_2110",
+    "assets": [
+      {
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_046700_046799/ESP_046730_2110_ESP_055169_2110/DTEEC_046730_2110_055169_2110_A01.IMG",
+        "path": "data\\raw\\discovery_v10\\mars\\DTEEC_046730_2110_055169_2110_A01.IMG",
+        "bytes": 86496732,
+        "sha256": "0189f89224ecdfc23714769c7a00eb5edefb4301788de6aa890baa19a677445f"
+      },
+      {
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_046700_046799/ESP_046730_2110_ESP_055169_2110/ESP_046730_2110_RED_C_01_ORTHO.JP2",
+        "path": "data\\raw\\discovery_v10\\mars\\ESP_046730_2110_RED_C_01_ORTHO.JP2",
+        "bytes": 9233823,
+        "sha256": "e1cfd697f780f66bb7979dbea429cdca77f67b890ef4f7b20e71a960889f4542"
+      }
+    ],
+    "state": "acquired_unvalidated",
+    "feature_polygon": null
+  }
+]

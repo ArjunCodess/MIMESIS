@@ -1,0 +1,680 @@
+{
+  "url": "https://www.uahirise.org/hiwish/maps/dtms.jsp",
+  "sha256": "02ed40a043136627a73bdbe4f5e51574ca18c925b90163594942f2747008646b",
+  "total_dtms": 1377,
+  "pit_or_collapse_title_rows": [
+    {
+      "title": "Cavi Angusti pit wall",
+      "product_id": "DTEPC_013720_1035_013707_1035_A01",
+      "latitude_product_center": "-76.5",
+      "longitude_product_center": "283.5",
+      "fields": [
+        "Cavi Angusti pit wall",
+        "DTEPC_013720_1035_013707_1035_A01",
+        "-76.5",
+        "283.5",
+        "2026-Jan-20",
+        "A"
+      ]
+    },
+    {
+      "title": "Central pit and floor of Toro Crater",
+      "product_id": "DTEED_005842_1970_011538_1970_A01",
+      "latitude_product_center": "17.0",
+      "longitude_product_center": "71.9",
+      "fields": [
+        "Central pit and floor of Toro Crater",
+        "DTEED_005842_1970_011538_1970_A01",
+        "17.0",
+        "71.9",
+        "2010-Oct-04",
+        "A"
+      ]
+    },
+    {
+      "title": "Central pit gullies in Asimov Crater",
+      "product_id": "DTEEC_013268_1330_013123_1330_A01",
+      "latitude_product_center": "-46.8",
+      "longitude_product_center": "4.9",
+      "fields": [
+        "Central pit gullies in Asimov Crater",
+        "DTEEC_013268_1330_013123_1330_A01",
+        "-46.8",
+        "4.9",
+        "2016-Oct-20",
+        "A"
+      ]
+    },
+    {
+      "title": "Central pit of an impact crater",
+      "product_id": "DTEED_019204_1570_018703_1570_A01",
+      "latitude_product_center": "-22.6",
+      "longitude_product_center": "303.4",
+      "fields": [
+        "Central pit of an impact crater",
+        "DTEED_019204_1570_018703_1570_A01",
+        "-22.6",
+        "303.4",
+        "2015-Apr-09",
+        "A"
+      ]
+    },
+    {
+      "title": "Central pit of an impact crater with layered bedrock",
+      "product_id": "DTEED_022962_1570_022672_1570_A01",
+      "latitude_product_center": "-22.6",
+      "longitude_product_center": "303.5",
+      "fields": [
+        "Central pit of an impact crater with layered bedrock",
+        "DTEED_022962_1570_022672_1570_A01",
+        "-22.6",
+        "303.5",
+        "2015-Apr-09",
+        "A"
+      ]
+    },
+    {
+      "title": "Change detection in chain of small pits north of Alba Mons",
+      "product_id": "DTEEC_034699_2310_034831_2310_A01",
+      "latitude_product_center": "50.5",
+      "longitude_product_center": "263.0",
+      "fields": [
+        "Change detection in chain of small pits north of Alba Mons",
+        "DTEEC_034699_2310_034831_2310_A01",
+        "50.5",
+        "263.0",
+        "2023-Nov-14",
+        "A"
+      ]
+    },
+    {
+      "title": "Collapse features on Hrad Vallis mudflow",
+      "product_id": "DTEEC_016467_2155_016533_2155_A01",
+      "latitude_product_center": "35.1",
+      "longitude_product_center": "141.7",
+      "fields": [
+        "Collapse features on Hrad Vallis mudflow",
+        "DTEEC_016467_2155_016533_2155_A01",
+        "35.1",
+        "141.7",
+        "2015-Dec-29",
+        "A"
+      ]
+    },
+    {
+      "title": "East slope of Asimov Crater central pit",
+      "product_id": "DTEEC_013835_1330_013189_1330_A01",
+      "latitude_product_center": "-46.9",
+      "longitude_product_center": "5.1",
+      "fields": [
+        "East slope of Asimov Crater central pit",
+        "DTEEC_013835_1330_013189_1330_A01",
+        "-46.9",
+        "5.1",
+        "2016-Dec-09",
+        "A"
+      ]
+    },
+    {
+      "title": "Eastern edge of polar pit gullies",
+      "product_id": "DTEPC_057377_1115_057087_1115_G01",
+      "latitude_product_center": "-68.4",
+      "longitude_product_center": "1.8",
+      "fields": [
+        "Eastern edge of polar pit gullies",
+        "DTEPC_057377_1115_057087_1115_G01",
+        "-68.4",
+        "1.8",
+        "2021-Dec-19",
+        "G"
+      ]
+    },
+    {
+      "title": "Gullies within central pit of Bamberg Crater",
+      "product_id": "DTEEC_010301_2200_006794_2200_A01",
+      "latitude_product_center": "39.7",
+      "longitude_product_center": "356.9",
+      "fields": [
+        "Gullies within central pit of Bamberg Crater",
+        "DTEEC_010301_2200_006794_2200_A01",
+        "39.7",
+        "356.9",
+        "2015-Jun-14",
+        "A"
+      ]
+    },
+    {
+      "title": "Heart-shaped pit in Acheron Catena seen in MOC M02-01153",
+      "product_id": "DTEEC_016977_2165_017755_2165_A01",
+      "latitude_product_center": "36.2",
+      "longitude_product_center": "258.5",
+      "fields": [
+        "Heart-shaped pit in Acheron Catena seen in MOC M02-01153",
+        "DTEEC_016977_2165_017755_2165_A01",
+        "36.2",
+        "258.5",
+        "2022-Dec-10",
+        "A"
+      ]
+    },
+    {
+      "title": "Impact crater with central pit on floor of larger crater",
+      "product_id": "DTEED_025240_1690_025728_1690_A01",
+      "latitude_product_center": "-10.7",
+      "longitude_product_center": "32.0",
+      "fields": [
+        "Impact crater with central pit on floor of larger crater",
+        "DTEED_025240_1690_025728_1690_A01",
+        "-10.7",
+        "32.0",
+        "2013-Jun-27",
+        "A"
+      ]
+    },
+    {
+      "title": "Intracrater pits in northern Arabia Terra",
+      "product_id": "DTEED_061610_1895_061887_1895_A01",
+      "latitude_product_center": "9.3",
+      "longitude_product_center": "355.4",
+      "fields": [
+        "Intracrater pits in northern Arabia Terra",
+        "DTEED_061610_1895_061887_1895_A01",
+        "9.3",
+        "355.4",
+        "2023-Feb-16",
+        "A"
+      ]
+    },
+    {
+      "title": "Layered pit in Noctis Labyrinthus",
+      "product_id": "DTEEC_005980_1725_019891_1725_A01",
+      "latitude_product_center": "-7.7",
+      "longitude_product_center": "267.2",
+      "fields": [
+        "Layered pit in Noctis Labyrinthus",
+        "DTEEC_005980_1725_019891_1725_A01",
+        "-7.7",
+        "267.2",
+        "2015-Jul-20",
+        "A"
+      ]
+    },
+    {
+      "title": "Layers exposed in central peak-pit of unnamed crater",
+      "product_id": "DTEEC_005201_1640_005913_1640_A01",
+      "latitude_product_center": "-15.9",
+      "longitude_product_center": "296.2",
+      "fields": [
+        "Layers exposed in central peak-pit of unnamed crater",
+        "DTEEC_005201_1640_005913_1640_A01",
+        "-15.9",
+        "296.2",
+        "2010-Jun-16",
+        "A"
+      ]
+    },
+    {
+      "title": "Light-toned layered deposit on floor of pit trough west of Juventae Chasma",
+      "product_id": "DTEEC_009842_1755_009130_1755_A01",
+      "latitude_product_center": "-4.5",
+      "longitude_product_center": "296.2",
+      "fields": [
+        "Light-toned layered deposit on floor of pit trough west of Juventae Chasma",
+        "DTEEC_009842_1755_009130_1755_A01",
+        "-4.5",
+        "296.2",
+        "2012-Aug-16",
+        "A"
+      ]
+    },
+    {
+      "title": "Light-toned layered sediments exposed within pit at Noctis Labyrinthus",
+      "product_id": "DTEEC_022436_1705_022502_1705_A01",
+      "latitude_product_center": "-9.4",
+      "longitude_product_center": "263.3",
+      "fields": [
+        "Light-toned layered sediments exposed within pit at Noctis Labyrinthus",
+        "DTEEC_022436_1705_022502_1705_A01",
+        "-9.4",
+        "263.3",
+        "2012-Jan-13",
+        "A"
+      ]
+    },
+    {
+      "title": "Light-toned layering in Labyrinthus Noctis pit",
+      "product_id": "DTEEC_003910_1685_005400_1685_U01",
+      "latitude_product_center": "-11.2",
+      "longitude_product_center": "261.9",
+      "fields": [
+        "Light-toned layering in Labyrinthus Noctis pit",
+        "DTEEC_003910_1685_005400_1685_U01",
+        "-11.2",
+        "261.9",
+        "2011-Mar-21",
+        "U"
+      ]
+    },
+    {
+      "title": "Light-toned layering in Noctis region pit",
+      "product_id": "DTEEC_017399_1680_027236_1680_A01",
+      "latitude_product_center": "-11.9",
+      "longitude_product_center": "263.2",
+      "fields": [
+        "Light-toned layering in Noctis region pit",
+        "DTEEC_017399_1680_027236_1680_A01",
+        "-11.9",
+        "263.2",
+        "2014-Oct-15",
+        "A"
+      ]
+    },
+    {
+      "title": "Pit in crater floor",
+      "product_id": "DTEEC_074375_1510_074441_1510_A01",
+      "latitude_product_center": "-28.6",
+      "longitude_product_center": "40.4",
+      "fields": [
+        "Pit in crater floor",
+        "DTEEC_074375_1510_074441_1510_A01",
+        "-28.6",
+        "40.4",
+        "2022-Aug-08",
+        "A"
+      ]
+    },
+    {
+      "title": "Pit in Hephaestus Fossae",
+      "product_id": "DTEEC_055209_2015_060260_2015_U01",
+      "latitude_product_center": "21.4",
+      "longitude_product_center": "127.1",
+      "fields": [
+        "Pit in Hephaestus Fossae",
+        "DTEEC_055209_2015_060260_2015_U01",
+        "21.4",
+        "127.1",
+        "2021-Feb-26",
+        "U"
+      ]
+    },
+    {
+      "title": "Pit in southern mid-latitudes",
+      "product_id": "DTEEC_075598_1340_075242_1340_G01",
+      "latitude_product_center": "-45.6",
+      "longitude_product_center": "132.4",
+      "fields": [
+        "Pit in southern mid-latitudes",
+        "DTEEC_075598_1340_075242_1340_G01",
+        "-45.6",
+        "132.4",
+        "2025-Aug-13",
+        "G"
+      ]
+    },
+    {
+      "title": "Pit near Hephaestus Fossae",
+      "product_id": "DTEEC_052638_2020_060379_2020_U01",
+      "latitude_product_center": "21.5",
+      "longitude_product_center": "122.1",
+      "fields": [
+        "Pit near Hephaestus Fossae",
+        "DTEEC_052638_2020_060379_2020_U01",
+        "21.5",
+        "122.1",
+        "2020-Nov-16",
+        "U"
+      ]
+    },
+    {
+      "title": "Pit within crater north of Rabe Crater",
+      "product_id": "DTEED_077026_1390_077435_1390_A01",
+      "latitude_product_center": "-40.8",
+      "longitude_product_center": "34.1",
+      "fields": [
+        "Pit within crater north of Rabe Crater",
+        "DTEED_077026_1390_077435_1390_A01",
+        "-40.8",
+        "34.1",
+        "2023-Apr-01",
+        "A"
+      ]
+    },
+    {
+      "title": "Pits and channels in Amazonis Planitia",
+      "product_id": "DTEED_025827_2025_025893_2025_A01",
+      "latitude_product_center": "22.2",
+      "longitude_product_center": "202.8",
+      "fields": [
+        "Pits and channels in Amazonis Planitia",
+        "DTEED_025827_2025_025893_2025_A01",
+        "22.2",
+        "202.8",
+        "2018-Mar-26",
+        "A"
+      ]
+    },
+    {
+      "title": "Pits and craters",
+      "product_id": "DTEED_017875_2305_018007_2305_A01",
+      "latitude_product_center": "50.0",
+      "longitude_product_center": "219.2",
+      "fields": [
+        "Pits and craters",
+        "DTEED_017875_2305_018007_2305_A01",
+        "50.0",
+        "219.2",
+        "2014-Dec-12",
+        "A"
+      ]
+    },
+    {
+      "title": "Pits and gullies",
+      "product_id": "DTEEC_031919_1435_024205_1435_U01",
+      "latitude_product_center": "-36.0",
+      "longitude_product_center": "214.3",
+      "fields": [
+        "Pits and gullies",
+        "DTEEC_031919_1435_024205_1435_U01",
+        "-36.0",
+        "214.3",
+        "2020-Sep-23",
+        "U"
+      ]
+    },
+    {
+      "title": "Pits in Hydrae Chasma",
+      "product_id": "DTEEC_013745_1730_013033_1730_A01",
+      "latitude_product_center": "-6.8",
+      "longitude_product_center": "298.0",
+      "fields": [
+        "Pits in Hydrae Chasma",
+        "DTEEC_013745_1730_013033_1730_A01",
+        "-6.8",
+        "298.0",
+        "2013-Jun-11",
+        "A"
+      ]
+    },
+    {
+      "title": "Pits in mid-latitude mantle",
+      "product_id": "DTEEC_053320_2345_053241_2345_A01",
+      "latitude_product_center": "54.2",
+      "longitude_product_center": "211.9",
+      "fields": [
+        "Pits in mid-latitude mantle",
+        "DTEEC_053320_2345_053241_2345_A01",
+        "54.2",
+        "211.9",
+        "2021-Dec-22",
+        "A"
+      ]
+    },
+    {
+      "title": "Pits in Sinai Planum",
+      "product_id": "DTEED_035411_1710_035266_1710_A01",
+      "latitude_product_center": "-9.0",
+      "longitude_product_center": "271.1",
+      "fields": [
+        "Pits in Sinai Planum",
+        "DTEED_035411_1710_035266_1710_A01",
+        "-9.0",
+        "271.1",
+        "2026-Jul-30",
+        "A"
+      ]
+    },
+    {
+      "title": "Pits north of Alba Patera",
+      "product_id": "DTEEC_016581_2310_016080_2310_A01",
+      "latitude_product_center": "50.6",
+      "longitude_product_center": "264.6",
+      "fields": [
+        "Pits north of Alba Patera",
+        "DTEEC_016581_2310_016080_2310_A01",
+        "50.6",
+        "264.6",
+        "2015-Dec-23",
+        "A"
+      ]
+    },
+    {
+      "title": "Pitted cones in Melas Chasma",
+      "product_id": "DTEEC_043850_1685_043916_1685_A01",
+      "latitude_product_center": "-11.5",
+      "longitude_product_center": "290.6",
+      "fields": [
+        "Pitted cones in Melas Chasma",
+        "DTEEC_043850_1685_043916_1685_A01",
+        "-11.5",
+        "290.6",
+        "2016-Dec-01",
+        "A"
+      ]
+    },
+    {
+      "title": "Pitted cones in Utopia Planitia",
+      "product_id": "DTEEC_053786_2135_053641_2135_A01",
+      "latitude_product_center": "33.1",
+      "longitude_product_center": "94.9",
+      "fields": [
+        "Pitted cones in Utopia Planitia",
+        "DTEEC_053786_2135_053641_2135_A01",
+        "33.1",
+        "94.9",
+        "2022-Jun-28",
+        "A"
+      ]
+    },
+    {
+      "title": "Pitted cones in Utopia Planitia",
+      "product_id": "DTEEC_053364_2135_053219_2135_A01",
+      "latitude_product_center": "33.1",
+      "longitude_product_center": "95.0",
+      "fields": [
+        "Pitted cones in Utopia Planitia",
+        "DTEEC_053364_2135_053219_2135_A01",
+        "33.1",
+        "95.0",
+        "2022-Jun-28",
+        "A"
+      ]
+    },
+    {
+      "title": "Pitted cones in Utopia Planitia",
+      "product_id": "DTEEC_050450_2120_059404_2120_A01",
+      "latitude_product_center": "31.9",
+      "longitude_product_center": "96.4",
+      "fields": [
+        "Pitted cones in Utopia Planitia",
+        "DTEEC_050450_2120_059404_2120_A01",
+        "31.9",
+        "96.4",
+        "2022-May-06",
+        "A"
+      ]
+    },
+    {
+      "title": "Pitted cones in Utopia Planitia",
+      "product_id": "DTEEC_048894_2090_049527_2090_A01",
+      "latitude_product_center": "28.5",
+      "longitude_product_center": "96.7",
+      "fields": [
+        "Pitted cones in Utopia Planitia",
+        "DTEEC_048894_2090_049527_2090_A01",
+        "28.5",
+        "96.7",
+        "2021-Oct-28",
+        "A"
+      ]
+    },
+    {
+      "title": "Pitted cones in Utopia Planitia",
+      "product_id": "DTEED_045268_2120_044424_2120_A01",
+      "latitude_product_center": "31.7",
+      "longitude_product_center": "95.3",
+      "fields": [
+        "Pitted cones in Utopia Planitia",
+        "DTEED_045268_2120_044424_2120_A01",
+        "31.7",
+        "95.3",
+        "2016-Sep-03",
+        "A"
+      ]
+    },
+    {
+      "title": "Pitted northern plains",
+      "product_id": "DTEED_028064_2215_027919_2215_A01",
+      "latitude_product_center": "41.1",
+      "longitude_product_center": "332.4",
+      "fields": [
+        "Pitted northern plains",
+        "DTEED_028064_2215_027919_2215_A01",
+        "41.1",
+        "332.4",
+        "2023-Jul-26",
+        "A"
+      ]
+    },
+    {
+      "title": "Pitted terrain north of Hrad Vallis",
+      "product_id": "DTEEC_018168_2160_019012_2160_A01",
+      "latitude_product_center": "35.6",
+      "longitude_product_center": "141.9",
+      "fields": [
+        "Pitted terrain north of Hrad Vallis",
+        "DTEEC_018168_2160_019012_2160_A01",
+        "35.6",
+        "141.9",
+        "2015-Oct-26",
+        "A"
+      ]
+    },
+    {
+      "title": "Polar pit gullies",
+      "product_id": "DTEPC_030846_1085_021879_1085_G01",
+      "latitude_product_center": "-71.3",
+      "longitude_product_center": "3.1",
+      "fields": [
+        "Polar pit gullies",
+        "DTEPC_030846_1085_021879_1085_G01",
+        "-71.3",
+        "3.1",
+        "2021-Dec-15",
+        "G"
+      ]
+    },
+    {
+      "title": "Ponded and pitted materials in Corinto Crater",
+      "product_id": "DTEEC_003611_1970_004244_1970_A01",
+      "latitude_product_center": "16.9",
+      "longitude_product_center": "141.7",
+      "fields": [
+        "Ponded and pitted materials in Corinto Crater",
+        "DTEEC_003611_1970_004244_1970_A01",
+        "16.9",
+        "141.7",
+        "2010-Mar-17",
+        "A"
+      ]
+    },
+    {
+      "title": "Possible collapsed slab along walls of Mamers Valles",
+      "product_id": "DTEED_003510_2165_003576_2165_A01",
+      "latitude_product_center": "36.3",
+      "longitude_product_center": "15.3",
+      "fields": [
+        "Possible collapsed slab along walls of Mamers Valles",
+        "DTEED_003510_2165_003576_2165_A01",
+        "36.3",
+        "15.3",
+        "2022-Nov-19",
+        "A"
+      ]
+    },
+    {
+      "title": "Possible pit at edge of south polar residual cap",
+      "product_id": "DTEPD_049945_0930_049972_0930_A01",
+      "latitude_product_center": "-87.2",
+      "longitude_product_center": "263.6",
+      "fields": [
+        "Possible pit at edge of south polar residual cap",
+        "DTEPD_049945_0930_049972_0930_A01",
+        "-87.2",
+        "263.6",
+        "2017-Sep-01",
+        "A"
+      ]
+    },
+    {
+      "title": "Possible skylight near Elysium region",
+      "product_id": "DTEEC_046730_2110_055169_2110_A01",
+      "latitude_product_center": "30.6",
+      "longitude_product_center": "141.3",
+      "fields": [
+        "Possible skylight near Elysium region",
+        "DTEEC_046730_2110_055169_2110_A01",
+        "30.6",
+        "141.3",
+        "2022-Jul-07",
+        "A"
+      ]
+    },
+    {
+      "title": "Rayed crater with central pit in Arcadia Planitia in THEMIS V28811007",
+      "product_id": "DTEEC_018522_2270_019010_2270_A01",
+      "latitude_product_center": "46.6",
+      "longitude_product_center": "194.9",
+      "fields": [
+        "Rayed crater with central pit in Arcadia Planitia in THEMIS V28811007",
+        "DTEEC_018522_2270_019010_2270_A01",
+        "46.6",
+        "194.9",
+        "2013-Jul-03",
+        "A"
+      ]
+    },
+    {
+      "title": "Rifts and pitted cones in Utopia Planitia",
+      "product_id": "DTEED_057782_2110_049039_2110_A01",
+      "latitude_product_center": "30.7",
+      "longitude_product_center": "97.8",
+      "fields": [
+        "Rifts and pitted cones in Utopia Planitia",
+        "DTEED_057782_2110_049039_2110_A01",
+        "30.7",
+        "97.8",
+        "2022-Oct-17",
+        "A"
+      ]
+    },
+    {
+      "title": "Rifts and pitted cones in Utopia Planitia",
+      "product_id": "DTEED_051307_2110_046191_2110_A01",
+      "latitude_product_center": "30.7",
+      "longitude_product_center": "97.9",
+      "fields": [
+        "Rifts and pitted cones in Utopia Planitia",
+        "DTEED_051307_2110_046191_2110_A01",
+        "30.7",
+        "97.9",
+        "2022-Oct-17",
+        "A"
+      ]
+    },
+    {
+      "title": "Rifts and pitted cones in Utopia Planitia",
+      "product_id": "DTEED_045057_2120_052006_2120_A01",
+      "latitude_product_center": "31.7",
+      "longitude_product_center": "96.3",
+      "fields": [
+        "Rifts and pitted cones in Utopia Planitia",
+        "DTEED_045057_2120_052006_2120_A01",
+        "31.7",
+        "96.3",
+        "2021-Mar-31",
+        "A"
+      ]
+    }
+  ],
+  "qualification": "Title filter only; product centers are not feature centers"
+}

@@ -1,0 +1,321 @@
+{
+  "url": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/query?f=json&geometry=%7B%22xmin%22%3A+295000%2C+%22ymin%22%3A+4812600%2C+%22xmax%22%3A+295650%2C+%22ymax%22%3A+4813400%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+26912%7D%7D&geometryType=esriGeometryEnvelope&inSR=26912&spatialRel=esriSpatialRelIntersects&where=Category%3D1&outFields=%2A&returnGeometry=false",
+  "response": {
+    "objectIdFieldName": "OBJECTID",
+    "fields": [
+      {
+        "name": "OBJECTID",
+        "type": "esriFieldTypeOID",
+        "alias": "OBJECTID",
+        "domain": null
+      },
+      {
+        "name": "Shape",
+        "type": "esriFieldTypeGeometry",
+        "alias": "Shape",
+        "domain": null
+      },
+      {
+        "name": "Name",
+        "type": "esriFieldTypeString",
+        "alias": "Name",
+        "domain": null,
+        "length": 200
+      },
+      {
+        "name": "MinPS",
+        "type": "esriFieldTypeDouble",
+        "alias": "MinPS",
+        "domain": null
+      },
+      {
+        "name": "MaxPS",
+        "type": "esriFieldTypeDouble",
+        "alias": "MaxPS",
+        "domain": null
+      },
+      {
+        "name": "Category",
+        "type": "esriFieldTypeInteger",
+        "alias": "Category",
+        "domain": {
+          "type": "codedValue",
+          "name": "MosaicCatalogItemCategoryDomain",
+          "description": "Catalog item categories.",
+          "codedValues": [
+            {
+              "name": "Unknown",
+              "code": 0
+            },
+            {
+              "name": "Primary",
+              "code": 1
+            },
+            {
+              "name": "Overview",
+              "code": 2
+            },
+            {
+              "name": "Unprocessed Overview",
+              "code": 3
+            },
+            {
+              "name": "Partial Overview",
+              "code": 4
+            },
+            {
+              "name": "Inactive",
+              "code": 5
+            },
+            {
+              "name": "Uploaded",
+              "code": 253
+            },
+            {
+              "name": "Incomplete",
+              "code": 254
+            },
+            {
+              "name": "Custom",
+              "code": 255
+            }
+          ],
+          "mergePolicy": "esriMPTDefaultValue",
+          "splitPolicy": "esriSPTDefaultValue"
+        }
+      },
+      {
+        "name": "CenterX",
+        "type": "esriFieldTypeDouble",
+        "alias": "CenterX",
+        "domain": null
+      },
+      {
+        "name": "CenterY",
+        "type": "esriFieldTypeDouble",
+        "alias": "CenterY",
+        "domain": null
+      },
+      {
+        "name": "State",
+        "type": "esriFieldTypeString",
+        "alias": "State",
+        "domain": null,
+        "length": 2
+      },
+      {
+        "name": "Year",
+        "type": "esriFieldTypeSmallInteger",
+        "alias": "Year",
+        "domain": null
+      },
+      {
+        "name": "raster_name",
+        "type": "esriFieldTypeString",
+        "alias": "raster_name",
+        "domain": null,
+        "length": 256
+      },
+      {
+        "name": "download_url",
+        "type": "esriFieldTypeString",
+        "alias": "download_url",
+        "domain": null,
+        "length": 256
+      },
+      {
+        "name": "acquisition_date",
+        "type": "esriFieldTypeDate",
+        "alias": "acquisition_date",
+        "domain": null,
+        "length": 8
+      },
+      {
+        "name": "agency",
+        "type": "esriFieldTypeString",
+        "alias": "agency",
+        "domain": null,
+        "length": 16
+      },
+      {
+        "name": "vendor",
+        "type": "esriFieldTypeString",
+        "alias": "vendor",
+        "domain": null,
+        "length": 16
+      },
+      {
+        "name": "resolution_value",
+        "type": "esriFieldTypeDouble",
+        "alias": "resolution_value",
+        "domain": null
+      },
+      {
+        "name": "resolution_units",
+        "type": "esriFieldTypeString",
+        "alias": "resolution_units",
+        "domain": null,
+        "length": 5
+      },
+      {
+        "name": "band_count",
+        "type": "esriFieldTypeInteger",
+        "alias": "band_count",
+        "domain": null
+      },
+      {
+        "name": "sensor_type",
+        "type": "esriFieldTypeString",
+        "alias": "sensor_type",
+        "domain": null,
+        "length": 4
+      },
+      {
+        "name": "projection_name",
+        "type": "esriFieldTypeString",
+        "alias": "projection_name",
+        "domain": null,
+        "length": 64
+      },
+      {
+        "name": "projection_zone",
+        "type": "esriFieldTypeString",
+        "alias": "projection_zone",
+        "domain": null,
+        "length": 8
+      },
+      {
+        "name": "datum",
+        "type": "esriFieldTypeString",
+        "alias": "datum",
+        "domain": null,
+        "length": 8
+      }
+    ],
+    "geometryType": "esriGeometryPolygon",
+    "spatialReference": {
+      "wkid": 102100,
+      "latestWkid": 3857
+    },
+    "features": [
+      {
+        "attributes": {
+          "OBJECTID": 48953,
+          "Name": "m_4311336_ne_12_060_20210619",
+          "MinPS": 0,
+          "MaxPS": 19.1,
+          "Category": 1,
+          "CenterX": -12638246.00335012,
+          "CenterY": 5383598.134008201,
+          "State": "ID",
+          "Year": 2021,
+          "raster_name": "m_4311336_ne_12_060_20210619",
+          "download_url": "https://earthexplorer.usgs.gov/download/options/naip/3126177",
+          "acquisition_date": 1624060800000,
+          "agency": "USDA",
+          "vendor": "USDA-FSA-APFO",
+          "resolution_value": 0.6,
+          "resolution_units": "METER",
+          "band_count": 4,
+          "sensor_type": "CNIR",
+          "projection_name": "UTM",
+          "projection_zone": "12N",
+          "datum": "NAD83"
+        },
+        "geometry": {
+          "rings": [
+            [
+              [
+                -12641552.0676,
+                5378317.534400001
+              ],
+              [
+                -12641984.9066,
+                5378304.166599996
+              ],
+              [
+                -12642302.8514,
+                5388652.1570999995
+              ],
+              [
+                -12634502.8017,
+                5388890.5057
+              ],
+              [
+                -12634193.5108,
+                5378541.692299999
+              ],
+              [
+                -12641552.0676,
+                5378317.534400001
+              ]
+            ]
+          ],
+          "spatialReference": {
+            "wkid": 102100,
+            "latestWkid": 3857
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 48955,
+          "Name": "m_4311336_se_12_060_20210619",
+          "MinPS": 0,
+          "MaxPS": 19.1,
+          "Category": 1,
+          "CenterX": -12638244.617267951,
+          "CenterY": 5374015.738780132,
+          "State": "ID",
+          "Year": 2021,
+          "raster_name": "m_4311336_se_12_060_20210619",
+          "download_url": "https://earthexplorer.usgs.gov/download/options/naip/3126179",
+          "acquisition_date": 1624060800000,
+          "agency": "USDA",
+          "vendor": "USDA-FSA-APFO",
+          "resolution_value": 0.6,
+          "resolution_units": "METER",
+          "band_count": 4,
+          "sensor_type": "CNIR",
+          "projection_name": "UTM",
+          "projection_zone": "12N",
+          "datum": "NAD83"
+        },
+        "geometry": {
+          "rings": [
+            [
+              [
+                -12641547.465599999,
+                5368740.656900004
+              ],
+              [
+                -12641979.8599,
+                5368727.318300001
+              ],
+              [
+                -12642297.1058,
+                5379064.739200003
+              ],
+              [
+                -12634505.0902,
+                5379302.568800002
+              ],
+              [
+                -12634196.4704,
+                5368964.327299997
+              ],
+              [
+                -12641547.465599999,
+                5368740.656900004
+              ]
+            ]
+          ],
+          "spatialReference": {
+            "wkid": 102100,
+            "latestWkid": 3857
+          }
+        }
+      }
+    ]
+  }
+}
