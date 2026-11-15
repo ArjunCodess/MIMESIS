@@ -1,0 +1,116 @@
+{
+  "headline": "Three characterized hypotheses; a new analogue discovery is not established",
+  "conclusion": "The six-region experiment measured 8,507 valid windows and froze 36 comparisons. 4 comparisons met the visible-landform rubric in a model-assisted assessment. The deeper literature search found prior analogue work around the promising settings, so this release reports new source-linked characterizations and preserves unresolved novelty instead of asserting a new discovery.",
+  "leads": [
+    {
+      "candidate_id": "MOJAVE-142000-046000",
+      "target_id": "jezero",
+      "claim_level": "new_characterization_of_known_analogue",
+      "statement": "A source-linked regional mapping hypothesis centered at 34.51237, -115.54262. The observed floor/margin arrangement passes the frozen model-assisted image rubric. Prior analogue work prevents a new-region claim; exact task/footprint novelty remains unresolved.",
+      "gates": [
+        {
+          "name": "Robust terrain screening",
+          "state": "passes provisional cutoff",
+          "reason": "Robust loss 0.002289; support and mask sensitivities retained. Rank stability is diagnostic, not a probability."
+        },
+        {
+          "name": "Separate camera observations",
+          "state": "provisional_visual_support",
+          "reason": "Clear Earth coverage 100.00% locally and 99.98% contextually; all mandatory visible requirements supported."
+        },
+        {
+          "name": "Novelty audit",
+          "state": "known analogue context; exact association unresolved",
+          "reason": "Actual query log and prior studies are published. Coordinate differences do not establish novelty."
+        },
+        {
+          "name": "Independent review",
+          "state": "not performed",
+          "reason": "Assessor also implemented the screening. No expert endorsement or field validation is implied."
+        }
+      ],
+      "limitations": [
+        "Irrigated circular fields and roads modify the modern Earth floor; the terrain DEM and image dates differ. The Earth basin is not an impact crater counterpart or a mineral match.",
+        "Model-assisted remote characterization; no independent expert or field validation. A bounded search cannot prove absence of prior work."
+      ],
+      "earth_image": "MOJAVE-142000-046000-optical.png",
+      "planetary_image": "jezero-camera.png"
+    },
+    {
+      "candidate_id": "MOROCCO-103000-100000",
+      "target_id": "jezero",
+      "claim_level": "new_characterization_of_known_analogue",
+      "statement": "A source-linked regional mapping hypothesis centered at 30.00000, -6.96891. The observed floor/margin arrangement passes the frozen model-assisted image rubric. Prior analogue work prevents a new-region claim; exact task/footprint novelty remains unresolved.",
+      "gates": [
+        {
+          "name": "Robust terrain screening",
+          "state": "passes provisional cutoff",
+          "reason": "Robust loss 0.002671; support and mask sensitivities retained. Rank stability is diagnostic, not a probability."
+        },
+        {
+          "name": "Separate camera observations",
+          "state": "provisional_visual_support",
+          "reason": "Clear Earth coverage 100.00% locally and 96.13% contextually; all mandatory visible requirements supported."
+        },
+        {
+          "name": "Novelty audit",
+          "state": "known analogue context; exact association unresolved",
+          "reason": "Actual query log and prior studies are published. Coordinate differences do not establish novelty."
+        },
+        {
+          "name": "Independent review",
+          "state": "not performed",
+          "reason": "Assessor also implemented the screening. No expert endorsement or field validation is implied."
+        }
+      ],
+      "limitations": [
+        "The Earth parallel ridge belts and drainage pattern differ from the enclosed crater-rim geometry of Jezero. This supports a coarse mapping exercise, not shared origin.",
+        "Model-assisted remote characterization; no independent expert or field validation. A bounded search cannot prove absence of prior work."
+      ],
+      "earth_image": "MOROCCO-103000-100000-optical.png",
+      "planetary_image": "jezero-camera.png"
+    },
+    {
+      "candidate_id": "NAMIB-157000-136000",
+      "target_id": "syrtis",
+      "claim_level": "new_characterization_of_known_analogue",
+      "statement": "A source-linked regional mapping hypothesis centered at -24.67394, 16.56316. The observed floor/margin arrangement passes the frozen model-assisted image rubric. Prior analogue work prevents a new-region claim; exact task/footprint novelty remains unresolved.",
+      "gates": [
+        {
+          "name": "Robust terrain screening",
+          "state": "passes provisional cutoff",
+          "reason": "Robust loss 0.001550; support and mask sensitivities retained. Rank stability is diagnostic, not a probability."
+        },
+        {
+          "name": "Separate camera observations",
+          "state": "provisional_visual_support",
+          "reason": "Clear Earth coverage 99.99% locally and 99.78% contextually; all mandatory visible requirements supported."
+        },
+        {
+          "name": "Novelty audit",
+          "state": "known analogue context; exact association unresolved",
+          "reason": "Actual query log and prior studies are published. Coordinate differences do not establish novelty."
+        },
+        {
+          "name": "Independent review",
+          "state": "not performed",
+          "reason": "Assessor also implemented the screening. No expert endorsement or field validation is implied."
+        }
+      ],
+      "limitations": [
+        "Earth drainage dissection and Martian wind streaks/flow-like boundaries do not imply shared formative processes.",
+        "Model-assisted remote characterization; no independent expert or field validation. A bounded search cannot prove absence of prior work."
+      ],
+      "earth_image": "NAMIB-157000-136000-optical.png",
+      "planetary_image": "syrtis-camera.png"
+    }
+  ],
+  "remaining": [
+    "Independent geologist review of the 36 frozen panels and task tolerances",
+    "Exact geological-unit and published-footprint overlap review, including non-indexed and unpublished analogue campaigns",
+    "Field slope transects, substrate descriptions and access/permission checks",
+    "A verified CRISM/EMIT pair with quality masks, wavelength/response metadata and uncertainty before any mineral-similarity claim",
+    "Calibrated time/season/quality-controlled thermal products before activating thermal context; temperature never establishes lunar environmental equivalence",
+    "Official competition rule and submission verification; the challenge page returned 502 during access"
+  ]
+}
