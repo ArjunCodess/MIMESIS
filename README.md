@@ -22,7 +22,11 @@ Open **http://127.0.0.1:8000**. The API reference is at `/docs`. For frontend de
 
 The four views are Explore, Evidence, Methods and Data. The [paper](artifacts/paper/mimesis-paper.pdf) and [LaTeX source](artifacts/paper/mimesis-paper.tex) explain the measurements and their limits.
 
-The original lunar pit pilot fails its declared source-support checks. A four-variable terrain comparison on 3,693 MIMESIS Earth windows changes the leading window for four of six targets when derivative support changes. These are exploratory results; no new geological analogue or permanent-base location has been established.
+The geographic study compares 3,693 Earth windows across six targets, two scoring contracts and two supports. Nili Fossae's top tens share no IDs across supports, yet the winning footprints have 73.9% intersection-over-union. Changing the scoring contract moves Jezero and Syrtis winners between Namibia and Chile, over 8,300 km. These are exploratory geographic findings; geological relevance and field utility remain unvalidated.
+
+The [submission](artifacts/submission/submission.md) includes the judging-criteria evidence, demonstration script and deliverables. [Location GeoJSON](apps/web/public/research/site-shortlist.geojson) contains candidate footprints and validation status.
+
+The [seven-slide pitch](artifacts/presentation/mimesis-pitch.pdf) uses LaTeX Beamer and actual application screenshots. Its [source and build instructions](artifacts/presentation/README.md) accompany the PDF.
 
 Scientific records retain source identities, hashes, masks and exclusions. Missing terrain is not treated as smooth ground, and a ranking is not a probability of suitability. Coarse and fine measurements from one DEM share source ancestry.
 
@@ -43,6 +47,7 @@ Raw observations, restricted archives, installed dependencies, planning drafts a
 ```sh
 python -m pytest -q
 npm run build
+python scripts/measure_site_stability.py
 ```
 
 Native downloads are required only for source-dependent scientific reconstruction. The supplied research bundle runs without downloading the original rasters.
