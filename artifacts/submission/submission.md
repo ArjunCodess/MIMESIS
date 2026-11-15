@@ -1,8 +1,11 @@
 # MIMESIS
 
-**Challenge:** Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars  
-**Author:** Arjun Vijay Prakash, Grade XI, City Montessori School, Kanpur Road, Lucknow, India  
-**Event:** Lucknow local event, NASA Space Apps 2026  
+**Challenge:** Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars
+
+**Author:** Arjun Vijay Prakash, Grade XI, City Montessori School, Kanpur Road, Lucknow, India
+
+**Event:** Lucknow local event, NASA Space Apps 2026
+
 **Project:** https://github.com/ArjunCodess/MIMESIS
 
 ## Summary
