@@ -10,13 +10,15 @@
 
 ## Summary
 
-Which Earth landscape should a mission team study before exploring the Moon or Mars? MIMESIS compares measured terrain and shows when the answer depends on the analysis itself. Its four-view explorer connects NASADEM Earth observations with MOLA Mars and LOLA Moon measurements, source records and downloadable locations.
+MIMESIS helps researchers find Earth landscapes that could support preparation for Moon and Mars exploration. It brings NASA height maps, terrain comparisons, source records and downloadable locations into one working website.
 
-The new geographic analysis uses 3,693 overlapping windows in the Namib and Atacama, six planetary targets, two scoring contracts and two spatial supports. For Nili Fossae, changing support replaces every top-ten candidate identifier, yet the winning footprints still have 73.9% intersection-over-union and their centers move only 3 km. Changing the scoring contract has a different consequence: Jezero and Syrtis winners move between Namibia and Chile, more than 8,300 km.
+Users select a planetary target, explore possible Earth matches and inspect the measurements behind each result. We compared 3,693 overlapping Earth areas in Namibia and Chile with six locations on the Moon and Mars, using NASADEM, MOLA and LOLA data.
 
-MIMESIS turns that distinction into a practical research tool. Users can inspect geographic continuity, compare assumptions and download target-specific terrain shortlists chosen to avoid relying on one support. Each exported entry includes a footprint, source identity and explicit validation status. These are candidate areas for follow-up, not approved field sites or permanent-base recommendations.
+Our study found that a changed ranking does not always mean a different landscape. For Nili Fossae, two winning Earth areas were only three kilometres apart, despite completely different top ten lists. Changing the comparison method had a larger effect: choices for Jezero and Syrtis moved between Namibia and Chile, more than 8,300 kilometres.
 
-The contribution is a reproducible project-level finding about analogue selection. It does not establish a previously unknown geological analogue or world-first method. Geological relevance, source accuracy, access and exploration utility still require independent evidence.
+MIMESIS makes these differences visible, helping users understand how assumptions affect the places selected. The project includes an interactive explorer, geographic exports, reproducible analysis, a research paper and an editable presentation.
+
+Its intended benefit is to guide further investigation before fieldwork. We report missing data and failed quality checks openly. The results identify research candidates, not verified geological analogues or safe base locations. Independent geological checks and exploration tests remain necessary before making stronger claims.
 
 ## Evidence for the five judging criteria
 
