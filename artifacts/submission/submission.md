@@ -20,6 +20,18 @@ MIMESIS makes these differences visible, helping users understand how assumption
 
 Its intended benefit is to guide further investigation before fieldwork. We report missing data and failed quality checks openly. The results identify research candidates, not verified geological analogues or safe base locations. Independent geological checks and exploration tests remain necessary before making stronger claims.
 
+## Project details
+
+Users choose a Moon or Mars target, inspect possible Earth matches and review the measurements behind each result. MIMESIS compares height changes, slopes, roughness and surrounding terrain. NASADEM supplies Earth height data, MOLA supplies Mars data and LOLA supplies Moon data.
+
+The study covers 3,693 overlapping areas in the Namib and Atacama, compared with six planetary targets. We tested two map scales and two comparison methods. For Nili Fossae, none of the top-ten entries kept the same ID across scales, but the winning areas were only three kilometres apart and overlapped substantially. For Jezero and Syrtis, changing the comparison method moved the selected area between Namibia and Chile, more than 8,300 kilometres.
+
+Our contribution is showing how a changed ranking can mean either nearby shared ground or a very different location. The website lets users inspect that distinction instead of relying on one score.
+
+We built the analysis in Python using NumPy, SciPy, Rasterio and PyProj. The website uses React and TypeScript, with a FastAPI backend. The paper and presentation use LaTeX. The release includes source records, geographic exports, nine focused software tests and instructions for reproducing the calculations.
+
+We considered map scale, missing observations, data quality, overlapping areas and differences between Earth and space environments. Failed lunar quality checks remain visible rather than being hidden. The intended benefit is to help researchers choose places and observations for further study. We have not confirmed a new geological analogue, proven field usefulness or established that any location is suitable for a permanent base.
+
 ## Evidence for the five judging criteria
 
 | Criterion | What the project delivers | What the evidence does not establish |
