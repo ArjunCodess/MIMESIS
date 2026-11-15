@@ -1,0 +1,320 @@
+{
+  "clouds": [
+    {
+      "path": "data/raw/discovery_v10/caves/IndianTunnel_cave/Full/IndianTunnel_full_10x.f32",
+      "point_count": 11620540,
+      "nonfinite_records": 0,
+      "attribute_min": [
+        -63.38686752319336,
+        -64.57059478759766,
+        -2.3846819400787354,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "attribute_max": [
+        12.832905769348145,
+        105.07064819335938,
+        12.949860572814941,
+        255.0,
+        255.0,
+        255.0,
+        255.0
+      ],
+      "sha256": "4bb4178af8c8e1266a266723aa1424e135a6aa17c928de3f25bc42d27b06e572",
+      "coordinate_reference": "local Cartesian metres; world transform not established",
+      "attributes": [
+        "x",
+        "y",
+        "z",
+        "NIR_reflectance",
+        "red",
+        "green",
+        "blue"
+      ],
+      "ground_classification": "not supplied"
+    },
+    {
+      "path": "data/raw/discovery_v10/caves/IndianTunnel_cave/Full/IndianTunnel_full_1x.f32",
+      "point_count": 116205392,
+      "nonfinite_records": 0,
+      "attribute_min": [
+        -63.62174987792969,
+        -65.01918029785156,
+        -2.3868234157562256,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "attribute_max": [
+        12.838187217712402,
+        105.42890167236328,
+        13.038862228393555,
+        255.0,
+        255.0,
+        255.0,
+        255.0
+      ],
+      "sha256": "d45382dce132d7e45d262f128772dbb256e15e337d505eb99e1ee6d00410ae36",
+      "coordinate_reference": "local Cartesian metres; world transform not established",
+      "attributes": [
+        "x",
+        "y",
+        "z",
+        "NIR_reflectance",
+        "red",
+        "green",
+        "blue"
+      ],
+      "ground_classification": "not supplied"
+    },
+    {
+      "path": "data/raw/discovery_v10/caves/IndianTunnel_cave/Section1/IndianTunnel_1.f32",
+      "point_count": 11800438,
+      "nonfinite_records": 0,
+      "attribute_min": [
+        -20.804399490356445,
+        16.07110023498535,
+        -2.403700113296509,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "attribute_max": [
+        6.548500061035156,
+        39.307098388671875,
+        0.2395000010728836,
+        0.0,
+        255.0,
+        255.0,
+        255.0
+      ],
+      "sha256": "21983857845d07e74faf60412d7aaf32ccddebdadfb590d8d1425d3eb60fc7ab",
+      "coordinate_reference": "local Cartesian metres; world transform not established",
+      "attributes": [
+        "x",
+        "y",
+        "z",
+        "NIR_reflectance",
+        "red",
+        "green",
+        "blue"
+      ],
+      "ground_classification": "not supplied"
+    },
+    {
+      "path": "data/raw/discovery_v10/caves/IndianTunnel_cave/Section2/IndianTunnel_2.f32",
+      "point_count": 10573581,
+      "nonfinite_records": 0,
+      "attribute_min": [
+        -31.1560001373291,
+        31.14889907836914,
+        -2.2750000953674316,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "attribute_max": [
+        1.3631000518798828,
+        59.68669891357422,
+        -0.4235000014305115,
+        0.0,
+        255.0,
+        255.0,
+        255.0
+      ],
+      "sha256": "d9b45e1218ca6de9bfecfe6bba60bea03f136ea2cc7c9fdc4e30cd0845035ce7",
+      "coordinate_reference": "local Cartesian metres; world transform not established",
+      "attributes": [
+        "x",
+        "y",
+        "z",
+        "NIR_reflectance",
+        "red",
+        "green",
+        "blue"
+      ],
+      "ground_classification": "not supplied"
+    },
+    {
+      "path": "data/raw/discovery_v10/caves/IndianTunnel_cave/Wall/IndianTunnel_Wall.f32",
+      "point_count": 4339760,
+      "nonfinite_records": 0,
+      "attribute_min": [
+        -3.060225009918213,
+        -2.4037387371063232,
+        -0.44237521290779114,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "attribute_max": [
+        3.041231632232666,
+        2.63130259513855,
+        0.36779022216796875,
+        0.0,
+        255.0,
+        255.0,
+        255.0
+      ],
+      "sha256": "72208936ac68e4a7727adf8df131bdb552c9d1b13b4f0b859516c20f1a06e79b",
+      "coordinate_reference": "local Cartesian metres; world transform not established",
+      "attributes": [
+        "x",
+        "y",
+        "z",
+        "NIR_reflectance",
+        "red",
+        "green",
+        "blue"
+      ],
+      "ground_classification": "not supplied"
+    },
+    {
+      "path": "data/raw/discovery_v10/caves/IndianTunnel_surface/Indian_Collapse3.f32",
+      "point_count": 16880761,
+      "nonfinite_records": 0,
+      "attribute_min": [
+        -26.89430046081543,
+        -31.62660026550293,
+        -15.32859992980957,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "attribute_max": [
+        17.491500854492188,
+        25.408300399780273,
+        0.5332000255584717,
+        0.0,
+        255.0,
+        255.0,
+        255.0
+      ],
+      "sha256": "6d9f675eddf4306cd9f881feb6fc5327c0e011e12099e1ecf072cdecd8bbbff2",
+      "coordinate_reference": "local Cartesian metres; world transform not established",
+      "attributes": [
+        "x",
+        "y",
+        "z",
+        "NIR_reflectance",
+        "red",
+        "green",
+        "blue"
+      ],
+      "ground_classification": "not supplied"
+    },
+    {
+      "path": "data/raw/discovery_v10/caves/IndianTunnel_surface/Indian_NorthSurface_10x.f32",
+      "point_count": 6095959,
+      "nonfinite_records": 0,
+      "attribute_min": [
+        -43.79753494262695,
+        -112.35401153564453,
+        -11.156975746154785,
+        25.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "attribute_max": [
+        21.242219924926758,
+        13.199525833129883,
+        3.335063934326172,
+        255.0,
+        255.0,
+        255.0,
+        255.0
+      ],
+      "sha256": "bfc1236bf0322a28408bee178289d7a8aab104365c7d04548e7ebba87550f623",
+      "coordinate_reference": "local Cartesian metres; world transform not established",
+      "attributes": [
+        "x",
+        "y",
+        "z",
+        "NIR_reflectance",
+        "red",
+        "green",
+        "blue"
+      ],
+      "ground_classification": "not supplied"
+    },
+    {
+      "path": "data/raw/discovery_v10/caves/IndianTunnel_surface/Indian_NorthSurface_1x.f32",
+      "point_count": 60959587,
+      "nonfinite_records": 0,
+      "attribute_min": [
+        -43.914756774902344,
+        -112.37130737304688,
+        -11.174985885620117,
+        23.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "attribute_max": [
+        21.340761184692383,
+        13.248866081237793,
+        3.335063934326172,
+        255.0,
+        255.0,
+        255.0,
+        255.0
+      ],
+      "sha256": "6de47799aff53e01fe49921aa05b04da114a9c6af7bd6b2f47fe9cd62766aeef",
+      "coordinate_reference": "local Cartesian metres; world transform not established",
+      "attributes": [
+        "x",
+        "y",
+        "z",
+        "NIR_reflectance",
+        "red",
+        "green",
+        "blue"
+      ],
+      "ground_classification": "not supplied"
+    },
+    {
+      "path": "data/raw/discovery_v10/caves/Sheepridge/Sheepridge.f32",
+      "point_count": 23882848,
+      "nonfinite_records": 0,
+      "attribute_min": [
+        -64.4749984741211,
+        -69.14891052246094,
+        -5.035727500915527,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "attribute_max": [
+        108.85557556152344,
+        117.29357147216797,
+        113.21956634521484,
+        255.0,
+        255.0,
+        255.0,
+        255.0
+      ],
+      "sha256": "b1e8c11e8cf8b84d0f48962dfe77ea612a007aa3a5160f750c351ebfc1bf03cf",
+      "coordinate_reference": "local Cartesian metres; world transform not established",
+      "attributes": [
+        "x",
+        "y",
+        "z",
+        "NIR_reflectance",
+        "red",
+        "green",
+        "blue"
+      ],
+      "ground_classification": "not supplied"
+    }
+  ],
+  "research_state": "source inspection only; no exact rim, ground surface or withheld outcome inferred"
+}

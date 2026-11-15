@@ -1,0 +1,147 @@
+[
+  {
+    "repo": "MahmoudAdelbghany/ODYSSEY",
+    "status": 200,
+    "head": "5c45ad947dc137b4d117a088cded4cee7f7e0fca",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "code_candidates": [
+      "server/rerank/bm25.ts"
+    ],
+    "files": 543,
+    "readme_chars": 33479,
+    "homepage": null
+  },
+  {
+    "repo": "TayyabXtreme/Twin_World_Nasa_Space_APP_Challenge_2026",
+    "status": 200,
+    "head": "296c4fba0b50059369b45eba36c84fc079c9b756",
+    "license": null,
+    "code_candidates": [
+      "lib/finder/score.worker.ts",
+      "lib/finder/scorer.ts",
+      "lib/score.ts",
+      "public/data/ml/analogue-space/clusters.json",
+      "public/data/ml/analogue-space/model-card.json",
+      "public/data/ml/analogue-space/points.json",
+      "public/data/ml/learned-weights/model-card.json"
+    ],
+    "files": 2987,
+    "readme_chars": 37923,
+    "homepage": "https://twinworld-topaz.vercel.app"
+  },
+  {
+    "repo": "end13s/analog-atlas",
+    "status": 200,
+    "head": "1323ea9d70da6e4e21c3c2594e840fc448986d4b",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "code_candidates": [
+      "engine/score.py",
+      "engine/tests/test_score.py",
+      "web/src/worker/score.worker.js",
+      "web/src/worker/score_core.js"
+    ],
+    "files": 31,
+    "readme_chars": 8753,
+    "homepage": null
+  },
+  {
+    "repo": "Gharbawy1/Nasa-2026",
+    "status": 200,
+    "head": "450eca5ddfe6f882db4755cffdf4c46afe18969a",
+    "license": null,
+    "code_candidates": [
+      "lib/similarity.test.ts",
+      "lib/similarity.ts",
+      "pipeline/gee/analog_fingerprint.js"
+    ],
+    "files": 183,
+    "readme_chars": 25171,
+    "homepage": null
+  },
+  {
+    "repo": "azrialahmad/earth-analog-explorer",
+    "status": 200,
+    "head": "6a27cb760c4a1eb26dd08264baf5da754e7c731f",
+    "license": null,
+    "code_candidates": [],
+    "files": 179,
+    "readme_chars": 9270,
+    "homepage": "https://earth-analog-explorer-psi.vercel.app"
+  },
+  {
+    "repo": "ThomasdeChillaz/moonwalk-spaceapps-2026",
+    "status": 404
+  },
+  {
+    "repo": "shishir-kuet/terrestrial-analog-finder",
+    "status": 200,
+    "head": "421e80fc67706ba9a8de644eed34ef2d7a11a91a",
+    "license": null,
+    "files": 621
+  },
+  {
+    "repo": "es-ratt/earthtwin",
+    "status": 200,
+    "head": "36e3b423995e412d44391cd5760fa2368f949d78",
+    "license": null,
+    "files": 180
+  },
+  {
+    "repo": "Yakiyo/terra-nova",
+    "status": 200,
+    "head": "3bda2fb9814c8f5ff24488a6f86c38e5fd72a164",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "files": 710
+  },
+  {
+    "repo": "escapeboy/analog-twin",
+    "status": 200,
+    "head": "819055eef1ac3432621b337dc92bdc8762b0eb36",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "files": 371
+  },
+  {
+    "repo": "KraKEn-bit/TerraNova",
+    "status": 200,
+    "head": "3bda2fb9814c8f5ff24488a6f86c38e5fd72a164",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "files": 710
+  },
+  {
+    "repo": "PuneetKumar1790/Analog-Finder",
+    "status": 200,
+    "head": "af054a7d6b26af2c95d3090b4f232e45bdcffff4",
+    "license": null,
+    "files": 68
+  }
+]

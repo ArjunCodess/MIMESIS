@@ -1,0 +1,107 @@
+﻿{
+    "validated_at":  "2026-11-14T17:02:04.8548617Z",
+    "experiment":  "mimesis-followup-v6-global-v8",
+    "python":  {
+                   "command":  "python -m pytest -q --junitxml=artifacts/reports/python-tests.xml",
+                   "passed":  135,
+                   "failed":  0,
+                   "errors":  0
+               },
+    "browser":  {
+                    "command":  "npx playwright test --reporter=json",
+                    "passed":  8,
+                    "failed":  0,
+                    "viewports":  [
+                                      "1440x1000 desktop Chromium",
+                                      "390px mobile Chromium"
+                                  ],
+                    "coverage":  [
+                                     "v5 buffer switch, attrition, fresh target gaps, source support, review limits",
+                                     "v4 task and region filters, suites, evidence exports",
+                                     "v3 archived target/tier/search/export workflow",
+                                     "keyboard tabs, horizontal overflow, zero page errors, axe WCAG2/2.1A/AA",
+                                     "V6 follow-up, full V8 global record/map/leader selection, geology, laboratory controls and judging evidence"
+                                 ],
+                    "axe_violations":  0,
+                    "fix_verified":  "Keyboard-focusable mobile table scroll regions; final V8 source and production record parity"
+                },
+    "production_build":  {
+                             "command":  "npm run build",
+                             "status":  "passed"
+                         },
+    "lint":  {
+                 "command":  "python -m ruff check src services scripts tests",
+                 "status":  "passed"
+             },
+    "dependency_audit":  {
+                             "command":  "npm audit --omit=dev",
+                             "vulnerabilities":  0
+                         },
+    "source_reproduction":  {
+                                "v3":  "passed earlier after expanded source acquisition",
+                                "v4":  {
+                                           "status":  "passed",
+                                           "command":  "python scripts/verify_discovery.py",
+                                           "scope":  "Fresh raw-source isolated frozen manifest; complete both-task/tier rankings, suites, investigations, benchmarks, coverage and protocol/data/record/implementation hashes match; published files unchanged."
+                                       },
+                                "v5":  {
+                                           "status":  "passed",
+                                           "command":  "python scripts/verify_natural_land.py",
+                                           "scope":  "Complete masked records from frozen projected fields/masks; original WorldCover clip SHA verified. Not fresh raw-to-mask processing."
+                                       },
+                                "v6":  {
+                                           "scope":  "Complete masked rankings, exclusions and controls reproduced from frozen projected intermediates; native WorldCover SHA verified. Not a fresh raw-to-mask reconstruction.",
+                                           "status":  "passed",
+                                           "command":  "python scripts/verify_natural_land.py --version v6"
+                                       },
+                                "v8":  {
+                                           "status":  "passed_saved_record_checks",
+                                           "scope":  "Both support rankings across all twelve targets and record hashes reproduce from saved measurements. Actual native-to-descriptor measurement completed once with resumable per-tile and per-context checkpoints. Stat-bound cache reuse is not a fresh byte rehash on every restart."
+                                       }
+                            },
+    "react_doctor":  {
+                         "score":  71,
+                         "reported_warnings":  11,
+                         "maintainability_warnings":  9,
+                         "reviewed_diagnostics":  [
+                                                      {
+                                                          "rule":  "no-array-index-as-key",
+                                                          "classification":  "false_positive_for_current_immutable_list",
+                                                          "confidence":  "high",
+                                                          "reason":  "Unfilled slots are a frozen noneditable list with no stateful children; item replacement cannot transfer child state."
+                                                      },
+                                                      {
+                                                          "rule":  "no-fetch-in-effect",
+                                                          "classification":  "no_observed_correctness_bug",
+                                                          "confidence":  "high",
+                                                          "reason":  "The optional static record is fetched once on panel mount, response validated at Zod boundary and aborted on unmount; no request uses mutable query state. Error state is displayed."
+                                                      }
+                                                  ],
+                         "remaining":  "Four large components, three complexity and two duplicate JSX warnings are maintainability debt, not a claim of clean static analysis."
+                     },
+    "scientific_review":  {
+                              "independent_expert_review":  "not_performed",
+                              "model_critique":  "supplied Gemini review reconciled against source metadata and falsifiable tests",
+                              "new_discovery":  "not_established",
+                              "v4_frozen_comparisons":  36,
+                              "v5_new_targets":  6,
+                              "v5_combined_eligible_500m":  7,
+                              "v5_combined_eligible_1000m":  1,
+                              "v5_complete_target_pairs":  0,
+                              "field_validation":  "not_performed",
+                              "global_null":  "82/100 frozen contexts measured; full global natural-land/imagery/geological eligibility remains incomplete",
+                              "exact_PEDR_track_matching":  "not_performed",
+                              "OSM_extracts":  "Real Chile, Namibia, Morocco and Qinghai PBF extracts; unavailable or partial elsewhere",
+                              "v6_combined_eligible_500m":  37,
+                              "v6_combined_eligible_1000m":  34,
+                              "v6_complete_pairs":  0,
+                              "v6_spatially_separated_eligible_pairs":  0,
+                              "v8_measured_contexts":  82,
+                              "v8_excluded_contexts":  18,
+                              "v8_complete_native_tiles":  424
+                          },
+    "final_record_hashes":  {
+                                "research_followup":  "e08369d81fcb31d437fcfbe98d1a30390daa4b1eb642eeecac156784cdeb7e76",
+                                "global_v8":  "f7870231cfbbb07cc0e89cb5d40adc7380a0c9370fdc75c77b02ff24e48675c7"
+                            }
+}

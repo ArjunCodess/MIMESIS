@@ -1,0 +1,74 @@
+[
+  {
+    "path": "data/derived/cogs/atacama-500.tif",
+    "region_id": "atacama",
+    "support_m": 500,
+    "body": "Earth"
+  },
+  {
+    "path": "data/derived/cogs/atacama-1000.tif",
+    "region_id": "atacama",
+    "support_m": 1000,
+    "body": "Earth"
+  },
+  {
+    "path": "data/derived/cogs/namib-500.tif",
+    "region_id": "namib",
+    "support_m": 500,
+    "body": "Earth"
+  },
+  {
+    "path": "data/derived/cogs/namib-1000.tif",
+    "region_id": "namib",
+    "support_m": 1000,
+    "body": "Earth"
+  },
+  {
+    "path": "data/derived/cogs/mojave-500.tif",
+    "region_id": "mojave",
+    "support_m": 500,
+    "body": "Earth"
+  },
+  {
+    "path": "data/derived/cogs/mojave-1000.tif",
+    "region_id": "mojave",
+    "support_m": 1000,
+    "body": "Earth"
+  },
+  {
+    "path": "data/derived/cogs/morocco-500.tif",
+    "region_id": "morocco",
+    "support_m": 500,
+    "body": "Earth"
+  },
+  {
+    "path": "data/derived/cogs/morocco-1000.tif",
+    "region_id": "morocco",
+    "support_m": 1000,
+    "body": "Earth"
+  },
+  {
+    "path": "data/derived/cogs/qaidam-500.tif",
+    "region_id": "qaidam",
+    "support_m": 500,
+    "body": "Earth"
+  },
+  {
+    "path": "data/derived/cogs/qaidam-1000.tif",
+    "region_id": "qaidam",
+    "support_m": 1000,
+    "body": "Earth"
+  },
+  {
+    "path": "data/derived/cogs/lanzarote-500.tif",
+    "region_id": "lanzarote",
+    "support_m": 500,
+    "body": "Earth"
+  },
+  {
+    "path": "data/derived/cogs/lanzarote-1000.tif",
+    "region_id": "lanzarote",
+    "support_m": 1000,
+    "body": "Earth"
+  }
+]

@@ -1,0 +1,2504 @@
+{
+  "jezero": {
+    "id": "jezero",
+    "run_hash": "62e9ae2f665ce2973fffae34dcdf821f9467379049c99e041a5f67a4cbf45007",
+    "shortlist": [
+      {
+        "candidate_id": "ATACAMA-154000-142000",
+        "role": "nomination",
+        "matched_to": null,
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The central and eastern scene contains a continuous smooth-looking floor unit interrupted by craters; no numeric slope is inferred from tone. Earth: Clear source area is 94.9% locally and 98.2% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-154000-142000-optical.png",
+            "planetary_image": "jezero-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: An arcuate, textured rim/margin is visible west and south of the central floor within the 80 km camera context. Earth: Clear source area is 94.9% locally and 98.2% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-154000-142000-optical.png",
+            "planetary_image": "jezero-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The camera image resolves the floor-to-margin boundary along the western and southern arcs; this supports a regional mapping exercise, not shared Earth/Mars origin. Earth: Clear source area is 94.9% locally and 98.2% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-154000-142000-optical.png",
+            "planetary_image": "jezero-camera.png"
+          }
+        ],
+        "novelty_status": "unresolved",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [
+          "Rectilinear industrial surfaces and roads occur in the 80 km context and near the local footprint.",
+          "Masked bright/water-like areas remove approximately 4.7 percent of local optical coverage; source classification does not prove their composition.",
+          "The Earth floor is in an established salt-basin analogue region and is not an impact-crater replica."
+        ],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "jezero",
+          "candidate_id": "ATACAMA-154000-142000",
+          "role": "nomination",
+          "earth_image": "ATACAMA-154000-142000-optical.png",
+          "planetary_image": "jezero-camera.png",
+          "earth_local_clear_fraction": 0.949140625,
+          "earth_context_clear_fraction": 0.981630859375,
+          "planetary_valid_fraction": 1.0,
+          "source_scene_ids": [
+            "HLS.L30.T19KDP.2025359T143108.v2.0",
+            "HLS.L30.T19KDQ.2025359T143108.v2.0",
+            "HLS.L30.T19KEP.2025359T143108.v2.0",
+            "HLS.L30.T19KEQ.2025359T143108.v2.0"
+          ],
+          "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+          "inspection_status": "not_assessed",
+          "run_hash": "62e9ae2f665ce2973fffae34dcdf821f9467379049c99e041a5f67a4cbf45007"
+        },
+        "source_lineage": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+        "novelty": {
+          "candidate_id": "ATACAMA-154000-142000",
+          "role": "nomination",
+          "region": "Atacama, Chile",
+          "center": {
+            "latitude": -23.61987507365594,
+            "longitude": -68.47084204412747
+          },
+          "bbox": {
+            "west": -68.56912998630884,
+            "south": -23.710470850358377,
+            "east": -68.37241826711639,
+            "north": -23.52921700486394
+          },
+          "window_m": 20000,
+          "public_site_name": null,
+          "candidate_id_public": false,
+          "known_regional_association": true,
+          "regional_association_ids": [
+            "KA-01",
+            "KA-02",
+            "KA-03",
+            "KA-04",
+            "KA-05",
+            "KA-06",
+            "KA-07",
+            "KA-10",
+            "KA-11"
+          ],
+          "exact_footprint_status": "unresolved",
+          "exact_footprint_finding": "no_public_match_found_in_queried_sources",
+          "exact_footprint_note": "The candidate center lies in the broader Salar de Atacama region. The Cussen page maps the salar at 23.5 S, 68 W and compares it with Jezero, but it does not publish a 20 km footprint matching this bounding box. No public record of the project-internal ID was found.",
+          "exact_task_status": "unresolved",
+          "exact_task_finding": "no_exact_public_match_found_in_queried_sources",
+          "exact_task_note": "The Cussen work is mineral/spectral and index-based, not a four-group morphometric terrain ranking of 20 km windows.",
+          "novelty_status": "not_established",
+          "footprint": [
+            [
+              -68.56853607034458,
+              -23.710470850358377
+            ],
+            [
+              -68.37241826711639,
+              -23.709794616778268
+            ],
+            [
+              -68.37328212061117,
+              -23.52921700486394
+            ],
+            [
+              -68.56912998630884,
+              -23.52989072379352
+            ],
+            [
+              -68.56853607034458,
+              -23.710470850358377
+            ]
+          ],
+          "status": "unresolved",
+          "scope_note": "Known regional analogue context does not establish this exact footprint/task; no new association claim is authorized"
+        }
+      },
+      {
+        "candidate_id": "NAMIB-112000-070000",
+        "role": "nomination",
+        "matched_to": null,
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The central and eastern scene contains a continuous smooth-looking floor unit interrupted by craters; no numeric slope is inferred from tone. Earth: Clear source area is 100.0% locally and 67.8% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-112000-070000-optical.png",
+            "planetary_image": "jezero-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: An arcuate, textured rim/margin is visible west and south of the central floor within the 80 km camera context. Earth: Clear source area is 100.0% locally and 67.8% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-112000-070000-optical.png",
+            "planetary_image": "jezero-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The camera image resolves the floor-to-margin boundary along the western and southern arcs; this supports a regional mapping exercise, not shared Earth/Mars origin. Earth: Clear source area is 100.0% locally and 67.8% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-112000-070000-optical.png",
+            "planetary_image": "jezero-camera.png"
+          }
+        ],
+        "novelty_status": "unresolved",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "jezero",
+          "candidate_id": "NAMIB-112000-070000",
+          "role": "nomination",
+          "earth_image": "NAMIB-112000-070000-optical.png",
+          "planetary_image": "jezero-camera.png",
+          "earth_local_clear_fraction": 1.0,
+          "earth_context_clear_fraction": 0.6779052734375,
+          "planetary_valid_fraction": 1.0,
+          "source_scene_ids": [
+            "HLS.L30.T33JWM.2025349T085748.v2.0",
+            "HLS.L30.T33JWN.2025349T085748.v2.0",
+            "HLS.L30.T33JXM.2025358T085137.v2.0",
+            "HLS.L30.T33JXN.2025342T085138.v2.0",
+            "HLS.L30.T33KWP.2025349T085724.v2.0",
+            "HLS.L30.T33KXP.2025358T085113.v2.0"
+          ],
+          "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+          "inspection_status": "not_assessed",
+          "run_hash": "62e9ae2f665ce2973fffae34dcdf821f9467379049c99e041a5f67a4cbf45007"
+        },
+        "source_lineage": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+        "novelty": {
+          "candidate_id": "NAMIB-112000-070000",
+          "role": "nomination",
+          "region": "Namib, Namibia",
+          "center": {
+            "latitude": -25.27077169840674,
+            "longitude": 16.119132611665044
+          },
+          "bbox": {
+            "west": 16.01984082950403,
+            "south": -25.361089071930074,
+            "east": 16.218570969305066,
+            "north": -25.180387187762324
+          },
+          "window_m": 20000,
+          "public_site_name": null,
+          "candidate_id_public": false,
+          "known_regional_association": true,
+          "regional_association_ids": [
+            "KA-12",
+            "KA-14",
+            "KA-15"
+          ],
+          "exact_footprint_status": "unresolved",
+          "exact_footprint_finding": "no_public_match_found_in_queried_sources",
+          "exact_footprint_note": "The candidate lies in the broader Namib desert region. Published work treats the Namib as a Mars dune-form analogue, but no source publishes this exact 20 km window. No public record of the project-internal ID was found.",
+          "exact_task_status": "unresolved",
+          "exact_task_finding": "no_exact_public_match_found_in_queried_sources",
+          "exact_task_note": "Dune-form and regional geomorphology comparisons are not the four-group morphometric ranking task.",
+          "novelty_status": "not_established",
+          "footprint": [
+            [
+              16.019870105423017,
+              -25.361089071930074
+            ],
+            [
+              16.218570969305066,
+              -25.360929592817314
+            ],
+            [
+              16.218248936304903,
+              -25.180387187762324
+            ],
+            [
+              16.01984082950403,
+              -25.180546078697372
+            ],
+            [
+              16.019870105423017,
+              -25.361089071930074
+            ]
+          ],
+          "status": "unresolved",
+          "scope_note": "Known regional analogue context does not establish this exact footprint/task; no new association claim is authorized"
+        }
+      },
+      {
+        "candidate_id": "NAMIB-082000-151000",
+        "role": "nomination",
+        "matched_to": null,
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The central and eastern scene contains a continuous smooth-looking floor unit interrupted by craters; no numeric slope is inferred from tone. Earth: Clear source area is 80.4% locally and 86.6% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-082000-151000-optical.png",
+            "planetary_image": "jezero-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: An arcuate, textured rim/margin is visible west and south of the central floor within the 80 km camera context. Earth: Clear source area is 80.4% locally and 86.6% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-082000-151000-optical.png",
+            "planetary_image": "jezero-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The camera image resolves the floor-to-margin boundary along the western and southern arcs; this supports a regional mapping exercise, not shared Earth/Mars origin. Earth: Clear source area is 80.4% locally and 86.6% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-082000-151000-optical.png",
+            "planetary_image": "jezero-camera.png"
+          }
+        ],
+        "novelty_status": "unresolved",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "jezero",
+          "candidate_id": "NAMIB-082000-151000",
+          "role": "nomination",
+          "earth_image": "NAMIB-082000-151000-optical.png",
+          "planetary_image": "jezero-camera.png",
+          "earth_local_clear_fraction": 0.80390625,
+          "earth_context_clear_fraction": 0.8655810546875,
+          "planetary_valid_fraction": 1.0,
+          "source_scene_ids": [
+            "HLS.L30.T33JWM.2025349T085748.v2.0",
+            "HLS.L30.T33JWN.2025349T085748.v2.0",
+            "HLS.L30.T33JXM.2025358T085137.v2.0",
+            "HLS.L30.T33JXN.2025342T085138.v2.0",
+            "HLS.L30.T33KWP.2025349T085724.v2.0",
+            "HLS.L30.T33KXP.2025358T085113.v2.0"
+          ],
+          "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+          "inspection_status": "not_assessed",
+          "run_hash": "62e9ae2f665ce2973fffae34dcdf821f9467379049c99e041a5f67a4cbf45007"
+        },
+        "source_lineage": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+        "novelty": {
+          "candidate_id": "NAMIB-082000-151000",
+          "role": "nomination",
+          "region": "Namib, Namibia",
+          "center": {
+            "latitude": -24.53947848747596,
+            "longitude": 15.822352350669822
+          },
+          "bbox": {
+            "west": 15.72346020834556,
+            "south": -24.62984320271068,
+            "east": 15.921102164131318,
+            "north": -24.44904778067897
+          },
+          "window_m": 20000,
+          "public_site_name": null,
+          "candidate_id_public": false,
+          "known_regional_association": true,
+          "regional_association_ids": [
+            "KA-12",
+            "KA-14",
+            "KA-15"
+          ],
+          "exact_footprint_status": "unresolved",
+          "exact_footprint_finding": "no_public_match_found_in_queried_sources",
+          "exact_footprint_note": "The candidate lies in the broader Namib desert region. No source publishes this exact 20 km window. No public record of the project-internal ID was found.",
+          "exact_task_status": "unresolved",
+          "exact_task_finding": "no_exact_public_match_found_in_queried_sources",
+          "exact_task_note": "No public work ranks this window against Jezero using the project descriptor groups.",
+          "novelty_status": "not_established",
+          "footprint": [
+            [
+              15.72346020834556,
+              -24.62960753236129
+            ],
+            [
+              15.920988531710949,
+              -24.62984320271068
+            ],
+            [
+              15.921102164131318,
+              -24.449282585125385
+            ],
+            [
+              15.723857917966487,
+              -24.44904778067897
+            ],
+            [
+              15.72346020834556,
+              -24.62960753236129
+            ]
+          ],
+          "status": "unresolved",
+          "scope_note": "Known regional analogue context does not establish this exact footprint/task; no new association claim is authorized"
+        }
+      },
+      {
+        "candidate_id": "ATACAMA-040000-037000",
+        "role": "matched_alternative",
+        "matched_to": "ATACAMA-154000-142000",
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The central and eastern scene contains a continuous smooth-looking floor unit interrupted by craters; no numeric slope is inferred from tone. Earth: Clear source area is 0.0% locally and 10.4% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-040000-037000-optical.png",
+            "planetary_image": "jezero-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: An arcuate, textured rim/margin is visible west and south of the central floor within the 80 km camera context. Earth: Clear source area is 0.0% locally and 10.4% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-040000-037000-optical.png",
+            "planetary_image": "jezero-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The camera image resolves the floor-to-margin boundary along the western and southern arcs; this supports a regional mapping exercise, not shared Earth/Mars origin. Earth: Clear source area is 0.0% locally and 10.4% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-040000-037000-optical.png",
+            "planetary_image": "jezero-camera.png"
+          }
+        ],
+        "novelty_status": "unresolved",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "jezero",
+          "candidate_id": "ATACAMA-040000-037000",
+          "role": "matched_alternative",
+          "earth_image": "ATACAMA-040000-037000-optical.png",
+          "planetary_image": "jezero-camera.png",
+          "earth_local_clear_fraction": 0.0,
+          "earth_context_clear_fraction": 0.10377685546875,
+          "planetary_valid_fraction": 1.0,
+          "source_scene_ids": [
+            "HLS.L30.T19KDP.2025359T143108.v2.0",
+            "HLS.L30.T19KDQ.2025359T143108.v2.0",
+            "HLS.L30.T19KEP.2025359T143108.v2.0",
+            "HLS.L30.T19KEQ.2025359T143108.v2.0"
+          ],
+          "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+          "inspection_status": "not_assessed",
+          "run_hash": "62e9ae2f665ce2973fffae34dcdf821f9467379049c99e041a5f67a4cbf45007"
+        },
+        "source_lineage": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+        "novelty": {
+          "candidate_id": "ATACAMA-040000-037000",
+          "known_regional_association": true,
+          "exact_footprint_status": "unresolved",
+          "exact_task_status": "unresolved",
+          "regional_association_ids": [
+            "KA-01",
+            "KA-02",
+            "KA-05"
+          ],
+          "role": "matched_alternative",
+          "region": "Atacama, Chile",
+          "center": {
+            "latitude": -24.567638097780964,
+            "longitude": -69.59228939330416
+          },
+          "footprint": [
+            [
+              -69.6914951153647,
+              -24.657500359849013
+            ],
+            [
+              -69.49392707598648,
+              -24.658266602783403
+            ],
+            [
+              -69.49322504540066,
+              -24.47770958755761
+            ],
+            [
+              -69.69051230377318,
+              -24.476946205310114
+            ],
+            [
+              -69.6914951153647,
+              -24.657500359849013
+            ]
+          ],
+          "bbox": {
+            "west": -69.6914951153647,
+            "south": -24.658266602783403,
+            "east": -69.49322504540066,
+            "north": -24.476946205310114
+          },
+          "status": "unresolved",
+          "novelty_status": "not_established",
+          "scope_note": "Known regional analogue context does not establish this exact footprint/task; no new association claim is authorized"
+        }
+      }
+    ],
+    "planned_count": 6,
+    "unfilled_slots": [
+      {
+        "role": "matched_alternative",
+        "matched_to": "NAMIB-112000-070000",
+        "reason": "No lower-ranked candidate matches both terrain categories and coverage tolerances while preserving non-overlapping 80 km contexts"
+      },
+      {
+        "role": "matched_alternative",
+        "matched_to": "NAMIB-082000-151000",
+        "reason": "No lower-ranked candidate matches both terrain categories and coverage tolerances while preserving non-overlapping 80 km contexts"
+      }
+    ],
+    "selection_rule": {
+      "minimum_context_separation_m": 80000,
+      "maximum_context_coverage_difference": 0.02,
+      "maximum_local_coverage_difference": 0.02,
+      "slope_category_edges_deg": [
+        1,
+        3,
+        8
+      ],
+      "relief_category_edges_m": [
+        100,
+        500,
+        1500
+      ],
+      "alternative_rank_rule": "Lower robust rank than its nominated match; same slope and relief bins; closest nominal loss, seeded tie then stable ID"
+    },
+    "actual_count": 4,
+    "scope_note": "Up to three nominations and three category/coverage-matched alternatives; non-overlapping 80 km contexts; unfilled slots remain explicit in the corrected exploratory v3 record",
+    "claim": "Model-assisted remote-sensing assessment; no independently validated or new analogue is established"
+  },
+  "nili": {
+    "id": "nili",
+    "run_hash": "590364ce51c076ab3e4fb21a8586a328ad0dec7062ab3e39091229d3c491308a",
+    "shortlist": [
+      {
+        "candidate_id": "NAMIB-103000-106000",
+        "role": "nomination",
+        "matched_to": null,
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: The cached CTX service returned no valid image coverage over this window. Earth: Clear source area is 69.6% locally and 74.1% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-103000-106000-optical.png",
+            "planetary_image": "nili-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: No usable separate camera view was acquired for the margin requirement. Earth: Clear source area is 69.6% locally and 74.1% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-103000-106000-optical.png",
+            "planetary_image": "nili-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: No transition can be assessed from transparent or corrupt source tiles. Earth: Clear source area is 69.6% locally and 74.1% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-103000-106000-optical.png",
+            "planetary_image": "nili-camera.png"
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "nili",
+          "candidate_id": "NAMIB-103000-106000",
+          "role": "nomination",
+          "earth_image": "NAMIB-103000-106000-optical.png",
+          "planetary_image": "nili-camera.png",
+          "earth_local_clear_fraction": 0.696015625,
+          "earth_context_clear_fraction": 0.7413671875,
+          "planetary_valid_fraction": 0.0,
+          "source_scene_ids": [
+            "HLS.L30.T33JWM.2025349T085748.v2.0",
+            "HLS.L30.T33JWN.2025349T085748.v2.0",
+            "HLS.L30.T33JXM.2025358T085137.v2.0",
+            "HLS.L30.T33JXN.2025342T085138.v2.0",
+            "HLS.L30.T33KWP.2025349T085724.v2.0",
+            "HLS.L30.T33KXP.2025358T085113.v2.0"
+          ],
+          "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+          "inspection_status": "not_assessed",
+          "run_hash": "590364ce51c076ab3e4fb21a8586a328ad0dec7062ab3e39091229d3c491308a"
+        },
+        "source_lineage": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "ATACAMA-112000-112000",
+        "role": "nomination",
+        "matched_to": null,
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: The cached CTX service returned no valid image coverage over this window. Earth: Clear source area is 99.9% locally and 97.1% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-112000-112000-optical.png",
+            "planetary_image": "nili-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: No usable separate camera view was acquired for the margin requirement. Earth: Clear source area is 99.9% locally and 97.1% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-112000-112000-optical.png",
+            "planetary_image": "nili-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: No transition can be assessed from transparent or corrupt source tiles. Earth: Clear source area is 99.9% locally and 97.1% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-112000-112000-optical.png",
+            "planetary_image": "nili-camera.png"
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "nili",
+          "candidate_id": "ATACAMA-112000-112000",
+          "role": "nomination",
+          "earth_image": "ATACAMA-112000-112000-optical.png",
+          "planetary_image": "nili-camera.png",
+          "earth_local_clear_fraction": 0.9990625,
+          "earth_context_clear_fraction": 0.970517578125,
+          "planetary_valid_fraction": 0.0,
+          "source_scene_ids": [
+            "HLS.L30.T19KDP.2025359T143108.v2.0",
+            "HLS.L30.T19KDQ.2025359T143108.v2.0",
+            "HLS.L30.T19KEP.2025359T143108.v2.0",
+            "HLS.L30.T19KEQ.2025359T143108.v2.0"
+          ],
+          "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+          "inspection_status": "not_assessed",
+          "run_hash": "590364ce51c076ab3e4fb21a8586a328ad0dec7062ab3e39091229d3c491308a"
+        },
+        "source_lineage": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      }
+    ],
+    "planned_count": 6,
+    "unfilled_slots": [
+      {
+        "role": "nomination",
+        "reason": "No additional ranked candidate has a non-overlapping 80 km context"
+      },
+      {
+        "role": "matched_alternative",
+        "matched_to": "NAMIB-103000-106000",
+        "reason": "No lower-ranked candidate matches both terrain categories and coverage tolerances while preserving non-overlapping 80 km contexts"
+      },
+      {
+        "role": "matched_alternative",
+        "matched_to": "ATACAMA-112000-112000",
+        "reason": "No lower-ranked candidate matches both terrain categories and coverage tolerances while preserving non-overlapping 80 km contexts"
+      },
+      {
+        "role": "matched_alternative",
+        "matched_to": null,
+        "reason": "The corresponding third nomination could not be filled under context separation"
+      }
+    ],
+    "selection_rule": {
+      "minimum_context_separation_m": 80000,
+      "maximum_context_coverage_difference": 0.02,
+      "maximum_local_coverage_difference": 0.02,
+      "slope_category_edges_deg": [
+        1,
+        3,
+        8
+      ],
+      "relief_category_edges_m": [
+        100,
+        500,
+        1500
+      ],
+      "alternative_rank_rule": "Lower robust rank than its nominated match; same slope and relief bins; closest nominal loss, seeded tie then stable ID"
+    },
+    "actual_count": 2,
+    "scope_note": "Up to three nominations and three category/coverage-matched alternatives; non-overlapping 80 km contexts; unfilled slots remain explicit in the corrected exploratory v3 record",
+    "claim": "Model-assisted remote-sensing assessment; no independently validated or new analogue is established"
+  },
+  "isidis": {
+    "id": "isidis",
+    "run_hash": "c1a8f0a1a96f943ce68544ce26b4c91d77fc250f24e7f57d894a2efbd9d75546",
+    "shortlist": [
+      {
+        "candidate_id": "NAMIB-163000-139000",
+        "role": "nomination",
+        "matched_to": null,
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: A comparatively smooth, crater-populated plain is resolved over the central study footprint. Earth: Clear source area is 100.0% locally and 99.9% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-163000-139000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "contradicted",
+            "target_status": "contradicted",
+            "earth_status": "unassessable",
+            "reason": "Target: The inspected 80 km crop does not resolve the organized basin/ridge margin required by this floor-margin rubric; isolated small crater rims are not substituted for that regional requirement. Earth: Clear source area is 100.0% locally and 99.9% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-163000-139000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "contradicted",
+            "target_status": "contradicted",
+            "earth_status": "unassessable",
+            "reason": "Target: A broad floor-to-regional-margin transition is absent from this crop. This rejects the selected target/task pairing, not all possible plain-mapping tasks for Isidis. Earth: Clear source area is 100.0% locally and 99.9% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-163000-139000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "target_task_mismatch",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "isidis",
+          "candidate_id": "NAMIB-163000-139000",
+          "role": "nomination",
+          "earth_image": "NAMIB-163000-139000-optical.png",
+          "planetary_image": "isidis-camera.png",
+          "earth_local_clear_fraction": 0.9998046875,
+          "earth_context_clear_fraction": 0.99869140625,
+          "planetary_valid_fraction": 0.95914375,
+          "source_scene_ids": [
+            "HLS.L30.T33JWM.2025349T085748.v2.0",
+            "HLS.L30.T33JWN.2025349T085748.v2.0",
+            "HLS.L30.T33JXM.2025358T085137.v2.0",
+            "HLS.L30.T33JXN.2025342T085138.v2.0",
+            "HLS.L30.T33KWP.2025349T085724.v2.0",
+            "HLS.L30.T33KXP.2025358T085113.v2.0"
+          ],
+          "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+          "inspection_status": "not_assessed",
+          "run_hash": "c1a8f0a1a96f943ce68544ce26b4c91d77fc250f24e7f57d894a2efbd9d75546"
+        },
+        "source_lineage": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "NAMIB-070000-103000",
+        "role": "nomination",
+        "matched_to": null,
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: A comparatively smooth, crater-populated plain is resolved over the central study footprint. Earth: Clear source area is 89.0% locally and 73.4% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-070000-103000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "contradicted",
+            "target_status": "contradicted",
+            "earth_status": "unassessable",
+            "reason": "Target: The inspected 80 km crop does not resolve the organized basin/ridge margin required by this floor-margin rubric; isolated small crater rims are not substituted for that regional requirement. Earth: Clear source area is 89.0% locally and 73.4% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-070000-103000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "contradicted",
+            "target_status": "contradicted",
+            "earth_status": "unassessable",
+            "reason": "Target: A broad floor-to-regional-margin transition is absent from this crop. This rejects the selected target/task pairing, not all possible plain-mapping tasks for Isidis. Earth: Clear source area is 89.0% locally and 73.4% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-070000-103000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "target_task_mismatch",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "isidis",
+          "candidate_id": "NAMIB-070000-103000",
+          "role": "nomination",
+          "earth_image": "NAMIB-070000-103000-optical.png",
+          "planetary_image": "isidis-camera.png",
+          "earth_local_clear_fraction": 0.8901953125,
+          "earth_context_clear_fraction": 0.7341064453125,
+          "planetary_valid_fraction": 0.95914375,
+          "source_scene_ids": [
+            "HLS.L30.T33JWM.2025349T085748.v2.0",
+            "HLS.L30.T33JWN.2025349T085748.v2.0",
+            "HLS.L30.T33JXM.2025358T085137.v2.0",
+            "HLS.L30.T33JXN.2025342T085138.v2.0",
+            "HLS.L30.T33KWP.2025349T085724.v2.0",
+            "HLS.L30.T33KXP.2025358T085113.v2.0"
+          ],
+          "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+          "inspection_status": "not_assessed",
+          "run_hash": "c1a8f0a1a96f943ce68544ce26b4c91d77fc250f24e7f57d894a2efbd9d75546"
+        },
+        "source_lineage": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "NAMIB-163000-058000",
+        "role": "nomination",
+        "matched_to": null,
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: A comparatively smooth, crater-populated plain is resolved over the central study footprint. Earth: Clear source area is 100.0% locally and 100.0% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-163000-058000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "contradicted",
+            "target_status": "contradicted",
+            "earth_status": "unassessable",
+            "reason": "Target: The inspected 80 km crop does not resolve the organized basin/ridge margin required by this floor-margin rubric; isolated small crater rims are not substituted for that regional requirement. Earth: Clear source area is 100.0% locally and 100.0% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-163000-058000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "contradicted",
+            "target_status": "contradicted",
+            "earth_status": "unassessable",
+            "reason": "Target: A broad floor-to-regional-margin transition is absent from this crop. This rejects the selected target/task pairing, not all possible plain-mapping tasks for Isidis. Earth: Clear source area is 100.0% locally and 100.0% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-163000-058000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "target_task_mismatch",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "isidis",
+          "candidate_id": "NAMIB-163000-058000",
+          "role": "nomination",
+          "earth_image": "NAMIB-163000-058000-optical.png",
+          "planetary_image": "isidis-camera.png",
+          "earth_local_clear_fraction": 1.0,
+          "earth_context_clear_fraction": 0.99992919921875,
+          "planetary_valid_fraction": 0.95914375,
+          "source_scene_ids": [
+            "HLS.L30.T33JWM.2025349T085748.v2.0",
+            "HLS.L30.T33JWN.2025349T085748.v2.0",
+            "HLS.L30.T33JXM.2025358T085137.v2.0",
+            "HLS.L30.T33JXN.2025342T085138.v2.0",
+            "HLS.L30.T33KWP.2025349T085724.v2.0",
+            "HLS.L30.T33KXP.2025358T085113.v2.0"
+          ],
+          "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+          "inspection_status": "not_assessed",
+          "run_hash": "c1a8f0a1a96f943ce68544ce26b4c91d77fc250f24e7f57d894a2efbd9d75546"
+        },
+        "source_lineage": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "ATACAMA-163000-151000",
+        "role": "matched_alternative",
+        "matched_to": "NAMIB-163000-139000",
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: A comparatively smooth, crater-populated plain is resolved over the central study footprint. Earth: Clear source area is 82.0% locally and 98.2% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-163000-151000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "contradicted",
+            "target_status": "contradicted",
+            "earth_status": "unassessable",
+            "reason": "Target: The inspected 80 km crop does not resolve the organized basin/ridge margin required by this floor-margin rubric; isolated small crater rims are not substituted for that regional requirement. Earth: Clear source area is 82.0% locally and 98.2% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-163000-151000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "contradicted",
+            "target_status": "contradicted",
+            "earth_status": "unassessable",
+            "reason": "Target: A broad floor-to-regional-margin transition is absent from this crop. This rejects the selected target/task pairing, not all possible plain-mapping tasks for Isidis. Earth: Clear source area is 82.0% locally and 98.2% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-163000-151000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "target_task_mismatch",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "isidis",
+          "candidate_id": "ATACAMA-163000-151000",
+          "role": "matched_alternative",
+          "earth_image": "ATACAMA-163000-151000-optical.png",
+          "planetary_image": "isidis-camera.png",
+          "earth_local_clear_fraction": 0.819765625,
+          "earth_context_clear_fraction": 0.9817919921875,
+          "planetary_valid_fraction": 0.95914375,
+          "source_scene_ids": [
+            "HLS.L30.T19KDP.2025359T143108.v2.0",
+            "HLS.L30.T19KDQ.2025359T143108.v2.0",
+            "HLS.L30.T19KEP.2025359T143108.v2.0",
+            "HLS.L30.T19KEQ.2025359T143108.v2.0"
+          ],
+          "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+          "inspection_status": "not_assessed",
+          "run_hash": "c1a8f0a1a96f943ce68544ce26b4c91d77fc250f24e7f57d894a2efbd9d75546"
+        },
+        "source_lineage": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "ATACAMA-079000-151000",
+        "role": "matched_alternative",
+        "matched_to": "NAMIB-070000-103000",
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: A comparatively smooth, crater-populated plain is resolved over the central study footprint. Earth: Clear source area is 44.9% locally and 48.7% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-079000-151000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "contradicted",
+            "target_status": "contradicted",
+            "earth_status": "unassessable",
+            "reason": "Target: The inspected 80 km crop does not resolve the organized basin/ridge margin required by this floor-margin rubric; isolated small crater rims are not substituted for that regional requirement. Earth: Clear source area is 44.9% locally and 48.7% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-079000-151000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "contradicted",
+            "target_status": "contradicted",
+            "earth_status": "unassessable",
+            "reason": "Target: A broad floor-to-regional-margin transition is absent from this crop. This rejects the selected target/task pairing, not all possible plain-mapping tasks for Isidis. Earth: Clear source area is 44.9% locally and 48.7% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-079000-151000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "target_task_mismatch",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "isidis",
+          "candidate_id": "ATACAMA-079000-151000",
+          "role": "matched_alternative",
+          "earth_image": "ATACAMA-079000-151000-optical.png",
+          "planetary_image": "isidis-camera.png",
+          "earth_local_clear_fraction": 0.4494921875,
+          "earth_context_clear_fraction": 0.48677490234375,
+          "planetary_valid_fraction": 0.95914375,
+          "source_scene_ids": [
+            "HLS.L30.T19KDP.2025359T143108.v2.0",
+            "HLS.L30.T19KDQ.2025359T143108.v2.0",
+            "HLS.L30.T19KEP.2025359T143108.v2.0",
+            "HLS.L30.T19KEQ.2025359T143108.v2.0"
+          ],
+          "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+          "inspection_status": "not_assessed",
+          "run_hash": "c1a8f0a1a96f943ce68544ce26b4c91d77fc250f24e7f57d894a2efbd9d75546"
+        },
+        "source_lineage": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "ATACAMA-037000-043000",
+        "role": "matched_alternative",
+        "matched_to": "NAMIB-163000-058000",
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: A comparatively smooth, crater-populated plain is resolved over the central study footprint. Earth: Clear source area is 0.0% locally and 10.1% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-037000-043000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "contradicted",
+            "target_status": "contradicted",
+            "earth_status": "unassessable",
+            "reason": "Target: The inspected 80 km crop does not resolve the organized basin/ridge margin required by this floor-margin rubric; isolated small crater rims are not substituted for that regional requirement. Earth: Clear source area is 0.0% locally and 10.1% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-037000-043000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "contradicted",
+            "target_status": "contradicted",
+            "earth_status": "unassessable",
+            "reason": "Target: A broad floor-to-regional-margin transition is absent from this crop. This rejects the selected target/task pairing, not all possible plain-mapping tasks for Isidis. Earth: Clear source area is 0.0% locally and 10.1% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-037000-043000-optical.png",
+            "planetary_image": "isidis-camera.png"
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "target_task_mismatch",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "isidis",
+          "candidate_id": "ATACAMA-037000-043000",
+          "role": "matched_alternative",
+          "earth_image": "ATACAMA-037000-043000-optical.png",
+          "planetary_image": "isidis-camera.png",
+          "earth_local_clear_fraction": 0.0,
+          "earth_context_clear_fraction": 0.1008349609375,
+          "planetary_valid_fraction": 0.95914375,
+          "source_scene_ids": [
+            "HLS.L30.T19KDP.2025359T143108.v2.0",
+            "HLS.L30.T19KDQ.2025359T143108.v2.0",
+            "HLS.L30.T19KEP.2025359T143108.v2.0",
+            "HLS.L30.T19KEQ.2025359T143108.v2.0"
+          ],
+          "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+          "inspection_status": "not_assessed",
+          "run_hash": "c1a8f0a1a96f943ce68544ce26b4c91d77fc250f24e7f57d894a2efbd9d75546"
+        },
+        "source_lineage": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      }
+    ],
+    "planned_count": 6,
+    "unfilled_slots": [],
+    "selection_rule": {
+      "minimum_context_separation_m": 80000,
+      "maximum_context_coverage_difference": 0.02,
+      "maximum_local_coverage_difference": 0.02,
+      "slope_category_edges_deg": [
+        1,
+        3,
+        8
+      ],
+      "relief_category_edges_m": [
+        100,
+        500,
+        1500
+      ],
+      "alternative_rank_rule": "Lower robust rank than its nominated match; same slope and relief bins; closest nominal loss, seeded tie then stable ID"
+    },
+    "actual_count": 6,
+    "scope_note": "Up to three nominations and three category/coverage-matched alternatives; non-overlapping 80 km contexts; unfilled slots remain explicit in the corrected exploratory v3 record",
+    "claim": "Model-assisted remote-sensing assessment; no independently validated or new analogue is established"
+  },
+  "syrtis": {
+    "id": "syrtis",
+    "run_hash": "d934a56c43b51b95f9204b74ed6152bd2d1679f170fb7abe395eec4b8c50427e",
+    "shortlist": [
+      {
+        "candidate_id": "NAMIB-157000-136000",
+        "role": "nomination",
+        "matched_to": null,
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "supported",
+            "target_status": "supported",
+            "earth_status": "supported",
+            "reason": "Target: Broad smooth-looking terrain occurs on both sides of a curving boundary through the central scene. Earth: A broad, comparatively smooth-looking plain adjoins the central footprint to the north and east.",
+            "earth_image": "NAMIB-157000-136000-optical.png",
+            "planetary_image": "syrtis-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "supported",
+            "target_status": "supported",
+            "earth_status": "supported",
+            "reason": "Target: A continuous scarp-like, lobate boundary traverses the context from north to south. Interpretation is morphological; neither composition nor elevation amplitude is determined by the optical view. Earth: Dissected, organized bedrock-like relief is visible in the western and southwestern context.",
+            "earth_image": "NAMIB-157000-136000-optical.png",
+            "planetary_image": "syrtis-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "supported",
+            "target_status": "supported",
+            "earth_status": "supported",
+            "reason": "Target: The organized boundary and adjoining floor-like terrain are spatially resolved. Linear wind streaks and mosaic brightness differences are not counted as terrain ridges. Earth: The camera scene resolves the irregular plain-to-dissected-margin transition across the local and contextual views; it does not establish a volcanic origin.",
+            "earth_image": "NAMIB-157000-136000-optical.png",
+            "planetary_image": "syrtis-camera.png"
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [
+          "Earth drainage dissection and Martian wind streaks/flow-like boundaries do not imply shared formative processes."
+        ],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "provisional_visual_support",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "syrtis",
+          "candidate_id": "NAMIB-157000-136000",
+          "role": "nomination",
+          "earth_image": "NAMIB-157000-136000-optical.png",
+          "planetary_image": "syrtis-camera.png",
+          "earth_local_clear_fraction": 0.9998828125,
+          "earth_context_clear_fraction": 0.99776611328125,
+          "planetary_valid_fraction": 1.0,
+          "source_scene_ids": [
+            "HLS.L30.T33JWM.2025349T085748.v2.0",
+            "HLS.L30.T33JWN.2025349T085748.v2.0",
+            "HLS.L30.T33JXM.2025358T085137.v2.0",
+            "HLS.L30.T33JXN.2025342T085138.v2.0",
+            "HLS.L30.T33KWP.2025349T085724.v2.0",
+            "HLS.L30.T33KXP.2025358T085113.v2.0"
+          ],
+          "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+          "inspection_status": "not_assessed",
+          "run_hash": "d934a56c43b51b95f9204b74ed6152bd2d1679f170fb7abe395eec4b8c50427e"
+        },
+        "source_lineage": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "NAMIB-055000-091000",
+        "role": "nomination",
+        "matched_to": null,
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: Broad smooth-looking terrain occurs on both sides of a curving boundary through the central scene. Earth: Clear source area is 100.0% locally and 75.3% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-055000-091000-optical.png",
+            "planetary_image": "syrtis-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: A continuous scarp-like, lobate boundary traverses the context from north to south. Interpretation is morphological; neither composition nor elevation amplitude is determined by the optical view. Earth: Clear source area is 100.0% locally and 75.3% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-055000-091000-optical.png",
+            "planetary_image": "syrtis-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The organized boundary and adjoining floor-like terrain are spatially resolved. Linear wind streaks and mosaic brightness differences are not counted as terrain ridges. Earth: Clear source area is 100.0% locally and 75.3% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-055000-091000-optical.png",
+            "planetary_image": "syrtis-camera.png"
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "syrtis",
+          "candidate_id": "NAMIB-055000-091000",
+          "role": "nomination",
+          "earth_image": "NAMIB-055000-091000-optical.png",
+          "planetary_image": "syrtis-camera.png",
+          "earth_local_clear_fraction": 1.0,
+          "earth_context_clear_fraction": 0.75309814453125,
+          "planetary_valid_fraction": 1.0,
+          "source_scene_ids": [
+            "HLS.L30.T33JWM.2025349T085748.v2.0",
+            "HLS.L30.T33JWN.2025349T085748.v2.0",
+            "HLS.L30.T33JXM.2025358T085137.v2.0",
+            "HLS.L30.T33JXN.2025342T085138.v2.0",
+            "HLS.L30.T33KWP.2025349T085724.v2.0",
+            "HLS.L30.T33KXP.2025358T085113.v2.0"
+          ],
+          "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+          "inspection_status": "not_assessed",
+          "run_hash": "d934a56c43b51b95f9204b74ed6152bd2d1679f170fb7abe395eec4b8c50427e"
+        },
+        "source_lineage": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "NAMIB-139000-055000",
+        "role": "nomination",
+        "matched_to": null,
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "supported",
+            "target_status": "supported",
+            "earth_status": "supported",
+            "reason": "Target: Broad smooth-looking terrain occurs on both sides of a curving boundary through the central scene. Earth: A broad smoother dune/floor-like unit in the northwest adjoins the central 20 km footprint. Tone alone is not treated as an elevation measurement.",
+            "earth_image": "NAMIB-139000-055000-optical.png",
+            "planetary_image": "syrtis-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "supported",
+            "target_status": "supported",
+            "earth_status": "supported",
+            "reason": "Target: A continuous scarp-like, lobate boundary traverses the context from north to south. Interpretation is morphological; neither composition nor elevation amplitude is determined by the optical view. Earth: An organized dissected mass-defined margin occupies the central and eastern context.",
+            "earth_image": "NAMIB-139000-055000-optical.png",
+            "planetary_image": "syrtis-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "supported",
+            "target_status": "supported",
+            "earth_status": "supported",
+            "reason": "Target: The organized boundary and adjoining floor-like terrain are spatially resolved. Linear wind streaks and mosaic brightness differences are not counted as terrain ridges. Earth: The image resolves the irregular contact between the smoother unit and dissected margin; this supports a coarse mapping exercise without implying a shared volcanic origin.",
+            "earth_image": "NAMIB-139000-055000-optical.png",
+            "planetary_image": "syrtis-camera.png"
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [
+          "Dunes and terrestrial drainage form a different small-scale arrangement from the smoother Martian scarp-like boundary."
+        ],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "provisional_visual_support",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "syrtis",
+          "candidate_id": "NAMIB-139000-055000",
+          "role": "nomination",
+          "earth_image": "NAMIB-139000-055000-optical.png",
+          "planetary_image": "syrtis-camera.png",
+          "earth_local_clear_fraction": 0.9999609375,
+          "earth_context_clear_fraction": 0.99446533203125,
+          "planetary_valid_fraction": 1.0,
+          "source_scene_ids": [
+            "HLS.L30.T33JWM.2025349T085748.v2.0",
+            "HLS.L30.T33JWN.2025349T085748.v2.0",
+            "HLS.L30.T33JXM.2025358T085137.v2.0",
+            "HLS.L30.T33JXN.2025342T085138.v2.0",
+            "HLS.L30.T33KWP.2025349T085724.v2.0",
+            "HLS.L30.T33KXP.2025358T085113.v2.0"
+          ],
+          "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+          "inspection_status": "not_assessed",
+          "run_hash": "d934a56c43b51b95f9204b74ed6152bd2d1679f170fb7abe395eec4b8c50427e"
+        },
+        "source_lineage": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "ATACAMA-154000-145000",
+        "role": "matched_alternative",
+        "matched_to": "NAMIB-157000-136000",
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: Broad smooth-looking terrain occurs on both sides of a curving boundary through the central scene. Earth: Clear source area is 94.4% locally and 98.1% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-154000-145000-optical.png",
+            "planetary_image": "syrtis-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: A continuous scarp-like, lobate boundary traverses the context from north to south. Interpretation is morphological; neither composition nor elevation amplitude is determined by the optical view. Earth: Clear source area is 94.4% locally and 98.1% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-154000-145000-optical.png",
+            "planetary_image": "syrtis-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The organized boundary and adjoining floor-like terrain are spatially resolved. Linear wind streaks and mosaic brightness differences are not counted as terrain ridges. Earth: Clear source area is 94.4% locally and 98.1% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-154000-145000-optical.png",
+            "planetary_image": "syrtis-camera.png"
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "syrtis",
+          "candidate_id": "ATACAMA-154000-145000",
+          "role": "matched_alternative",
+          "earth_image": "ATACAMA-154000-145000-optical.png",
+          "planetary_image": "syrtis-camera.png",
+          "earth_local_clear_fraction": 0.944296875,
+          "earth_context_clear_fraction": 0.98133056640625,
+          "planetary_valid_fraction": 1.0,
+          "source_scene_ids": [
+            "HLS.L30.T19KDP.2025359T143108.v2.0",
+            "HLS.L30.T19KDQ.2025359T143108.v2.0",
+            "HLS.L30.T19KEP.2025359T143108.v2.0",
+            "HLS.L30.T19KEQ.2025359T143108.v2.0"
+          ],
+          "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+          "inspection_status": "not_assessed",
+          "run_hash": "d934a56c43b51b95f9204b74ed6152bd2d1679f170fb7abe395eec4b8c50427e"
+        },
+        "source_lineage": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "ATACAMA-040000-037000",
+        "role": "matched_alternative",
+        "matched_to": "NAMIB-055000-091000",
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: Broad smooth-looking terrain occurs on both sides of a curving boundary through the central scene. Earth: Clear source area is 0.0% locally and 10.4% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-040000-037000-optical.png",
+            "planetary_image": "syrtis-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: A continuous scarp-like, lobate boundary traverses the context from north to south. Interpretation is morphological; neither composition nor elevation amplitude is determined by the optical view. Earth: Clear source area is 0.0% locally and 10.4% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-040000-037000-optical.png",
+            "planetary_image": "syrtis-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The organized boundary and adjoining floor-like terrain are spatially resolved. Linear wind streaks and mosaic brightness differences are not counted as terrain ridges. Earth: Clear source area is 0.0% locally and 10.4% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-040000-037000-optical.png",
+            "planetary_image": "syrtis-camera.png"
+          }
+        ],
+        "novelty_status": "unresolved",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "syrtis",
+          "candidate_id": "ATACAMA-040000-037000",
+          "role": "matched_alternative",
+          "earth_image": "ATACAMA-040000-037000-optical.png",
+          "planetary_image": "syrtis-camera.png",
+          "earth_local_clear_fraction": 0.0,
+          "earth_context_clear_fraction": 0.10377685546875,
+          "planetary_valid_fraction": 1.0,
+          "source_scene_ids": [
+            "HLS.L30.T19KDP.2025359T143108.v2.0",
+            "HLS.L30.T19KDQ.2025359T143108.v2.0",
+            "HLS.L30.T19KEP.2025359T143108.v2.0",
+            "HLS.L30.T19KEQ.2025359T143108.v2.0"
+          ],
+          "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+          "inspection_status": "not_assessed",
+          "run_hash": "d934a56c43b51b95f9204b74ed6152bd2d1679f170fb7abe395eec4b8c50427e"
+        },
+        "source_lineage": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+        "novelty": {
+          "candidate_id": "ATACAMA-040000-037000",
+          "known_regional_association": true,
+          "exact_footprint_status": "unresolved",
+          "exact_task_status": "unresolved",
+          "regional_association_ids": [
+            "KA-01",
+            "KA-02",
+            "KA-05"
+          ],
+          "role": "matched_alternative",
+          "region": "Atacama, Chile",
+          "center": {
+            "latitude": -24.567638097780964,
+            "longitude": -69.59228939330416
+          },
+          "footprint": [
+            [
+              -69.6914951153647,
+              -24.657500359849013
+            ],
+            [
+              -69.49392707598648,
+              -24.658266602783403
+            ],
+            [
+              -69.49322504540066,
+              -24.47770958755761
+            ],
+            [
+              -69.69051230377318,
+              -24.476946205310114
+            ],
+            [
+              -69.6914951153647,
+              -24.657500359849013
+            ]
+          ],
+          "bbox": {
+            "west": -69.6914951153647,
+            "south": -24.658266602783403,
+            "east": -69.49322504540066,
+            "north": -24.476946205310114
+          },
+          "status": "unresolved",
+          "novelty_status": "not_established",
+          "scope_note": "Known regional analogue context does not establish this exact footprint/task; no new association claim is authorized"
+        }
+      }
+    ],
+    "planned_count": 6,
+    "unfilled_slots": [
+      {
+        "role": "matched_alternative",
+        "matched_to": "NAMIB-139000-055000",
+        "reason": "No lower-ranked candidate matches both terrain categories and coverage tolerances while preserving non-overlapping 80 km contexts"
+      }
+    ],
+    "selection_rule": {
+      "minimum_context_separation_m": 80000,
+      "maximum_context_coverage_difference": 0.02,
+      "maximum_local_coverage_difference": 0.02,
+      "slope_category_edges_deg": [
+        1,
+        3,
+        8
+      ],
+      "relief_category_edges_m": [
+        100,
+        500,
+        1500
+      ],
+      "alternative_rank_rule": "Lower robust rank than its nominated match; same slope and relief bins; closest nominal loss, seeded tie then stable ID"
+    },
+    "actual_count": 5,
+    "scope_note": "Up to three nominations and three category/coverage-matched alternatives; non-overlapping 80 km contexts; unfilled slots remain explicit in the corrected exploratory v3 record",
+    "claim": "Model-assisted remote-sensing assessment; no independently validated or new analogue is established"
+  },
+  "apollo17": {
+    "id": "apollo17",
+    "run_hash": "56448fe6f19cd21a9d44a33946f9375b3a3f663b877e63ed15a26daa04305113",
+    "shortlist": [
+      {
+        "candidate_id": "ATACAMA-163000-052000",
+        "role": "nomination",
+        "matched_to": null,
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The dark valley floor occupies the central footprint, between brighter textured masses. Earth: Clear source area is 78.4% locally and 56.4% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-163000-052000-optical.png",
+            "planetary_image": "apollo17-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: Large, organized massifs bound the valley within the WAC context. Earth: Clear source area is 78.4% locally and 56.4% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-163000-052000-optical.png",
+            "planetary_image": "apollo17-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The WAC image resolves the valley-floor/massif boundaries. Shadowed pixels and radiometric contrast are not numerical slope observations. Earth: Clear source area is 78.4% locally and 56.4% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-163000-052000-optical.png",
+            "planetary_image": "apollo17-camera.png"
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "apollo17",
+          "candidate_id": "ATACAMA-163000-052000",
+          "role": "nomination",
+          "earth_image": "ATACAMA-163000-052000-optical.png",
+          "planetary_image": "apollo17-camera.png",
+          "earth_local_clear_fraction": 0.7837890625,
+          "earth_context_clear_fraction": 0.5642822265625,
+          "planetary_valid_fraction": 1.0,
+          "source_scene_ids": [
+            "HLS.L30.T19KDP.2025359T143108.v2.0",
+            "HLS.L30.T19KDQ.2025359T143108.v2.0",
+            "HLS.L30.T19KEP.2025359T143108.v2.0",
+            "HLS.L30.T19KEQ.2025359T143108.v2.0"
+          ],
+          "source_planetary_id": "LRO_WAC_Mosaic_Global_303ppd",
+          "inspection_status": "not_assessed",
+          "run_hash": "56448fe6f19cd21a9d44a33946f9375b3a3f663b877e63ed15a26daa04305113"
+        },
+        "source_lineage": "Separate WAC optical acquisition; non-polar mosaic orthorectification uses WAC-derived GLD100; not a LOLA hillshade",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "ATACAMA-073000-037000",
+        "role": "nomination",
+        "matched_to": null,
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The dark valley floor occupies the central footprint, between brighter textured masses. Earth: Clear source area is 12.5% locally and 25.7% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-073000-037000-optical.png",
+            "planetary_image": "apollo17-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: Large, organized massifs bound the valley within the WAC context. Earth: Clear source area is 12.5% locally and 25.7% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-073000-037000-optical.png",
+            "planetary_image": "apollo17-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The WAC image resolves the valley-floor/massif boundaries. Shadowed pixels and radiometric contrast are not numerical slope observations. Earth: Clear source area is 12.5% locally and 25.7% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-073000-037000-optical.png",
+            "planetary_image": "apollo17-camera.png"
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "apollo17",
+          "candidate_id": "ATACAMA-073000-037000",
+          "role": "nomination",
+          "earth_image": "ATACAMA-073000-037000-optical.png",
+          "planetary_image": "apollo17-camera.png",
+          "earth_local_clear_fraction": 0.125,
+          "earth_context_clear_fraction": 0.25726806640625,
+          "planetary_valid_fraction": 1.0,
+          "source_scene_ids": [
+            "HLS.L30.T19KDP.2025359T143108.v2.0",
+            "HLS.L30.T19KDQ.2025359T143108.v2.0",
+            "HLS.L30.T19KEP.2025359T143108.v2.0",
+            "HLS.L30.T19KEQ.2025359T143108.v2.0"
+          ],
+          "source_planetary_id": "LRO_WAC_Mosaic_Global_303ppd",
+          "inspection_status": "not_assessed",
+          "run_hash": "56448fe6f19cd21a9d44a33946f9375b3a3f663b877e63ed15a26daa04305113"
+        },
+        "source_lineage": "Separate WAC optical acquisition; non-polar mosaic orthorectification uses WAC-derived GLD100; not a LOLA hillshade",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "NAMIB-109000-097000",
+        "role": "nomination",
+        "matched_to": null,
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The dark valley floor occupies the central footprint, between brighter textured masses. Earth: Clear source area is 99.3% locally and 71.8% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-109000-097000-optical.png",
+            "planetary_image": "apollo17-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: Large, organized massifs bound the valley within the WAC context. Earth: Clear source area is 99.3% locally and 71.8% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-109000-097000-optical.png",
+            "planetary_image": "apollo17-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The WAC image resolves the valley-floor/massif boundaries. Shadowed pixels and radiometric contrast are not numerical slope observations. Earth: Clear source area is 99.3% locally and 71.8% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-109000-097000-optical.png",
+            "planetary_image": "apollo17-camera.png"
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "apollo17",
+          "candidate_id": "NAMIB-109000-097000",
+          "role": "nomination",
+          "earth_image": "NAMIB-109000-097000-optical.png",
+          "planetary_image": "apollo17-camera.png",
+          "earth_local_clear_fraction": 0.9930078125,
+          "earth_context_clear_fraction": 0.71794189453125,
+          "planetary_valid_fraction": 1.0,
+          "source_scene_ids": [
+            "HLS.L30.T33JWM.2025349T085748.v2.0",
+            "HLS.L30.T33JWN.2025349T085748.v2.0",
+            "HLS.L30.T33JXM.2025358T085137.v2.0",
+            "HLS.L30.T33JXN.2025342T085138.v2.0",
+            "HLS.L30.T33KWP.2025349T085724.v2.0",
+            "HLS.L30.T33KXP.2025358T085113.v2.0"
+          ],
+          "source_planetary_id": "LRO_WAC_Mosaic_Global_303ppd",
+          "inspection_status": "not_assessed",
+          "run_hash": "56448fe6f19cd21a9d44a33946f9375b3a3f663b877e63ed15a26daa04305113"
+        },
+        "source_lineage": "Separate WAC optical acquisition; non-polar mosaic orthorectification uses WAC-derived GLD100; not a LOLA hillshade",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "ATACAMA-037000-121000",
+        "role": "matched_alternative",
+        "matched_to": "ATACAMA-163000-052000",
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The dark valley floor occupies the central footprint, between brighter textured masses. Earth: Clear source area is 0.0% locally and 5.7% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-037000-121000-optical.png",
+            "planetary_image": "apollo17-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: Large, organized massifs bound the valley within the WAC context. Earth: Clear source area is 0.0% locally and 5.7% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-037000-121000-optical.png",
+            "planetary_image": "apollo17-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The WAC image resolves the valley-floor/massif boundaries. Shadowed pixels and radiometric contrast are not numerical slope observations. Earth: Clear source area is 0.0% locally and 5.7% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-037000-121000-optical.png",
+            "planetary_image": "apollo17-camera.png"
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "apollo17",
+          "candidate_id": "ATACAMA-037000-121000",
+          "role": "matched_alternative",
+          "earth_image": "ATACAMA-037000-121000-optical.png",
+          "planetary_image": "apollo17-camera.png",
+          "earth_local_clear_fraction": 0.0,
+          "earth_context_clear_fraction": 0.056953125,
+          "planetary_valid_fraction": 1.0,
+          "source_scene_ids": [
+            "HLS.L30.T19KDP.2025359T143108.v2.0",
+            "HLS.L30.T19KDQ.2025359T143108.v2.0",
+            "HLS.L30.T19KEP.2025359T143108.v2.0",
+            "HLS.L30.T19KEQ.2025359T143108.v2.0"
+          ],
+          "source_planetary_id": "LRO_WAC_Mosaic_Global_303ppd",
+          "inspection_status": "not_assessed",
+          "run_hash": "56448fe6f19cd21a9d44a33946f9375b3a3f663b877e63ed15a26daa04305113"
+        },
+        "source_lineage": "Separate WAC optical acquisition; non-polar mosaic orthorectification uses WAC-derived GLD100; not a LOLA hillshade",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "ATACAMA-136000-133000",
+        "role": "matched_alternative",
+        "matched_to": "ATACAMA-073000-037000",
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The dark valley floor occupies the central footprint, between brighter textured masses. Earth: Floor-like fan surfaces flank the central ridge, but the camera image does not disambiguate a coherent broad floor counterpart to the Taurus-Littrow valley floor.",
+            "earth_image": "ATACAMA-136000-133000-optical.png",
+            "planetary_image": "apollo17-camera.png"
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "supported",
+            "target_status": "supported",
+            "earth_status": "supported",
+            "reason": "Target: Large, organized massifs bound the valley within the WAC context. Earth: An organized north-south ridge is resolved through the central scene.",
+            "earth_image": "ATACAMA-136000-133000-optical.png",
+            "planetary_image": "apollo17-camera.png"
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "supported",
+            "earth_status": "unassessable",
+            "reason": "Target: The WAC image resolves the valley-floor/massif boundaries. Shadowed pixels and radiometric contrast are not numerical slope observations. Earth: Multiple fan/ridge contacts are visible; correspondence to the target valley-floor/massif boundary remains ambiguous.",
+            "earth_image": "ATACAMA-136000-133000-optical.png",
+            "planetary_image": "apollo17-camera.png"
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [
+          "Roads, rectilinear industrial surfaces and masked bright areas occur in the context."
+        ],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "ambiguous_morphology",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "apollo17",
+          "candidate_id": "ATACAMA-136000-133000",
+          "role": "matched_alternative",
+          "earth_image": "ATACAMA-136000-133000-optical.png",
+          "planetary_image": "apollo17-camera.png",
+          "earth_local_clear_fraction": 0.9820703125,
+          "earth_context_clear_fraction": 0.982255859375,
+          "planetary_valid_fraction": 1.0,
+          "source_scene_ids": [
+            "HLS.L30.T19KDP.2025359T143108.v2.0",
+            "HLS.L30.T19KDQ.2025359T143108.v2.0",
+            "HLS.L30.T19KEP.2025359T143108.v2.0",
+            "HLS.L30.T19KEQ.2025359T143108.v2.0"
+          ],
+          "source_planetary_id": "LRO_WAC_Mosaic_Global_303ppd",
+          "inspection_status": "not_assessed",
+          "run_hash": "56448fe6f19cd21a9d44a33946f9375b3a3f663b877e63ed15a26daa04305113"
+        },
+        "source_lineage": "Separate WAC optical acquisition; non-polar mosaic orthorectification uses WAC-derived GLD100; not a LOLA hillshade",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      }
+    ],
+    "planned_count": 6,
+    "unfilled_slots": [
+      {
+        "role": "matched_alternative",
+        "matched_to": "NAMIB-109000-097000",
+        "reason": "No lower-ranked candidate matches both terrain categories and coverage tolerances while preserving non-overlapping 80 km contexts"
+      }
+    ],
+    "selection_rule": {
+      "minimum_context_separation_m": 80000,
+      "maximum_context_coverage_difference": 0.02,
+      "maximum_local_coverage_difference": 0.02,
+      "slope_category_edges_deg": [
+        1,
+        3,
+        8
+      ],
+      "relief_category_edges_m": [
+        100,
+        500,
+        1500
+      ],
+      "alternative_rank_rule": "Lower robust rank than its nominated match; same slope and relief bins; closest nominal loss, seeded tie then stable ID"
+    },
+    "actual_count": 5,
+    "scope_note": "Up to three nominations and three category/coverage-matched alternatives; non-overlapping 80 km contexts; unfilled slots remain explicit in the corrected exploratory v3 record",
+    "claim": "Model-assisted remote-sensing assessment; no independently validated or new analogue is established"
+  },
+  "shackleton": {
+    "id": "shackleton",
+    "run_hash": "be0eb998346c1fe0b955682b1700fd63d16ddbd2e62b346f845a0a655d10121f",
+    "shortlist": [
+      {
+        "candidate_id": "ATACAMA-157000-052000",
+        "role": "nomination",
+        "matched_to": null,
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: No polar optical mosaic was acquired. Earth: Clear source area is 75.9% locally and 56.8% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-157000-052000-optical.png",
+            "planetary_image": null
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: The equirectangular WAC source is not repurposed as a validated polar margin layer. Earth: Clear source area is 75.9% locally and 56.8% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-157000-052000-optical.png",
+            "planetary_image": null
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: Polar darkness and unacquired imagery prevent a paired transition assessment. Earth: Clear source area is 75.9% locally and 56.8% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-157000-052000-optical.png",
+            "planetary_image": null
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "shackleton",
+          "candidate_id": "ATACAMA-157000-052000",
+          "role": "nomination",
+          "earth_image": "ATACAMA-157000-052000-optical.png",
+          "planetary_image": null,
+          "earth_local_clear_fraction": 0.758828125,
+          "earth_context_clear_fraction": 0.56830078125,
+          "planetary_valid_fraction": 0,
+          "source_scene_ids": [
+            "HLS.L30.T19KDP.2025359T143108.v2.0",
+            "HLS.L30.T19KDQ.2025359T143108.v2.0",
+            "HLS.L30.T19KEP.2025359T143108.v2.0",
+            "HLS.L30.T19KEQ.2025359T143108.v2.0"
+          ],
+          "source_planetary_id": null,
+          "inspection_status": "not_assessed",
+          "run_hash": "be0eb998346c1fe0b955682b1700fd63d16ddbd2e62b346f845a0a655d10121f"
+        },
+        "source_lineage": "No polar camera mosaic acquired; equirectangular tiles are not silently used as a polar validation layer",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "ATACAMA-076000-040000",
+        "role": "nomination",
+        "matched_to": null,
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: No polar optical mosaic was acquired. Earth: Clear source area is 27.5% locally and 29.6% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-076000-040000-optical.png",
+            "planetary_image": null
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: The equirectangular WAC source is not repurposed as a validated polar margin layer. Earth: Clear source area is 27.5% locally and 29.6% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-076000-040000-optical.png",
+            "planetary_image": null
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: Polar darkness and unacquired imagery prevent a paired transition assessment. Earth: Clear source area is 27.5% locally and 29.6% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-076000-040000-optical.png",
+            "planetary_image": null
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "shackleton",
+          "candidate_id": "ATACAMA-076000-040000",
+          "role": "nomination",
+          "earth_image": "ATACAMA-076000-040000-optical.png",
+          "planetary_image": null,
+          "earth_local_clear_fraction": 0.2747265625,
+          "earth_context_clear_fraction": 0.296396484375,
+          "planetary_valid_fraction": 0,
+          "source_scene_ids": [
+            "HLS.L30.T19KDP.2025359T143108.v2.0",
+            "HLS.L30.T19KDQ.2025359T143108.v2.0",
+            "HLS.L30.T19KEP.2025359T143108.v2.0",
+            "HLS.L30.T19KEQ.2025359T143108.v2.0"
+          ],
+          "source_planetary_id": null,
+          "inspection_status": "not_assessed",
+          "run_hash": "be0eb998346c1fe0b955682b1700fd63d16ddbd2e62b346f845a0a655d10121f"
+        },
+        "source_lineage": "No polar camera mosaic acquired; equirectangular tiles are not silently used as a polar validation layer",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "NAMIB-115000-142000",
+        "role": "nomination",
+        "matched_to": null,
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: No polar optical mosaic was acquired. Earth: Clear source area is 98.2% locally and 84.1% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-115000-142000-optical.png",
+            "planetary_image": null
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: The equirectangular WAC source is not repurposed as a validated polar margin layer. Earth: Clear source area is 98.2% locally and 84.1% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-115000-142000-optical.png",
+            "planetary_image": null
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: Polar darkness and unacquired imagery prevent a paired transition assessment. Earth: Clear source area is 98.2% locally and 84.1% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-115000-142000-optical.png",
+            "planetary_image": null
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "shackleton",
+          "candidate_id": "NAMIB-115000-142000",
+          "role": "nomination",
+          "earth_image": "NAMIB-115000-142000-optical.png",
+          "planetary_image": null,
+          "earth_local_clear_fraction": 0.9823828125,
+          "earth_context_clear_fraction": 0.840693359375,
+          "planetary_valid_fraction": 0,
+          "source_scene_ids": [
+            "HLS.L30.T33JWM.2025349T085748.v2.0",
+            "HLS.L30.T33JWN.2025349T085748.v2.0",
+            "HLS.L30.T33JXM.2025358T085137.v2.0",
+            "HLS.L30.T33JXN.2025342T085138.v2.0",
+            "HLS.L30.T33KWP.2025349T085724.v2.0",
+            "HLS.L30.T33KXP.2025358T085113.v2.0"
+          ],
+          "source_planetary_id": null,
+          "inspection_status": "not_assessed",
+          "run_hash": "be0eb998346c1fe0b955682b1700fd63d16ddbd2e62b346f845a0a655d10121f"
+        },
+        "source_lineage": "No polar camera mosaic acquired; equirectangular tiles are not silently used as a polar validation layer",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "ATACAMA-037000-121000",
+        "role": "matched_alternative",
+        "matched_to": "ATACAMA-157000-052000",
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: No polar optical mosaic was acquired. Earth: Clear source area is 0.0% locally and 5.7% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-037000-121000-optical.png",
+            "planetary_image": null
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: The equirectangular WAC source is not repurposed as a validated polar margin layer. Earth: Clear source area is 0.0% locally and 5.7% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-037000-121000-optical.png",
+            "planetary_image": null
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: Polar darkness and unacquired imagery prevent a paired transition assessment. Earth: Clear source area is 0.0% locally and 5.7% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-037000-121000-optical.png",
+            "planetary_image": null
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "shackleton",
+          "candidate_id": "ATACAMA-037000-121000",
+          "role": "matched_alternative",
+          "earth_image": "ATACAMA-037000-121000-optical.png",
+          "planetary_image": null,
+          "earth_local_clear_fraction": 0.0,
+          "earth_context_clear_fraction": 0.056953125,
+          "planetary_valid_fraction": 0,
+          "source_scene_ids": [
+            "HLS.L30.T19KDP.2025359T143108.v2.0",
+            "HLS.L30.T19KDQ.2025359T143108.v2.0",
+            "HLS.L30.T19KEP.2025359T143108.v2.0",
+            "HLS.L30.T19KEQ.2025359T143108.v2.0"
+          ],
+          "source_planetary_id": null,
+          "inspection_status": "not_assessed",
+          "run_hash": "be0eb998346c1fe0b955682b1700fd63d16ddbd2e62b346f845a0a655d10121f"
+        },
+        "source_lineage": "No polar camera mosaic acquired; equirectangular tiles are not silently used as a polar validation layer",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "NAMIB-079000-061000",
+        "role": "matched_alternative",
+        "matched_to": "ATACAMA-076000-040000",
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: No polar optical mosaic was acquired. Earth: Clear source area is 2.3% locally and 61.8% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-079000-061000-optical.png",
+            "planetary_image": null
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: The equirectangular WAC source is not repurposed as a validated polar margin layer. Earth: Clear source area is 2.3% locally and 61.8% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-079000-061000-optical.png",
+            "planetary_image": null
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: Polar darkness and unacquired imagery prevent a paired transition assessment. Earth: Clear source area is 2.3% locally and 61.8% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "NAMIB-079000-061000-optical.png",
+            "planetary_image": null
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "shackleton",
+          "candidate_id": "NAMIB-079000-061000",
+          "role": "matched_alternative",
+          "earth_image": "NAMIB-079000-061000-optical.png",
+          "planetary_image": null,
+          "earth_local_clear_fraction": 0.023125,
+          "earth_context_clear_fraction": 0.618271484375,
+          "planetary_valid_fraction": 0,
+          "source_scene_ids": [
+            "HLS.L30.T33JWM.2025349T085748.v2.0",
+            "HLS.L30.T33JWN.2025349T085748.v2.0",
+            "HLS.L30.T33JXM.2025358T085137.v2.0",
+            "HLS.L30.T33JXN.2025342T085138.v2.0",
+            "HLS.L30.T33KWP.2025349T085724.v2.0",
+            "HLS.L30.T33KXP.2025358T085113.v2.0"
+          ],
+          "source_planetary_id": null,
+          "inspection_status": "not_assessed",
+          "run_hash": "be0eb998346c1fe0b955682b1700fd63d16ddbd2e62b346f845a0a655d10121f"
+        },
+        "source_lineage": "No polar camera mosaic acquired; equirectangular tiles are not silently used as a polar validation layer",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      },
+      {
+        "candidate_id": "ATACAMA-133000-133000",
+        "role": "matched_alternative",
+        "matched_to": "NAMIB-115000-142000",
+        "claim_level": "screened_candidate",
+        "corroboration": [
+          {
+            "requirement": "basin_floor",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: No polar optical mosaic was acquired. Earth: Clear source area is 100.0% locally and 98.2% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-133000-133000-optical.png",
+            "planetary_image": null
+          },
+          {
+            "requirement": "ridge_margin",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: The equirectangular WAC source is not repurposed as a validated polar margin layer. Earth: Clear source area is 100.0% locally and 98.2% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-133000-133000-optical.png",
+            "planetary_image": null
+          },
+          {
+            "requirement": "relief_transition",
+            "status": "unassessable",
+            "target_status": "unassessable",
+            "earth_status": "unassessable",
+            "reason": "Target: Polar darkness and unacquired imagery prevent a paired transition assessment. Earth: Clear source area is 100.0% locally and 98.2% in context; the declared complete-image gate is unmet or no interpretation is recorded.",
+            "earth_image": "ATACAMA-133000-133000-optical.png",
+            "planetary_image": null
+          }
+        ],
+        "novelty_status": "not_audited",
+        "novelty_queries": [],
+        "reviewer_status": "model_assisted_not_independent_expert_review",
+        "contradictions": [],
+        "contradiction_assessment": "model_assisted_remote_image_assessment",
+        "field_tests": [
+          "Slope transects to test DEM-scale relief",
+          "Surface and grain-size descriptions to test substrate assumptions",
+          "Site access and permit review before field planning"
+        ],
+        "assessment_outcome": "insufficient_image_coverage",
+        "rubric_id": "visible-landform-rubric-v3",
+        "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+        "imagery_packet": {
+          "target_id": "shackleton",
+          "candidate_id": "ATACAMA-133000-133000",
+          "role": "matched_alternative",
+          "earth_image": "ATACAMA-133000-133000-optical.png",
+          "planetary_image": null,
+          "earth_local_clear_fraction": 0.9998046875,
+          "earth_context_clear_fraction": 0.98234619140625,
+          "planetary_valid_fraction": 0,
+          "source_scene_ids": [
+            "HLS.L30.T19KDP.2025359T143108.v2.0",
+            "HLS.L30.T19KDQ.2025359T143108.v2.0",
+            "HLS.L30.T19KEP.2025359T143108.v2.0",
+            "HLS.L30.T19KEQ.2025359T143108.v2.0"
+          ],
+          "source_planetary_id": null,
+          "inspection_status": "not_assessed",
+          "run_hash": "be0eb998346c1fe0b955682b1700fd63d16ddbd2e62b346f845a0a655d10121f"
+        },
+        "source_lineage": "No polar camera mosaic acquired; equirectangular tiles are not silently used as a polar validation layer",
+        "novelty": {
+          "status": "not_audited",
+          "reason": "Outside the focused Jezero novelty investigation"
+        }
+      }
+    ],
+    "planned_count": 6,
+    "unfilled_slots": [],
+    "selection_rule": {
+      "minimum_context_separation_m": 80000,
+      "maximum_context_coverage_difference": 0.02,
+      "maximum_local_coverage_difference": 0.02,
+      "slope_category_edges_deg": [
+        1,
+        3,
+        8
+      ],
+      "relief_category_edges_m": [
+        100,
+        500,
+        1500
+      ],
+      "alternative_rank_rule": "Lower robust rank than its nominated match; same slope and relief bins; closest nominal loss, seeded tie then stable ID"
+    },
+    "actual_count": 6,
+    "scope_note": "Up to three nominations and three category/coverage-matched alternatives; non-overlapping 80 km contexts; unfilled slots remain explicit in the corrected exploratory v3 record",
+    "claim": "Model-assisted remote-sensing assessment; no independently validated or new analogue is established"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "state": "unassessable_quality_encoding",
+  "center_source": "LROC catalogue point, not an independently delineated rim",
+  "assumed_diameter_m": 100,
+  "quality_contract": "readme successful correlations 10-14 only; edited 15 excluded",
+  "quality_histogram": {
+    "0": 2536,
+    "1": 15441,
+    "162": 21252,
+    "185": 49885,
+    "209": 77304,
+    "232": 67699,
+    "255": 16884
+  },
+  "scales": [],
+  "reason": "Confidence TIFF contains display-encoded browse values, not documented native quality classes; coverage failure cannot be inferred."
+}

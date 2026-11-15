@@ -1,0 +1,58 @@
+{
+  "state": "no_valid_terrain_in_search_crop",
+  "source": "data/raw/discovery_v10/earth/USGS_1M_12_x29y482_ID_SouthernID_2018_D19.tif",
+  "sha256": "b830a1f2f709acb853a65dab61477704cc14ef176be4b49759acc612500522d8",
+  "source_catalogue": "https://www.sciencebase.gov/catalog/item/6659670ad34ef3137d363f70",
+  "actual_crs_wkt": "PROJCS[\"NAD83 / UTM zone 12N\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-111],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"26912\"]]",
+  "pixel_m": [
+    1.0,
+    1.0
+  ],
+  "search_crop_bounds_native_m": [
+    295000,
+    4812600,
+    295650,
+    4813400
+  ],
+  "search_crop_shape": [
+    800,
+    650
+  ],
+  "valid_fraction": 0.0,
+  "elevation_range_m": null,
+  "support": [
+    {
+      "gaussian_sigma_m": 10,
+      "square_mask_radius_m": 31,
+      "usable_cells_within_crop": 0
+    },
+    {
+      "gaussian_sigma_m": 20,
+      "square_mask_radius_m": 61,
+      "usable_cells_within_crop": 0
+    },
+    {
+      "gaussian_sigma_m": 40,
+      "square_mask_radius_m": 121,
+      "usable_cells_within_crop": 0
+    }
+  ],
+  "project_metadata": {
+    "path": "data/metadata/discovery_v10/earth-project/DEM_300074.xml",
+    "sha256": "f8ea122e98e564a2d6604895e48427c710afde62fdcd4abbecd896fc9325dbd2",
+    "acquisition_begin": "20190925",
+    "acquisition_end": "20200620",
+    "horizontal_datum": "North American Datum of 1983 (2011)",
+    "vertical_accuracy_statement": "This data set was produced to meet ASPRS Positional Accuracy Standard for Digital Geospatial Data (2014) for a 10-cm RMSEz Vertical Accuracy Class.",
+    "processing": "Hydro Flattened Raster DEM Process:  Class 2 (ground) lidar points in conjunction with the hydro breaklines were used to create a 0.5 meter hydro-flattened Raster DEM. Using LP360, a GeoTIFF file was created for each tile. Each surface is reviewed using Global Mapper to check for any surface anomalies or incorrect elevations found within the surface."
+  },
+  "limits": [
+    "Search crop is not a feature polygon, nomination or independent control.",
+    "Tile-specific ground density and interpolation near a pit remain unchecked.",
+    "Project identifier dates must not be treated as acquisition dates.",
+    "Project accuracy target is not a measured pit-specific uncertainty distribution.",
+    "The acquired standard tile is actually 1 m; vendor source products may have a different posting.",
+    "Survey-station UTM datum is unspecified; no CAVES registration has been solved.",
+    "Independent rim mapping, orthophotography and source-footprint correspondence remain required."
+  ]
+}

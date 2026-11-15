@@ -1,0 +1,18 @@
+{
+  "state": "decoded_local_cartesian_survey",
+  "point_count": 6095959,
+  "sample_xyz_min": [
+    -43.547508239746094,
+    -111.54993438720703,
+    -11.036528587341309
+  ],
+  "sample_xyz_max": [
+    21.215906143188477,
+    12.955079078674316,
+    3.3114073276519775
+  ],
+  "world_transform": "not provided/verified",
+  "units": "metres per provider",
+  "extraction": "portable 7-Zip; full archive filter decoded successfully",
+  "sha256": "bfc1236bf0322a28408bee178289d7a8aab104365c7d04548e7ebba87550f623"
+}

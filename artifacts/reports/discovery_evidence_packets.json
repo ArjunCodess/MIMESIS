@@ -1,0 +1,741 @@
+[
+  {
+    "target_id": "jezero",
+    "candidate_id": "MOJAVE-142000-046000",
+    "role": "nomination",
+    "earth_image": "MOJAVE-142000-046000-optical.png",
+    "planetary_image": "jezero-camera.png",
+    "earth_local_clear_fraction": 1.0,
+    "earth_context_clear_fraction": 0.9997509765625,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T11SNT.2025159T182141.v2.0",
+      "HLS.L30.T11SNU.2025159T182117.v2.0",
+      "HLS.L30.T11SNV.2025159T182117.v2.0",
+      "HLS.L30.T11SPT.2025160T181527.v2.0",
+      "HLS.L30.T11SPU.2025160T181527.v2.0",
+      "HLS.L30.T11SPV.2025168T181514.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "af78065381fb5991cb7ff0ad16c3a96c97f12a0adba7699809dfedbd49d64937"
+  },
+  {
+    "target_id": "jezero",
+    "candidate_id": "MOROCCO-103000-100000",
+    "role": "nomination",
+    "earth_image": "MOROCCO-103000-100000-optical.png",
+    "planetary_image": "jezero-camera.png",
+    "earth_local_clear_fraction": 1.0,
+    "earth_context_clear_fraction": 0.96126220703125,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T29RPN.2025199T105812.v2.0",
+      "HLS.L30.T29RPP.2025199T105812.v2.0",
+      "HLS.L30.T29RPQ.2025199T105749.v2.0",
+      "HLS.L30.T29RPQ.2025238T110411.v2.0",
+      "HLS.L30.T29RQN.2025152T105137.v2.0",
+      "HLS.L30.T29RQP.2025199T105812.v2.0",
+      "HLS.L30.T29RQQ.2025199T105749.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "af78065381fb5991cb7ff0ad16c3a96c97f12a0adba7699809dfedbd49d64937"
+  },
+  {
+    "target_id": "jezero",
+    "candidate_id": "ATACAMA-154000-142000",
+    "role": "nomination",
+    "earth_image": "ATACAMA-154000-142000-optical.png",
+    "planetary_image": "jezero-camera.png",
+    "earth_local_clear_fraction": 0.949140625,
+    "earth_context_clear_fraction": 0.981630859375,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T19KDP.2025359T143108.v2.0",
+      "HLS.L30.T19KDQ.2025359T143108.v2.0",
+      "HLS.L30.T19KEP.2025359T143108.v2.0",
+      "HLS.L30.T19KEQ.2025359T143108.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "af78065381fb5991cb7ff0ad16c3a96c97f12a0adba7699809dfedbd49d64937"
+  },
+  {
+    "target_id": "jezero",
+    "candidate_id": "QAIDAM-043000-082000",
+    "role": "matched_alternative",
+    "earth_image": "QAIDAM-043000-082000-optical.png",
+    "planetary_image": "jezero-camera.png",
+    "earth_local_clear_fraction": 0.9346875,
+    "earth_context_clear_fraction": 0.85556884765625,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T46SEF.2025167T042052.v2.0",
+      "HLS.L30.T46SEG.2025198T042649.v2.0",
+      "HLS.L30.T46SEG.2025255T042103.v2.0",
+      "HLS.L30.T46SFF.2025224T041441.v2.0",
+      "HLS.L30.T46SFG.2025224T041441.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "af78065381fb5991cb7ff0ad16c3a96c97f12a0adba7699809dfedbd49d64937"
+  },
+  {
+    "target_id": "jezero",
+    "candidate_id": "MOJAVE-040000-100000",
+    "role": "matched_alternative",
+    "earth_image": "MOJAVE-040000-100000-optical.png",
+    "planetary_image": "jezero-camera.png",
+    "earth_local_clear_fraction": 0.9991796875,
+    "earth_context_clear_fraction": 0.8905029296875,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T11SNT.2025159T182141.v2.0",
+      "HLS.L30.T11SNU.2025159T182117.v2.0",
+      "HLS.L30.T11SNV.2025159T182117.v2.0",
+      "HLS.L30.T11SPT.2025160T181527.v2.0",
+      "HLS.L30.T11SPU.2025160T181527.v2.0",
+      "HLS.L30.T11SPV.2025168T181514.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "af78065381fb5991cb7ff0ad16c3a96c97f12a0adba7699809dfedbd49d64937"
+  },
+  {
+    "target_id": "jezero",
+    "candidate_id": "NAMIB-082000-151000",
+    "role": "matched_alternative",
+    "earth_image": "NAMIB-082000-151000-optical.png",
+    "planetary_image": "jezero-camera.png",
+    "earth_local_clear_fraction": 0.80390625,
+    "earth_context_clear_fraction": 0.8655810546875,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T33JWM.2025349T085748.v2.0",
+      "HLS.L30.T33JWN.2025349T085748.v2.0",
+      "HLS.L30.T33JXM.2025358T085137.v2.0",
+      "HLS.L30.T33JXN.2025342T085138.v2.0",
+      "HLS.L30.T33KWP.2025349T085724.v2.0",
+      "HLS.L30.T33KXP.2025358T085113.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "af78065381fb5991cb7ff0ad16c3a96c97f12a0adba7699809dfedbd49d64937"
+  },
+  {
+    "target_id": "nili",
+    "candidate_id": "MOROCCO-109000-103000",
+    "role": "nomination",
+    "earth_image": "MOROCCO-109000-103000-optical.png",
+    "planetary_image": "nili-camera.png",
+    "earth_local_clear_fraction": 1.0,
+    "earth_context_clear_fraction": 0.96822021484375,
+    "planetary_valid_fraction": 0.0,
+    "source_scene_ids": [
+      "HLS.L30.T29RPN.2025199T105812.v2.0",
+      "HLS.L30.T29RPP.2025199T105812.v2.0",
+      "HLS.L30.T29RPQ.2025199T105749.v2.0",
+      "HLS.L30.T29RPQ.2025238T110411.v2.0",
+      "HLS.L30.T29RQN.2025152T105137.v2.0",
+      "HLS.L30.T29RQP.2025199T105812.v2.0",
+      "HLS.L30.T29RQQ.2025199T105749.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "598bfd3cf1d4a35d1da4be8c409038d632bddbfacf588946b1a1a84f901b18eb"
+  },
+  {
+    "target_id": "nili",
+    "candidate_id": "MOJAVE-151000-085000",
+    "role": "nomination",
+    "earth_image": "MOJAVE-151000-085000-optical.png",
+    "planetary_image": "nili-camera.png",
+    "earth_local_clear_fraction": 1.0,
+    "earth_context_clear_fraction": 0.9991552734375,
+    "planetary_valid_fraction": 0.0,
+    "source_scene_ids": [
+      "HLS.L30.T11SNT.2025159T182141.v2.0",
+      "HLS.L30.T11SNU.2025159T182117.v2.0",
+      "HLS.L30.T11SNV.2025159T182117.v2.0",
+      "HLS.L30.T11SPT.2025160T181527.v2.0",
+      "HLS.L30.T11SPU.2025160T181527.v2.0",
+      "HLS.L30.T11SPV.2025168T181514.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "598bfd3cf1d4a35d1da4be8c409038d632bddbfacf588946b1a1a84f901b18eb"
+  },
+  {
+    "target_id": "nili",
+    "candidate_id": "NAMIB-103000-106000",
+    "role": "nomination",
+    "earth_image": "NAMIB-103000-106000-optical.png",
+    "planetary_image": "nili-camera.png",
+    "earth_local_clear_fraction": 0.696015625,
+    "earth_context_clear_fraction": 0.7413671875,
+    "planetary_valid_fraction": 0.0,
+    "source_scene_ids": [
+      "HLS.L30.T33JWM.2025349T085748.v2.0",
+      "HLS.L30.T33JWN.2025349T085748.v2.0",
+      "HLS.L30.T33JXM.2025358T085137.v2.0",
+      "HLS.L30.T33JXN.2025342T085138.v2.0",
+      "HLS.L30.T33KWP.2025349T085724.v2.0",
+      "HLS.L30.T33KXP.2025358T085113.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "598bfd3cf1d4a35d1da4be8c409038d632bddbfacf588946b1a1a84f901b18eb"
+  },
+  {
+    "target_id": "nili",
+    "candidate_id": "MOJAVE-037000-082000",
+    "role": "matched_alternative",
+    "earth_image": "MOJAVE-037000-082000-optical.png",
+    "planetary_image": "nili-camera.png",
+    "earth_local_clear_fraction": 0.9954296875,
+    "earth_context_clear_fraction": 0.85531005859375,
+    "planetary_valid_fraction": 0.0,
+    "source_scene_ids": [
+      "HLS.L30.T11SNT.2025159T182141.v2.0",
+      "HLS.L30.T11SNU.2025159T182117.v2.0",
+      "HLS.L30.T11SNV.2025159T182117.v2.0",
+      "HLS.L30.T11SPT.2025160T181527.v2.0",
+      "HLS.L30.T11SPU.2025160T181527.v2.0",
+      "HLS.L30.T11SPV.2025168T181514.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "598bfd3cf1d4a35d1da4be8c409038d632bddbfacf588946b1a1a84f901b18eb"
+  },
+  {
+    "target_id": "nili",
+    "candidate_id": "ATACAMA-112000-115000",
+    "role": "matched_alternative",
+    "earth_image": "ATACAMA-112000-115000-optical.png",
+    "planetary_image": "nili-camera.png",
+    "earth_local_clear_fraction": 0.9990625,
+    "earth_context_clear_fraction": 0.96698486328125,
+    "planetary_valid_fraction": 0.0,
+    "source_scene_ids": [
+      "HLS.L30.T19KDP.2025359T143108.v2.0",
+      "HLS.L30.T19KDQ.2025359T143108.v2.0",
+      "HLS.L30.T19KEP.2025359T143108.v2.0",
+      "HLS.L30.T19KEQ.2025359T143108.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "598bfd3cf1d4a35d1da4be8c409038d632bddbfacf588946b1a1a84f901b18eb"
+  },
+  {
+    "target_id": "nili",
+    "candidate_id": "QAIDAM-067000-067000",
+    "role": "matched_alternative",
+    "earth_image": "QAIDAM-067000-067000-optical.png",
+    "planetary_image": "nili-camera.png",
+    "earth_local_clear_fraction": 0.956015625,
+    "earth_context_clear_fraction": 0.93283203125,
+    "planetary_valid_fraction": 0.0,
+    "source_scene_ids": [
+      "HLS.L30.T46SEF.2025167T042052.v2.0",
+      "HLS.L30.T46SEG.2025198T042649.v2.0",
+      "HLS.L30.T46SEG.2025255T042103.v2.0",
+      "HLS.L30.T46SFF.2025224T041441.v2.0",
+      "HLS.L30.T46SFG.2025224T041441.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "598bfd3cf1d4a35d1da4be8c409038d632bddbfacf588946b1a1a84f901b18eb"
+  },
+  {
+    "target_id": "isidis",
+    "candidate_id": "QAIDAM-037000-121000",
+    "role": "nomination",
+    "earth_image": "QAIDAM-037000-121000-optical.png",
+    "planetary_image": "isidis-camera.png",
+    "earth_local_clear_fraction": 1.0,
+    "earth_context_clear_fraction": 0.78715087890625,
+    "planetary_valid_fraction": 0.95914375,
+    "source_scene_ids": [
+      "HLS.L30.T46SEF.2025167T042052.v2.0",
+      "HLS.L30.T46SEG.2025198T042649.v2.0",
+      "HLS.L30.T46SEG.2025255T042103.v2.0",
+      "HLS.L30.T46SFF.2025224T041441.v2.0",
+      "HLS.L30.T46SFG.2025224T041441.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "86f1975acb069fa4a0b7cbed354c7c510f7ddd946546063c24b7f938aa3d1af1"
+  },
+  {
+    "target_id": "isidis",
+    "candidate_id": "MOROCCO-124000-061000",
+    "role": "nomination",
+    "earth_image": "MOROCCO-124000-061000-optical.png",
+    "planetary_image": "isidis-camera.png",
+    "earth_local_clear_fraction": 0.1833203125,
+    "earth_context_clear_fraction": 0.6478759765625,
+    "planetary_valid_fraction": 0.95914375,
+    "source_scene_ids": [
+      "HLS.L30.T29RPN.2025199T105812.v2.0",
+      "HLS.L30.T29RPP.2025199T105812.v2.0",
+      "HLS.L30.T29RPQ.2025199T105749.v2.0",
+      "HLS.L30.T29RPQ.2025238T110411.v2.0",
+      "HLS.L30.T29RQN.2025152T105137.v2.0",
+      "HLS.L30.T29RQP.2025199T105812.v2.0",
+      "HLS.L30.T29RQQ.2025199T105749.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "86f1975acb069fa4a0b7cbed354c7c510f7ddd946546063c24b7f938aa3d1af1"
+  },
+  {
+    "target_id": "isidis",
+    "candidate_id": "NAMIB-163000-139000",
+    "role": "nomination",
+    "earth_image": "NAMIB-163000-139000-optical.png",
+    "planetary_image": "isidis-camera.png",
+    "earth_local_clear_fraction": 0.9998046875,
+    "earth_context_clear_fraction": 0.99869140625,
+    "planetary_valid_fraction": 0.95914375,
+    "source_scene_ids": [
+      "HLS.L30.T33JWM.2025349T085748.v2.0",
+      "HLS.L30.T33JWN.2025349T085748.v2.0",
+      "HLS.L30.T33JXM.2025358T085137.v2.0",
+      "HLS.L30.T33JXN.2025342T085138.v2.0",
+      "HLS.L30.T33KWP.2025349T085724.v2.0",
+      "HLS.L30.T33KXP.2025358T085113.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "86f1975acb069fa4a0b7cbed354c7c510f7ddd946546063c24b7f938aa3d1af1"
+  },
+  {
+    "target_id": "isidis",
+    "candidate_id": "QAIDAM-142000-061000",
+    "role": "matched_alternative",
+    "earth_image": "QAIDAM-142000-061000-optical.png",
+    "planetary_image": "isidis-camera.png",
+    "earth_local_clear_fraction": 0.6958203125,
+    "earth_context_clear_fraction": 0.720859375,
+    "planetary_valid_fraction": 0.95914375,
+    "source_scene_ids": [
+      "HLS.L30.T46SEF.2025167T042052.v2.0",
+      "HLS.L30.T46SEG.2025198T042649.v2.0",
+      "HLS.L30.T46SEG.2025255T042103.v2.0",
+      "HLS.L30.T46SFF.2025224T041441.v2.0",
+      "HLS.L30.T46SFG.2025224T041441.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "86f1975acb069fa4a0b7cbed354c7c510f7ddd946546063c24b7f938aa3d1af1"
+  },
+  {
+    "target_id": "isidis",
+    "candidate_id": "MOJAVE-040000-091000",
+    "role": "matched_alternative",
+    "earth_image": "MOJAVE-040000-091000-optical.png",
+    "planetary_image": "isidis-camera.png",
+    "earth_local_clear_fraction": 0.9953125,
+    "earth_context_clear_fraction": 0.89163818359375,
+    "planetary_valid_fraction": 0.95914375,
+    "source_scene_ids": [
+      "HLS.L30.T11SNT.2025159T182141.v2.0",
+      "HLS.L30.T11SNU.2025159T182117.v2.0",
+      "HLS.L30.T11SNV.2025159T182117.v2.0",
+      "HLS.L30.T11SPT.2025160T181527.v2.0",
+      "HLS.L30.T11SPU.2025160T181527.v2.0",
+      "HLS.L30.T11SPV.2025168T181514.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "86f1975acb069fa4a0b7cbed354c7c510f7ddd946546063c24b7f938aa3d1af1"
+  },
+  {
+    "target_id": "isidis",
+    "candidate_id": "QAIDAM-142000-145000",
+    "role": "matched_alternative",
+    "earth_image": "QAIDAM-142000-145000-optical.png",
+    "planetary_image": "isidis-camera.png",
+    "earth_local_clear_fraction": 0.0,
+    "earth_context_clear_fraction": 0.5442041015625,
+    "planetary_valid_fraction": 0.95914375,
+    "source_scene_ids": [
+      "HLS.L30.T46SEF.2025167T042052.v2.0",
+      "HLS.L30.T46SEG.2025198T042649.v2.0",
+      "HLS.L30.T46SEG.2025255T042103.v2.0",
+      "HLS.L30.T46SFF.2025224T041441.v2.0",
+      "HLS.L30.T46SFG.2025224T041441.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "86f1975acb069fa4a0b7cbed354c7c510f7ddd946546063c24b7f938aa3d1af1"
+  },
+  {
+    "target_id": "syrtis",
+    "candidate_id": "MOROCCO-112000-067000",
+    "role": "nomination",
+    "earth_image": "MOROCCO-112000-067000-optical.png",
+    "planetary_image": "syrtis-camera.png",
+    "earth_local_clear_fraction": 0.820703125,
+    "earth_context_clear_fraction": 0.76250244140625,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T29RPN.2025199T105812.v2.0",
+      "HLS.L30.T29RPP.2025199T105812.v2.0",
+      "HLS.L30.T29RPQ.2025199T105749.v2.0",
+      "HLS.L30.T29RPQ.2025238T110411.v2.0",
+      "HLS.L30.T29RQN.2025152T105137.v2.0",
+      "HLS.L30.T29RQP.2025199T105812.v2.0",
+      "HLS.L30.T29RQQ.2025199T105749.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "bcdea310e4991e7db5f7821cff0723719d896a50c03f166432090ca4473e30dd"
+  },
+  {
+    "target_id": "syrtis",
+    "candidate_id": "QAIDAM-070000-091000",
+    "role": "nomination",
+    "earth_image": "QAIDAM-070000-091000-optical.png",
+    "planetary_image": "syrtis-camera.png",
+    "earth_local_clear_fraction": 0.665703125,
+    "earth_context_clear_fraction": 0.93009765625,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T46SEF.2025167T042052.v2.0",
+      "HLS.L30.T46SEG.2025198T042649.v2.0",
+      "HLS.L30.T46SEG.2025255T042103.v2.0",
+      "HLS.L30.T46SFF.2025224T041441.v2.0",
+      "HLS.L30.T46SFG.2025224T041441.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "bcdea310e4991e7db5f7821cff0723719d896a50c03f166432090ca4473e30dd"
+  },
+  {
+    "target_id": "syrtis",
+    "candidate_id": "NAMIB-157000-136000",
+    "role": "nomination",
+    "earth_image": "NAMIB-157000-136000-optical.png",
+    "planetary_image": "syrtis-camera.png",
+    "earth_local_clear_fraction": 0.9998828125,
+    "earth_context_clear_fraction": 0.99776611328125,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T33JWM.2025349T085748.v2.0",
+      "HLS.L30.T33JWN.2025349T085748.v2.0",
+      "HLS.L30.T33JXM.2025358T085137.v2.0",
+      "HLS.L30.T33JXN.2025342T085138.v2.0",
+      "HLS.L30.T33KWP.2025349T085724.v2.0",
+      "HLS.L30.T33KXP.2025358T085113.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "bcdea310e4991e7db5f7821cff0723719d896a50c03f166432090ca4473e30dd"
+  },
+  {
+    "target_id": "syrtis",
+    "candidate_id": "MOJAVE-136000-040000",
+    "role": "matched_alternative",
+    "earth_image": "MOJAVE-136000-040000-optical.png",
+    "planetary_image": "syrtis-camera.png",
+    "earth_local_clear_fraction": 1.0,
+    "earth_context_clear_fraction": 0.999697265625,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T11SNT.2025159T182141.v2.0",
+      "HLS.L30.T11SNU.2025159T182117.v2.0",
+      "HLS.L30.T11SNV.2025159T182117.v2.0",
+      "HLS.L30.T11SPT.2025160T181527.v2.0",
+      "HLS.L30.T11SPU.2025160T181527.v2.0",
+      "HLS.L30.T11SPV.2025168T181514.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "bcdea310e4991e7db5f7821cff0723719d896a50c03f166432090ca4473e30dd"
+  },
+  {
+    "target_id": "syrtis",
+    "candidate_id": "MOJAVE-040000-094000",
+    "role": "matched_alternative",
+    "earth_image": "MOJAVE-040000-094000-optical.png",
+    "planetary_image": "syrtis-camera.png",
+    "earth_local_clear_fraction": 0.99625,
+    "earth_context_clear_fraction": 0.89128662109375,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T11SNT.2025159T182141.v2.0",
+      "HLS.L30.T11SNU.2025159T182117.v2.0",
+      "HLS.L30.T11SNV.2025159T182117.v2.0",
+      "HLS.L30.T11SPT.2025160T181527.v2.0",
+      "HLS.L30.T11SPU.2025160T181527.v2.0",
+      "HLS.L30.T11SPV.2025168T181514.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "bcdea310e4991e7db5f7821cff0723719d896a50c03f166432090ca4473e30dd"
+  },
+  {
+    "target_id": "syrtis",
+    "candidate_id": "QAIDAM-151000-061000",
+    "role": "matched_alternative",
+    "earth_image": "QAIDAM-151000-061000-optical.png",
+    "planetary_image": "syrtis-camera.png",
+    "earth_local_clear_fraction": 0.9998828125,
+    "earth_context_clear_fraction": 0.72699951171875,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T46SEF.2025167T042052.v2.0",
+      "HLS.L30.T46SEG.2025198T042649.v2.0",
+      "HLS.L30.T46SEG.2025255T042103.v2.0",
+      "HLS.L30.T46SFF.2025224T041441.v2.0",
+      "HLS.L30.T46SFG.2025224T041441.v2.0"
+    ],
+    "source_planetary_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "inspection_status": "not_assessed",
+    "run_hash": "bcdea310e4991e7db5f7821cff0723719d896a50c03f166432090ca4473e30dd"
+  },
+  {
+    "target_id": "apollo17",
+    "candidate_id": "ATACAMA-163000-052000",
+    "role": "nomination",
+    "earth_image": "ATACAMA-163000-052000-optical.png",
+    "planetary_image": "apollo17-camera.png",
+    "earth_local_clear_fraction": 0.7837890625,
+    "earth_context_clear_fraction": 0.5642822265625,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T19KDP.2025359T143108.v2.0",
+      "HLS.L30.T19KDQ.2025359T143108.v2.0",
+      "HLS.L30.T19KEP.2025359T143108.v2.0",
+      "HLS.L30.T19KEQ.2025359T143108.v2.0"
+    ],
+    "source_planetary_id": "LRO_WAC_Mosaic_Global_303ppd",
+    "inspection_status": "not_assessed",
+    "run_hash": "a89922a9d7f042f4387e8d281f7f3ea0109637b59916635d2309effdb089c70a"
+  },
+  {
+    "target_id": "apollo17",
+    "candidate_id": "MOJAVE-070000-163000",
+    "role": "nomination",
+    "earth_image": "MOJAVE-070000-163000-optical.png",
+    "planetary_image": "apollo17-camera.png",
+    "earth_local_clear_fraction": 0.9999609375,
+    "earth_context_clear_fraction": 0.99993408203125,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T11SNT.2025159T182141.v2.0",
+      "HLS.L30.T11SNU.2025159T182117.v2.0",
+      "HLS.L30.T11SNV.2025159T182117.v2.0",
+      "HLS.L30.T11SPT.2025160T181527.v2.0",
+      "HLS.L30.T11SPU.2025160T181527.v2.0",
+      "HLS.L30.T11SPV.2025168T181514.v2.0"
+    ],
+    "source_planetary_id": "LRO_WAC_Mosaic_Global_303ppd",
+    "inspection_status": "not_assessed",
+    "run_hash": "a89922a9d7f042f4387e8d281f7f3ea0109637b59916635d2309effdb089c70a"
+  },
+  {
+    "target_id": "apollo17",
+    "candidate_id": "ATACAMA-073000-037000",
+    "role": "nomination",
+    "earth_image": "ATACAMA-073000-037000-optical.png",
+    "planetary_image": "apollo17-camera.png",
+    "earth_local_clear_fraction": 0.125,
+    "earth_context_clear_fraction": 0.25726806640625,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T19KDP.2025359T143108.v2.0",
+      "HLS.L30.T19KDQ.2025359T143108.v2.0",
+      "HLS.L30.T19KEP.2025359T143108.v2.0",
+      "HLS.L30.T19KEQ.2025359T143108.v2.0"
+    ],
+    "source_planetary_id": "LRO_WAC_Mosaic_Global_303ppd",
+    "inspection_status": "not_assessed",
+    "run_hash": "a89922a9d7f042f4387e8d281f7f3ea0109637b59916635d2309effdb089c70a"
+  },
+  {
+    "target_id": "apollo17",
+    "candidate_id": "ATACAMA-037000-121000",
+    "role": "matched_alternative",
+    "earth_image": "ATACAMA-037000-121000-optical.png",
+    "planetary_image": "apollo17-camera.png",
+    "earth_local_clear_fraction": 0.0,
+    "earth_context_clear_fraction": 0.056953125,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T19KDP.2025359T143108.v2.0",
+      "HLS.L30.T19KDQ.2025359T143108.v2.0",
+      "HLS.L30.T19KEP.2025359T143108.v2.0",
+      "HLS.L30.T19KEQ.2025359T143108.v2.0"
+    ],
+    "source_planetary_id": "LRO_WAC_Mosaic_Global_303ppd",
+    "inspection_status": "not_assessed",
+    "run_hash": "a89922a9d7f042f4387e8d281f7f3ea0109637b59916635d2309effdb089c70a"
+  },
+  {
+    "target_id": "apollo17",
+    "candidate_id": "MOROCCO-037000-115000",
+    "role": "matched_alternative",
+    "earth_image": "MOROCCO-037000-115000-optical.png",
+    "planetary_image": "apollo17-camera.png",
+    "earth_local_clear_fraction": 0.8284765625,
+    "earth_context_clear_fraction": 0.5821728515625,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T29RPN.2025199T105812.v2.0",
+      "HLS.L30.T29RPP.2025199T105812.v2.0",
+      "HLS.L30.T29RPQ.2025199T105749.v2.0",
+      "HLS.L30.T29RPQ.2025238T110411.v2.0",
+      "HLS.L30.T29RQN.2025152T105137.v2.0",
+      "HLS.L30.T29RQP.2025199T105812.v2.0",
+      "HLS.L30.T29RQQ.2025199T105749.v2.0"
+    ],
+    "source_planetary_id": "LRO_WAC_Mosaic_Global_303ppd",
+    "inspection_status": "not_assessed",
+    "run_hash": "a89922a9d7f042f4387e8d281f7f3ea0109637b59916635d2309effdb089c70a"
+  },
+  {
+    "target_id": "apollo17",
+    "candidate_id": "QAIDAM-043000-037000",
+    "role": "matched_alternative",
+    "earth_image": "QAIDAM-043000-037000-optical.png",
+    "planetary_image": "apollo17-camera.png",
+    "earth_local_clear_fraction": 0.9970703125,
+    "earth_context_clear_fraction": 0.85635009765625,
+    "planetary_valid_fraction": 1.0,
+    "source_scene_ids": [
+      "HLS.L30.T46SEF.2025167T042052.v2.0",
+      "HLS.L30.T46SEG.2025198T042649.v2.0",
+      "HLS.L30.T46SEG.2025255T042103.v2.0",
+      "HLS.L30.T46SFF.2025224T041441.v2.0",
+      "HLS.L30.T46SFG.2025224T041441.v2.0"
+    ],
+    "source_planetary_id": "LRO_WAC_Mosaic_Global_303ppd",
+    "inspection_status": "not_assessed",
+    "run_hash": "a89922a9d7f042f4387e8d281f7f3ea0109637b59916635d2309effdb089c70a"
+  },
+  {
+    "target_id": "shackleton",
+    "candidate_id": "MOJAVE-067000-163000",
+    "role": "nomination",
+    "earth_image": "MOJAVE-067000-163000-optical.png",
+    "planetary_image": null,
+    "earth_local_clear_fraction": 0.9999609375,
+    "earth_context_clear_fraction": 0.9999365234375,
+    "planetary_valid_fraction": 0,
+    "source_scene_ids": [
+      "HLS.L30.T11SNT.2025159T182141.v2.0",
+      "HLS.L30.T11SNU.2025159T182117.v2.0",
+      "HLS.L30.T11SNV.2025159T182117.v2.0",
+      "HLS.L30.T11SPT.2025160T181527.v2.0",
+      "HLS.L30.T11SPU.2025160T181527.v2.0",
+      "HLS.L30.T11SPV.2025168T181514.v2.0"
+    ],
+    "source_planetary_id": null,
+    "inspection_status": "not_assessed",
+    "run_hash": "3c25b34dfe35539bc3b7478892c392b749f9c0447175346a37a8822c3700fbf4"
+  },
+  {
+    "target_id": "shackleton",
+    "candidate_id": "ATACAMA-157000-052000",
+    "role": "nomination",
+    "earth_image": "ATACAMA-157000-052000-optical.png",
+    "planetary_image": null,
+    "earth_local_clear_fraction": 0.758828125,
+    "earth_context_clear_fraction": 0.56830078125,
+    "planetary_valid_fraction": 0,
+    "source_scene_ids": [
+      "HLS.L30.T19KDP.2025359T143108.v2.0",
+      "HLS.L30.T19KDQ.2025359T143108.v2.0",
+      "HLS.L30.T19KEP.2025359T143108.v2.0",
+      "HLS.L30.T19KEQ.2025359T143108.v2.0"
+    ],
+    "source_planetary_id": null,
+    "inspection_status": "not_assessed",
+    "run_hash": "3c25b34dfe35539bc3b7478892c392b749f9c0447175346a37a8822c3700fbf4"
+  },
+  {
+    "target_id": "shackleton",
+    "candidate_id": "ATACAMA-076000-040000",
+    "role": "nomination",
+    "earth_image": "ATACAMA-076000-040000-optical.png",
+    "planetary_image": null,
+    "earth_local_clear_fraction": 0.2747265625,
+    "earth_context_clear_fraction": 0.296396484375,
+    "planetary_valid_fraction": 0,
+    "source_scene_ids": [
+      "HLS.L30.T19KDP.2025359T143108.v2.0",
+      "HLS.L30.T19KDQ.2025359T143108.v2.0",
+      "HLS.L30.T19KEP.2025359T143108.v2.0",
+      "HLS.L30.T19KEQ.2025359T143108.v2.0"
+    ],
+    "source_planetary_id": null,
+    "inspection_status": "not_assessed",
+    "run_hash": "3c25b34dfe35539bc3b7478892c392b749f9c0447175346a37a8822c3700fbf4"
+  },
+  {
+    "target_id": "shackleton",
+    "candidate_id": "MOJAVE-121000-079000",
+    "role": "matched_alternative",
+    "earth_image": "MOJAVE-121000-079000-optical.png",
+    "planetary_image": null,
+    "earth_local_clear_fraction": 1.0,
+    "earth_context_clear_fraction": 0.99943115234375,
+    "planetary_valid_fraction": 0,
+    "source_scene_ids": [
+      "HLS.L30.T11SNT.2025159T182141.v2.0",
+      "HLS.L30.T11SNU.2025159T182117.v2.0",
+      "HLS.L30.T11SNV.2025159T182117.v2.0",
+      "HLS.L30.T11SPT.2025160T181527.v2.0",
+      "HLS.L30.T11SPU.2025160T181527.v2.0",
+      "HLS.L30.T11SPV.2025168T181514.v2.0"
+    ],
+    "source_planetary_id": null,
+    "inspection_status": "not_assessed",
+    "run_hash": "3c25b34dfe35539bc3b7478892c392b749f9c0447175346a37a8822c3700fbf4"
+  },
+  {
+    "target_id": "shackleton",
+    "candidate_id": "MOROCCO-037000-112000",
+    "role": "matched_alternative",
+    "earth_image": "MOROCCO-037000-112000-optical.png",
+    "planetary_image": null,
+    "earth_local_clear_fraction": 0.8631640625,
+    "earth_context_clear_fraction": 0.59070556640625,
+    "planetary_valid_fraction": 0,
+    "source_scene_ids": [
+      "HLS.L30.T29RPN.2025199T105812.v2.0",
+      "HLS.L30.T29RPP.2025199T105812.v2.0",
+      "HLS.L30.T29RPQ.2025199T105749.v2.0",
+      "HLS.L30.T29RPQ.2025238T110411.v2.0",
+      "HLS.L30.T29RQN.2025152T105137.v2.0",
+      "HLS.L30.T29RQP.2025199T105812.v2.0",
+      "HLS.L30.T29RQQ.2025199T105749.v2.0"
+    ],
+    "source_planetary_id": null,
+    "inspection_status": "not_assessed",
+    "run_hash": "3c25b34dfe35539bc3b7478892c392b749f9c0447175346a37a8822c3700fbf4"
+  },
+  {
+    "target_id": "shackleton",
+    "candidate_id": "QAIDAM-046000-037000",
+    "role": "matched_alternative",
+    "earth_image": "QAIDAM-046000-037000-optical.png",
+    "planetary_image": null,
+    "earth_local_clear_fraction": 0.9973046875,
+    "earth_context_clear_fraction": 0.8919677734375,
+    "planetary_valid_fraction": 0,
+    "source_scene_ids": [
+      "HLS.L30.T46SEF.2025167T042052.v2.0",
+      "HLS.L30.T46SEG.2025198T042649.v2.0",
+      "HLS.L30.T46SEG.2025255T042103.v2.0",
+      "HLS.L30.T46SFF.2025224T041441.v2.0",
+      "HLS.L30.T46SFG.2025224T041441.v2.0"
+    ],
+    "source_planetary_id": null,
+    "inspection_status": "not_assessed",
+    "run_hash": "3c25b34dfe35539bc3b7478892c392b749f9c0447175346a37a8822c3700fbf4"
+  }
+]

@@ -1,0 +1,142 @@
+{
+  "state": "calibration_source_sampling_diagnostic",
+  "sources": [
+    {
+      "path": "data/raw/discovery_v10/caves/IndianTunnel_surface/Indian_Collapse3.f32",
+      "point_count": 16880761,
+      "grid_cell_m": 1,
+      "xy_bounds_m": [
+        [
+          -26.89430046081543,
+          -31.62660026550293
+        ],
+        [
+          17.491500854492188,
+          25.408300399780273
+        ]
+      ],
+      "shape_rows_columns": [
+        58,
+        45
+      ],
+      "occupied_cells": 2208,
+      "bounding_rectangle_cells": 2610,
+      "occupied_fraction_of_rectangle": 0.8459770114942529,
+      "within_cell_vertical_range_m_percentiles_50_90_99": [
+        0.9136998057365417,
+        13.226949954032897,
+        14.140868842005727
+      ],
+      "support_erosion": [
+        {
+          "gaussian_sigma_m": 10,
+          "square_mask_radius_at_1m": 31,
+          "surviving_cells": 0
+        },
+        {
+          "gaussian_sigma_m": 20,
+          "square_mask_radius_at_1m": 61,
+          "surviving_cells": 0
+        },
+        {
+          "gaussian_sigma_m": 40,
+          "square_mask_radius_at_1m": 121,
+          "surviving_cells": 0
+        }
+      ],
+      "interpretation": "Unclassified XY sampling only. Roof, floor, walls and vegetation can share a cell. Erosion survivors are an optimistic necessary check, not valid exterior terrain or independent features."
+    },
+    {
+      "path": "data/raw/discovery_v10/caves/IndianTunnel_surface/Indian_NorthSurface_10x.f32",
+      "point_count": 6095959,
+      "grid_cell_m": 1,
+      "xy_bounds_m": [
+        [
+          -43.79753494262695,
+          -112.35401153564453
+        ],
+        [
+          21.242219924926758,
+          13.199525833129883
+        ]
+      ],
+      "shape_rows_columns": [
+        127,
+        66
+      ],
+      "occupied_cells": 3877,
+      "bounding_rectangle_cells": 8382,
+      "occupied_fraction_of_rectangle": 0.4625387735623956,
+      "within_cell_vertical_range_m_percentiles_50_90_99": [
+        0.5709547400474548,
+        9.748222064971925,
+        11.500076313018798
+      ],
+      "support_erosion": [
+        {
+          "gaussian_sigma_m": 10,
+          "square_mask_radius_at_1m": 31,
+          "surviving_cells": 0
+        },
+        {
+          "gaussian_sigma_m": 20,
+          "square_mask_radius_at_1m": 61,
+          "surviving_cells": 0
+        },
+        {
+          "gaussian_sigma_m": 40,
+          "square_mask_radius_at_1m": 121,
+          "surviving_cells": 0
+        }
+      ],
+      "interpretation": "Unclassified XY sampling only. Roof, floor, walls and vegetation can share a cell. Erosion survivors are an optimistic necessary check, not valid exterior terrain or independent features."
+    },
+    {
+      "path": "data/raw/discovery_v10/caves/IndianTunnel_surface/Indian_NorthSurface_1x.f32",
+      "point_count": 60959587,
+      "grid_cell_m": 1,
+      "xy_bounds_m": [
+        [
+          -43.914756774902344,
+          -112.37130737304688
+        ],
+        [
+          21.340761184692383,
+          13.248866081237793
+        ]
+      ],
+      "shape_rows_columns": [
+        127,
+        66
+      ],
+      "occupied_cells": 3950,
+      "bounding_rectangle_cells": 8382,
+      "occupied_fraction_of_rectangle": 0.4712479121927941,
+      "within_cell_vertical_range_m_percentiles_50_90_99": [
+        0.6094472408294678,
+        9.803154492378235,
+        11.50774166822433
+      ],
+      "support_erosion": [
+        {
+          "gaussian_sigma_m": 10,
+          "square_mask_radius_at_1m": 31,
+          "surviving_cells": 0
+        },
+        {
+          "gaussian_sigma_m": 20,
+          "square_mask_radius_at_1m": 61,
+          "surviving_cells": 0
+        },
+        {
+          "gaussian_sigma_m": 40,
+          "square_mask_radius_at_1m": 121,
+          "surviving_cells": 0
+        }
+      ],
+      "interpretation": "Unclassified XY sampling only. Roof, floor, walls and vegetation can share a cell. Erosion survivors are an optimistic necessary check, not valid exterior terrain or independent features."
+    }
+  ],
+  "feature_selection": "none; no pit outlines inferred",
+  "mask_contract": "Same 3-sigma-plus-derivative erosion as feature_v10, applied to observed XY occupancy only; no interpolation or ground classification"
+}

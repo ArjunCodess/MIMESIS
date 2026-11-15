@@ -1,0 +1,1972 @@
+{
+  "experiment_id": "shot_support_v9",
+  "state": "exploratory_support_diagnostic",
+  "source_manifest_path": "data/metadata/shot_support_v9/sources.json",
+  "source_manifest_sha256": "558e0e88c48356b062c3eee9c422acda24721a664ae8c2d39aa840b22b7a3d17",
+  "config_sha256": "e8ef3599f0496755af1a73800438ead8c62948e45293f4c3f3152814104dfde4",
+  "config": {
+    "experiment_id": "shot_support_v9",
+    "claim_level": "exploratory_observation_support_characterization",
+    "body": "Mars",
+    "coordinate_convention": "IAU2000 planetocentric latitude, east longitude in degrees",
+    "projection_radius_m": 3396000,
+    "half_width_m": 40000,
+    "output_spacing_m": 500,
+    "maximum_nearest_shot_m": 1000,
+    "max_time_gap_s": 0.3,
+    "footprint_model": "point sampling only; no shot-footprint averaging or instrumental error model",
+    "interpolation": "bilinear Earth DEM sampling followed by linear TIN; no extrapolation; nearest-point distance capped at 1000 m",
+    "quality_rule": "retain A=0 only where attitude exists; original PEDR shot good/bad bit unavailable in ODE CSV, retain unknown shot quality and label it",
+    "earth_fields": [
+      "namib",
+      "mojave",
+      "atacama"
+    ],
+    "earth_source": "Existing NASADEM projected fields at 125 m; centered 80 km support diagnostic, not new independent DEM observations",
+    "targets": [
+      {
+        "id": "prospective-01",
+        "latitude": 17.08833719414728,
+        "longitude": 71.79562793934451
+      },
+      {
+        "id": "prospective-02",
+        "latitude": 6.926660071175803,
+        "longitude": 70.03249181924662
+      },
+      {
+        "id": "prospective-03",
+        "latitude": 2.794149672623606,
+        "longitude": 5.762734100650954
+      },
+      {
+        "id": "prospective-04",
+        "latitude": 2.3499676824828395,
+        "longitude": 2.726136756087241
+      },
+      {
+        "id": "prospective-05",
+        "latitude": 35.47498853481284,
+        "longitude": 8.302160148237443
+      },
+      {
+        "id": "prospective-06",
+        "latitude": 33.759933937485634,
+        "longitude": 70.17773238001442
+      }
+    ]
+  },
+  "source_documentation": {
+    "usgs_ctx": "https://stac.astrogeology.usgs.gov/docs/data/mars/ctxdtms/",
+    "ode_help": "https://ode.rsl.wustl.edu/mars/pagehelp/Content/Web_Interface/Tools_Tab/MOLA_PEDR_Query_Page.htm",
+    "gds": "https://oderest.rsl.wustl.edu/GDSWeb/GDSMOLAPEDR.html",
+    "gds_parameters": "https://oderest.rsl.wustl.edu/GDSWeb/js/GDS.js",
+    "gds_endpoint": "https://oderest.rsl.wustl.edu/GDSWeb/js/GDSMOLAPEDR.js",
+    "pedr_index_label": "https://pds-geosciences.wustl.edu/mgs/mgs-m-mola-3-pedr-l1a-v1/mgsl_21xx/index/index.lbl",
+    "pedr_binary_format": "https://pds-geosciences.wustl.edu/mgs/mgs-m-mola-3-pedr-l1a-v1/mgsl_21xx/label/pedrsec1.fmt"
+  },
+  "results": [
+    {
+      "target_id": "prospective-01",
+      "context_id": "prospective-01",
+      "latitude": 17.08833719414728,
+      "longitude": 71.79562793934451,
+      "control_subset": {
+        "item_id": "P17_007767_1972_XN_17N288W__P21_009270_1973_XN_17N288W",
+        "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/P17_007767_1972_XN_17N288W__P21_009270_1973_XN_17N288W/P17_007767_1972_XN_17N288W__P21_009270_1973_XN_17N288W_mola_shots.csv",
+        "state": "acquired_control_subset",
+        "scope": "CTX alignment control subset; not complete PEDR coverage or independent CTX validation",
+        "points": 3192,
+        "sha256": "640a90a153d7afda96e86009f215bc1404f432ab07810a99e37c3cd9664e01ee",
+        "radius_convention": "CSV radius explicitly interpreted as body-center metres, checked against Mars radius bounds; no areoid-height conversion",
+        "absent_fields": [
+          "time",
+          "orbit",
+          "per-shot quality",
+          "footprint",
+          "uncertainty"
+        ],
+        "qa_asset": {
+          "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/P17_007767_1972_XN_17N288W__P21_009270_1973_XN_17N288W/qa_metrics.txt",
+          "sha256": "dabd2d35a1a500f96a2cfb16b56b7abdc36e167238d1013c942b0bd51eecd01b",
+          "reported_ctx_minus_mola_m": {
+            "Max": 342.16,
+            "Min": -149.582,
+            "Mean": 68.532,
+            "StdDev": 37.3907,
+            "Median": 68.4794
+          },
+          "interpretation": "Provider alignment residuals, not independent validation or per-shot uncertainty"
+        }
+      },
+      "source_role": "bounded actual PEDR geometry and CTX alignment-control subset",
+      "missing_fields": [
+        "original per-shot good/bad quality flag",
+        "PDS product ID",
+        "shot/frame index",
+        "calibrated footprint response",
+        "per-shot uncertainty"
+      ],
+      "state": "actual_pedr_support_measured",
+      "source_url": "https://oderest.rsl.wustl.edu/output/20261114t123202386/MolaPEDR_16N18N_71E73E_20261114T123207189_pts_csv.csv",
+      "full_export_point_count": 15963,
+      "raw_sha256": "4342beed7056a85fe5b77dfa74f30898617a33e037a9c8b64b2770e748afddf8",
+      "geometry": {
+        "state": "measured_point_support",
+        "retained_points": 15647,
+        "attitude_rejected": 224,
+        "shot_quality_flag": null,
+        "duplicates_removed": 0,
+        "orbit_count": 73,
+        "along_track_spacing_m": {
+          "p05": 298.8489325797976,
+          "median": 304.7972040243288,
+          "p95": 305.1706753047295
+        },
+        "time_gaps_over_threshold": 1
+      },
+      "earth_diagnostics": [
+        {
+          "earth_field": "namib",
+          "source_path": "data/processed/namib-projected.npz",
+          "sha256": "c0c61c71044f77fad0cd47df21e034c5ec6639df31afd4e2664d3c5b7902eff5",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 15647,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.75359375,
+          "common_derivative_valid_fraction": 0.435390625,
+          "nearest_point_distance_p50_p95_max_m": [
+            487.62376677511276,
+            2465.1359304818884,
+            4890.997975974661
+          ],
+          "common_support_rmse_m": 28.64761741286676,
+          "baseline": {
+            "median_slope_deg": 1.8892325359814304,
+            "median_abs_planar_laplacian_m_inverse": 4.597563482386607e-05,
+            "relief_p95_minus_p05_m": 898.1170897380501
+          },
+          "shot_sampled": {
+            "median_slope_deg": 1.7581276231323626,
+            "median_abs_planar_laplacian_m_inverse": 3.631060232232664e-05,
+            "relief_p95_minus_p05_m": 890.1386946739127
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.13110491284906778,
+            "median_abs_planar_laplacian_m_inverse": -9.665032501539427e-06,
+            "relief_p95_minus_p05_m": -7.97839506413743
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "mojave",
+          "source_path": "data/processed/mojave-projected.npz",
+          "sha256": "8a3d7c63fd6af4b56caa2885a8710fde01aaac98a8fe9362ab36286b565a73a1",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 15647,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.75359375,
+          "common_derivative_valid_fraction": 0.435390625,
+          "nearest_point_distance_p50_p95_max_m": [
+            487.62376677511276,
+            2465.1359304818884,
+            4890.997975974661
+          ],
+          "common_support_rmse_m": 20.73061521305092,
+          "baseline": {
+            "median_slope_deg": 2.39110827815151,
+            "median_abs_planar_laplacian_m_inverse": 2.687253891530818e-05,
+            "relief_p95_minus_p05_m": 1008.1097140917316
+          },
+          "shot_sampled": {
+            "median_slope_deg": 2.2992511182643574,
+            "median_abs_planar_laplacian_m_inverse": 2.3967713886972346e-05,
+            "relief_p95_minus_p05_m": 1006.8430126688074
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.09185715988715248,
+            "median_abs_planar_laplacian_m_inverse": -2.9048250283358353e-06,
+            "relief_p95_minus_p05_m": -1.2667014229241431
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "atacama",
+          "source_path": "data/processed/atacama-projected.npz",
+          "sha256": "ca1ae020b915ea5a5bf14653b3318974006daa2c29e9bbbb6371cea2f9963823",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 15644,
+          "baseline_valid_fraction": 0.9996484375,
+          "reconstructed_valid_fraction": 0.7535546875,
+          "common_derivative_valid_fraction": 0.4346875,
+          "nearest_point_distance_p50_p95_max_m": [
+            487.68213957421415,
+            2465.1359304818884,
+            4890.997975974661
+          ],
+          "common_support_rmse_m": 18.186040495311723,
+          "baseline": {
+            "median_slope_deg": 3.360008009883127,
+            "median_abs_planar_laplacian_m_inverse": 3.5250540198846914e-05,
+            "relief_p95_minus_p05_m": 1402.459486522869
+          },
+          "shot_sampled": {
+            "median_slope_deg": 3.171301160630878,
+            "median_abs_planar_laplacian_m_inverse": 3.0186930784665602e-05,
+            "relief_p95_minus_p05_m": 1404.3692187154231
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.1887068492522488,
+            "median_abs_planar_laplacian_m_inverse": -5.063609414181311e-06,
+            "relief_p95_minus_p05_m": 1.909732192554202
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        }
+      ]
+    },
+    {
+      "target_id": "prospective-02",
+      "context_id": "prospective-02",
+      "latitude": 6.926660071175803,
+      "longitude": 70.03249181924662,
+      "control_subset": {
+        "item_id": "F05_037726_1870_XN_07N290W__J04_046179_1891_XN_09N290W",
+        "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/F05_037726_1870_XN_07N290W__J04_046179_1891_XN_09N290W/F05_037726_1870_XN_07N290W__J04_046179_1891_XN_09N290W_mola_shots.csv",
+        "state": "acquired_control_subset",
+        "scope": "CTX alignment control subset; not complete PEDR coverage or independent CTX validation",
+        "points": 3521,
+        "sha256": "2d4fc81e2cf44e5492a8c952f6ca20a56d0c28b8e6eb7bbaa1d5759a71cea981",
+        "radius_convention": "CSV radius explicitly interpreted as body-center metres, checked against Mars radius bounds; no areoid-height conversion",
+        "absent_fields": [
+          "time",
+          "orbit",
+          "per-shot quality",
+          "footprint",
+          "uncertainty"
+        ],
+        "qa_asset": {
+          "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/F05_037726_1870_XN_07N290W__J04_046179_1891_XN_09N290W/qa_metrics.txt",
+          "sha256": "075dafa0e296fae6179848ee950b630422733f7f02bced53cb56a81e2bab6519",
+          "reported_ctx_minus_mola_m": {
+            "Max": 195.414,
+            "Min": 52.5106,
+            "Mean": 104.702,
+            "StdDev": 15.1379,
+            "Median": 103.769
+          },
+          "interpretation": "Provider alignment residuals, not independent validation or per-shot uncertainty"
+        }
+      },
+      "source_role": "bounded actual PEDR geometry and CTX alignment-control subset",
+      "missing_fields": [
+        "original per-shot good/bad quality flag",
+        "PDS product ID",
+        "shot/frame index",
+        "calibrated footprint response",
+        "per-shot uncertainty"
+      ],
+      "state": "actual_pedr_support_measured",
+      "source_url": "https://oderest.rsl.wustl.edu/output/20261114t123217979/MolaPEDR_6N8N_69E71E_20261114T123220716_pts_csv.csv",
+      "full_export_point_count": 13819,
+      "raw_sha256": "3ac687dfca2ef23f4a864dfdf1c0a745a9f0ed104fda55fc878e5b428d7df00d",
+      "geometry": {
+        "state": "measured_point_support",
+        "retained_points": 13792,
+        "attitude_rejected": 0,
+        "shot_quality_flag": null,
+        "duplicates_removed": 0,
+        "orbit_count": 61,
+        "along_track_spacing_m": {
+          "p05": 298.8975606835664,
+          "median": 304.8472260829915,
+          "p95": 305.0709428466237
+        },
+        "time_gaps_over_threshold": 29
+      },
+      "earth_diagnostics": [
+        {
+          "earth_field": "namib",
+          "source_path": "data/processed/namib-projected.npz",
+          "sha256": "c0c61c71044f77fad0cd47df21e034c5ec6639df31afd4e2664d3c5b7902eff5",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 13792,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.6851171875,
+          "common_derivative_valid_fraction": 0.3554296875,
+          "nearest_point_distance_p50_p95_max_m": [
+            583.2029220461313,
+            2582.38897036644,
+            6338.4119022941195
+          ],
+          "common_support_rmse_m": 25.79805577776873,
+          "baseline": {
+            "median_slope_deg": 1.9169957540088662,
+            "median_abs_planar_laplacian_m_inverse": 4.4574571073707376e-05,
+            "relief_p95_minus_p05_m": 886.7814103894962
+          },
+          "shot_sampled": {
+            "median_slope_deg": 1.8012568586540523,
+            "median_abs_planar_laplacian_m_inverse": 3.585973365332836e-05,
+            "relief_p95_minus_p05_m": 875.9296392148963
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.11573889535481396,
+            "median_abs_planar_laplacian_m_inverse": -8.714837420379017e-06,
+            "relief_p95_minus_p05_m": -10.85177117459989
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "mojave",
+          "source_path": "data/processed/mojave-projected.npz",
+          "sha256": "8a3d7c63fd6af4b56caa2885a8710fde01aaac98a8fe9362ab36286b565a73a1",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 13792,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.6851171875,
+          "common_derivative_valid_fraction": 0.3554296875,
+          "nearest_point_distance_p50_p95_max_m": [
+            583.2029220461313,
+            2582.38897036644,
+            6338.4119022941195
+          ],
+          "common_support_rmse_m": 18.718023349018207,
+          "baseline": {
+            "median_slope_deg": 2.3609930679367657,
+            "median_abs_planar_laplacian_m_inverse": 2.6622782434680174e-05,
+            "relief_p95_minus_p05_m": 842.2752558586562
+          },
+          "shot_sampled": {
+            "median_slope_deg": 2.2981962908873745,
+            "median_abs_planar_laplacian_m_inverse": 2.4873447961757163e-05,
+            "relief_p95_minus_p05_m": 845.6716873138295
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.06279677704939113,
+            "median_abs_planar_laplacian_m_inverse": -1.749334472923011e-06,
+            "relief_p95_minus_p05_m": 3.3964314551732286
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "atacama",
+          "source_path": "data/processed/atacama-projected.npz",
+          "sha256": "ca1ae020b915ea5a5bf14653b3318974006daa2c29e9bbbb6371cea2f9963823",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 13791,
+          "baseline_valid_fraction": 0.9996484375,
+          "reconstructed_valid_fraction": 0.6851171875,
+          "common_derivative_valid_fraction": 0.35515625,
+          "nearest_point_distance_p50_p95_max_m": [
+            583.2029220461313,
+            2582.38897036644,
+            6338.4119022941195
+          ],
+          "common_support_rmse_m": 19.280865636827013,
+          "baseline": {
+            "median_slope_deg": 3.9300110212608557,
+            "median_abs_planar_laplacian_m_inverse": 3.852455351511641e-05,
+            "relief_p95_minus_p05_m": 1333.1494000765488
+          },
+          "shot_sampled": {
+            "median_slope_deg": 3.649369392126242,
+            "median_abs_planar_laplacian_m_inverse": 3.280760739297557e-05,
+            "relief_p95_minus_p05_m": 1328.3375747044993
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.2806416291346139,
+            "median_abs_planar_laplacian_m_inverse": -5.716946122140842e-06,
+            "relief_p95_minus_p05_m": -4.811825372049498
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        }
+      ]
+    },
+    {
+      "target_id": "prospective-03",
+      "context_id": "prospective-03",
+      "latitude": 2.794149672623606,
+      "longitude": 5.762734100650954,
+      "control_subset": {
+        "item_id": "N07_065249_1828_XN_02N354W__N08_065381_1828_XN_02N354W",
+        "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/N07_065249_1828_XN_02N354W__N08_065381_1828_XN_02N354W/N07_065249_1828_XN_02N354W__N08_065381_1828_XN_02N354W_mola_shots.csv",
+        "state": "acquired_control_subset",
+        "scope": "CTX alignment control subset; not complete PEDR coverage or independent CTX validation",
+        "points": 4155,
+        "sha256": "63e23656dff13c8510f3c147d7a7e4984666f37342f41791f6746e1af27aa6c1",
+        "radius_convention": "CSV radius explicitly interpreted as body-center metres, checked against Mars radius bounds; no areoid-height conversion",
+        "absent_fields": [
+          "time",
+          "orbit",
+          "per-shot quality",
+          "footprint",
+          "uncertainty"
+        ],
+        "qa_asset": {
+          "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/N07_065249_1828_XN_02N354W__N08_065381_1828_XN_02N354W/qa_metrics.txt",
+          "sha256": "0e488f208cf61c1f7d3edeabef443909842ebe1fbb35ef21a003eea6d457a1e6",
+          "reported_ctx_minus_mola_m": {
+            "Max": 320.331,
+            "Min": 152.357,
+            "Mean": 273.684,
+            "StdDev": 15.2324,
+            "Median": 272.794
+          },
+          "interpretation": "Provider alignment residuals, not independent validation or per-shot uncertainty"
+        }
+      },
+      "source_role": "bounded actual PEDR geometry and CTX alignment-control subset",
+      "missing_fields": [
+        "original per-shot good/bad quality flag",
+        "PDS product ID",
+        "shot/frame index",
+        "calibrated footprint response",
+        "per-shot uncertainty"
+      ],
+      "state": "actual_pedr_support_measured",
+      "source_url": "https://oderest.rsl.wustl.edu/output/20261114t123232449/MolaPEDR_2N3N_5E6E_20261114T123235893_pts_csv.csv",
+      "full_export_point_count": 16009,
+      "raw_sha256": "650bc9a1d72da70e2a1fc548e36c07de724e155d3ad8f224c5ba695adbe4da34",
+      "geometry": {
+        "state": "measured_point_support",
+        "retained_points": 15998,
+        "attitude_rejected": 0,
+        "shot_quality_flag": null,
+        "duplicates_removed": 0,
+        "orbit_count": 67,
+        "along_track_spacing_m": {
+          "p05": 298.9197078545531,
+          "median": 304.80053039775936,
+          "p95": 310.75290605611013
+        },
+        "time_gaps_over_threshold": 6
+      },
+      "earth_diagnostics": [
+        {
+          "earth_field": "namib",
+          "source_path": "data/processed/namib-projected.npz",
+          "sha256": "c0c61c71044f77fad0cd47df21e034c5ec6639df31afd4e2664d3c5b7902eff5",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 15998,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.8046875,
+          "common_derivative_valid_fraction": 0.47515625,
+          "nearest_point_distance_p50_p95_max_m": [
+            452.32284345118785,
+            1756.1115803566306,
+            5432.204697110057
+          ],
+          "common_support_rmse_m": 28.599016153668952,
+          "baseline": {
+            "median_slope_deg": 1.8765133965910494,
+            "median_abs_planar_laplacian_m_inverse": 4.259496147757625e-05,
+            "relief_p95_minus_p05_m": 919.4793627940916
+          },
+          "shot_sampled": {
+            "median_slope_deg": 1.7328500626531302,
+            "median_abs_planar_laplacian_m_inverse": 3.40562641548513e-05,
+            "relief_p95_minus_p05_m": 906.8801601091728
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.1436633339379192,
+            "median_abs_planar_laplacian_m_inverse": -8.538697322724952e-06,
+            "relief_p95_minus_p05_m": -12.599202684918737
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "mojave",
+          "source_path": "data/processed/mojave-projected.npz",
+          "sha256": "8a3d7c63fd6af4b56caa2885a8710fde01aaac98a8fe9362ab36286b565a73a1",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 15998,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.8046875,
+          "common_derivative_valid_fraction": 0.47515625,
+          "nearest_point_distance_p50_p95_max_m": [
+            452.32284345118785,
+            1756.1115803566306,
+            5432.204697110057
+          ],
+          "common_support_rmse_m": 18.71989776967792,
+          "baseline": {
+            "median_slope_deg": 2.305245494723977,
+            "median_abs_planar_laplacian_m_inverse": 2.694687165180247e-05,
+            "relief_p95_minus_p05_m": 970.0190680457122
+          },
+          "shot_sampled": {
+            "median_slope_deg": 2.202066830271052,
+            "median_abs_planar_laplacian_m_inverse": 2.348227804839705e-05,
+            "relief_p95_minus_p05_m": 967.332659151052
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.1031786644529249,
+            "median_abs_planar_laplacian_m_inverse": -3.4645936034054192e-06,
+            "relief_p95_minus_p05_m": -2.6864088946601896
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "atacama",
+          "source_path": "data/processed/atacama-projected.npz",
+          "sha256": "ca1ae020b915ea5a5bf14653b3318974006daa2c29e9bbbb6371cea2f9963823",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 15998,
+          "baseline_valid_fraction": 0.9996484375,
+          "reconstructed_valid_fraction": 0.8046875,
+          "common_derivative_valid_fraction": 0.4741796875,
+          "nearest_point_distance_p50_p95_max_m": [
+            452.32284345118785,
+            1756.1115803566306,
+            5432.204697110057
+          ],
+          "common_support_rmse_m": 19.55022827174138,
+          "baseline": {
+            "median_slope_deg": 3.3201009049062398,
+            "median_abs_planar_laplacian_m_inverse": 3.6214197726678776e-05,
+            "relief_p95_minus_p05_m": 1516.0060405082825
+          },
+          "shot_sampled": {
+            "median_slope_deg": 3.1122804528394283,
+            "median_abs_planar_laplacian_m_inverse": 3.01888937627391e-05,
+            "relief_p95_minus_p05_m": 1509.6879243137294
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.20782045206681143,
+            "median_abs_planar_laplacian_m_inverse": -6.025303963939675e-06,
+            "relief_p95_minus_p05_m": -6.318116194553113
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        }
+      ]
+    },
+    {
+      "target_id": "prospective-04",
+      "context_id": "prospective-04",
+      "latitude": 2.3499676824828395,
+      "longitude": 2.726136756087241,
+      "control_subset": {
+        "item_id": "F01_036067_1823_XI_02N357W__F02_036423_1823_XI_02N357W",
+        "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/F01_036067_1823_XI_02N357W__F02_036423_1823_XI_02N357W/F01_036067_1823_XI_02N357W__F02_036423_1823_XI_02N357W_mola_shots.csv",
+        "state": "acquired_control_subset",
+        "scope": "CTX alignment control subset; not complete PEDR coverage or independent CTX validation",
+        "points": 8211,
+        "sha256": "e089e036956f8fa66ccdc7062279058bccf2be1e699231c7ce8c27e539ad291e",
+        "radius_convention": "CSV radius explicitly interpreted as body-center metres, checked against Mars radius bounds; no areoid-height conversion",
+        "absent_fields": [
+          "time",
+          "orbit",
+          "per-shot quality",
+          "footprint",
+          "uncertainty"
+        ],
+        "qa_asset": {
+          "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/F01_036067_1823_XI_02N357W__F02_036423_1823_XI_02N357W/qa_metrics.txt",
+          "sha256": "3419a7c0389ee997d6d9c9ab3f4c3b0d2dbda7b7d93b81df2a0a33c99efc94f0",
+          "reported_ctx_minus_mola_m": {
+            "Max": 361.187,
+            "Min": 48.9976,
+            "Mean": 234.5,
+            "StdDev": 28.4413,
+            "Median": 233.906
+          },
+          "interpretation": "Provider alignment residuals, not independent validation or per-shot uncertainty"
+        }
+      },
+      "source_role": "bounded actual PEDR geometry and CTX alignment-control subset",
+      "missing_fields": [
+        "original per-shot good/bad quality flag",
+        "PDS product ID",
+        "shot/frame index",
+        "calibrated footprint response",
+        "per-shot uncertainty"
+      ],
+      "state": "actual_pedr_support_measured",
+      "source_url": "https://oderest.rsl.wustl.edu/output/20261114t123250331/MolaPEDR_2N3N_2E3E_20261114T123254655_pts_csv.csv",
+      "full_export_point_count": 16297,
+      "raw_sha256": "d74a9459aa3079749abd564f79e950d5fb58bc7d7080b74039fa1db8550c14ab",
+      "geometry": {
+        "state": "measured_point_support",
+        "retained_points": 16288,
+        "attitude_rejected": 0,
+        "shot_quality_flag": null,
+        "duplicates_removed": 0,
+        "orbit_count": 73,
+        "along_track_spacing_m": {
+          "p05": 298.92353530740337,
+          "median": 304.80281825430677,
+          "p95": 310.32049788138664
+        },
+        "time_gaps_over_threshold": 3
+      },
+      "earth_diagnostics": [
+        {
+          "earth_field": "namib",
+          "source_path": "data/processed/namib-projected.npz",
+          "sha256": "c0c61c71044f77fad0cd47df21e034c5ec6639df31afd4e2664d3c5b7902eff5",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 16288,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.815390625,
+          "common_derivative_valid_fraction": 0.4617578125,
+          "nearest_point_distance_p50_p95_max_m": [
+            439.3353526978968,
+            1586.814528611412,
+            3383.676105637324
+          ],
+          "common_support_rmse_m": 26.82196286783902,
+          "baseline": {
+            "median_slope_deg": 1.899809466192182,
+            "median_abs_planar_laplacian_m_inverse": 4.656128892085484e-05,
+            "relief_p95_minus_p05_m": 971.3419765890294
+          },
+          "shot_sampled": {
+            "median_slope_deg": 1.7359650456539537,
+            "median_abs_planar_laplacian_m_inverse": 3.4941561381726156e-05,
+            "relief_p95_minus_p05_m": 964.4781872153087
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.16384442053822834,
+            "median_abs_planar_laplacian_m_inverse": -1.1619727539128685e-05,
+            "relief_p95_minus_p05_m": -6.863789373720692
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "mojave",
+          "source_path": "data/processed/mojave-projected.npz",
+          "sha256": "8a3d7c63fd6af4b56caa2885a8710fde01aaac98a8fe9362ab36286b565a73a1",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 16288,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.815390625,
+          "common_derivative_valid_fraction": 0.4617578125,
+          "nearest_point_distance_p50_p95_max_m": [
+            439.3353526978968,
+            1586.814528611412,
+            3383.676105637324
+          ],
+          "common_support_rmse_m": 19.944497228180186,
+          "baseline": {
+            "median_slope_deg": 2.3783015345288976,
+            "median_abs_planar_laplacian_m_inverse": 2.7166996733989897e-05,
+            "relief_p95_minus_p05_m": 1026.345101632514
+          },
+          "shot_sampled": {
+            "median_slope_deg": 2.308139062162611,
+            "median_abs_planar_laplacian_m_inverse": 2.4289638043429137e-05,
+            "relief_p95_minus_p05_m": 1026.7575546233143
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.07016247236628637,
+            "median_abs_planar_laplacian_m_inverse": -2.87735869056076e-06,
+            "relief_p95_minus_p05_m": 0.4124529908003751
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "atacama",
+          "source_path": "data/processed/atacama-projected.npz",
+          "sha256": "ca1ae020b915ea5a5bf14653b3318974006daa2c29e9bbbb6371cea2f9963823",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 16271,
+          "baseline_valid_fraction": 0.9996484375,
+          "reconstructed_valid_fraction": 0.8152734375,
+          "common_derivative_valid_fraction": 0.4597265625,
+          "nearest_point_distance_p50_p95_max_m": [
+            439.7150330811662,
+            1586.814528611412,
+            3383.676105637324
+          ],
+          "common_support_rmse_m": 16.589166988632467,
+          "baseline": {
+            "median_slope_deg": 3.771825448586194,
+            "median_abs_planar_laplacian_m_inverse": 3.76158480846318e-05,
+            "relief_p95_minus_p05_m": 1431.5743175379612
+          },
+          "shot_sampled": {
+            "median_slope_deg": 3.551188103899732,
+            "median_abs_planar_laplacian_m_inverse": 3.202648107285745e-05,
+            "relief_p95_minus_p05_m": 1426.828817801042
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.220637344686462,
+            "median_abs_planar_laplacian_m_inverse": -5.589367011774355e-06,
+            "relief_p95_minus_p05_m": -4.7454997369191005
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        }
+      ]
+    },
+    {
+      "target_id": "prospective-05",
+      "context_id": "prospective-05",
+      "latitude": 35.47498853481284,
+      "longitude": 8.302160148237443,
+      "control_subset": {
+        "item_id": "J04_046458_2157_XN_35N351W__J16_050928_2157_XN_35N351W",
+        "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/J04_046458_2157_XN_35N351W__J16_050928_2157_XN_35N351W/J04_046458_2157_XN_35N351W__J16_050928_2157_XN_35N351W_mola_shots.csv",
+        "state": "acquired_control_subset",
+        "scope": "CTX alignment control subset; not complete PEDR coverage or independent CTX validation",
+        "points": 3973,
+        "sha256": "3eb7eef53cda4fe455710cfc758233cae7584abc32f6f0678230192ab198984f",
+        "radius_convention": "CSV radius explicitly interpreted as body-center metres, checked against Mars radius bounds; no areoid-height conversion",
+        "absent_fields": [
+          "time",
+          "orbit",
+          "per-shot quality",
+          "footprint",
+          "uncertainty"
+        ],
+        "qa_asset": {
+          "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/J04_046458_2157_XN_35N351W__J16_050928_2157_XN_35N351W/qa_metrics.txt",
+          "sha256": "ffd097befa211c4ead6f8dc863f38003c00dbbe8522b4c3a8857ff40dfdad4e5",
+          "reported_ctx_minus_mola_m": {
+            "Max": -238.747,
+            "Min": -416.284,
+            "Mean": -314.153,
+            "StdDev": 21.3074,
+            "Median": -311.277
+          },
+          "interpretation": "Provider alignment residuals, not independent validation or per-shot uncertainty"
+        }
+      },
+      "source_role": "bounded actual PEDR geometry and CTX alignment-control subset",
+      "missing_fields": [
+        "original per-shot good/bad quality flag",
+        "PDS product ID",
+        "shot/frame index",
+        "calibrated footprint response",
+        "per-shot uncertainty"
+      ],
+      "state": "actual_pedr_support_measured",
+      "source_url": "https://oderest.rsl.wustl.edu/output/20261114t123310456/MolaPEDR_35N36N_7E9E_20261114T123314890_pts_csv.csv",
+      "full_export_point_count": 20866,
+      "raw_sha256": "ad739cba167c927d18dc1acbfc381d945fdeb9a1970716f201d31e149ce72b01",
+      "geometry": {
+        "state": "measured_point_support",
+        "retained_points": 20638,
+        "attitude_rejected": 0,
+        "shot_quality_flag": null,
+        "duplicates_removed": 0,
+        "orbit_count": 84,
+        "along_track_spacing_m": {
+          "p05": 298.6555207135488,
+          "median": 298.84027215471724,
+          "p95": 305.14794991861794
+        },
+        "time_gaps_over_threshold": 5
+      },
+      "earth_diagnostics": [
+        {
+          "earth_field": "namib",
+          "source_path": "data/processed/namib-projected.npz",
+          "sha256": "c0c61c71044f77fad0cd47df21e034c5ec6639df31afd4e2664d3c5b7902eff5",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 20638,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.8528125,
+          "common_derivative_valid_fraction": 0.56375,
+          "nearest_point_distance_p50_p95_max_m": [
+            360.89867472084376,
+            1491.457902422612,
+            3041.369062918475
+          ],
+          "common_support_rmse_m": 23.973052868035506,
+          "baseline": {
+            "median_slope_deg": 1.8883458740361645,
+            "median_abs_planar_laplacian_m_inverse": 4.637732974910091e-05,
+            "relief_p95_minus_p05_m": 956.6512429875831
+          },
+          "shot_sampled": {
+            "median_slope_deg": 1.7255049884565268,
+            "median_abs_planar_laplacian_m_inverse": 3.57573163310201e-05,
+            "relief_p95_minus_p05_m": 951.6547742132417
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.16284088557963772,
+            "median_abs_planar_laplacian_m_inverse": -1.0620013418080811e-05,
+            "relief_p95_minus_p05_m": -4.9964687743414515
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "mojave",
+          "source_path": "data/processed/mojave-projected.npz",
+          "sha256": "8a3d7c63fd6af4b56caa2885a8710fde01aaac98a8fe9362ab36286b565a73a1",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 20638,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.8528125,
+          "common_derivative_valid_fraction": 0.56375,
+          "nearest_point_distance_p50_p95_max_m": [
+            360.89867472084376,
+            1491.457902422612,
+            3041.369062918475
+          ],
+          "common_support_rmse_m": 18.114423100249386,
+          "baseline": {
+            "median_slope_deg": 2.501355899876753,
+            "median_abs_planar_laplacian_m_inverse": 2.8333796102904554e-05,
+            "relief_p95_minus_p05_m": 1004.1874335668331
+          },
+          "shot_sampled": {
+            "median_slope_deg": 2.4071763114235702,
+            "median_abs_planar_laplacian_m_inverse": 2.5430062339297392e-05,
+            "relief_p95_minus_p05_m": 1005.2960017928372
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.09417958845318264,
+            "median_abs_planar_laplacian_m_inverse": -2.903733763607162e-06,
+            "relief_p95_minus_p05_m": 1.1085682260040812
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "atacama",
+          "source_path": "data/processed/atacama-projected.npz",
+          "sha256": "ca1ae020b915ea5a5bf14653b3318974006daa2c29e9bbbb6371cea2f9963823",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 20633,
+          "baseline_valid_fraction": 0.9996484375,
+          "reconstructed_valid_fraction": 0.8526953125,
+          "common_derivative_valid_fraction": 0.5623046875,
+          "nearest_point_distance_p50_p95_max_m": [
+            361.0553759066916,
+            1491.457902422612,
+            3041.369062918475
+          ],
+          "common_support_rmse_m": 14.325654233579007,
+          "baseline": {
+            "median_slope_deg": 3.40817920647991,
+            "median_abs_planar_laplacian_m_inverse": 3.332362120395191e-05,
+            "relief_p95_minus_p05_m": 1463.5230945664234
+          },
+          "shot_sampled": {
+            "median_slope_deg": 3.2446474281460587,
+            "median_abs_planar_laplacian_m_inverse": 2.9060395503351176e-05,
+            "relief_p95_minus_p05_m": 1463.86883798606
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.16353177833385146,
+            "median_abs_planar_laplacian_m_inverse": -4.263225700600736e-06,
+            "relief_p95_minus_p05_m": 0.34574341963661936
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        }
+      ]
+    },
+    {
+      "target_id": "prospective-06",
+      "context_id": "prospective-06",
+      "latitude": 33.759933937485634,
+      "longitude": 70.17773238001442,
+      "control_subset": {
+        "item_id": "D02_027889_2140_XI_34N289W__F02_036394_2144_XI_34N289W",
+        "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/D02_027889_2140_XI_34N289W__F02_036394_2144_XI_34N289W/D02_027889_2140_XI_34N289W__F02_036394_2144_XI_34N289W_mola_shots.csv",
+        "state": "acquired_control_subset",
+        "scope": "CTX alignment control subset; not complete PEDR coverage or independent CTX validation",
+        "points": 18289,
+        "sha256": "b363edce7881cbbed24be78c78e4d648bed721c05e0526cd05fdcc8f5695f395",
+        "radius_convention": "CSV radius explicitly interpreted as body-center metres, checked against Mars radius bounds; no areoid-height conversion",
+        "absent_fields": [
+          "time",
+          "orbit",
+          "per-shot quality",
+          "footprint",
+          "uncertainty"
+        ],
+        "qa_asset": {
+          "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/D02_027889_2140_XI_34N289W__F02_036394_2144_XI_34N289W/qa_metrics.txt",
+          "sha256": "92b62526b5157b6205542980c441160eb2f7b1c2078a9061025e601e4f06cb7b",
+          "reported_ctx_minus_mola_m": {
+            "Max": 303.965,
+            "Min": -2392.21,
+            "Mean": 21.6042,
+            "StdDev": 66.1459,
+            "Median": 23.3619
+          },
+          "interpretation": "Provider alignment residuals, not independent validation or per-shot uncertainty"
+        }
+      },
+      "source_role": "bounded actual PEDR geometry and CTX alignment-control subset",
+      "missing_fields": [
+        "original per-shot good/bad quality flag",
+        "PDS product ID",
+        "shot/frame index",
+        "calibrated footprint response",
+        "per-shot uncertainty"
+      ],
+      "state": "actual_pedr_support_measured",
+      "source_url": "https://oderest.rsl.wustl.edu/output/20261114t123338057/MolaPEDR_33N34N_69E71E_20261114T123343255_pts_csv.csv",
+      "full_export_point_count": 20417,
+      "raw_sha256": "ad416dcbeabe8fb6d916a094b78f4cd633a2e81205684c5a32e1f3d4bc6dc171",
+      "geometry": {
+        "state": "measured_point_support",
+        "retained_points": 19877,
+        "attitude_rejected": 291,
+        "shot_quality_flag": null,
+        "duplicates_removed": 0,
+        "orbit_count": 85,
+        "along_track_spacing_m": {
+          "p05": 298.62267194193686,
+          "median": 298.94768837711507,
+          "p95": 310.695426545082
+        },
+        "time_gaps_over_threshold": 8
+      },
+      "earth_diagnostics": [
+        {
+          "earth_field": "namib",
+          "source_path": "data/processed/namib-projected.npz",
+          "sha256": "c0c61c71044f77fad0cd47df21e034c5ec6639df31afd4e2664d3c5b7902eff5",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 19877,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.82515625,
+          "common_derivative_valid_fraction": 0.518359375,
+          "nearest_point_distance_p50_p95_max_m": [
+            401.7934169299721,
+            1620.1562444982915,
+            3696.133993433881
+          ],
+          "common_support_rmse_m": 28.132585903908133,
+          "baseline": {
+            "median_slope_deg": 1.9074561987749377,
+            "median_abs_planar_laplacian_m_inverse": 4.57709142020459e-05,
+            "relief_p95_minus_p05_m": 1000.920389828411
+          },
+          "shot_sampled": {
+            "median_slope_deg": 1.732350655537119,
+            "median_abs_planar_laplacian_m_inverse": 3.610428405816793e-05,
+            "relief_p95_minus_p05_m": 987.5867784386293
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.17510554323781857,
+            "median_abs_planar_laplacian_m_inverse": -9.666630143877967e-06,
+            "relief_p95_minus_p05_m": -13.333611389781709
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "mojave",
+          "source_path": "data/processed/mojave-projected.npz",
+          "sha256": "8a3d7c63fd6af4b56caa2885a8710fde01aaac98a8fe9362ab36286b565a73a1",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 19877,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.82515625,
+          "common_derivative_valid_fraction": 0.518359375,
+          "nearest_point_distance_p50_p95_max_m": [
+            401.7934169299721,
+            1620.1562444982915,
+            3696.133993433881
+          ],
+          "common_support_rmse_m": 19.7069879503439,
+          "baseline": {
+            "median_slope_deg": 2.481042856772609,
+            "median_abs_planar_laplacian_m_inverse": 2.768051261725969e-05,
+            "relief_p95_minus_p05_m": 1007.4961677132156
+          },
+          "shot_sampled": {
+            "median_slope_deg": 2.3977172103258653,
+            "median_abs_planar_laplacian_m_inverse": 2.4424345321287433e-05,
+            "relief_p95_minus_p05_m": 1006.237545133966
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.08332564644674356,
+            "median_abs_planar_laplacian_m_inverse": -3.256167295972259e-06,
+            "relief_p95_minus_p05_m": -1.258622579249618
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "atacama",
+          "source_path": "data/processed/atacama-projected.npz",
+          "sha256": "ca1ae020b915ea5a5bf14653b3318974006daa2c29e9bbbb6371cea2f9963823",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 19877,
+          "baseline_valid_fraction": 0.9996484375,
+          "reconstructed_valid_fraction": 0.82515625,
+          "common_derivative_valid_fraction": 0.5179296875,
+          "nearest_point_distance_p50_p95_max_m": [
+            401.7934169299721,
+            1620.1562444982915,
+            3696.133993433881
+          ],
+          "common_support_rmse_m": 16.41526451008028,
+          "baseline": {
+            "median_slope_deg": 3.6184784623615265,
+            "median_abs_planar_laplacian_m_inverse": 3.591695044664765e-05,
+            "relief_p95_minus_p05_m": 1526.4200983078936
+          },
+          "shot_sampled": {
+            "median_slope_deg": 3.4616463316660018,
+            "median_abs_planar_laplacian_m_inverse": 3.142536872622077e-05,
+            "relief_p95_minus_p05_m": 1519.4914688309698
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.1568321306955247,
+            "median_abs_planar_laplacian_m_inverse": -4.491581720426876e-06,
+            "relief_p95_minus_p05_m": -6.928629476923788
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        }
+      ]
+    }
+  ],
+  "full_pedr_requests": [
+    {
+      "target_id": "prospective-01",
+      "endpoint": "https://oderest.rsl.wustl.edu/livegds/",
+      "parameters": {
+        "query": "molapedr",
+        "source": "GDSWebMOLAPEDR",
+        "odemetadb": "mars",
+        "o": "j",
+        "results": "cv",
+        "westlon": 71.087,
+        "eastlon": 72.50426,
+        "minlat": 16.41227,
+        "maxlat": 17.7632,
+        "async": "t"
+      },
+      "footprint": "Bounding box encloses the metric 80 km square; analysis clips to square",
+      "required_missing_fields": [
+        "original PEDR per-shot good/bad quality flag",
+        "PDS product ID and shot/frame index"
+      ],
+      "state": "acquired"
+    },
+    {
+      "target_id": "prospective-02",
+      "endpoint": "https://oderest.rsl.wustl.edu/livegds/",
+      "parameters": {
+        "query": "molapedr",
+        "source": "GDSWebMOLAPEDR",
+        "odemetadb": "mars",
+        "o": "j",
+        "results": "cv",
+        "westlon": 69.35166,
+        "eastlon": 70.71333,
+        "minlat": 6.25133,
+        "maxlat": 7.60153,
+        "async": "t"
+      },
+      "footprint": "Bounding box encloses the metric 80 km square; analysis clips to square",
+      "required_missing_fields": [
+        "original PEDR per-shot good/bad quality flag",
+        "PDS product ID and shot/frame index"
+      ],
+      "state": "acquired"
+    },
+    {
+      "target_id": "prospective-03",
+      "endpoint": "https://oderest.rsl.wustl.edu/livegds/",
+      "parameters": {
+        "query": "molapedr",
+        "source": "GDSWebMOLAPEDR",
+        "odemetadb": "mars",
+        "o": "j",
+        "results": "cv",
+        "westlon": 5.08664,
+        "eastlon": 6.43882,
+        "minlat": 2.1191,
+        "maxlat": 3.46902,
+        "async": "t"
+      },
+      "footprint": "Bounding box encloses the metric 80 km square; analysis clips to square",
+      "required_missing_fields": [
+        "original PEDR per-shot good/bad quality flag",
+        "PDS product ID and shot/frame index"
+      ],
+      "state": "acquired"
+    },
+    {
+      "target_id": "prospective-04",
+      "endpoint": "https://oderest.rsl.wustl.edu/livegds/",
+      "parameters": {
+        "query": "molapedr",
+        "source": "GDSWebMOLAPEDR",
+        "odemetadb": "mars",
+        "o": "j",
+        "results": "cv",
+        "westlon": 2.05034,
+        "eastlon": 3.40193,
+        "minlat": 1.67495,
+        "maxlat": 3.02483,
+        "async": "t"
+      },
+      "footprint": "Bounding box encloses the metric 80 km square; analysis clips to square",
+      "required_missing_fields": [
+        "original PEDR per-shot good/bad quality flag",
+        "PDS product ID and shot/frame index"
+      ],
+      "state": "acquired"
+    },
+    {
+      "target_id": "prospective-05",
+      "endpoint": "https://oderest.rsl.wustl.edu/livegds/",
+      "parameters": {
+        "query": "molapedr",
+        "source": "GDSWebMOLAPEDR",
+        "odemetadb": "mars",
+        "o": "j",
+        "results": "cv",
+        "westlon": 7.46643,
+        "eastlon": 9.13789,
+        "minlat": 34.79733,
+        "maxlat": 36.14986,
+        "async": "t"
+      },
+      "footprint": "Bounding box encloses the metric 80 km square; analysis clips to square",
+      "required_missing_fields": [
+        "original PEDR per-shot good/bad quality flag",
+        "PDS product ID and shot/frame index"
+      ],
+      "state": "acquired"
+    },
+    {
+      "target_id": "prospective-06",
+      "endpoint": "https://oderest.rsl.wustl.edu/livegds/",
+      "parameters": {
+        "query": "molapedr",
+        "source": "GDSWebMOLAPEDR",
+        "odemetadb": "mars",
+        "o": "j",
+        "results": "cv",
+        "westlon": 69.35952,
+        "eastlon": 70.99594,
+        "minlat": 33.08245,
+        "maxlat": 34.4348,
+        "async": "t"
+      },
+      "footprint": "Bounding box encloses the metric 80 km square; analysis clips to square",
+      "required_missing_fields": [
+        "original PEDR per-shot good/bad quality flag",
+        "PDS product ID and shot/frame index"
+      ],
+      "state": "acquired"
+    }
+  ],
+  "inventory_csv_assessment": {
+    "item_id": "T01_000893_1847_XN_04N191W__N09_065929_1853_XN_05N191W",
+    "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/T01_000893_1847_XN_04N191W__N09_065929_1853_XN_05N191W/T01_000893_1847_XN_04N191W__N09_065929_1853_XN_05N191W-FINAL_geodiff-diff.csv",
+    "state": "retained_residuals_excluded_from_shot_intake",
+    "qa_asset_state": "provider_catalogue_qa_metrics_href_returned_404; retained error response is not QA evidence",
+    "reason": "Header explicitly says longitude,latitude,height diff (m); contains no radius/time/orbit/shot quality"
+  },
+  "claim_limits": [
+    "No binned-count substitution was used.",
+    "ODE exports include all returned points in declared bounded queries; original good/bad quality bits and unique source shot IDs are absent.",
+    "CTX is controlled to MOLA and cannot provide fully independent validation.",
+    "Fixed metric geometry transfer with point interpolation measures a diagnostic, not the MEGDR gridding kernel or calibrated laser-footprint response.",
+    "These inspected Mars AOIs and Earth fields are exploratory; shot counts are not independent repetitions and no target superiority p-value is reported."
+  ],
+  "summary": {
+    "declared_context_count": 6,
+    "acquired_full_pedr_context_count": 6,
+    "full_pedr_shot_count": 103371,
+    "retained_square_attitude_zero_shot_count": 102240,
+    "acquired_control_subset_context_count": 6,
+    "control_subset_point_count": 41341,
+    "actual_sampled_comparison_count": 18,
+    "independent_shot_repetition_count": null,
+    "claim": "Measured exploratory source-support sensitivity; no independent geological or mapping-task validation"
+  },
+  "limitations": [
+    "No binned-count substitution was used.",
+    "ODE exports include all returned points in declared bounded queries; original good/bad quality bits and unique source shot IDs are absent.",
+    "CTX is controlled to MOLA and cannot provide fully independent validation.",
+    "Fixed metric geometry transfer with point interpolation measures a diagnostic, not the MEGDR gridding kernel or calibrated laser-footprint response.",
+    "These inspected Mars AOIs and Earth fields are exploratory; shot counts are not independent repetitions and no target superiority p-value is reported."
+  ],
+  "cases": [
+    {
+      "context_id": "prospective-01",
+      "source_role": "bounded actual PEDR geometry and CTX alignment-control subset",
+      "state": "actual_pedr_support_measured",
+      "source_url": "https://oderest.rsl.wustl.edu/output/20261114t123202386/MolaPEDR_16N18N_71E73E_20261114T123207189_pts_csv.csv",
+      "metrics": {
+        "state": "measured_point_support",
+        "retained_points": 15647,
+        "attitude_rejected": 224,
+        "shot_quality_flag": null,
+        "duplicates_removed": 0,
+        "orbit_count": 73,
+        "along_track_spacing_m": {
+          "p05": 298.8489325797976,
+          "median": 304.7972040243288,
+          "p95": 305.1706753047295
+        },
+        "time_gaps_over_threshold": 1
+      },
+      "missing_fields": [
+        "original per-shot good/bad quality flag",
+        "PDS product ID",
+        "shot/frame index",
+        "calibrated footprint response",
+        "per-shot uncertainty"
+      ],
+      "earth_diagnostics": [
+        {
+          "earth_field": "namib",
+          "source_path": "data/processed/namib-projected.npz",
+          "sha256": "c0c61c71044f77fad0cd47df21e034c5ec6639df31afd4e2664d3c5b7902eff5",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 15647,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.75359375,
+          "common_derivative_valid_fraction": 0.435390625,
+          "nearest_point_distance_p50_p95_max_m": [
+            487.62376677511276,
+            2465.1359304818884,
+            4890.997975974661
+          ],
+          "common_support_rmse_m": 28.64761741286676,
+          "baseline": {
+            "median_slope_deg": 1.8892325359814304,
+            "median_abs_planar_laplacian_m_inverse": 4.597563482386607e-05,
+            "relief_p95_minus_p05_m": 898.1170897380501
+          },
+          "shot_sampled": {
+            "median_slope_deg": 1.7581276231323626,
+            "median_abs_planar_laplacian_m_inverse": 3.631060232232664e-05,
+            "relief_p95_minus_p05_m": 890.1386946739127
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.13110491284906778,
+            "median_abs_planar_laplacian_m_inverse": -9.665032501539427e-06,
+            "relief_p95_minus_p05_m": -7.97839506413743
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "mojave",
+          "source_path": "data/processed/mojave-projected.npz",
+          "sha256": "8a3d7c63fd6af4b56caa2885a8710fde01aaac98a8fe9362ab36286b565a73a1",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 15647,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.75359375,
+          "common_derivative_valid_fraction": 0.435390625,
+          "nearest_point_distance_p50_p95_max_m": [
+            487.62376677511276,
+            2465.1359304818884,
+            4890.997975974661
+          ],
+          "common_support_rmse_m": 20.73061521305092,
+          "baseline": {
+            "median_slope_deg": 2.39110827815151,
+            "median_abs_planar_laplacian_m_inverse": 2.687253891530818e-05,
+            "relief_p95_minus_p05_m": 1008.1097140917316
+          },
+          "shot_sampled": {
+            "median_slope_deg": 2.2992511182643574,
+            "median_abs_planar_laplacian_m_inverse": 2.3967713886972346e-05,
+            "relief_p95_minus_p05_m": 1006.8430126688074
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.09185715988715248,
+            "median_abs_planar_laplacian_m_inverse": -2.9048250283358353e-06,
+            "relief_p95_minus_p05_m": -1.2667014229241431
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "atacama",
+          "source_path": "data/processed/atacama-projected.npz",
+          "sha256": "ca1ae020b915ea5a5bf14653b3318974006daa2c29e9bbbb6371cea2f9963823",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 15644,
+          "baseline_valid_fraction": 0.9996484375,
+          "reconstructed_valid_fraction": 0.7535546875,
+          "common_derivative_valid_fraction": 0.4346875,
+          "nearest_point_distance_p50_p95_max_m": [
+            487.68213957421415,
+            2465.1359304818884,
+            4890.997975974661
+          ],
+          "common_support_rmse_m": 18.186040495311723,
+          "baseline": {
+            "median_slope_deg": 3.360008009883127,
+            "median_abs_planar_laplacian_m_inverse": 3.5250540198846914e-05,
+            "relief_p95_minus_p05_m": 1402.459486522869
+          },
+          "shot_sampled": {
+            "median_slope_deg": 3.171301160630878,
+            "median_abs_planar_laplacian_m_inverse": 3.0186930784665602e-05,
+            "relief_p95_minus_p05_m": 1404.3692187154231
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.1887068492522488,
+            "median_abs_planar_laplacian_m_inverse": -5.063609414181311e-06,
+            "relief_p95_minus_p05_m": 1.909732192554202
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        }
+      ]
+    },
+    {
+      "context_id": "prospective-02",
+      "source_role": "bounded actual PEDR geometry and CTX alignment-control subset",
+      "state": "actual_pedr_support_measured",
+      "source_url": "https://oderest.rsl.wustl.edu/output/20261114t123217979/MolaPEDR_6N8N_69E71E_20261114T123220716_pts_csv.csv",
+      "metrics": {
+        "state": "measured_point_support",
+        "retained_points": 13792,
+        "attitude_rejected": 0,
+        "shot_quality_flag": null,
+        "duplicates_removed": 0,
+        "orbit_count": 61,
+        "along_track_spacing_m": {
+          "p05": 298.8975606835664,
+          "median": 304.8472260829915,
+          "p95": 305.0709428466237
+        },
+        "time_gaps_over_threshold": 29
+      },
+      "missing_fields": [
+        "original per-shot good/bad quality flag",
+        "PDS product ID",
+        "shot/frame index",
+        "calibrated footprint response",
+        "per-shot uncertainty"
+      ],
+      "earth_diagnostics": [
+        {
+          "earth_field": "namib",
+          "source_path": "data/processed/namib-projected.npz",
+          "sha256": "c0c61c71044f77fad0cd47df21e034c5ec6639df31afd4e2664d3c5b7902eff5",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 13792,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.6851171875,
+          "common_derivative_valid_fraction": 0.3554296875,
+          "nearest_point_distance_p50_p95_max_m": [
+            583.2029220461313,
+            2582.38897036644,
+            6338.4119022941195
+          ],
+          "common_support_rmse_m": 25.79805577776873,
+          "baseline": {
+            "median_slope_deg": 1.9169957540088662,
+            "median_abs_planar_laplacian_m_inverse": 4.4574571073707376e-05,
+            "relief_p95_minus_p05_m": 886.7814103894962
+          },
+          "shot_sampled": {
+            "median_slope_deg": 1.8012568586540523,
+            "median_abs_planar_laplacian_m_inverse": 3.585973365332836e-05,
+            "relief_p95_minus_p05_m": 875.9296392148963
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.11573889535481396,
+            "median_abs_planar_laplacian_m_inverse": -8.714837420379017e-06,
+            "relief_p95_minus_p05_m": -10.85177117459989
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "mojave",
+          "source_path": "data/processed/mojave-projected.npz",
+          "sha256": "8a3d7c63fd6af4b56caa2885a8710fde01aaac98a8fe9362ab36286b565a73a1",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 13792,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.6851171875,
+          "common_derivative_valid_fraction": 0.3554296875,
+          "nearest_point_distance_p50_p95_max_m": [
+            583.2029220461313,
+            2582.38897036644,
+            6338.4119022941195
+          ],
+          "common_support_rmse_m": 18.718023349018207,
+          "baseline": {
+            "median_slope_deg": 2.3609930679367657,
+            "median_abs_planar_laplacian_m_inverse": 2.6622782434680174e-05,
+            "relief_p95_minus_p05_m": 842.2752558586562
+          },
+          "shot_sampled": {
+            "median_slope_deg": 2.2981962908873745,
+            "median_abs_planar_laplacian_m_inverse": 2.4873447961757163e-05,
+            "relief_p95_minus_p05_m": 845.6716873138295
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.06279677704939113,
+            "median_abs_planar_laplacian_m_inverse": -1.749334472923011e-06,
+            "relief_p95_minus_p05_m": 3.3964314551732286
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "atacama",
+          "source_path": "data/processed/atacama-projected.npz",
+          "sha256": "ca1ae020b915ea5a5bf14653b3318974006daa2c29e9bbbb6371cea2f9963823",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 13791,
+          "baseline_valid_fraction": 0.9996484375,
+          "reconstructed_valid_fraction": 0.6851171875,
+          "common_derivative_valid_fraction": 0.35515625,
+          "nearest_point_distance_p50_p95_max_m": [
+            583.2029220461313,
+            2582.38897036644,
+            6338.4119022941195
+          ],
+          "common_support_rmse_m": 19.280865636827013,
+          "baseline": {
+            "median_slope_deg": 3.9300110212608557,
+            "median_abs_planar_laplacian_m_inverse": 3.852455351511641e-05,
+            "relief_p95_minus_p05_m": 1333.1494000765488
+          },
+          "shot_sampled": {
+            "median_slope_deg": 3.649369392126242,
+            "median_abs_planar_laplacian_m_inverse": 3.280760739297557e-05,
+            "relief_p95_minus_p05_m": 1328.3375747044993
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.2806416291346139,
+            "median_abs_planar_laplacian_m_inverse": -5.716946122140842e-06,
+            "relief_p95_minus_p05_m": -4.811825372049498
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        }
+      ]
+    },
+    {
+      "context_id": "prospective-03",
+      "source_role": "bounded actual PEDR geometry and CTX alignment-control subset",
+      "state": "actual_pedr_support_measured",
+      "source_url": "https://oderest.rsl.wustl.edu/output/20261114t123232449/MolaPEDR_2N3N_5E6E_20261114T123235893_pts_csv.csv",
+      "metrics": {
+        "state": "measured_point_support",
+        "retained_points": 15998,
+        "attitude_rejected": 0,
+        "shot_quality_flag": null,
+        "duplicates_removed": 0,
+        "orbit_count": 67,
+        "along_track_spacing_m": {
+          "p05": 298.9197078545531,
+          "median": 304.80053039775936,
+          "p95": 310.75290605611013
+        },
+        "time_gaps_over_threshold": 6
+      },
+      "missing_fields": [
+        "original per-shot good/bad quality flag",
+        "PDS product ID",
+        "shot/frame index",
+        "calibrated footprint response",
+        "per-shot uncertainty"
+      ],
+      "earth_diagnostics": [
+        {
+          "earth_field": "namib",
+          "source_path": "data/processed/namib-projected.npz",
+          "sha256": "c0c61c71044f77fad0cd47df21e034c5ec6639df31afd4e2664d3c5b7902eff5",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 15998,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.8046875,
+          "common_derivative_valid_fraction": 0.47515625,
+          "nearest_point_distance_p50_p95_max_m": [
+            452.32284345118785,
+            1756.1115803566306,
+            5432.204697110057
+          ],
+          "common_support_rmse_m": 28.599016153668952,
+          "baseline": {
+            "median_slope_deg": 1.8765133965910494,
+            "median_abs_planar_laplacian_m_inverse": 4.259496147757625e-05,
+            "relief_p95_minus_p05_m": 919.4793627940916
+          },
+          "shot_sampled": {
+            "median_slope_deg": 1.7328500626531302,
+            "median_abs_planar_laplacian_m_inverse": 3.40562641548513e-05,
+            "relief_p95_minus_p05_m": 906.8801601091728
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.1436633339379192,
+            "median_abs_planar_laplacian_m_inverse": -8.538697322724952e-06,
+            "relief_p95_minus_p05_m": -12.599202684918737
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "mojave",
+          "source_path": "data/processed/mojave-projected.npz",
+          "sha256": "8a3d7c63fd6af4b56caa2885a8710fde01aaac98a8fe9362ab36286b565a73a1",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 15998,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.8046875,
+          "common_derivative_valid_fraction": 0.47515625,
+          "nearest_point_distance_p50_p95_max_m": [
+            452.32284345118785,
+            1756.1115803566306,
+            5432.204697110057
+          ],
+          "common_support_rmse_m": 18.71989776967792,
+          "baseline": {
+            "median_slope_deg": 2.305245494723977,
+            "median_abs_planar_laplacian_m_inverse": 2.694687165180247e-05,
+            "relief_p95_minus_p05_m": 970.0190680457122
+          },
+          "shot_sampled": {
+            "median_slope_deg": 2.202066830271052,
+            "median_abs_planar_laplacian_m_inverse": 2.348227804839705e-05,
+            "relief_p95_minus_p05_m": 967.332659151052
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.1031786644529249,
+            "median_abs_planar_laplacian_m_inverse": -3.4645936034054192e-06,
+            "relief_p95_minus_p05_m": -2.6864088946601896
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "atacama",
+          "source_path": "data/processed/atacama-projected.npz",
+          "sha256": "ca1ae020b915ea5a5bf14653b3318974006daa2c29e9bbbb6371cea2f9963823",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 15998,
+          "baseline_valid_fraction": 0.9996484375,
+          "reconstructed_valid_fraction": 0.8046875,
+          "common_derivative_valid_fraction": 0.4741796875,
+          "nearest_point_distance_p50_p95_max_m": [
+            452.32284345118785,
+            1756.1115803566306,
+            5432.204697110057
+          ],
+          "common_support_rmse_m": 19.55022827174138,
+          "baseline": {
+            "median_slope_deg": 3.3201009049062398,
+            "median_abs_planar_laplacian_m_inverse": 3.6214197726678776e-05,
+            "relief_p95_minus_p05_m": 1516.0060405082825
+          },
+          "shot_sampled": {
+            "median_slope_deg": 3.1122804528394283,
+            "median_abs_planar_laplacian_m_inverse": 3.01888937627391e-05,
+            "relief_p95_minus_p05_m": 1509.6879243137294
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.20782045206681143,
+            "median_abs_planar_laplacian_m_inverse": -6.025303963939675e-06,
+            "relief_p95_minus_p05_m": -6.318116194553113
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        }
+      ]
+    },
+    {
+      "context_id": "prospective-04",
+      "source_role": "bounded actual PEDR geometry and CTX alignment-control subset",
+      "state": "actual_pedr_support_measured",
+      "source_url": "https://oderest.rsl.wustl.edu/output/20261114t123250331/MolaPEDR_2N3N_2E3E_20261114T123254655_pts_csv.csv",
+      "metrics": {
+        "state": "measured_point_support",
+        "retained_points": 16288,
+        "attitude_rejected": 0,
+        "shot_quality_flag": null,
+        "duplicates_removed": 0,
+        "orbit_count": 73,
+        "along_track_spacing_m": {
+          "p05": 298.92353530740337,
+          "median": 304.80281825430677,
+          "p95": 310.32049788138664
+        },
+        "time_gaps_over_threshold": 3
+      },
+      "missing_fields": [
+        "original per-shot good/bad quality flag",
+        "PDS product ID",
+        "shot/frame index",
+        "calibrated footprint response",
+        "per-shot uncertainty"
+      ],
+      "earth_diagnostics": [
+        {
+          "earth_field": "namib",
+          "source_path": "data/processed/namib-projected.npz",
+          "sha256": "c0c61c71044f77fad0cd47df21e034c5ec6639df31afd4e2664d3c5b7902eff5",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 16288,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.815390625,
+          "common_derivative_valid_fraction": 0.4617578125,
+          "nearest_point_distance_p50_p95_max_m": [
+            439.3353526978968,
+            1586.814528611412,
+            3383.676105637324
+          ],
+          "common_support_rmse_m": 26.82196286783902,
+          "baseline": {
+            "median_slope_deg": 1.899809466192182,
+            "median_abs_planar_laplacian_m_inverse": 4.656128892085484e-05,
+            "relief_p95_minus_p05_m": 971.3419765890294
+          },
+          "shot_sampled": {
+            "median_slope_deg": 1.7359650456539537,
+            "median_abs_planar_laplacian_m_inverse": 3.4941561381726156e-05,
+            "relief_p95_minus_p05_m": 964.4781872153087
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.16384442053822834,
+            "median_abs_planar_laplacian_m_inverse": -1.1619727539128685e-05,
+            "relief_p95_minus_p05_m": -6.863789373720692
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "mojave",
+          "source_path": "data/processed/mojave-projected.npz",
+          "sha256": "8a3d7c63fd6af4b56caa2885a8710fde01aaac98a8fe9362ab36286b565a73a1",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 16288,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.815390625,
+          "common_derivative_valid_fraction": 0.4617578125,
+          "nearest_point_distance_p50_p95_max_m": [
+            439.3353526978968,
+            1586.814528611412,
+            3383.676105637324
+          ],
+          "common_support_rmse_m": 19.944497228180186,
+          "baseline": {
+            "median_slope_deg": 2.3783015345288976,
+            "median_abs_planar_laplacian_m_inverse": 2.7166996733989897e-05,
+            "relief_p95_minus_p05_m": 1026.345101632514
+          },
+          "shot_sampled": {
+            "median_slope_deg": 2.308139062162611,
+            "median_abs_planar_laplacian_m_inverse": 2.4289638043429137e-05,
+            "relief_p95_minus_p05_m": 1026.7575546233143
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.07016247236628637,
+            "median_abs_planar_laplacian_m_inverse": -2.87735869056076e-06,
+            "relief_p95_minus_p05_m": 0.4124529908003751
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "atacama",
+          "source_path": "data/processed/atacama-projected.npz",
+          "sha256": "ca1ae020b915ea5a5bf14653b3318974006daa2c29e9bbbb6371cea2f9963823",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 16271,
+          "baseline_valid_fraction": 0.9996484375,
+          "reconstructed_valid_fraction": 0.8152734375,
+          "common_derivative_valid_fraction": 0.4597265625,
+          "nearest_point_distance_p50_p95_max_m": [
+            439.7150330811662,
+            1586.814528611412,
+            3383.676105637324
+          ],
+          "common_support_rmse_m": 16.589166988632467,
+          "baseline": {
+            "median_slope_deg": 3.771825448586194,
+            "median_abs_planar_laplacian_m_inverse": 3.76158480846318e-05,
+            "relief_p95_minus_p05_m": 1431.5743175379612
+          },
+          "shot_sampled": {
+            "median_slope_deg": 3.551188103899732,
+            "median_abs_planar_laplacian_m_inverse": 3.202648107285745e-05,
+            "relief_p95_minus_p05_m": 1426.828817801042
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.220637344686462,
+            "median_abs_planar_laplacian_m_inverse": -5.589367011774355e-06,
+            "relief_p95_minus_p05_m": -4.7454997369191005
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        }
+      ]
+    },
+    {
+      "context_id": "prospective-05",
+      "source_role": "bounded actual PEDR geometry and CTX alignment-control subset",
+      "state": "actual_pedr_support_measured",
+      "source_url": "https://oderest.rsl.wustl.edu/output/20261114t123310456/MolaPEDR_35N36N_7E9E_20261114T123314890_pts_csv.csv",
+      "metrics": {
+        "state": "measured_point_support",
+        "retained_points": 20638,
+        "attitude_rejected": 0,
+        "shot_quality_flag": null,
+        "duplicates_removed": 0,
+        "orbit_count": 84,
+        "along_track_spacing_m": {
+          "p05": 298.6555207135488,
+          "median": 298.84027215471724,
+          "p95": 305.14794991861794
+        },
+        "time_gaps_over_threshold": 5
+      },
+      "missing_fields": [
+        "original per-shot good/bad quality flag",
+        "PDS product ID",
+        "shot/frame index",
+        "calibrated footprint response",
+        "per-shot uncertainty"
+      ],
+      "earth_diagnostics": [
+        {
+          "earth_field": "namib",
+          "source_path": "data/processed/namib-projected.npz",
+          "sha256": "c0c61c71044f77fad0cd47df21e034c5ec6639df31afd4e2664d3c5b7902eff5",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 20638,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.8528125,
+          "common_derivative_valid_fraction": 0.56375,
+          "nearest_point_distance_p50_p95_max_m": [
+            360.89867472084376,
+            1491.457902422612,
+            3041.369062918475
+          ],
+          "common_support_rmse_m": 23.973052868035506,
+          "baseline": {
+            "median_slope_deg": 1.8883458740361645,
+            "median_abs_planar_laplacian_m_inverse": 4.637732974910091e-05,
+            "relief_p95_minus_p05_m": 956.6512429875831
+          },
+          "shot_sampled": {
+            "median_slope_deg": 1.7255049884565268,
+            "median_abs_planar_laplacian_m_inverse": 3.57573163310201e-05,
+            "relief_p95_minus_p05_m": 951.6547742132417
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.16284088557963772,
+            "median_abs_planar_laplacian_m_inverse": -1.0620013418080811e-05,
+            "relief_p95_minus_p05_m": -4.9964687743414515
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "mojave",
+          "source_path": "data/processed/mojave-projected.npz",
+          "sha256": "8a3d7c63fd6af4b56caa2885a8710fde01aaac98a8fe9362ab36286b565a73a1",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 20638,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.8528125,
+          "common_derivative_valid_fraction": 0.56375,
+          "nearest_point_distance_p50_p95_max_m": [
+            360.89867472084376,
+            1491.457902422612,
+            3041.369062918475
+          ],
+          "common_support_rmse_m": 18.114423100249386,
+          "baseline": {
+            "median_slope_deg": 2.501355899876753,
+            "median_abs_planar_laplacian_m_inverse": 2.8333796102904554e-05,
+            "relief_p95_minus_p05_m": 1004.1874335668331
+          },
+          "shot_sampled": {
+            "median_slope_deg": 2.4071763114235702,
+            "median_abs_planar_laplacian_m_inverse": 2.5430062339297392e-05,
+            "relief_p95_minus_p05_m": 1005.2960017928372
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.09417958845318264,
+            "median_abs_planar_laplacian_m_inverse": -2.903733763607162e-06,
+            "relief_p95_minus_p05_m": 1.1085682260040812
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "atacama",
+          "source_path": "data/processed/atacama-projected.npz",
+          "sha256": "ca1ae020b915ea5a5bf14653b3318974006daa2c29e9bbbb6371cea2f9963823",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 20633,
+          "baseline_valid_fraction": 0.9996484375,
+          "reconstructed_valid_fraction": 0.8526953125,
+          "common_derivative_valid_fraction": 0.5623046875,
+          "nearest_point_distance_p50_p95_max_m": [
+            361.0553759066916,
+            1491.457902422612,
+            3041.369062918475
+          ],
+          "common_support_rmse_m": 14.325654233579007,
+          "baseline": {
+            "median_slope_deg": 3.40817920647991,
+            "median_abs_planar_laplacian_m_inverse": 3.332362120395191e-05,
+            "relief_p95_minus_p05_m": 1463.5230945664234
+          },
+          "shot_sampled": {
+            "median_slope_deg": 3.2446474281460587,
+            "median_abs_planar_laplacian_m_inverse": 2.9060395503351176e-05,
+            "relief_p95_minus_p05_m": 1463.86883798606
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.16353177833385146,
+            "median_abs_planar_laplacian_m_inverse": -4.263225700600736e-06,
+            "relief_p95_minus_p05_m": 0.34574341963661936
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        }
+      ]
+    },
+    {
+      "context_id": "prospective-06",
+      "source_role": "bounded actual PEDR geometry and CTX alignment-control subset",
+      "state": "actual_pedr_support_measured",
+      "source_url": "https://oderest.rsl.wustl.edu/output/20261114t123338057/MolaPEDR_33N34N_69E71E_20261114T123343255_pts_csv.csv",
+      "metrics": {
+        "state": "measured_point_support",
+        "retained_points": 19877,
+        "attitude_rejected": 291,
+        "shot_quality_flag": null,
+        "duplicates_removed": 0,
+        "orbit_count": 85,
+        "along_track_spacing_m": {
+          "p05": 298.62267194193686,
+          "median": 298.94768837711507,
+          "p95": 310.695426545082
+        },
+        "time_gaps_over_threshold": 8
+      },
+      "missing_fields": [
+        "original per-shot good/bad quality flag",
+        "PDS product ID",
+        "shot/frame index",
+        "calibrated footprint response",
+        "per-shot uncertainty"
+      ],
+      "earth_diagnostics": [
+        {
+          "earth_field": "namib",
+          "source_path": "data/processed/namib-projected.npz",
+          "sha256": "c0c61c71044f77fad0cd47df21e034c5ec6639df31afd4e2664d3c5b7902eff5",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 19877,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.82515625,
+          "common_derivative_valid_fraction": 0.518359375,
+          "nearest_point_distance_p50_p95_max_m": [
+            401.7934169299721,
+            1620.1562444982915,
+            3696.133993433881
+          ],
+          "common_support_rmse_m": 28.132585903908133,
+          "baseline": {
+            "median_slope_deg": 1.9074561987749377,
+            "median_abs_planar_laplacian_m_inverse": 4.57709142020459e-05,
+            "relief_p95_minus_p05_m": 1000.920389828411
+          },
+          "shot_sampled": {
+            "median_slope_deg": 1.732350655537119,
+            "median_abs_planar_laplacian_m_inverse": 3.610428405816793e-05,
+            "relief_p95_minus_p05_m": 987.5867784386293
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.17510554323781857,
+            "median_abs_planar_laplacian_m_inverse": -9.666630143877967e-06,
+            "relief_p95_minus_p05_m": -13.333611389781709
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "mojave",
+          "source_path": "data/processed/mojave-projected.npz",
+          "sha256": "8a3d7c63fd6af4b56caa2885a8710fde01aaac98a8fe9362ab36286b565a73a1",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 19877,
+          "baseline_valid_fraction": 1.0,
+          "reconstructed_valid_fraction": 0.82515625,
+          "common_derivative_valid_fraction": 0.518359375,
+          "nearest_point_distance_p50_p95_max_m": [
+            401.7934169299721,
+            1620.1562444982915,
+            3696.133993433881
+          ],
+          "common_support_rmse_m": 19.7069879503439,
+          "baseline": {
+            "median_slope_deg": 2.481042856772609,
+            "median_abs_planar_laplacian_m_inverse": 2.768051261725969e-05,
+            "relief_p95_minus_p05_m": 1007.4961677132156
+          },
+          "shot_sampled": {
+            "median_slope_deg": 2.3977172103258653,
+            "median_abs_planar_laplacian_m_inverse": 2.4424345321287433e-05,
+            "relief_p95_minus_p05_m": 1006.237545133966
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.08332564644674356,
+            "median_abs_planar_laplacian_m_inverse": -3.256167295972259e-06,
+            "relief_p95_minus_p05_m": -1.258622579249618
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        },
+        {
+          "earth_field": "atacama",
+          "source_path": "data/processed/atacama-projected.npz",
+          "sha256": "ca1ae020b915ea5a5bf14653b3318974006daa2c29e9bbbb6371cea2f9963823",
+          "state": "measured_support_sensitivity",
+          "sampled_points": 19877,
+          "baseline_valid_fraction": 0.9996484375,
+          "reconstructed_valid_fraction": 0.82515625,
+          "common_derivative_valid_fraction": 0.5179296875,
+          "nearest_point_distance_p50_p95_max_m": [
+            401.7934169299721,
+            1620.1562444982915,
+            3696.133993433881
+          ],
+          "common_support_rmse_m": 16.41526451008028,
+          "baseline": {
+            "median_slope_deg": 3.6184784623615265,
+            "median_abs_planar_laplacian_m_inverse": 3.591695044664765e-05,
+            "relief_p95_minus_p05_m": 1526.4200983078936
+          },
+          "shot_sampled": {
+            "median_slope_deg": 3.4616463316660018,
+            "median_abs_planar_laplacian_m_inverse": 3.142536872622077e-05,
+            "relief_p95_minus_p05_m": 1519.4914688309698
+          },
+          "descriptor_difference": {
+            "median_slope_deg": -0.1568321306955247,
+            "median_abs_planar_laplacian_m_inverse": -4.491581720426876e-06,
+            "relief_p95_minus_p05_m": -6.928629476923788
+          },
+          "independent_repetitions": null,
+          "limitation": "One fixed support transfer per Earth field; shots are correlated observations, not independent repetitions. Unknown shot quality is retained; no calibrated footprint, noise model, original MEGDR kernel or mapping-utility inference."
+        }
+      ]
+    }
+  ]
+}

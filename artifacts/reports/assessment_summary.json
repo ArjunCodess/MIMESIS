@@ -1,0 +1,50 @@
+{
+  "counts": {
+    "insufficient_image_coverage": 19,
+    "target_task_mismatch": 6,
+    "provisional_visual_support": 2,
+    "ambiguous_morphology": 1
+  },
+  "reviewer_status": "model_assisted_not_independent_expert_review",
+  "rubric": {
+    "id": "visible-landform-rubric-v3",
+    "experiment": "mimesis-context-corrected-v3",
+    "preregistration_status": "Same visible-landform rules as v2, before corrected v3 candidate image assessment; exploratory correction, not an independent preregistration",
+    "reviewer_status": "model_assisted_visual_assessment_not_independent_expert_review",
+    "support": "80 km context with centered 20 km study footprint; observations restricted to landforms resolved at 500 m or coarser",
+    "minimum_clear_local_fraction": 0.95,
+    "minimum_clear_context_fraction": 0.95,
+    "requirements": [
+      {
+        "id": "basin_floor",
+        "mandatory": true,
+        "rule": "A laterally extensive, comparatively smooth floor-like unit is visible in or adjoining the 20 km footprint. Brightness alone cannot establish flatness or a basin origin."
+      },
+      {
+        "id": "ridge_margin",
+        "mandatory": true,
+        "rule": "An organized ridge, scarp or mass-defined margin is visible within 80 km context. It need not share an impact or depositional origin with the target."
+      },
+      {
+        "id": "relief_transition",
+        "mandatory": true,
+        "rule": "The scene resolves the spatial transition between the floor-like unit and the margin; an isolated smooth patch with no interpretable context is insufficient."
+      }
+    ],
+    "statuses": [
+      "supported",
+      "contradicted",
+      "unassessable"
+    ],
+    "gates": "Every mandatory requirement must be supported in both Earth and target imagery; missing/obscured features remain unassessable. A positive model assessment is a provisional remote-sensing interpretation, not independent validation.",
+    "excluded_inferences": [
+      "geological origin",
+      "mineralogy",
+      "numeric slope from single optical image",
+      "vehicle trafficability",
+      "field access",
+      "novelty from absence of a web hit"
+    ]
+  },
+  "sampling": "28 retained comparisons; 8 unfilled slots; not a population accuracy estimate"
+}

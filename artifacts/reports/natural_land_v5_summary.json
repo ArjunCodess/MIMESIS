@@ -1,0 +1,340 @@
+{
+  "protocol_hash": "fb7e19b36a5fe907f6f7471205fa1a688180e571c2d432e0d0e442ae3565ad02",
+  "record_hash": "1e0d147626170176997963bf7fe1d2cd9df035e2fa26ca7f37ec7f789ac5979b",
+  "eligible_counts": {
+    "500": 7,
+    "1000": 1
+  },
+  "pairs": {
+    "500": {
+      "jezero": {
+        "target_id": "jezero",
+        "nomination": "NAMIB-040000-112000",
+        "control": null,
+        "unfilled_reason": "No lower-ranked non-overlapping same-region control meets the frozen slope/relief tolerances; no rank-band or separation rule relaxed",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "nili": {
+        "target_id": "nili",
+        "nomination": null,
+        "control": null,
+        "unfilled_reason": "Planetary 80km camera coverage is unavailable or below .95; no corroboration-ready pair frozen",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "isidis": {
+        "target_id": "isidis",
+        "nomination": "NAMIB-040000-115000",
+        "control": null,
+        "unfilled_reason": "No lower-ranked non-overlapping same-region control meets the frozen slope/relief tolerances; no rank-band or separation rule relaxed",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "syrtis": {
+        "target_id": "syrtis",
+        "nomination": "NAMIB-040000-115000",
+        "control": null,
+        "unfilled_reason": "No lower-ranked non-overlapping same-region control meets the frozen slope/relief tolerances; no rank-band or separation rule relaxed",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "apollo17": {
+        "target_id": "apollo17",
+        "nomination": null,
+        "control": null,
+        "unfilled_reason": "No natural-mask/clear-image candidate passes the frozen terrain cutoff",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "shackleton": {
+        "target_id": "shackleton",
+        "nomination": null,
+        "control": null,
+        "unfilled_reason": "Planetary 80km camera coverage is unavailable or below .95; no corroboration-ready pair frozen",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "prospective-01": {
+        "target_id": "prospective-01",
+        "nomination": "ATACAMA-142000-085000",
+        "control": null,
+        "unfilled_reason": "No lower-ranked non-overlapping same-region control meets the frozen slope/relief tolerances; no rank-band or separation rule relaxed",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "prospective-02": {
+        "target_id": "prospective-02",
+        "nomination": "NAMIB-040000-112000",
+        "control": null,
+        "unfilled_reason": "No lower-ranked non-overlapping same-region control meets the frozen slope/relief tolerances; no rank-band or separation rule relaxed",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "prospective-03": {
+        "target_id": "prospective-03",
+        "nomination": "NAMIB-040000-115000",
+        "control": null,
+        "unfilled_reason": "No lower-ranked non-overlapping same-region control meets the frozen slope/relief tolerances; no rank-band or separation rule relaxed",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "prospective-04": {
+        "target_id": "prospective-04",
+        "nomination": "NAMIB-040000-115000",
+        "control": null,
+        "unfilled_reason": "No lower-ranked non-overlapping same-region control meets the frozen slope/relief tolerances; no rank-band or separation rule relaxed",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "prospective-05": {
+        "target_id": "prospective-05",
+        "nomination": null,
+        "control": null,
+        "unfilled_reason": "Planetary 80km camera coverage is unavailable or below .95; no corroboration-ready pair frozen",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "prospective-06": {
+        "target_id": "prospective-06",
+        "nomination": "ATACAMA-142000-085000",
+        "control": null,
+        "unfilled_reason": "No lower-ranked non-overlapping same-region control meets the frozen slope/relief tolerances; no rank-band or separation rule relaxed",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      }
+    },
+    "1000": {
+      "jezero": {
+        "target_id": "jezero",
+        "nomination": "NAMIB-040000-100000",
+        "control": null,
+        "unfilled_reason": "No lower-ranked non-overlapping same-region control meets the frozen slope/relief tolerances; no rank-band or separation rule relaxed",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "nili": {
+        "target_id": "nili",
+        "nomination": null,
+        "control": null,
+        "unfilled_reason": "Planetary 80km camera coverage is unavailable or below .95; no corroboration-ready pair frozen",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "isidis": {
+        "target_id": "isidis",
+        "nomination": "NAMIB-040000-100000",
+        "control": null,
+        "unfilled_reason": "No lower-ranked non-overlapping same-region control meets the frozen slope/relief tolerances; no rank-band or separation rule relaxed",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "syrtis": {
+        "target_id": "syrtis",
+        "nomination": "NAMIB-040000-100000",
+        "control": null,
+        "unfilled_reason": "No lower-ranked non-overlapping same-region control meets the frozen slope/relief tolerances; no rank-band or separation rule relaxed",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "apollo17": {
+        "target_id": "apollo17",
+        "nomination": null,
+        "control": null,
+        "unfilled_reason": "No natural-mask/clear-image candidate passes the frozen terrain cutoff",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "shackleton": {
+        "target_id": "shackleton",
+        "nomination": null,
+        "control": null,
+        "unfilled_reason": "Planetary 80km camera coverage is unavailable or below .95; no corroboration-ready pair frozen",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "prospective-01": {
+        "target_id": "prospective-01",
+        "nomination": "NAMIB-040000-100000",
+        "control": null,
+        "unfilled_reason": "No lower-ranked non-overlapping same-region control meets the frozen slope/relief tolerances; no rank-band or separation rule relaxed",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "prospective-02": {
+        "target_id": "prospective-02",
+        "nomination": "NAMIB-040000-100000",
+        "control": null,
+        "unfilled_reason": "No lower-ranked non-overlapping same-region control meets the frozen slope/relief tolerances; no rank-band or separation rule relaxed",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "prospective-03": {
+        "target_id": "prospective-03",
+        "nomination": "NAMIB-040000-100000",
+        "control": null,
+        "unfilled_reason": "No lower-ranked non-overlapping same-region control meets the frozen slope/relief tolerances; no rank-band or separation rule relaxed",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "prospective-04": {
+        "target_id": "prospective-04",
+        "nomination": "NAMIB-040000-100000",
+        "control": null,
+        "unfilled_reason": "No lower-ranked non-overlapping same-region control meets the frozen slope/relief tolerances; no rank-band or separation rule relaxed",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "prospective-05": {
+        "target_id": "prospective-05",
+        "nomination": null,
+        "control": null,
+        "unfilled_reason": "Planetary 80km camera coverage is unavailable or below .95; no corroboration-ready pair frozen",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      },
+      "prospective-06": {
+        "target_id": "prospective-06",
+        "nomination": null,
+        "control": null,
+        "unfilled_reason": "No natural-mask/clear-image candidate passes the frozen terrain cutoff",
+        "frozen_at": "2026-11-14T06:01:38.733839+00:00",
+        "state": "incomplete_pair",
+        "assessment_status": "not_independently_reviewed",
+        "claim_level": "screened_candidate"
+      }
+    }
+  },
+  "old_lead_diagnostics": {
+    "500": [
+      {
+        "candidate_id": "NAMIB-157000-136000",
+        "mapped_natural_local_fraction_before_smoothing": 0.9376171875,
+        "mapped_natural_context_fraction_before_smoothing": 0.93966064453125,
+        "image_available": true,
+        "failed_rules": [
+          "500m valid terrain below frozen minimum after masking and smoothing",
+          "1000m valid terrain below frozen minimum after masking and smoothing"
+        ]
+      },
+      {
+        "candidate_id": "MOJAVE-142000-046000",
+        "mapped_natural_local_fraction_before_smoothing": 0.8421875,
+        "mapped_natural_context_fraction_before_smoothing": 0.90429931640625,
+        "image_available": true,
+        "failed_rules": [
+          "500m valid terrain below frozen minimum after masking and smoothing",
+          "1000m valid terrain below frozen minimum after masking and smoothing"
+        ]
+      },
+      {
+        "candidate_id": "MOROCCO-103000-100000",
+        "mapped_natural_local_fraction_before_smoothing": 0.9671875,
+        "mapped_natural_context_fraction_before_smoothing": 0.93855712890625,
+        "image_available": true,
+        "failed_rules": [
+          "500m valid terrain below frozen minimum after masking and smoothing",
+          "1000m valid terrain below frozen minimum after masking and smoothing"
+        ]
+      }
+    ],
+    "1000": [
+      {
+        "candidate_id": "NAMIB-157000-136000",
+        "mapped_natural_local_fraction_before_smoothing": 0.8465625,
+        "mapped_natural_context_fraction_before_smoothing": 0.8470751953125,
+        "image_available": true,
+        "failed_rules": [
+          "500m valid terrain below frozen minimum after masking and smoothing",
+          "1000m valid terrain below frozen minimum after masking and smoothing"
+        ]
+      },
+      {
+        "candidate_id": "MOJAVE-142000-046000",
+        "mapped_natural_local_fraction_before_smoothing": 0.711875,
+        "mapped_natural_context_fraction_before_smoothing": 0.81551025390625,
+        "image_available": true,
+        "failed_rules": [
+          "500m valid terrain below frozen minimum after masking and smoothing",
+          "1000m valid terrain below frozen minimum after masking and smoothing"
+        ]
+      },
+      {
+        "candidate_id": "MOROCCO-103000-100000",
+        "mapped_natural_local_fraction_before_smoothing": 0.938671875,
+        "mapped_natural_context_fraction_before_smoothing": 0.88294677734375,
+        "image_available": true,
+        "failed_rules": [
+          "500m valid terrain below frozen minimum after masking and smoothing",
+          "1000m valid terrain below frozen minimum after masking and smoothing"
+        ]
+      }
+    ]
+  },
+  "pool_sensitivity": [
+    {
+      "target_id": "jezero",
+      "candidate_id": "ATACAMA-154000-142000",
+      "old_rank": 1,
+      "expanded_rank": 4,
+      "old_robust_loss": 0.004449999932109164,
+      "expanded_robust_loss": 0.004449999932109164,
+      "interpretation": "Relative rank can worsen when better candidates enter; identical absolute loss is not evidence that a physical association became an artifact. Spatial and support sensitivity remain separate questions."
+    },
+    {
+      "target_id": "syrtis",
+      "candidate_id": "NAMIB-157000-136000",
+      "old_rank": 1,
+      "expanded_rank": 25,
+      "old_robust_loss": 0.0015497770421204187,
+      "expanded_robust_loss": 0.0015497770421204187,
+      "interpretation": "Relative rank can worsen when better candidates enter; identical absolute loss is not evidence that a physical association became an artifact. Spatial and support sensitivity remain separate questions."
+    }
+  ]
+}

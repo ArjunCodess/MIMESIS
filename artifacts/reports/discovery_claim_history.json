@@ -1,0 +1,357 @@
+[
+  {
+    "candidate_id": "MOJAVE-142000-046000",
+    "target_id": "jezero",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "af78065381fb5991cb7ff0ad16c3a96c97f12a0adba7699809dfedbd49d64937"
+  },
+  {
+    "candidate_id": "MOJAVE-142000-046000",
+    "target_id": "jezero",
+    "at": "2026-11-14T05:33:54.396093+00:00",
+    "claim_level": "new_characterization_of_known_analogue",
+    "reason": "The separately acquired optical observations support the frozen coarse floor/margin mapping rubric. Prior regional analogue studies are documented, so this release adds a reproducible characterization while exact-footprint/task novelty remains unresolved.",
+    "review": {
+      "candidate_id": "MOJAVE-142000-046000",
+      "target_id": "jezero",
+      "requested_level": "new_characterization_of_known_analogue",
+      "novelty_decision": "known_analogue_context",
+      "source_urls": [
+        "https://repository.hou.usra.edu/server/api/core/bitstreams/023fd785-e5d5-4dce-a466-6144bbcbb4c8/content",
+        "https://doi.org/10.1029/2019EA000720"
+      ],
+      "reviewed_at": "2026-11-14T05:27:20.923534+00:00",
+      "assessor": "Codex model-assisted literature review, not an independent librarian or geologist",
+      "rationale": "The separately acquired optical observations support the frozen coarse floor/margin mapping rubric. Prior regional analogue studies are documented, so this release adds a reproducible characterization while exact-footprint/task novelty remains unresolved."
+    },
+    "limitation": "Model-assisted remote characterization; no independent expert or field validation. A bounded search cannot prove absence of prior work.",
+    "rank_run_hash": "af78065381fb5991cb7ff0ad16c3a96c97f12a0adba7699809dfedbd49d64937"
+  },
+  {
+    "candidate_id": "MOROCCO-103000-100000",
+    "target_id": "jezero",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "af78065381fb5991cb7ff0ad16c3a96c97f12a0adba7699809dfedbd49d64937"
+  },
+  {
+    "candidate_id": "MOROCCO-103000-100000",
+    "target_id": "jezero",
+    "at": "2026-11-14T05:33:54.396123+00:00",
+    "claim_level": "new_characterization_of_known_analogue",
+    "reason": "The separately acquired optical observations support the frozen coarse floor/margin mapping rubric. Prior regional analogue studies are documented, so this release adds a reproducible characterization while exact-footprint/task novelty remains unresolved.",
+    "review": {
+      "candidate_id": "MOROCCO-103000-100000",
+      "target_id": "jezero",
+      "requested_level": "new_characterization_of_known_analogue",
+      "novelty_decision": "known_analogue_context",
+      "source_urls": [
+        "https://www.hou.usra.edu/meetings/lifeonmars2019/pdf/5041.pdf"
+      ],
+      "reviewed_at": "2026-11-14T05:27:20.923534+00:00",
+      "assessor": "Codex model-assisted literature review, not an independent librarian or geologist",
+      "rationale": "The separately acquired optical observations support the frozen coarse floor/margin mapping rubric. Prior regional analogue studies are documented, so this release adds a reproducible characterization while exact-footprint/task novelty remains unresolved."
+    },
+    "limitation": "Model-assisted remote characterization; no independent expert or field validation. A bounded search cannot prove absence of prior work.",
+    "rank_run_hash": "af78065381fb5991cb7ff0ad16c3a96c97f12a0adba7699809dfedbd49d64937"
+  },
+  {
+    "candidate_id": "ATACAMA-154000-142000",
+    "target_id": "jezero",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "af78065381fb5991cb7ff0ad16c3a96c97f12a0adba7699809dfedbd49d64937"
+  },
+  {
+    "candidate_id": "QAIDAM-043000-082000",
+    "target_id": "jezero",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "af78065381fb5991cb7ff0ad16c3a96c97f12a0adba7699809dfedbd49d64937"
+  },
+  {
+    "candidate_id": "MOJAVE-040000-100000",
+    "target_id": "jezero",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "af78065381fb5991cb7ff0ad16c3a96c97f12a0adba7699809dfedbd49d64937"
+  },
+  {
+    "candidate_id": "NAMIB-082000-151000",
+    "target_id": "jezero",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "af78065381fb5991cb7ff0ad16c3a96c97f12a0adba7699809dfedbd49d64937"
+  },
+  {
+    "candidate_id": "MOROCCO-109000-103000",
+    "target_id": "nili",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "598bfd3cf1d4a35d1da4be8c409038d632bddbfacf588946b1a1a84f901b18eb"
+  },
+  {
+    "candidate_id": "MOJAVE-151000-085000",
+    "target_id": "nili",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "598bfd3cf1d4a35d1da4be8c409038d632bddbfacf588946b1a1a84f901b18eb"
+  },
+  {
+    "candidate_id": "NAMIB-103000-106000",
+    "target_id": "nili",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "598bfd3cf1d4a35d1da4be8c409038d632bddbfacf588946b1a1a84f901b18eb"
+  },
+  {
+    "candidate_id": "MOJAVE-037000-082000",
+    "target_id": "nili",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "598bfd3cf1d4a35d1da4be8c409038d632bddbfacf588946b1a1a84f901b18eb"
+  },
+  {
+    "candidate_id": "ATACAMA-112000-115000",
+    "target_id": "nili",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "598bfd3cf1d4a35d1da4be8c409038d632bddbfacf588946b1a1a84f901b18eb"
+  },
+  {
+    "candidate_id": "QAIDAM-067000-067000",
+    "target_id": "nili",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "598bfd3cf1d4a35d1da4be8c409038d632bddbfacf588946b1a1a84f901b18eb"
+  },
+  {
+    "candidate_id": "QAIDAM-037000-121000",
+    "target_id": "isidis",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "86f1975acb069fa4a0b7cbed354c7c510f7ddd946546063c24b7f938aa3d1af1"
+  },
+  {
+    "candidate_id": "MOROCCO-124000-061000",
+    "target_id": "isidis",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "86f1975acb069fa4a0b7cbed354c7c510f7ddd946546063c24b7f938aa3d1af1"
+  },
+  {
+    "candidate_id": "NAMIB-163000-139000",
+    "target_id": "isidis",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "86f1975acb069fa4a0b7cbed354c7c510f7ddd946546063c24b7f938aa3d1af1"
+  },
+  {
+    "candidate_id": "QAIDAM-142000-061000",
+    "target_id": "isidis",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "86f1975acb069fa4a0b7cbed354c7c510f7ddd946546063c24b7f938aa3d1af1"
+  },
+  {
+    "candidate_id": "MOJAVE-040000-091000",
+    "target_id": "isidis",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "86f1975acb069fa4a0b7cbed354c7c510f7ddd946546063c24b7f938aa3d1af1"
+  },
+  {
+    "candidate_id": "QAIDAM-142000-145000",
+    "target_id": "isidis",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "86f1975acb069fa4a0b7cbed354c7c510f7ddd946546063c24b7f938aa3d1af1"
+  },
+  {
+    "candidate_id": "MOROCCO-112000-067000",
+    "target_id": "syrtis",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "bcdea310e4991e7db5f7821cff0723719d896a50c03f166432090ca4473e30dd"
+  },
+  {
+    "candidate_id": "QAIDAM-070000-091000",
+    "target_id": "syrtis",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "bcdea310e4991e7db5f7821cff0723719d896a50c03f166432090ca4473e30dd"
+  },
+  {
+    "candidate_id": "NAMIB-157000-136000",
+    "target_id": "syrtis",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "bcdea310e4991e7db5f7821cff0723719d896a50c03f166432090ca4473e30dd"
+  },
+  {
+    "candidate_id": "NAMIB-157000-136000",
+    "target_id": "syrtis",
+    "at": "2026-11-14T05:33:54.397875+00:00",
+    "claim_level": "new_characterization_of_known_analogue",
+    "reason": "The separately acquired optical observations support the frozen coarse floor/margin mapping rubric. Prior regional analogue studies are documented, so this release adds a reproducible characterization while exact-footprint/task novelty remains unresolved.",
+    "review": {
+      "candidate_id": "NAMIB-157000-136000",
+      "target_id": "syrtis",
+      "requested_level": "new_characterization_of_known_analogue",
+      "novelty_decision": "known_analogue_context",
+      "source_urls": [
+        "https://thesis.caltech.edu/10953/",
+        "https://davenquinn.com/blog/2020/10/mapboard-gis",
+        "https://www.mme.gov.na/files/publications/0b4_Comms%20GSN%2017%203.%20Lorenz%2C%20Titan-Namibia%2C%202016.pdf",
+        "https://www.eppcgs.org/article/doi/10.26464/epp2022042"
+      ],
+      "reviewed_at": "2026-11-14T05:27:20.923534+00:00",
+      "assessor": "Codex model-assisted literature review, not an independent librarian or geologist",
+      "rationale": "The separately acquired optical observations support the frozen coarse floor/margin mapping rubric. Prior regional analogue studies are documented, so this release adds a reproducible characterization while exact-footprint/task novelty remains unresolved."
+    },
+    "limitation": "Model-assisted remote characterization; no independent expert or field validation. A bounded search cannot prove absence of prior work.",
+    "rank_run_hash": "bcdea310e4991e7db5f7821cff0723719d896a50c03f166432090ca4473e30dd"
+  },
+  {
+    "candidate_id": "MOJAVE-136000-040000",
+    "target_id": "syrtis",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "bcdea310e4991e7db5f7821cff0723719d896a50c03f166432090ca4473e30dd"
+  },
+  {
+    "candidate_id": "MOJAVE-040000-094000",
+    "target_id": "syrtis",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "bcdea310e4991e7db5f7821cff0723719d896a50c03f166432090ca4473e30dd"
+  },
+  {
+    "candidate_id": "QAIDAM-151000-061000",
+    "target_id": "syrtis",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "bcdea310e4991e7db5f7821cff0723719d896a50c03f166432090ca4473e30dd"
+  },
+  {
+    "candidate_id": "ATACAMA-163000-052000",
+    "target_id": "apollo17",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "a89922a9d7f042f4387e8d281f7f3ea0109637b59916635d2309effdb089c70a"
+  },
+  {
+    "candidate_id": "MOJAVE-070000-163000",
+    "target_id": "apollo17",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "a89922a9d7f042f4387e8d281f7f3ea0109637b59916635d2309effdb089c70a"
+  },
+  {
+    "candidate_id": "ATACAMA-073000-037000",
+    "target_id": "apollo17",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "a89922a9d7f042f4387e8d281f7f3ea0109637b59916635d2309effdb089c70a"
+  },
+  {
+    "candidate_id": "ATACAMA-037000-121000",
+    "target_id": "apollo17",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "a89922a9d7f042f4387e8d281f7f3ea0109637b59916635d2309effdb089c70a"
+  },
+  {
+    "candidate_id": "MOROCCO-037000-115000",
+    "target_id": "apollo17",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "a89922a9d7f042f4387e8d281f7f3ea0109637b59916635d2309effdb089c70a"
+  },
+  {
+    "candidate_id": "QAIDAM-043000-037000",
+    "target_id": "apollo17",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "a89922a9d7f042f4387e8d281f7f3ea0109637b59916635d2309effdb089c70a"
+  },
+  {
+    "candidate_id": "MOJAVE-067000-163000",
+    "target_id": "shackleton",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "3c25b34dfe35539bc3b7478892c392b749f9c0447175346a37a8822c3700fbf4"
+  },
+  {
+    "candidate_id": "ATACAMA-157000-052000",
+    "target_id": "shackleton",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "3c25b34dfe35539bc3b7478892c392b749f9c0447175346a37a8822c3700fbf4"
+  },
+  {
+    "candidate_id": "ATACAMA-076000-040000",
+    "target_id": "shackleton",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "3c25b34dfe35539bc3b7478892c392b749f9c0447175346a37a8822c3700fbf4"
+  },
+  {
+    "candidate_id": "MOJAVE-121000-079000",
+    "target_id": "shackleton",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "3c25b34dfe35539bc3b7478892c392b749f9c0447175346a37a8822c3700fbf4"
+  },
+  {
+    "candidate_id": "MOROCCO-037000-112000",
+    "target_id": "shackleton",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "3c25b34dfe35539bc3b7478892c392b749f9c0447175346a37a8822c3700fbf4"
+  },
+  {
+    "candidate_id": "QAIDAM-046000-037000",
+    "target_id": "shackleton",
+    "at": "2026-11-14T05:01:18.686532+00:00",
+    "claim_level": "screened_candidate",
+    "reason": "Frozen nomination or matched alternative before imagery assessment",
+    "rank_run_hash": "3c25b34dfe35539bc3b7478892c392b749f9c0447175346a37a8822c3700fbf4"
+  }
+]

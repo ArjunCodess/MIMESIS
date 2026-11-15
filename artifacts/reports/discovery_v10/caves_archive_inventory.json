@@ -1,0 +1,267 @@
+[
+  {
+    "archive": "CAVES_code.rar",
+    "bytes": 6912,
+    "sha256": "6d890c3bb5f707d02b66dea0e56a2c6d0cc32181d985ea1b709f333c1b026105",
+    "extracted_to": "data/raw/discovery_v10/caves/CAVES_code",
+    "integrity": "7-Zip extraction CRC and member sizes passed",
+    "members": [
+      {
+        "path": "point_cloud\\downsample_pc_voxel.m",
+        "bytes": 2151,
+        "directory": false
+      },
+      {
+        "path": "point_cloud\\downsample_point_cloud.m",
+        "bytes": 816,
+        "directory": false
+      },
+      {
+        "path": "point_cloud\\filter_point_cloud.m",
+        "bytes": 626,
+        "directory": false
+      },
+      {
+        "path": "point_cloud\\remove_voxel_custom.m",
+        "bytes": 3791,
+        "directory": false
+      },
+      {
+        "path": "point_cloud\\voxelize_pc_custom.m",
+        "bytes": 4639,
+        "directory": false
+      },
+      {
+        "path": "read_pts_binary_float32.m",
+        "bytes": 952,
+        "directory": false
+      },
+      {
+        "path": "write_pts_binary_float32.m",
+        "bytes": 869,
+        "directory": false
+      },
+      {
+        "path": "point_cloud",
+        "bytes": 0,
+        "directory": true
+      }
+    ],
+    "archive_path": "data/raw/discovery_v10/caves/archives/CAVES_code.rar"
+  },
+  {
+    "archive": "IndianTunnel_cave.rar",
+    "bytes": 2229654719,
+    "sha256": "5af6a272cc3847c9643ba9d5db427a5fd48b8caf87e8a9fe16056066ef9bad18",
+    "extracted_to": "data/raw/discovery_v10/caves/IndianTunnel_cave",
+    "integrity": "7-Zip extraction CRC and member sizes passed",
+    "members": [
+      {
+        "path": "Full\\IndianTunnel_full_10x.f32",
+        "bytes": 325375120,
+        "directory": false
+      },
+      {
+        "path": "Full\\IndianTunnel_full_1x.f32",
+        "bytes": 3253750976,
+        "directory": false
+      },
+      {
+        "path": "Full\\IndianTunnel_full_cloud.jpg",
+        "bytes": 205620,
+        "directory": false
+      },
+      {
+        "path": "Wall\\IndianTunnel_Wall.f32",
+        "bytes": 121513280,
+        "directory": false
+      },
+      {
+        "path": "Wall\\IndianTunnel_Wall_cloud.png",
+        "bytes": 2018056,
+        "directory": false
+      },
+      {
+        "path": "Wall\\IndianTunnel_Wall_photo.jpg",
+        "bytes": 405261,
+        "directory": false
+      },
+      {
+        "path": "Wall\\IndianTunnel_Wall_render.jpg",
+        "bytes": 273947,
+        "directory": false
+      },
+      {
+        "path": "Section2\\IndianTunnel_2.f32",
+        "bytes": 296060268,
+        "directory": false
+      },
+      {
+        "path": "Section2\\IndianTunnel_2_cloud.png",
+        "bytes": 872994,
+        "directory": false
+      },
+      {
+        "path": "Section1\\IndianTunnel_1.f32",
+        "bytes": 330412264,
+        "directory": false
+      },
+      {
+        "path": "Section1\\IndianTunnel_1_cloud.png",
+        "bytes": 1504138,
+        "directory": false
+      },
+      {
+        "path": "Full",
+        "bytes": 0,
+        "directory": true
+      },
+      {
+        "path": "Wall",
+        "bytes": 0,
+        "directory": true
+      },
+      {
+        "path": "Section2",
+        "bytes": 0,
+        "directory": true
+      },
+      {
+        "path": "Section1",
+        "bytes": 0,
+        "directory": true
+      }
+    ],
+    "archive_path": "data/raw/discovery_v10/caves/archives/IndianTunnel_cave.rar"
+  },
+  {
+    "archive": "IndianTunnel_surface.rar",
+    "bytes": 1140325469,
+    "sha256": "0c3486cb2c810e006c764aee219df52946d768ad2f28f4f6e21b448e67d1d5b1",
+    "extracted_to": "data/raw/discovery_v10/caves/IndianTunnel_surface",
+    "integrity": "7-Zip extraction CRC and member sizes passed",
+    "members": [
+      {
+        "path": "Indian_NorthSurface_cloud.jpg",
+        "bytes": 121286,
+        "directory": false
+      },
+      {
+        "path": "Indian_NorthSurface_photo.jpg",
+        "bytes": 1536222,
+        "directory": false
+      },
+      {
+        "path": "Indian_Collapse3.f32",
+        "bytes": 472661308,
+        "directory": false
+      },
+      {
+        "path": "Indian_Collapse3_cloud.png",
+        "bytes": 1745880,
+        "directory": false
+      },
+      {
+        "path": "Indian_Collapse3_photo.jpg",
+        "bytes": 59941,
+        "directory": false
+      },
+      {
+        "path": "Indian_NorthSurface_1x.f32",
+        "bytes": 1706868436,
+        "directory": false
+      },
+      {
+        "path": "Indian_NorthSurface_10x.f32",
+        "bytes": 170686852,
+        "directory": false
+      }
+    ],
+    "archive_path": "data/raw/discovery_v10/caves/archives/IndianTunnel_surface.rar"
+  },
+  {
+    "archive": "IndianTunnel_Wall_hdrpanos.rar",
+    "bytes": 183617949,
+    "sha256": "2a1964c4974a69bf411887198bc89e761d55297a48b805075f14722effa99ad0",
+    "extracted_to": "data/raw/discovery_v10/caves/IndianTunnel_Wall_hdrpanos",
+    "integrity": "7-Zip extraction CRC and member sizes passed",
+    "members": [
+      {
+        "path": "pano2.hdr",
+        "bytes": 88376833,
+        "directory": false
+      },
+      {
+        "path": "pano3.hdr",
+        "bytes": 84597894,
+        "directory": false
+      },
+      {
+        "path": "pano1.hdr",
+        "bytes": 82783615,
+        "directory": false
+      }
+    ],
+    "archive_path": "data/raw/discovery_v10/caves/archives/IndianTunnel_Wall_hdrpanos.rar"
+  },
+  {
+    "archive": "Sheepridge.rar",
+    "bytes": 344101546,
+    "sha256": "93e61c86e5255db86a15c29878eef37352f8d9473a4f7d3e2033723f6c752c6e",
+    "extracted_to": "data/raw/discovery_v10/caves/Sheepridge",
+    "integrity": "7-Zip extraction CRC and member sizes passed",
+    "members": [
+      {
+        "path": "Sheepridge.f32",
+        "bytes": 668719744,
+        "directory": false
+      },
+      {
+        "path": "Sheepridge_cloud.png",
+        "bytes": 2315911,
+        "directory": false
+      },
+      {
+        "path": "Sheepridge_photo.jpg",
+        "bytes": 2035877,
+        "directory": false
+      }
+    ],
+    "archive_path": "data/raw/discovery_v10/caves/archives/Sheepridge.rar"
+  },
+  {
+    "archive": "SheepridgeVolume.rar",
+    "bytes": 11534568,
+    "sha256": "5838c0bcb57457f36c178af87edaa5ec0912a56287eba879e968b3c1d6a0bbd0",
+    "extracted_to": "data/raw/discovery_v10/caves/SheepridgeVolume",
+    "integrity": "7-Zip extraction CRC and member sizes passed",
+    "members": [
+      {
+        "path": "SheepridgeVolume_photo.JPG",
+        "bytes": 4382299,
+        "directory": false
+      },
+      {
+        "path": "SheepridgeVolume.mat",
+        "bytes": 3266487,
+        "directory": false
+      },
+      {
+        "path": "Readme.txt",
+        "bytes": 199,
+        "directory": false
+      },
+      {
+        "path": "SheepridgeVolume.wrl",
+        "bytes": 16333589,
+        "directory": false
+      },
+      {
+        "path": "SheepridgeVolume_render.png",
+        "bytes": 327950,
+        "directory": false
+      }
+    ],
+    "archive_path": "data/raw/discovery_v10/caves/archives/SheepridgeVolume.rar"
+  }
+]

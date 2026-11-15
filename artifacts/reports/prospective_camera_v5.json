@@ -1,0 +1,369 @@
+[
+  {
+    "target_id": "prospective-01",
+    "status": "acquired",
+    "source_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "body": "Mars",
+    "capabilities_url": "https://trek.nasa.gov/tiles/Mars/EQ/CTX_beta01_uncontrolled_5m_Caltech/1.0.0/WMTSCapabilities.xml",
+    "capabilities_sha256": "16919bec258e3292e07f4a1b42d9d847accc929a0d93fa6cb0989b2ba50aafcf",
+    "tiles": [
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/102/357",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/102-357.tile",
+        "sha256": "35c9f7501e46ac069c41359a42455df1c3b43adbee5ef9699d6457f12abc6e85"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/102/358",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/102-358.tile",
+        "sha256": "92279ab8d60549aa2f4c124c7441d583414450728235a36d47d9348ebcdef4cc"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/102/359",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/102-359.tile",
+        "sha256": "af180c52ba82d918046647daa65ff7f2bf7c65d367da07479e8b54003b159f0b"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/103/357",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/103-357.tile",
+        "sha256": "0a7158cadb1ebfc338dde34a2c90755894726088ebd36dd6872cc94cf841363e"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/103/358",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/103-358.tile",
+        "sha256": "07e83c930a4633c40cf52fb6ae4d2fe6c568a1ab094851726082508e969c323b"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/103/359",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/103-359.tile",
+        "sha256": "d60aced83314911ccc76540b762c17ff0c8e216cbfd0705c0c042a7800e852b8"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/104/357",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/104-357.tile",
+        "sha256": "c0d99ebbfacfa074e0126db9c507583e1b849beeb6e23c2c79493361a47c7cd4"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/104/358",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/104-358.tile",
+        "sha256": "0b3986e477d0cc419799cd38d95863e7ac69c5a7efb5586594d0b751703bdbb5"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/104/359",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/104-359.tile",
+        "sha256": "c3921ebe1444c285551447b7e6c06a7ce6ab97d6cf5f84b862bcaa76e3ec2b0d"
+      }
+    ],
+    "image": "prospective-01-camera.png",
+    "extent_m": 80000,
+    "output_spacing_m": 100,
+    "source_equatorial_spacing_m": 81.39685555718184,
+    "valid_alpha_fraction": 0.9698765625,
+    "projection": "AEQD 17.08833719414728, 71.79562793934451; R=3396000 m",
+    "acquired_at": "2026-11-14T06:04:56.709315+00:00",
+    "sensor": "MRO CTX camera",
+    "independence": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+    "interpretation_status": "not_assessed",
+    "rights": "NASA/JPL/Caltech Murray Lab/MSSS"
+  },
+  {
+    "target_id": "prospective-02",
+    "status": "acquired",
+    "source_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "body": "Mars",
+    "capabilities_url": "https://trek.nasa.gov/tiles/Mars/EQ/CTX_beta01_uncontrolled_5m_Caltech/1.0.0/WMTSCapabilities.xml",
+    "capabilities_sha256": "16919bec258e3292e07f4a1b42d9d847accc929a0d93fa6cb0989b2ba50aafcf",
+    "tiles": [
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/117/354",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/117-354.tile",
+        "sha256": "d21f66f38b00b02ce4b51d50f5b47e27c40538678571e8ebc823a927d08c713d"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/117/355",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/117-355.tile",
+        "sha256": "30e491f3bf28a5990ada94bd33bdfb2cc45b515755823f60c2a91c8fb76863f6"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/117/356",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/117-356.tile",
+        "sha256": "17a9a8c5bee55e1b240b4ceef753b26fad844667ad057c33084f3cf1ed07772b"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/118/354",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/118-354.tile",
+        "sha256": "88e014dd7d7a63ed0009564ea48fbaa71e2d163e1f8344466fc38c89af6f0e59"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/118/355",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/118-355.tile",
+        "sha256": "2af4c062dbaff4877f23d5d85eee1cb5d02f2006886bf5382be415a3f62dbb23"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/118/356",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/118-356.tile",
+        "sha256": "0906f7406632f7b8863c480d332025c6305d9253e359bc9d0efbd8f4216d9eae"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/119/354",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/119-354.tile",
+        "sha256": "49be563d0bcce2b768b29e330dc25bcb8fec671297f7ce4861733c833e37ea49"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/119/355",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/119-355.tile",
+        "sha256": "36c6d12c50325ae4242c93a7e93eaf767dd4fe560e8a53c9b8173ece3eb44e2b"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/119/356",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/119-356.tile",
+        "sha256": "d172447836350b412ddaf1a887c33152c7a9f2f0162812c724f62e6c564c8c73"
+      }
+    ],
+    "image": "prospective-02-camera.png",
+    "extent_m": 80000,
+    "output_spacing_m": 100,
+    "source_equatorial_spacing_m": 81.39685555718184,
+    "valid_alpha_fraction": 1.0,
+    "projection": "AEQD 6.926660071175803, 70.03249181924662; R=3396000 m",
+    "acquired_at": "2026-11-14T06:05:00.633018+00:00",
+    "sensor": "MRO CTX camera",
+    "independence": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+    "interpretation_status": "not_assessed",
+    "rights": "NASA/JPL/Caltech Murray Lab/MSSS"
+  },
+  {
+    "target_id": "prospective-03",
+    "status": "acquired",
+    "source_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "body": "Mars",
+    "capabilities_url": "https://trek.nasa.gov/tiles/Mars/EQ/CTX_beta01_uncontrolled_5m_Caltech/1.0.0/WMTSCapabilities.xml",
+    "capabilities_sha256": "16919bec258e3292e07f4a1b42d9d847accc929a0d93fa6cb0989b2ba50aafcf",
+    "tiles": [
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/123/263",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/123-263.tile",
+        "sha256": "4607d02993a4ece5baca8599777212ba2be5db99a84ef07d4f491d93a4a26e07"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/123/264",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/123-264.tile",
+        "sha256": "69b38a8d8d0909f9b98c465f675892f441e3f7a9e8d2cfa8f956c479fb4ed493"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/123/265",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/123-265.tile",
+        "sha256": "c188b5f665ced352336deeaafe594a612105208e47181b9f948df6e9911e5fd1"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/124/263",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/124-263.tile",
+        "sha256": "0d18f940c327c182b85524639aaa133db2966189eee507d79985f1c531ddae74"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/124/264",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/124-264.tile",
+        "sha256": "f6bf43ffc395a239ae9cce8ac587cf5cdd84cd20b259d2bb605b1d8950b22f01"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/124/265",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/124-265.tile",
+        "sha256": "deed4f7e0232c93f2bae2662a51a30c63acf9b47aaa5ba06077ea02311e75318"
+      }
+    ],
+    "image": "prospective-03-camera.png",
+    "extent_m": 80000,
+    "output_spacing_m": 100,
+    "source_equatorial_spacing_m": 81.39685555718184,
+    "valid_alpha_fraction": 1.0,
+    "projection": "AEQD 2.794149672623606, 5.762734100650954; R=3396000 m",
+    "acquired_at": "2026-11-14T06:05:04.777733+00:00",
+    "sensor": "MRO CTX camera",
+    "independence": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+    "interpretation_status": "not_assessed",
+    "rights": "NASA/JPL/Caltech Murray Lab/MSSS"
+  },
+  {
+    "target_id": "prospective-04",
+    "status": "acquired",
+    "source_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "body": "Mars",
+    "capabilities_url": "https://trek.nasa.gov/tiles/Mars/EQ/CTX_beta01_uncontrolled_5m_Caltech/1.0.0/WMTSCapabilities.xml",
+    "capabilities_sha256": "16919bec258e3292e07f4a1b42d9d847accc929a0d93fa6cb0989b2ba50aafcf",
+    "tiles": [
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/123/258",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/123-258.tile",
+        "sha256": "d815cef50c6ebb7eeb6398d25a91e98e2d009df2efd13b3cb742dbc999271350"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/123/259",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/123-259.tile",
+        "sha256": "699ad7c738f9a759ae87ea77e1ef94b06a894b71fd3a41deb91e4effa434b228"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/123/260",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/123-260.tile",
+        "sha256": "5a17b1ff95d6b48ca277f6fc7fb4140b9b2f2e894055b34487d42112e0974f78"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/124/258",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/124-258.tile",
+        "sha256": "cee40d723de1f859787216e138ef773957960bd5d1bc46c8133c654e4a17e79e"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/124/259",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/124-259.tile",
+        "sha256": "e12ebbefaa802b6a67410f205f66f03a71a0448127be113eae986b80b42f7ca9"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/124/260",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/124-260.tile",
+        "sha256": "7b05a2eb9dce69d85270e4f71c62b6faa3655e6200edd933b13c776332ab9dc3"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/125/258",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/125-258.tile",
+        "sha256": "cec6da37357c22f9c676b36980c30df3a1042885643c872e37650d2ae22b1f11"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/125/259",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/125-259.tile",
+        "sha256": "5476b6de294576c218c1494b03a28fd916c6274044615960025cf20f5e19cc4c"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/125/260",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/125-260.tile",
+        "sha256": "2e635cf4c2e8b6c583f2c1fde2186770efaf0c22c00d18607056e215a963250f"
+      }
+    ],
+    "image": "prospective-04-camera.png",
+    "extent_m": 80000,
+    "output_spacing_m": 100,
+    "source_equatorial_spacing_m": 81.39685555718184,
+    "valid_alpha_fraction": 1.0,
+    "projection": "AEQD 2.3499676824828395, 2.726136756087241; R=3396000 m",
+    "acquired_at": "2026-11-14T06:05:10.175480+00:00",
+    "sensor": "MRO CTX camera",
+    "independence": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+    "interpretation_status": "not_assessed",
+    "rights": "NASA/JPL/Caltech Murray Lab/MSSS"
+  },
+  {
+    "target_id": "prospective-05",
+    "status": "acquired",
+    "source_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "body": "Mars",
+    "capabilities_url": "https://trek.nasa.gov/tiles/Mars/EQ/CTX_beta01_uncontrolled_5m_Caltech/1.0.0/WMTSCapabilities.xml",
+    "capabilities_sha256": "16919bec258e3292e07f4a1b42d9d847accc929a0d93fa6cb0989b2ba50aafcf",
+    "tiles": [
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/76/266",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/76-266.tile",
+        "sha256": "058ccdc3b2e3837023493c893d5a6be7a0b2d1f34c288b7546aa5a99f9e00896"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/76/267",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/76-267.tile",
+        "sha256": "866790a2d415f88fb98f6a96beae48a5c2e95b1c6770dbeb13badce4f3375e4b"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/76/268",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/76-268.tile",
+        "sha256": "cb490bf6d2c1026b74b9cfc79333094b095399babd3e148209f06062c38e3e13"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/77/266",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/77-266.tile",
+        "sha256": "10d10031477e400c5da5843b27edc540640de09fb170301dbdee223b619f0484"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/77/267",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/77-267.tile",
+        "sha256": "b065109e7ddcf03625536ba0e17fc7ea23f3641d1ae489a1021448f069ca9ca6"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/77/268",
+        "status": "corrupt_source_tile",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/77-268.rejected",
+        "sha256": "4c88b03c2770d397a2355974e0edd128e95d4ef43ceb4455991cf1f65be1abc1"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/78/266",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/78-266.tile",
+        "sha256": "841636a49d0d587e18e558ceed4da5979f3b524a2a09fb1c18f16a978e051651"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/78/267",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/78-267.tile",
+        "sha256": "93a194c3bb80e8eb1d9e9d801e7c836b47db3354d9aa2e1ebf986f472becbdaa"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/78/268",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/78-268.tile",
+        "sha256": "f5a4dc8468abeb8842dbc0b2dca558d934b72e5f387e972a0df9c6eb9b83a0c3"
+      }
+    ],
+    "image": "prospective-05-camera.png",
+    "extent_m": 80000,
+    "output_spacing_m": 100,
+    "source_equatorial_spacing_m": 81.39685555718184,
+    "valid_alpha_fraction": 0.7814578125,
+    "projection": "AEQD 35.47498853481284, 8.302160148237443; R=3396000 m",
+    "acquired_at": "2026-11-14T06:05:17.969749+00:00",
+    "sensor": "MRO CTX camera",
+    "independence": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+    "interpretation_status": "not_assessed",
+    "rights": "NASA/JPL/Caltech Murray Lab/MSSS"
+  },
+  {
+    "target_id": "prospective-06",
+    "status": "acquired",
+    "source_id": "CTX_beta01_uncontrolled_5m_Caltech",
+    "body": "Mars",
+    "capabilities_url": "https://trek.nasa.gov/tiles/Mars/EQ/CTX_beta01_uncontrolled_5m_Caltech/1.0.0/WMTSCapabilities.xml",
+    "capabilities_sha256": "16919bec258e3292e07f4a1b42d9d847accc929a0d93fa6cb0989b2ba50aafcf",
+    "tiles": [
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/79/354",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/79-354.tile",
+        "sha256": "06d35bb4fa6ee6f54a923b4651178659f3f17506d516911a42f0f8442c91247b"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/79/355",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/79-355.tile",
+        "sha256": "f385b5a031d68ee60569f822225d2813c15dd00b2252a332f80b0654b110c023"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/79/356",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/79-356.tile",
+        "sha256": "14e4b85b46134c3204296218552782b5661ecc233c4850cbe4bcb65cd67b4095"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/80/354",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/80-354.tile",
+        "sha256": "ceb5d32845351ecc9326f7c6452e826b3f4655eecbb1b3a1d3dceef0117af582"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/80/355",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/80-355.tile",
+        "sha256": "958b79f1f5ace944a14a794acfb7aee99587d8bd694268f84a55d7a75aac9bdf"
+      },
+      {
+        "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/8/80/356",
+        "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/80-356.tile",
+        "sha256": "3ed77ec6ae3a9ad0ebf9cc63d87a0b3b5f5cd14891f017ce49af1a508ca9b165"
+      }
+    ],
+    "image": "prospective-06-camera.png",
+    "extent_m": 80000,
+    "output_spacing_m": 100,
+    "source_equatorial_spacing_m": 81.39685555718184,
+    "valid_alpha_fraction": 1.0,
+    "projection": "AEQD 33.759933937485634, 70.17773238001442; R=3396000 m",
+    "acquired_at": "2026-11-14T06:05:22.098134+00:00",
+    "sensor": "MRO CTX camera",
+    "independence": "Separate optical acquisition from MOLA altimetry; beta mosaic is uncontrolled; absolute co-registration accuracy is not validated",
+    "interpretation_status": "not_assessed",
+    "rights": "NASA/JPL/Caltech Murray Lab/MSSS"
+  }
+]

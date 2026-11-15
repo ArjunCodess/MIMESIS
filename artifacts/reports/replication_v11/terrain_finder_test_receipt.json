@@ -1,0 +1,6 @@
+{
+  "command": "upstream test_similarity.py from pinned local snapshot",
+  "exit_code": 0,
+  "stdout": "................                                                         [100%]\n16 passed in 0.05s\n",
+  "stderr": ""
+}

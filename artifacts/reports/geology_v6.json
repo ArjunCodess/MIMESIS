@@ -1,0 +1,508 @@
+{
+  "id": "geology-reference-intake-v6",
+  "source": {
+    "title": "Geologic map of Jezero crater and the Nili Planum region, Mars",
+    "authors": [
+      "Vivian Z. Sun",
+      "Kathryn M. Stack"
+    ],
+    "year": 2020,
+    "url": "https://doi.org/10.3133/sim3464",
+    "publisher_url": "https://pubs.usgs.gov/sim/3464/",
+    "download_base_url": "https://pubs.usgs.gov/sim/3464/",
+    "publication_scale": 75000,
+    "digitizing_scale": 20000,
+    "body": "Mars",
+    "body_radius_m": 3396190,
+    "latitude_convention": "planetocentric",
+    "longitude_convention": "east-positive",
+    "geodatabase": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb",
+    "layers": [
+      "MapBoundary",
+      "GeoContacts",
+      "GeoUnits_v1"
+    ],
+    "files": [
+      {
+        "name": "sim3464_database.zip",
+        "bytes": 349336873,
+        "sha256": "a88bd53a5573743cc4a20036c10e585106d08a433ad2f34af269e9cea1529f87",
+        "verified": true,
+        "path": "data/raw/mars/geology/sim3464/sim3464_database.zip"
+      },
+      {
+        "name": "sim3464.pdf",
+        "bytes": 36406378,
+        "sha256": "51da76ebbaafc36e31fab13766832a8613bcda5e1b6b188532f8d25f8d74df2f",
+        "verified": true,
+        "path": "data/raw/mars/geology/sim3464/sim3464.pdf"
+      },
+      {
+        "name": "sim3464_pamphlet.pdf",
+        "bytes": 728435,
+        "sha256": "6bba9b47ae894ab79170dbbc977e82f2217cccd13929de9dfd74ab85c0677bac",
+        "verified": true,
+        "path": "data/raw/mars/geology/sim3464/sim3464_pamphlet.pdf"
+      },
+      {
+        "name": "sim3464_metadata.xml",
+        "bytes": 20924,
+        "sha256": "e4ede0b7465190319c81babfb9359d4e84710cb82deebe331219ef26130927fd",
+        "verified": true,
+        "path": "data/raw/mars/geology/sim3464/sim3464_metadata.xml"
+      },
+      {
+        "name": "sim3464_metadata.txt",
+        "bytes": 20767,
+        "sha256": "24f129b9ae7ac670f620ea5397860703f1051e53a10ea8f3871f7ed82fb5acd5",
+        "verified": true,
+        "path": "data/raw/mars/geology/sim3464/sim3464_metadata.txt"
+      }
+    ],
+    "extraction": {
+      "archive_sha256": "a88bd53a5573743cc4a20036c10e585106d08a433ad2f34af269e9cea1529f87",
+      "archive_members": 181,
+      "extracted_members": 128,
+      "extracted_bytes": 30952630,
+      "selection": "Geodatabase and CoordinateSystems only; supplied raster basemaps not extracted"
+    },
+    "native_crs_wkt": "PROJCRS[\"MTM_clon77.5E\",BASEGEOGCRS[\"Mars_2000_(Sphere)\",DATUM[\"Mars_2000_(Sphere)\",ELLIPSOID[\"Mars_2000_(Sphere)\",3396190,0,LENGTHUNIT[\"metre\",1]],ID[\"ESRI\",106971]],PRIMEM[\"Reference_Meridian\",0,ANGLEUNIT[\"Degree\",0.0174532925199433]]],CONVERSION[\"unnamed\",METHOD[\"Transverse Mercator\",ID[\"EPSG\",9807]],PARAMETER[\"Latitude of natural origin\",0,ANGLEUNIT[\"Degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",77.5,ANGLEUNIT[\"Degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"Scale factor at natural origin\",1,SCALEUNIT[\"unity\",1],ID[\"EPSG\",8805]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"Meter\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"Meter\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",east,ORDER[1],LENGTHUNIT[\"Meter\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"Meter\",1]]]",
+    "native_layer_counts": {
+      "MapBoundary": 1,
+      "GeoContacts": 2496,
+      "GeoUnits_v1": 1304
+    },
+    "native_contact_types": {
+      "boundary": 1,
+      "certain": 1666,
+      "approximate": 829
+    },
+    "analytical_geometry_repairs": [
+      {
+        "source_fid": 666,
+        "reason": "Ring Self-intersection[-21522.3252644166 1077592.80853944]",
+        "method": "shapely.make_valid on analytical copy only",
+        "original_area_m2": 2156657.0778694698,
+        "analytical_area_m2": 2156657.0778694646,
+        "area_change_m2": -5.122274160385132e-09,
+        "analytical_geometry_type": "Polygon"
+      },
+      {
+        "source_fid": 1155,
+        "reason": "Ring Self-intersection[-37977.3708333671 1085915.33964684]",
+        "method": "shapely.make_valid on analytical copy only",
+        "original_area_m2": 260492440.46399766,
+        "analytical_area_m2": 260492440.463997,
+        "area_change_m2": -6.556510925292969e-07,
+        "analytical_geometry_type": "Polygon"
+      }
+    ]
+  },
+  "reference_policy": {
+    "role": "previously inspected Jezero calibration reference",
+    "blind_target_truth": false,
+    "registration_offset_range_m": [
+      100,
+      200
+    ],
+    "registration_qualifier": "Metadata describes random offsets of about 100-200 m relative to the July 2020 controlled CTX mosaic. This is not a confidence interval or a validated geological tolerance.",
+    "geological_tolerance_m": null,
+    "automatic_accuracy_assessment_allowed": false,
+    "requirements_for_future_contact_scoring": "Independently check registration to the evaluation imagery, justify geological tolerance for each certainty class, obtain independent authored reference/reviewer evidence, then freeze the evaluation protocol.",
+    "contact_semantics": {
+      "certain": "Two units are clearly distinguished at map scale. This does not certify absolute position.",
+      "approximate": "A transition is interpreted, but its exact location is obscured or uncertain at map scale.",
+      "inferred": "Retain separately if a future source contains it; SIM3464 has no records with this TYPE.",
+      "boundary": "Map frame, excluded from geological contact statistics."
+    },
+    "linework_method": {
+      "vertex_spacing_m": 75,
+      "smoothing_tolerance_m": 40,
+      "citation": "Pamphlet printed page 4, PDF page 8"
+    },
+    "crs_conflict": "Pamphlet methodology says central meridian 77.3 E, but all acquired vector layers, supplied PRJ and metadata declare 77.5 E. Calculations and exports use the actual 77.5 E vector CRS; no coordinate relabeling or manual shift is applied."
+  },
+  "jezero": {
+    "id": "jezero",
+    "body": "Mars",
+    "latitude": 18.38,
+    "longitude_east": 77.58,
+    "latitude_convention": "planetocentric",
+    "body_radius_m": 3396190,
+    "side_m": 20000,
+    "support_area_km2": 400.0,
+    "analysis_crs_wkt": "PROJCRS[\"unknown\",BASEGEOGCRS[\"unknown\",DATUM[\"unknown\",ELLIPSOID[\"unknown\",3396190,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Reference meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unknown\",METHOD[\"Azimuthal Equidistant\",ID[\"EPSG\",1125]],PARAMETER[\"Latitude of natural origin\",18.38,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",77.58,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"(E)\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"(N)\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+    "map_coverage_fraction": 1.0,
+    "mapped_area_km2": 400.0,
+    "center_to_map_distance_km": 0.0,
+    "source_url": "https://doi.org/10.3133/sim3464",
+    "status": "calibration_characterization",
+    "unit_class_count": 7,
+    "unit_classes": [
+      {
+        "symbol": "Aeb",
+        "area_km2": 17.74796794617621,
+        "polygon_feature_count": 20,
+        "source_names": [
+          "Eolian bedform unit"
+        ],
+        "fraction_of_support": 0.044369919865440526
+      },
+      {
+        "symbol": "NHjf2",
+        "area_km2": 9.340024129736955,
+        "polygon_feature_count": 6,
+        "source_names": [
+          "Jezero fan 2 unit"
+        ],
+        "fraction_of_support": 0.02335006032434239
+      },
+      {
+        "symbol": "Njf",
+        "area_km2": 269.8979420492509,
+        "polygon_feature_count": 4,
+        "source_names": [
+          "Jezero floor unit"
+        ],
+        "fraction_of_support": 0.6747448551231272
+      },
+      {
+        "symbol": "Nle",
+        "area_km2": 82.02715705335778,
+        "polygon_feature_count": 14,
+        "source_names": [
+          "Lower etched unit"
+        ],
+        "fraction_of_support": 0.20506789263339445
+      },
+      {
+        "symbol": "Nue",
+        "area_km2": 14.998835489094473,
+        "polygon_feature_count": 11,
+        "source_names": [
+          "Upper etched unit"
+        ],
+        "fraction_of_support": 0.03749708872273618
+      },
+      {
+        "symbol": "cr",
+        "area_km2": 3.885627585436012,
+        "polygon_feature_count": 2,
+        "source_names": [
+          "Crater rim unit"
+        ],
+        "fraction_of_support": 0.00971406896359003
+      },
+      {
+        "symbol": "su",
+        "area_km2": 2.1024457469480717,
+        "polygon_feature_count": 2,
+        "source_names": [
+          "Smooth unit, undivided"
+        ],
+        "fraction_of_support": 0.0052561143673701795
+      }
+    ],
+    "unit_polygon_feature_count": 59,
+    "unit_area_sum_km2": 400.00000000000034,
+    "unit_union_area_km2": 400.00000000000006,
+    "unit_overlap_area_km2": 2.9802322387695315e-13,
+    "unit_gap_within_map_km2": 0.0,
+    "contacts": {
+      "by_certainty": {
+        "approximate": {
+          "source_feature_count": 24,
+          "length_km": 42.956569931568744
+        },
+        "certain": {
+          "source_feature_count": 79,
+          "length_km": 205.1712684357155
+        }
+      },
+      "total_length_km": 248.12783836728423,
+      "source_feature_count": 103,
+      "density_km_per_mapped_km2": 0.6203195959182106,
+      "excluded_map_frame_boundary": {
+        "source_feature_count": 0,
+        "length_km": 0.0
+      },
+      "interpretation": "Mapped line length divided by mapped area; not physical fracture density or contact accuracy."
+    },
+    "transects": [
+      {
+        "id": "west_to_east",
+        "length_km": 20.0,
+        "distinct_point_intersections": 8,
+        "crossings": [
+          {
+            "distance_from_start_m": 306.229929,
+            "source_fids": [
+              4066
+            ],
+            "contact_types": [
+              "certain"
+            ]
+          },
+          {
+            "distance_from_start_m": 2568.01363,
+            "source_fids": [
+              4066
+            ],
+            "contact_types": [
+              "certain"
+            ]
+          },
+          {
+            "distance_from_start_m": 2846.436862,
+            "source_fids": [
+              4063
+            ],
+            "contact_types": [
+              "certain"
+            ]
+          },
+          {
+            "distance_from_start_m": 2928.452048,
+            "source_fids": [
+              4066
+            ],
+            "contact_types": [
+              "certain"
+            ]
+          },
+          {
+            "distance_from_start_m": 9191.385394,
+            "source_fids": [
+              2710
+            ],
+            "contact_types": [
+              "certain"
+            ]
+          },
+          {
+            "distance_from_start_m": 9623.587792,
+            "source_fids": [
+              2710
+            ],
+            "contact_types": [
+              "certain"
+            ]
+          },
+          {
+            "distance_from_start_m": 14406.042655,
+            "source_fids": [
+              2765
+            ],
+            "contact_types": [
+              "certain"
+            ]
+          },
+          {
+            "distance_from_start_m": 14533.810197,
+            "source_fids": [
+              2765
+            ],
+            "contact_types": [
+              "certain"
+            ]
+          }
+        ],
+        "overlapping_source_fids": [],
+        "interpretation": "Geometric intersections of existing linework, not field-verified transitions or mapping performance."
+      },
+      {
+        "id": "south_to_north",
+        "length_km": 20.0,
+        "distinct_point_intersections": 4,
+        "crossings": [
+          {
+            "distance_from_start_m": 3286.859889,
+            "source_fids": [
+              2729
+            ],
+            "contact_types": [
+              "certain"
+            ]
+          },
+          {
+            "distance_from_start_m": 4437.007639,
+            "source_fids": [
+              3456
+            ],
+            "contact_types": [
+              "certain"
+            ]
+          },
+          {
+            "distance_from_start_m": 8873.581496,
+            "source_fids": [
+              2710
+            ],
+            "contact_types": [
+              "certain"
+            ]
+          },
+          {
+            "distance_from_start_m": 9494.837052,
+            "source_fids": [
+              2710
+            ],
+            "contact_types": [
+              "certain"
+            ]
+          }
+        ],
+        "overlapping_source_fids": [],
+        "interpretation": "Geometric intersections of existing linework, not field-verified transitions or mapping performance."
+      }
+    ]
+  },
+  "prospective_targets": [
+    {
+      "id": "prospective-01",
+      "body": "Mars",
+      "latitude": 17.08833719414728,
+      "longitude_east": 71.79562793934451,
+      "latitude_convention": "planetocentric",
+      "body_radius_m": 3396190.0,
+      "side_m": 20000.0,
+      "support_area_km2": 400.0,
+      "analysis_crs_wkt": "PROJCRS[\"unknown\",BASEGEOGCRS[\"unknown\",DATUM[\"unknown\",ELLIPSOID[\"unknown\",3396190,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Reference meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unknown\",METHOD[\"Azimuthal Equidistant\",ID[\"EPSG\",1125]],PARAMETER[\"Latitude of natural origin\",17.0883371941473,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",71.7956279393445,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"(E)\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"(N)\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+      "map_coverage_fraction": 0.0,
+      "mapped_area_km2": 0.0,
+      "center_to_map_distance_km": 285.37059520104407,
+      "source_url": "https://doi.org/10.3133/sim3464",
+      "status": "outside_acquired_reference_coverage",
+      "unit_class_count": null,
+      "unit_classes": null,
+      "contacts": null,
+      "transects": null,
+      "interpretation": "No SIM3464 reference coverage. Contact absence and target geology are unknown."
+    },
+    {
+      "id": "prospective-02",
+      "body": "Mars",
+      "latitude": 6.926660071175803,
+      "longitude_east": 70.03249181924662,
+      "latitude_convention": "planetocentric",
+      "body_radius_m": 3396190.0,
+      "side_m": 20000.0,
+      "support_area_km2": 400.0,
+      "analysis_crs_wkt": "PROJCRS[\"unknown\",BASEGEOGCRS[\"unknown\",DATUM[\"unknown\",ELLIPSOID[\"unknown\",3396190,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Reference meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unknown\",METHOD[\"Azimuthal Equidistant\",ID[\"EPSG\",1125]],PARAMETER[\"Latitude of natural origin\",6.9266600711758,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",70.0324918192466,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"(E)\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"(N)\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+      "map_coverage_fraction": 0.0,
+      "mapped_area_km2": 0.0,
+      "center_to_map_distance_km": 748.9081360104784,
+      "source_url": "https://doi.org/10.3133/sim3464",
+      "status": "outside_acquired_reference_coverage",
+      "unit_class_count": null,
+      "unit_classes": null,
+      "contacts": null,
+      "transects": null,
+      "interpretation": "No SIM3464 reference coverage. Contact absence and target geology are unknown."
+    },
+    {
+      "id": "prospective-03",
+      "body": "Mars",
+      "latitude": 2.794149672623606,
+      "longitude_east": 5.762734100650954,
+      "latitude_convention": "planetocentric",
+      "body_radius_m": 3396190.0,
+      "side_m": 20000.0,
+      "support_area_km2": 400.0,
+      "analysis_crs_wkt": "PROJCRS[\"unknown\",BASEGEOGCRS[\"unknown\",DATUM[\"unknown\",ELLIPSOID[\"unknown\",3396190,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Reference meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unknown\",METHOD[\"Azimuthal Equidistant\",ID[\"EPSG\",1125]],PARAMETER[\"Latitude of natural origin\",2.79414967262361,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",5.76273410065095,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"(E)\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"(N)\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+      "map_coverage_fraction": 0.0,
+      "mapped_area_km2": 0.0,
+      "center_to_map_distance_km": 4214.051238428654,
+      "source_url": "https://doi.org/10.3133/sim3464",
+      "status": "outside_acquired_reference_coverage",
+      "unit_class_count": null,
+      "unit_classes": null,
+      "contacts": null,
+      "transects": null,
+      "interpretation": "No SIM3464 reference coverage. Contact absence and target geology are unknown."
+    },
+    {
+      "id": "prospective-04",
+      "body": "Mars",
+      "latitude": 2.3499676824828395,
+      "longitude_east": 2.726136756087241,
+      "latitude_convention": "planetocentric",
+      "body_radius_m": 3396190.0,
+      "side_m": 20000.0,
+      "support_area_km2": 400.0,
+      "analysis_crs_wkt": "PROJCRS[\"unknown\",BASEGEOGCRS[\"unknown\",DATUM[\"unknown\",ELLIPSOID[\"unknown\",3396190,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Reference meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unknown\",METHOD[\"Azimuthal Equidistant\",ID[\"EPSG\",1125]],PARAMETER[\"Latitude of natural origin\",2.34996768248284,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",2.72613675608724,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"(E)\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"(N)\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+      "map_coverage_fraction": 0.0,
+      "mapped_area_km2": 0.0,
+      "center_to_map_distance_km": 4393.330029020888,
+      "source_url": "https://doi.org/10.3133/sim3464",
+      "status": "outside_acquired_reference_coverage",
+      "unit_class_count": null,
+      "unit_classes": null,
+      "contacts": null,
+      "transects": null,
+      "interpretation": "No SIM3464 reference coverage. Contact absence and target geology are unknown."
+    },
+    {
+      "id": "prospective-05",
+      "body": "Mars",
+      "latitude": 35.47498853481284,
+      "longitude_east": 8.302160148237443,
+      "latitude_convention": "planetocentric",
+      "body_radius_m": 3396190.0,
+      "side_m": 20000.0,
+      "support_area_km2": 400.0,
+      "analysis_crs_wkt": "PROJCRS[\"unknown\",BASEGEOGCRS[\"unknown\",DATUM[\"unknown\",ELLIPSOID[\"unknown\",3396190,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Reference meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unknown\",METHOD[\"Azimuthal Equidistant\",ID[\"EPSG\",1125]],PARAMETER[\"Latitude of natural origin\",35.4749885348128,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",8.30216014823744,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"(E)\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"(N)\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+      "map_coverage_fraction": 0.0,
+      "mapped_area_km2": 0.0,
+      "center_to_map_distance_km": 3677.593757676594,
+      "source_url": "https://doi.org/10.3133/sim3464",
+      "status": "outside_acquired_reference_coverage",
+      "unit_class_count": null,
+      "unit_classes": null,
+      "contacts": null,
+      "transects": null,
+      "interpretation": "No SIM3464 reference coverage. Contact absence and target geology are unknown."
+    },
+    {
+      "id": "prospective-06",
+      "body": "Mars",
+      "latitude": 33.759933937485634,
+      "longitude_east": 70.17773238001442,
+      "latitude_convention": "planetocentric",
+      "body_radius_m": 3396190.0,
+      "side_m": 20000.0,
+      "support_area_km2": 400.0,
+      "analysis_crs_wkt": "PROJCRS[\"unknown\",BASEGEOGCRS[\"unknown\",DATUM[\"unknown\",ELLIPSOID[\"unknown\",3396190,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Reference meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unknown\",METHOD[\"Azimuthal Equidistant\",ID[\"EPSG\",1125]],PARAMETER[\"Latitude of natural origin\",33.7599339374856,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",70.1777323800144,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"(E)\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"(N)\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+      "map_coverage_fraction": 0.0,
+      "mapped_area_km2": 0.0,
+      "center_to_map_distance_km": 958.9492694371733,
+      "source_url": "https://doi.org/10.3133/sim3464",
+      "status": "outside_acquired_reference_coverage",
+      "unit_class_count": null,
+      "unit_classes": null,
+      "contacts": null,
+      "transects": null,
+      "interpretation": "No SIM3464 reference coverage. Contact absence and target geology are unknown."
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "data/derived/geology_v6/geology_v6_sim3464_native.gpkg",
+      "public_url": "/research/geology_v6_sim3464_native.gpkg",
+      "bytes": 35786752,
+      "sha256": "6088b0f55c0add53273c44f322b320b1a9cc3c179d34c74ab04e4a335e64c593"
+    },
+    {
+      "path": "data/derived/geology_v6/geology_v6_jezero_mars.geojson",
+      "public_url": "/research/geology_v6_jezero_mars.geojson",
+      "bytes": 7948217,
+      "sha256": "4527e66d3c9953add362c4df38c4a773acd281ad7435018ce91b3c13830ffcd6"
+    }
+  ],
+  "reproduce": "python scripts/characterize_geology.py",
+  "lineage": {
+    "config_sha256": "e30b5592852666aa2644964e0ec81889ddf245e0cc6448606f90fad387243921",
+    "module_sha256": "c19a4a88040a32b093462162c8f44e73c0317b86c510142868d89b252d8034a4",
+    "runner_sha256": "6413345b242757058001092166416d52b7c0b1cd679dc5fb0fec431bba408706"
+  }
+}

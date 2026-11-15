@@ -1,0 +1,33 @@
+{
+  "url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/TRANQPIT1/NAC_DTM_TRANQPIT1_CONF.IMG",
+  "final_url": "https://pds.mcp.nasa.gov/data/store/img/lunar_reconnaissance_orbiter/pds4/lroc/lro-l-lroc-5-rdr/LROLRC_2001/DATA/SDP/NAC_DTM/TRANQPIT1/NAC_DTM_TRANQPIT1_CONF.IMG",
+  "path": "data\\raw\\discovery_v10\\moon_quality\\NAC_DTM_TRANQPIT1_CONF.IMG",
+  "sha256": "d7bc8f5e02fce55b229fe5a2114ae63cf702e4a7f225c256bf6a8dd1ca1ffab1",
+  "shape": [
+    14388,
+    2372
+  ],
+  "values": [
+    0,
+    3,
+    4,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "counts": [
+    2949188,
+    1931781,
+    25,
+    2776022,
+    6491047,
+    9574215,
+    8304701,
+    2101031,
+    326
+  ],
+  "native_class_contract_resolved": true
+}

@@ -1,0 +1,61 @@
+{
+  "state": "registered_source_available_feature_qualification_pending",
+  "source": "data/raw/discovery_v10/earth/USGS_1M_12_x29y482_ID_SouthernGaps_D23.tif",
+  "sha256": "af95a67c1cba52f0ee19a5ad25754bd9ccc6f8d5bbba7396032e1ab43f16562e",
+  "source_catalogue": "https://www.sciencebase.gov/catalog/item/69e6ddc8b66b01f903b6b08a",
+  "actual_crs_wkt": "PROJCS[\"NAD83 / UTM zone 12N\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-111],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"26912\"]]",
+  "pixel_m": [
+    1.0,
+    1.0
+  ],
+  "search_crop_bounds_native_m": [
+    295000,
+    4812600,
+    295650,
+    4813400
+  ],
+  "search_crop_shape": [
+    800,
+    650
+  ],
+  "valid_fraction": 1.0,
+  "elevation_range_m": [
+    1747.4208984375,
+    1766.72998046875
+  ],
+  "support": [
+    {
+      "gaussian_sigma_m": 10,
+      "square_mask_radius_m": 31,
+      "usable_cells_within_crop": 433944
+    },
+    {
+      "gaussian_sigma_m": 20,
+      "square_mask_radius_m": 61,
+      "usable_cells_within_crop": 357984
+    },
+    {
+      "gaussian_sigma_m": 40,
+      "square_mask_radius_m": 121,
+      "usable_cells_within_crop": 227664
+    }
+  ],
+  "project_metadata": {
+    "path": "data/metadata/discovery_v10/earth-project/ID_SouthernGaps_D23.xml",
+    "sha256": "96ba058588e795323cbaa4fe76ab32f7436c919f125bfb94ead9250451cb9404",
+    "acquisition_begin": "20230912",
+    "acquisition_end": "20240827",
+    "horizontal_datum": "North_American_Datum_1983",
+    "vertical_accuracy_statement": "Please refer to the copy of the original product metadata file if one was provided.",
+    "processing": "Original project data were provided to the National Geospatial Technical Operations Center (NGTOC) in Rolla, MO and/or Denver, CO. The data were reviewed for quality and accuracy before publication."
+  },
+  "limits": [
+    "Search crop is not a feature polygon, nomination or independent control.",
+    "Tile-specific ground density and interpolation near a pit remain unchecked.",
+    "Project identifier dates must not be treated as acquisition dates.",
+    "Project accuracy target is not a measured pit-specific uncertainty distribution.",
+    "The acquired standard tile is actually 1 m; vendor source products may have a different posting.",
+    "Survey-station UTM datum is unspecified; no CAVES registration has been solved.",
+    "Independent rim mapping, orthophotography and source-footprint correspondence remain required."
+  ]
+}

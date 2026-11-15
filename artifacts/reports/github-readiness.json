@@ -1,0 +1,9 @@
+{
+  "candidate_file_count": 803,
+  "candidate_bytes": 551192785,
+  "over_50_mib": [],
+  "restricted_or_generated_paths": [],
+  "possible_secret_paths": [],
+  "passes": true,
+  "scope": "Preflight of Git-visible paths and selected credential patterns, not a complete secret/history audit. No files staged or uploaded."
+}

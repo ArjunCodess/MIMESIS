@@ -1,0 +1,2695 @@
+{
+  "phase": "Numerical calibration and source-mask feasibility only",
+  "method": "Gaussian-weighted local plane at observed centers; 80% neighbor weight and condition<=20; 95% of every fixed scored sector still required",
+  "cases": [
+    {
+      "atlas_id": 1,
+      "name": "Marius Hills Pit",
+      "runs": [
+        {
+          "sigma_m": 10,
+          "known_field": "plane",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9735449735449735,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 505,
+                "usable_cells": 492,
+                "valid_fraction": 0.9742574257425742,
+                "slope_deg": 12.604382648379143,
+                "roughness_m": 1.4901161193847656e-08
+              },
+              {
+                "sector": 1,
+                "expected_cells": 521,
+                "usable_cells": 512,
+                "valid_fraction": 0.982725527831094,
+                "slope_deg": 12.604382648379152,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 2,
+                "expected_cells": 515,
+                "usable_cells": 504,
+                "valid_fraction": 0.9786407766990292,
+                "slope_deg": 12.60438264837918,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 3,
+                "expected_cells": 523,
+                "usable_cells": 519,
+                "valid_fraction": 0.9923518164435946,
+                "slope_deg": 12.604382648379168,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 4,
+                "expected_cells": 520,
+                "usable_cells": 508,
+                "valid_fraction": 0.9769230769230769,
+                "slope_deg": 12.604382648379183,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 5,
+                "expected_cells": 506,
+                "usable_cells": 481,
+                "valid_fraction": 0.950592885375494,
+                "slope_deg": 12.60438264837917,
+                "roughness_m": 2.9802322387695312e-08
+              },
+              {
+                "sector": 6,
+                "expected_cells": 535,
+                "usable_cells": 517,
+                "valid_fraction": 0.9663551401869159,
+                "slope_deg": 12.604382648379158,
+                "roughness_m": 1.0745380149674383e-07
+              },
+              {
+                "sector": 7,
+                "expected_cells": 520,
+                "usable_cells": 514,
+                "valid_fraction": 0.9884615384615385,
+                "slope_deg": 12.60438264837915,
+                "roughness_m": 5.368708820575249e-08
+              },
+              {
+                "sector": 8,
+                "expected_cells": 521,
+                "usable_cells": 489,
+                "valid_fraction": 0.9385796545105566,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 9,
+                "expected_cells": 515,
+                "usable_cells": 505,
+                "valid_fraction": 0.9805825242718447,
+                "slope_deg": 12.604382648379172,
+                "roughness_m": 6.989264130329236e-08
+              },
+              {
+                "sector": 10,
+                "expected_cells": 519,
+                "usable_cells": 506,
+                "valid_fraction": 0.9749518304431599,
+                "slope_deg": 12.604382648379193,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 11,
+                "expected_cells": 537,
+                "usable_cells": 525,
+                "valid_fraction": 0.9776536312849162,
+                "slope_deg": 12.604382648379143,
+                "roughness_m": 6.664001874625056e-08
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 1.3145040611561853e-13,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 7.593037310016367e-13,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 4.7317081785007903e-07
+        },
+        {
+          "sigma_m": 10,
+          "known_field": "bumpy",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9735449735449735,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 505,
+                "usable_cells": 492,
+                "valid_fraction": 0.9742574257425742,
+                "slope_deg": 12.59694960142686,
+                "roughness_m": 1.501411508025891
+              },
+              {
+                "sector": 1,
+                "expected_cells": 521,
+                "usable_cells": 512,
+                "valid_fraction": 0.982725527831094,
+                "slope_deg": 12.603392657209936,
+                "roughness_m": 1.499719717021765
+              },
+              {
+                "sector": 2,
+                "expected_cells": 515,
+                "usable_cells": 504,
+                "valid_fraction": 0.9786407766990292,
+                "slope_deg": 12.597182509231702,
+                "roughness_m": 1.4981581898494323
+              },
+              {
+                "sector": 3,
+                "expected_cells": 523,
+                "usable_cells": 519,
+                "valid_fraction": 0.9923518164435946,
+                "slope_deg": 12.610839287829405,
+                "roughness_m": 1.499912108830171
+              },
+              {
+                "sector": 4,
+                "expected_cells": 520,
+                "usable_cells": 508,
+                "valid_fraction": 0.9769230769230769,
+                "slope_deg": 12.595644556055342,
+                "roughness_m": 1.5002234116988822
+              },
+              {
+                "sector": 5,
+                "expected_cells": 506,
+                "usable_cells": 481,
+                "valid_fraction": 0.950592885375494,
+                "slope_deg": 12.61219976866392,
+                "roughness_m": 1.496774738793056
+              },
+              {
+                "sector": 6,
+                "expected_cells": 535,
+                "usable_cells": 517,
+                "valid_fraction": 0.9663551401869159,
+                "slope_deg": 12.590526925620708,
+                "roughness_m": 1.499847169517078
+              },
+              {
+                "sector": 7,
+                "expected_cells": 520,
+                "usable_cells": 514,
+                "valid_fraction": 0.9884615384615385,
+                "slope_deg": 12.611479449181079,
+                "roughness_m": 1.499926169659255
+              },
+              {
+                "sector": 8,
+                "expected_cells": 521,
+                "usable_cells": 489,
+                "valid_fraction": 0.9385796545105566,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 9,
+                "expected_cells": 515,
+                "usable_cells": 505,
+                "valid_fraction": 0.9805825242718447,
+                "slope_deg": 12.625280853611603,
+                "roughness_m": 1.5003760090557716
+              },
+              {
+                "sector": 10,
+                "expected_cells": 519,
+                "usable_cells": 506,
+                "valid_fraction": 0.9749518304431599,
+                "slope_deg": 12.59780954647145,
+                "roughness_m": 1.4997815314009033
+              },
+              {
+                "sector": 11,
+                "expected_cells": 537,
+                "usable_cells": 525,
+                "valid_fraction": 0.9776536312849162,
+                "slope_deg": 12.598073295123402,
+                "roughness_m": 1.500223234944586
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 0.030744858210208115,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 0.34566244587502365,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 0.03759936074059711
+        },
+        {
+          "sigma_m": 20,
+          "known_field": "plane",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9737053070386403,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 505,
+                "usable_cells": 492,
+                "valid_fraction": 0.9742574257425742,
+                "slope_deg": 12.604382648379193,
+                "roughness_m": 1.3978528260658472e-07
+              },
+              {
+                "sector": 1,
+                "expected_cells": 521,
+                "usable_cells": 512,
+                "valid_fraction": 0.982725527831094,
+                "slope_deg": 12.604382648379218,
+                "roughness_m": 2.1695452599640953e-07
+              },
+              {
+                "sector": 2,
+                "expected_cells": 515,
+                "usable_cells": 504,
+                "valid_fraction": 0.9786407766990292,
+                "slope_deg": 12.604382648379193,
+                "roughness_m": 1.1151007970493857e-07
+              },
+              {
+                "sector": 3,
+                "expected_cells": 523,
+                "usable_cells": 519,
+                "valid_fraction": 0.9923518164435946,
+                "slope_deg": 12.604382648379183,
+                "roughness_m": 1.3328003749250113e-07
+              },
+              {
+                "sector": 4,
+                "expected_cells": 520,
+                "usable_cells": 508,
+                "valid_fraction": 0.9769230769230769,
+                "slope_deg": 12.604382648379175,
+                "roughness_m": 1.1920928955078125e-07
+              },
+              {
+                "sector": 5,
+                "expected_cells": 506,
+                "usable_cells": 481,
+                "valid_fraction": 0.950592885375494,
+                "slope_deg": 12.604382648379163,
+                "roughness_m": 1.519626234052415e-07
+              },
+              {
+                "sector": 6,
+                "expected_cells": 535,
+                "usable_cells": 518,
+                "valid_fraction": 0.9682242990654205,
+                "slope_deg": 12.604382648379161,
+                "roughness_m": 1.3328003749250113e-07
+              },
+              {
+                "sector": 7,
+                "expected_cells": 520,
+                "usable_cells": 514,
+                "valid_fraction": 0.9884615384615385,
+                "slope_deg": 12.604382648379158,
+                "roughness_m": 1.2644054553268208e-07
+              },
+              {
+                "sector": 8,
+                "expected_cells": 521,
+                "usable_cells": 489,
+                "valid_fraction": 0.9385796545105566,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 9,
+                "expected_cells": 515,
+                "usable_cells": 505,
+                "valid_fraction": 0.9805825242718447,
+                "slope_deg": 12.604382648379174,
+                "roughness_m": 1.5769906706002895e-07
+              },
+              {
+                "sector": 10,
+                "expected_cells": 519,
+                "usable_cells": 506,
+                "valid_fraction": 0.9749518304431599,
+                "slope_deg": 12.60438264837919,
+                "roughness_m": 1.3653266004954294e-07
+              },
+              {
+                "sector": 11,
+                "expected_cells": 537,
+                "usable_cells": 525,
+                "valid_fraction": 0.9776536312849162,
+                "slope_deg": 12.60438264837919,
+                "roughness_m": 1.1920928955078125e-07
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 4.440892098500626e-14,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 2.1671553440683056e-13,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 5.230286352272107e-07
+        },
+        {
+          "sigma_m": 20,
+          "known_field": "bumpy",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9737053070386403,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 505,
+                "usable_cells": 492,
+                "valid_fraction": 0.9742574257425742,
+                "slope_deg": 12.595068941249458,
+                "roughness_m": 1.5019450156951941
+              },
+              {
+                "sector": 1,
+                "expected_cells": 521,
+                "usable_cells": 512,
+                "valid_fraction": 0.982725527831094,
+                "slope_deg": 12.59774939191387,
+                "roughness_m": 1.4971039870635328
+              },
+              {
+                "sector": 2,
+                "expected_cells": 515,
+                "usable_cells": 504,
+                "valid_fraction": 0.9786407766990292,
+                "slope_deg": 12.60772082481713,
+                "roughness_m": 1.497580505142435
+              },
+              {
+                "sector": 3,
+                "expected_cells": 523,
+                "usable_cells": 519,
+                "valid_fraction": 0.9923518164435946,
+                "slope_deg": 12.61524191232678,
+                "roughness_m": 1.5003366776920803
+              },
+              {
+                "sector": 4,
+                "expected_cells": 520,
+                "usable_cells": 508,
+                "valid_fraction": 0.9769230769230769,
+                "slope_deg": 12.592114066575382,
+                "roughness_m": 1.5012944543422306
+              },
+              {
+                "sector": 5,
+                "expected_cells": 506,
+                "usable_cells": 481,
+                "valid_fraction": 0.950592885375494,
+                "slope_deg": 12.598519928346473,
+                "roughness_m": 1.4909829957936818
+              },
+              {
+                "sector": 6,
+                "expected_cells": 535,
+                "usable_cells": 518,
+                "valid_fraction": 0.9682242990654205,
+                "slope_deg": 12.585517435706436,
+                "roughness_m": 1.4972503936052264
+              },
+              {
+                "sector": 7,
+                "expected_cells": 520,
+                "usable_cells": 514,
+                "valid_fraction": 0.9884615384615385,
+                "slope_deg": 12.613780502221807,
+                "roughness_m": 1.500235711598739
+              },
+              {
+                "sector": 8,
+                "expected_cells": 521,
+                "usable_cells": 489,
+                "valid_fraction": 0.9385796545105566,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 9,
+                "expected_cells": 515,
+                "usable_cells": 505,
+                "valid_fraction": 0.9805825242718447,
+                "slope_deg": 12.611631755599499,
+                "roughness_m": 1.5011732638421875
+              },
+              {
+                "sector": 10,
+                "expected_cells": 519,
+                "usable_cells": 506,
+                "valid_fraction": 0.9749518304431599,
+                "slope_deg": 12.608777323333262,
+                "roughness_m": 1.499045139487903
+              },
+              {
+                "sector": 11,
+                "expected_cells": 537,
+                "usable_cells": 525,
+                "valid_fraction": 0.9776536312849162,
+                "slope_deg": 12.606461602413534,
+                "roughness_m": 1.5002297240028117
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 0.017252303982930428,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 0.0892551745751085,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 0.017778376259308618
+        },
+        {
+          "sigma_m": 40,
+          "known_field": "plane",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9737053070386403,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 505,
+                "usable_cells": 492,
+                "valid_fraction": 0.9742574257425742,
+                "slope_deg": 12.60438264837918,
+                "roughness_m": 1.884864366154897e-07
+              },
+              {
+                "sector": 1,
+                "expected_cells": 521,
+                "usable_cells": 512,
+                "valid_fraction": 0.982725527831094,
+                "slope_deg": 12.604382648379186,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 2,
+                "expected_cells": 515,
+                "usable_cells": 504,
+                "valid_fraction": 0.9786407766990292,
+                "slope_deg": 12.604382648379186,
+                "roughness_m": 1.1920928955078125e-07
+              },
+              {
+                "sector": 3,
+                "expected_cells": 523,
+                "usable_cells": 519,
+                "valid_fraction": 0.9923518164435946,
+                "slope_deg": 12.60438264837918,
+                "roughness_m": 1.6858739404357614e-07
+              },
+              {
+                "sector": 4,
+                "expected_cells": 520,
+                "usable_cells": 508,
+                "valid_fraction": 0.9769230769230769,
+                "slope_deg": 12.604382648379184,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 5,
+                "expected_cells": 506,
+                "usable_cells": 481,
+                "valid_fraction": 0.950592885375494,
+                "slope_deg": 12.60438264837918,
+                "roughness_m": 1.1920928955078125e-07
+              },
+              {
+                "sector": 6,
+                "expected_cells": 535,
+                "usable_cells": 518,
+                "valid_fraction": 0.9682242990654205,
+                "slope_deg": 12.604382648379179,
+                "roughness_m": 8.429369702178807e-08
+              },
+              {
+                "sector": 7,
+                "expected_cells": 520,
+                "usable_cells": 514,
+                "valid_fraction": 0.9884615384615385,
+                "slope_deg": 12.604382648379183,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 8,
+                "expected_cells": 521,
+                "usable_cells": 489,
+                "valid_fraction": 0.9385796545105566,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 9,
+                "expected_cells": 515,
+                "usable_cells": 505,
+                "valid_fraction": 0.9805825242718447,
+                "slope_deg": 12.604382648379184,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 10,
+                "expected_cells": 519,
+                "usable_cells": 506,
+                "valid_fraction": 0.9749518304431599,
+                "slope_deg": 12.604382648379186,
+                "roughness_m": 1.1920928955078125e-07
+              },
+              {
+                "sector": 11,
+                "expected_cells": 537,
+                "usable_cells": 525,
+                "valid_fraction": 0.9776536312849162,
+                "slope_deg": 12.60438264837918,
+                "roughness_m": 1.884864366154897e-07
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 1.5987211554602254e-14,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 7.815970093361102e-14,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 6.205208135794464e-07
+        },
+        {
+          "sigma_m": 40,
+          "known_field": "bumpy",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9737053070386403,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 505,
+                "usable_cells": 492,
+                "valid_fraction": 0.9742574257425742,
+                "slope_deg": 12.595069237430677,
+                "roughness_m": 1.5004533832000113
+              },
+              {
+                "sector": 1,
+                "expected_cells": 521,
+                "usable_cells": 512,
+                "valid_fraction": 0.982725527831094,
+                "slope_deg": 12.595706911836551,
+                "roughness_m": 1.4969998226783807
+              },
+              {
+                "sector": 2,
+                "expected_cells": 515,
+                "usable_cells": 504,
+                "valid_fraction": 0.9786407766990292,
+                "slope_deg": 12.60631913000653,
+                "roughness_m": 1.4978156790206554
+              },
+              {
+                "sector": 3,
+                "expected_cells": 523,
+                "usable_cells": 519,
+                "valid_fraction": 0.9923518164435946,
+                "slope_deg": 12.61039178973582,
+                "roughness_m": 1.5013017728107034
+              },
+              {
+                "sector": 4,
+                "expected_cells": 520,
+                "usable_cells": 508,
+                "valid_fraction": 0.9769230769230769,
+                "slope_deg": 12.600627249784207,
+                "roughness_m": 1.4993783203195996
+              },
+              {
+                "sector": 5,
+                "expected_cells": 506,
+                "usable_cells": 481,
+                "valid_fraction": 0.950592885375494,
+                "slope_deg": 12.590797952740832,
+                "roughness_m": 1.4927383396272023
+              },
+              {
+                "sector": 6,
+                "expected_cells": 535,
+                "usable_cells": 518,
+                "valid_fraction": 0.9682242990654205,
+                "slope_deg": 12.591454033129262,
+                "roughness_m": 1.4967164971954685
+              },
+              {
+                "sector": 7,
+                "expected_cells": 520,
+                "usable_cells": 514,
+                "valid_fraction": 0.9884615384615385,
+                "slope_deg": 12.613920957158399,
+                "roughness_m": 1.5002101478540373
+              },
+              {
+                "sector": 8,
+                "expected_cells": 521,
+                "usable_cells": 489,
+                "valid_fraction": 0.9385796545105566,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 9,
+                "expected_cells": 515,
+                "usable_cells": 505,
+                "valid_fraction": 0.9805825242718447,
+                "slope_deg": 12.60514424218685,
+                "roughness_m": 1.4999412548321815
+              },
+              {
+                "sector": 10,
+                "expected_cells": 519,
+                "usable_cells": 506,
+                "valid_fraction": 0.9749518304431599,
+                "slope_deg": 12.604882353944951,
+                "roughness_m": 1.4986561129748512
+              },
+              {
+                "sector": 11,
+                "expected_cells": 537,
+                "usable_cells": 525,
+                "valid_fraction": 0.9776536312849162,
+                "slope_deg": 12.598428010943163,
+                "roughness_m": 1.4989719598470221
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 0.0065158604072799164,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 0.023113372700397136,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 0.0075719281374355685
+        }
+      ]
+    },
+    {
+      "atlas_id": 3,
+      "name": "Mare Tranquillitatis Pit",
+      "runs": [
+        {
+          "sigma_m": 10,
+          "known_field": "plane",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9155028266581734,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 5243,
+                "usable_cells": 4857,
+                "valid_fraction": 0.9263780278466527,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 1,
+                "expected_cells": 5234,
+                "usable_cells": 4487,
+                "valid_fraction": 0.8572793274742071,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 2,
+                "expected_cells": 5247,
+                "usable_cells": 4900,
+                "valid_fraction": 0.9338669716028206,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 3,
+                "expected_cells": 5213,
+                "usable_cells": 4772,
+                "valid_fraction": 0.9154037981968156,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 4,
+                "expected_cells": 5233,
+                "usable_cells": 4280,
+                "valid_fraction": 0.817886489585324,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 5,
+                "expected_cells": 5243,
+                "usable_cells": 4824,
+                "valid_fraction": 0.920083921419035,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 6,
+                "expected_cells": 5226,
+                "usable_cells": 4848,
+                "valid_fraction": 0.9276693455797933,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 7,
+                "expected_cells": 5234,
+                "usable_cells": 5020,
+                "valid_fraction": 0.9591134887275506,
+                "slope_deg": 12.604382648379172,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 8,
+                "expected_cells": 5218,
+                "usable_cells": 4898,
+                "valid_fraction": 0.9386738213875048,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 9,
+                "expected_cells": 5250,
+                "usable_cells": 4987,
+                "valid_fraction": 0.9499047619047619,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 10,
+                "expected_cells": 5231,
+                "usable_cells": 4743,
+                "valid_fraction": 0.9067099980883196,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 11,
+                "expected_cells": 5223,
+                "usable_cells": 4873,
+                "valid_fraction": 0.9329887038100708,
+                "slope_deg": null,
+                "roughness_m": null
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 4.1033842990145786e-13,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 2.4069635173873394e-12,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 8.070661406503937e-07
+        },
+        {
+          "sigma_m": 10,
+          "known_field": "bumpy",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9155028266581734,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 5243,
+                "usable_cells": 4857,
+                "valid_fraction": 0.9263780278466527,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 1,
+                "expected_cells": 5234,
+                "usable_cells": 4487,
+                "valid_fraction": 0.8572793274742071,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 2,
+                "expected_cells": 5247,
+                "usable_cells": 4900,
+                "valid_fraction": 0.9338669716028206,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 3,
+                "expected_cells": 5213,
+                "usable_cells": 4772,
+                "valid_fraction": 0.9154037981968156,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 4,
+                "expected_cells": 5233,
+                "usable_cells": 4280,
+                "valid_fraction": 0.817886489585324,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 5,
+                "expected_cells": 5243,
+                "usable_cells": 4824,
+                "valid_fraction": 0.920083921419035,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 6,
+                "expected_cells": 5226,
+                "usable_cells": 4848,
+                "valid_fraction": 0.9276693455797933,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 7,
+                "expected_cells": 5234,
+                "usable_cells": 5020,
+                "valid_fraction": 0.9591134887275506,
+                "slope_deg": 12.602628622306815,
+                "roughness_m": 1.4990405168769045
+              },
+              {
+                "sector": 8,
+                "expected_cells": 5218,
+                "usable_cells": 4898,
+                "valid_fraction": 0.9386738213875048,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 9,
+                "expected_cells": 5250,
+                "usable_cells": 4987,
+                "valid_fraction": 0.9499047619047619,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 10,
+                "expected_cells": 5231,
+                "usable_cells": 4743,
+                "valid_fraction": 0.9067099980883196,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 11,
+                "expected_cells": 5223,
+                "usable_cells": 4873,
+                "valid_fraction": 0.9329887038100708,
+                "slope_deg": null,
+                "roughness_m": null
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 0.06660358655163989,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 0.30454256945817265,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 0.035847979967423366
+        },
+        {
+          "sigma_m": 20,
+          "known_field": "plane",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9324627756987022,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 5243,
+                "usable_cells": 4899,
+                "valid_fraction": 0.9343887087545298,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 1,
+                "expected_cells": 5234,
+                "usable_cells": 4759,
+                "valid_fraction": 0.9092472296522736,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 2,
+                "expected_cells": 5247,
+                "usable_cells": 4969,
+                "valid_fraction": 0.9470173432437583,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 3,
+                "expected_cells": 5213,
+                "usable_cells": 4845,
+                "valid_fraction": 0.9294072511030117,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 4,
+                "expected_cells": 5233,
+                "usable_cells": 4640,
+                "valid_fraction": 0.8866806802981082,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 5,
+                "expected_cells": 5243,
+                "usable_cells": 4835,
+                "valid_fraction": 0.9221819568949075,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 6,
+                "expected_cells": 5226,
+                "usable_cells": 4963,
+                "valid_fraction": 0.9496747034060466,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 7,
+                "expected_cells": 5234,
+                "usable_cells": 5021,
+                "valid_fraction": 0.9593045471914405,
+                "slope_deg": 12.604382648379172,
+                "roughness_m": 8.429369702178807e-08
+              },
+              {
+                "sector": 8,
+                "expected_cells": 5218,
+                "usable_cells": 4898,
+                "valid_fraction": 0.9386738213875048,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 9,
+                "expected_cells": 5250,
+                "usable_cells": 4987,
+                "valid_fraction": 0.9499047619047619,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 10,
+                "expected_cells": 5231,
+                "usable_cells": 4825,
+                "valid_fraction": 0.9223857770980692,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 11,
+                "expected_cells": 5223,
+                "usable_cells": 4913,
+                "valid_fraction": 0.9406471376603485,
+                "slope_deg": null,
+                "roughness_m": null
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 1.2967404927621828e-13,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 7.389644451905042e-13,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 9.039491944374503e-07
+        },
+        {
+          "sigma_m": 20,
+          "known_field": "bumpy",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9324627756987022,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 5243,
+                "usable_cells": 4899,
+                "valid_fraction": 0.9343887087545298,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 1,
+                "expected_cells": 5234,
+                "usable_cells": 4759,
+                "valid_fraction": 0.9092472296522736,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 2,
+                "expected_cells": 5247,
+                "usable_cells": 4969,
+                "valid_fraction": 0.9470173432437583,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 3,
+                "expected_cells": 5213,
+                "usable_cells": 4845,
+                "valid_fraction": 0.9294072511030117,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 4,
+                "expected_cells": 5233,
+                "usable_cells": 4640,
+                "valid_fraction": 0.8866806802981082,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 5,
+                "expected_cells": 5243,
+                "usable_cells": 4835,
+                "valid_fraction": 0.9221819568949075,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 6,
+                "expected_cells": 5226,
+                "usable_cells": 4963,
+                "valid_fraction": 0.9496747034060466,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 7,
+                "expected_cells": 5234,
+                "usable_cells": 5021,
+                "valid_fraction": 0.9593045471914405,
+                "slope_deg": 12.603576889895729,
+                "roughness_m": 1.4988807736589516
+              },
+              {
+                "sector": 8,
+                "expected_cells": 5218,
+                "usable_cells": 4898,
+                "valid_fraction": 0.9386738213875048,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 9,
+                "expected_cells": 5250,
+                "usable_cells": 4987,
+                "valid_fraction": 0.9499047619047619,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 10,
+                "expected_cells": 5231,
+                "usable_cells": 4825,
+                "valid_fraction": 0.9223857770980692,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 11,
+                "expected_cells": 5223,
+                "usable_cells": 4913,
+                "valid_fraction": 0.9406471376603485,
+                "slope_deg": null,
+                "roughness_m": null
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 0.019601051385748747,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 0.06869085989768217,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 0.01724112007771974
+        },
+        {
+          "sigma_m": 40,
+          "known_field": "plane",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9342463571940441,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 5243,
+                "usable_cells": 4899,
+                "valid_fraction": 0.9343887087545298,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 1,
+                "expected_cells": 5234,
+                "usable_cells": 4800,
+                "valid_fraction": 0.9170806266717616,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 2,
+                "expected_cells": 5247,
+                "usable_cells": 4970,
+                "valid_fraction": 0.9472079283400038,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 3,
+                "expected_cells": 5213,
+                "usable_cells": 4900,
+                "valid_fraction": 0.9399577978131594,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 4,
+                "expected_cells": 5233,
+                "usable_cells": 4654,
+                "valid_fraction": 0.8893560099369386,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 5,
+                "expected_cells": 5243,
+                "usable_cells": 4835,
+                "valid_fraction": 0.9221819568949075,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 6,
+                "expected_cells": 5226,
+                "usable_cells": 4964,
+                "valid_fraction": 0.9498660543436663,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 7,
+                "expected_cells": 5234,
+                "usable_cells": 5021,
+                "valid_fraction": 0.9593045471914405,
+                "slope_deg": 12.604382648379188,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 8,
+                "expected_cells": 5218,
+                "usable_cells": 4898,
+                "valid_fraction": 0.9386738213875048,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 9,
+                "expected_cells": 5250,
+                "usable_cells": 4987,
+                "valid_fraction": 0.9499047619047619,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 10,
+                "expected_cells": 5231,
+                "usable_cells": 4825,
+                "valid_fraction": 0.9223857770980692,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 11,
+                "expected_cells": 5223,
+                "usable_cells": 4913,
+                "valid_fraction": 0.9406471376603485,
+                "slope_deg": null,
+                "roughness_m": null
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 4.440892098500626e-14,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 2.433608869978343e-13,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 1.018524616398517e-06
+        },
+        {
+          "sigma_m": 40,
+          "known_field": "bumpy",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9342463571940441,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 5243,
+                "usable_cells": 4899,
+                "valid_fraction": 0.9343887087545298,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 1,
+                "expected_cells": 5234,
+                "usable_cells": 4800,
+                "valid_fraction": 0.9170806266717616,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 2,
+                "expected_cells": 5247,
+                "usable_cells": 4970,
+                "valid_fraction": 0.9472079283400038,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 3,
+                "expected_cells": 5213,
+                "usable_cells": 4900,
+                "valid_fraction": 0.9399577978131594,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 4,
+                "expected_cells": 5233,
+                "usable_cells": 4654,
+                "valid_fraction": 0.8893560099369386,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 5,
+                "expected_cells": 5243,
+                "usable_cells": 4835,
+                "valid_fraction": 0.9221819568949075,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 6,
+                "expected_cells": 5226,
+                "usable_cells": 4964,
+                "valid_fraction": 0.9498660543436663,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 7,
+                "expected_cells": 5234,
+                "usable_cells": 5021,
+                "valid_fraction": 0.9593045471914405,
+                "slope_deg": 12.601471184627773,
+                "roughness_m": 1.4988204252954338
+              },
+              {
+                "sector": 8,
+                "expected_cells": 5218,
+                "usable_cells": 4898,
+                "valid_fraction": 0.9386738213875048,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 9,
+                "expected_cells": 5250,
+                "usable_cells": 4987,
+                "valid_fraction": 0.9499047619047619,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 10,
+                "expected_cells": 5231,
+                "usable_cells": 4825,
+                "valid_fraction": 0.9223857770980692,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 11,
+                "expected_cells": 5223,
+                "usable_cells": 4913,
+                "valid_fraction": 0.9406471376603485,
+                "slope_deg": null,
+                "roughness_m": null
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 0.004841373994096898,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 0.01549314929166501,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 0.00761657812584754
+        }
+      ]
+    },
+    {
+      "atlas_id": 10,
+      "name": "North Procellarum 1 Pit",
+      "runs": [
+        {
+          "sigma_m": 10,
+          "known_field": "plane",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.937447687071034,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 1508,
+                "usable_cells": 1403,
+                "valid_fraction": 0.9303713527851459,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 1,
+                "expected_cells": 1494,
+                "usable_cells": 1413,
+                "valid_fraction": 0.9457831325301205,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 2,
+                "expected_cells": 1501,
+                "usable_cells": 1423,
+                "valid_fraction": 0.9480346435709527,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 3,
+                "expected_cells": 1484,
+                "usable_cells": 1405,
+                "valid_fraction": 0.9467654986522911,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 4,
+                "expected_cells": 1494,
+                "usable_cells": 1384,
+                "valid_fraction": 0.9263721552878179,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 5,
+                "expected_cells": 1511,
+                "usable_cells": 1350,
+                "valid_fraction": 0.8934480476505625,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 6,
+                "expected_cells": 1480,
+                "usable_cells": 1299,
+                "valid_fraction": 0.8777027027027027,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 7,
+                "expected_cells": 1490,
+                "usable_cells": 1368,
+                "valid_fraction": 0.9181208053691275,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 8,
+                "expected_cells": 1486,
+                "usable_cells": 1380,
+                "valid_fraction": 0.9286675639300135,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 9,
+                "expected_cells": 1504,
+                "usable_cells": 1480,
+                "valid_fraction": 0.9840425531914894,
+                "slope_deg": 12.604382648379143,
+                "roughness_m": 9.770684152184919e-08
+              },
+              {
+                "sector": 10,
+                "expected_cells": 1493,
+                "usable_cells": 1441,
+                "valid_fraction": 0.9651707970529136,
+                "slope_deg": 12.604382648378978,
+                "roughness_m": 2.421152116249788e-07
+              },
+              {
+                "sector": 11,
+                "expected_cells": 1476,
+                "usable_cells": 1454,
+                "valid_fraction": 0.9850948509485095,
+                "slope_deg": 12.604382648378625,
+                "roughness_m": 4.0508133494766903e-07
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 4.796163466380676e-13,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 3.4070524179696804e-12,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 8.625364757032128e-07
+        },
+        {
+          "sigma_m": 10,
+          "known_field": "bumpy",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.937447687071034,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 1508,
+                "usable_cells": 1403,
+                "valid_fraction": 0.9303713527851459,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 1,
+                "expected_cells": 1494,
+                "usable_cells": 1413,
+                "valid_fraction": 0.9457831325301205,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 2,
+                "expected_cells": 1501,
+                "usable_cells": 1423,
+                "valid_fraction": 0.9480346435709527,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 3,
+                "expected_cells": 1484,
+                "usable_cells": 1405,
+                "valid_fraction": 0.9467654986522911,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 4,
+                "expected_cells": 1494,
+                "usable_cells": 1384,
+                "valid_fraction": 0.9263721552878179,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 5,
+                "expected_cells": 1511,
+                "usable_cells": 1350,
+                "valid_fraction": 0.8934480476505625,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 6,
+                "expected_cells": 1480,
+                "usable_cells": 1299,
+                "valid_fraction": 0.8777027027027027,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 7,
+                "expected_cells": 1490,
+                "usable_cells": 1368,
+                "valid_fraction": 0.9181208053691275,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 8,
+                "expected_cells": 1486,
+                "usable_cells": 1380,
+                "valid_fraction": 0.9286675639300135,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 9,
+                "expected_cells": 1504,
+                "usable_cells": 1480,
+                "valid_fraction": 0.9840425531914894,
+                "slope_deg": 12.610369932870864,
+                "roughness_m": 1.5000378822715879
+              },
+              {
+                "sector": 10,
+                "expected_cells": 1493,
+                "usable_cells": 1441,
+                "valid_fraction": 0.9651707970529136,
+                "slope_deg": 12.60682819216652,
+                "roughness_m": 1.500401665407516
+              },
+              {
+                "sector": 11,
+                "expected_cells": 1476,
+                "usable_cells": 1454,
+                "valid_fraction": 0.9850948509485095,
+                "slope_deg": 12.59623508462911,
+                "roughness_m": 1.4999299635517311
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 0.031088424780654655,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 0.35405656615839787,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 0.042441500803063845
+        },
+        {
+          "sigma_m": 20,
+          "known_field": "plane",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9449807488421406,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 1508,
+                "usable_cells": 1418,
+                "valid_fraction": 0.9403183023872679,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 1,
+                "expected_cells": 1494,
+                "usable_cells": 1422,
+                "valid_fraction": 0.9518072289156626,
+                "slope_deg": 12.60438264837918,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 2,
+                "expected_cells": 1501,
+                "usable_cells": 1442,
+                "valid_fraction": 0.960692871419054,
+                "slope_deg": 12.60438264837915,
+                "roughness_m": 1.9314112360500873e-07
+              },
+              {
+                "sector": 3,
+                "expected_cells": 1484,
+                "usable_cells": 1430,
+                "valid_fraction": 0.9636118598382749,
+                "slope_deg": 12.604382648379175,
+                "roughness_m": 8.429369702178807e-08
+              },
+              {
+                "sector": 4,
+                "expected_cells": 1494,
+                "usable_cells": 1414,
+                "valid_fraction": 0.9464524765729585,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 5,
+                "expected_cells": 1511,
+                "usable_cells": 1360,
+                "valid_fraction": 0.900066181336863,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 6,
+                "expected_cells": 1480,
+                "usable_cells": 1295,
+                "valid_fraction": 0.875,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 7,
+                "expected_cells": 1490,
+                "usable_cells": 1362,
+                "valid_fraction": 0.9140939597315436,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 8,
+                "expected_cells": 1486,
+                "usable_cells": 1407,
+                "valid_fraction": 0.9468371467025573,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 9,
+                "expected_cells": 1504,
+                "usable_cells": 1480,
+                "valid_fraction": 0.9840425531914894,
+                "slope_deg": 12.604382648379193,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 10,
+                "expected_cells": 1493,
+                "usable_cells": 1451,
+                "valid_fraction": 0.971868720696584,
+                "slope_deg": 12.60438264837917,
+                "roughness_m": 1.5769906706002895e-07
+              },
+              {
+                "sector": 11,
+                "expected_cells": 1476,
+                "usable_cells": 1454,
+                "valid_fraction": 0.9850948509485095,
+                "slope_deg": 12.604382648379154,
+                "roughness_m": 3.5136192576095406e-07
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 1.652011860642233e-13,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 9.29034627006331e-13,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 9.87532229768091e-07
+        },
+        {
+          "sigma_m": 20,
+          "known_field": "bumpy",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9449807488421406,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 1508,
+                "usable_cells": 1418,
+                "valid_fraction": 0.9403183023872679,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 1,
+                "expected_cells": 1494,
+                "usable_cells": 1422,
+                "valid_fraction": 0.9518072289156626,
+                "slope_deg": 12.603393334570828,
+                "roughness_m": 1.5003839003853459
+              },
+              {
+                "sector": 2,
+                "expected_cells": 1501,
+                "usable_cells": 1442,
+                "valid_fraction": 0.960692871419054,
+                "slope_deg": 12.601159365854103,
+                "roughness_m": 1.5013138600003206
+              },
+              {
+                "sector": 3,
+                "expected_cells": 1484,
+                "usable_cells": 1430,
+                "valid_fraction": 0.9636118598382749,
+                "slope_deg": 12.61052744009376,
+                "roughness_m": 1.4986883923280503
+              },
+              {
+                "sector": 4,
+                "expected_cells": 1494,
+                "usable_cells": 1414,
+                "valid_fraction": 0.9464524765729585,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 5,
+                "expected_cells": 1511,
+                "usable_cells": 1360,
+                "valid_fraction": 0.900066181336863,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 6,
+                "expected_cells": 1480,
+                "usable_cells": 1295,
+                "valid_fraction": 0.875,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 7,
+                "expected_cells": 1490,
+                "usable_cells": 1362,
+                "valid_fraction": 0.9140939597315436,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 8,
+                "expected_cells": 1486,
+                "usable_cells": 1407,
+                "valid_fraction": 0.9468371467025573,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 9,
+                "expected_cells": 1504,
+                "usable_cells": 1480,
+                "valid_fraction": 0.9840425531914894,
+                "slope_deg": 12.610567403284897,
+                "roughness_m": 1.500003226692506
+              },
+              {
+                "sector": 10,
+                "expected_cells": 1493,
+                "usable_cells": 1451,
+                "valid_fraction": 0.971868720696584,
+                "slope_deg": 12.605312086447984,
+                "roughness_m": 1.501625016356352
+              },
+              {
+                "sector": 11,
+                "expected_cells": 1476,
+                "usable_cells": 1454,
+                "valid_fraction": 0.9850948509485095,
+                "slope_deg": 12.59821009956502,
+                "roughness_m": 1.4987953186682608
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 0.017984419231485305,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 0.08012185718807742,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 0.019845823626650477
+        },
+        {
+          "sigma_m": 40,
+          "known_field": "plane",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9497795881926232,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 1508,
+                "usable_cells": 1449,
+                "valid_fraction": 0.9608753315649867,
+                "slope_deg": 12.604382648379184,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 1,
+                "expected_cells": 1494,
+                "usable_cells": 1441,
+                "valid_fraction": 0.964524765729585,
+                "slope_deg": 12.604382648379163,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 2,
+                "expected_cells": 1501,
+                "usable_cells": 1452,
+                "valid_fraction": 0.9673550966022652,
+                "slope_deg": 12.604382648379168,
+                "roughness_m": 1.1920928955078125e-07
+              },
+              {
+                "sector": 3,
+                "expected_cells": 1484,
+                "usable_cells": 1430,
+                "valid_fraction": 0.9636118598382749,
+                "slope_deg": 12.604382648379179,
+                "roughness_m": 1.4600096599955427e-07
+              },
+              {
+                "sector": 4,
+                "expected_cells": 1494,
+                "usable_cells": 1420,
+                "valid_fraction": 0.9504685408299867,
+                "slope_deg": 12.604382648379188,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 5,
+                "expected_cells": 1511,
+                "usable_cells": 1367,
+                "valid_fraction": 0.9046988749172733,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 6,
+                "expected_cells": 1480,
+                "usable_cells": 1290,
+                "valid_fraction": 0.8716216216216216,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 7,
+                "expected_cells": 1490,
+                "usable_cells": 1371,
+                "valid_fraction": 0.9201342281879195,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 8,
+                "expected_cells": 1486,
+                "usable_cells": 1416,
+                "valid_fraction": 0.9528936742934051,
+                "slope_deg": 12.604382648379193,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 9,
+                "expected_cells": 1504,
+                "usable_cells": 1480,
+                "valid_fraction": 0.9840425531914894,
+                "slope_deg": 12.604382648379188,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 10,
+                "expected_cells": 1493,
+                "usable_cells": 1451,
+                "valid_fraction": 0.971868720696584,
+                "slope_deg": 12.604382648379174,
+                "roughness_m": 1.1920928955078125e-07
+              },
+              {
+                "sector": 11,
+                "expected_cells": 1476,
+                "usable_cells": 1454,
+                "valid_fraction": 0.9850948509485095,
+                "slope_deg": 12.604382648379163,
+                "roughness_m": 2.384185791015625e-07
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 5.3290705182007514e-14,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 2.984279490192421e-13,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 1.0958180612832448e-06
+        },
+        {
+          "sigma_m": 40,
+          "known_field": "bumpy",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9497795881926232,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 1508,
+                "usable_cells": 1449,
+                "valid_fraction": 0.9608753315649867,
+                "slope_deg": 12.601344664565309,
+                "roughness_m": 1.4969249913050953
+              },
+              {
+                "sector": 1,
+                "expected_cells": 1494,
+                "usable_cells": 1441,
+                "valid_fraction": 0.964524765729585,
+                "slope_deg": 12.60259917552084,
+                "roughness_m": 1.500522174156397
+              },
+              {
+                "sector": 2,
+                "expected_cells": 1501,
+                "usable_cells": 1452,
+                "valid_fraction": 0.9673550966022652,
+                "slope_deg": 12.602988474020334,
+                "roughness_m": 1.5009947112507271
+              },
+              {
+                "sector": 3,
+                "expected_cells": 1484,
+                "usable_cells": 1430,
+                "valid_fraction": 0.9636118598382749,
+                "slope_deg": 12.610500668523333,
+                "roughness_m": 1.4982204166679605
+              },
+              {
+                "sector": 4,
+                "expected_cells": 1494,
+                "usable_cells": 1420,
+                "valid_fraction": 0.9504685408299867,
+                "slope_deg": 12.599292526628114,
+                "roughness_m": 1.499571916215758
+              },
+              {
+                "sector": 5,
+                "expected_cells": 1511,
+                "usable_cells": 1367,
+                "valid_fraction": 0.9046988749172733,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 6,
+                "expected_cells": 1480,
+                "usable_cells": 1290,
+                "valid_fraction": 0.8716216216216216,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 7,
+                "expected_cells": 1490,
+                "usable_cells": 1371,
+                "valid_fraction": 0.9201342281879195,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 8,
+                "expected_cells": 1486,
+                "usable_cells": 1416,
+                "valid_fraction": 0.9528936742934051,
+                "slope_deg": 12.605227770218166,
+                "roughness_m": 1.4993836304731076
+              },
+              {
+                "sector": 9,
+                "expected_cells": 1504,
+                "usable_cells": 1480,
+                "valid_fraction": 0.9840425531914894,
+                "slope_deg": 12.605041969996112,
+                "roughness_m": 1.4976874179456732
+              },
+              {
+                "sector": 10,
+                "expected_cells": 1493,
+                "usable_cells": 1451,
+                "valid_fraction": 0.971868720696584,
+                "slope_deg": 12.60507557779949,
+                "roughness_m": 1.501660145543672
+              },
+              {
+                "sector": 11,
+                "expected_cells": 1476,
+                "usable_cells": 1454,
+                "valid_fraction": 0.9850948509485095,
+                "slope_deg": 12.600299925759717,
+                "roughness_m": 1.4980126019815532
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 0.0064658554566978665,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 0.023126983288314307,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 0.00943549266246091
+        }
+      ]
+    },
+    {
+      "atlas_id": 11,
+      "name": "North Procellarum 2 Pit",
+      "runs": [
+        {
+          "sigma_m": 10,
+          "known_field": "plane",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9635279434197753,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 1216,
+                "usable_cells": 1161,
+                "valid_fraction": 0.9547697368421053,
+                "slope_deg": 12.604382648378609,
+                "roughness_m": 5.136039239053156e-07
+              },
+              {
+                "sector": 1,
+                "expected_cells": 1202,
+                "usable_cells": 1187,
+                "valid_fraction": 0.9875207986688852,
+                "slope_deg": 12.604382648378644,
+                "roughness_m": 4.6648013122375395e-07
+              },
+              {
+                "sector": 2,
+                "expected_cells": 1223,
+                "usable_cells": 1188,
+                "valid_fraction": 0.9713818479149632,
+                "slope_deg": 12.604382648379069,
+                "roughness_m": 2.6987150723151616e-07
+              },
+              {
+                "sector": 3,
+                "expected_cells": 1177,
+                "usable_cells": 1164,
+                "valid_fraction": 0.9889549702633815,
+                "slope_deg": 12.604382648379136,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 4,
+                "expected_cells": 1202,
+                "usable_cells": 1152,
+                "valid_fraction": 0.9584026622296173,
+                "slope_deg": 12.604382648379001,
+                "roughness_m": 2.5981062314156735e-07
+              },
+              {
+                "sector": 5,
+                "expected_cells": 1217,
+                "usable_cells": 1179,
+                "valid_fraction": 0.9687756778964667,
+                "slope_deg": 12.604382648378824,
+                "roughness_m": 2.980232238769531e-07
+              },
+              {
+                "sector": 6,
+                "expected_cells": 1187,
+                "usable_cells": 1150,
+                "valid_fraction": 0.9688289806234204,
+                "slope_deg": 12.604382648378712,
+                "roughness_m": 1.9198803196437845e-07
+              },
+              {
+                "sector": 7,
+                "expected_cells": 1204,
+                "usable_cells": 1152,
+                "valid_fraction": 0.9568106312292359,
+                "slope_deg": 12.604382648378824,
+                "roughness_m": 2.3276357876976293e-07
+              },
+              {
+                "sector": 8,
+                "expected_cells": 1179,
+                "usable_cells": 1141,
+                "valid_fraction": 0.9677692960135709,
+                "slope_deg": 12.604382648379172,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 9,
+                "expected_cells": 1226,
+                "usable_cells": 1148,
+                "valid_fraction": 0.9363784665579119,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 10,
+                "expected_cells": 1204,
+                "usable_cells": 1133,
+                "valid_fraction": 0.9410299003322259,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 11,
+                "expected_cells": 1185,
+                "usable_cells": 1141,
+                "valid_fraction": 0.9628691983122363,
+                "slope_deg": 12.604382648378566,
+                "roughness_m": 5.555555785389914e-07
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 2.007283228522283e-13,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 2.33990604669998e-12,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 7.831265535039254e-07
+        },
+        {
+          "sigma_m": 10,
+          "known_field": "bumpy",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9635279434197753,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 1216,
+                "usable_cells": 1161,
+                "valid_fraction": 0.9547697368421053,
+                "slope_deg": 12.599061208367685,
+                "roughness_m": 1.500163311152351
+              },
+              {
+                "sector": 1,
+                "expected_cells": 1202,
+                "usable_cells": 1187,
+                "valid_fraction": 0.9875207986688852,
+                "slope_deg": 12.601272677152329,
+                "roughness_m": 1.5000270183229125
+              },
+              {
+                "sector": 2,
+                "expected_cells": 1223,
+                "usable_cells": 1188,
+                "valid_fraction": 0.9713818479149632,
+                "slope_deg": 12.608881719627153,
+                "roughness_m": 1.5001021823870158
+              },
+              {
+                "sector": 3,
+                "expected_cells": 1177,
+                "usable_cells": 1164,
+                "valid_fraction": 0.9889549702633815,
+                "slope_deg": 12.609278071376135,
+                "roughness_m": 1.4998078836732107
+              },
+              {
+                "sector": 4,
+                "expected_cells": 1202,
+                "usable_cells": 1152,
+                "valid_fraction": 0.9584026622296173,
+                "slope_deg": 12.59786013875097,
+                "roughness_m": 1.499870200859153
+              },
+              {
+                "sector": 5,
+                "expected_cells": 1217,
+                "usable_cells": 1179,
+                "valid_fraction": 0.9687756778964667,
+                "slope_deg": 12.59911665544957,
+                "roughness_m": 1.500191164570774
+              },
+              {
+                "sector": 6,
+                "expected_cells": 1187,
+                "usable_cells": 1150,
+                "valid_fraction": 0.9688289806234204,
+                "slope_deg": 12.60147992201398,
+                "roughness_m": 1.4999810129271531
+              },
+              {
+                "sector": 7,
+                "expected_cells": 1204,
+                "usable_cells": 1152,
+                "valid_fraction": 0.9568106312292359,
+                "slope_deg": 12.607849167456457,
+                "roughness_m": 1.4998945679320048
+              },
+              {
+                "sector": 8,
+                "expected_cells": 1179,
+                "usable_cells": 1141,
+                "valid_fraction": 0.9677692960135709,
+                "slope_deg": 12.596350683761806,
+                "roughness_m": 1.4998687609954904
+              },
+              {
+                "sector": 9,
+                "expected_cells": 1226,
+                "usable_cells": 1148,
+                "valid_fraction": 0.9363784665579119,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 10,
+                "expected_cells": 1204,
+                "usable_cells": 1133,
+                "valid_fraction": 0.9410299003322259,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 11,
+                "expected_cells": 1185,
+                "usable_cells": 1141,
+                "valid_fraction": 0.9628691983122363,
+                "slope_deg": 12.605340173028324,
+                "roughness_m": 1.4999624318580127
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 0.004775058365647844,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 0.3239957551248316,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 0.03556277167887839
+        },
+        {
+          "sigma_m": 20,
+          "known_field": "plane",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9671335459714325,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 1216,
+                "usable_cells": 1167,
+                "valid_fraction": 0.959703947368421,
+                "slope_deg": 12.604382648379115,
+                "roughness_m": 4.020553101072324e-07
+              },
+              {
+                "sector": 1,
+                "expected_cells": 1202,
+                "usable_cells": 1187,
+                "valid_fraction": 0.9875207986688852,
+                "slope_deg": 12.604382648379078,
+                "roughness_m": 4.749708607944616e-07
+              },
+              {
+                "sector": 2,
+                "expected_cells": 1223,
+                "usable_cells": 1194,
+                "valid_fraction": 0.9762878168438267,
+                "slope_deg": 12.604382648379126,
+                "roughness_m": 3.009887021291875e-07
+              },
+              {
+                "sector": 3,
+                "expected_cells": 1177,
+                "usable_cells": 1166,
+                "valid_fraction": 0.9906542056074766,
+                "slope_deg": 12.60438264837918,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 4,
+                "expected_cells": 1202,
+                "usable_cells": 1174,
+                "valid_fraction": 0.9767054908485857,
+                "slope_deg": 12.604382648379204,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 5,
+                "expected_cells": 1217,
+                "usable_cells": 1186,
+                "valid_fraction": 0.9745275267050123,
+                "slope_deg": 12.60438264837924,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 6,
+                "expected_cells": 1187,
+                "usable_cells": 1153,
+                "valid_fraction": 0.9713563605728728,
+                "slope_deg": 12.604382648379252,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 7,
+                "expected_cells": 1204,
+                "usable_cells": 1170,
+                "valid_fraction": 0.9717607973421927,
+                "slope_deg": 12.60438264837924,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 8,
+                "expected_cells": 1179,
+                "usable_cells": 1144,
+                "valid_fraction": 0.9703138252756573,
+                "slope_deg": 12.604382648379202,
+                "roughness_m": 7.300048299977713e-08
+              },
+              {
+                "sector": 9,
+                "expected_cells": 1226,
+                "usable_cells": 1145,
+                "valid_fraction": 0.933931484502447,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 10,
+                "expected_cells": 1204,
+                "usable_cells": 1122,
+                "valid_fraction": 0.9318936877076412,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 11,
+                "expected_cells": 1185,
+                "usable_cells": 1140,
+                "valid_fraction": 0.9620253164556962,
+                "slope_deg": 12.604382648379113,
+                "roughness_m": 3.2235846080585154e-07
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 1.2434497875801753e-13,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 7.069900220812997e-13,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 9.259365092420005e-07
+        },
+        {
+          "sigma_m": 20,
+          "known_field": "bumpy",
+          "scored_footprint": {
+            "state": "insufficient_valid_exterior",
+            "valid_fraction": 0.9671335459714325,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 1216,
+                "usable_cells": 1167,
+                "valid_fraction": 0.959703947368421,
+                "slope_deg": 12.590959281437327,
+                "roughness_m": 1.5005083732905407
+              },
+              {
+                "sector": 1,
+                "expected_cells": 1202,
+                "usable_cells": 1187,
+                "valid_fraction": 0.9875207986688852,
+                "slope_deg": 12.604383612089755,
+                "roughness_m": 1.5007811059426726
+              },
+              {
+                "sector": 2,
+                "expected_cells": 1223,
+                "usable_cells": 1194,
+                "valid_fraction": 0.9762878168438267,
+                "slope_deg": 12.604856304149894,
+                "roughness_m": 1.5009512364007782
+              },
+              {
+                "sector": 3,
+                "expected_cells": 1177,
+                "usable_cells": 1166,
+                "valid_fraction": 0.9906542056074766,
+                "slope_deg": 12.604379095057244,
+                "roughness_m": 1.4978671928253189
+              },
+              {
+                "sector": 4,
+                "expected_cells": 1202,
+                "usable_cells": 1174,
+                "valid_fraction": 0.9767054908485857,
+                "slope_deg": 12.604807093365029,
+                "roughness_m": 1.4989062928595431
+              },
+              {
+                "sector": 5,
+                "expected_cells": 1217,
+                "usable_cells": 1186,
+                "valid_fraction": 0.9745275267050123,
+                "slope_deg": 12.605266562105147,
+                "roughness_m": 1.5006979575607649
+              },
+              {
+                "sector": 6,
+                "expected_cells": 1187,
+                "usable_cells": 1153,
+                "valid_fraction": 0.9713563605728728,
+                "slope_deg": 12.60545128193529,
+                "roughness_m": 1.5001451376943264
+              },
+              {
+                "sector": 7,
+                "expected_cells": 1204,
+                "usable_cells": 1170,
+                "valid_fraction": 0.9717607973421927,
+                "slope_deg": 12.60496542210137,
+                "roughness_m": 1.4998443090816749
+              },
+              {
+                "sector": 8,
+                "expected_cells": 1179,
+                "usable_cells": 1144,
+                "valid_fraction": 0.9703138252756573,
+                "slope_deg": 12.603813746675527,
+                "roughness_m": 1.4989830234746733
+              },
+              {
+                "sector": 9,
+                "expected_cells": 1226,
+                "usable_cells": 1145,
+                "valid_fraction": 0.933931484502447,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 10,
+                "expected_cells": 1204,
+                "usable_cells": 1122,
+                "valid_fraction": 0.9318936877076412,
+                "slope_deg": null,
+                "roughness_m": null
+              },
+              {
+                "sector": 11,
+                "expected_cells": 1185,
+                "usable_cells": 1140,
+                "valid_fraction": 0.9620253164556962,
+                "slope_deg": 12.603729243520583,
+                "roughness_m": 1.5001440682273586
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 0.009794112016153989,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 0.07450150933193289,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 0.01683365760904063
+        },
+        {
+          "sigma_m": 40,
+          "known_field": "plane",
+          "scored_footprint": {
+            "state": "measured",
+            "valid_fraction": 0.9733740119262239,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 1216,
+                "usable_cells": 1168,
+                "valid_fraction": 0.9605263157894737,
+                "slope_deg": 12.60438264837915,
+                "roughness_m": 4.3390905199281907e-07
+              },
+              {
+                "sector": 1,
+                "expected_cells": 1202,
+                "usable_cells": 1187,
+                "valid_fraction": 0.9875207986688852,
+                "slope_deg": 12.60438264837914,
+                "roughness_m": 3.8628224721001747e-07
+              },
+              {
+                "sector": 2,
+                "expected_cells": 1223,
+                "usable_cells": 1194,
+                "valid_fraction": 0.9762878168438267,
+                "slope_deg": 12.604382648379163,
+                "roughness_m": 1.6858739404357614e-07
+              },
+              {
+                "sector": 3,
+                "expected_cells": 1177,
+                "usable_cells": 1166,
+                "valid_fraction": 0.9906542056074766,
+                "slope_deg": 12.604382648379183,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 4,
+                "expected_cells": 1202,
+                "usable_cells": 1174,
+                "valid_fraction": 0.9767054908485857,
+                "slope_deg": 12.604382648379186,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 5,
+                "expected_cells": 1217,
+                "usable_cells": 1187,
+                "valid_fraction": 0.9753492193919474,
+                "slope_deg": 12.604382648379193,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 6,
+                "expected_cells": 1187,
+                "usable_cells": 1163,
+                "valid_fraction": 0.9797809604043808,
+                "slope_deg": 12.604382648379186,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 7,
+                "expected_cells": 1204,
+                "usable_cells": 1175,
+                "valid_fraction": 0.9759136212624585,
+                "slope_deg": 12.604382648379186,
+                "roughness_m": 8.429369702178807e-08
+              },
+              {
+                "sector": 8,
+                "expected_cells": 1179,
+                "usable_cells": 1149,
+                "valid_fraction": 0.9745547073791349,
+                "slope_deg": 12.604382648379188,
+                "roughness_m": 8.429369702178807e-08
+              },
+              {
+                "sector": 9,
+                "expected_cells": 1226,
+                "usable_cells": 1170,
+                "valid_fraction": 0.9543230016313213,
+                "slope_deg": 12.604382648379188,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 10,
+                "expected_cells": 1204,
+                "usable_cells": 1147,
+                "valid_fraction": 0.9526578073089701,
+                "slope_deg": 12.604382648379177,
+                "roughness_m": 0.0
+              },
+              {
+                "sector": 11,
+                "expected_cells": 1185,
+                "usable_cells": 1158,
+                "valid_fraction": 0.9772151898734177,
+                "slope_deg": 12.604382648379156,
+                "roughness_m": 2.8578624860613896e-07
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 4.263256414560601e-14,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 2.220446049250313e-13,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 1.02200676199688e-06
+        },
+        {
+          "sigma_m": 40,
+          "known_field": "bumpy",
+          "scored_footprint": {
+            "state": "measured",
+            "valid_fraction": 0.9733740119262239,
+            "sectors": [
+              {
+                "sector": 0,
+                "expected_cells": 1216,
+                "usable_cells": 1168,
+                "valid_fraction": 0.9605263157894737,
+                "slope_deg": 12.601679101964834,
+                "roughness_m": 1.4999455397065844
+              },
+              {
+                "sector": 1,
+                "expected_cells": 1202,
+                "usable_cells": 1187,
+                "valid_fraction": 0.9875207986688852,
+                "slope_deg": 12.602805234874632,
+                "roughness_m": 1.5007758892896357
+              },
+              {
+                "sector": 2,
+                "expected_cells": 1223,
+                "usable_cells": 1194,
+                "valid_fraction": 0.9762878168438267,
+                "slope_deg": 12.600504208225232,
+                "roughness_m": 1.5004720994102405
+              },
+              {
+                "sector": 3,
+                "expected_cells": 1177,
+                "usable_cells": 1166,
+                "valid_fraction": 0.9906542056074766,
+                "slope_deg": 12.604112083672764,
+                "roughness_m": 1.4965988832105803
+              },
+              {
+                "sector": 4,
+                "expected_cells": 1202,
+                "usable_cells": 1174,
+                "valid_fraction": 0.9767054908485857,
+                "slope_deg": 12.603736018249709,
+                "roughness_m": 1.4977040794194931
+              },
+              {
+                "sector": 5,
+                "expected_cells": 1217,
+                "usable_cells": 1187,
+                "valid_fraction": 0.9753492193919474,
+                "slope_deg": 12.607274152197071,
+                "roughness_m": 1.4988437372777481
+              },
+              {
+                "sector": 6,
+                "expected_cells": 1187,
+                "usable_cells": 1163,
+                "valid_fraction": 0.9797809604043808,
+                "slope_deg": 12.608160965027102,
+                "roughness_m": 1.5000223148315506
+              },
+              {
+                "sector": 7,
+                "expected_cells": 1204,
+                "usable_cells": 1175,
+                "valid_fraction": 0.9759136212624585,
+                "slope_deg": 12.606310275720631,
+                "roughness_m": 1.4998136883477686
+              },
+              {
+                "sector": 8,
+                "expected_cells": 1179,
+                "usable_cells": 1149,
+                "valid_fraction": 0.9745547073791349,
+                "slope_deg": 12.60526348282006,
+                "roughness_m": 1.496746219636075
+              },
+              {
+                "sector": 9,
+                "expected_cells": 1226,
+                "usable_cells": 1170,
+                "valid_fraction": 0.9543230016313213,
+                "slope_deg": 12.6064662885709,
+                "roughness_m": 1.5022615380033204
+              },
+              {
+                "sector": 10,
+                "expected_cells": 1204,
+                "usable_cells": 1147,
+                "valid_fraction": 0.9526578073089701,
+                "slope_deg": 12.605439946581104,
+                "roughness_m": 1.500515622634053
+              },
+              {
+                "sector": 11,
+                "expected_cells": 1185,
+                "usable_cells": 1158,
+                "valid_fraction": 0.9772151898734177,
+                "slope_deg": 12.60030931076198,
+                "roughness_m": 1.5001284017676157
+              }
+            ],
+            "minimum_scored_coverage": 0.95,
+            "sector_interpretation": "Descriptive partitions of one feature"
+          },
+          "mask_vs_complete_operator_median_absolute_slope_difference_deg": 0.00458627333703987,
+          "mask_vs_complete_operator_p95_absolute_slope_difference_deg": 0.016677026971663532,
+          "mask_vs_complete_operator_p95_absolute_roughness_difference_m": 0.007954060776476434
+        }
+      ]
+    }
+  ],
+  "limits": "Known analytical fields are synthetic controls, not terrain observations or geological validation. No real fine-terrain outcome or analogue score is computed."
+}

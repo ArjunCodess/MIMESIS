@@ -1,0 +1,206 @@
+[
+  {
+    "path": "data\\raw\\discovery_v10\\moon\\NAC_DTM_TRANQPIT1.TIF",
+    "sha256": "3cf53c33783cb43d8788d71837c43e322ce015d9ef4b3f0f61709e9e98fbc662",
+    "width": 2372,
+    "height": 14388,
+    "crs_wkt": "PROJCS[\"Equirectangular Moon\",GEOGCS[\"GCS_Moon\",DATUM[\"D_Moon\",SPHEROID[\"Moon_localRadius\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",8],PARAMETER[\"central_meridian\",180],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "transform": [
+      2.0000000000006,
+      0.0,
+      -4410710.0000013,
+      0.0,
+      -2.0000000000006,
+      268770.00000008,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "pixel_spacing_crs_units": [
+      2.0000000000006,
+      2.0000000000006
+    ],
+    "units": [
+      null
+    ],
+    "nodata": -3.4028226550889045e+38,
+    "sampled_valid_fraction": 0.9137649536132812,
+    "sampled_range": [
+      -907.0372314453125,
+      -741.3939208984375
+    ],
+    "quality_semantics": "uninterpreted; requires product documentation",
+    "feature_validity": "not_established",
+    "sampling": "nearest-neighbour diagnostic overview, not area or full-resolution QA"
+  },
+  {
+    "path": "data\\raw\\discovery_v10\\moon_quality\\NAC_DTM_TRANQPIT1_CONF.PYR.TIF",
+    "sha256": "c22d4b3667aab84e8ad9c9a2a437b888f9b144e41525dd003e1faf680c3ad900",
+    "width": 2372,
+    "height": 14388,
+    "crs_wkt": "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",8],PARAMETER[\"central_meridian\",180],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "transform": [
+      2.0,
+      0.0,
+      -4410710.0,
+      0.0,
+      -2.0,
+      268770.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "pixel_spacing_crs_units": [
+      2.0,
+      2.0
+    ],
+    "units": [
+      null
+    ],
+    "nodata": null,
+    "sampled_valid_fraction": 1.0,
+    "sampled_range": [
+      0.0,
+      255.0
+    ],
+    "quality_semantics": "uninterpreted; requires product documentation",
+    "feature_validity": "not_established",
+    "sampling": "nearest-neighbour diagnostic overview, not area or full-resolution QA"
+  },
+  {
+    "path": "data\\raw\\discovery_v10\\moon_quality\\NAC_DTM_TRANQPIT1_CONF.TIF",
+    "sha256": "55d769b99b452ceadbcd368b5f2658f951bff81475dc1e37a6135b303a5389d6",
+    "width": 2372,
+    "height": 14388,
+    "crs_wkt": "PROJCS[\"Equirectangular Moon\",GEOGCS[\"GCS_Moon\",DATUM[\"D_Moon\",SPHEROID[\"Moon_localRadius\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",8],PARAMETER[\"central_meridian\",180],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "transform": [
+      2.0000000000006,
+      0.0,
+      -4410710.0000013,
+      0.0,
+      -2.0000000000006,
+      268770.00000008,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "pixel_spacing_crs_units": [
+      2.0000000000006,
+      2.0000000000006
+    ],
+    "units": [
+      null
+    ],
+    "nodata": 0.0,
+    "sampled_valid_fraction": 0.9137649536132812,
+    "sampled_range": [
+      1.0,
+      255.0
+    ],
+    "quality_semantics": "uninterpreted; requires product documentation",
+    "feature_validity": "not_established",
+    "sampling": "nearest-neighbour diagnostic overview, not area or full-resolution QA"
+  },
+  {
+    "path": "data\\raw\\discovery_v10\\mars\\DTEEC_046730_2110_055169_2110_A01.IMG",
+    "sha256": "0189f89224ecdfc23714769c7a00eb5edefb4301788de6aa890baa19a677445f",
+    "width": 2961,
+    "height": 7302,
+    "crs_wkt": "PROJCS[\"EQUIRECTANGULAR MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS_localRadius\",3391159.2284034,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",30],PARAMETER[\"central_meridian\",141.3],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "transform": [
+      1.0056947291608,
+      0.0,
+      -1298.3518953465928,
+      0.0,
+      -1.0056947291608,
+      1812644.0659448428,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "pixel_spacing_crs_units": [
+      1.0056947291608,
+      1.0056947291608
+    ],
+    "units": [
+      null
+    ],
+    "nodata": -3.4028226550889045e+38,
+    "sampled_valid_fraction": 0.7427635192871094,
+    "sampled_range": [
+      -1647.6038818359375,
+      -1446.695556640625
+    ],
+    "quality_semantics": "uninterpreted; requires product documentation",
+    "feature_validity": "not_established",
+    "sampling": "nearest-neighbour diagnostic overview, not area or full-resolution QA"
+  },
+  {
+    "path": "data\\raw\\discovery_v10\\mars\\ESP_046730_2110_RED_C_01_ORTHO.JP2",
+    "sha256": "e1cfd697f780f66bb7979dbea429cdca77f67b890ef4f7b20e71a960889f4542",
+    "width": 2961,
+    "height": 7302,
+    "crs_wkt": "PROJCS[\"Equirectangular MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS_localRadius\",3391159.2284034,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",30],PARAMETER[\"central_meridian\",141.3],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "transform": [
+      1.0056947291608,
+      0.0,
+      -1297.346200617432,
+      0.0,
+      -1.0056947291608,
+      1812643.0602501137,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "pixel_spacing_crs_units": [
+      1.0056947291608,
+      1.0056947291608
+    ],
+    "units": [
+      null
+    ],
+    "nodata": null,
+    "sampled_valid_fraction": 1.0,
+    "sampled_range": [
+      0.0,
+      255.0
+    ],
+    "quality_semantics": "uninterpreted; requires product documentation",
+    "feature_validity": "not_established",
+    "sampling": "nearest-neighbour diagnostic overview, not area or full-resolution QA"
+  },
+  {
+    "path": "data\\raw\\discovery_v10\\earth\\USGS_1M_12_x29y482_ID_SouthernID_2018_D19.tif",
+    "sha256": "b830a1f2f709acb853a65dab61477704cc14ef176be4b49759acc612500522d8",
+    "width": 10012,
+    "height": 10012,
+    "crs_wkt": "PROJCS[\"NAD83 / UTM zone 12N\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-111],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"26912\"]]",
+    "transform": [
+      1.0,
+      0.0,
+      289994.00002820056,
+      0.0,
+      -1.0,
+      4820006.000008559,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "pixel_spacing_crs_units": [
+      1.0,
+      1.0
+    ],
+    "units": [
+      null
+    ],
+    "nodata": -999999.0,
+    "sampled_valid_fraction": 0.16553497314453125,
+    "sampled_range": [
+      1702.64013671875,
+      2339.015869140625
+    ],
+    "quality_semantics": "uninterpreted; requires product documentation",
+    "feature_validity": "not_established",
+    "sampling": "nearest-neighbour diagnostic overview, not area or full-resolution QA"
+  }
+]

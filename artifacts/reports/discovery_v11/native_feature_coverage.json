@@ -1,0 +1,243 @@
+{
+  "scope": "Source finite-mask and documented quality preflight, not terrain descriptors or validation outcomes",
+  "geometry": "Published diameter circles where known, not exact mapped rims",
+  "lunar": [
+    {
+      "atlas_id": 1,
+      "name": "Marius Hills Pit",
+      "terrain_path": "data/raw/discovery_v10/moon_marius/NAC_DTM_MARIUSPIT01.TIF",
+      "native_posting_m": 3.9999999999986,
+      "native_crs": "PROJCS[\"Equirectangular Moon\",GEOGCS[\"GCS_Moon\",DATUM[\"D_Moon\",SPHEROID[\"Moon_localRadius\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",14],PARAMETER[\"central_meridian\",180],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "search_crop_valid_fraction": 0.962476,
+      "quality_basis": "finite native heights and documented correlation classes",
+      "proxy_diameter_m": 92.0,
+      "fixed_annulus_valid_fraction": 0.9737053070386403,
+      "sector_valid_fractions": [
+        0.9742574257425742,
+        0.982725527831094,
+        0.9786407766990292,
+        0.9923518164435946,
+        0.9769230769230769,
+        0.950592885375494,
+        0.9682242990654205,
+        0.9884615384615385,
+        0.9385796545105566,
+        0.9805825242718447,
+        0.9749518304431599,
+        0.9776536312849162
+      ],
+      "all_native_sectors_pass": false
+    },
+    {
+      "atlas_id": 3,
+      "name": "Mare Tranquillitatis Pit",
+      "terrain_path": "data/raw/discovery_v10/moon/NAC_DTM_TRANQPIT1.TIF",
+      "native_posting_m": 2.0000000000006,
+      "native_crs": "PROJCS[\"Equirectangular Moon\",GEOGCS[\"GCS_Moon\",DATUM[\"D_Moon\",SPHEROID[\"Moon_localRadius\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",8],PARAMETER[\"central_meridian\",180],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "search_crop_valid_fraction": 0.936265,
+      "quality_basis": "finite native heights and documented correlation classes",
+      "proxy_diameter_m": 146.0,
+      "fixed_annulus_valid_fraction": 0.9342463571940441,
+      "sector_valid_fractions": [
+        0.9343887087545298,
+        0.9170806266717616,
+        0.9472079283400038,
+        0.9399577978131594,
+        0.8893560099369386,
+        0.9221819568949075,
+        0.9498660543436663,
+        0.9593045471914405,
+        0.9386738213875048,
+        0.9499047619047619,
+        0.9223857770980692,
+        0.9406471376603485
+      ],
+      "all_native_sectors_pass": false
+    },
+    {
+      "atlas_id": 10,
+      "name": "North Procellarum 1 Pit",
+      "terrain_path": "data/raw/discovery_v10/moon_prclrmpit01/NAC_DTM_PRCLRMPIT01.TIF",
+      "native_posting_m": 4.9999999999999,
+      "native_crs": "PROJCS[\"Equirectangular Moon\",GEOGCS[\"GCS_Moon\",DATUM[\"D_Moon\",SPHEROID[\"Moon_localRadius\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",35],PARAMETER[\"central_meridian\",180],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "search_crop_valid_fraction": 0.9526625,
+      "quality_basis": "finite native heights and documented correlation classes",
+      "proxy_diameter_m": 195.0,
+      "fixed_annulus_valid_fraction": 0.9575916522515484,
+      "sector_valid_fractions": [
+        0.9608753315649867,
+        0.964524765729585,
+        0.9673550966022652,
+        0.9636118598382749,
+        0.9524765729585006,
+        0.9298477829252151,
+        0.9141891891891892,
+        0.9442953020134228,
+        0.9528936742934051,
+        0.9840425531914894,
+        0.971868720696584,
+        0.9850948509485095
+      ],
+      "all_native_sectors_pass": false
+    },
+    {
+      "atlas_id": 11,
+      "name": "North Procellarum 2 Pit",
+      "terrain_path": "data/raw/discovery_v10/moon_prclrmpit01/NAC_DTM_PRCLRMPIT01.TIF",
+      "native_posting_m": 4.9999999999999,
+      "native_crs": "PROJCS[\"Equirectangular Moon\",GEOGCS[\"GCS_Moon\",DATUM[\"D_Moon\",SPHEROID[\"Moon_localRadius\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",35],PARAMETER[\"central_meridian\",180],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "search_crop_valid_fraction": 0.959725,
+      "quality_basis": "finite native heights and documented correlation classes",
+      "proxy_diameter_m": 175.0,
+      "fixed_annulus_valid_fraction": 0.9739287200110942,
+      "sector_valid_fractions": [
+        0.9605263157894737,
+        0.9875207986688852,
+        0.9762878168438267,
+        0.9906542056074766,
+        0.9767054908485857,
+        0.9753492193919474,
+        0.9797809604043808,
+        0.9759136212624585,
+        0.9745547073791349,
+        0.9567699836867863,
+        0.9568106312292359,
+        0.9772151898734177
+      ],
+      "all_native_sectors_pass": true
+    },
+    {
+      "atlas_id": 6,
+      "name": "Mare Ingenii Pit",
+      "terrain_path": "data/raw/discovery_v10/moon_ingeniipit/NAC_DTM_INGENIIPIT.TIF",
+      "native_posting_m": 2.0000000000006,
+      "native_crs": "PROJCS[\"Equirectangular Moon\",GEOGCS[\"GCS_Moon\",DATUM[\"D_Moon\",SPHEROID[\"Moon_localRadius\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",-36],PARAMETER[\"central_meridian\",180],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "search_crop_valid_fraction": 0.946597,
+      "quality_basis": "finite native heights and documented correlation classes",
+      "proxy_diameter_m": 180.0,
+      "fixed_annulus_valid_fraction": 0.9506879171774962,
+      "sector_valid_fractions": [
+        0.9675267463813719,
+        0.9676770217582694,
+        0.943807483935996,
+        0.9503074413351738,
+        0.9490886235072281,
+        0.9481369587109768,
+        0.9365737251946747,
+        0.9490501949930809,
+        0.948438088069251,
+        0.9440312618177235,
+        0.9367534263799824,
+        0.9668508287292817
+      ],
+      "all_native_sectors_pass": false
+    }
+  ],
+  "mars": [
+    {
+      "id": "APC130",
+      "product": "DTEEC_052638_2020_060379_2020_U01",
+      "terrain_path": "data/raw/discovery_v11/mars/DTEEC_052638_2020_060379_2020_U01/DTEEC_052638_2020_060379_2020_U01.IMG",
+      "native_posting_m": 1.0087452574663,
+      "native_crs": "PROJCS[\"EQUIRECTANGULAR MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS_localRadius\",3393833.2607584,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",20],PARAMETER[\"central_meridian\",122.05],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "search_crop_valid_fraction": 1.0,
+      "quality_basis": "finite native heights only; extraction-quality qualification remains unresolved",
+      "proxy_diameter_m": 110.0,
+      "fixed_annulus_valid_fraction": 1.0,
+      "sector_valid_fractions": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "all_native_sectors_pass": true
+    },
+    {
+      "id": "CC0026",
+      "product": "DTEEC_081500_2090_046738_2090_A01",
+      "terrain_path": "data/raw/discovery_v11/mars/DTEEC_081500_2090_046738_2090_A01/DTEEC_081500_2090_046738_2090_A01.IMG",
+      "native_posting_m": 1.0065989532812,
+      "native_crs": "PROJCS[\"EQUIRECTANGULAR MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS_localRadius\",3392593.6110435,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",25],PARAMETER[\"central_meridian\",284.61],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "search_crop_valid_fraction": 0.9062223526905763,
+      "quality_basis": "finite native heights only; extraction-quality qualification remains unresolved"
+    },
+    {
+      "id": "CC0089",
+      "product": "DTEEC_055209_2015_060260_2015_U01",
+      "terrain_path": "data/raw/discovery_v11/mars/DTEEC_055209_2015_060260_2015_U01/DTEEC_055209_2015_060260_2015_U01.IMG",
+      "native_posting_m": 1.0087629957762,
+      "native_crs": "PROJCS[\"EQUIRECTANGULAR MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS_localRadius\",3393833.2607584,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",20],PARAMETER[\"central_meridian\",127.14],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "search_crop_valid_fraction": 1.0,
+      "quality_basis": "finite native heights only; extraction-quality qualification remains unresolved"
+    },
+    {
+      "id": "CC0206",
+      "product": "DTEEC_046730_2110_055169_2110_A01",
+      "terrain_path": "data/raw/discovery_v10/mars/DTEEC_046730_2110_055169_2110_A01.IMG",
+      "native_posting_m": 1.0056947291608,
+      "native_crs": "PROJCS[\"EQUIRECTANGULAR MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS_localRadius\",3391159.2284034,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",30],PARAMETER[\"central_meridian\",141.3],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "search_crop_valid_fraction": 0.8636528053616156,
+      "quality_basis": "finite native heights only; extraction-quality qualification remains unresolved"
+    },
+    {
+      "id": "CC0253",
+      "product": "DTEEC_023531_1840_023953_1840_A01",
+      "terrain_path": "data/raw/discovery_v11/mars/DTEEC_023531_1840_023953_1840_A01/DTEEC_023531_1840_023953_1840_A01.IMG",
+      "native_posting_m": 1.0117992087034,
+      "native_crs": "PROJCS[\"EQUIRECTANGULAR MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS_localRadius\",3396190,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",248.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "search_crop_valid_fraction": 0.6424821205113228,
+      "quality_basis": "finite native heights only; extraction-quality qualification remains unresolved"
+    },
+    {
+      "id": "CC0737",
+      "product": "DTEEC_014327_1675_013971_1675_A01",
+      "terrain_path": "data/raw/discovery_v11/mars/DTEEC_014327_1675_013971_1675_A01/DTEEC_014327_1675_013971_1675_A01.IMG",
+      "native_posting_m": 1.0108744086743,
+      "native_crs": "PROJCS[\"EQUIRECTANGULAR MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS_localRadius\",3395582.0270805,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",-10],PARAMETER[\"central_meridian\",249.81],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "search_crop_valid_fraction": 0.6350425969793103,
+      "quality_basis": "finite native heights only; extraction-quality qualification remains unresolved"
+    },
+    {
+      "id": "CC0870",
+      "product": "DTEEC_069174_2045_001420_2045_A01",
+      "terrain_path": "data/raw/discovery_v11/mars/DTEEC_069174_2045_001420_2045_A01/DTEEC_069174_2045_001420_2045_A01.IMG",
+      "native_posting_m": 1.0080715168294,
+      "native_crs": "PROJCS[\"EQUIRECTANGULAR MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS_localRadius\",3393833.2607584,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",20],PARAMETER[\"central_meridian\",188.13],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "search_crop_valid_fraction": 1.0,
+      "quality_basis": "finite native heights only; extraction-quality qualification remains unresolved"
+    },
+    {
+      "id": "CC0927",
+      "product": "DTEEC_046730_2110_055169_2110_A01",
+      "terrain_path": "data/raw/discovery_v10/mars/DTEEC_046730_2110_055169_2110_A01.IMG",
+      "native_posting_m": 1.0056947291608,
+      "native_crs": "PROJCS[\"EQUIRECTANGULAR MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS_localRadius\",3391159.2284034,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",30],PARAMETER[\"central_meridian\",141.3],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "search_crop_valid_fraction": 0.7992963309261775,
+      "quality_basis": "finite native heights only; extraction-quality qualification remains unresolved"
+    },
+    {
+      "id": "CC0928",
+      "product": "DTEEC_046730_2110_055169_2110_A01",
+      "terrain_path": "data/raw/discovery_v10/mars/DTEEC_046730_2110_055169_2110_A01.IMG",
+      "native_posting_m": 1.0056947291608,
+      "native_crs": "PROJCS[\"EQUIRECTANGULAR MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS_localRadius\",3391159.2284034,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",30],PARAMETER[\"central_meridian\",141.3],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "search_crop_valid_fraction": 0.7929100247439348,
+      "quality_basis": "finite native heights only; extraction-quality qualification remains unresolved"
+    }
+  ],
+  "validation_eligible_cases": 0,
+  "remaining": [
+    "verified rims",
+    "complete source-quality evidence",
+    "independent geological controls",
+    "calibration and protocol freeze"
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "attribution": "Terrestrial Analog Finder, shishir-kuet; original implementation and published processed feature records",
+  "repository": "https://github.com/shishir-kuet/terrestrial-analog-finder",
+  "commit": "421e80fc67706ba9a8de644eed34ef2d7a11a91a",
+  "scope": "Replay of scores and feature/weight sensitivity from upstream processed records, not independent reconstruction of raw DEMs",
+  "source_sha256": "15532d71feb561705c6cc4722b95fffacb1ca887db4d1c91f0320e83ab805f61",
+  "reference_receipt_sha256": "014efff36ad40bd8089145063eed3fd2f5d961d88310ba2ed251b16e4a106fed",
+  "targets": 12,
+  "reference_earth_pool": 469,
+  "checks": [
+    {
+      "experiment": "Random weight perturbation (each weight x U[0.5, 1.5], 20 draws; medians of per-draw medians)",
+      "replayed": {
+        "name": "Random weight perturbation (each weight x U[0.5, 1.5], 20 draws; medians of per-draw medians)",
+        "median_spearman": 0.9978504836308735,
+        "min_spearman": 0.9925041161703815,
+        "median_top10_overlap": 9.0,
+        "min_top10_overlap": 7.5,
+        "n_targets": 12.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "matches_within_1e_10": true
+    },
+    {
+      "experiment": "Drop feature: Local relief",
+      "replayed": {
+        "name": "Drop feature: Local relief",
+        "median_spearman": 0.989219427523,
+        "min_spearman": 0.9387279142450953,
+        "median_top10_overlap": 9.0,
+        "min_top10_overlap": 4,
+        "n_targets": 12,
+        "targets_without_valid_window": []
+      },
+      "maximum_absolute_difference": 0.0,
+      "matches_within_1e_10": true
+    },
+    {
+      "experiment": "Drop feature: Median slope",
+      "replayed": {
+        "name": "Drop feature: Median slope",
+        "median_spearman": 0.9945428782770596,
+        "min_spearman": 0.9810422871556396,
+        "median_top10_overlap": 8.0,
+        "min_top10_overlap": 5,
+        "n_targets": 12,
+        "targets_without_valid_window": []
+      },
+      "maximum_absolute_difference": 0.0,
+      "matches_within_1e_10": true
+    },
+    {
+      "experiment": "Drop feature: 90th-percentile slope",
+      "replayed": {
+        "name": "Drop feature: 90th-percentile slope",
+        "median_spearman": 0.9991701088855789,
+        "min_spearman": 0.9960024780677105,
+        "median_top10_overlap": 9.0,
+        "min_top10_overlap": 6,
+        "n_targets": 12,
+        "targets_without_valid_window": []
+      },
+      "maximum_absolute_difference": 0.0,
+      "matches_within_1e_10": true
+    },
+    {
+      "experiment": "Drop feature: Short-baseline roughness",
+      "replayed": {
+        "name": "Drop feature: Short-baseline roughness",
+        "median_spearman": 0.9987378137909793,
+        "min_spearman": 0.9563985211713842,
+        "median_top10_overlap": 9.0,
+        "min_top10_overlap": 7,
+        "n_targets": 12,
+        "targets_without_valid_window": []
+      },
+      "maximum_absolute_difference": 0.0,
+      "matches_within_1e_10": true
+    },
+    {
+      "experiment": "Drop feature: Hypsometric integral",
+      "replayed": {
+        "name": "Drop feature: Hypsometric integral",
+        "median_spearman": 0.9855005586020833,
+        "min_spearman": 0.7988122901412918,
+        "median_top10_overlap": 7.0,
+        "min_top10_overlap": 1,
+        "n_targets": 12,
+        "targets_without_valid_window": []
+      },
+      "maximum_absolute_difference": 0.0,
+      "matches_within_1e_10": true
+    },
+    {
+      "experiment": "Drop feature: Slope distribution (Wasserstein-1)",
+      "replayed": {
+        "name": "Drop feature: Slope distribution (Wasserstein-1)",
+        "median_spearman": 0.9889795385034837,
+        "min_spearman": 0.9809673512929616,
+        "median_top10_overlap": 8.0,
+        "min_top10_overlap": 6,
+        "n_targets": 12,
+        "targets_without_valid_window": []
+      },
+      "maximum_absolute_difference": 0.0,
+      "matches_within_1e_10": true
+    }
+  ],
+  "rankings": [
+    {
+      "target_id": "mars-gale",
+      "ranked": 467,
+      "excluded": 91,
+      "top_candidate_id": "survey-sahara-27p0N-7p0E",
+      "similarity_index": 75.7969490480007
+    },
+    {
+      "target_id": "mars-jezero",
+      "ranked": 467,
+      "excluded": 91,
+      "top_candidate_id": "survey-us-southwest-39p5N-111p5W",
+      "similarity_index": 91.14102151057264
+    },
+    {
+      "target_id": "mars-meridiani",
+      "ranked": 467,
+      "excluded": 91,
+      "top_candidate_id": "survey-sahara-23p0N-7p0E",
+      "similarity_index": 87.172184124558
+    },
+    {
+      "target_id": "mars-utopia-zhurong",
+      "ranked": 467,
+      "excluded": 91,
+      "top_candidate_id": "survey-sahara-19p0N-15p0E",
+      "similarity_index": 88.77236495283834
+    },
+    {
+      "target_id": "moon-connecting-ridge",
+      "ranked": 467,
+      "excluded": 91,
+      "top_candidate_id": "survey-transantarctic-78p5S-163p5E",
+      "similarity_index": 79.1248819983469
+    },
+    {
+      "target_id": "moon-de-gerlache-rim",
+      "ranked": 467,
+      "excluded": 91,
+      "top_candidate_id": "earth-mauna-kea",
+      "similarity_index": 60.49066610615247
+    },
+    {
+      "target_id": "moon-haworth",
+      "ranked": 467,
+      "excluded": 91,
+      "top_candidate_id": "survey-canadian-arctic-79p0N-89p0W",
+      "similarity_index": 68.8426787973173
+    },
+    {
+      "target_id": "moon-leibnitz-beta-plateau",
+      "ranked": 467,
+      "excluded": 91,
+      "top_candidate_id": "survey-transantarctic-78p5S-163p5E",
+      "similarity_index": 75.41811572614753
+    },
+    {
+      "target_id": "moon-malapert-massif",
+      "ranked": 467,
+      "excluded": 91,
+      "top_candidate_id": "earth-haleakala",
+      "similarity_index": 58.96562209690781
+    },
+    {
+      "target_id": "moon-nobile-rim-1",
+      "ranked": 467,
+      "excluded": 91,
+      "top_candidate_id": "survey-transantarctic-77p5S-162p5E",
+      "similarity_index": 57.44526058957099
+    },
+    {
+      "target_id": "moon-peak-near-shackleton",
+      "ranked": 467,
+      "excluded": 91,
+      "top_candidate_id": "survey-transantarctic-78p5S-163p5E",
+      "similarity_index": 77.5881442225582
+    },
+    {
+      "target_id": "moon-shackleton-rim",
+      "ranked": 467,
+      "excluded": 91,
+      "top_candidate_id": "earth-haleakala",
+      "similarity_index": 59.90910660419859
+    }
+  ],
+  "all_replayed_experiments_match": true,
+  "not_reproduced": [
+    "raw elevation acquisition and feature extraction",
+    "coarser-grid and smaller-window experiments requiring upstream raw caches",
+    "field or geological validation",
+    "any claimed scientific novelty"
+  ]
+}

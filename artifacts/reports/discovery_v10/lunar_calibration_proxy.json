@@ -1,0 +1,82 @@
+{
+  "state": "calibration_proxy_source_test_only",
+  "atlas": "https://lroc.im-ldi.com/atlases/pits/3",
+  "atlas_sha256": "5143c44b6091f0ad8edf4e02e060ea27f2d2f5848518bfefc42f1e6c28fa6078",
+  "site": "tranquillitatis",
+  "documented_center_lat_lon": [
+    8.3355,
+    33.222
+  ],
+  "proxy_diameter_m": 146,
+  "terrain_source": "data/raw/discovery_v10/moon/NAC_DTM_TRANQPIT1.TIF",
+  "confidence_source": "data/raw/discovery_v10/moon_quality/NAC_DTM_TRANQPIT1_CONF.IMG",
+  "terrain_sha256": "3cf53c33783cb43d8788d71837c43e322ce015d9ef4b3f0f61709e9e98fbc662",
+  "confidence_sha256": "d7bc8f5e02fce55b229fe5a2114ae63cf702e4a7f225c256bf6a8dd1ca1ffab1",
+  "terrain_confidence_grid_max_corner_difference_m": 2.3291866610240223e-08,
+  "geometry": "Circular proxy using the published maximum funnel diameter, not a delineated rim polygon.",
+  "source_grid_center_m": [
+    -4407485.841820539,
+    252760.28746049802
+  ],
+  "measurements": [
+    {
+      "include_manually_edited_class_15": false,
+      "unsmoothed_annulus_quality_fraction": 0.9342463571940441,
+      "state": "insufficient_valid_exterior",
+      "valid_fraction": 0.0,
+      "expected_cells": 62795,
+      "measured_cells": 0,
+      "support_m": 10
+    },
+    {
+      "include_manually_edited_class_15": false,
+      "unsmoothed_annulus_quality_fraction": 0.9342463571940441,
+      "state": "insufficient_valid_exterior",
+      "valid_fraction": 0.0,
+      "expected_cells": 62795,
+      "measured_cells": 0,
+      "support_m": 20
+    },
+    {
+      "include_manually_edited_class_15": false,
+      "unsmoothed_annulus_quality_fraction": 0.9342463571940441,
+      "state": "insufficient_valid_exterior",
+      "valid_fraction": 0.0,
+      "expected_cells": 62795,
+      "measured_cells": 0,
+      "support_m": 40
+    },
+    {
+      "include_manually_edited_class_15": true,
+      "unsmoothed_annulus_quality_fraction": 0.9342463571940441,
+      "state": "insufficient_valid_exterior",
+      "valid_fraction": 0.0,
+      "expected_cells": 62795,
+      "measured_cells": 0,
+      "support_m": 10
+    },
+    {
+      "include_manually_edited_class_15": true,
+      "unsmoothed_annulus_quality_fraction": 0.9342463571940441,
+      "state": "insufficient_valid_exterior",
+      "valid_fraction": 0.0,
+      "expected_cells": 62795,
+      "measured_cells": 0,
+      "support_m": 20
+    },
+    {
+      "include_manually_edited_class_15": true,
+      "unsmoothed_annulus_quality_fraction": 0.9342463571940441,
+      "state": "insufficient_valid_exterior",
+      "valid_fraction": 0.0,
+      "expected_cells": 62795,
+      "measured_cells": 0,
+      "support_m": 40
+    }
+  ],
+  "limits": [
+    "Calibration source exposed before any nominations; not a validation case.",
+    "A source-mask pass does not establish effective terrain resolution or geological truth.",
+    "No triad, control comparison or novelty outcome is computed."
+  ]
+}

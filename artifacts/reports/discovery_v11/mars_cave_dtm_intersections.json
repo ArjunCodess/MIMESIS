@@ -1,0 +1,211 @@
+{
+  "catalogue_records": 1062,
+  "dtm_polygons": 1377,
+  "invalid_dtm_polygons_not_joined": [
+    "DTEED_069895_1640_071886_1640_A01"
+  ],
+  "catalogue_features_in_any_dtm": 9,
+  "distinct_intersecting_dtms": 7,
+  "hits": [
+    {
+      "id": "APC130",
+      "longitude": 122.04605,
+      "latitude": 21.52222,
+      "type": "APC",
+      "priority": "1",
+      "diameter_m": 110.0,
+      "published_diameter_text": "110",
+      "published_axes_m": [
+        110.0
+      ],
+      "comment": "collapse pit kinda like an APC",
+      "coordinate_difference_degrees_from_main_table": [
+        -5.000000000165983e-05,
+        0.0
+      ],
+      "coordinate_source": "Published shapefile-export CSV; main-table position corroborated, finer decimals retained",
+      "dtm_products": [
+        "DTEEC_052638_2020_060379_2020_U01"
+      ],
+      "state": "point_intersection_only; rim and full exterior coverage unverified"
+    },
+    {
+      "id": "CC0026",
+      "longitude": 284.58795,
+      "latitude": 28.78819,
+      "type": "end",
+      "priority": "1",
+      "diameter_m": null,
+      "published_diameter_text": "n/a",
+      "published_axes_m": [],
+      "comment": "Kasei Fracture Tip Cave ~ strong ~ i=49",
+      "coordinate_difference_degrees_from_main_table": [
+        -5.000000004429239e-05,
+        0.0
+      ],
+      "coordinate_source": "Published shapefile-export CSV; main-table position corroborated, finer decimals retained",
+      "dtm_products": [
+        "DTEEC_081500_2090_046738_2090_A01"
+      ],
+      "state": "point_intersection_only; rim and full exterior coverage unverified"
+    },
+    {
+      "id": "CC0089",
+      "longitude": 127.13782,
+      "latitude": 21.36868,
+      "type": "irr",
+      "priority": "1",
+      "diameter_m": null,
+      "published_diameter_text": "n/a",
+      "published_axes_m": [],
+      "comment": "collapsed floor of collapse pit",
+      "coordinate_difference_degrees_from_main_table": [
+        2.0000000006348273e-05,
+        0.0
+      ],
+      "coordinate_source": "Published shapefile-export CSV; main-table position corroborated, finer decimals retained",
+      "dtm_products": [
+        "DTEEC_055209_2015_060260_2015_U01"
+      ],
+      "state": "point_intersection_only; rim and full exterior coverage unverified"
+    },
+    {
+      "id": "CC0206",
+      "longitude": 141.31189,
+      "latitude": 30.56471,
+      "type": "irr",
+      "priority": "0",
+      "diameter_m": null,
+      "published_diameter_text": "n/a",
+      "published_axes_m": [],
+      "comment": "dark, sharp-edge hole in surface",
+      "coordinate_difference_degrees_from_main_table": [
+        -1.0000000003174137e-05,
+        0.0
+      ],
+      "coordinate_source": "Published shapefile-export CSV; main-table position corroborated, finer decimals retained",
+      "dtm_products": [
+        "DTEEC_046730_2110_055169_2110_A01"
+      ],
+      "state": "point_intersection_only; rim and full exterior coverage unverified"
+    },
+    {
+      "id": "CC0253",
+      "longitude": 248.48291,
+      "latitude": 3.75879,
+      "type": "sky",
+      "priority": "0",
+      "diameter_m": null,
+      "published_diameter_text": "n/a",
+      "published_axes_m": [],
+      "comment": "Famous pit-floor cave on Pavonis",
+      "coordinate_difference_degrees_from_main_table": [
+        1.0000000003174137e-05,
+        0.0
+      ],
+      "coordinate_source": "Published shapefile-export CSV; main-table position corroborated, finer decimals retained",
+      "dtm_products": [
+        "DTEEC_023531_1840_023953_1840_A01"
+      ],
+      "state": "point_intersection_only; rim and full exterior coverage unverified"
+    },
+    {
+      "id": "CC0737",
+      "longitude": 249.7785,
+      "latitude": -12.26022,
+      "type": "irr",
+      "priority": "0",
+      "diameter_m": null,
+      "published_diameter_text": "n/a",
+      "published_axes_m": [],
+      "comment": "Solution cave? Cliff hole",
+      "coordinate_difference_degrees_from_main_table": [
+        0.0,
+        0.0
+      ],
+      "coordinate_source": "Published shapefile-export CSV; main-table position corroborated, finer decimals retained",
+      "dtm_products": [
+        "DTEEC_014327_1675_013971_1675_A01"
+      ],
+      "state": "point_intersection_only; rim and full exterior coverage unverified"
+    },
+    {
+      "id": "CC0870",
+      "longitude": 188.13367,
+      "latitude": 24.48309,
+      "type": "irr",
+      "priority": "0",
+      "diameter_m": null,
+      "published_diameter_text": "n/a",
+      "published_axes_m": [],
+      "comment": "Tartaru s Colles natural bridge",
+      "coordinate_difference_degrees_from_main_table": [
+        -3.000000000952241e-05,
+        0.0
+      ],
+      "coordinate_source": "Published shapefile-export CSV; main-table position corroborated, finer decimals retained",
+      "dtm_products": [
+        "DTEEC_069174_2045_001420_2045_A01"
+      ],
+      "state": "point_intersection_only; rim and full exterior coverage unverified"
+    },
+    {
+      "id": "CC0927",
+      "longitude": 141.31458,
+      "latitude": 30.56317,
+      "type": "irr",
+      "priority": "0",
+      "diameter_m": null,
+      "published_diameter_text": "n/a",
+      "published_axes_m": [],
+      "comment": "Irregular surface hole",
+      "coordinate_difference_degrees_from_main_table": [
+        -2.0000000006348273e-05,
+        0.0
+      ],
+      "coordinate_source": "Published shapefile-export CSV; main-table position corroborated, finer decimals retained",
+      "dtm_products": [
+        "DTEEC_046730_2110_055169_2110_A01"
+      ],
+      "state": "point_intersection_only; rim and full exterior coverage unverified"
+    },
+    {
+      "id": "CC0928",
+      "longitude": 141.31207,
+      "latitude": 30.5874,
+      "type": "crk",
+      "priority": "0",
+      "diameter_m": null,
+      "published_diameter_text": "n/a",
+      "published_axes_m": [],
+      "comment": "Small ambiguous hole in fracture",
+      "coordinate_difference_degrees_from_main_table": [
+        -2.99999999811007e-05,
+        0.0
+      ],
+      "coordinate_source": "Published shapefile-export CSV; main-table position corroborated, finer decimals retained",
+      "dtm_products": [
+        "DTEEC_046730_2110_055169_2110_A01"
+      ],
+      "state": "point_intersection_only; rim and full exterior coverage unverified"
+    }
+  ],
+  "source_issues": {
+    "main_csv_header": "longitude:string,latitude:string,Label:string,TypeCode:string,Priority:string,APC_Diameter:string,APC_Depth:string,Comment:string",
+    "field_layout_used": "PDS XML field numbers, not the inconsistent header",
+    "declared_file_size": 65726,
+    "actual_file_size": 64686,
+    "declared_md5": "5a209786b731b932317ea534432013f0",
+    "actual_md5": "aa2a7c0a9a55151fac37b044951f6ae7",
+    "pds_manifest_matches_file": false,
+    "maximum_coordinate_difference_degrees": 5.000000004429239e-05,
+    "interpretation": "Archive extracted CRC-clean from the official resource. Stale PDS size/checksum and inconsistent CSV header are preserved; matching IDs and nearby coordinates in the separate geometry representation corroborate identity, not rim accuracy."
+  },
+  "sources": {
+    "archive_url": "https://astrogeology.usgs.gov/ckan/dataset/c2960f77-ee20-4cc6-ac85-abbecc0fc7f6/resource/ccd54fb2-9a50-46bf-8971-80c241bb2f40/download/mars_cave_catalog.zip",
+    "archive_sha256": "d2703c128b29f47d44bd482344887156bae82831a636844d1418d75661726097",
+    "dtm_catalogue_url": "https://www.uahirise.org/hiwish/maps/dtms.jsp",
+    "dtm_catalogue_sha256": "02ed40a043136627a73bdbe4f5e51574ca18c925b90163594942f2747008646b"
+  },
+  "limits": "Catalogue points are candidate cave entrances, not confirmed caves. Polygon overlap is not native terrain validity or complete exterior coverage."
+}

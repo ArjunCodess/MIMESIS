@@ -1,0 +1,62 @@
+{
+  "typecheck": "passed",
+  "production_build": "passed",
+  "playwright": {
+    "passed": 10,
+    "projects": [
+      "desktop",
+      "mobile"
+    ],
+    "coverage": [
+      "archive workflows",
+      "sorting and selection",
+      "source records",
+      "evidence image loading",
+      "PDF availability",
+      "WCAG axe checks",
+      "document overflow"
+    ]
+  },
+  "transfer_v9_tests": {
+    "passed": 8
+  },
+  "hallmark": {
+    "scope": [
+      "App.tsx",
+      "EvidencePanel.tsx",
+      "style.css",
+      "tokens.css"
+    ],
+    "static_and_render": "0 FAIL, 0 REFLEX, 0 WARN",
+    "viewports": [
+      320,
+      375,
+      414,
+      1280,
+      1440,
+      1920
+    ]
+  },
+  "visual_review": {
+    "initial_disposition": "fix",
+    "finding": "phone map scale label wrapped",
+    "resolution": "nowrap and no flex shrink, proportional width preserved",
+    "final_disposition": "ship",
+    "scope": "the one reported finding was resolved"
+  },
+  "react_doctor": {
+    "score": 71,
+    "warnings": 12,
+    "scope": "pre-existing and current React components; no dedicated cleanup undertaken"
+  },
+  "paper": {
+    "pages": 4,
+    "compiled_from_latex": true,
+    "template": "George Kour arxiv style",
+    "hash": "ad686ae223cb39b1df8e372e1fc9819006a574958414e072b2102cd80940350a"
+  },
+  "limitations": [
+    "No independent geological validation or new analogue discovery established",
+    "Saved eligibility snapshot is not automatically updated by later downloads"
+  ]
+}
