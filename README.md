@@ -34,7 +34,7 @@ Scientific records retain source identities, hashes, masks and exclusions. Missi
 - `scripts/`: acquisition, analysis, reproduction and publication commands.
 - `configs/` and `data/metadata/`: protocols, source labels and acquisition provenance.
 - `artifacts/paper/` and `artifacts/reports/`: manuscript and measured records.
-- `tests/`: focused scientific, API and browser checks.
+- `tests/`: focused scientific and API checks.
 
 Raw observations, restricted archives, installed dependencies, planning drafts and local review material are excluded from Git. The historical discovery record is compressed losslessly; `prepare_checkout.py` restores it for analysis, while the API can read either form.
 
@@ -43,9 +43,6 @@ Raw observations, restricted archives, installed dependencies, planning drafts a
 ```sh
 python -m pytest -q
 npm run build
-npx playwright install chromium
-npx playwright test --workers=2
-python scripts/audit_github_readiness.py
 ```
 
 Native downloads are required only for source-dependent scientific reconstruction. The supplied research bundle runs without downloading the original rasters.

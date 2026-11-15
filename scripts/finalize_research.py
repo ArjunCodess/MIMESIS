@@ -283,7 +283,7 @@ def report(b):
         "",
         "## Reproduction",
         "",
-        "Run `python scripts/build_research.py --expanded` to regenerate source-to-feature measurements, frozen rankings, camera packets and joined assessments from available raw data. Reacquisition scripts are separate, so ordinary reproduction does not need a token. `python scripts/verify_reproduction.py` compares the source hashes and full ranking tiers; evidence export hashes are recorded separately because image/literature annotations do not alter terrain ranks. `python -m pytest`, `npm run build`, and `npx playwright test` validate the computation and interface.",
+        "Run `python scripts/build_research.py --expanded` to regenerate source-to-feature measurements, frozen rankings, camera packets and joined assessments from available raw data. Reacquisition scripts are separate, so ordinary reproduction does not need a token. `python scripts/verify_reproduction.py` compares the source hashes and full ranking tiers; evidence export hashes are recorded separately because image/literature annotations do not alter terrain ranks. `python -m pytest` and `npm run build` check the computation and interface build.",
         "",
         "## Sources and disclosure",
         "",

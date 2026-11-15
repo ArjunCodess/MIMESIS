@@ -13,6 +13,16 @@ artifacts/reviews/
 .impeccable/
 test-results/
 playwright-report/
+# Local development reports are not research outputs.
+artifacts/reports/browser-tests.json
+artifacts/reports/ui-refresh-*.json
+artifacts/reports/hallmark-*.txt
+artifacts/reports/react-doctor-*.txt
+artifacts/reports/validation.json
+artifacts/reports/github-readiness.json
+artifacts/reports/dependency-audit-*.json
+artifacts/reports/replication_v11/repository-cleanup.json
+apps/web/public/research/validation.json
 *.tsbuildinfo
 artifacts/*.zip
 artifacts/*.zip.sha256
