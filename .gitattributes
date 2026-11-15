@@ -1,0 +1,12 @@
+*.py text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.mjs text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+configs/** -text whitespace=-blank-at-eol,-blank-at-eof
+data/metadata/** -text whitespace=-blank-at-eol,-blank-at-eof
+apps/web/public/research/** -text whitespace=-blank-at-eol,-blank-at-eof
+apps/web/src/generated/** -text
+artifacts/reports/** -text whitespace=-blank-at-eol,-blank-at-eof
+artifacts/paper/** -text
