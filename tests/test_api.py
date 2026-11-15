@@ -1,10 +1,28 @@
 """Public API integration checks against the shipped research records."""
 from fastapi.testclient import TestClient
+import pytest
 
 from services.api.main import app, bundle
 from src.ranking import rank
 
 client = TestClient(app)
+
+
+def assert_same_ranking(actual, expected):
+    assert actual.keys() == expected.keys()
+    assert {key: value for key, value in actual.items() if key != 'candidates'} == {
+        key: value for key, value in expected.items() if key != 'candidates'
+    }
+    assert len(actual['candidates']) == len(expected['candidates'])
+    numeric_fields = {'nominal_loss', 'robust_loss', 'group_losses', 'contributions'}
+    for measured, saved in zip(actual['candidates'], expected['candidates'], strict=True):
+        assert measured.keys() == saved.keys()
+        # BLAS reductions differ by a few ulps across platforms; ranks and decisions must agree exactly.
+        for key in measured:
+            if key in numeric_fields:
+                assert measured[key] == pytest.approx(saved[key], rel=1e-12, abs=1e-15), (saved['id'], key)
+            else:
+                assert measured[key] == saved[key], (saved['id'], key)
 
 
 def test_catalogue_and_health_match_the_shipped_data():
@@ -21,8 +39,8 @@ def test_ranking_matches_the_offline_calculation_and_export():
     for support, field in [(500, 'rankings'), (1000, 'rankings_1000')]:
         response = client.post('/v1/rank', json={'target_id': 'jezero', 'support_m': support})
         assert response.status_code == 200
-        assert response.json() == rank(data['candidates'], target, data['protocol'], support)
-        assert response.json() == data[field]['jezero']
+        assert_same_ranking(response.json(), rank(data['candidates'], target, data['protocol'], support))
+        assert_same_ranking(response.json(), data[field]['jezero'])
 
 
 def test_invalid_inputs_and_unsupported_claims_are_rejected():
