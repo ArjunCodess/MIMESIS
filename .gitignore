@@ -56,3 +56,8 @@ data/metadata/**/*.pdf
 data/metadata/**/*.osm
 artifacts/mimesis-walkthrough.webm
 scripts/record_demo.mjs
+/NAC_DTM_*
+/USGS_LPC_*
+data/metadata/discovery_v10/user-code/
+data/metadata/discovery_v10/jingpo2026-text.txt
+data/metadata/discovery_v10/field-survey-notes.txt
