@@ -1,0 +1,5 @@
+{
+  "url": "https://g6goyz4w56.execute-api.us-west-2.amazonaws.com/prod/search?collections=mro_ctx_controlled_usgs_dtms&next=2024-01-01T00%3A00%3A00Z%2CP22_009606_1666_XN_13S097W__P04_002565_1675_XN_12S098W%2Cmro_ctx_controlled_usgs_dtms&limit=100",
+  "http_status": 200,
+  "retrieved_at": "2026-11-14T18:15:54.105430+00:00"
+}

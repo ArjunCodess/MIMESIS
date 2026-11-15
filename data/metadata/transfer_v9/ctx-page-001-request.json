@@ -1,0 +1,5 @@
+{
+  "url": "https://stac.astrogeology.usgs.gov/api/search?collections=mro_ctx_controlled_usgs_dtms&limit=100",
+  "http_status": 200,
+  "retrieved_at": "2026-11-14T18:15:47.822594+00:00"
+}
