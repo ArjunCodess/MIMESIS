@@ -1,0 +1,18 @@
+{
+  "shot_support_v9.json": {
+    "path": "artifacts/reports/shot_support_v9.json",
+    "sha256": "df4b151432f06fa10cb2142835efd7290cf4c290a774f3e27c913ecd3d95ba67"
+  },
+  "global_eligibility_v9.json": {
+    "path": "artifacts/reports/global_eligibility_v9.json",
+    "sha256": "e96f1c190941460c612eb3a8ccde3e48c864c4f493825d91125b03d4e1f37225"
+  },
+  "orbital_spectra_v9.json": {
+    "path": "artifacts/reports/orbital_spectra_v9.json",
+    "sha256": "824e6f704e2696abd9a3c40c4885776b923f0f2ab2cf61a0bade4e40c38e45c2"
+  },
+  "transfer_v9.json": {
+    "path": "artifacts/reports/transfer_v9.json",
+    "sha256": "bfd9109354bd2cb234316e885d79f8540a187c45c3463638c73114df6504b7fe"
+  }
+}

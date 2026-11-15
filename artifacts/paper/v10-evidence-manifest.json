@@ -1,0 +1,54 @@
+{
+  "native_confidence_qa.json": {
+    "path": "artifacts/reports/discovery_v10/native_confidence_qa.json",
+    "sha256": "548501b9557b258cbd9bf26f3fb7216657c022ddd0377559499f0d104bdb0279"
+  },
+  "field_survey_qa.json": {
+    "path": "artifacts/reports/discovery_v10/field_survey_qa.json",
+    "sha256": "97c1007ad3423926bcda655be956f65ea95b2e69d9116bc4696dfe694460b545"
+  },
+  "native_source_qa.json": {
+    "path": "artifacts/reports/discovery_v10/native_source_qa.json",
+    "sha256": "d801286e61cfcda9b70af55241f4eebcf49c61cf7fc0aea2b9d27541364f2ecd"
+  },
+  "feasibility.json": {
+    "path": "artifacts/reports/discovery_v10/feasibility.json",
+    "sha256": "35134f7f6e80d821f5f8185cd749f7713b3ce19eb793cedd651e8a45f075692f"
+  },
+  "caves_archive_inventory.json": {
+    "path": "artifacts/reports/discovery_v10/caves_archive_inventory.json",
+    "sha256": "415dff9e0466a10160cf21e176b7b875c62549e16d1d3823bdb3c1057d4dac0a"
+  },
+  "caves_point_cloud_qa.json": {
+    "path": "artifacts/reports/discovery_v10/caves_point_cloud_qa.json",
+    "sha256": "db0f73f30eeea13161afb064f3cf2e854c09e2e641c194b19fa3a777d3657cf7"
+  },
+  "caves_surface_support.json": {
+    "path": "artifacts/reports/discovery_v10/caves_surface_support.json",
+    "sha256": "07c66f357de63f92c98c2aa188104ae76a4f40e02c6b3a27e5b2f3620dd32eb8"
+  },
+  "registered_earth_source_qa.json": {
+    "path": "artifacts/reports/discovery_v10/registered_earth_source_qa.json",
+    "sha256": "2cc679f02f2ecbd0b8990f049d0c275938304469270fb915d9e70823aac8f86e"
+  },
+  "registered_earth_gap_source_qa.json": {
+    "path": "artifacts/reports/discovery_v10/registered_earth_gap_source_qa.json",
+    "sha256": "e156c6d038c7169e0e243394d6b22a9f5ffaf7647b5f7117ee3d2ff7f466cc4e"
+  },
+  "lunar_calibration_proxy.json": {
+    "path": "artifacts/reports/discovery_v10/lunar_calibration_proxy.json",
+    "sha256": "8c1e87c8fe47225f9d65c268b0e9458611656e79fe73922bb712ce2f06f4f407"
+  },
+  "marius_calibration_proxy.json": {
+    "path": "artifacts/reports/discovery_v10/marius_calibration_proxy.json",
+    "sha256": "5db19b1399617bc695a8c4d9a1309d8906e3b499e57b6b2ee0ab32d657383c22"
+  },
+  "calibration_audit_v10.json": {
+    "path": "artifacts/reports/discovery_v10/calibration_audit_v10.json",
+    "sha256": "84aa417bfd46cac9176fe78e5edab30589d1c26343a0ef2f669b297410503f0e"
+  },
+  "pit_study_v10.json": {
+    "path": "artifacts/reports/discovery_v10/pit_study_v10.json",
+    "sha256": "26455d56e1b2966b3c3bcf5d3734197494b92c41e25f0f6169ad9b8b6a30a535"
+  }
+}
