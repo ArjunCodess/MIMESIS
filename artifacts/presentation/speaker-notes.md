@@ -1,31 +1,47 @@
 # Speaker notes
 
-The seven slides support a roughly five-minute pitch. The 90-second software-only demonstration is in `artifacts/submission/submission.md`. Keep the distinction between a working application, a measured geographic result and independent geological validation throughout.
+A roughly four-minute pitch. Speak to someone who has never worked with planetary maps. Show the website and explain what the result means before discussing how it was calculated.
 
-## 1. Challenge and working solution
+## 1. MIMESIS
 
-MIMESIS asks which Earth terrain could help prepare a particular mapping exercise for the Moon or Mars. The screenshot shows the real Explore workspace comparing a planetary reference with NASADEM Earth terrain and ranked footprints. These views are derived from elevation, not color photographs. The application allows target selection, support changes, candidate inspection and evidence export. We focus on regional terrain mapping; a 500 m grid cannot certify individual rover obstacles or construction safety. Introduce yourself as Arjun Vijay Prakash, a Grade XI student from City Montessori School, Kanpur Road, Lucknow.
+Before we send equipment to the Moon or Mars, we can study useful places on Earth. But a place that looks similar may still be a poor match. MIMESIS helps researchers compare land shapes, see possible Earth locations and check why those places were selected. The screenshot shows the working website. The views are made from height data, rather than ordinary photographs. Our focus is comparing broad landscapes, not certifying a landing site or a safe rover route.
 
-## 2. Data and method
+## 2. How it works
 
-NASA observations supply the actual measurements, rather than decoration. There are four Martian targets from MOLA, two lunar targets from LOLA and 3,693 Earth windows derived from NASADEM in two bounded regions. Each 20 km window is embedded in 80 km context. The 3 km spacing means that neighboring windows share much of their ground. Explain both contracts as whole definitions of similarity. The multigroup score already includes alternate support among its 35 scenarios, so its lower support sensitivity is partly expected by design. Neither score is a probability of relevance.
+We use NASA height maps for Earth, Mars and the Moon. NASADEM provides the Earth data, MOLA the Mars data and LOLA the lunar data. We compare 3,693 overlapping Earth areas in Namibia and Chile with six space targets. Each Earth area is 20 kilometres wide. We run the comparison at two map scales and with two different methods. Then we ask a simple question: does the selected place stay nearby, or does it move somewhere else? These overlapping areas are not thousands of independent sites.
 
-## 3. Nili result and Evidence demo
+## 3. Same ground
 
-Start with what initially looked like complete instability: none of Nili's scalar top-ten candidate IDs survives the support change. The geographic follow-up changes that interpretation. The winning centers move 3 km and their intersection-over-union is 73.91%. That is intersection divided by union, not the fraction of either one window retained. Maximum-cardinality one-to-one matching finds five top-ten pairs within 10 km and seven within 40 km. We report the whole radius sensitivity rather than treating 10 km as a validated equivalence threshold. Nili's minimax choice ranks 17 and 19, which also means the compromise is weak.
+Nili Fossae is an area on Mars. When we changed map scale, none of the entries in its top-ten Earth list kept the same ID. That sounded like a completely different result. But the two winning areas were only three kilometres apart. Their shared ground was 73.9% of their combined area. Five pairs from the two top-ten lists could be matched within ten kilometres, counting each area only once. Different entries can therefore describe much of the same ground. This is partial agreement, not proof that every choice stayed stable.
 
-## 4. Contract-dependent location choice
+## 4. Different choices
 
-The largest support displacement within either contract is 24.19 km. At fixed support, changing the scoring contract sends Jezero from Namib to Atacama and Syrtis in the other direction, over 8,300 km. Nili remains in Namibia but shifts about 72–75 km. Isidis and Shackleton differ by much less; Taurus-Littrow agrees exactly. Retaining all six cases avoids telling the story only through the two dramatic examples. The contracts differ in observables, normalization, weights and aggregation. This is not a controlled test of one ingredient, nor proof that our preferred score is more scientifically accurate.
+Changing the comparison method had a much larger effect in two cases. The Earth choices for Jezero and Syrtis moved between Namibia and Chile, more than 8,300 kilometres. Changing map scale within a method moved a winner by at most 24.2 kilometres. The chart keeps all six targets visible, including those that changed much less. We changed whole methods, so this does not tell us which method is better or which individual setting caused the change. It tells users to inspect the assumptions before trusting the first result.
 
-## 5. Methods, sources and exports
+## 5. The website
 
-The screenshots show the actual Methods and Data pages. The method and source records are meant to let another researcher inspect the assumptions and locate missing evidence. The new GeoJSON has twelve target–contract entries, including repeated physical windows where different targets share a choice. Do not describe those as twelve independently discovered sites. Each choice minimizes the worse rank across supports, with rank sum and candidate ID as deterministic tie-breakers. The JSON retains bundle and implementation hashes. Running the new analysis reproduces calculations from frozen descriptors; reconstructing the original DEM measurements is a separate workflow.
+The Methods page shows how the comparisons are made. The Data page shows the NASA sources, missing coverage and files people can download. Researchers can inspect the maps and measurements themselves. We also export the selected areas in a standard map file, GeoJSON. Each entry keeps its location, source and validation status. The shortlist favours areas that rank reasonably at both scales. A shortlist is a starting point for research, not permission to visit or a claim of geological similarity.
 
-## 6. Validity and failed cases
+## 6. Honest checks
 
-The lunar pit screenshot shows why we stop some claims rather than force an attractive analogue. Tranquillitatis and Marius Hills fail the declared neighborhood-support requirement. Six analytical-plane controls pass, but all 120 acquired-mask sensitivities fail. This is a source-support result, not evidence that caves are physically dissimilar. The separate eighteen MOLA-pattern transfers lower median slope under linear reconstruction; geometry and reconstruction change together. Missing original quality fields prevent a stronger accuracy claim. Nine focused tests cover physical behavior, evidence boundaries, geography and API integration. Passing software tests is not field validation.
+We also tried comparing lunar pits. The screenshot shows one case where our quality check left no usable area for the chosen measurement. We needed 95%. The other lunar case also failed. Changing the quality-mask settings did not make either case pass, across 120 settings in total. We stopped rather than claiming that the comparison worked. Nine focused software tests pass, but code tests cannot replace geological or field checks. A separate sampling experiment also shows that changing how terrain is observed can change the measured slope; the paper records all eighteen comparisons.
 
-## 7. Contribution, delivery and next evidence
+## 7. Why it matters
 
-State the contribution once: MIMESIS exposes the difference between changing a rank, changing the ground and changing the scoring assumptions. The application, measured results, geographic exports, paper, brief and editable deck are available on GitHub. The Nili coordinate is an analysis-window center, not a surveyed feature or approved field destination. The next scientific step is independent process-relevant reference zones, qualified observations and outcomes for a declared mapping task. Earth does not reproduce lunar vacuum or gravity, Martian atmospheric conditions, radiation or polar illumination. We have an original project-level geographic result, not a newly validated geological analogue. Codex assistance and required research provenance remain disclosed in the project.
+The intended benefit is to help researchers decide which places and observations to study next, before planning fieldwork. We have built the website and released maps, measurements, code and the research paper. We also have a new result within this project: rank changes can hide shared ground, while different comparison methods can choose different continents. We have not confirmed a new geological analogue or measured savings in time, money or mission risk. The next step is to check the geology and test whether the selected places help a real exploration task. Everything is available on GitHub.
+
+## Evidence for the judging criteria
+
+- **Impact:** Slides 1 and 7 explain who could use the tool and the decision it supports. The benefit is proposed; measured mission savings are not claimed.
+- **Creativity:** Slides 3 and 4 show the two measured findings that change how the rankings should be read. General ranking and sensitivity methods are not claimed as new inventions.
+- **Validity:** Slide 6 shows a failed case and why the project stops that claim. The paper and code preserve the rules, calculations and limits.
+- **Relevance:** Slide 2 identifies the NASA data actually used to compare Earth, the Moon and Mars. The software screens locations for a stated terrain task.
+- **Presentation:** The seven slides follow the problem, method, finding, working tool and next step. Five supplied screenshots demonstrate the application.
+
+## Source and claim details
+
+The precise term for the shared-ground measure is intersection-over-union: shared area divided by combined area, not the share of either single square. The map scales are 500 metres and 1,000 metres. The methods are the four-variable scalar comparison and the multigroup score described in the paper. The new chart reports the largest displacement per target within each comparison type, using a distance axis that changes to logarithmic spacing away from zero.
+
+The Namibia example on slide 7 is the Nili scalar compromise window centred at 25.16248 degrees south, 16.05951 degrees east. It ranks 17 and 19 at the two scales, outside both top tens. It is not an approved field location. The wider regions are established analogue environments; a previously unrecognised geological site has not been established here. Earth also does not reproduce lunar vacuum and gravity, the Martian atmosphere or their radiation environments.
+
+Arjun Vijay Prakash built MIMESIS. Codex assisted with implementation, analysis code and writing. Original data terms and research citations remain in the paper and source manifests.
