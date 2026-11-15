@@ -1,0 +1,21 @@
+{
+  "endpoint": "https://oderest.rsl.wustl.edu/livegds/",
+  "parameters": {
+    "query": "molapedr",
+    "source": "GDSWebMOLAPEDR",
+    "odemetadb": "mars",
+    "o": "j",
+    "results": "cv",
+    "westlon": 69.35166,
+    "eastlon": 70.71333,
+    "minlat": 6.25133,
+    "maxlat": 7.60153,
+    "async": "t"
+  },
+  "footprint": "Bounding box encloses the metric 80 km square; analysis clips to square",
+  "required_missing_fields": [
+    "original PEDR per-shot good/bad quality flag",
+    "PDS product ID and shot/frame index"
+  ],
+  "state": "acquired"
+}

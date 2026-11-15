@@ -1,0 +1,773 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+    <title>NASA Planetary Geoscience's Granular Data System (GDS) MGS MOLA PEDR Query Tool</title>
+    <meta id="description" name="description" content="The PDS Geosciences Node Granular Data System (GDS) provides granular-level data search for MGS MOLA data." />
+    <meta id="keywords" name="keywords" content="PDS Geosciences Node Granular Data System GDS provides granular level search MGS MOLA" />
+    <meta charset="utf-8">
+    <link rel="SHORTCUT ICON" id="shorcuticon"  href="mars_ode.ico" />
+	<link rel="BOOKMARK" id="bookmark" href="mars_ode.ico" />    
+    <link href="css/StyleRefresh2.css" rel="stylesheet" type="text/css" />
+    <link href="css/QueryStyle.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://js.arcgis.com/3.9/js/esri/css/esri.css">
+    <style type="text/css">
+        label {
+            display: inline-block;
+            width: 140px;
+        }
+    </style>
+</head>
+<body style="padding-right: 0px; padding-left: 0px; left: 0px; padding-bottom: 0px; margin: 0px 0px 0px 0px; overflow:visible; width: 100%; padding-top: 0px; position: absolute; top: 0px; height:100%;">
+    <!--Check for Javascript-->
+    <noscript>
+        <div class="highlightedBoxRED"><b>Important Note:</b><br>GDS has detected that JavaScript is not currently enabled in your browser. <b>Please enable JavaScript</b> to allow the website to function properly.</div>
+    </noscript>
+    <!--Top Banner-->
+    <div id="Div_TopBanner">
+        <table bgcolor="black" style="BORDER-COLLAPSE: collapse; width: 100%; height: 100px; margin: 0px 0px 0px 0px;" border="0" cellpadding="0" cellspacing="0" id="Table_HeaderBanner">
+            <tr>
+                <td>
+                    <img src="images/mars_ODE_banner.jpg" id="imgODEBanner" align="top" usemap="#bannerNavigation" border="0"/>
+                    <map name="bannerNavigation">
+                        <area shape="rect" target="_blank" coords="0,0,390,70" href="https://ode.rsl.wustl.edu" alt="ODE Home" />
+                        <area shape="rect" target="_blank" coords="510,0,800,70" href="https://pds-geosciences.wustl.edu" alt="PDS Geosciences Node at Washington University" />
+                    </map>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- End Top Banner-->
+    <!-- Top of Page Query Description -->
+    <div id="Div_TopOfPageDescription">
+        <table cellspacing="0" cellpadding="0" width="700" border="0" id="Table_TopOfPageDescription">
+            <tr>
+                <td>
+                    <h1>NASA Planetary Data System MOLA PEDR Query Tool <b>V2.0</b></h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Welcome to PDS Geosciences Node's Granular Data System MOLA PEDR Query Tool, Version 2.0.
+                    Geosciences Node's Granular Data System (GDS) provides access to individual observations
+                    from a selected set of PDS Data Sets.  Users select a target data set, define an area of interest, and a set of 
+                    query filters, and the GDS creates a set of derived products from the observations that meet the criteria. 
+                    Results can include ASCII/CSV tables, Shapefiles, and binned images. Unlike the older tools, version 2.0 
+                    queries run in the background with the results emailed to the user. <b>Queries 
+                    are limited to a maximum of 150,000,000 estimated individual observations</b>. Please send questions to 
+                    <a href="mailto:oderest@wunder.wustl.edu">oderest@wunder.wustl.edu</a>.
+                </td>
+            </tr>
+            <!--
+            <tr>
+                <td>
+                    <b>NOTE: This tool is still in beta test.  Please send issues or suggestions to <a href="mailto:oderest@wunder.wustl.edu">oderest@wunder.wustl.edu</a>.
+                    Users planning to use the results in scientific research or production environments are encouraged to contact <a href="mailto:oderest@wunder.wustl.edu">oderest@wunder.wustl.edu</a>
+                    first to discuss known limitations.</b>
+                </td>
+            </tr>-->
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    The Mars Global Surveyor's Mars Orbiter Laser Altimeter (MOLA) instrument provides a series of laser altimetry measurements across the surface of Mars.
+                    <a href="https://ode.rsl.wustl.edu/mars/pagehelp/quickstartguide/index.html?mola.htm" target="_blank">Click here to read more about MOLA.</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    MOLA offers two key altimetry products - the PEDR and MEGDR products. MOLA PEDR products are individual altimetry readings organized along the spacecraft orbit track. 
+                    The MEGDR products are PEDR products assembled into global grids referenced to Mars' center-of-mass, with resolutions up to 1/128 degree per pixel. 
+                    MOLA MEGDR products will meet many user needs and should be reviewed prior to using the MOLA PEDR Query.  
+                    Please see <a href="https://ode.rsl.wustl.edu/mars/indexProductSearch.aspx" target="_blank">ODE's data product search</a> for MOLA MEGDR products. 
+                </td>
+            </tr>
+            <tr>
+                <td id="globalMaxObservationsTitle">
+                    The MOLA PEDR Query provides a searchable database of PEDR measurements.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="whiteouttablenoborders">
+                        <tr>
+                            <td>
+                                <h2>
+                                    Please enter query paramters:
+                                </h2>
+                            </td>
+                            <td align="right">
+                                <button id="Button_Reset_Query_Parameters">Reset</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- End Top of Page Query Description -->
+    <!-- Input Fields -->
+    <div id="InputFields">
+        <!--Lat Lon Input-->
+        <div id="LatLonMap">
+            <table class="whiteouttable" cellspacing=" 0" cellpadding="0">
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td height="2"><h2>Step 1. Select Data Point Latitude / Longitude Range to Search  (A Selection is Required)</h2></td>
+                            </tr>
+                        </table>
+                        <table class="darktable">
+                            <tr>
+                                <td width="10">
+                                    <a href="GDSWebHelp.html#Feature_Selection" target="_blank">
+                                        <img id="IMG3" title="More about specific feature selection" src="images/icon_help.png" style="border-width:0px;" align="top" border="0" />
+                                    </a>
+                                </td>
+                                <td colspan="2">
+                                    <b>Select a Specific Feature</b>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="lighttable">
+                            <tr>
+                                <td colspan="3">
+                                    A selected feature's Latitude and Longtude bounding box will be used for search criteria.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:125px;">
+                                    <b>Feature Type:&nbsp;&nbsp;</b>
+                                </td>
+                                <td style="width:250px;">
+                                    <select size="1" style="width: 250px;" name="featureTypeScollList" id="ScrollList_Feature_Type">
+                                        <option value="None">Feature Classes Loading...</option>
+                                    </select>
+                                </td>
+                               <td>
+                                    <a href="https://ode.rsl.wustl.edu/mars/map/PlanetaryFeatureTypes.aspx" target="_blank">Feature Type Desciptions</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:125px;">
+                                    <b>Feature Name:&nbsp;&nbsp;</b>
+                                </td>
+                                <td style="width:250px;">
+                                    <select size="1" style="width: 250px;" name="featureNameScollList" id="ScrollList_Feature_Name">
+                                        <option value="None">Select Feature Class First</option>
+                                    </select>
+                                </td>
+                                <td style="width:250px;">
+                                    <input type="text" style="width: 250px;" name="featureName" id="TextBox_Feature_Name" onblur="onFeatureNameInputBlur()">
+                                </td>
+                                <td>
+                                    <a href="https://ode.rsl.wustl.edu/mars/map/planetaryfeaturelist.aspx" target="_blank">Full Feature Name List</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td>
+                                    <h2>or</h2>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="darktable">
+                            <tr>
+                                <td width="10">
+                                    <a href="GDSWebHelp.html#BB_Selection" target="_blank">
+                                        <img id="IMG3" title="More about directly specifying a latitude and longitude coverage area" src="images/icon_help.png" style="border-width:0px;" align="top" border="0" />
+                                    </a>
+                                </td>
+                                <td colspan="2">
+                                    <b id="globalLatLonCoverageAreaTitle">Directly specify a Latitude and Longitude coverage area</b>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="lighttable">
+                            <tr>
+                                <td width="734">
+                                    GDS uses areocentric coordinates that are based on the product's center latitude and longitude.
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="lighttable">
+                            <tr>
+                                <td width="260" valign="top">
+                                    <table style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="0" cellpadding="0" border="0">
+                                        <tr>
+                                            <td colspan="3">
+                                                <b>Maximum Latitude</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="160" align="right">(-90 to 90)</td>
+                                            <td>
+                                                <input type="text" style="width: 75px;" maxlength="10" name="TextBox_Max_Latitude" id="TextBox_Max_Latitude" onblur="onMaxLatInputBlur()">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3">
+                                                <b>Westernmost Longitude</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right">(-180 to 180)</td>
+                                            <td>
+                                                <input type="text" style="width: 75px;" maxlength="8" name="TextBox_West_Longitude_C0" id="TextBox_West_Longitude_C0" onblur="onWestLonC0InputBlur()">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right">(0 to 360)</td>
+                                            <td>
+                                                <input type="text" style="width: 75px;" maxlength="8" name="TextBox_West_Longitude_C180" id="TextBox_West_Longitude_C180" onblur="onWestLonC180InputBlur()">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3">
+                                                <b>Easternmost Longitude</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right">(-180 to 180)</td>
+                                            <td>
+                                                <input type="text" style="width: 75px;" maxlength="8" name="TextBox_East_Longitude_C0" id="TextBox_East_Longitude_C0" onblur="onEastLonC0InputBlur()">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right">(0 to 360)</td>
+                                            <td>
+                                                <input type="text" style="width: 75px;" maxlength="8" name="TextBox_East_Longitude_C180" id="TextBox_East_Longitude_C180" onblur="onEastLonC180InputBlur()">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3">
+                                                <b>Minimum Latitude</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right">(-90 to 90)</td>
+                                            <td>
+                                                <input type="text" style="width: 75px;" maxlength="8" name="TextBox_Min_Latitude" id="TextBox_Min_Latitude" onblur="onMinLatInputBlur()">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right">
+                                                <button id="Button_Reset_Query_ParametersMap">Reset Map</button>
+                                            </td>
+                                            <td colspan="2" align="right">
+                                                <button id="Button_ZoomMap">Zoom</button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td valign="top" align="left" width="480">
+                                    <table height="250" width="480" border="0" cellspacing="0" cellpadding="0" style="BORDER-COLLAPSE: collapse" bordercolor="#111111">
+                                        <tr height="10">
+                                            <td align="center" colspan="100%">
+                                                <b>Selected Search Area (-180 to 180 Map)</b>
+                                                <button id="Button_RefreshMap" style="visibility:hidden">Refresh</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" align="left" width="480" height="240" id="map"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--End Lat Lon Input-->
+        <!--Additional Parameters-->
+        <div id="AdditionalParameters">
+            <table class="whiteouttable" cellspacing=" 0" cellpadding="0">
+                <tr>
+                    <td>
+                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                            <tr>
+                                <td height="2"><h2>Step 2. Set Additional Filtering Parameters  (Optional)</h2></td>
+                            </tr>
+                        </table>
+                        <!-- Product Id-->
+                        <div id="Div_pnlProduct_header">
+                            <table class="darktable">
+                                <tr>
+                                    <td width="10">
+                                        <a href="GDSWebHelp.html#FilterByProductId" target="_blank">
+                                            <img id="IMG3" title="More about filtering by Product Id" src="images/icon_help.png" style="border-width:0px;" align="top" border="0" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <b>Select a Product ID or filter by a partial Product ID</b>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="lighttable">
+                                <tr>
+                                    <td colspan="3">
+                                        Each PDS data product has a unique
+                                        <a href="https://ode.rsl.wustl.edu/mars/pagehelp/quickstartguide/what_is_a_product_id.htm" target="_blank" title="What is a Product ID?">product id</a>.
+                                        Individual data products can be found with an exact match<br>or multiple products can be found using the the wild card parameter.
+                                        Products Id can range from <b id="globalMinProductId"></b> to <b id="globalMaxProductId"></b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="80">
+                                        Product ID:
+                                    </td>
+                                    <td width="250">
+                                        <input type="text" style="width:225px;" name="TextBox_Product_Id" id="TextBox_Product_Id" maxlength="100">
+                                    </td>
+                                    <td align="center">
+                                        <p align="left">&nbsp;&nbsp;&nbsp;use wildcard &nbsp;* after or before a partial Product ID</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- End Product Id-->
+                        <!-- Altitude Range-->
+                        <div id="Div_pnlAltRange">
+                            <table class="darktable">
+                                <tr>
+                                    <td width="10">
+                                        <a href="GDSWebHelp.html#FilterByAltRange" target="_blank">
+                                            <img id="IMG3" title="More about filtering by Altitude Range" src="images/icon_help.png" style="border-width:0px;" align="top" border="0" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <b>Filter by Altitude (Optional)</b>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="lighttable">
+                                <tr>
+                                    <td>
+                                        Filter by altitude in meters to find data points for specific topographical ranges.
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="lighttable">
+                                <tr>
+                                    <td width="110">
+                                        Minimum Altitude:
+                                    </td>
+                                    <td width="140">
+                                        <input type="text" style="width:130px;" maxlength="30" name="TextBox_Min_Altitude" id="TextBox_Min_Altitude">
+                                    </td>
+                                    <td id="globalMinAlt">
+                                        Min altitude:
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="110">
+                                        Maximum Altitude:
+                                    </td>
+                                    <td width="140">
+                                        <input type="text" style="width:130px;" maxlength="30" name="TextBox_Max_Altitude" id="TextBox_Max_Altitude">
+                                    </td>
+                                    <td id="globalMaxAlt">
+                                        Max Altitude:
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- End of altitude Range-->
+                        <!-- Orbit Range-->
+                        <div id="Div_pnlOrbitRange">
+                            <table class="darktable">
+                                <tr>
+                                    <td width="10">
+                                        <a href="GDSWebHelp.html#FilterByOrbitRange" target="_blank">
+                                            <img id="IMG3" title="More about filtering by Orbit Range" src="images/icon_help.png" style="border-width:0px;" align="top" border="0" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <b>Filter by Orbit Number (Optional)</b>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="lighttable">
+                                <tr>
+                                    <td width="734">
+                                        Enter a range to limit search results to desired orbit numbers.
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="lighttable">
+                                <tr>
+                                    <td width="110">
+                                        Minimum Orbit:
+                                    </td>
+                                    <td width="140">
+                                        <input type="text" style="width:130px;" maxlength="30" name="TextBox_Min_Orbit" id="TextBox_Min_Orbit">
+                                    </td>
+                                    <td id="globalMinOrbit">
+                                        Min Orbit:
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="110">
+                                        Maximum Orbit:
+                                    </td>
+                                    <td width="140">
+                                        <input type="text" style="width:130px;" maxlength="30" name="TextBox_Max_Orbit" id="TextBox_Max_Orbit">
+                                    </td>
+                                    <td id="globalMaxOrbit">
+                                        Max Orbit:
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- End of Orbit Range-->
+                        <!-- UTC Range-->
+                        <div id="Div_pnlUTCRange">
+                            <table class="darktable">
+                                <tr>
+                                    <td width="10">
+                                        <a href="GDSWebHelp.html#FilterByUTCRange" target="_blank">
+                                            <img id="IMG5" title="More about UTC Range" src="Images/icon_help.png" style="border-width:0px;" align="top" border="0">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <b>Filter by Observation UTC Time (Optional)</b>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="lighttable">
+                                <tr>
+                                    <td width="734">
+                                        Each MOLA PEDR data point has an observation UTC time. Enter a single UTC time, partial UTC time, or a UTC time range to filter the search results by the observation time.
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="lighttable">
+                                <tr>
+                                    <td width="110">
+                                        Minimum UTC:
+                                    </td>
+                                    <td width="140">
+                                        <input type="text" style="width:130px;" maxlength="30" name="TextBox_Min_UTC" id="TextBox_Min_UTC">
+                                    </td>
+                                    <td id="globalMinUTC">
+                                        Min UTC:
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="110">
+                                        Maximum UTC:
+                                    </td>
+                                    <td width="140">
+                                        <input type="text" style="width:130px;" maxlength="30" name="TextBox_Max_UTC" id="TextBox_Max_UTC">
+                                    </td>
+                                    <td id="globalMaxUTC">
+                                        Max UTC:
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- End of UTC Range-->
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--End Additional Parameters-->
+    </div>
+    <!-- End Input Fields -->
+    <!--Setup Output-->
+    <div id="SetupOutputPnl">
+        <table class="whiteouttable">
+            <tr>
+                <td height="2"><h2>Step 3.  Select the output options</h2></td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="darktable">
+                        <tr>
+                            <td width="10">
+                                <a href="GDSWebHelp.html#OutputOptions" target="_blank">
+                                    <img id="IMG3" title="More about output options" src="images/icon_help.png" style="border-width:0px;" align="top" border="0" />
+                                </a>
+                            </td>
+                            <td colspan="2">
+                                <b id="globalLatLonCoverageAreaTitle">Output Options:</b>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="lighttable">
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td width="135">  Exact Count Only: </td>
+                                        <td> <input type="checkbox" id="Checkbox_ExactCountOnly"  /> Will return only the exact count - all other output options are ignored except email </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td width="135">  ASCII/CSV Output: </td>
+                                        <td> <input type="checkbox" id="Checkbox_ASCII" /> ASCII </td>
+                                        <td> <input type="checkbox" id="Checkbox_CSV" checked /> CSV </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td width="135"> Shapefile Output: </td>
+                                        <td> <input type="checkbox" id="Checkbox_Shapefile" /> Shapefile </td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td> <input type="checkbox" id="Checkbox_Shapefile_Format_P" checked /> Point Format </td>
+                                                    <td> <input type="checkbox" id="Checkbox_Shapefile_Format_Z" /> ZPoint Format </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <input type="checkbox" id="Checkbox_Shapefile_Record_F" checked /> Full Records </td>
+                                                    <td> <input type="checkbox" id="Checkbox_Shapefile_Record_M" /> Minimal Records </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td width="135"> Binned Image Output: </td>
+                                        <td> <input type="checkbox" id="Checkbox_Binned_Image" checked /> Images </td>
+                                        <td> Width:  <input type="text" style="width:100;" name="binnedImageWidth" id="binnedImageWidth" value="600"> </td>
+                                        <td> Height: <input type="text" style="width:100;" name="binnedImageHeight" id="binnedImageHeight" value="600"> </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td width="135" align="right">Format(s): </td>
+                                        <td>
+                                            <button id="Button_ImageFormat_Check_All">All</button>
+                                        </td>
+                                        <td>
+                                            <button id="Button_ImageFormat_Check_None">None</button>
+                                        </td>
+                                        <td> <input type="checkbox" id="Checkbox_ImageFormat_PNG" /> PNG </td>
+                                        <td> <input type="checkbox" id="Checkbox_ImageFormat_JPEG" checked /> Map-Projected JPEG </td>
+                                        <td> <input type="checkbox" id="Checkbox_ImageFormat_JP2" /> JPEG 2000 </td>
+                                        <td> <input type="checkbox" id="Checkbox_ImageFormat_GTIFF" /> GeoTIFF </td>
+                                        <td> <input type="checkbox" id="Checkbox_ImageFormat_KMZ" /> KMZ </td>
+                                        <td> <input type="checkbox" id="Checkbox_ImageFormat_ENVI" /> ENVI </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td width="135" align="right">Color Scheme(s): </td>
+                                        <td>
+                                            <button id="Button_ImageColor_Check_All">All</button>
+                                        </td>
+                                        <td>
+                                            <button id="Button_ImageColor_Check_None">None</button>
+                                        </td>
+                                        <td> <input type="checkbox" id="Checkbox_ImageColor_Global_Color" /> Global Color </td>
+                                        <td> <input type="checkbox" id="Checkbox_ImageColor_Local_Color" checked /> Local Color </td>
+                                        <td> <input type="checkbox" id="Checkbox_ImageColor_Global_Mono" /> Global Mono </td>
+                                        <td> <input type="checkbox" id="Checkbox_ImageColor_Local_Mono" /> Local Mono </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td width="135"> Zip Output: </td>
+                                        <td> <input type="checkbox" id="Checkbox_Include_Zip" /> Include Zip </td>
+                                        <td> <input type="checkbox" id="Checkbox_Zip_Only" checked /> Zip Only </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table style="background-color: #e6e6e6; margin-bottom: 4px;">
+                                    <tr>
+                                        <td width="135"> Tile Output: </td>
+                                        <td> <input type="checkbox" id="Checkbox_Tile_Area" /> Tile Shapefiles and CSV Files </td>
+                                        <td> Tile Size (Degrees - only integers):  <input type="text" style="width:40px;" name="TextBox_Tile_Size" id="TextBox_Tile_Size" value="5"
+                                        	 	onblur="verifyInt('TextBox_Tile_Size');"
+                                            onpaste="verifyInt('TextBox_Tile_Size');"
+                                            onkeyup="return isNumberKey(event)"
+                                            onkeydown="return isNumberKey(event)"> 
+                                        </td>
+																	</tr>                                        
+                                  <tr><td></td>
+                                      <td colspan="2">
+                                          If tile output is selected, Lat/Lon ranges will be rounded to the lower and higher
+                                          integer bounding box. Decimals will not be used for the range. Also, 25 tiles is the
+                                          maximum that can be created per output query.
+                                      </td>
+                                  </tr>                                        
+                                    
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td width="135"> Email: </td>
+                                        <td width="250"> <input type="text" style="width:225px;" name="TextBox_Email_Address" id="TextBox_Email_Address"> </td>
+                                        <td>Have the results emailed to you.</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!---End Setup Output-->
+    <!--Query-->
+    <div id="QueryPnl">
+        <table class="whiteouttable">
+            <tr>
+                <td height="2"><h2>Step 4.  Query</h2></td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="lighttable">
+                        <!--<tr>
+                            <td colspan="3">
+                                Click the button below to see how many MOLA PEDR points match your selected criteria.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10">
+                                <a href="GDSWebHelp.html#CountButton" target="_blank">
+                                    <img id="IMG3" title="More about Count" src="images/icon_help.png" style="border-width:0px;" align="top" border="0" />
+                                </a>
+                            </td>
+                            <td width="120">
+                                <button style="width:120px" id="Button_Count">Query Count</button>
+                            </td>
+                            <td id="Query_Count_Results" align="left">
+                                No Results
+                            </td>
+                        </tr>-->
+                        <tr>
+                            <td colspan="3">
+                                Query (Suggestion: Have the results emailed to you - enter an Email address above!).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10">
+                                <a href="GDSWebHelp.html#ResultsButton" target="_blank">
+                                    <img id="IMG3" title="More about Query for Results" src="images/icon_help.png" style="border-width:0px;" align="top" border="0" />
+                                </a>
+                            </td>
+                            <td width="120">
+                                <button style="width:120px" id="Button_Query_For_Results">Query for Results</button>
+                            </td>
+                            <td id="Query_For_Results" align="left">
+                        
+                            </td>
+                       </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!---End Query-->
+    <!--Job Status-->
+    <div id="JobQuery">
+        <table class="whiteouttable">
+            <tr>
+                <td height="2"> <h2>Step 5. (Optional) Get the Job Status</h2></td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="lighttable">
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td width="10">
+                                            <a href="GDSWebHelp.html#StatusButton" target="_blank">
+                                                <img id="IMG3" title="More about Status" src="images/icon_help.png" style="border-width:0px;" align="top" border="0" />
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button id="Button_Get_Job_Status">Get Job Status</button>
+                                        </td>
+                                        <td>
+                                            <button id="Button_Cancel_Job">Cancel Job</button>
+                                        </td>
+                                        <td> Enter Job Id: </td>
+                                        <td>
+                                            <input type="text" name="TextBox_Job_Id" id="TextBox_Job_Id" style="width:130px;" maxlength="20">
+                                        </td>
+                                   </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="JobResult_State"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="JobResults_Notes"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="JobResults_NumberJobsAheadInQueue"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="JobResults_NumberResultFiles"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="JobResults_ResultFiles"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!--End Job Status-->
+    <!-- Grab Microsoft's or Google's CDN'd jQuery. fall back to local if necessary -->
+    <!-- <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js " type="text/javascript"></script> -->
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
+    <script type="text/javascript" src="js\jquery-1.8.2.min.js"></script>
+    <!-- load Dojo -->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.9.2/dojo/dojo.js" data-dojo-config="async: true"></script>-->
+    <script src="https://js.arcgis.com/3.9/"></script>
+    <script type="text/javascript" src="js/GDSUtils.js"></script>
+    <script type="text/javascript" src="js/GDSMOLAPEDR.js"></script>
+    <script type="text/javascript" src="js/GDS.js"></script>
+    <script type="text/javascript">
+        $(document).ready(OnGDSReady());
+    </script>
+</body>
+</html>
+

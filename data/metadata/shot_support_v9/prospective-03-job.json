@@ -1,0 +1,19 @@
+{
+  "GDSResults": {
+    "JobId": "657136",
+    "QuerySummary": {
+      "async": "t",
+      "easternlon": "6.43882",
+      "maxlat": "3.46902",
+      "minlat": "2.1191",
+      "output": "JSON",
+      "query": "MOLAPEDR",
+      "query_elapsed_time": "00:00:00.0220000",
+      "query_end_time": "2026-11-14T12:32:32.502",
+      "query_start_time": "2026-11-14T12:32:32.480",
+      "results": "CV",
+      "westernlon": "5.08664"
+    },
+    "Status": "Success"
+  }
+}

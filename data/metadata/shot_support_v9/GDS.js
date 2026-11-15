@@ -1,0 +1,2091 @@
+"use strict";
+
+//*****************************************
+// GDS Common Web Page Code
+// 
+//
+//*****************************************
+
+//**** Startup ****
+function OnGDSReady() {
+    console.log("OnGDSReady");
+    LoadGlobalData();
+    LoadFeatureClasses();
+    SetLatLonBoundingBox();
+    ResetInputs();
+    $("#Button_RefreshMap").trigger("click");
+}
+//**** End Startup ****
+
+// **** Global Values ****
+var objGlobalValuesSet = false;
+var objGlobalMinAltValue = "";
+var objGlobalMaxAltValue = "";
+var objGlobalMinOrbitValue = "";
+var objGlobalMaxOrbitValue = "";
+var objGlobalMinUTCValue = "";
+var objGlobalMaxUTCValue = "";
+var objGlobalMinProductIdValue = "";
+var objGlobalMaxProductIdValue = "";
+var objGlobalMinRadianceValue = "";
+var objGlobalMaxRadianceValue = "";
+var objGlobalMinTBValue = "";
+var objGlobalMaxTBValue = "";
+var objMaxObservations = 0;
+function LoadGlobalData() {
+    objGlobalValuesSet = false;
+    objMaxObservations = objDefaultMaxObservations;
+    $.getJSON(objBaseGlobalDataURL, function (data) {
+        console.log("Loading Global Data From JSON")
+        if ('GDSResults' in data) {
+            if ('Status' in data.GDSResults) {
+                if (data.GDSResults.Status === "Success") {
+                    if ('Global_Parameters' in data.GDSResults) {
+                        if ('GlobalMinTopo' in data.GDSResults.Global_Parameters) {
+                            objGlobalMinAltValue = data.GDSResults.Global_Parameters.GlobalMinTopo;
+                        }
+                        if ('GlobalMaxTopo' in data.GDSResults.Global_Parameters) {
+                            objGlobalMaxAltValue = data.GDSResults.Global_Parameters.GlobalMaxTopo;
+                        }
+                        if ('GlobalMinOrbitNumber' in data.GDSResults.Global_Parameters) {
+                            objGlobalMinOrbitValue = data.GDSResults.Global_Parameters.GlobalMinOrbitNumber;
+                        }
+                        if ('GlobalMaxOrbitNumber' in data.GDSResults.Global_Parameters) {
+                            objGlobalMaxOrbitValue = data.GDSResults.Global_Parameters.GlobalMaxOrbitNumber;
+                        }
+                        if ('GlobalMinUTC' in data.GDSResults.Global_Parameters) {
+                            objGlobalMinUTCValue = data.GDSResults.Global_Parameters.GlobalMinUTC;
+                        }
+                        if ('GlobalMaxUTC' in data.GDSResults.Global_Parameters) {
+                            objGlobalMaxUTCValue = data.GDSResults.Global_Parameters.GlobalMaxUTC;
+                        }
+                        if ('GlobalMinProductId' in data.GDSResults.Global_Parameters) {
+                            objGlobalMinProductIdValue = data.GDSResults.Global_Parameters.GlobalMinProductId;
+                        }
+                        if ('GlobalMaxProductId' in data.GDSResults.Global_Parameters) {
+                            objGlobalMaxProductIdValue = data.GDSResults.Global_Parameters.GlobalMaxProductId;
+                        }
+                        if ('GlobalMinRadiance' in data.GDSResults.Global_Parameters) {
+                            objGlobalMinRadianceValue = data.GDSResults.Global_Parameters.GlobalMinRadiance;
+                        }
+                        if ('GlobalMaxRadiance' in data.GDSResults.Global_Parameters) {
+                            objGlobalMaxRadianceValue = data.GDSResults.Global_Parameters.GlobalMaxRadiance;
+                        }
+                        if ('GlobalMinTb' in data.GDSResults.Global_Parameters) {
+                            objGlobalMinTBValue = data.GDSResults.Global_Parameters.GlobalMinTb;
+                        }
+                        if ('GlobalMaxTb' in data.GDSResults.Global_Parameters) {
+                            objGlobalMaxTBValue = data.GDSResults.Global_Parameters.GlobalMaxTb;
+                        }
+                        if ('MaxObservations' in data.GDSResults.Global_Parameters) {
+                            objMaxObservations = data.GDSResults.Global_Parameters.MaxObservations;
+                        }
+                        if ($('#globalMinAlt').length != 0)
+                            $('#globalMinAlt').html("Min Altitude: " + formatRealToString(objGlobalMinAltValue, 3) + objAltitudeUnits);
+                        if ($('#globalMaxAlt').length != 0)
+                            $('#globalMaxAlt').html("Max Altitude: " + formatRealToString(objGlobalMaxAltValue, 3) + objAltitudeUnits);
+                        if ($('#globalMinOrbit').length != 0)
+                            $('#globalMinOrbit').html("Min Orbit: " + formatRealToString(objGlobalMinOrbitValue,3));
+                        if ($('#globalMaxOrbit').length != 0)
+                            $('#globalMaxOrbit').html("Max Orbit: " + formatRealToString(objGlobalMaxOrbitValue,3));
+                        if ($('#globalMinUTC').length != 0)
+                            $('#globalMinUTC').html("Min UTC: " + objGlobalMinUTCValue);
+                        if ($('#globalMaxUTC').length != 0)
+                            $('#globalMaxUTC').html("Max UTC: " + objGlobalMaxUTCValue);
+                        if ($('#globalMinProductId').length != 0)
+                            $('#globalMinProductId').html(objGlobalMinProductIdValue);
+                        if ($('#globalMaxProductId').length != 0)
+                            $('#globalMaxProductId').html(objGlobalMaxProductIdValue);
+                        if ($('#globalMaxObservationsTitle').length != 0)
+                            $('#globalMaxObservationsTitle').html("<b>" + objTitleString.replace("MLA RDR","MLA Geolocated Science") + " Observations: <ul><li>Total Individual Observations: " + formatIntegerToString(objMaxObservations) + "</li><li>Collected from " + objGlobalMinUTCValue.substring(0, 10) + " to " + objGlobalMaxUTCValue.substring(0, 10) + "</li></ul></b>");
+                    }
+                }
+            }
+        }
+        objGlobalValuesSet = true;
+        console.log("Finished Global Data From JSON")
+    });
+}
+//**** End Global Values *****
+
+//**** Channel Checkbox *****
+$("#Button_Channels_Check_All").click(function () {
+    for (var i = 0; i < objChannels.length; i++) {
+        var myChannelElemName = "#Checkbox_Channel_" + i;
+        $(myChannelElemName).prop('checked', true);
+    }
+});
+$("#Button_Channels_Check_None").click(function () {
+    for (var i = 0; i < objChannels.length; i++) {
+        var myChannelElemName = "#Checkbox_Channel_" + i;
+        $(myChannelElemName).prop('checked', false);
+    }
+});
+//**** End Channel Checkbox *****
+
+//**** Detector Checkbox *****
+$("#Button_Detectors_Check_All").click(function () {
+    for (var i = 0; i < objDetectors.length; i++) {
+        var myDetectorElemName = "#Checkbox_Detector_" + i;
+        $(myDetectorElemName).prop('checked', true);
+    }
+});
+$("#Button_Detectors_Check_None").click(function () {
+    for (var i = 0; i < objDetectors.length; i++) {
+        var myDetectorElemName = "#Checkbox_Detector_" + i;
+        $(myDetectorElemName).prop('checked', false);
+    }
+});
+//**** End Detector Checkbox *****
+
+//**** CSV Checkbox *****
+$("#Button_CSV_Check_All").click(function () {
+    if ($('#Checkbox_CSV_FPR').length != 0)
+        $("#Checkbox_CSV_FPR").prop('checked', true);
+    if ($('#Checkbox_CSV_PPR').length != 0)
+        $("#Checkbox_CSV_PPR").prop('checked', true);
+    if ($('#Checkbox_CSV_TPR').length != 0)
+        $("#Checkbox_CSV_TPR").prop('checked', true);
+    if ($('#Checkbox_CSV_TPR').length != 0)
+        $("#Checkbox_CSV_STPR").prop('checked', true);
+});
+$("#Button_CSV_Check_None").click(function () {
+    if ($('#Checkbox_CSV_FPR').length != 0)
+        $("#Checkbox_CSV_FPR").prop('checked', false);
+    if ($('#Checkbox_CSV_PPR').length != 0)
+        $("#Checkbox_CSV_PPR").prop('checked', false);
+    if ($('#Checkbox_CSV_TPR').length != 0)
+        $("#Checkbox_CSV_TPR").prop('checked', false);
+    if ($('#Checkbox_CSV_STPR').length != 0)
+        $("#Checkbox_CSV_STPR").prop('checked', false);
+});
+//**** End CSV Checkbox *****
+
+//**** Image Checkbox *****
+$("#Button_ImageFormat_Check_All").click(function () {
+    if ($('#Checkbox_ImageFormat_PNG').length != 0)
+        $("#Checkbox_ImageFormat_PNG").prop('checked', true);
+    if ($('#Checkbox_ImageFormat_JPEG').length != 0)
+        $("#Checkbox_ImageFormat_JPEG").prop('checked', true);
+    if ($('#Checkbox_ImageFormat_JP2').length != 0)
+        $("#Checkbox_ImageFormat_JP2").prop('checked', true);
+    if ($('#Checkbox_ImageFormat_GTIFF').length != 0)
+        $("#Checkbox_ImageFormat_GTIFF").prop('checked', true);
+    if ($('#Checkbox_ImageFormat_KMZ').length != 0)
+        $("#Checkbox_ImageFormat_KMZ").prop('checked', true);
+    if ($('#Checkbox_ImageFormat_ENVI').length != 0)
+        $("#Checkbox_ImageFormat_ENVI").prop('checked', true);
+});
+$("#Button_ImageFormat_Check_None").click(function () {
+    if ($('#Checkbox_ImageFormat_PNG').length != 0)
+        $("#Checkbox_ImageFormat_PNG").prop('checked', false);
+    if ($('#Checkbox_ImageFormat_JPEG').length != 0)
+        $("#Checkbox_ImageFormat_JPEG").prop('checked', false);
+    if ($('#Checkbox_ImageFormat_JP2').length != 0)
+        $("#Checkbox_ImageFormat_JP2").prop('checked', false);
+    if ($('#Checkbox_ImageFormat_GTIFF').length != 0)
+        $("#Checkbox_ImageFormat_GTIFF").prop('checked', false);
+    if ($('#Checkbox_ImageFormat_KMZ').length != 0)
+        $("#Checkbox_ImageFormat_KMZ").prop('checked', false);
+    if ($('#Checkbox_ImageFormat_ENVI').length != 0)
+        $("#Checkbox_ImageFormat_ENVI").prop('checked', false);
+});
+$("#Button_ImageColor_Check_All").click(function () {
+    if ($('#Checkbox_ImageColor_Global_Color').length != 0)
+        $("#Checkbox_ImageColor_Global_Color").prop('checked', true);
+    if ($('#Checkbox_ImageColor_Local_Color').length != 0)
+        $("#Checkbox_ImageColor_Local_Color").prop('checked', true);
+    if ($('#Checkbox_ImageColor_Global_Mono').length != 0)
+        $("#Checkbox_ImageColor_Global_Mono").prop('checked', true);
+    if ($('#Checkbox_ImageColor_Local_Mono').length != 0)
+        $("#Checkbox_ImageColor_Local_Mono").prop('checked', true);
+});
+$("#Button_ImageColor_Check_None").click(function () {
+    if ($('#Checkbox_ImageColor_Global_Color').length != 0)
+        $("#Checkbox_ImageColor_Global_Color").prop('checked', false);
+    if ($('#Checkbox_ImageColor_Local_Color').length != 0)
+        $("#Checkbox_ImageColor_Local_Color").prop('checked', false);
+    if ($('#Checkbox_ImageColor_Global_Mono').length != 0)
+        $("#Checkbox_ImageColor_Global_Mono").prop('checked', false);
+    if ($('#Checkbox_ImageColor_Local_Mono').length != 0)
+        $("#Checkbox_ImageColor_Local_Mono").prop('checked', false);
+});
+//**** End Image Checkbox *****
+
+//**** Lat/Lon Bounding Box Functions ****
+var objCurrentFeatureClass = "";
+var objCurrentFeatureName = "";
+var objLoadedFeatureClasses = false;
+var objCurrentFeatureClasses = [];
+var objLoadedFeatureNames = false;
+var objCurrentFeatureNames = [];
+var objCurrentMinLat = -90.0;
+var objCurrentMaxLat = 90.0;
+var objCurrentWestLonC0 = -180.0;
+var objCurrentEastLonC0 = 180.0;
+var objCurrentWestLonC180 = 0.0;
+var objCurrentEastLonC180 = 360.0;
+function ResetLatLonBoundingBoxWOChangingFeature() {
+    objCurrentMinLat = -90.0;
+    objCurrentMaxLat = 90.0;
+    objCurrentWestLonC0 = -180.0;
+    objCurrentEastLonC0 = 180.0;
+    objCurrentWestLonC180 = 0.0;
+    objCurrentEastLonC180 = 360.0;
+    SetLatLonBoundingBox();
+}
+function ResetLatLonBoundingBox() {
+    ResetLatLonBoundingBoxWOChangingFeature();
+    ClearFeatureWOChangingLatLon();
+}
+function SetLatLonBoundingBox() {
+    $('#TextBox_Max_Latitude').val(objCurrentMaxLat);
+    $('#TextBox_Min_Latitude').val(objCurrentMinLat);
+    $('#TextBox_West_Longitude_C0').val(objCurrentWestLonC0);
+    $('#TextBox_East_Longitude_C0').val(objCurrentEastLonC0);
+    $('#TextBox_West_Longitude_C180').val(objCurrentWestLonC180);
+    $('#TextBox_East_Longitude_C180').val(objCurrentEastLonC180);
+    $("#Button_RefreshMap").trigger("click");
+}
+//function ClearFeatureNameTextBox() {
+//    objLoadedFeatureNames = false;
+//    objCurrentFeatureName = "";
+//    $('#TextBox_Feature_Name').val(objCurrentFeatureName);
+//    ResetLatLonBoundingBoxWOChangingFeature();
+//    $("#Button_RefreshMap").trigger("click");
+//}
+function ClearFeatureWOChangingLatLon() {
+    objLoadedFeatureNames = false;
+    objLoadedFeatureClasses = false;
+    ClearFeatureNameSelectOptions();
+    SetupFeatureClassSelectOptions();
+    objCurrentFeatureName = "";
+    objCurrentFeatureClass = "";
+    $('#TextBox_Feature_Name').val("");
+    $("#Button_RefreshMap").trigger("click");
+}
+// Load feature data from REST interface
+function LoadFeatureData() {
+    var myURL = objBaseFeatureDataURL + "&featureclass=" + objCurrentFeatureClass + "&featurename=" + encodeURIComponent(objCurrentFeatureName)
+    console.log("Requesting feature data from " + myURL);
+    $.getJSON(myURL, function (data, success) {
+        console.log("Loading feature data")
+        if ('ODEResults' in data) {
+            if ('Status' in data.ODEResults) {
+                if (data.ODEResults.Status === "Success") {
+                    if ('Features' in data.ODEResults) {
+                        if ('Feature' in data.ODEResults.Features) {
+                            console.log("Loading Feature Data From JSON")
+                            console.log(data.ODEResults.Features.Feature)
+                            if ('MinLat' in data.ODEResults.Features.Feature)
+                                objCurrentMinLat = 1.0 * data.ODEResults.Features.Feature.MinLat;
+                            if ('MaxLat' in data.ODEResults.Features.Feature)
+                                objCurrentMaxLat = 1.0 * data.ODEResults.Features.Feature.MaxLat;
+                            if ('WestLon' in data.ODEResults.Features.Feature) 
+                                objCurrentWestLonC180 = 1.0 * data.ODEResults.Features.Feature.WestLon;
+                            if ('EastLon' in data.ODEResults.Features.Feature) 
+                                objCurrentEastLonC180 = 1.0 * data.ODEResults.Features.Feature.EastLon;
+                            C180RangeToC0();
+                            SetLatLonBoundingBox();
+                        }
+                    }
+                }
+            }
+        }
+        objLoadedFeatureClasses = true;
+        console.log("Finished loading feature classes")
+    });
+    console.log("Waiting for feature classes")
+}
+// Load feature classes from REST interface
+//  Sets
+//    objCurrentFeatureClasses
+//    objLoadedFeatureClasses
+function LoadFeatureClasses() {
+    var myURL = objBaseFeatureClassURL;
+    console.log("Requesting feature classes from " + myURL);
+    $.getJSON(myURL, function (data, success) {
+        console.log("Loading feature classes")
+        if ('ODEResults' in data) {
+            if ('Status' in data.ODEResults) {
+                if (data.ODEResults.Status === "Success") {
+                    if ('FeatureClasses' in data.ODEResults) {
+                        if ('FeatureClass' in data.ODEResults.FeatureClasses) {
+                            console.log("Loading Feature Classes From JSON")
+                            console.log(data.ODEResults.FeatureClasses.FeatureClass)
+                            objCurrentFeatureClasses = data.ODEResults.FeatureClasses.FeatureClass;
+                        }
+                    }
+                }
+            }
+        }
+        objLoadedFeatureClasses = true;
+        SetupFeatureClassSelectOptions();
+        console.log("Finished loading feature classes")
+    });
+    console.log("Waiting for feature classes")
+}
+// Load feature names from REST interface
+//  Sets
+//    objCurrentFeatureNames
+//    objLoadedFeatureNames
+function LoadFeatureNames() {
+    var myURL = objBaseFeatureNameURL;
+    if (objCurrentFeatureClass != "") {
+        var myFC = objCurrentFeatureClass.replace(" ", "%20");
+        myURL = myURL + '&featureclass=' + myFC;
+    }
+    console.log("Requesting Feature Names from " + myURL);
+    $.getJSON(myURL, function (data) {
+        console.log("Loading Feature Names")
+        if ('ODEResults' in data) {
+            if ('Status' in data.ODEResults) {
+                if (data.ODEResults.Status === "Success") {
+                    if ('FeatureNames' in data.ODEResults) {
+                        if ('FeatureName' in data.ODEResults.FeatureNames) {
+                            console.log("Loading Feature Names From JSON")
+                            objCurrentFeatureNames = data.ODEResults.FeatureNames.FeatureName;
+                        }
+                    }
+                }
+            }
+        }
+        objLoadedFeatureNames = true;
+        SetupFeatureNameSelectOptions();
+        console.log("Finished loading Feature Names")
+    });
+}
+//Handle Feature Name Input
+function onFeatureNameInputBlur() {
+    if (!objLoadedFeatureNames)
+        LoadFeatureNames();
+    if ($('#TextBox_Feature_Name').val() != objCurrentFeatureName && $('#TextBox_Feature_Name').val() != "") {
+        ResetLatLonBoundingBoxWOChangingFeature();
+        SetupFeatureClassSelectOptions();
+        ClearFeatureNameSelectOptions();
+        CheckValidFeatureNameFromTextBox();
+    }
+};
+function CheckValidFeatureNameFromTextBox() {
+    if ($('#TextBox_Feature_Name').val() != objCurrentFeatureName) {
+        if (!objLoadedFeatureNames) {
+            console.log("Feature names not yet loaded - waiting")
+            setTimeout(CheckValidFeatureNameFromTextBox, 1000);
+        }
+        else {
+            console.log("Feature names loaded - testing on " + objCurrentFeatureNames.length)
+            var tempCurrentFeatureName = $('#TextBox_Feature_Name').val()
+            if (tempCurrentFeatureName != "") {
+                //We need to validate the result
+                var myFound = false;
+                for (var i = 0; i < objCurrentFeatureNames.length; i++) {
+                    if (strStartsWith(objCurrentFeatureNames[i].toLowerCase(), tempCurrentFeatureName.toLowerCase())) {
+                        tempCurrentFeatureName = objCurrentFeatureNames[i];
+                        myFound = true;
+                        break;
+                    }
+                }
+                if (myFound) {
+                    objCurrentFeatureName = tempCurrentFeatureName;
+                    $('#TextBox_Feature_Name').val(objCurrentFeatureName);
+                    //Now, get the lat/lon bounding box and set
+                    LoadFeatureData();
+                }
+                else {
+                    objCurrentFeatureName = "";
+                    $('#TextBox_Feature_Name').val(objCurrentFeatureName);
+                }
+            }
+        }
+    }
+}
+
+function SetupFeatureClassSelectOptions() {
+    var featureClassSelect = $("#ScrollList_Feature_Type");
+    featureClassSelect.find('option').remove().end();
+    featureClassSelect.append($('<option value="None">Select Feature Class</option>'));
+    for (var i = 0; i < objCurrentFeatureClasses.length; i++) {
+        var myOption = '<option value="' + objCurrentFeatureClasses[i] + '">' + objCurrentFeatureClasses[i] + '</option>'
+        featureClassSelect.append($(myOption));
+    }
+}
+function SetupFeatureNameSelectOptions() {
+    var featureNameSelect = $("#ScrollList_Feature_Name");
+    featureNameSelect.find('option').remove().end();
+    featureNameSelect.append($('<option value="None">Select Feature Name</option>'));
+    if (!objLoadedFeatureNames) {
+        console.log("Feature names not yet loaded - waiting")
+        setTimeout(SetupFeatureNameSelectOptions, 100);
+    }
+    if (Array.isArray(objCurrentFeatureNames))
+    {
+	    for (var i = 0; i < objCurrentFeatureNames.length; i++) {
+	        var myOption = '<option value="' + objCurrentFeatureNames[i] + '">' + objCurrentFeatureNames[i] + '</option>'
+	        featureNameSelect.append($(myOption));
+	    }
+  	}
+  	else
+  	{
+  		if (objCurrentFeatureNames.length > 0)
+  		{
+				var myOption = '<option value="' + objCurrentFeatureNames + '">' + objCurrentFeatureNames + '</option>'
+	      featureNameSelect.append($(myOption));
+  		}
+  	}
+}
+function ClearFeatureNameSelectOptions() {
+    var featureNameSelect = $("#ScrollList_Feature_Name");
+    featureNameSelect.find('option').remove().end();
+    featureNameSelect.append($('<option value="None">Select Feature Class First</option>'));
+}
+$('#ScrollList_Feature_Type').change(function () {
+    var featureClassIndexString = $('#ScrollList_Feature_Type').val();
+    if (featureClassIndexString != "None") {
+        $('#TextBox_Feature_Name').val("");
+        ResetLatLonBoundingBoxWOChangingFeature();
+        objCurrentFeatureClass = featureClassIndexString;
+        var featureNameSelect = $("#ScrollList_Feature_Name");
+        featureNameSelect.find('option').remove().end();
+        featureNameSelect.append($('<option value="None">Loading Feature Names...</option>'));
+        LoadFeatureNames();
+    }
+});
+$('#ScrollList_Feature_Name').change(function () {
+    var featureNameIndexString = $('#ScrollList_Feature_Name').val();
+    if (featureNameIndexString != "None") {
+        $('#TextBox_Feature_Name').val("");
+        ResetLatLonBoundingBoxWOChangingFeature();
+        objCurrentFeatureName = featureNameIndexString;
+        $('#TextBox_Feature_Name').val(objCurrentFeatureName)
+        LoadFeatureData();
+        $("#Button_RefreshMap").trigger("click");
+    }
+});
+
+function onMinLatInputBlur() {
+    if ($('#TextBox_Min_Latitude').val() != objCurrentMinLat) {
+        var tempValue = 1.0 * $('#TextBox_Min_Latitude').val();
+        if (tempValue >= -90.0 && tempValue <= 90.0) {
+            objCurrentMinLat = tempValue;
+            ClearFeatureWOChangingLatLon();
+            $("#RefreshMapButton").trigger("click");
+        }
+        else {
+            alert("Latitude values must be between -90.0 and 90.0");
+            $('#TextBox_Min_Latitude').val(objCurrentMinLat);
+        }
+    }
+}
+function onMaxLatInputBlur() {
+    if ($('#TextBox_Max_Latitude').val() != objCurrentMaxLat) {
+        var tempValue = 1.0 * $('#TextBox_Max_Latitude').val();
+        if (tempValue >= -90.0 && tempValue <= 90.0) {
+            objCurrentMaxLat = tempValue;
+            ClearFeatureWOChangingLatLon();
+            $("#RefreshMapButton").trigger("click");
+        }
+        else {
+            alert("Latitude values must be between -90.0 and 90.0");
+            $('#TextBox_Max_Latitude').val(objCurrentMaxLat);
+        }
+    }
+}
+function C0RangeToC180() {
+    if (objCurrentWestLonC0 === -180.0 && objCurrentEastLonC0 === 180.0) {
+        objCurrentWestLonC180 = 0.0;
+        objCurrentEastLonC180 = 360.0;
+    }
+    else {
+        if (objCurrentWestLonC0 >= 0.0 && objCurrentEastLonC0 >= 0.0) {
+            objCurrentWestLonC180 = objCurrentWestLonC0;
+            objCurrentEastLonC180 = objCurrentEastLonC0;
+        }
+        else if (objCurrentWestLonC0 <= 0.0 && objCurrentEastLonC0 <= 0.0) {
+            objCurrentWestLonC180 = objCurrentWestLonC0 + 360.0;
+            objCurrentEastLonC180 = objCurrentEastLonC0 + 360.0;
+        }
+        else {
+            if (objCurrentEastLonC0 === 180.0) {
+                objCurrentWestLonC180 = objCurrentWestLonC0 + 360.0;
+                objCurrentEastLonC180 = 180.0;
+            }
+            else if (objCurrentWestLonC0 === -180.0) {
+                objCurrentWestLonC180 = 180.0;
+                objCurrentEastLonC180 = objCurrentEastLonC0;
+            }
+            else {
+                if (objCurrentWestLonC0 < objCurrentEastLonC0) {
+                    objCurrentWestLonC180 = objCurrentWestLonC0 + 360.0;
+                    objCurrentEastLonC180 = objCurrentEastLonC0;
+                }
+                else {
+                    objCurrentWestLonC180 = objCurrentWestLonC0;
+                    objCurrentEastLonC180 = objCurrentEastLonC0 + 360.0;
+                }
+            }
+        }
+    }
+}
+function C180RangeToC0() {
+    if (objCurrentWestLonC180 === 0.0 && objCurrentEastLonC180 === 360.0) {
+        objCurrentWestLonC0 = -180.0;
+        objCurrentEastLonC0 = 180.0;
+    }
+    else {
+        if (objCurrentWestLonC180 <= 180.0 && objCurrentEastLonC180 <= 180.0) {
+            objCurrentWestLonC0 = objCurrentWestLonC180;
+            objCurrentEastLonC0 = objCurrentEastLonC180;
+        }
+        else if (objCurrentWestLonC180 >= 180.0 && objCurrentEastLonC180 >= 180.0) {
+            objCurrentWestLonC0 = objCurrentWestLonC180 - 360.0;
+            objCurrentEastLonC0 = objCurrentEastLonC180 - 360.0;
+        }
+        else {
+            if (objCurrentEastLonC180 === 360.0) {
+                objCurrentWestLonC0 = objCurrentWestLonC180;
+                objCurrentEastLonC0 = 180.0;
+            }
+            else if (objCurrentWestLonC0 === 0.0) {
+                objCurrentWestLonC0 = 0.0;
+                objCurrentEastLonC0 = objCurrentEastLonC180 - 360.0;
+            }
+            else {
+                if (objCurrentWestLonC180 < objCurrentEastLonC180) {
+                    objCurrentWestLonC0 = objCurrentWestLonC180;
+                    objCurrentEastLonC0 = objCurrentEastLonC180 - 360.0;
+                }
+                else {
+                    objCurrentWestLonC0 = objCurrentWestLonC180 - 360.0;
+                    objCurrentEastLonC0 = objCurrentEastLonC180;
+                }
+            }
+        }
+    }
+}
+function onWestLonC0InputBlur() {
+    if ($('#TextBox_West_Longitude_C0').val() != objCurrentWestLonC0) {
+        var tempValue = 1.0 * $('#TextBox_West_Longitude_C0').val();
+        if (tempValue >= -180.0 && tempValue <= 180.0) {
+            objCurrentWestLonC0 = tempValue;
+            C0RangeToC180();
+            $('#TextBox_West_Longitude_C0').val(objCurrentWestLonC0);
+            $('#TextBox_West_Longitude_C180').val(objCurrentWestLonC180);
+            $('#TextBox_East_Longitude_C0').val(objCurrentEastLonC0);
+            $('#TextBox_East_Longitude_C180').val(objCurrentEastLonC180);
+            ClearFeatureWOChangingLatLon();
+            $("#RefreshMapButton").trigger("click");
+        }
+        else {
+            alert("Longitude values must be between -180.0 and 180.0");
+            $('#TextBox_West_Longitude_C0').val(objCurrentWestLonC0);
+            $('#TextBox_West_Longitude_C180').val(objCurrentWestLonC180);
+            $('#TextBox_East_Longitude_C0').val(objCurrentEastLonC0);
+            $('#TextBox_East_Longitude_C180').val(objCurrentEastLonC180);
+        }
+    }
+}
+function onEastLonC0InputBlur() {
+    if ($('#TextBox_East_Longitude_C0').val() != objCurrentEastLonC0) {
+        var tempValue = 1.0 * $('#TextBox_East_Longitude_C0').val();
+        if (tempValue >= -180.0 && tempValue <= 180.0) {
+            objCurrentEastLonC0 = tempValue;
+            C0RangeToC180();
+            $('#TextBox_West_Longitude_C0').val(objCurrentWestLonC0);
+            $('#TextBox_West_Longitude_C180').val(objCurrentWestLonC180);
+            $('#TextBox_East_Longitude_C0').val(objCurrentEastLonC0);
+            $('#TextBox_East_Longitude_C180').val(objCurrentEastLonC180);
+            ClearFeatureWOChangingLatLon();
+            $("#RefreshMapButton").trigger("click");
+        }
+        else {
+            alert("Longitude values must be between -180.0 and 180.0");
+            $('#TextBox_West_Longitude_C0').val(objCurrentWestLonC0);
+            $('#TextBox_West_Longitude_C180').val(objCurrentWestLonC180);
+            $('#TextBox_East_Longitude_C0').val(objCurrentEastLonC0);
+            $('#TextBox_East_Longitude_C180').val(objCurrentEastLonC180);
+        }
+    }
+}
+function onWestLonC180InputBlur() {
+    if ($('#TextBox_West_Longitude_C180').val() != objCurrentWestLonC180) {
+        var tempValue = 1.0 * $('#TextBox_West_Longitude_C180').val();
+        if (tempValue >= 0.0 && tempValue <= 360.0) {
+            objCurrentWestLonC180 = tempValue;
+            C180RangeToC0();
+            $('#TextBox_West_Longitude_C0').val(objCurrentWestLonC0);
+            $('#TextBox_West_Longitude_C180').val(objCurrentWestLonC180);
+            $('#TextBox_East_Longitude_C0').val(objCurrentEastLonC0);
+            $('#TextBox_East_Longitude_C180').val(objCurrentEastLonC180);
+            ClearFeatureWOChangingLatLon();
+            $("#RefreshMapButton").trigger("click");
+        }
+        else {
+            alert("Longitude values must be between 0.0 and 360.0");
+            $('#TextBox_West_Longitude_C0').val(objCurrentWestLonC0);
+            $('#TextBox_West_Longitude_C180').val(objCurrentWestLonC180);
+            $('#TextBox_East_Longitude_C0').val(objCurrentEastLonC0);
+            $('#TextBox_East_Longitude_C180').val(objCurrentEastLonC180);
+        }
+    }
+}
+function onEastLonC180InputBlur() {
+    if ($('#TextBox_East_Longitude_C180').val() != objCurrentEastLonC180) {
+        var tempValue = 1.0 * $('#TextBox_East_Longitude_C180').val();
+        if (tempValue >= 0.0 && tempValue <= 360.0) {
+            objCurrentEastLonC180 = tempValue;
+            C180RangeToC0();
+            $('#TextBox_West_Longitude_C0').val(objCurrentWestLonC0);
+            $('#TextBox_West_Longitude_C180').val(objCurrentWestLonC180);
+            $('#TextBox_East_Longitude_C0').val(objCurrentEastLonC0);
+            $('#TextBox_East_Longitude_C180').val(objCurrentEastLonC180);
+            ClearFeatureWOChangingLatLon();
+            $("#RefreshMapButton").trigger("click");
+        }
+        else {
+            alert("Longitude values must be between 0.0 and 360.0");
+            $('#TextBox_West_Longitude_C0').val(objCurrentWestLonC0);
+            $('#TextBox_West_Longitude_C180').val(objCurrentWestLonC180);
+            $('#TextBox_East_Longitude_C0').val(objCurrentEastLonC0);
+            $('#TextBox_East_Longitude_C180').val(objCurrentEastLonC180);
+        }
+    }
+}
+
+//Map Service
+var objCurrentMap;
+var objCurrentLayer;
+var objRefreshMapButton;
+var objZoomToMapButton;
+var objResetMapButton;
+require([
+  "esri/map", "esri/layers/ArcGISTiledMapServiceLayer", "esri/geometry/Extent", "esri/geometry/Point", "esri/SpatialReference",
+  "dojo/dom", "esri/geometry/Polygon", "esri/graphic", "esri/symbols/SimpleFillSymbol", "esri/symbols/SimpleLineSymbol", "dojo/on",
+  "esri/Color",
+  "dojo/domReady!"
+], function (Map, ArcGISTiledMapServiceLayer, Extent, Point, SpatialReference, Dom, Polygon, Graphic, SimpleFillSymbol, SimpleLineSymbol, On, Color) {
+    console.log("Start Map Setup");
+    objCurrentLayer = new ArcGISTiledMapServiceLayer(objBaseMapURL, {opacity: 0.5});
+    var zoomExtent = new Extent({ xmin: -180.0, ymin: -90.0, xmax: 180.0, ymax: 90.0, spatialReference: objBaseMapSpatialReference });
+    objCurrentMap = new esri.Map("map", { logo: false, extent: zoomExtent, zoom: objBaseMapInitialZoom, });
+    objCurrentMap.disableKeyboardNavigation();
+    objCurrentMap.addLayer(objCurrentLayer);
+
+    objRefreshMapButton = Dom.byId("Button_RefreshMap");
+    objZoomToMapButton = Dom.byId("Button_ZoomMap");
+    objResetMapButton = Dom.byId("Button_Reset_Query_ParametersMap");
+
+    On(objRefreshMapButton, "click", function (evt) {
+        console.log("In On Event Handler - Refresh button id " + objRefreshMapButton);
+        objCurrentMap.graphics.clear();
+        if (!(objCurrentWestLonC0 === -180.0 && objCurrentEastLonC0 === 180.0 && objCurrentMinLat === -90.0 && objCurrentMaxLat === 90.0)) {
+            if (objCurrentWestLonC0 <= objCurrentEastLonC0) {
+                var rect = new Polygon([[objCurrentWestLonC0, objCurrentMinLat],
+                                        [objCurrentEastLonC0, objCurrentMinLat],
+                                        [objCurrentEastLonC0, objCurrentMaxLat],
+                                        [objCurrentWestLonC0, objCurrentMaxLat],
+                                        [objCurrentWestLonC0, objCurrentMinLat]]);
+                rect.spatialReference = objCurrentMap.spatialReference;
+                var sms = new SimpleFillSymbol(SimpleFillSymbol.STYLE_SOLID,
+                            new SimpleLineSymbol(SimpleLineSymbol.STYLE_SOLID, new Color([255, 255, 255]), 2),
+                            new Color([255, 0, 0, 0.50])
+                          );
+                var myGraphic = new Graphic(rect, sms);
+                objCurrentMap.graphics.add(myGraphic);
+            }
+            else {
+                var rect = new Polygon([[objCurrentWestLonC0, objCurrentMinLat],
+                                        [180.0, objCurrentMinLat],
+                                        [180.0, objCurrentMaxLat],
+                                        [objCurrentWestLonC0, objCurrentMaxLat],
+                                        [objCurrentWestLonC0, objCurrentMinLat]]);
+                rect.spatialReference = objCurrentMap.spatialReference;
+                var sms = new SimpleFillSymbol(SimpleFillSymbol.STYLE_SOLID,
+                            new SimpleLineSymbol(SimpleLineSymbol.STYLE_SOLID, new Color([255, 255, 255]), 2),
+                            new Color([255, 0, 0, 0.50])
+                          );
+                var myGraphic = new Graphic(rect, sms);
+                objCurrentMap.graphics.add(myGraphic);
+                var rect2 = new Polygon([[-180.0, objCurrentMinLat],
+                                        [objCurrentEastLonC0, objCurrentMinLat],
+                                        [objCurrentEastLonC0, objCurrentMaxLat],
+                                        [-180.0, objCurrentMaxLat],
+                                        [-180.0, objCurrentMinLat]]);
+                rect.spatialReference = objCurrentMap.spatialReference;
+                var sms2 = new SimpleFillSymbol(SimpleFillSymbol.STYLE_SOLID,
+                            new SimpleLineSymbol(SimpleLineSymbol.STYLE_SOLID, new Color([255, 255, 255]), 2),
+                            new Color([255, 0, 0, 0.50])
+                          );
+                var myGraphic2 = new Graphic(rect2, sms2);
+                objCurrentMap.graphics.add(myGraphic2);
+            }
+        }
+    });
+
+    On(objZoomToMapButton, "click", function (evt) {
+        console.log("In On Event Handler - Zoom to button id " + objZoomToMapButton);
+        if (objCurrentWestLonC0 > objCurrentEastLonC0) {
+            var zoomExtent = new Extent({ xmin: objMapFullExtentxmin, ymin: objMapFullExtentymin, xmax: objMapFullExtentxmax, ymax: objMapFullExtentymax, spatialReference: objCurrentMap.spatialReference });
+            objCurrentMap.setExtent(zoomExtent);
+        }
+        else {
+            var myDeltaLat = (objCurrentMaxLat - objCurrentMinLat) * 2.0;
+            var myDeltaLon = objCurrentEastLonC0 - objCurrentWestLonC0;
+            var myDeltaT = myDeltaLat;
+            if (myDeltaLon > myDeltaLat)
+                myDeltaT = myDeltaLon;
+            myDeltaLon = myDeltaT;
+            myDeltaLat = myDeltaT / 2.0;
+            var myMaxLatE = objCurrentMaxLat + myDeltaLat;
+            var myMinLatE = objCurrentMinLat - myDeltaLat;
+            var myWestLonE = objCurrentWestLonC0 - myDeltaLon;
+            var myEastLonE = objCurrentEastLonC0 + myDeltaLon;
+            var zoomExtent = new Extent({ xmin: myWestLonE, ymin: myMinLatE, xmax: myEastLonE, ymax: myMaxLatE, spatialReference: objCurrentMap.spatialReference });
+            objCurrentMap.setExtent(zoomExtent);
+        }
+    });
+
+    On(objResetMapButton, "click", function (evt) {
+        console.log("In On Event Handler - Reset map button id " + objResetMapButton);
+        var zoomExtent = new Extent({ xmin: -180.0, ymin: -90.0, xmax: 180.0, ymax: 90.0, spatialReference: objCurrentMap.spatialReference });
+        objCurrentMap.setExtent(zoomExtent);
+        //ResetLatLonBoundingBox();
+    });
+
+    console.log("End Map Setup");
+});
+//**** End Lat/Lon Bounding Box Functions
+
+//**** Query Support ****
+var objEstimatedObservations = 0;
+function ResetInputs() {
+    objEstimatedObservations = objMaxObservations;
+    if ($('#TextBox_Product_Id').length != 0)
+        $("#TextBox_Product_Id").val("");
+    if ($('#TextBox_Min_Altitude').length != 0)
+        $("#TextBox_Min_Altitude").val("");
+    if ($('#TextBox_Max_Altitude').length != 0)
+        $("#TextBox_Max_Altitude").val("");
+    if ($('#TextBox_Min_Orbit').length != 0)
+        $("#TextBox_Min_Orbit").val("");
+    if ($('#TextBox_Max_Orbit').length != 0)
+        $("#TextBox_Max_Orbit").val("");
+    if ($('#TextBox_Min_UTC').length != 0)
+        $("#TextBox_Min_UTC").val("");
+    if ($('#TextBox_Max_UTC').length != 0)
+        $("#TextBox_Max_UTC").val("");
+    if ($('#TextBox_Min_LTOD').length != 0)
+        $("#TextBox_Min_LTOD").val("");
+    if ($('#TextBox_Max_LTOD').length != 0)
+        $("#TextBox_Max_LTOD").val("");
+
+    if ($('#TextBox_Min_EmAngle').length != 0)
+        $("#TextBox_Min_EmAngle").val("");
+    if ($('#TextBox_Max_EmAngle').length != 0)
+        $("#TextBox_Max_EmAngle").val("");
+    if ($('#TextBox_Min_SolIn').length != 0)
+        $("#TextBox_Min_SolIn").val("");
+    if ($('#TextBox_Max_SolIn').length != 0)
+        $("#TextBox_Maxa_SolIn").val("");
+    if ($('#TextBox_Min_SolAz').length != 0)
+        $("#TextBox_Min_SolAz").val("");
+    if ($('#TextBox_Max_SolAz').length != 0)
+        $("#TextBox_Maax_SolAz").val("");
+    if ($('#TextBox_Min_CalQual').length != 0)
+        $("#TextBox_Min_CalQual").val("");
+    if ($('#TextBox_Max_CalQual').length != 0)
+        $("#TextBox_Max_CalQual").val("");
+    if ($('#TextBox_Min_GeoQual').length != 0)
+        $("#TextBox_Min_GeoQual").val("");
+    if ($('#TextBox_Max_GeoQual').length != 0)
+        $("#TextBox_Max_GeoQual").val("");
+    if ($('#TextBox_Min_MisQual').length != 0)
+        $("#TextBox_Min_MisQual").val("");
+    if ($('#TextBox_Max_MisQual').length != 0)
+        $("#TextBox_Max_MisQual").val("");
+
+    if (objChannels.length > 0) {
+        for (var i = 0; i < objChannels.length; i++) {
+            var myChannelElemName = "#Checkbox_Channel_" + i;
+            $(myChannelElemName).prop('checked', objChannels[i]);
+        }
+    }
+    if (objDetectors.length > 0) {
+        for (var i = 0; i < objDetectors.length; i++) {
+            var myDetectorElemName = "#Checkbox_Detector_" + i;
+            $(myDetectorElemName).prop('checked', objDetectors[i]);
+        }
+    }
+    if ($('#TextBox_Email_Address').length != 0)
+        $("#TextBox_Email_Address").val(objEmailAddress);
+    if ($('#Checkbox_ExactCountOnly').length != 0)
+        $("#Checkbox_ExactCountOnly").prop('checked', objExactCountOnly);
+    if ($('#Checkbox_ASCII').length != 0)
+        $("#Checkbox_ASCII").prop('checked', objASCIIValue);
+    if ($('#Checkbox_CSV').length != 0)
+        $("#Checkbox_CSV").prop('checked', objCSVValue);
+    if ($('#Checkbox_CSV_FPR').length != 0)
+        $("#Checkbox_CSV_FPR").prop('checked', objCSVFPRValue);
+    if ($('#Checkbox_CSV_PPR').length != 0)
+        $("#Checkbox_CSV_PPR").prop('checked', objCSVPPR2Value);
+    if ($('#Checkbox_CSV_TPR').length != 0)
+        $("#Checkbox_CSV_TPR").prop('checked', objCSVTPR3Value);
+    if ($('#CSVTPR4Checkbox').length != 0)
+        $("#CSVTPR4Checkbox").prop('checked', objCSVSTPR4Value);
+    if ($('#Checkbox_Include_Zip').length != 0)
+        $("#Checkbox_Include_Zip").prop('checked', objZipOutputValue);
+    if ($('#Checkbox_Zip_Only').length != 0)
+        $("#Checkbox_Zip_Only").prop('checked', objZipOnlyValue);
+    if ($('#Checkbox_Shapefile').length != 0)
+        $("#Checkbox_Shapefile").prop('checked', objShapefileOutputValue);
+    if ($('#Checkbox_Shapefile_Format_P').length != 0)
+        $("#Checkbox_Shapefile_Format_P").prop('checked', objShapefileOutputValue_Format_P);
+    if ($('#Checkbox_Shapefile_Format_Z').length != 0)
+        $("#Checkbox_Shapefile_Format_Z").prop('checked', objShapefileOutputValue_Format_Z);
+    if ($('#Checkbox_Shapefile_Record_F').length != 0)
+        $("#Checkbox_Shapefile_Record_F").prop('checked', objShapefileOutputValue_Records_F);
+    if ($('#Checkbox_Shapefile_Record_M').length != 0)
+        $("#Checkbox_Shapefile_Record_M").prop('checked', objShapefileOutputValue_Records_M);
+    if ($('#binnedImageWidth').length != 0)
+        $("#binnedImageWidth").val(objImageWidth);
+    if ($('#binnedImageHeight').length != 0)
+        $("#binnedImageHeight").val(objImageHeight);
+    if ($('#Checkbox_Tile_Area').length != 0)
+        $("#Checkbox_Tile_Area").prop('checked', objTileValue);
+    if ($('#TextBox_Tile_Size').length != 0)
+        $("#TextBox_Tile_Size").val(objTileSizeValue);
+    if ($('#Checkbox_ImageFormat_PNG').length != 0)
+        $("#Checkbox_ImageFormat_PNG").prop('checked', objPNGFormatValue);
+    if ($('#Checkbox_ImageFormat_JPEG').length != 0)
+        $("#Checkbox_ImageFormat_JPEG").prop('checked', objJPEGFormatValue);
+    if ($('#Checkbox_ImageFormat_JP2').length != 0)
+        $("#Checkbox_ImageFormat_JP2").prop('checked', objJP2FormatValue);
+    if ($('#Checkbox_ImageFormat_GTIFF').length != 0)
+        $("#Checkbox_ImageFormat_GTIFF").prop('checked', objGTIFFFormatValue);
+    if ($('#Checkbox_ImageFormat_KMZ').length != 0)
+        $("#Checkbox_ImageFormat_KMZ").prop('checked', objKMZFormatValue);
+    if ($('#Checkbox_ImageFormat_ENVI').length != 0)
+        $("#Checkbox_ImageFormat_ENVI").prop('checked', objENVIFormatValue);
+
+    if ($('#Checkbox_ImageColor_Global_Color').length != 0)
+        $("#Checkbox_ImageColor_Global_Color").prop('checked', objGlobalColorValue);
+    if ($('#Checkbox_ImageColor_Local_Color').length != 0)
+        $("#Checkbox_ImageColor_Local_Color").prop('checked', objLocalColorValue);
+    if ($('#Checkbox_ImageColor_Global_Mono').length != 0)
+        $("#Checkbox_ImageColor_Global_Mono").prop('checked', objGlobalMonoValue);
+    if ($('#Checkbox_ImageColor_Local_Mono').length != 0)
+        $("#Checkbox_ImageColor_Local_Mono").prop('checked', objLocalMonoValue);
+
+    if ($('#Checkbox_Binned_Image').length != 0)
+        $("#Checkbox_Binned_Image").prop('checked', objBinnedImageValue);
+}
+function checkAndSetInputs(inNoOutputNeeded, inValidateEmail) {
+    var myFoundError = false;
+    var myFoundOutput = false;
+    objEstimatedObservations = objMaxObservations;
+
+    if ($("#TextBox_Product_Id").length != 0 && $("#TextBox_Product_Id").val() != "") {
+        var lnhRegex = /(['"])/gm;
+        var tempProductId = $.trim($("#TextBox_Product_Id").val());
+        if (lnhRegex.test(tempProductId)) {
+            alert("Invalid Product Id");
+            myFoundError = true;
+        }
+        else {
+            objLimitProductId = true;
+            objProductId = tempProductId;
+        }
+    }
+    else {
+        objProductId = "";
+        objLimitProductId = false;
+    }
+
+    var myFoundMinAlt = false;
+    var myFoundMaxAlt = false;
+    if ($("#TextBox_Min_Altitude").length != 0 && $("#TextBox_Min_Altitude").val() != "") {
+        var tempValue = $.trim($("#TextBox_Min_Altitude").val());
+        if (isNaN(tempValue)) {
+            alert("Minimum Altitude must be a number");
+            myFoundError = true;
+        }
+        else {
+            objLimitAlt = true;
+            myFoundMinAlt = true;
+            objMinAlt = tempValue * 1.0;
+        }
+    }
+    else {
+        objMinAlt = 0.0;
+    }
+    if ($("#TextBox_Max_Altitude").length != 0 && $("#TextBox_Max_Altitude").val() != "") {
+        var tempValue = $.trim($("#TextBox_Max_Altitude").val());
+        if (isNaN(tempValue)) {
+            alert("Maximum Altitude must be a number");
+            myFoundError = true;
+        }
+        else {
+            objLimitAlt = true;
+            myFoundMaxAlt = true;
+            objMaxAlt = tempValue * 1.0;
+        }
+    }
+    else {
+        objMaxAlt = 0.0;
+    }
+    if (myFoundMinAlt && !myFoundMaxAlt)
+        objMaxAlt = objGlobalMaxAltValue;
+    else if (!myFoundMinAlt && myFoundMaxAlt)
+        objMinAlt = objGlobalMinAltValue;
+    else if (!myFoundMinAlt && !myFoundMaxAlt)
+        objLimitAlt = false;;
+
+    var myFoundMinOrbit = false;
+    var myFoundMaxOrbit = false;
+    if ($("#TextBox_Min_Orbit").length != 0 && $("#TextBox_Min_Orbit").val() != "") {
+        var tempValue = $.trim($("#TextBox_Min_Orbit").val());
+        if (isNaN(tempValue)) {
+            alert("Minimum Orbit must be a number");
+            myFoundError = true;
+        }
+        else {
+            objLimitOrbit = true;
+            myFoundMinOrbit = true;
+            objMinOrbit = tempValue * 1.0;
+        }
+    }
+    else {
+        objMinOrbit = 0.0;
+    }
+    if ($("#TextBox_Max_Orbit").length != 0 && $("#TextBox_Max_Orbit").val() != "") {
+        var tempValue = $.trim($("#TextBox_Max_Orbit").val());
+        if (isNaN(tempValue)) {
+            alert("Maximum Orbit must be a number");
+            myFoundError = true;
+        }
+        else {
+            objLimitOrbit = true;
+            myFoundMaxOrbit = true;
+            objMaxOrbit = tempValue * 1.0;
+        }
+    }
+    else {
+        objMaxOrbit = 0.0;
+    }
+    if (myFoundMinOrbit && !myFoundMaxOrbit)
+        objMaxOrbit = objGlobalMaxOrbitValue;
+    else if (!myFoundMinOrbit && myFoundMaxOrbit)
+        objMinOrbit = objGlobalMinOrbitValue;
+    else if (!myFoundMinOrbit && !myFoundMaxOrbit)
+        objLimitOrbit = false;
+
+    var myFoundMinUTC = false;
+    var myFoundMaxUTC = false;
+    if ($("#TextBox_Min_UTC").length != 0 && $("#TextBox_Min_UTC").val() != "") {
+        //Match Letters, numbers and hyphens
+        var lnhRegex = /([^A-Za-z0-9-:.]+)/gm;
+        objMinUTC = $.trim($("#TextBox_Min_UTC").val());
+        if (lnhRegex.test(objMinUTC)) {
+            alert("Invalid Min UTC");
+            myFoundError = true;
+        }
+        else {
+            objLimitUTC = true;
+            myFoundMinUTC = true;
+        }
+    }
+    else {
+        objMinUTC = "";
+    }
+    if ($("#TextBox_Max_UTC").length != 0 && $("#TextBox_Max_UTC").val() != "") {
+        var lnhRegex = /([^A-Za-z0-9-:.]+)/gm;
+        objMaxUTC = $.trim($("#TextBox_Max_UTC").val());
+        if (lnhRegex.test(objMaxUTC)) {
+            alert("Invalid Max UTC");
+            myFoundError = true;
+        }
+        else {
+            objLimitUTC = true;
+            myFoundMaxUTC = true;
+        }
+    }
+    else {
+        objMaxUTC = "";
+    }
+    if (!myFoundMinUTC && myFoundMaxUTC)
+        objMinUTC = objGlobalMinUTCValue;
+    else if (!myFoundMinUTC && !myFoundMaxUTC)
+        objLimitUTC = false;;
+
+    var myFoundMinLTOD = false;
+    var myFoundMaxLTOD = false;
+    if ($("#TextBox_Min_LTOD").length != 0 && $("#TextBox_Min_LTOD").val() != "") {
+        var tempValue = $.trim($("#TextBox_Min_LTOD").val());
+        if (isNaN(tempValue)) {
+            alert("Minimum LTOD must be a number");
+            myFoundError = true;
+        }
+        else {
+            tempValue = tempValue * 1.0;
+            if (tempValue < 0.0 || tempValue > 24.0) {
+                alert("Minimum LTOD must be between 0.0 and 24.0");
+                myFoundError = true;
+            }
+            else {
+                objMinLTOD = tempValue;
+                objLimitLTOD = true;
+                myFoundMinLTOD = true;
+            }
+        }
+    }
+    else {
+        objMinLTOD = 0.0;
+    }
+    if ($("#TextBox_Max_LTOD").length != 0 && $("#TextBox_Max_LTOD").val() != "") {
+        var tempValue = $.trim($("#TextBox_Max_LTOD").val());
+        if (isNaN(tempValue)) {
+            alert("Maximum LTOD must be a number");
+            myFoundError = true;
+        }
+        else {
+            tempValue = tempValue * 1.0;
+            if (tempValue < 0.0 || tempValue > 24.0) {
+                alert("Maximum LTOD must be between 0.0 and 24.0");
+                myFoundError = true;
+            }
+            else {
+                objMaxLTOD = tempValue;
+                objLimitLTOD = true;
+                myFoundMaxLTOD = true;
+            }
+        }
+    }
+    else {
+        objMaxLTOD = 0.0;
+    }
+    if (myFoundMinLTOD && !myFoundMaxLTOD)
+        objMaxLTOD = 24.0;
+    else if (!myFoundMinLTOD && myFoundMaxLTOD)
+        objMinLTOD = 0.0;
+    else if (!myFoundMinLTOD && !myFoundMaxLTOD)
+        objLimitLTOD = false;
+
+    var myFoundMinEmAngle = false;
+    var myFoundMaxEmAngle = false;
+    if ($("#TextBox_Min_EmAngle").length != 0 && $("#TextBox_Min_EmAngle").val() != "") {
+        var tempValue = $.trim($("#TextBox_Min_EmAngle").val());
+        if (isNaN(tempValue)) {
+            alert("Minimum Emission Angle must be a number");
+            myFoundError = true;
+        }
+        else {
+            objLimitEmAngle = true;
+            myFoundMinEmAngle = true;
+            objMinEmAngle = tempValue * 1.0;
+        }
+    }
+    else {
+        objMinEmAngle = 0.0;
+    }
+    if ($("#TextBox_Max_EmAngle").length != 0 && $("#TextBox_Max_EmAngle").val() != "") {
+        var tempValue = $.trim($("#TextBox_Max_EmAngle").val());
+        if (isNaN(tempValue)) {
+            alert("Maximum Emission Angle must be a number");
+            myFoundError = true;
+        }
+        else {
+            objLimitEmAngle = true;
+            myFoundMaxEmAngle = true;
+            objMaxEmAngle = tempValue * 1.0;
+        }
+    }
+    else {
+        objMaxEmAngle = 90.0;
+    }
+    if (myFoundMinEmAngle && !myFoundMaxEmAngle)
+        objMaxEmAngle = 90.0;
+    else if (!myFoundMinEmAngle && myFoundMaxEmAngle)
+        objMinEmAngle = 0.0;
+    else if (!myFoundMinEmAngle && !myFoundMaxEmAngle)
+        objLimitEmAngle = false;;
+
+    var myFoundMinSolIn = false;
+    var myFoundMaxSolIn = false;
+    if ($("#TextBox_Min_SolIn").length != 0 && $("#TextBox_Min_SolIn").val() != "") {
+        var tempValue = $.trim($("#TextBox_Min_SolIn").val());
+        if (isNaN(tempValue)) {
+            alert("Minimum Solar Incidence must be a number");
+            myFoundError = true;
+        }
+        else {
+            objLimitSolIn = true;
+            myFoundMinSolIn = true;
+            objMinSolIn = tempValue * 1.0;
+        }
+    }
+    else {
+        objMinSolIn = 0.0;
+    }
+    if ($("#TextBox_Max_SolIn").length != 0 && $("#TextBox_Max_SolIn").val() != "") {
+        var tempValue = $.trim($("#TextBox_Max_SolIn").val());
+        if (isNaN(tempValue)) {
+            alert("Maximum Solar Incidence must be a number");
+            myFoundError = true;
+        }
+        else {
+            objLimitSolIn = true;
+            myFoundMaxSolIn = true;
+            objMaxSolIn = tempValue * 1.0;
+        }
+    }
+    else {
+        objMaxSolIn = 180.0;
+    }
+    if (myFoundMinSolIn && !myFoundMaxSolIn)
+        objMaxSolIn = 180.0;
+    else if (!myFoundMinSolIn && myFoundMaxSolIn)
+        objMinSolIn = 0.0;
+    else if (!myFoundMinSolIn && !myFoundMaxSolIn)
+        objLimitSolIn = false;;
+
+    var myFoundMinSolAz = false;
+    var myFoundMaxSolAz = false;
+    if ($("#TextBox_Min_SolAz").length != 0 && $("#TextBox_Min_SolAz").val() != "") {
+        var tempValue = $.trim($("#TextBox_Min_SolAz").val());
+        if (isNaN(tempValue)) {
+            alert("Minimum Solar Azimuth must be a number");
+            myFoundError = true;
+        }
+        else {
+            objLimitSolAz = true;
+            myFoundMinSolAz = true;
+            objMinSolAz = tempValue * 1.0;
+        }
+    }
+    else {
+        objMinSolAz = 0.0;
+    }
+    if ($("#TextBox_Max_SolAz").length != 0 && $("#TextBox_Max_SolAz").val() != "") {
+        var tempValue = $.trim($("#TextBox_Max_SolAz").val());
+        if (isNaN(tempValue)) {
+            alert("Maximum Solar Azimuth must be a number");
+            myFoundError = true;
+        }
+        else {
+            objLimitSolAz = true;
+            myFoundMaxSolAz = true;
+            objMaxSolAz = tempValue * 1.0;
+        }
+    }
+    else {
+        objMaxSolAz = 360.0;
+    }
+    if (myFoundMinSolAz && !myFoundMaxSolAz)
+        objMaxSolAz = 360.0;
+    else if (!myFoundMinSolAz && myFoundMaxSolAz)
+        objMinSolAz = 0.0;
+    else if (!myFoundMinSolAz && !myFoundMaxSolAz)
+        objLimitSolAz = false;;
+
+    var myFoundMinCalQual = false;
+    var myFoundMaxCalQual = false;
+    if ($("#TextBox_Min_CalQual").length != 0 && $("#TextBox_Min_CalQual").val() != "") {
+        var tempValue = $.trim($("#TextBox_Min_CalQual").val());
+        if (isNaN(tempValue)) {
+            alert("Minimum Calibration Quality Flag must be a number");
+            myFoundError = true;
+        }
+        else {
+            objLimitCalQual = true;
+            myFoundMinCalQual = true;
+            objMinCalQual = tempValue * 1;
+        }
+    }
+    else {
+        objMinCalQual = 0;
+    }
+    if ($("#TextBox_Max_CalQual").length != 0 && $("#TextBox_Max_CalQual").val() != "") {
+        var tempValue = $.trim($("#TextBox_Max_CalQual").val());
+        if (isNaN(tempValue)) {
+            alert("Maximum  Calibration Quality Flag must be a number");
+            myFoundError = true;
+        }
+        else {
+            objLimitCalQual = true;
+            myFoundMaxCalQual = true;
+            objMaxCalQual = tempValue * 1;
+        }
+    }
+    else {
+        objMaxCalQual = 255;
+    }
+    if (myFoundMinCalQual && !myFoundMaxCalQual)
+        objMaxCalQual = 255;
+    else if (!myFoundMinCalQual && myFoundMaxCalQual)
+        objMinCalQual = 0;
+    else if (!myFoundMinCalQual && !myFoundMaxCalQual)
+        objLimitCalQual = false;;
+
+    var myFoundMinGeoQual = false;
+    var myFoundMaxGeoQual = false;
+    if ($("#TextBox_Min_GeoQual").length != 0 && $("#TextBox_Min_GeoQual").val() != "") {
+        var tempValue = $.trim($("#TextBox_Min_GeoQual").val());
+        if (isNaN(tempValue)) {
+            alert("Minimum Geometry Quality Flag must be a number");
+            myFoundError = true;
+        }
+        else {
+            objLimitGeoQual = true;
+            myFoundMinGeoQual = true;
+            objMinGeoQual = tempValue * 1;
+        }
+    }
+    else {
+        objMinGeoQual = 0;
+    }
+    if ($("#TextBox_Max_GeoQual").length != 0 && $("#TextBox_Max_GeoQual").val() != "") {
+        var tempValue = $.trim($("#TextBox_Max_GeoQual").val());
+        if (isNaN(tempValue)) {
+            alert("Maximum  Geometry Quality Flag must be a number");
+            myFoundError = true;
+        }
+        else {
+            objLimitGeoQual = true;
+            myFoundMaxGeoQual = true;
+            objMaxGeoQual = tempValue * 1;
+        }
+    }
+    else {
+        objMaxGeoQual = 255;
+    }
+    if (myFoundMinGeoQual && !myFoundMaxGeoQual)
+        objMaxGeoQual = 255;
+    else if (!myFoundMinGeoQual && myFoundMaxGeoQual)
+        objMinGeoQual = 0;
+    else if (!myFoundMinGeoQual && !myFoundMaxGeoQual)
+        objLimitGeoQual = false;;
+
+    var myFoundMinMisQual = false;
+    var myFoundMaxMisQual = false;
+    if ($("#TextBox_Min_MisQual").length != 0 && $("#TextBox_Min_MisQual").val() != "") {
+        var tempValue = $.trim($("#TextBox_Min_MisQual").val());
+        if (isNaN(tempValue)) {
+            alert("Minimum Misc Quality Flag must be a number");
+            myFoundError = true;
+        }
+        else {
+            objLimitMisQual = true;
+            myFoundMinMisQual = true;
+            objMinMisQual = tempValue * 1;
+        }
+    }
+    else {
+        objMinMisQual = 0;
+    }
+    if ($("#TextBox_Max_MisQual").length != 0 && $("#TextBox_Max_MisQual").val() != "") {
+        var tempValue = $.trim($("#TextBox_Max_MisQual").val());
+        if (isNaN(tempValue)) {
+            alert("Maximum  Misc Quality Flag must be a number");
+            myFoundError = true;
+        }
+        else {
+            objLimitMisQual = true;
+            myFoundMaxMisQual = true;
+            objMaxMisQual = tempValue * 1;
+        }
+    }
+    else {
+        objMaxMisQual = 255;
+    }
+    if (myFoundMinMisQual && !myFoundMaxMisQual)
+        objMaxMisQual = 255;
+    else if (!myFoundMinMisQual && myFoundMaxMisQual)
+        objMinMisQual = 0;
+    else if (!myFoundMinMisQual && !myFoundMaxMisQual)
+        objLimitMisQual = false;;
+
+    if (objChannels.length > 0) {
+        var myAllTrue = true;
+        var myAllFalse = true;
+        for (var i = 0; i < objChannels.length; i++) {
+            var myChannelElemName = "#Checkbox_Channel_" + i;
+            objChannels[i] = $(myChannelElemName).prop('checked');
+            if (objChannels[i]) {
+                myAllFalse = false;
+            }
+            else if (!objChannels[i])
+                myAllTrue = false;
+        }
+        if (myAllFalse) {
+            myFoundError = true;
+            alert("At least one Channel must be selected");
+        }
+        else if (!myAllTrue || objQueryType === "DLRERDR") {
+            objLimitChannels = true;
+        }
+    }
+
+    if (objDetectors.length > 0) {
+        var myAllTrue = true;
+        var myAllFalse = true;
+        for (var i = 0; i < objDetectors.length; i++) {
+            var myDetectorElemName = "#Checkbox_Detector_" + i;
+            objDetectors[i] = $(myDetectorElemName).prop('checked');
+            if (objDetectors[i])
+                myAllFalse = false;
+            else if (!objDetectors[i])
+                myAllTrue = false;
+        }
+        if (myAllFalse) {
+            myFoundError = true;
+            alert("At least one Detector must be selected");
+        }
+        else if (!myAllTrue) {
+            objLimitDetectors = true;
+        }
+    }
+
+    if ($("#TextBox_Email_Address").length != 0) {
+        objEmailAddress = $.trim($("#TextBox_Email_Address").val());
+        if (inValidateEmail) {
+            if (objEmailAddress == "") {
+                myFoundError = true;
+                alert("You must include an email address");
+            }
+            else {
+                var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+                if (objEmailAddress != "" && !emailReg.test(objEmailAddress)) {
+                    myFoundError = true;
+                    alert("Invalid email address");
+                }
+            }
+        }
+    }
+
+    if ($("#Checkbox_ExactCountOnly").length != 0)
+        objExactCountOnly = $("#Checkbox_ExactCountOnly").prop('checked');
+    if (objExactCountOnly)
+        myFoundOutput = true;
+
+    if ($("#Checkbox_ASCII").length != 0)
+        objASCIIValue = $("#Checkbox_ASCII").prop('checked');
+    if (objASCIIValue)
+        myFoundOutput = true;
+    if ($("#Checkbox_CSV").length != 0)
+        objCSVValue = $("#Checkbox_CSV").prop('checked');
+    if (objCSVValue)
+        myFoundOutput = true;
+
+    if ($("#Checkbox_CSV_FPR").length != 0)
+        objCSVFPRValue = $("#Checkbox_CSV_FPR").prop('checked');
+    if (objCSVFPRValue)
+        myFoundOutput = true;
+    if ($("#Checkbox_CSV_PPR").length != 0)
+        objCSVPPR2Value = $("#Checkbox_CSV_PPR").prop('checked');
+    if (objCSVPPR2Value)
+        myFoundOutput = true;
+    if ($("#Checkbox_CSV_TPR").length != 0)
+        objCSVTPR3Value = $("#Checkbox_CSV_TPR").prop('checked');
+    if (objCSVTPR3Value)
+        myFoundOutput = true;
+    if ($("#Checkbox_CSV_STPR").length != 0)
+        objCSVSTPR4Value = $("#Checkbox_CSV_STPR").prop('checked');
+    if (objCSVSTPR4Value)
+        myFoundOutput = true;
+
+    if ($("#Checkbox_Include_Zip").length != 0)
+        objZipOutputValue = $("#Checkbox_Include_Zip").prop('checked');
+    if ($("#Checkbox_Zip_Only").length != 0)
+        objZipOnlyValue = $("#Checkbox_Zip_Only").prop('checked');
+
+    if ($("#Checkbox_Shapefile").length != 0)
+        objShapefileOutputValue = $("#Checkbox_Shapefile").prop('checked');
+    if (objShapefileOutputValue) {
+        myFoundOutput = true;
+        if ($("#Checkbox_Shapefile_Format_P").length != 0) 
+            objShapefileOutputValue_Format_P = $("#Checkbox_Shapefile_Format_P").prop('checked');
+        if ($("#Checkbox_Shapefile_Format_Z").length != 0)
+            objShapefileOutputValue_Format_Z = $("#Checkbox_Shapefile_Format_Z").prop('checked');
+        if (objMustHaveShapefileFormat && !objShapefileOutputValue_Format_P && !objShapefileOutputValue_Format_Z) {
+            alert("You must select a shapefile format");
+            myFoundError = true;
+        }
+        if ($("#Checkbox_Shapefile_Record_F").length != 0)
+            objShapefileOutputValue_Records_F = $("#Checkbox_Shapefile_Record_F").prop('checked');
+        if ($("#Checkbox_Shapefile_Record_M").length != 0)
+            objShapefileOutputValue_Records_M = $("#Checkbox_Shapefile_Record_M").prop('checked');
+        if (objMustHaveShapefileRecords && !objShapefileOutputValue_Records_F && !objShapefileOutputValue_Records_M) {
+            alert("You must select a shapefile records type");
+            myFoundError = true;
+        }
+    }
+
+    if ($("#binnedImageWidth").length != 0 && $("#binnedImageWidth").val() != "") {
+        var tempValue = $.trim($("#binnedImageWidth").val());
+        if (isNaN(tempValue)) {
+            alert("Image width must be a number - reverting");
+            $("#binnedImageWidth").val(objImageWidth)
+            myFoundError = true;
+        }
+        else {
+            objImageWidth = tempValue * 1.0;
+        }
+    }
+    else {
+        objImageWidth = 600;
+    }
+    if ($("#binnedImageHeight").length != 0 && $("#binnedImageHeight").val() != "") {
+        var tempValue = $.trim($("#binnedImageHeight").val());
+        if (isNaN(tempValue)) {
+            alert("Image height must be a number - reverting");
+            $("#binnedImageHeight").val(objImageHeight)
+            myFoundError = true;
+        }
+        else {
+            objImageHeight = tempValue * 1.0;
+        }
+    }
+    else {
+        objImageHeight = 600;
+    }
+
+    if ($("#Checkbox_Tile_Area").length != 0)
+        objTileValue = $("#Checkbox_Tile_Area").prop('checked');
+    if ($("#TextBox_Tile_Size").length != 0 && $("#TextBox_Tile_Size").val() != "") {
+        var tempValue = $.trim($("#TextBox_Tile_Size").val());
+        if (isNaN(tempValue)) {
+            alert("Tile size must be a number - reverting");
+            $("#TextBox_Tile_Size").val(objTileSizeValue)
+            myFoundError = true;
+        }
+        else {
+            objTileSizeValue = tempValue * 1.0;
+        }
+    }
+    else {
+        objTileSizeValue = 5.0;
+    }
+
+    var myFoundFormat = false;
+    if ($("#Checkbox_ImageFormat_PNG").length != 0)
+        objPNGFormatValue = $("#Checkbox_ImageFormat_PNG").prop('checked');
+    if (objPNGFormatValue)
+        myFoundFormat = true;
+    if ($("#Checkbox_ImageFormat_JPEG").length != 0)
+        objJPEGFormatValue = $("#Checkbox_ImageFormat_JPEG").prop('checked');
+    if (objJPEGFormatValue)
+        myFoundFormat = true;
+    if ($("#Checkbox_ImageFormat_JP2").length != 0)
+        objJP2FormatValue = $("#Checkbox_ImageFormat_JP2").prop('checked');
+    if (objJP2FormatValue)
+        myFoundFormat = true;
+    if ($("#Checkbox_ImageFormat_GTIFF").length != 0)
+        objGTIFFFormatValue = $("#Checkbox_ImageFormat_GTIFF").prop('checked');
+    if (objGTIFFFormatValue)
+        myFoundFormat = true;
+    if ($("#Checkbox_ImageFormat_KMZ").length != 0)
+        objKMZFormatValue = $("#Checkbox_ImageFormat_KMZ").prop('checked');
+    if (objKMZFormatValue)
+        myFoundFormat = true;
+    if ($("#Checkbox_ImageFormat_ENVI").length != 0)
+        objENVIFormatValue = $("#Checkbox_ImageFormat_ENVI").prop('checked');
+    if (objPNGFormatValue)
+        myFoundFormat = true;
+
+    var myFoundColor = false
+    if ($("#Checkbox_ImageColor_Global_Color").length != 0)
+        objGlobalColorValue = $("#Checkbox_ImageColor_Global_Color").prop('checked');
+    if (objGlobalColorValue)
+        myFoundColor = true;
+    if ($("#Checkbox_ImageColor_Local_Color").length != 0)
+        objLocalColorValue = $("#Checkbox_ImageColor_Local_Color").prop('checked');
+    if (objLocalColorValue)
+        myFoundColor = true;
+    if ($("#Checkbox_ImageColor_Global_Mono").length != 0)
+        objGlobalMonoValue = $("#Checkbox_ImageColor_Global_Mono").prop('checked');
+    if (objGlobalMonoValue)
+        myFoundColor = true;
+    if ($("#Checkbox_ImageColor_Local_Mono").length != 0)
+        objLocalMonoValue = $("#Checkbox_ImageColor_Local_Mono").prop('checked');
+    if (objLocalMonoValue)
+        myFoundColor = true;
+
+    objBinnedImageValue = $("#Checkbox_Binned_Image").prop('checked');
+
+    if (objBinnedImageValue) {
+        if (myFoundFormat && myFoundColor)
+            myFoundOutput = true;
+        else if (!myFoundFormat) {
+            myFoundError = true;
+            alert("You must have at least one image format to generate binned images");
+        }
+        else if (!myFoundColor) {
+            myFoundError = true;
+            alert("You must have at least one image color style to generate binned images");
+        }
+    }
+
+    if (!inNoOutputNeeded && !myFoundOutput) {
+        alert("You must have at least one output type");
+        myFoundError = true;
+    }
+
+
+    if (myFoundError) {
+        return false;
+    }
+    else {
+        if (!ComputeEstimatedObservations())
+            return true;
+        else
+            return false;
+    }
+}
+function ComputeEstimatedObservations() {
+    objEstimatedObservations = objMaxObservations;
+    //Get area
+    var myLatRange = objCurrentMaxLat - objCurrentMinLat;
+    var myLonRange = objCurrentEastLonC180 - objCurrentWestLonC180;
+    if (objCurrentWestLonC180 > objCurrentEastLonC180)
+        myLonRange = 360.0 - objCurrentWestLonC180 + objCurrentEastLonC180;
+    var myArea = myLatRange * myLonRange;
+
+    objEstimatedObservations = myArea * objEstimatedObservations / (objEstimatedObservationLonRange * objEstimatedObservationLatRange);
+
+    if (objLimitOrbit)
+    {
+        var myGlobalOrbitRange = objGlobalMaxOrbitValue - objGlobalMinOrbitValue+1;
+        var myOrbitRange = objMaxOrbit - objMinOrbit+1;
+        objEstimatedObservations = objEstimatedObservations * (myOrbitRange / myGlobalOrbitRange);
+    }
+    if (objIncludeLTODInMaxExt && objLimitLTOD)
+    {
+        var myLTODRange = objMaxLTOD - objMinLTOD+1;
+        objEstimatedObservations = objEstimatedObservations * (myLTODRange / 24.0);
+    }
+    if (objIncludeChannelInMaxExt && objLimitChannels)
+    {
+        var myChannels = 0;
+        for (var i = 0; i < objChannels.length; i++)
+            if (objChannels[i])
+                myChannels++;
+        objEstimatedObservations = objEstimatedObservations * (myChannels / objChannels.length);
+    }
+    if (objEstimatedObservations > objMaxEstObservationsPerAsyncQuery)
+    {
+        var myEstObsFormated = formatIntegerToString(objEstimatedObservations);
+        var myMaxObsFormated = formatIntegerToString(objMaxEstObservationsPerAsyncQuery);
+        var myNote = "The query is too big!  The rough size is estimated to be ~" +
+            myEstObsFormated + " observations (" + objMaxObsFilterNote + ").  The max estimated size must be smaller than " + myMaxObsFormated + ".  " + objMaxObsReduceNote;
+        alert(myNote);
+        return true;
+    }
+    return false;
+}
+function buildQueryURL(inIncludeOutputParams, inIncludeEmail, inAsync) {
+    var myURL = objBaseQueryURL;
+    var myResultStr = "&results=c";
+    var myOtherStr = "";
+
+    //Setup bounding box
+    myOtherStr = myOtherStr + "&westlon=" + objCurrentWestLonC180;
+    myOtherStr = myOtherStr + "&eastlon=" + objCurrentEastLonC180;
+    myOtherStr = myOtherStr + "&minlat=" + objCurrentMinLat;
+    myOtherStr = myOtherStr + "&maxlat=" + objCurrentMaxLat;
+
+    if (objLimitProductId) {
+        myOtherStr = myOtherStr + "&pdsid=" + objProductId;
+    }
+    if (objLimitAlt) {
+        myOtherStr = myOtherStr + "&minalt=" + objMinAlt;
+        myOtherStr = myOtherStr + "&maxalt=" + objMaxAlt;
+    }
+    if (objLimitOrbit) {
+        myOtherStr = myOtherStr + "&minorbit=" + objMinOrbit;
+        myOtherStr = myOtherStr + "&maxorbit=" + objMaxOrbit;
+    }
+    if (objLimitUTC) {
+        myOtherStr = myOtherStr + "&minobtime=" + objMinUTC;
+        if (objMaxUTC != "")
+            myOtherStr = myOtherStr + "&maxobtime=" + objMaxUTC;
+    }
+    if (objLimitLTOD) {
+        myOtherStr = myOtherStr + "&minltod=" + objMinLTOD;
+        myOtherStr = myOtherStr + "&maxltod=" + objMaxLTOD;
+    }
+    if (objLimitEmAngle) {
+        myOtherStr = myOtherStr + "&minemang=" + objMinEmAngle;
+        myOtherStr = myOtherStr + "&maxemang=" + objMaxEmAngle;
+    }
+    if (objLimitSolIn) {
+        myOtherStr = myOtherStr + "&minsolincang=" + objMinSolIn;
+        myOtherStr = myOtherStr + "&maxsolincang=" + objMaxSolIn;
+    }
+    if (objLimitSolAz) {
+        myOtherStr = myOtherStr + "&minsolazang=" + objMinSolAz;
+        myOtherStr = myOtherStr + "&maxsolazang=" + objMaxSolAz;
+    }
+    if (objLimitCalQual) {
+        myOtherStr = myOtherStr + "&mincalibration=" + objMinCalQual;
+        myOtherStr = myOtherStr + "&maxcalibration=" + objMaxCalQual;
+    }
+    if (objLimitGeoQual) {
+        myOtherStr = myOtherStr + "&mingeometry=" + objMinGeoQual;
+        myOtherStr = myOtherStr + "&maxgeometry=" + objMaxGeoQual;
+    }
+    if (objLimitMisQual) {
+        myOtherStr = myOtherStr + "&minmisc=" + objMinMisQual;
+        myOtherStr = myOtherStr + "&maxmisc=" + objMaxMisQual;
+    }
+    if (objChannels.length > 0 && objLimitChannels) {
+        var myChannels = "";
+        for (var i = 0; i < objChannels.length; i++) {
+            if (objChannels[i]) {
+                myChannels = myChannels + "t";
+            }
+            else {
+                myChannels = myChannels + "f";
+            }
+        }
+        myOtherStr = myOtherStr + "&channel=" + myChannels;
+    }
+    if (objDetectors.length > 0 && objLimitDetectors) {
+        var myDetectors = "";
+        for (var i = 0; i < objDetectors.length; i++) {
+            if (objDetectors[i]) {
+                myDetectors = myDetectors + "t";
+            }
+            else {
+                myDetectors = myDetectors + "f";
+            }
+        }
+        myOtherStr = myOtherStr + "&detector=" + myDetectors;
+    }
+
+    if (inIncludeOutputParams && !objExactCountOnly) {
+        if (objZipOutputValue)
+            myOtherStr = myOtherStr + "&zip=t";
+        if (objZipOnlyValue)
+            myOtherStr = myOtherStr + "&zipclean=t";
+        if (objTileValue)
+            myOtherStr = myOtherStr + "&tile=" + objTileSizeValue;
+
+        if (objQueryType === "DLRERDR") {
+            if (objCSVValue)
+                myResultStr = myResultStr + "v";
+        }
+        if (objQueryType === "MOLAPEDR") {
+            if (objASCIIValue)
+                myResultStr = myResultStr + "a";
+            if (objCSVValue)
+                myResultStr = myResultStr + "v";
+        }
+        if (objQueryType === "LOLARDR") {
+            if (objCSVFPRValue)
+                myResultStr = myResultStr + "f";
+            if (objCSVPPR2Value)
+                myResultStr = myResultStr + "p";
+            if (objCSVTPR3Value)
+                myResultStr = myResultStr + "t";
+            if (objCSVSTPR4Value)
+                myResultStr = myResultStr + "u";
+        }
+        if (objQueryType === "MLARDR") {
+            if (objCSVFPRValue)
+                myResultStr = myResultStr + "p";
+            if (objCSVTPR3Value)
+                myResultStr = myResultStr + "t";
+        }
+        if (objShapefileOutputValue)
+            myResultStr = myResultStr + "s";
+        if (objShapefileOutputValue_Format_P && objShapefileOutputValue_Format_Z)
+            myOtherStr = myOtherStr + "&shapeformat=PZ";
+        else if (objShapefileOutputValue_Format_P)
+            myOtherStr = myOtherStr + "&shapeformat=P";
+        else if (objShapefileOutputValue_Format_Z)
+            myOtherStr = myOtherStr + "&shapeformat=Z";
+        if (objShapefileOutputValue_Records_F && objShapefileOutputValue_Records_M)
+            myOtherStr = myOtherStr + "&shaperecords=FM";
+        else if (objShapefileOutputValue_Records_F)
+            myOtherStr = myOtherStr + "&shaperecords=F";
+        else if (objShapefileOutputValue_Records_M)
+            myOtherStr = myOtherStr + "&shaperecords=M";
+        if (objBinnedImageValue) {
+            myResultStr = myResultStr + "i";
+            myOtherStr = myOtherStr + "&width=" + objImageWidth;
+            myOtherStr = myOtherStr + "&height=" + objImageHeight;
+            myOtherStr = myOtherStr + "&imageformat=";
+            if (objPNGFormatValue)
+                myOtherStr = myOtherStr + "p";
+            if (objJPEGFormatValue)
+                myOtherStr = myOtherStr + "j";
+            if (objJP2FormatValue)
+                myOtherStr = myOtherStr + "2";
+            if (objGTIFFFormatValue)
+                myOtherStr = myOtherStr + "t";
+            if (objKMZFormatValue)
+                myOtherStr = myOtherStr + "k";
+            if (objENVIFormatValue)
+                myOtherStr = myOtherStr + "e";
+            myOtherStr = myOtherStr + "&imagetype=";
+            if (objGlobalColorValue)
+                myOtherStr = myOtherStr + "g";
+            if (objLocalColorValue)
+                myOtherStr = myOtherStr + "l";
+            if (objGlobalMonoValue)
+                myOtherStr = myOtherStr + "m";
+            if (objLocalMonoValue)
+                myOtherStr = myOtherStr + "n";
+        }
+    }
+    if (inIncludeEmail && objEmailAddress != "") {
+        myOtherStr = myOtherStr + "&email=" + objEmailAddress;
+    }
+    if (inAsync) {
+        myOtherStr = myOtherStr + "&async=t";
+    }
+    myURL = myURL + myResultStr + myOtherStr;
+    return myURL;
+}
+//**** End Query Support ****
+
+//**** Count Query ****
+//The count button has been depreciated
+//var objCountChecks = 0;
+//var objCountLoading = false;
+//var objCountErrorString = "";
+//var objCountResultString = "";
+//function LoadCount(inURL) {
+//    objCountLoading = true;
+//    objCountChecks = 0;
+//    objCountErrorString = "";
+//    $.getJSON(inURL, function (data) {
+//        console.log("Loading Count Data From JSON")
+//        if ('GDSResults' in data) {
+//            if ('Status' in data.GDSResults) {
+//                if (data.GDSResults.Status.toLowerCase() === "success") {
+//                    if ('Count' in data.GDSResults) {
+//                        objCount = data.GDSResults.Count * 1.0;
+//                        console.log("Found Count in LoadCount = " + objCount)
+//                    }
+//                }
+//                else if (data.GDSResults.Status.toLowerCase() === "error") {
+//                    if ('Error' in data.GDSResults)
+//                        objCountErrorString = data.GDSResults.Error;
+//                    else
+//                        objCountErrorString = "Unknown Query Error";
+//                }
+//            }
+//        }
+//        objCountLoading = false;
+//    });
+//}
+//function UpdateCount() {
+//    if (objCountLoading) {
+//        console.log("Waiting on Count in UpdateCount")
+//        objCountChecks = objCountChecks + 1;
+//        var myString = "Counting";
+//        for (var i = 0; i < objCountChecks; i++)
+//            myString = myString + ".";
+//        $("#Query_Count_Results").html(myString);
+//        $('#Button_Count').attr("disabled", "disabled");
+//        setTimeout(UpdateCount, 1000);
+//    }
+//    else {
+//        console.log("Found Count in UpdateCount = " + objCount);
+//        if (objCountErrorString != "") 
+//            objCountResultString = "<h2><b> Count error = " + objCountErrorString + "</b></h2>";
+//        else 
+//            objCountResultString = "<h2><b> Count result = " + formatIntegerToString(objCount) + " observations</b></h2>";
+//        $("#Query_Count_Results").html(objCountResultString);
+//        $('#Button_Count').removeAttr("disabled");
+//    }
+//}
+//The count button has been depreciated
+//$("#Button_Count").click(function () {
+//    clearJobStatus(true);
+//    if (checkAndSetInputs(true, false)) {
+//        //Query Count
+//        LoadCount(buildQueryURL(false, false, false));
+//        UpdateCount();
+//    }
+//});
+//**** End Count Queries ****
+//**** Query for Result ****
+var objCount = 0;
+var objQueryForResultsStatusChecks = 0;
+var objQueryForResultsStatusLoading = false;
+var objQueryForResultsStatus = "";
+var objQueryForResultsStatusNote = "";
+function LoadQueryForResults(inURL) {
+    objQueryForResultsStatusLoading = true;
+    objQueryForResultsStatusChecks = 0;
+    $.getJSON(inURL, function (data) {
+        console.log("Loading Email Status From JSON")
+        if ('GDSResults' in data) {
+            if ('Status' in data.GDSResults) {
+                if (data.GDSResults.Status.toLowerCase() === "success") {
+                    objQueryForResultsStatus = data.GDSResults.Status;
+                    if ('State' in data.GDSResults)
+                        objQueryForResultsStatusNote = data.GDSResults.State;
+                    if ('StatusNote' in data.GDSResults)
+                        objQueryForResultsStatusNote = data.GDSResults.StatusNote;
+                    if ('JobId' in data.GDSResults)
+                        objJobId = data.GDSResults.JobId;
+                }
+                else if (data.GDSResults.Status.toLowerCase() === "error") {
+                    if ('Error' in data.GDSResults)
+                        objQueryForResultsStatus = data.GDSResults.Error;
+                    else
+                        objQueryForResultsStatus = "Unknown Query Error";
+                }
+            }
+        }
+        objQueryForResultsStatusLoading = false;
+    });
+}
+function UpdateQueryForResults() {
+    if (objQueryForResultsStatusLoading) {
+        console.log("Waiting on Email Query Status in UpdateQueryForResults")
+        objQueryForResultsStatusChecks = objQueryForResultsStatusChecks + 1;
+        var myString = "Waiting";
+        for (var i = 0; i < objQueryForResultsStatusChecks; i++)
+            myString = myString + ".";
+        $("#Query_For_Results").html(myString);
+        $('#Button_Query_For_Results').attr("disabled", "disabled");
+        setTimeout(UpdateQueryForResults, 1000);
+    }
+    else {
+        console.log("Found Email Status Results")
+        //$("#Query_Count_Results").html();
+        var myResult = "<h2><b>Query Job (Job Id=" + objJobId + ") Submitted " + objQueryForResultsStatus + " " + objQueryForResultsStatusNote + "</b></h2>";
+        $("#Query_For_Results").html(myResult);
+        $('#Button_Query_For_Results').removeAttr("disabled");
+        $("#TextBox_Job_Id").val(objJobId)
+    }
+}
+$("#Button_Query_For_Results").click(function () {
+    clearJobStatus(false);
+    if (checkAndSetInputs(false, true)) {
+        var r = false;
+        var myEstObsFormated = formatIntegerToString(objEstimatedObservations);
+        var myNote = "The rough estimated query size is ~" + myEstObsFormated;
+        myNote = myNote + "\n(" + objMaxObsFilterNote + ").";
+        if (objEmailAddress === "") {
+            myNote = myNote + "\nNo results will be emailed - you will need to check periodically.";
+        }
+        else {
+            myNote = myNote + "\nResults will be emailed to " + objEmailAddress;
+        }
+        myNote = myNote + "\nDo you want to proceed?";
+        r = confirm(myNote);
+        if (r) {
+            LoadQueryForResults(buildQueryURL(true, true, true));
+            UpdateQueryForResults();
+        }
+    }
+});
+//**** End Query for Results ****
+
+//**** Job Status *****
+var objJobId = -1;
+var objStatusChecks = 0;
+var objStatusLoading = false;
+var objState = "";
+var objStateNote = "";
+var objNumberJobsAheadInQueue = 0;
+var objNumberFiles = 0;
+var objReferencedFiles = [];
+var objValidTill = "";
+function buildJobStatusQueryURL() {
+    var myURL = objBaseStatusURL + "&jobid=" + objJobId;
+    return myURL;
+}
+function checkAndSetJobStatusInput() {
+    if ($("#TextBox_Job_Id").val() != "") {
+        var tempValue = $.trim($("#TextBox_Job_Id").val());
+        if (isNaN(tempValue)) {
+            alert("Job ID must be a number");
+            return false;
+        }
+        else if (tempValue < 0) {
+            alert("Job ID must greater than zero");
+            return false;
+        }
+        else {
+            objJobId = tempValue * 1.0;
+            console.log("checkAndSetInput JobId = " + objJobId);
+            return true;
+        }
+    }
+    return false;
+}
+function LoadJobStatus(inURL) {
+    objStatusLoading = true;
+    objStatusChecks = 0;
+    $.getJSON(inURL, function (data) {
+        console.log("Loading Status From JSON")
+        if ('GDSResults' in data) {
+            if ('Status' in data.GDSResults) {
+                if (data.GDSResults.Status.toLowerCase() === "error") {
+                    objState = "Error";
+                    if ('Error' in data.GDSResults) {
+                        objStateNote = data.GDSResults.Error;
+                    }
+                }
+                else if (data.GDSResults.Status.toLowerCase() === "success") {
+                    if ('StateSummary' in data.GDSResults) {
+                        if ('State' in data.GDSResults.StateSummary) {
+                            objState = data.GDSResults.StateSummary.State;
+                        }
+                        if ('StatusNote' in data.GDSResults.StateSummary) {
+                            objStateNote = data.GDSResults.StateSummary.StatusNote;
+                        }
+                        if ('JobsAheadInQueue' in data.GDSResults.StateSummary) {
+                            objNumberJobsAheadInQueue = data.GDSResults.StateSummary.JobsAheadInQueue * 1.0;
+                        }
+                        if ('Count' in data.GDSResults) {
+                            objCount = data.GDSResults.Count * 1.0;
+                        }
+                        else {
+                            objCount = 0;
+                        }
+                        if (objState === 'Finished') {
+                            if ('ResultFiles' in data.GDSResults) {
+                                if (data.GDSResults.ResultFiles === "No Result Files") {
+                                    objNumberFiles = 0;
+                                }
+                                else {
+                                    if ('NumberFiles' in data.GDSResults.ResultFiles) {
+                                        objNumberFiles = data.GDSResults.ResultFiles.NumberFiles * 1.0;
+                                    }
+                                    if ('ValidTill' in data.GDSResults.ResultFiles) {
+                                        objValidTill = data.GDSResults.ResultFiles.ValidTill;
+                                    }
+                                    if ('ResultFile' in data.GDSResults.ResultFiles) {
+                                        objReferencedFiles = data.GDSResults.ResultFiles.ResultFile;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        objStatusLoading = false;
+    });
+}
+function UpdateJobStatus() {
+    if (objStatusLoading) {
+        console.log("Waiting on status in UpdateJobStatus")
+        objStatusChecks = objStatusChecks + 1;
+        var myString = "<h2>Checking";
+        for (var i = 0; i < objStatusChecks; i++)
+            myString = myString + ".";
+        myString = myString + "</h2>";
+        $("#JobResult_State").html(myString);
+        $('#Button_Get_Job_Status').attr("disabled", "disabled");
+        setTimeout(UpdateJobStatus, 1000);
+    }
+    else {
+        console.log("Found status in UpdateJobStatus")
+        $("#JobResult_State").html("<h2><b> Current State = " + objState + "</b></h2>");
+        if (objStateNote != "")
+            $("#JobResults_Notes").html("<h2>" + objStateNote + "</h2>");
+        else
+            $("#JobResults_Notes").html("");
+        if (objNumberJobsAheadInQueue > 0)
+            $("#JobResults_NumberJobsAheadInQueue").html("<h2>Number of Jobs Ahead in the queue = " + objNumberJobsAheadInQueue + "</h2>");
+        else
+            $("#JobResults_NumberJobsAheadInQueue").html("");
+        $('#Button_Get_Job_Status').removeAttr("disabled");
+        if (objState === 'Finished') {
+            var myResultFileString = "";
+            if (objNumberFiles > 0) {
+                var myVTYear = objValidTill.substring(0, 4);
+                var myVTMonthNumber = objValidTill.substring(5, 7);
+                var myVTMonth = numberToMonth(myVTMonthNumber * 1)
+                var myVTDay = objValidTill.substring(8, 10);
+                $("#JobResults_NumberResultFiles").html("<h2>Number of Result Files = " + objNumberFiles + " (Valid Till " + myVTMonth + " " + myVTDay + " " + myVTYear + ")</h2>");
+                myResultFileString += "<h2><ul>";
+                var mySizeKB = 0;
+                var myURL = 0;
+                var myNames = [];
+                var myName = ""
+                if (objNumberFiles > 1) {
+                    for (var i = 0; i < objNumberFiles; i++) {
+                        mySizeKB = objReferencedFiles[i].SizeKB;
+                        myURL = objReferencedFiles[i].URL;
+                        myNames = myURL.split("/");
+                        myName = myNames[myNames.length - 1];
+                        myResultFileString += "<li><a href='" + myURL + "'>" + myName + "</a> - Size: " + formatIntegerToString(mySizeKB) + "KB</li>";
+                    }
+                }
+                else {
+                    mySizeKB = objReferencedFiles.SizeKB;
+                    myURL = objReferencedFiles.URL;
+                    myNames = myURL.split("/");
+                    myName = myNames[myNames.length - 1];
+                    myResultFileString += "<li><a href='" + myURL + "'>" + myName + "</a> - Size: " + formatIntegerToString(mySizeKB) + "KB</li>";
+                }
+                myResultFileString += "</ul></h2>";
+                $("#JobResults_ResultFiles").html(myResultFileString);
+            }
+            else {
+                $("#JobResults_NumberResultFiles").html("<h2>No Result Files</h2>");
+            }
+        }
+        ScrollPage();
+    }
+}
+function clearJobStatus(inClearCount) {
+    objJobId = -1;
+    objStatusChecks = 0;
+    objStatusLoading = false;
+    objState = "";
+    objStateNote = "";
+    objNumberJobsAheadInQueue = 0;
+    objNumberFiles = 0;
+    objReferencedFiles = [];
+    objValidTill = "";
+    //if (inClearCount) {
+    //    objCountResultString = "";
+    //    $("#Query_Count_Results").html(objCountResultString);
+    //}
+    $("#JobResult_State").html("");
+    $("#JobResults_Notes").html("");
+    $("#JobResults_NumberJobsAheadInQueue").html("");
+    $("#JobResults_ResultFiles").html("");
+    $("#JobResults_NumberResultFiles").html("");
+}
+$("#Button_Get_Job_Status").click(function () {
+    clearJobStatus(false);
+    if (checkAndSetJobStatusInput()) {
+        LoadJobStatus(buildJobStatusQueryURL());
+        window.scrollTo(0, 1000);
+        UpdateJobStatus();
+    }
+});
+function buildJobCancelQueryURL() {
+    var myURL = objBaseStatusURL + "&jobid=" + objJobId + "&abort=t";
+    return myURL;
+}
+function checkAndSetJobCancelInput() {
+    return checkAndSetJobStatusInput();
+}
+$("#Button_Cancel_Job").click(function () {
+    clearJobStatus(false);
+    if (checkAndSetJobStatusInput()) {
+        LoadJobStatus(buildJobCancelQueryURL());
+        UpdateJobStatus();
+    }
+});
+//**** End Job Status *****
+
+//**** Reset Button ****
+$("#Button_Reset_Query_Parameters").click(function () {
+    clearJobStatus(true);
+    ResetLatLonBoundingBox();
+    ResetInputs();
+});
+//**** End Reset Button ****
+

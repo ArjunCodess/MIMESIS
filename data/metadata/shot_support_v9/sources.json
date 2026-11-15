@@ -1,0 +1,306 @@
+[
+  {
+    "url": "https://stac.astrogeology.usgs.gov/docs/data/mars/ctxdtms/",
+    "path": "data/metadata/shot_support_v9/usgs_ctx.txt",
+    "sha256": "97d92fa81cc493d018828ac75d1ae702193deb54ee6a38a396616b62b62b2d6d",
+    "bytes": 159216,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:30:16.547051+00:00"
+  },
+  {
+    "url": "https://ode.rsl.wustl.edu/mars/pagehelp/Content/Web_Interface/Tools_Tab/MOLA_PEDR_Query_Page.htm",
+    "path": "data/metadata/shot_support_v9/ode_help.txt",
+    "sha256": "32388593c82f40b7174c3544d01ced14c866939400f70ca46d30c9be19b9a906",
+    "bytes": 28403,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:30:18.302649+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/GDSWeb/GDSMOLAPEDR.html",
+    "path": "data/metadata/shot_support_v9/gds.txt",
+    "sha256": "2e251843d8645d50d0801a08ff14154a809d8623b026531a2a07ad3c0614e62d",
+    "bytes": 45325,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:30:19.603621+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/GDSWeb/js/GDS.js",
+    "path": "data/metadata/shot_support_v9/gds_parameters.txt",
+    "sha256": "7af927637969facf58d57bc1ae26d7d449251f16445ce473cbb0b7b96565ed66",
+    "bytes": 89005,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:30:20.886431+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/GDSWeb/js/GDSMOLAPEDR.js",
+    "path": "data/metadata/shot_support_v9/gds_endpoint.txt",
+    "sha256": "0e114ddcead1a8032aa35a8cf31676124ce01ab24b3e976197c8be81a065fb22",
+    "bytes": 3949,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:30:22.116283+00:00"
+  },
+  {
+    "url": "https://pds-geosciences.wustl.edu/mgs/mgs-m-mola-3-pedr-l1a-v1/mgsl_21xx/index/index.lbl",
+    "path": "data/metadata/shot_support_v9/pedr_index_label.txt",
+    "sha256": "fbe478239c68199b1abe391841565228974a60035968cad474639f9984924b9d",
+    "bytes": 5794,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:30:23.669243+00:00"
+  },
+  {
+    "url": "https://pds-geosciences.wustl.edu/mgs/mgs-m-mola-3-pedr-l1a-v1/mgsl_21xx/label/pedrsec1.fmt",
+    "path": "data/metadata/shot_support_v9/pedr_binary_format.fmt",
+    "sha256": "ed01c7f911583073d3063e036582c60c94bd5668c9242d92530f80a3f7d48e08",
+    "bytes": 20179,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:30:25.359822+00:00"
+  },
+  {
+    "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/T01_000893_1847_XN_04N191W__N09_065929_1853_XN_05N191W/T01_000893_1847_XN_04N191W__N09_065929_1853_XN_05N191W-FINAL_geodiff-diff.csv",
+    "path": "data/raw/shot_support_v9/inventory-final_offsets.txt",
+    "sha256": "6dda3d8ec0c3c4f10b34852bc04c9a8e635c76c217a64d6d6710305516aaea06",
+    "bytes": 51977,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:30:26.835631+00:00"
+  },
+  {
+    "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/T01_000893_1847_XN_04N191W__N09_065929_1853_XN_05N191W/provenance.txt",
+    "path": "data/raw/shot_support_v9/inventory-provenance.txt",
+    "sha256": "b973a7ae6361908fe09570d62b903ed7d14283da14f5c6189773d3c5b57e6e6f",
+    "bytes": 9605,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:30:27.961432+00:00"
+  },
+  {
+    "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/T01_000893_1847_XN_04N191W__N09_065929_1853_XN_05N191W/qa_metrics",
+    "path": "data/raw/shot_support_v9/inventory-qa_metrics.txt",
+    "sha256": "5a10859e391c75dc4fdb17beb1f674a18ad8fd8ea3cc5bed4e9653a82f6c9d05",
+    "bytes": 365,
+    "http_status": 404,
+    "retrieved_at": "2026-11-14T18:31:12.302650+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/output/20261114t123114815/MolaPEDR_16N18N_71E73E_20261114T123118766_pts_csv.csv",
+    "path": "data/raw/shot_support_v9/prospective-01-pedr.4e3bedfbb6c75ff8.csv",
+    "sha256": "4e3bedfbb6c75ff88f9fdeb6159ebf8821394b3b374fc9a108e4f24925b9de85",
+    "bytes": 1737896,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:31:26.779063+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/output/20261114t123114815/MolaPEDR_16N18N_71E73E_20261114T123118766_pts_csv.lbl",
+    "path": "data/raw/shot_support_v9/prospective-01-pedr.3e4914f607ed29ab.lbl",
+    "sha256": "3e4914f607ed29ab2675dffeb806e35f99777b64ba1d2ffcda636c91d332d898",
+    "bytes": 6123,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:31:28.355115+00:00"
+  },
+  {
+    "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/P17_007767_1972_XN_17N288W__P21_009270_1973_XN_17N288W/P17_007767_1972_XN_17N288W__P21_009270_1973_XN_17N288W_mola_shots.csv",
+    "path": "data/raw/shot_support_v9/prospective-01-control.csv",
+    "sha256": "640a90a153d7afda96e86009f215bc1404f432ab07810a99e37c3cd9664e01ee",
+    "bytes": 125546,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:31:30.365933+00:00"
+  },
+  {
+    "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/P17_007767_1972_XN_17N288W__P21_009270_1973_XN_17N288W/qa_metrics.txt",
+    "path": "data/raw/shot_support_v9/prospective-01-control-qa.txt",
+    "sha256": "dabd2d35a1a500f96a2cfb16b56b7abdc36e167238d1013c942b0bd51eecd01b",
+    "bytes": 397,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:31:31.921246+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/output/20261114t123136188/MolaPEDR_6N8N_69E71E_20261114T123141063_pts_csv.csv",
+    "path": "data/raw/shot_support_v9/prospective-02-pedr.1f2b8b71cc7672db.csv",
+    "sha256": "1f2b8b71cc7672db8c5556064e5d525e9748490e4f60b1cac46b5f4667d9023a",
+    "bytes": 1505726,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:31:47.977453+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/output/20261114t123136188/MolaPEDR_6N8N_69E71E_20261114T123141063_pts_csv.lbl",
+    "path": "data/raw/shot_support_v9/prospective-02-pedr.f6d537563dd8b17d.lbl",
+    "sha256": "f6d537563dd8b17ddad9df0a69b95ea0785781ab02ba80c36e566ca316e8738f",
+    "bytes": 6119,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:31:49.296921+00:00"
+  },
+  {
+    "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/F05_037726_1870_XN_07N290W__J04_046179_1891_XN_09N290W/F05_037726_1870_XN_07N290W__J04_046179_1891_XN_09N290W_mola_shots.csv",
+    "path": "data/raw/shot_support_v9/prospective-02-control.csv",
+    "sha256": "2d4fc81e2cf44e5492a8c952f6ca20a56d0c28b8e6eb7bbaa1d5759a71cea981",
+    "bytes": 137820,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:31:51.092363+00:00"
+  },
+  {
+    "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/F05_037726_1870_XN_07N290W__J04_046179_1891_XN_09N290W/qa_metrics.txt",
+    "path": "data/raw/shot_support_v9/prospective-02-control-qa.txt",
+    "sha256": "075dafa0e296fae6179848ee950b630422733f7f02bced53cb56a81e2bab6519",
+    "bytes": 398,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:31:52.298037+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/output/20261114t123202386/MolaPEDR_16N18N_71E73E_20261114T123207189_pts_csv.csv",
+    "path": "data/raw/shot_support_v9/prospective-01-pedr.csv",
+    "sha256": "4342beed7056a85fe5b77dfa74f30898617a33e037a9c8b64b2770e748afddf8",
+    "bytes": 1740076,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:32:12.269493+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/output/20261114t123202386/MolaPEDR_16N18N_71E73E_20261114T123207189_pts_csv.lbl",
+    "path": "data/raw/shot_support_v9/prospective-01-pedr.lbl",
+    "sha256": "16617259df4b9a820392098780ecf604b95bf104433a1ab31dda8ce6af5c2709",
+    "bytes": 6088,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:32:13.637688+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/output/20261114t123217979/MolaPEDR_6N8N_69E71E_20261114T123220716_pts_csv.csv",
+    "path": "data/raw/shot_support_v9/prospective-02-pedr.csv",
+    "sha256": "3ac687dfca2ef23f4a864dfdf1c0a745a9f0ed104fda55fc878e5b428d7df00d",
+    "bytes": 1506380,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:32:27.031328+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/output/20261114t123217979/MolaPEDR_6N8N_69E71E_20261114T123220716_pts_csv.lbl",
+    "path": "data/raw/shot_support_v9/prospective-02-pedr.lbl",
+    "sha256": "092fdb8546635f55437786175831bfd8b2b742732090b2a391e01bb101d09ad6",
+    "bytes": 6085,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:32:28.380584+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/output/20261114t123232449/MolaPEDR_2N3N_5E6E_20261114T123235893_pts_csv.csv",
+    "path": "data/raw/shot_support_v9/prospective-03-pedr.csv",
+    "sha256": "650bc9a1d72da70e2a1fc548e36c07de724e155d3ad8f224c5ba695adbe4da34",
+    "bytes": 1745090,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:32:41.225005+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/output/20261114t123232449/MolaPEDR_2N3N_5E6E_20261114T123235893_pts_csv.lbl",
+    "path": "data/raw/shot_support_v9/prospective-03-pedr.lbl",
+    "sha256": "6f6b118949830592459c9584770e8b73e69758f889771ed0344b2d733a659966",
+    "bytes": 6078,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:32:42.583783+00:00"
+  },
+  {
+    "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/N07_065249_1828_XN_02N354W__N08_065381_1828_XN_02N354W/N07_065249_1828_XN_02N354W__N08_065381_1828_XN_02N354W_mola_shots.csv",
+    "path": "data/raw/shot_support_v9/prospective-03-control.csv",
+    "sha256": "63e23656dff13c8510f3c147d7a7e4984666f37342f41791f6746e1af27aa6c1",
+    "bytes": 161981,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:32:44.715941+00:00"
+  },
+  {
+    "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/N07_065249_1828_XN_02N354W__N08_065381_1828_XN_02N354W/qa_metrics.txt",
+    "path": "data/raw/shot_support_v9/prospective-03-control-qa.txt",
+    "sha256": "0e488f208cf61c1f7d3edeabef443909842ebe1fbb35ef21a003eea6d457a1e6",
+    "bytes": 398,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:32:45.875781+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/output/20261114t123250331/MolaPEDR_2N3N_2E3E_20261114T123254655_pts_csv.csv",
+    "path": "data/raw/shot_support_v9/prospective-04-pedr.csv",
+    "sha256": "d74a9459aa3079749abd564f79e950d5fb58bc7d7080b74039fa1db8550c14ab",
+    "bytes": 1776482,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:33:00.904576+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/output/20261114t123250331/MolaPEDR_2N3N_2E3E_20261114T123254655_pts_csv.lbl",
+    "path": "data/raw/shot_support_v9/prospective-04-pedr.lbl",
+    "sha256": "9af0fde98c04cbc7a2ded0dd975b8d63df11be42acf9f58c6f6f7a8617c8d66f",
+    "bytes": 6079,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:33:02.305264+00:00"
+  },
+  {
+    "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/F01_036067_1823_XI_02N357W__F02_036423_1823_XI_02N357W/F01_036067_1823_XI_02N357W__F02_036423_1823_XI_02N357W_mola_shots.csv",
+    "path": "data/raw/shot_support_v9/prospective-04-control.csv",
+    "sha256": "e089e036956f8fa66ccdc7062279058bccf2be1e699231c7ce8c27e539ad291e",
+    "bytes": 317340,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:33:04.845364+00:00"
+  },
+  {
+    "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/F01_036067_1823_XI_02N357W__F02_036423_1823_XI_02N357W/qa_metrics.txt",
+    "path": "data/raw/shot_support_v9/prospective-04-control-qa.txt",
+    "sha256": "3419a7c0389ee997d6d9c9ab3f4c3b0d2dbda7b7d93b81df2a0a33c99efc94f0",
+    "bytes": 396,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:33:06.015183+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/output/20261114t123310456/MolaPEDR_35N36N_7E9E_20261114T123314890_pts_csv.csv",
+    "path": "data/raw/shot_support_v9/prospective-05-pedr.csv",
+    "sha256": "ad739cba167c927d18dc1acbfc381d945fdeb9a1970716f201d31e149ce72b01",
+    "bytes": 2274503,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:33:28.759571+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/output/20261114t123310456/MolaPEDR_35N36N_7E9E_20261114T123314890_pts_csv.lbl",
+    "path": "data/raw/shot_support_v9/prospective-05-pedr.lbl",
+    "sha256": "0c2c892056171f6e97285042a657d3af661a5e9810dde213d8e424ac7281bfeb",
+    "bytes": 6085,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:33:30.109804+00:00"
+  },
+  {
+    "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/J04_046458_2157_XN_35N351W__J16_050928_2157_XN_35N351W/J04_046458_2157_XN_35N351W__J16_050928_2157_XN_35N351W_mola_shots.csv",
+    "path": "data/raw/shot_support_v9/prospective-05-control.csv",
+    "sha256": "3eb7eef53cda4fe455710cfc758233cae7584abc32f6f0678230192ab198984f",
+    "bytes": 155120,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:33:31.923233+00:00"
+  },
+  {
+    "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/J04_046458_2157_XN_35N351W__J16_050928_2157_XN_35N351W/qa_metrics.txt",
+    "path": "data/raw/shot_support_v9/prospective-05-control-qa.txt",
+    "sha256": "ffd097befa211c4ead6f8dc863f38003c00dbbe8522b4c3a8857ff40dfdad4e5",
+    "bytes": 402,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:33:33.171358+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/output/20261114t123338057/MolaPEDR_33N34N_69E71E_20261114T123343255_pts_csv.csv",
+    "path": "data/raw/shot_support_v9/prospective-06-pedr.csv",
+    "sha256": "ad416dcbeabe8fb6d916a094b78f4cd633a2e81205684c5a32e1f3d4bc6dc171",
+    "bytes": 2225562,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:33:50.957814+00:00"
+  },
+  {
+    "url": "https://oderest.rsl.wustl.edu/output/20261114t123338057/MolaPEDR_33N34N_69E71E_20261114T123343255_pts_csv.lbl",
+    "path": "data/raw/shot_support_v9/prospective-06-pedr.lbl",
+    "sha256": "64ca8aff000985ab32ed63455047c3d755ae16f69329f040d1274e2c128424c4",
+    "bytes": 6090,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:33:52.296197+00:00"
+  },
+  {
+    "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/D02_027889_2140_XI_34N289W__F02_036394_2144_XI_34N289W/D02_027889_2140_XI_34N289W__F02_036394_2144_XI_34N289W_mola_shots.csv",
+    "path": "data/raw/shot_support_v9/prospective-06-control.csv",
+    "sha256": "b363edce7881cbbed24be78c78e4d648bed721c05e0526cd05fdcc8f5695f395",
+    "bytes": 716444,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:33:54.972002+00:00"
+  },
+  {
+    "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/D02_027889_2140_XI_34N289W__F02_036394_2144_XI_34N289W/qa_metrics.txt",
+    "path": "data/raw/shot_support_v9/prospective-06-control-qa.txt",
+    "sha256": "92b62526b5157b6205542980c441160eb2f7b1c2078a9061025e601e4f06cb7b",
+    "bytes": 399,
+    "http_status": 200,
+    "retrieved_at": "2026-11-14T18:33:56.150626+00:00"
+  }
+]

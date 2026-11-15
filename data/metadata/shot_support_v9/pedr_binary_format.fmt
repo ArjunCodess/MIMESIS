@@ -1,0 +1,524 @@
+OBJECT               = COLUMN
+ NAME                = FRAME_TIME_WHOLE_SECONDS
+ DATA_TYPE           = MSB_INTEGER
+ START_BYTE          = 1
+ BYTES               = 4
+ UNIT                = 'SECONDS'
+ DESCRIPTION         = "Frame mid-point time whole seconds. The integer
+  represents the whole portion of the Ephemeris Time (in number of seconds)
+  past J2000."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = FRAME_TIME_FRAC_SECONDS
+ DATA_TYPE           = MSB_INTEGER
+ START_BYTE          = 5
+ BYTES               = 4
+ UNIT                = 'MICROSECONDS'
+ DESCRIPTION         = "The frame mid-point time fractional seconds,
+  scaled to microseconds. The integer represents the fractional portion
+  of the Ephemeris Time (in number of microseconds) past J2000."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = ORBIT_NUMBER
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 9
+ BYTES               = 4
+ DESCRIPTION         = "Mapping mission orbit number, determined by Mars
+  Global Surveyor flight operations system."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = AREOCENTRIC_LATITUDE
+ DATA_TYPE           = MSB_INTEGER
+ START_BYTE          = 13
+ BYTES               = 4
+ UNIT                = 'DEGREES * (10**6)'
+ DESCRIPTION         = "The areocentric latitude, IAU1991, of
+  the MOLA data frame mid-point of the Mars Global Surveyor
+  spacecraft center of mass. Obtained from the MOLA Science Investigation
+  Team precision orbit data."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = AREOCENTRIC_LONGITUDE
+ DATA_TYPE           = MSB_INTEGER
+ START_BYTE          = 17
+ BYTES               = 4
+ UNIT                = 'DEGREES * (10**6)'
+ DESCRIPTION         = "The East longitude, IAU1991, of the MOLA
+  data frame mid-point of the Mars Global Surveyor
+  spacecraft center of mass. Obtained from the MOLA Science Investigation
+  Team precision orbit data."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = RADIAL_DISTANCE
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 21
+ BYTES               = 4
+ UNIT                = 'CENTIMETERS'
+ DESCRIPTION         = "The distance from the Mars body center to the
+  Mars Global Surveyor spacecraft center of mass associated with the MOLA
+  frame mid-point, based on a coordinate system with origin at the center
+  of mass of Mars. Obtained from the MOLA Science Investigation Team
+  precision orbit data."
+END_OBJECT           = COLUMN
+
+
+OBJECT               = COLUMN
+ NAME                = FRAME_MID_POINT_RANGE
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 25
+ BYTES               = 4
+ UNIT                = 'CENTIMETERS'
+ DESCRIPTION         = "MOLA range (corrected to Mars Global Surveyor
+  center of mass) associated with MOLA data frame mid-point, obtained
+  from a straight line best fitted to the individual MOLA range
+  measurements (up to 20) in the MOLA data frame."
+END_OBJECT           = COLUMN
+
+
+OBJECT               = COLUMN
+ NAME                = SHOT_QUALITY_FLAG
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 29
+ BYTES               = 4
+ DESCRIPTION         = "3 bytes - flag whether good/bad shot (20 least
+  significant bits, one for each of the 20 shots, with least significant
+  bit, 0, being shot 20) and each bit set to 1 for good, 0 for bad shot.
+  1 byte - good shot counter, (total of bits set to 1 in above 20 bits)."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = SHOT_QUALITY_DESCRIPTOR_FLAG
+ DATA_TYPE           = LSB_BIT_STRING
+ START_BYTE          = 33
+ BYTES               = 16
+ DESCRIPTION         = "Flag indicating whether the packet or individual
+  shots passed or failed the various shot quality tests. Reading the flag
+  from right to left with the rightmost bit being bit 0 and the leftmost
+  bit being bit 63 the format of the flag is
+   bit 0: packet validity checksum test, (per packet test)
+   bit 1: computer software validity checksum test, (per packet test)
+   bit 2: frame acquisition vs. tracking mode test. (per frame test)
+   bit 3: first shot of the packet is OTS test, (per packet test)
+   bits 4 - 23: transmit power test, (per shot test)
+   bits 24 - 43: return energy test, (per shot test)
+   bits 44 - 63: range test, (per shot test)
+   bits 64 - 83: range window test
+   bits 84 - 103: range comparison test
+   bits 104 - 127: unused
+   A 1 indicates the test was failed, 0 indicates the test was passed.
+   For the bits that flag each shot, the lower bit corresponds to shot 1
+   and the higher bit corresponds to shot 20."
+
+OBJECT               = BIT_COLUMN
+ NAME                = PACKET_VALIDITY_CHECKSUM_FLAG
+ BIT_DATA_TYPE       = UNSIGNED_INTEGER
+ START_BIT           = 1
+ BITS                = 1
+ DESCRIPTION         = "Packet validity checksum test flag bit. Please
+  see 'shot_quality_descriptor_flag' column object for fuller
+  description."
+END_OBJECT           = BIT_COLUMN
+
+OBJECT               = BIT_COLUMN
+ NAME                = SOFTWARE_VALIDITY_CHCKSM_FLAG
+ BIT_DATA_TYPE       = UNSIGNED_INTEGER
+ START_BIT           = 2
+ BITS                = 1
+ DESCRIPTION         = "Computer software validity checksum test flag
+  bit. Please see 'shot_quality_descriptor_flag' column object for fuller
+  description."
+END_OBJECT           = BIT_COLUMN
+
+OBJECT               = BIT_COLUMN
+ NAME                = ACQ_TRACK_MODE_TEST_FLAG
+ BIT_DATA_TYPE       = UNSIGNED_INTEGER
+ START_BIT           = 3
+ BITS                = 1
+ DESCRIPTION         = "Frame Acquisition vs. Tracking Mode Test flag
+  bit. Please see 'shot_quality_descriptor_flag' column object for fuller
+  description."
+END_OBJECT           = BIT_COLUMN
+
+OBJECT               = BIT_COLUMN
+ NAME                = FIRST_SHOT_OTS_FLAG
+ BIT_DATA_TYPE       = UNSIGNED_INTEGER
+ START_BIT           = 4
+ BITS                = 1
+ DESCRIPTION         = "First shot in the packet is OTS test flag bit.
+  Please see 'shot_quality_descriptor_flag' column object for fuller
+  description."
+END_OBJECT           = BIT_COLUMN
+
+OBJECT               = BIT_COLUMN
+ NAME                = TRANSMIT_POWER_TEST
+ BIT_DATA_TYPE       = UNSIGNED_INTEGER
+ START_BIT           = 5
+ BITS                = 20
+ DESCRIPTION         = "Transmit power test flag bits. Please see
+  'shot_quality_descriptor_flag' column object for fuller description."
+END_OBJECT           = BIT_COLUMN
+
+OBJECT               = BIT_COLUMN
+ NAME                = RETURN_ENERGY_TEST
+ BIT_DATA_TYPE       = UNSIGNED_INTEGER
+ START_BIT           = 25
+ BITS                = 20
+ DESCRIPTION         = "Return energy test flag bits. Please see
+  'shot_quality_descriptor_flag' column object for fuller description."
+END_OBJECT           = BIT_COLUMN
+
+OBJECT               = BIT_COLUMN
+ NAME                = RANGE_TEST
+ BIT_DATA_TYPE       = UNSIGNED_INTEGER
+ START_BIT           = 45
+ BITS                = 20
+ DESCRIPTION         = "Range test flag bits. Please see
+  'shot_quality_descriptor_flag' column object for fuller description."
+END_OBJECT           = BIT_COLUMN
+
+OBJECT               = BIT_COLUMN
+ NAME                = RANGE_WINDOW_TEST
+ BIT_DATA_TYPE       = UNSIGNED_INTEGER
+ START_BIT           = 65
+ BITS                = 20
+ DESCRIPTION         = "Range window test flag bits. Please see
+  'shot_quality_descriptor_flag' column object for fuller description."
+END_OBJECT           = BIT_COLUMN
+
+OBJECT               = BIT_COLUMN
+ NAME                = RANGE_COMPARISON_TEST
+ BIT_DATA_TYPE       = UNSIGNED_INTEGER
+ START_BIT           = 85
+ BITS                = 20
+ DESCRIPTION         = "Range comparison test flag bits. Please see
+  'shot_quality_descriptor_flag' column object for fuller description."
+END_OBJECT           = BIT_COLUMN
+
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = SHOT_PLANETARY_RADIUS
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 49
+ BYTES               = 80
+ ITEMS               = 20
+ ITEM_BYTES          = 4
+ UNIT                = 'CENTIMETERS'
+ DESCRIPTION         = "Array of 20 MOLA planetary radius values in the
+  data frame; the distance from the center of Mars to the point on the
+  surface of Mars described by the MOLA range; per shot."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = FRAME_PLANETARY_RADIUS
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 129
+ BYTES               = 4
+ UNIT                = 'CENTIMETERS'
+ DESCRIPTION         = "Planetary radius associated with MOLA data frame
+  mid-point; the distance from the center of Mars to the point on the
+  surface of Mars described by the frame mid-point range."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = RIGHT_ASCENSION
+ DATA_TYPE           = MSB_INTEGER
+ START_BYTE          = 133
+ BYTES               = 4
+ UNIT                = 'MILLIRADIANS'
+ DESCRIPTION         = "Right ascension angle of the MOLA instrument at
+  data frame mid-point."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = DECLINATION
+ DATA_TYPE           = MSB_INTEGER
+ START_BYTE          = 137
+ BYTES               = 4
+ UNIT                = 'MILLIRADIANS'
+ DESCRIPTION         = "Declination angle of the MOLA instrument at data
+  frame mid-point."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = TWIST
+ DATA_TYPE           = MSB_INTEGER
+ START_BYTE          = 141
+ BYTES               = 4
+ UNIT                = 'MILLIRADIANS'
+ DESCRIPTION         = "Twist angle of the MOLA instrument at data frame
+  mid-point."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = CORR_RECV_PULSE_ENRGY
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 145
+ BYTES               = 40
+ ITEMS               = 20
+ ITEM_BYTES          = 2
+ UNIT                = 'ATTOJOULES'
+ DESCRIPTION         = "Corrected surface-scattered return energy
+  measured by first MOLA channel to trigger (an array of 20 values for
+  the data frame). Saturation of energy detector may occur (see
+  RECV_PULSE_ENERGY_COUNTS)."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = SURF_REFLECTIVITY
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 185
+ BYTES               = 40
+ ITEMS               = 20
+ ITEM_BYTES          = 2
+ DESCRIPTION         = "Relative Martian surface reflectivity *
+  atmospheric transmittance values, one per shot; stored as a pure
+  fraction * 10**5."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = TRIGGER_CHANNEL_NUMBER
+ DATA_TYPE           = UNSIGNED_INTEGER
+ START_BYTE          = 225
+ BYTES               = 20
+ ITEMS               = 20
+ ITEM_BYTES          = 1
+ DESCRIPTION         = "Channel number of first MOLA channel to trigger
+  (array of 20 values for data frame)."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = PULSE_WIDTH
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 245
+ BYTES               = 40
+ ITEMS               = 20
+ ITEM_BYTES          = 2
+ UNIT                = 'NANOSECONDS * 10'
+ DESCRIPTION         = "The time between threshold crossings of the
+  detected pulse, one per shot, 20 2-byte values. Detector saturation may
+  occur (see RECV_PULSE_WIDTH_COUNTS)."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = RECV_OPTICAL_PULSE_WIDTH
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 285
+ BYTES               = 40
+ ITEMS               = 20
+ ITEM_BYTES          = 2
+ UNIT                = 'NANOSECONDS * 10'
+ DESCRIPTION         = "Received optical pulse width, corrected for
+  filter characteristics and threshold settings, as determined by the
+  receiver model (an array of 20 values for the data frame). The pulse
+  width provides an estimate of target slope and/or roughness, assuming
+  linear detector response and nadir-looking geometry."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = FRAME_XYZ
+ DATA_TYPE           = MSB_INTEGER
+ START_BYTE          = 325
+ BYTES               = 12
+ ITEMS               = 3
+ ITEM_BYTES          = 4
+ UNIT                = 'CENTIMETERS'
+ DESCRIPTION         = "X, Y, Z coordinates of the intersection point
+  between the frame mid-point shot and the Mars surface; from Precision
+  Orbit data; 3 4-byte values."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = FRAME_LAT_LON
+ DATA_TYPE           = MSB_INTEGER
+ START_BYTE          = 337
+ BYTES               = 8
+ ITEMS               = 2
+ ITEM_BYTES          = 4
+ UNIT                = 'DEGREES * (10**6)'
+ DESCRIPTION         = "The areocentric latitude and the East longitude,
+  IAU1991, of the intersection point between the frame mid-point shot
+  and the Mars surface; from Precision Orbit data; 2 4-byte values."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = LASER_TRANSMIT_POWER
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 345
+ BYTES               = 40
+ ITEMS               = 20
+ ITEM_BYTES          = 2
+ UNIT                = 'MILLIJOULES * 100'
+ DESCRIPTION         = "MOLA laser transmitted pulse energy (array of 20
+  values for data frame)."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = SHOT_CLASSIFICATION_CODE
+ DATA_TYPE           = MSB_INTEGER
+ START_BYTE          = 385
+ BYTES               = 40
+ ITEMS               = 20
+ ITEM_BYTES          = 2
+ DESCRIPTION         = "Shot classification: 0=false trigger or no
+  trigger; 1=probable ground trigger; other values unassigned."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = CHANNEL_BACKGROUND_NOISE_CTS
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 425
+ BYTES               = 32
+ ITEMS               = 8
+ ITEM_BYTES          = 4
+ UNIT                = 'COUNTS'
+ DESCRIPTION         = "Background noise levels in the MOLA channels at
+  half-frame rate; array of 8 four-byte values where array elements 1-4
+  are 1st half-frame values for channels 1-4 and array elements 5-8 are
+  2nd half-frame values for channel 1-4."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = RANGE_DELAY
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 457
+ BYTES               = 4
+ UNIT                = 'CENTIMETERS'
+ DESCRIPTION         = "Frame value of range gate delay (to beginning of
+  range window)."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = RANGE_WIDTH
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 461
+ BYTES               = 4
+ UNIT                = 'CENTIMETERS'
+ DESCRIPTION         = "Frame value of range gate width."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = CHANNEL_THRESHOLD_SETTINGS
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 465
+ BYTES               = 16
+ ITEMS               = 8
+ ITEM_BYTES          = 2
+ UNIT                = 'MILLIVOLTS'
+ DESCRIPTION         = "Threshold settings for the 4 MOLA channels; at
+  half-frame rate; array of 8 four-byte values where array elements 1-4
+  are 1st half-frame values for channels 1-4 and array elements 5-8 are
+  2nd half-frame values for channel 1-4."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = RECEIVER_CHAN_MASK
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 481
+ BYTES               = 2
+ DESCRIPTION         = "The receiver channel mask status; set to the
+  value read from the ATLMOD sent by the altimeter electronics; the mask
+  setting indicates which channels are commanded on and off."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = ALGORITHM_WORD_MIN_HITS
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 483
+ BYTES               = 2
+ DESCRIPTION         = "The minimum shot hit count value required for a
+  matched filter channel to trigger; MIN_HITS value set in algorithm from
+  the previous data frame."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = ALGORITHM_WORD_HIT_COUNT
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 485
+ BYTES               = 2
+ DESCRIPTION         = "Current value from the active data frame, showing
+  the number of hits counted in the possible 20 shot hits in the single
+  frame or the number of hits summed over the possible 100 shots when in
+  the 5-frame mode. Tracking algorithm performance indicator. If in the
+  acquisition mode, this field will contain the number of shot hits from
+  a possible 80 shots within the 4 frame acquisition window."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = FRAME_COUNTER
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 487
+ BYTES               = 2
+ DESCRIPTION         = "The frame counter value is set from the previous
+  data frame tracking algorithm operation."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = TRIGGER_CHANNEL
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 489
+ BYTES               = 2
+ DESCRIPTION         = "The first channel triggering at or above the
+  minimum hit count is set from the previous data frame tracking
+  algorithm operation."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = FRAME_INDEX
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 491
+ BYTES               = 2
+ DESCRIPTION         = "Frame number (among seven frames produced from
+  the MOLA telemetry packet) generated in Ground Data System processing."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = PACKET_SOURCE_HEADER
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 493
+ BYTES               = 8
+ ITEMS               = 2
+ ITEM_BYTES          = 4
+ DESCRIPTION         = "The header put on the MOLA telemetry packet by
+  the Payload Data System."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = TIME_CODE_SECONDS
+ DATA_TYPE           = MSB_INTEGER
+ START_BYTE          = 501
+ BYTES               = 4
+ UNIT                = 'SECONDS'
+ DESCRIPTION         = "The whole portion of the packet time referenced
+  to J2000 in Elapsed Time seconds -- may be a negative number. The time
+  is obtained from the Payload Data System supplied coarse time code that
+  is generated at the time of the MOLA packet collection."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = PKT_TIME_CODE_MILLISECONDS
+ DATA_TYPE           = MSB_INTEGER
+ START_BYTE          = 505
+ BYTES               = 2
+ UNIT                = 'MILLISECONDS'
+ DESCRIPTION         = "The fractional portion of the packet time
+  referenced to J2000 in Elapsed Time seconds * 1000 -- may be a negative
+  number. The time is obtained from the Payload Data System supplied
+  coarse time code that is generated at the time of the MOLA packet
+  collection."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+ NAME                = PKT_FINE_TIME
+ DATA_TYPE           = MSB_UNSIGNED_INTEGER
+ START_BYTE          = 507
+ BYTES               = 2
+ UNIT                = 'COUNTS'
+ DESCRIPTION         = "MOLA-generated fine time counter."
+END_OBJECT           = COLUMN
+

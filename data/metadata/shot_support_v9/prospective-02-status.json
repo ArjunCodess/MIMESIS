@@ -1,0 +1,45 @@
+{
+  "GDSResults": {
+    "Count": "13819",
+    "QuerySummary": {
+      "easternlon": "70.71333",
+      "jobid": "657135",
+      "maxlat": "7.60153",
+      "minlat": "6.25133",
+      "output": "JSON",
+      "query": "MOLAPEDR",
+      "query_elapsed_time": "00:00:05.1040000",
+      "query_end_time": "2026-11-14T12:32:23.114",
+      "query_start_time": "2026-11-14T12:32:18.010",
+      "results": "CV",
+      "westernlon": "69.35166"
+    },
+    "ResultFiles": {
+      "NumberFiles": "4",
+      "ResultFile": [
+        {
+          "SizeKB": "788",
+          "URL": "https://oderest.rsl.wustl.edu/output/20261114t123217979/MolaPEDR_6N8N_69E71E_20261114T123220716_topo_csv.csv"
+        },
+        {
+          "SizeKB": "4",
+          "URL": "https://oderest.rsl.wustl.edu/output/20261114t123217979/MolaPEDR_6N8N_69E71E_20261114T123220716_topo_csv.lbl"
+        },
+        {
+          "SizeKB": "1506",
+          "URL": "https://oderest.rsl.wustl.edu/output/20261114t123217979/MolaPEDR_6N8N_69E71E_20261114T123220716_pts_csv.csv"
+        },
+        {
+          "SizeKB": "6",
+          "URL": "https://oderest.rsl.wustl.edu/output/20261114t123217979/MolaPEDR_6N8N_69E71E_20261114T123220716_pts_csv.lbl"
+        }
+      ],
+      "ValidTill": "2026-12-14T12:32:17.979"
+    },
+    "StateSummary": {
+      "State": "Finished",
+      "StatusNote": "Query found 13,819 observations  out of an estimated 10,000 observations (based on area only) (out of a total 594,828,146 observations)"
+    },
+    "Status": "Success"
+  }
+}

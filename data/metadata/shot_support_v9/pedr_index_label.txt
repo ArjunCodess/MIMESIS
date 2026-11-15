@@ -1,0 +1,146 @@
+PDS_VERSION_ID                = PDS3
+RECORD_TYPE                   = FIXED_LENGTH
+RECORD_BYTES                  = 208
+FILE_RECORDS                  = 771
+^INDEX_TABLE                  = "INDEX.TAB"
+VOLUME_ID                     = "MGSL_21XX"
+DATA_SET_ID                   = "MGS-M-MOLA-3-PEDR-L1A-V1.0"
+TARGET_NAME                   = "MARS"
+MISSION_NAME                  = "MARS GLOBAL SURVEYOR"
+SPACECRAFT_NAME               = "MARS GLOBAL SURVEYOR"
+INSTRUMENT_NAME               = "MARS ORBITER LASER ALTIMETER"
+DESCRIPTION                   = "This index file lists information about
+   MOLA PEDR data products on this volume."
+
+OBJECT                        = INDEX_TABLE
+  INTERCHANGE_FORMAT          = ASCII
+  ROW_BYTES                   = 208
+  ROWS                        = 771
+  COLUMNS                     = 12
+  INDEX_TYPE                  = SINGLE
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 1
+    NAME                      = VOLUME_ID
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 2
+    BYTES                     = 9
+    DESCRIPTION               = "The volume on which a data product
+      is stored."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 2
+    NAME                      = FILE_SPECIFICATION_NAME
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 14
+    BYTES                     = 23
+    DESCRIPTION               = "The directory path and file name 
+       relative to the root directory."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 3
+    NAME                      = PRODUCT_ID
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 40
+    BYTES                     = 15
+    DESCRIPTION               = "The unique identifier for a PEDR 
+       product."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 4
+    NAME                      = SOFTWARE_NAME
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 58
+    BYTES                     = 12
+    DESCRIPTION               = "MOLA instrument software name."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 5
+    NAME                      = UPLOAD_ID
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 73
+    BYTES                     = 6
+    DESCRIPTION               = "MOLA instrument software version."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 6
+    NAME                      = START_TIME
+    DATA_TYPE                 = TIME
+    START_BYTE                = 81
+    BYTES                     = 21
+    DESCRIPTION               = "The UTC date and time at the beginning
+      of data acquisition for this product, in the format 
+      yyyy-doyThh:mm:ss.mmm."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 7
+    NAME                      = STOP_TIME
+    DATA_TYPE                 = TIME
+    START_BYTE                = 103
+    BYTES                     = 21
+    DESCRIPTION               = "The UTC date and time at the end of
+      data acquisition for this product, in the format
+      yyyy-doyThh:mm:ss.mmm."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 8
+    NAME                      = SPACECRAFT_CLOCK_START_COUNT
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 126
+    BYTES                     = 13
+    DESCRIPTION               = "The value of the spacecraft clock at 
+      the beginning of data acquisition for this product."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 9
+    NAME                      = SPACECRAFT_CLOCK_STOP_COUNT
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 142
+    BYTES                     = 13
+    DESCRIPTION               = "The value of the spacecraft clock at
+      the end of data acquisition for this product."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 10
+    NAME                      = PRODUCT_CREATION_TIME
+    DATA_TYPE                 = TIME
+    START_BYTE                = 157
+    BYTES                     = 21
+    DESCRIPTION               = "The UTC date and time that a product 
+      was created, in the format yyyy-doyThh:mm:ss.mmm."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 11
+    NAME                      = MISSION_PHASE_NAME
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 180
+    BYTES                     = 20
+    DESCRIPTION               = "The phase of the MGS mission during
+      which a product was acquired."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 12
+    NAME                      = START_ORBIT_NUMBER
+    DATA_TYPE                 = ASCII_INTEGER
+    START_BYTE                = 202
+    BYTES                     = 5
+    FORMAT                    = "I5"
+    DESCRIPTION               = "The number of the first orbit
+      covered by the data in this product. One product contains
+      data acquired during one Mars day, which covers several
+      orbits."
+  END_OBJECT                  = COLUMN
+
+END_OBJECT                    = INDEX_TABLE
+END

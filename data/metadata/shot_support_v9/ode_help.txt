@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="https://www.madcapsoftware.com/Schemas/MadCap.xsd" class="_Skins_Side_Navigation" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Web Interface|Tools Tab">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>MOLA&#160;PEDR&#160;Query Page</title>
+        <link href="../../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Introduction/Introduction.htm" title="Orbital Data Explorer Help" alt="Orbital Data Explorer Help"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div id="mc-main-content" role="main" data-mc-content-body="True">
+                                    <h1>MOLA&#160;PEDR&#160;Query Page</h1>
+                                    <p>Mars ODE offers a <a href="https://ode.rsl.wustl.edu/mars/indextools.aspx?displaypage=molapedr" target="_blank">MOLA PEDR query tool</a>.  The <a href="../../Missions_Instruments/MGS/Intro.htm">Mars Global Surveyor</a>’s <a href="../../Missions_Instruments/MGS/MOLA/Intro.htm">Mars Orbiter Laser Altimeter (MOLA)</a> instrument provides a series of laser of altimetry measurements across the surface of Mars.  See "<a href="../../Frequently_Asked_Questions/Data_Databases.htm">About Data Databases</a>".</p>
+                                    <p>The newer <a href="https://oderest.rsl.wustl.edu/GDSWeb/GDSMOLAPEDR.html" target="_blank">ODE MOLA query tool V2.0</a> supports larger queries. It will email results to users after query completion.</p>
+                                    <p>MOLA offers two key altimetry products – the PEDR and MEGDR products. MOLA PEDR products are individual altimetry readings organized along the spacecraft orbit track.  The MEGDR products are PEDR products assembled into global grids referenced to Mars' center-of-mass, with resolutions of up to 1/128 degree per pixel.  These will meet many users’ needs and should be reviewed prior to using the PEDR tool.</p>
+                                    <p>The MOLA PEDR Query Tool provides a searchable database of the approximately 595 million individual PEDR measurements. The MOLA PEDR tool allows searches of MOLA PEDR points based on Latitude/Longitude range, altitude, orbit number, UTC observation time, and PDS Product ID pattern. Results can be saved as ASCII text files, CSV files, ESRI Shapefiles  or Binned Images.</p>
+                                    <p>The MOLA PEDR Query Tool has four steps. First, a latitude/longitude range must be specified. A small range is recommended due to the quantity of data points. Second, additional filtering parameters such as PDS Product ID, data point observation altitude, orbit number, and observation UTC time can be specified. Third, the result count must be previewed before generating any output files. If the data point count is less than or equal to 6 million points, you can proceed to generate and download the desired result files. The forth step is to generate your query results as ASCII text files, CSV files, ESRI Shapefiles, or Binned images. These files can be downloaded individually or in compressed format from the page.</p>
+                                    <p>
+                                        <img src="../../Resources/Images/molapedr1.png" />
+                                    </p>
+                                    <h3><a name="selectlatlon"></a>Step 1. Select Data Point Latitude/ Longitude Range (Required)</h3>
+                                    <p>Use this feature to filter your product data points based on their areocentric latitude / longitude coordinates. The <b>areocentric coordinate system</b> is a right-handed system with the origin at the center of mass of Mars. Areocentric latitude is the angle between the equatorial plane and a vector connecting a point on the surface and the origin of the coordinate system. Latitudes are positive in the northern hemisphere and negative in the southern hemisphere. Areocentric longitude increases to the east. The Range can be previewed by clicking the "Show Area On Map" button.</p>
+                                    <p>
+                                        <img src="../../Resources/Images/molapedrmapsearch.png" />
+                                    </p>
+                                    <h3>Step 2. Set Additional Filtering Parameters (Optional)</h3>
+                                    <p>This section of the search form contains optional fields for filtering by the PDS Product ID or Partial PDS Product ID, specific altitude or altitude range, specific orbit number or an orbit number range, specific UTC observation time or range.</p>
+                                    <p>
+                                        <img src="../../Resources/Images/molapedr_step2.png" />
+                                    </p>
+                                    <h4><a name="step2a"></a>Step 2 A. Select a Product ID or filter by a partial Product ID (Optional)</h4>
+                                    <p>This section allows you to select an individual data product via its Product ID or, more commonly, select only those data products who’s ids match a wildcard string. Example: entering “MOLA-AP01682L.B” will only return MOLA PEDR points from that specific product. Entering “MOLA-AP016*” will return MOLA PEDR points from products with Product ID’s of that pattern.</p>
+                                    <p>
+                                        <img src="../../Resources/Images/molapedr_step2a.png" />
+                                    </p>
+                                    <h4><a name="step2b"></a>Step 2 B. Filter by Altitude (Optional)</h4>
+                                    <p>This section allows you to filter data points by altitude in meters for specific topographical ranges. The maximum and minimum ranges available are the default values.</p>
+                                    <p>
+                                        <img src="../../Resources/Images/molapedr_step2b.png" />
+                                    </p>
+                                    <h4><a name="step2c"></a>Step 2 C. Filter by Orbit Number (Optional)</h4>
+                                    <p>This section allows you to filter the search results by a specific orbit or a range of MGS orbits. The maximum and minimum orbits with MOLA PEDR data are the default values. Enter a smaller range to limit search results to desired orbit numbers.</p>
+                                    <p>
+                                        <img src="../../Resources/Images/molapedr_step2c.png" />
+                                    </p>
+                                    <h4><a name="step2d"></a>Step 2 D. Filter by UTC Time (Optional)</h4>
+                                    <p>Each MOLA PEDR point has an observation UTC time. Enter a single UTC time, partial UTC time, or a UTC time range to filter the search results by the observation time. The maximum and minimum UTC range of the data is listed for reference.</p>
+                                    <p>
+                                        <img src="../../Resources/Images/molapedr_step2d.png" />
+                                    </p>
+                                    <h3>Step 3. Preview Results Count</h3>
+                                    <p>There are approximately 595 million points in the MOLA PEDR point database. This required step will display the number of data points that match the entered search criteria.  If the data point count is less than or equal to 6 million points, you can proceed to generate and download the desired result files.</p>
+                                    <p>Also note, that any change to the search criteria will clear the results and require a re-query of the results count.</p>
+                                    <p>
+                                        <img src="../../Resources/Images/molapedr_previewok.png" />
+                                    </p>
+                                    <p>If the count is over 6 million points, the buttons to generate result files will be disabled and a message indicating that the point count is too large will be displayed. You can contact <a href="mailto:ode@wunder.wustl.edu">ode@wunder.wustl.edu</a> for large volume special requests.</p>
+                                    <p>
+                                        <img src="../../Resources/Images/molapedr_previewnotok.png" />
+                                    </p>
+                                    <h3>Step 4. Request Results</h3>
+                                    <p>After successfully previewing the result count, there are four choices of formats for the search result output. The results may be saved in ASCII text format, CSV text format, Shapefile format, or as a Binned Image. See below for full descriptions of each format. To create the files of the desired format, simply click the “Generate Files” button for the format. It may take a few minutes for the files to be created. A message will be displayed that indicates the files are being created. After the result files have been created, you can download the files individually or grouped as a zip, tar, or tar.gz file.</p>
+                                    <h4>Result Format Descriptions</h4>
+                                    <p>The <b>ASCII table</b> output provides a formatted list of points:</p>
+                                    <p class="code">long_East lat_North topography  MOLArange   planet_rad  c A   Ephermis Time             UTC           Orbit</p>
+                                    <p class="code">---.----- ---.----- -------.-- --------.-- ---------.-- - - ----------.----- ----------------------- ------</p>
+                                    <p class="code">001.01749   1.99570    -1226.94  385356.34   3394390.77 1 0  -25881238.60743 1999-03-07T22:44:57.207   1668</p>
+                                    <p class="code">001.01683   1.99060    -1227.34  385353.71   3394390.46 1 0  -25881238.50743 1999-03-07T22:44:57.307   1668</p>
+                                    <p class="code">001.01617   1.98550    -1228.58  385351.92   3394389.32 1 0  -25881238.40742 1999-03-07T22:44:57.407   1668</p>
+                                    <p class="code">001.01550   1.98040    -1230.92  385351.24   3394387.08 1 0  -25881238.30742 1999-03-07T22:44:57.507   1668</p>
+                                    <p class="code">001.01484   1.97530    -1233.50  385350.81   3394384.59 1 0  -25881238.20742 1999-03-07T22:44:57.607   1668</p>
+                                    <p class="code">001.01418   1.97020    -1235.02  385349.29   3394383.17 1 0  -25881238.10741 1999-03-07T22:44:57.707   1668</p>
+                                    <p class="code">001.01351   1.96510    -1238.39  385349.62   3394379.90 1 0  -25881238.00741 1999-03-07T22:44:57.807   1668</p>
+                                    <p class="code">001.01285   1.96000    -1245.67  385353.89   3394372.71 1 0  -25881237.90740 1999-03-07T22:44:57.907   1668</p>
+                                    <p class="code">001.01219   1.95490    -1254.60  385359.80   3394363.88 1 0  -25881237.80740 1999-03-07T22:44:58.007   1668</p>
+                                    <p class="code">001.01153   1.94980    -1271.83  385374.00   3394346.74 1 0  -25881237.70740 1999-03-07T22:44:58.107   1668</p>
+                                    <p class="code">001.01086   1.94470    -1279.30  385378.43   3394339.37 1 0  -25881237.60739 1999-03-07T22:44:58.207   1668</p>
+                                    <p>&#160;</p>
+                                    <p>Latitude and Longitude are in decimal degrees. Topography,  MOLA range, and planet radius are in meters.  Please refer to the MOLA software directory documentation for a description of the “c” and “A” fields.</p>
+                                    <p>The <b>CSV file</b> is similar to the ASCII table output except the fields are separated by commas.  CSV files can be loaded directly into Microsoft Excel:</p>
+                                    <p class="code">long_East lat_North topography  MOLArange   planet_rad  c A   Ephermis Time             UTC           Orbit</p>
+                                    <p class="code">001.01749,  1.99570,   -1226.94, 385356.34,  3394390.77,1,0, -25881238.60743,1999-03-07T22:44:57.207,  1668</p>
+                                    <p class="code">001.01683,  1.99060,   -1227.34, 385353.71,  3394390.46,1,0, -25881238.50743,1999-03-07T22:44:57.307,  1668</p>
+                                    <p class="code">001.01617,  1.98550,   -1228.58, 385351.92,  3394389.32,1,0, -25881238.40742,1999-03-07T22:44:57.407,  1668</p>
+                                    <p class="code">001.01550,  1.98040,   -1230.92, 385351.24,  3394387.08,1,0, -25881238.30742,1999-03-07T22:44:57.507,  1668</p>
+                                    <p class="code">001.01484,  1.97530,   -1233.50, 385350.81,  3394384.59,1,0, -25881238.20742,1999-03-07T22:44:57.607,  1668</p>
+                                    <p class="code">001.01418,  1.97020,   -1235.02, 385349.29,  3394383.17,1,0, -25881238.10741,1999-03-07T22:44:57.707,  1668</p>
+                                    <p class="code">001.01351,  1.96510,   -1238.39, 385349.62,  3394379.90,1,0, -25881238.00741,1999-03-07T22:44:57.807,  1668</p>
+                                    <p class="code">001.01285,  1.96000,   -1245.67, 385353.89,  3394372.71,1,0, -25881237.90740,1999-03-07T22:44:57.907,  1668</p>
+                                    <p class="code">001.01219,  1.95490,   -1254.60, 385359.80,  3394363.88,1,0, -25881237.80740,1999-03-07T22:44:58.007,  1668</p>
+                                    <p class="code">001.01153,  1.94980,   -1271.83, 385374.00,  3394346.74,1,0, -25881237.70740,1999-03-07T22:44:58.107,  1668</p>
+                                    <p class="code">001.01086,  1.94470,   -1279.30, 385378.43,  3394339.37,1,0, -25881237.60739,1999-03-07T22:44:58.207,  1668</p>
+                                    <p class="code">001.00954,  1.93450,   -1282.12, 385375.21,  3394336.74,1,0, -25881237.40739,1999-03-07T22:44:58.407,  1668</p>
+                                    <p>&#160;</p>
+                                    <p>The <b>Shapefile</b> output contains the queried PEDR points in a point Shapefile suitable for use in GIS tools such as ESRI’s ArcGIS or JMars.  The Shapefile consists of five individual files which should all be downloaded and placed together in the same directory.  The MOLA PEDR Query tool produces two types of Shapefiles – a “POINT” and a “POINTZ” shapefile.  The POINTZ shapefiles have an “_z” name extension.  POINT shapefiles store the topography points with a Lat/Lon coordinate and a Topography attribute field.  POINTZ shapefiles store the topography points with a Lat/Lon/Z coordinate (and a Topography attribute field like the POINT shapefiles).  POINTZ shapefiles work well in 3D aware tools such as ESRI’s ArcScene tool.  However, not all GIS tools (such as JMars) understand POINTZ so users should use the POINT version. ArcScene users can use the POINT shapefiles by setting the base height to the Topography attribute field value:</p>
+                                    <ul>
+                                        <li>
+                                            <p>Add the POINT shapefile to ArcScene</p>
+                                        </li>
+                                        <li>
+                                            <p>Right click the shapefile layer, and select Properties</p>
+                                        </li>
+                                        <li>
+                                            <p>Select the Base Heights tab</p>
+                                        </li>
+                                        <li>
+                                            <p>Select the “Use a constant value or expression to set heights for layer:”</p>
+                                        </li>
+                                        <li>
+                                            <p>Select the Calculator next to the field and select Topography</p>
+                                        </li>
+                                        <li>
+                                            <p>Remember to adjust vertical exaggeration via right click on the Scene Layers (Since Topography attribute uses the unit of meter, which is different from the unit of degree for Lat/Lon, the vertical exaggeration factor is recommended to be some number between 0.0005 and 0.001 for better visualization of 3D.)</p>
+                                        </li>
+                                    </ul>
+                                    <p>The <b>Binned Image</b> is a cylindrical projected map where the left edge is the westernmost longitude queried, the right edge is the easternmost longitude, the top edge is the maximum latitude queried and the bottom edge is the minimum latitude queried.  Each pixel has the image resolution of a by b in which a represents the longitude range divided by the width in pixels, and b represents the latitude range divided by the height in pixels. Each pixel is generated by averaging the attitude of each PEDR point that lies in its range (note: a better pixel value calculation would be block median but average is for performance – users desiring block median should download the points in an ASCII table and directly process into an image).</p>
+                                    <p>
+                                        <img src="../../Resources/Images/pedr_250e270e_20s0n_color_binned.png" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
