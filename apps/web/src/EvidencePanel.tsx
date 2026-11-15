@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PitStudy from "./PitStudy";
 import ReplicationStudy from "./ReplicationStudy";
+import SiteStability from "./SiteStability";
 const asset = (name: string) => `${import.meta.env.BASE_URL}research/${name}`;
 
 const evidence = {
@@ -42,16 +43,16 @@ const evidence = {
   },
 };
 export default function EvidencePanel() {
-  const [view, setView] = useState<keyof typeof evidence | "Pit study" | "Replication">(
-    "Pit study",
+  const [view, setView] = useState<keyof typeof evidence | "Pit study" | "Replication" | "Locations">(
+    "Locations",
   );
-  const current = view === "Pit study" || view === "Replication" ? null : evidence[view];
+  const current = view === "Pit study" || view === "Replication" || view === "Locations" ? null : evidence[view];
   return (
     <section className="evidence-workspace" aria-label="Measured evidence">
       <div className="evidence-switch" aria-label="Evidence topic">
         {(
-          ["Pit study", "Replication", ...Object.keys(evidence)] as Array<
-            keyof typeof evidence | "Pit study" | "Replication"
+          ["Locations", "Pit study", "Replication", ...Object.keys(evidence)] as Array<
+            keyof typeof evidence | "Pit study" | "Replication" | "Locations"
           >
         ).map((label) => (
           <button
@@ -81,7 +82,7 @@ export default function EvidencePanel() {
           </div>
         </div>
       ) : (
-        view === "Replication" ? <ReplicationStudy /> : <PitStudy />
+        view === "Locations" ? <SiteStability /> : view === "Replication" ? <ReplicationStudy /> : <PitStudy />
       )}
     </section>
   );
