@@ -1,0 +1,569 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.333913196749217,
+              -25.440839381685272
+            ],
+            [
+              15.532743137107383,
+              -25.441598152924158
+            ],
+            [
+              15.533433402400785,
+              -25.261059856825206
+            ],
+            [
+              15.334897161299612,
+              -25.260303885181273
+            ],
+            [
+              15.333913196749217,
+              -25.440839381685272
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "target_id": "jezero",
+        "target_name": "Jezero crater",
+        "method": "scalar",
+        "candidate_id": "NAMIB-043000-061000",
+        "region": "Namib, Namibia",
+        "ranks": [
+          1,
+          4
+        ],
+        "status": "exploratory_terrain_shortlist",
+        "source_ids": [
+          "nasadem"
+        ],
+        "field_ready": false,
+        "geological_validation": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -68.56853607034458,
+              -23.710470850358377
+            ],
+            [
+              -68.37241826711639,
+              -23.709794616778268
+            ],
+            [
+              -68.37328212061117,
+              -23.52921700486394
+            ],
+            [
+              -68.56912998630884,
+              -23.52989072379352
+            ],
+            [
+              -68.56853607034458,
+              -23.710470850358377
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "target_id": "jezero",
+        "target_name": "Jezero crater",
+        "method": "multigroup",
+        "candidate_id": "ATACAMA-154000-142000",
+        "region": "Atacama, Chile",
+        "ranks": [
+          1,
+          1
+        ],
+        "status": "exploratory_terrain_shortlist",
+        "source_ids": [
+          "nasadem"
+        ],
+        "field_ready": false,
+        "geological_validation": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.9602949732644,
+              -25.25275982767749
+            ],
+            [
+              16.158820038185887,
+              -25.25268026468074
+            ],
+            [
+              16.158586872634583,
+              -25.07213493382941
+            ],
+            [
+              15.96035326484266,
+              -25.072214203557646
+            ],
+            [
+              15.9602949732644,
+              -25.25275982767749
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "target_id": "nili",
+        "target_name": "Nili Fossae",
+        "method": "scalar",
+        "candidate_id": "NAMIB-106000-082000",
+        "region": "Namib, Namibia",
+        "ranks": [
+          17,
+          19
+        ],
+        "status": "exploratory_terrain_shortlist",
+        "source_ids": [
+          "nasadem"
+        ],
+        "field_ready": false,
+        "geological_validation": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.930638528863305,
+              -25.03609365952545
+            ],
+            [
+              16.128814133121026,
+              -25.03605405389929
+            ],
+            [
+              16.12862636680614,
+              -24.855503349256452
+            ],
+            [
+              15.930739633966528,
+              -24.855542809062353
+            ],
+            [
+              15.930638528863305,
+              -25.03609365952545
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "target_id": "nili",
+        "target_name": "Nili Fossae",
+        "method": "multigroup",
+        "candidate_id": "NAMIB-103000-106000",
+        "region": "Namib, Namibia",
+        "ranks": [
+          1,
+          1
+        ],
+        "status": "exploratory_terrain_shortlist",
+        "source_ids": [
+          "nasadem"
+        ],
+        "field_ready": false,
+        "geological_validation": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.49414088567084,
+              -24.710295398408228
+            ],
+            [
+              16.691794330896098,
+              -24.70950854465753
+            ],
+            [
+              16.69079677975896,
+              -24.52895570251976
+            ],
+            [
+              16.49342832611402,
+              -24.52973966409966
+            ],
+            [
+              16.49414088567084,
+              -24.710295398408228
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "target_id": "isidis",
+        "target_name": "Isidis Planitia",
+        "method": "scalar",
+        "candidate_id": "NAMIB-160000-142000",
+        "region": "Namib, Namibia",
+        "ranks": [
+          1,
+          1
+        ],
+        "status": "exploratory_terrain_shortlist",
+        "source_ids": [
+          "nasadem"
+        ],
+        "field_ready": false,
+        "geological_validation": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.523902836783726,
+              -24.737277019070834
+            ],
+            [
+              16.72159882976337,
+              -24.7364503679551
+            ],
+            [
+              16.720557371732973,
+              -24.555898697414634
+            ],
+            [
+              16.523146684045926,
+              -24.556722309675134
+            ],
+            [
+              16.523902836783726,
+              -24.737277019070834
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "target_id": "isidis",
+        "target_name": "Isidis Planitia",
+        "method": "multigroup",
+        "candidate_id": "NAMIB-163000-139000",
+        "region": "Namib, Namibia",
+        "ranks": [
+          1,
+          2
+        ],
+        "status": "exploratory_terrain_shortlist",
+        "source_ids": [
+          "nasadem"
+        ],
+        "field_ready": false,
+        "geological_validation": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -68.51030815937135,
+              -23.547772943852966
+            ],
+            [
+              -68.3144340273606,
+              -23.547024091717383
+            ],
+            [
+              -68.31537248071538,
+              -23.366443622346576
+            ],
+            [
+              -68.51097850406164,
+              -23.367189691560416
+            ],
+            [
+              -68.51030815937135,
+              -23.547772943852966
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "target_id": "syrtis",
+        "target_name": "Syrtis Major",
+        "method": "scalar",
+        "candidate_id": "ATACAMA-160000-160000",
+        "region": "Atacama, Chile",
+        "ranks": [
+          1,
+          2
+        ],
+        "status": "exploratory_terrain_shortlist",
+        "source_ids": [
+          "nasadem"
+        ],
+        "field_ready": false,
+        "geological_validation": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.464694584801943,
+              -24.76455678224944
+            ],
+            [
+              16.662434307288915,
+              -24.763808442692245
+            ],
+            [
+              16.661477371288974,
+              -24.583256413677834
+            ],
+            [
+              16.464023280705426,
+              -24.584002001871724
+            ],
+            [
+              16.464694584801943,
+              -24.76455678224944
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "target_id": "syrtis",
+        "target_name": "Syrtis Major",
+        "method": "multigroup",
+        "candidate_id": "NAMIB-157000-136000",
+        "region": "Namib, Namibia",
+        "ranks": [
+          1,
+          1
+        ],
+        "status": "exploratory_terrain_shortlist",
+        "source_ids": [
+          "nasadem"
+        ],
+        "field_ready": false,
+        "geological_validation": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -68.47699620610454,
+              -24.522750869970107
+            ],
+            [
+              -68.27963931434343,
+              -24.521948570907828
+            ],
+            [
+              -68.28065849466905,
+              -24.341391668069296
+            ],
+            [
+              -68.47773618356722,
+              -24.342190973630665
+            ],
+            [
+              -68.47699620610454,
+              -24.522750869970107
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "target_id": "apollo17",
+        "target_name": "Taurus-Littrow",
+        "method": "scalar",
+        "candidate_id": "ATACAMA-163000-052000",
+        "region": "Atacama, Chile",
+        "ranks": [
+          1,
+          1
+        ],
+        "status": "exploratory_terrain_shortlist",
+        "source_ids": [
+          "nasadem"
+        ],
+        "field_ready": false,
+        "geological_validation": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -68.47699620610454,
+              -24.522750869970107
+            ],
+            [
+              -68.27963931434343,
+              -24.521948570907828
+            ],
+            [
+              -68.28065849466905,
+              -24.341391668069296
+            ],
+            [
+              -68.47773618356722,
+              -24.342190973630665
+            ],
+            [
+              -68.47699620610454,
+              -24.522750869970107
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "target_id": "apollo17",
+        "target_name": "Taurus-Littrow",
+        "method": "multigroup",
+        "candidate_id": "ATACAMA-163000-052000",
+        "region": "Atacama, Chile",
+        "ranks": [
+          1,
+          1
+        ],
+        "status": "exploratory_terrain_shortlist",
+        "source_ids": [
+          "nasadem"
+        ],
+        "field_ready": false,
+        "geological_validation": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -68.53620371820799,
+              -24.522941895518013
+            ],
+            [
+              -68.33884611481587,
+              -24.522216002449817
+            ],
+            [
+              -68.33978153727132,
+              -24.341658101789
+            ],
+            [
+              -68.53685992983635,
+              -24.3423812864252
+            ],
+            [
+              -68.53620371820799,
+              -24.522941895518013
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "target_id": "shackleton",
+        "target_name": "Shackleton rim",
+        "method": "scalar",
+        "candidate_id": "ATACAMA-157000-052000",
+        "region": "Atacama, Chile",
+        "ranks": [
+          3,
+          1
+        ],
+        "status": "exploratory_terrain_shortlist",
+        "source_ids": [
+          "nasadem"
+        ],
+        "field_ready": false,
+        "geological_validation": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -68.53620371820799,
+              -24.522941895518013
+            ],
+            [
+              -68.33884611481587,
+              -24.522216002449817
+            ],
+            [
+              -68.33978153727132,
+              -24.341658101789
+            ],
+            [
+              -68.53685992983635,
+              -24.3423812864252
+            ],
+            [
+              -68.53620371820799,
+              -24.522941895518013
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "target_id": "shackleton",
+        "target_name": "Shackleton rim",
+        "method": "multigroup",
+        "candidate_id": "ATACAMA-157000-052000",
+        "region": "Atacama, Chile",
+        "ranks": [
+          1,
+          2
+        ],
+        "status": "exploratory_terrain_shortlist",
+        "source_ids": [
+          "nasadem"
+        ],
+        "field_ready": false,
+        "geological_validation": false
+      }
+    }
+  ]
+}

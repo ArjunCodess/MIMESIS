@@ -5,6 +5,7 @@ import numpy as np
 import pytest
 
 from src.terrain import features
+from src.site_stability import geographic_matches, window_iou
 from src.local_surface_v11 import fit_local_surface, summarize_exterior
 from src.triad_study import Packet, Protocol, FineObservation, freeze, select, evaluate
 
@@ -23,6 +24,16 @@ def study():
                               source_hashes=['synthetic'], independent_evidence=['synthetic'],
                               coarse=[2, 2] if name == 'control' else [0, 0]))
     return protocol, packets
+
+
+def test_geographic_comparison_preserves_area_and_counts_each_site_once():
+    first = {'id': 'a', 'region_id': 'same', 'easting_m': 0, 'northing_m': 0, 'longitude': 0, 'latitude': 0}
+    shifted = {**first, 'id': 'b', 'easting_m': 3000, 'longitude': .027}
+    assert window_iou(first, shifted) == pytest.approx(17 / 23)
+    assert window_iou(first, {**shifted, 'region_id': 'other'}) == 0
+    distant = {**first, 'id': 'c', 'longitude': 1}
+    results = geographic_matches([first, shifted], [first, distant], [10, 120])
+    assert [row['matched_pairs'] for row in results] == [1, 2]
 
 
 def test_known_plane_recovers_physical_slope_and_rejects_large_voids():

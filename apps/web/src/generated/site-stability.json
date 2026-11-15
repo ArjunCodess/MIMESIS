@@ -1,0 +1,3986 @@
+{
+  "schema_version": "1.0",
+  "study": "Regional location stability across two scoring contracts and two supports",
+  "source_bundle_sha256": "aecf468961d815a14c57968a853c3563407672bd814984aed1685d543801ad76",
+  "implementation_sha256": {
+    "scripts/measure_site_stability.py": "55d9f8608f31234166ac1d05d614191b4ebf76d3cb14ce8b67c769bf4f3f7d43",
+    "src/site_stability.py": "1062d8cad079cf5eeb4b222bd2bf006470b8bcb8d61b88ab83d853cfa1916309",
+    "src/scalar_baseline.py": "865d79460d46f5af388720d1015ed01db0aa9a09656677a049a9c08938919099"
+  },
+  "candidate_count": 3693,
+  "regions": [
+    "Atacama, Chile",
+    "Namib, Namibia"
+  ],
+  "window_width_m": 20000,
+  "candidate_stride_m": 3000,
+  "supports_m": [
+    500,
+    1000
+  ],
+  "method_contracts": {
+    "scalar": "Four transformed scalar observables, fixed 500 m pool IQR scaling, equal-weight RMS discrepancy; src/scalar_baseline.py retains method provenance.",
+    "multigroup": "Frozen MIMESIS maximum loss over 35 weight, support and erosion scenarios; four groups with weights 0.40/0.25/0.15/0.20. This contract already includes cross-support robustness."
+  },
+  "design": "Post hoc descriptive follow-up on previously inspected regional records. Supports and methods are not independent replicates. No inferential p-values.",
+  "geographic_contract": "WGS84 geodesic center distances. Square footprint IoU in the shared regional AEQD measurement projection. Maximum cardinality one-to-one top-ten matching at 5/10/20/40 km, with total distance as tie-breaker. Radii are exploratory, not field-operation tolerances.",
+  "selection_contract": "For each target and method, minimize the worse of the two full-pool ranks; break ties by rank sum then candidate ID. This is a terrain shortlist, not qualification.",
+  "summary": {
+    "within_method_max_km": 24.186507010728977,
+    "within_method_median_km": 1.4999755025363457,
+    "between_method_max_km": 8483.95736123538,
+    "between_method_median_km": 39.60317525516595,
+    "targets_with_between_method_region_change": 2
+  },
+  "cases": [
+    {
+      "target_id": "jezero",
+      "target_name": "Jezero crater",
+      "body": "Mars",
+      "methods": [
+        {
+          "method": "scalar",
+          "top_ten_exact_overlap": 6,
+          "winner_distance_km": 24.186507010728977,
+          "winner_footprint_iou": 0.0,
+          "geographic_matches": [
+            {
+              "radius_km": 5,
+              "matched_pairs": 7,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-043000-061000",
+                  "second_id": "NAMIB-043000-061000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-145000-145000",
+                  "second_id": "NAMIB-145000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-058000-091000",
+                  "second_id": "NAMIB-058000-091000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-040000-067000",
+                  "second_id": "NAMIB-040000-070000",
+                  "distance_km": 2.9999555626272634
+                },
+                {
+                  "first_id": "NAMIB-145000-148000",
+                  "second_id": "NAMIB-145000-148000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-046000-037000",
+                  "second_id": "NAMIB-046000-037000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-040000-064000",
+                  "second_id": "NAMIB-040000-067000",
+                  "distance_km": 2.999955562766111
+                }
+              ]
+            },
+            {
+              "radius_km": 10,
+              "matched_pairs": 7,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-043000-061000",
+                  "second_id": "NAMIB-043000-061000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-145000-145000",
+                  "second_id": "NAMIB-145000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-058000-091000",
+                  "second_id": "NAMIB-058000-091000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-040000-067000",
+                  "second_id": "NAMIB-040000-067000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-145000-148000",
+                  "second_id": "NAMIB-145000-148000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-046000-037000",
+                  "second_id": "NAMIB-046000-037000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-040000-064000",
+                  "second_id": "NAMIB-040000-070000",
+                  "distance_km": 5.999911125386995
+                }
+              ]
+            },
+            {
+              "radius_km": 20,
+              "matched_pairs": 7,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-043000-061000",
+                  "second_id": "NAMIB-043000-061000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-145000-145000",
+                  "second_id": "NAMIB-145000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-058000-091000",
+                  "second_id": "NAMIB-058000-091000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-040000-067000",
+                  "second_id": "NAMIB-040000-067000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-145000-148000",
+                  "second_id": "NAMIB-145000-148000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-046000-037000",
+                  "second_id": "NAMIB-046000-037000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-040000-064000",
+                  "second_id": "NAMIB-040000-070000",
+                  "distance_km": 5.999911125386995
+                }
+              ]
+            },
+            {
+              "radius_km": 40,
+              "matched_pairs": 7,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-043000-061000",
+                  "second_id": "NAMIB-043000-061000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-145000-145000",
+                  "second_id": "NAMIB-145000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-058000-091000",
+                  "second_id": "NAMIB-058000-091000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-040000-067000",
+                  "second_id": "NAMIB-040000-067000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-145000-148000",
+                  "second_id": "NAMIB-145000-148000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-046000-037000",
+                  "second_id": "NAMIB-046000-037000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-040000-064000",
+                  "second_id": "NAMIB-040000-070000",
+                  "distance_km": 5.999911125386995
+                }
+              ]
+            }
+          ],
+          "winners": [
+            {
+              "id": "NAMIB-043000-061000",
+              "region": "Namib, Namibia",
+              "latitude": -25.350984091362342,
+              "longitude": 15.433747193028664,
+              "easting_m": -57000,
+              "northing_m": -39000,
+              "footprint": [
+                [
+                  15.333913196749217,
+                  -25.440839381685272
+                ],
+                [
+                  15.532743137107383,
+                  -25.441598152924158
+                ],
+                [
+                  15.533433402400785,
+                  -25.261059856825206
+                ],
+                [
+                  15.334897161299612,
+                  -25.260303885181273
+                ],
+                [
+                  15.333913196749217,
+                  -25.440839381685272
+                ]
+              ]
+            },
+            {
+              "id": "NAMIB-046000-085000",
+              "region": "Namib, Namibia",
+              "latitude": -25.13444660031747,
+              "longitude": 15.464497095784774,
+              "easting_m": -54000,
+              "northing_m": -15000,
+              "footprint": [
+                [
+                  15.364864581360141,
+                  -25.224326460840064
+                ],
+                [
+                  15.563342700882355,
+                  -25.225042117151872
+                ],
+                [
+                  15.563983177719473,
+                  -25.04449817740311
+                ],
+                [
+                  15.365796156656687,
+                  -25.043785158558766
+                ],
+                [
+                  15.364864581360141,
+                  -25.224326460840064
+                ]
+              ]
+            }
+          ],
+          "minimax_rank_choice": {
+            "id": "NAMIB-043000-061000",
+            "name": "Namib, Namibia study window",
+            "region": "Namib, Namibia",
+            "latitude": -25.350984091362342,
+            "longitude": 15.433747193028664,
+            "source_ids": [
+              "nasadem"
+            ],
+            "image": "namib-500.png",
+            "footprint": [
+              [
+                15.333913196749217,
+                -25.440839381685272
+              ],
+              [
+                15.532743137107383,
+                -25.441598152924158
+              ],
+              [
+                15.533433402400785,
+                -25.261059856825206
+              ],
+              [
+                15.334897161299612,
+                -25.260303885181273
+              ],
+              [
+                15.333913196749217,
+                -25.440839381685272
+              ]
+            ],
+            "ranks": [
+              1,
+              4
+            ],
+            "features": {
+              "500": {
+                "relief_m": 171.62910365687753,
+                "slope_median_deg": 0.8317637415593417,
+                "slope_p90_deg": 1.790465516839212,
+                "residual_rms_m": 29.752489135130325
+              },
+              "1000": {
+                "relief_m": 167.27318068211662,
+                "slope_median_deg": 0.5777140515947348,
+                "slope_p90_deg": 0.945657126085589,
+                "residual_rms_m": 26.812444179071605
+              }
+            }
+          }
+        },
+        {
+          "method": "multigroup",
+          "top_ten_exact_overlap": 7,
+          "winner_distance_km": 0.0,
+          "winner_footprint_iou": 1.0,
+          "geographic_matches": [
+            {
+              "radius_km": 5,
+              "matched_pairs": 9,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-154000-142000",
+                  "second_id": "ATACAMA-154000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-112000-070000",
+                  "second_id": "NAMIB-112000-070000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-112000-073000",
+                  "second_id": "NAMIB-112000-073000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-154000",
+                  "second_id": "ATACAMA-163000-154000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-115000-073000",
+                  "second_id": "NAMIB-115000-073000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-115000-064000",
+                  "second_id": "NAMIB-115000-061000",
+                  "distance_km": 2.9999972226701273
+                },
+                {
+                  "first_id": "NAMIB-088000-103000",
+                  "second_id": "NAMIB-085000-106000",
+                  "distance_km": 4.242639980100724
+                },
+                {
+                  "first_id": "NAMIB-091000-103000",
+                  "second_id": "NAMIB-088000-103000",
+                  "distance_km": 2.999999888903407
+                },
+                {
+                  "first_id": "NAMIB-115000-067000",
+                  "second_id": "NAMIB-115000-064000",
+                  "distance_km": 2.999997222661122
+                }
+              ]
+            },
+            {
+              "radius_km": 10,
+              "matched_pairs": 9,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-154000-142000",
+                  "second_id": "ATACAMA-154000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-112000-070000",
+                  "second_id": "NAMIB-112000-070000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-112000-073000",
+                  "second_id": "NAMIB-112000-073000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-154000",
+                  "second_id": "ATACAMA-163000-154000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-115000-073000",
+                  "second_id": "NAMIB-115000-073000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-115000-064000",
+                  "second_id": "NAMIB-115000-061000",
+                  "distance_km": 2.9999972226701273
+                },
+                {
+                  "first_id": "NAMIB-088000-103000",
+                  "second_id": "NAMIB-088000-103000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-091000-103000",
+                  "second_id": "NAMIB-085000-106000",
+                  "distance_km": 6.708203882816278
+                },
+                {
+                  "first_id": "NAMIB-115000-067000",
+                  "second_id": "NAMIB-115000-064000",
+                  "distance_km": 2.999997222661122
+                }
+              ]
+            },
+            {
+              "radius_km": 20,
+              "matched_pairs": 9,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-154000-142000",
+                  "second_id": "ATACAMA-154000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-112000-070000",
+                  "second_id": "NAMIB-112000-070000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-112000-073000",
+                  "second_id": "NAMIB-112000-073000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-154000",
+                  "second_id": "ATACAMA-163000-154000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-115000-073000",
+                  "second_id": "NAMIB-115000-073000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-115000-064000",
+                  "second_id": "NAMIB-115000-061000",
+                  "distance_km": 2.9999972226701273
+                },
+                {
+                  "first_id": "NAMIB-088000-103000",
+                  "second_id": "NAMIB-088000-103000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-091000-103000",
+                  "second_id": "NAMIB-085000-106000",
+                  "distance_km": 6.708203882816278
+                },
+                {
+                  "first_id": "NAMIB-115000-067000",
+                  "second_id": "NAMIB-115000-064000",
+                  "distance_km": 2.999997222661122
+                }
+              ]
+            },
+            {
+              "radius_km": 40,
+              "matched_pairs": 9,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-154000-142000",
+                  "second_id": "ATACAMA-154000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-112000-070000",
+                  "second_id": "NAMIB-112000-070000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-112000-073000",
+                  "second_id": "NAMIB-112000-073000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-154000",
+                  "second_id": "ATACAMA-163000-154000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-115000-073000",
+                  "second_id": "NAMIB-115000-073000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-115000-064000",
+                  "second_id": "NAMIB-115000-061000",
+                  "distance_km": 2.9999972226701273
+                },
+                {
+                  "first_id": "NAMIB-088000-103000",
+                  "second_id": "NAMIB-088000-103000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-091000-103000",
+                  "second_id": "NAMIB-085000-106000",
+                  "distance_km": 6.708203882816278
+                },
+                {
+                  "first_id": "NAMIB-115000-067000",
+                  "second_id": "NAMIB-115000-064000",
+                  "distance_km": 2.999997222661122
+                }
+              ]
+            }
+          ],
+          "winners": [
+            {
+              "id": "ATACAMA-154000-142000",
+              "region": "Atacama, Chile",
+              "latitude": -23.61987507365594,
+              "longitude": -68.47084204412747,
+              "easting_m": 54000,
+              "northing_m": 42000,
+              "footprint": [
+                [
+                  -68.56853607034458,
+                  -23.710470850358377
+                ],
+                [
+                  -68.37241826711639,
+                  -23.709794616778268
+                ],
+                [
+                  -68.37328212061117,
+                  -23.52921700486394
+                ],
+                [
+                  -68.56912998630884,
+                  -23.52989072379352
+                ],
+                [
+                  -68.56853607034458,
+                  -23.710470850358377
+                ]
+              ]
+            },
+            {
+              "id": "ATACAMA-154000-142000",
+              "region": "Atacama, Chile",
+              "latitude": -23.61987507365594,
+              "longitude": -68.47084204412747,
+              "easting_m": 54000,
+              "northing_m": 42000,
+              "footprint": [
+                [
+                  -68.56853607034458,
+                  -23.710470850358377
+                ],
+                [
+                  -68.37241826711639,
+                  -23.709794616778268
+                ],
+                [
+                  -68.37328212061117,
+                  -23.52921700486394
+                ],
+                [
+                  -68.56912998630884,
+                  -23.52989072379352
+                ],
+                [
+                  -68.56853607034458,
+                  -23.710470850358377
+                ]
+              ]
+            }
+          ],
+          "minimax_rank_choice": {
+            "id": "ATACAMA-154000-142000",
+            "name": "Atacama, Chile study window",
+            "region": "Atacama, Chile",
+            "latitude": -23.61987507365594,
+            "longitude": -68.47084204412747,
+            "source_ids": [
+              "nasadem"
+            ],
+            "image": "ATACAMA-154000-142000.png",
+            "footprint": [
+              [
+                -68.56853607034458,
+                -23.710470850358377
+              ],
+              [
+                -68.37241826711639,
+                -23.709794616778268
+              ],
+              [
+                -68.37328212061117,
+                -23.52921700486394
+              ],
+              [
+                -68.56912998630884,
+                -23.52989072379352
+              ],
+              [
+                -68.56853607034458,
+                -23.710470850358377
+              ]
+            ],
+            "ranks": [
+              1,
+              1
+            ],
+            "features": {
+              "500": {
+                "relief_m": 220.31449902436998,
+                "slope_median_deg": 0.041326140263227104,
+                "slope_p90_deg": 3.371752766056309,
+                "residual_rms_m": 68.96821005496571
+              },
+              "1000": {
+                "relief_m": 223.99711405988,
+                "slope_median_deg": 0.024049108942238554,
+                "slope_p90_deg": 2.445905696149299,
+                "residual_rms_m": 67.8093536086795
+              }
+            }
+          }
+        }
+      ],
+      "between_method_distance_km": [
+        8349.265934702136,
+        8360.169059282423
+      ],
+      "between_method_region_changes": [
+        true,
+        true
+      ]
+    },
+    {
+      "target_id": "nili",
+      "target_name": "Nili Fossae",
+      "body": "Mars",
+      "methods": [
+        {
+          "method": "scalar",
+          "top_ten_exact_overlap": 0,
+          "winner_distance_km": 2.999991001703043,
+          "winner_footprint_iou": 0.7391304347826086,
+          "geographic_matches": [
+            {
+              "radius_km": 5,
+              "matched_pairs": 3,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-073000-037000",
+                  "second_id": "NAMIB-070000-037000",
+                  "distance_km": 2.9999510090511334
+                },
+                {
+                  "first_id": "NAMIB-103000-106000",
+                  "second_id": "NAMIB-103000-103000",
+                  "distance_km": 2.9999998889028205
+                },
+                {
+                  "first_id": "NAMIB-124000-082000",
+                  "second_id": "NAMIB-121000-082000",
+                  "distance_km": 2.9999960005703157
+                }
+              ]
+            },
+            {
+              "radius_km": 10,
+              "matched_pairs": 5,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-073000-037000",
+                  "second_id": "NAMIB-070000-037000",
+                  "distance_km": 2.9999510090511334
+                },
+                {
+                  "first_id": "NAMIB-103000-106000",
+                  "second_id": "NAMIB-103000-103000",
+                  "distance_km": 2.9999998889028205
+                },
+                {
+                  "first_id": "NAMIB-124000-082000",
+                  "second_id": "NAMIB-121000-082000",
+                  "distance_km": 2.9999960005703157
+                },
+                {
+                  "first_id": "NAMIB-097000-100000",
+                  "second_id": "NAMIB-097000-094000",
+                  "distance_km": 5.999999777806431
+                },
+                {
+                  "first_id": "NAMIB-100000-100000",
+                  "second_id": "NAMIB-097000-091000",
+                  "distance_km": 9.486832980505561
+                }
+              ]
+            },
+            {
+              "radius_km": 20,
+              "matched_pairs": 5,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-073000-037000",
+                  "second_id": "NAMIB-070000-037000",
+                  "distance_km": 2.9999510090511334
+                },
+                {
+                  "first_id": "NAMIB-103000-106000",
+                  "second_id": "NAMIB-103000-103000",
+                  "distance_km": 2.9999998889028205
+                },
+                {
+                  "first_id": "NAMIB-124000-082000",
+                  "second_id": "NAMIB-121000-082000",
+                  "distance_km": 2.9999960005703157
+                },
+                {
+                  "first_id": "NAMIB-097000-100000",
+                  "second_id": "NAMIB-097000-091000",
+                  "distance_km": 8.999999666709991
+                },
+                {
+                  "first_id": "NAMIB-094000-112000",
+                  "second_id": "NAMIB-097000-094000",
+                  "distance_km": 18.248286421978467
+                }
+              ]
+            },
+            {
+              "radius_km": 40,
+              "matched_pairs": 7,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-073000-037000",
+                  "second_id": "NAMIB-070000-037000",
+                  "distance_km": 2.9999510090511334
+                },
+                {
+                  "first_id": "NAMIB-103000-106000",
+                  "second_id": "NAMIB-118000-082000",
+                  "distance_km": 28.301939580669625
+                },
+                {
+                  "first_id": "NAMIB-124000-082000",
+                  "second_id": "NAMIB-121000-082000",
+                  "distance_km": 2.9999960005703157
+                },
+                {
+                  "first_id": "NAMIB-097000-100000",
+                  "second_id": "NAMIB-097000-094000",
+                  "distance_km": 5.999999777806431
+                },
+                {
+                  "first_id": "NAMIB-097000-130000",
+                  "second_id": "NAMIB-103000-103000",
+                  "distance_km": 27.658631913787186
+                },
+                {
+                  "first_id": "NAMIB-094000-112000",
+                  "second_id": "NAMIB-097000-091000",
+                  "distance_km": 21.213201864442613
+                },
+                {
+                  "first_id": "NAMIB-100000-100000",
+                  "second_id": "NAMIB-112000-082000",
+                  "distance_km": 21.633307652784303
+                }
+              ]
+            }
+          ],
+          "winners": [
+            {
+              "id": "NAMIB-073000-037000",
+              "region": "Namib, Namibia",
+              "latitude": -25.568466132813818,
+              "longitude": 15.731295784150829,
+              "easting_m": -27000,
+              "northing_m": -63000,
+              "footprint": [
+                [
+                  15.631501494325972,
+                  -25.658519026205486
+                ],
+                [
+                  15.830689538689375,
+                  -25.65888004995843
+                ],
+                [
+                  15.830941449078969,
+                  -25.478344726068958
+                ],
+                [
+                  15.6320497617528,
+                  -25.477985035967308
+                ],
+                [
+                  15.631501494325972,
+                  -25.658519026205486
+                ]
+              ]
+            },
+            {
+              "id": "NAMIB-073000-040000",
+              "region": "Namib, Namibia",
+              "latitude": -25.541385865455425,
+              "longitude": 15.731355764216726,
+              "easting_m": -27000,
+              "northing_m": -60000,
+              "footprint": [
+                [
+                  15.63158399399438,
+                  -25.631439212247283
+                ],
+                [
+                  15.830727444505186,
+                  -25.631800035552573
+                ],
+                [
+                  15.830979074672603,
+                  -25.45126404365681
+                ],
+                [
+                  15.63213165153944,
+                  -25.450904553063403
+                ],
+                [
+                  15.63158399399438,
+                  -25.631439212247283
+                ]
+              ]
+            }
+          ],
+          "minimax_rank_choice": {
+            "id": "NAMIB-106000-082000",
+            "name": "Namib, Namibia study window",
+            "region": "Namib, Namibia",
+            "latitude": -25.1624809479057,
+            "longitude": 16.059513738127297,
+            "source_ids": [
+              "nasadem"
+            ],
+            "image": "namib-500.png",
+            "footprint": [
+              [
+                15.9602949732644,
+                -25.25275982767749
+              ],
+              [
+                16.158820038185887,
+                -25.25268026468074
+              ],
+              [
+                16.158586872634583,
+                -25.07213493382941
+              ],
+              [
+                15.96035326484266,
+                -25.072214203557646
+              ],
+              [
+                15.9602949732644,
+                -25.25275982767749
+              ]
+            ],
+            "ranks": [
+              17,
+              19
+            ],
+            "features": {
+              "500": {
+                "relief_m": 625.6962414672158,
+                "slope_median_deg": 1.8382924243370562,
+                "slope_p90_deg": 10.308986828649495,
+                "residual_rms_m": 138.75415009105805
+              },
+              "1000": {
+                "relief_m": 595.2547153502312,
+                "slope_median_deg": 1.5265615951130491,
+                "slope_p90_deg": 8.267832030719317,
+                "residual_rms_m": 133.2336397106719
+              }
+            }
+          }
+        },
+        {
+          "method": "multigroup",
+          "top_ten_exact_overlap": 9,
+          "winner_distance_km": 0.0,
+          "winner_footprint_iou": 1.0,
+          "geographic_matches": [
+            {
+              "radius_km": 5,
+              "matched_pairs": 9,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-103000-106000",
+                  "second_id": "NAMIB-103000-106000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-088000-160000",
+                  "second_id": "NAMIB-088000-160000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-118000-163000",
+                  "second_id": "NAMIB-118000-163000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-088000-163000",
+                  "second_id": "NAMIB-088000-163000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-091000-157000",
+                  "second_id": "NAMIB-091000-157000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-112000-112000",
+                  "second_id": "ATACAMA-112000-112000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-091000-160000",
+                  "second_id": "NAMIB-091000-160000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-115000-163000",
+                  "second_id": "NAMIB-115000-163000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-103000-103000",
+                  "second_id": "NAMIB-103000-103000",
+                  "distance_km": 0.0
+                }
+              ]
+            },
+            {
+              "radius_km": 10,
+              "matched_pairs": 9,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-103000-106000",
+                  "second_id": "NAMIB-103000-106000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-088000-160000",
+                  "second_id": "NAMIB-088000-160000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-118000-163000",
+                  "second_id": "NAMIB-118000-163000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-088000-163000",
+                  "second_id": "NAMIB-088000-163000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-091000-157000",
+                  "second_id": "NAMIB-091000-157000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-112000-112000",
+                  "second_id": "ATACAMA-112000-112000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-091000-160000",
+                  "second_id": "NAMIB-091000-160000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-115000-163000",
+                  "second_id": "NAMIB-115000-163000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-103000-103000",
+                  "second_id": "NAMIB-103000-103000",
+                  "distance_km": 0.0
+                }
+              ]
+            },
+            {
+              "radius_km": 20,
+              "matched_pairs": 9,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-103000-106000",
+                  "second_id": "NAMIB-103000-106000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-088000-160000",
+                  "second_id": "NAMIB-088000-160000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-118000-163000",
+                  "second_id": "NAMIB-118000-163000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-088000-163000",
+                  "second_id": "NAMIB-088000-163000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-091000-157000",
+                  "second_id": "NAMIB-091000-157000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-112000-112000",
+                  "second_id": "ATACAMA-112000-112000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-091000-160000",
+                  "second_id": "NAMIB-091000-160000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-115000-163000",
+                  "second_id": "NAMIB-115000-163000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-103000-103000",
+                  "second_id": "NAMIB-103000-103000",
+                  "distance_km": 0.0
+                }
+              ]
+            },
+            {
+              "radius_km": 40,
+              "matched_pairs": 9,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-103000-106000",
+                  "second_id": "NAMIB-103000-106000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-088000-160000",
+                  "second_id": "NAMIB-088000-160000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-118000-163000",
+                  "second_id": "NAMIB-118000-163000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-088000-163000",
+                  "second_id": "NAMIB-088000-163000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-091000-157000",
+                  "second_id": "NAMIB-091000-157000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-112000-112000",
+                  "second_id": "ATACAMA-112000-112000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-091000-160000",
+                  "second_id": "NAMIB-091000-160000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-115000-163000",
+                  "second_id": "NAMIB-115000-163000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-103000-103000",
+                  "second_id": "NAMIB-103000-103000",
+                  "distance_km": 0.0
+                }
+              ]
+            }
+          ],
+          "winners": [
+            {
+              "id": "NAMIB-103000-106000",
+              "region": "Namib, Namibia",
+              "latitude": -24.945831958730455,
+              "longitude": 16.029704641265432,
+              "easting_m": 3000,
+              "northing_m": 6000,
+              "footprint": [
+                [
+                  15.930638528863305,
+                  -25.03609365952545
+                ],
+                [
+                  16.128814133121026,
+                  -25.03605405389929
+                ],
+                [
+                  16.12862636680614,
+                  -24.855503349256452
+                ],
+                [
+                  15.930739633966528,
+                  -24.855542809062353
+                ],
+                [
+                  15.930638528863305,
+                  -25.03609365952545
+                ]
+              ]
+            },
+            {
+              "id": "NAMIB-103000-106000",
+              "region": "Namib, Namibia",
+              "latitude": -24.945831958730455,
+              "longitude": 16.029704641265432,
+              "easting_m": 3000,
+              "northing_m": 6000,
+              "footprint": [
+                [
+                  15.930638528863305,
+                  -25.03609365952545
+                ],
+                [
+                  16.128814133121026,
+                  -25.03605405389929
+                ],
+                [
+                  16.12862636680614,
+                  -24.855503349256452
+                ],
+                [
+                  15.930739633966528,
+                  -24.855542809062353
+                ],
+                [
+                  15.930638528863305,
+                  -25.03609365952545
+                ]
+              ]
+            }
+          ],
+          "minimax_rank_choice": {
+            "id": "NAMIB-103000-106000",
+            "name": "Namib, Namibia study window",
+            "region": "Namib, Namibia",
+            "latitude": -24.945831958730455,
+            "longitude": 16.029704641265432,
+            "source_ids": [
+              "nasadem"
+            ],
+            "image": "NAMIB-103000-106000.png",
+            "footprint": [
+              [
+                15.930638528863305,
+                -25.03609365952545
+              ],
+              [
+                16.128814133121026,
+                -25.03605405389929
+              ],
+              [
+                16.12862636680614,
+                -24.855503349256452
+              ],
+              [
+                15.930739633966528,
+                -24.855542809062353
+              ],
+              [
+                15.930638528863305,
+                -25.03609365952545
+              ]
+            ],
+            "ranks": [
+              1,
+              1
+            ],
+            "features": {
+              "500": {
+                "relief_m": 680.2485224360461,
+                "slope_median_deg": 1.4492590566072663,
+                "slope_p90_deg": 10.215875464156518,
+                "residual_rms_m": 140.5406229464273
+              },
+              "1000": {
+                "relief_m": 659.4945671655066,
+                "slope_median_deg": 1.395946142050117,
+                "slope_p90_deg": 7.1762506887391515,
+                "residual_rms_m": 135.33173047308753
+              }
+            }
+          }
+        }
+      ],
+      "between_method_distance_km": [
+        75.23961718403993,
+        72.49827582317926
+      ],
+      "between_method_region_changes": [
+        false,
+        false
+      ]
+    },
+    {
+      "target_id": "isidis",
+      "target_name": "Isidis Planitia",
+      "body": "Mars",
+      "methods": [
+        {
+          "method": "scalar",
+          "top_ten_exact_overlap": 9,
+          "winner_distance_km": 0.0,
+          "winner_footprint_iou": 1.0,
+          "geographic_matches": [
+            {
+              "radius_km": 5,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-160000-142000",
+                  "second_id": "NAMIB-160000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-142000",
+                  "second_id": "NAMIB-163000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-139000",
+                  "second_id": "NAMIB-160000-139000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-145000",
+                  "second_id": "NAMIB-157000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-145000",
+                  "second_id": "NAMIB-163000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-145000",
+                  "second_id": "NAMIB-160000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-148000",
+                  "second_id": "NAMIB-163000-151000",
+                  "distance_km": 4.2426394301744494
+                },
+                {
+                  "first_id": "NAMIB-160000-136000",
+                  "second_id": "NAMIB-160000-136000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-142000",
+                  "second_id": "NAMIB-157000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-148000",
+                  "second_id": "NAMIB-160000-148000",
+                  "distance_km": 2.999971558437174
+                }
+              ]
+            },
+            {
+              "radius_km": 10,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-160000-142000",
+                  "second_id": "NAMIB-160000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-142000",
+                  "second_id": "NAMIB-163000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-139000",
+                  "second_id": "NAMIB-160000-139000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-145000",
+                  "second_id": "NAMIB-157000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-145000",
+                  "second_id": "NAMIB-163000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-145000",
+                  "second_id": "NAMIB-160000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-148000",
+                  "second_id": "NAMIB-160000-148000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-136000",
+                  "second_id": "NAMIB-160000-136000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-142000",
+                  "second_id": "NAMIB-157000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-148000",
+                  "second_id": "NAMIB-163000-151000",
+                  "distance_km": 6.708195535703884
+                }
+              ]
+            },
+            {
+              "radius_km": 20,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-160000-142000",
+                  "second_id": "NAMIB-160000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-142000",
+                  "second_id": "NAMIB-163000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-139000",
+                  "second_id": "NAMIB-160000-139000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-145000",
+                  "second_id": "NAMIB-157000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-145000",
+                  "second_id": "NAMIB-163000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-145000",
+                  "second_id": "NAMIB-160000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-148000",
+                  "second_id": "NAMIB-160000-148000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-136000",
+                  "second_id": "NAMIB-160000-136000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-142000",
+                  "second_id": "NAMIB-157000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-148000",
+                  "second_id": "NAMIB-163000-151000",
+                  "distance_km": 6.708195535703884
+                }
+              ]
+            },
+            {
+              "radius_km": 40,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-160000-142000",
+                  "second_id": "NAMIB-160000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-142000",
+                  "second_id": "NAMIB-163000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-139000",
+                  "second_id": "NAMIB-160000-139000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-145000",
+                  "second_id": "NAMIB-157000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-145000",
+                  "second_id": "NAMIB-163000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-145000",
+                  "second_id": "NAMIB-160000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-148000",
+                  "second_id": "NAMIB-160000-148000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-136000",
+                  "second_id": "NAMIB-160000-136000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-142000",
+                  "second_id": "NAMIB-157000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-148000",
+                  "second_id": "NAMIB-163000-151000",
+                  "distance_km": 6.708195535703884
+                }
+              ]
+            }
+          ],
+          "winners": [
+            {
+              "id": "NAMIB-160000-142000",
+              "region": "Namib, Namibia",
+              "latitude": -24.619658095287413,
+              "longitude": 16.592539595934582,
+              "easting_m": 60000,
+              "northing_m": 42000,
+              "footprint": [
+                [
+                  16.49414088567084,
+                  -24.710295398408228
+                ],
+                [
+                  16.691794330896098,
+                  -24.70950854465753
+                ],
+                [
+                  16.69079677975896,
+                  -24.52895570251976
+                ],
+                [
+                  16.49342832611402,
+                  -24.52973966409966
+                ],
+                [
+                  16.49414088567084,
+                  -24.710295398408228
+                ]
+              ]
+            },
+            {
+              "id": "NAMIB-160000-142000",
+              "region": "Namib, Namibia",
+              "latitude": -24.619658095287413,
+              "longitude": 16.592539595934582,
+              "easting_m": 60000,
+              "northing_m": 42000,
+              "footprint": [
+                [
+                  16.49414088567084,
+                  -24.710295398408228
+                ],
+                [
+                  16.691794330896098,
+                  -24.70950854465753
+                ],
+                [
+                  16.69079677975896,
+                  -24.52895570251976
+                ],
+                [
+                  16.49342832611402,
+                  -24.52973966409966
+                ],
+                [
+                  16.49414088567084,
+                  -24.710295398408228
+                ]
+              ]
+            }
+          ],
+          "minimax_rank_choice": {
+            "id": "NAMIB-160000-142000",
+            "name": "Namib, Namibia study window",
+            "region": "Namib, Namibia",
+            "latitude": -24.619658095287413,
+            "longitude": 16.592539595934582,
+            "source_ids": [
+              "nasadem"
+            ],
+            "image": "NAMIB-160000-142000.png",
+            "footprint": [
+              [
+                16.49414088567084,
+                -24.710295398408228
+              ],
+              [
+                16.691794330896098,
+                -24.70950854465753
+              ],
+              [
+                16.69079677975896,
+                -24.52895570251976
+              ],
+              [
+                16.49342832611402,
+                -24.52973966409966
+              ],
+              [
+                16.49414088567084,
+                -24.710295398408228
+              ]
+            ],
+            "ranks": [
+              1,
+              1
+            ],
+            "features": {
+              "500": {
+                "relief_m": 52.92420823074508,
+                "slope_median_deg": 0.3925189358014508,
+                "slope_p90_deg": 0.834645307852115,
+                "residual_rms_m": 9.777162804199486
+              },
+              "1000": {
+                "relief_m": 51.78945327843917,
+                "slope_median_deg": 0.2890514764433545,
+                "slope_p90_deg": 0.49162792268316335,
+                "residual_rms_m": 9.15294919637632
+              }
+            }
+          }
+        },
+        {
+          "method": "multigroup",
+          "top_ten_exact_overlap": 9,
+          "winner_distance_km": 2.9999510050726914,
+          "winner_footprint_iou": 0.7391304347826086,
+          "geographic_matches": [
+            {
+              "radius_km": 5,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-163000-139000",
+                  "second_id": "NAMIB-163000-139000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-142000",
+                  "second_id": "NAMIB-163000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-145000",
+                  "second_id": "NAMIB-163000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-142000",
+                  "second_id": "NAMIB-160000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-139000",
+                  "second_id": "NAMIB-160000-139000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-145000",
+                  "second_id": "NAMIB-160000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-145000",
+                  "second_id": "NAMIB-157000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-148000",
+                  "second_id": "NAMIB-163000-151000",
+                  "distance_km": 4.2426394301744494
+                },
+                {
+                  "first_id": "NAMIB-163000-148000",
+                  "second_id": "NAMIB-163000-148000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-148000",
+                  "second_id": "NAMIB-160000-148000",
+                  "distance_km": 2.999971558437174
+                }
+              ]
+            },
+            {
+              "radius_km": 10,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-163000-139000",
+                  "second_id": "NAMIB-163000-139000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-142000",
+                  "second_id": "NAMIB-163000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-145000",
+                  "second_id": "NAMIB-163000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-142000",
+                  "second_id": "NAMIB-160000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-139000",
+                  "second_id": "NAMIB-160000-139000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-145000",
+                  "second_id": "NAMIB-160000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-145000",
+                  "second_id": "NAMIB-157000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-148000",
+                  "second_id": "NAMIB-160000-148000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-148000",
+                  "second_id": "NAMIB-163000-148000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-148000",
+                  "second_id": "NAMIB-163000-151000",
+                  "distance_km": 6.708195535703884
+                }
+              ]
+            },
+            {
+              "radius_km": 20,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-163000-139000",
+                  "second_id": "NAMIB-163000-139000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-142000",
+                  "second_id": "NAMIB-163000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-145000",
+                  "second_id": "NAMIB-163000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-142000",
+                  "second_id": "NAMIB-160000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-139000",
+                  "second_id": "NAMIB-160000-139000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-145000",
+                  "second_id": "NAMIB-160000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-145000",
+                  "second_id": "NAMIB-157000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-148000",
+                  "second_id": "NAMIB-160000-148000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-148000",
+                  "second_id": "NAMIB-163000-148000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-148000",
+                  "second_id": "NAMIB-163000-151000",
+                  "distance_km": 6.708195535703884
+                }
+              ]
+            },
+            {
+              "radius_km": 40,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-163000-139000",
+                  "second_id": "NAMIB-163000-139000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-142000",
+                  "second_id": "NAMIB-163000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-145000",
+                  "second_id": "NAMIB-163000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-142000",
+                  "second_id": "NAMIB-160000-142000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-139000",
+                  "second_id": "NAMIB-160000-139000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-145000",
+                  "second_id": "NAMIB-160000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-145000",
+                  "second_id": "NAMIB-157000-145000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-160000-148000",
+                  "second_id": "NAMIB-160000-148000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-148000",
+                  "second_id": "NAMIB-163000-148000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-148000",
+                  "second_id": "NAMIB-163000-151000",
+                  "distance_km": 6.708195535703884
+                }
+              ]
+            }
+          ],
+          "winners": [
+            {
+              "id": "NAMIB-163000-139000",
+              "region": "Namib, Namibia",
+              "latitude": -24.646620384930543,
+              "longitude": 16.622300921348803,
+              "easting_m": 63000,
+              "northing_m": 39000,
+              "footprint": [
+                [
+                  16.523902836783726,
+                  -24.737277019070834
+                ],
+                [
+                  16.72159882976337,
+                  -24.7364503679551
+                ],
+                [
+                  16.720557371732973,
+                  -24.555898697414634
+                ],
+                [
+                  16.523146684045926,
+                  -24.556722309675134
+                ],
+                [
+                  16.523902836783726,
+                  -24.737277019070834
+                ]
+              ]
+            },
+            {
+              "id": "NAMIB-163000-142000",
+              "region": "Namib, Namibia",
+              "latitude": -24.61953733918212,
+              "longitude": 16.622166175429893,
+              "easting_m": 63000,
+              "northing_m": 42000,
+              "footprint": [
+                [
+                  16.52378905522653,
+                  -24.710194090278645
+                ],
+                [
+                  16.721442117098697,
+                  -24.70936789588168
+                ],
+                [
+                  16.720401819780115,
+                  -24.528815570709188
+                ],
+                [
+                  16.523033745239438,
+                  -24.529638728342515
+                ],
+                [
+                  16.52378905522653,
+                  -24.710194090278645
+                ]
+              ]
+            }
+          ],
+          "minimax_rank_choice": {
+            "id": "NAMIB-163000-139000",
+            "name": "Namib, Namibia study window",
+            "region": "Namib, Namibia",
+            "latitude": -24.646620384930543,
+            "longitude": 16.622300921348803,
+            "source_ids": [
+              "nasadem"
+            ],
+            "image": "NAMIB-163000-139000.png",
+            "footprint": [
+              [
+                16.523902836783726,
+                -24.737277019070834
+              ],
+              [
+                16.72159882976337,
+                -24.7364503679551
+              ],
+              [
+                16.720557371732973,
+                -24.555898697414634
+              ],
+              [
+                16.523146684045926,
+                -24.556722309675134
+              ],
+              [
+                16.523902836783726,
+                -24.737277019070834
+              ]
+            ],
+            "ranks": [
+              1,
+              2
+            ],
+            "features": {
+              "500": {
+                "relief_m": 49.61578680823072,
+                "slope_median_deg": 0.3086757439802149,
+                "slope_p90_deg": 0.7696105953981767,
+                "residual_rms_m": 8.408525337180116
+              },
+              "1000": {
+                "relief_m": 48.800903907191696,
+                "slope_median_deg": 0.2402864308173851,
+                "slope_p90_deg": 0.4572328779702004,
+                "residual_rms_m": 7.833936082432769
+              }
+            }
+          }
+        }
+      ],
+      "between_method_distance_km": [
+        4.2425498722969905,
+        2.9999782245445505
+      ],
+      "between_method_region_changes": [
+        false,
+        false
+      ]
+    },
+    {
+      "target_id": "syrtis",
+      "target_name": "Syrtis Major",
+      "body": "Mars",
+      "methods": [
+        {
+          "method": "scalar",
+          "top_ten_exact_overlap": 7,
+          "winner_distance_km": 2.999955551920258,
+          "winner_footprint_iou": 0.7391304347826086,
+          "geographic_matches": [
+            {
+              "radius_km": 5,
+              "matched_pairs": 7,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-160000-160000",
+                  "second_id": "ATACAMA-160000-160000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-163000",
+                  "second_id": "ATACAMA-160000-163000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-154000-151000",
+                  "second_id": "NAMIB-154000-151000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-151000",
+                  "second_id": "ATACAMA-154000-151000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-151000-151000",
+                  "second_id": "ATACAMA-151000-151000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-154000",
+                  "second_id": "ATACAMA-157000-154000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-163000",
+                  "second_id": "ATACAMA-163000-163000",
+                  "distance_km": 0.0
+                }
+              ]
+            },
+            {
+              "radius_km": 10,
+              "matched_pairs": 7,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-160000-160000",
+                  "second_id": "ATACAMA-160000-160000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-163000",
+                  "second_id": "ATACAMA-160000-163000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-154000-151000",
+                  "second_id": "NAMIB-154000-151000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-151000",
+                  "second_id": "ATACAMA-154000-151000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-151000-151000",
+                  "second_id": "ATACAMA-151000-151000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-154000",
+                  "second_id": "ATACAMA-157000-154000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-163000",
+                  "second_id": "ATACAMA-163000-163000",
+                  "distance_km": 0.0
+                }
+              ]
+            },
+            {
+              "radius_km": 20,
+              "matched_pairs": 9,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-160000-160000",
+                  "second_id": "ATACAMA-160000-160000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-163000",
+                  "second_id": "ATACAMA-160000-163000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-154000-151000",
+                  "second_id": "NAMIB-154000-151000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-151000",
+                  "second_id": "ATACAMA-154000-151000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-151000-151000",
+                  "second_id": "ATACAMA-151000-151000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-154000",
+                  "second_id": "ATACAMA-157000-154000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-151000",
+                  "second_id": "NAMIB-145000-160000",
+                  "distance_km": 14.999652808266152
+                },
+                {
+                  "first_id": "NAMIB-157000-154000",
+                  "second_id": "NAMIB-148000-163000",
+                  "distance_km": 12.72759941274385
+                },
+                {
+                  "first_id": "ATACAMA-163000-163000",
+                  "second_id": "ATACAMA-163000-163000",
+                  "distance_km": 0.0
+                }
+              ]
+            },
+            {
+              "radius_km": 40,
+              "matched_pairs": 9,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-160000-160000",
+                  "second_id": "ATACAMA-160000-160000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-163000",
+                  "second_id": "ATACAMA-160000-163000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-154000-151000",
+                  "second_id": "NAMIB-154000-151000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-151000",
+                  "second_id": "ATACAMA-154000-151000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-151000-151000",
+                  "second_id": "ATACAMA-151000-151000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-154000",
+                  "second_id": "ATACAMA-157000-154000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-151000",
+                  "second_id": "NAMIB-145000-160000",
+                  "distance_km": 14.999652808266152
+                },
+                {
+                  "first_id": "NAMIB-157000-154000",
+                  "second_id": "NAMIB-148000-163000",
+                  "distance_km": 12.72759941274385
+                },
+                {
+                  "first_id": "ATACAMA-163000-163000",
+                  "second_id": "ATACAMA-163000-163000",
+                  "distance_km": 0.0
+                }
+              ]
+            }
+          ],
+          "winners": [
+            {
+              "id": "ATACAMA-160000-160000",
+              "region": "Atacama, Chile",
+              "latitude": -23.457139254778834,
+              "longitude": -68.41277377226592,
+              "easting_m": 60000,
+              "northing_m": 60000,
+              "footprint": [
+                [
+                  -68.51030815937135,
+                  -23.547772943852966
+                ],
+                [
+                  -68.3144340273606,
+                  -23.547024091717383
+                ],
+                [
+                  -68.31537248071538,
+                  -23.366443622346576
+                ],
+                [
+                  -68.51097850406164,
+                  -23.367189691560416
+                ],
+                [
+                  -68.51030815937135,
+                  -23.547772943852966
+                ]
+              ]
+            },
+            {
+              "id": "ATACAMA-160000-163000",
+              "region": "Atacama, Chile",
+              "latitude": -23.430051910903828,
+              "longitude": -68.41289436424283,
+              "easting_m": 60000,
+              "northing_m": 63000,
+              "footprint": [
+                [
+                  -68.51040903298957,
+                  -23.520685723402988
+                ],
+                [
+                  -68.31457524602433,
+                  -23.519937289490194
+                ],
+                [
+                  -68.31551264035942,
+                  -23.33935618982281
+                ],
+                [
+                  -68.51107862120362,
+                  -23.340101842656583
+                ],
+                [
+                  -68.51040903298957,
+                  -23.520685723402988
+                ]
+              ]
+            }
+          ],
+          "minimax_rank_choice": {
+            "id": "ATACAMA-160000-160000",
+            "name": "Atacama, Chile study window",
+            "region": "Atacama, Chile",
+            "latitude": -23.457139254778834,
+            "longitude": -68.41277377226592,
+            "source_ids": [
+              "nasadem"
+            ],
+            "image": "atacama-500.png",
+            "footprint": [
+              [
+                -68.51030815937135,
+                -23.547772943852966
+              ],
+              [
+                -68.3144340273606,
+                -23.547024091717383
+              ],
+              [
+                -68.31537248071538,
+                -23.366443622346576
+              ],
+              [
+                -68.51097850406164,
+                -23.367189691560416
+              ],
+              [
+                -68.51030815937135,
+                -23.547772943852966
+              ]
+            ],
+            "ranks": [
+              1,
+              2
+            ],
+            "features": {
+              "500": {
+                "relief_m": 74.41687485644161,
+                "slope_median_deg": 0.03095529112074763,
+                "slope_p90_deg": 1.1147756716065147,
+                "residual_rms_m": 20.00192183417417
+              },
+              "1000": {
+                "relief_m": 70.71531644536526,
+                "slope_median_deg": 0.01746382075740309,
+                "slope_p90_deg": 0.8044142897101892,
+                "residual_rms_m": 19.198239022758273
+              }
+            }
+          }
+        },
+        {
+          "method": "multigroup",
+          "top_ten_exact_overlap": 7,
+          "winner_distance_km": 0.0,
+          "winner_footprint_iou": 1.0,
+          "geographic_matches": [
+            {
+              "radius_km": 5,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-157000-136000",
+                  "second_id": "NAMIB-157000-136000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-160000",
+                  "second_id": "NAMIB-163000-160000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-139000",
+                  "second_id": "NAMIB-157000-139000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-154000-133000",
+                  "second_id": "NAMIB-154000-133000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-148000-133000",
+                  "second_id": "NAMIB-148000-133000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-055000-091000",
+                  "second_id": "NAMIB-055000-091000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-151000-133000",
+                  "second_id": "NAMIB-154000-136000",
+                  "distance_km": 4.242637859004874
+                },
+                {
+                  "first_id": "NAMIB-160000-154000",
+                  "second_id": "NAMIB-160000-157000",
+                  "distance_km": 2.9999555598113394
+                },
+                {
+                  "first_id": "NAMIB-163000-130000",
+                  "second_id": "NAMIB-160000-133000",
+                  "distance_km": 4.242565191928527
+                },
+                {
+                  "first_id": "NAMIB-160000-160000",
+                  "second_id": "NAMIB-160000-160000",
+                  "distance_km": 0.0
+                }
+              ]
+            },
+            {
+              "radius_km": 10,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-157000-136000",
+                  "second_id": "NAMIB-157000-136000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-160000",
+                  "second_id": "NAMIB-163000-160000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-139000",
+                  "second_id": "NAMIB-157000-139000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-154000-133000",
+                  "second_id": "NAMIB-154000-133000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-148000-133000",
+                  "second_id": "NAMIB-148000-133000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-055000-091000",
+                  "second_id": "NAMIB-055000-091000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-151000-133000",
+                  "second_id": "NAMIB-154000-136000",
+                  "distance_km": 4.242637859004874
+                },
+                {
+                  "first_id": "NAMIB-160000-154000",
+                  "second_id": "NAMIB-160000-157000",
+                  "distance_km": 2.9999555598113394
+                },
+                {
+                  "first_id": "NAMIB-163000-130000",
+                  "second_id": "NAMIB-160000-133000",
+                  "distance_km": 4.242565191928527
+                },
+                {
+                  "first_id": "NAMIB-160000-160000",
+                  "second_id": "NAMIB-160000-160000",
+                  "distance_km": 0.0
+                }
+              ]
+            },
+            {
+              "radius_km": 20,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-157000-136000",
+                  "second_id": "NAMIB-157000-136000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-160000",
+                  "second_id": "NAMIB-163000-160000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-139000",
+                  "second_id": "NAMIB-157000-139000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-154000-133000",
+                  "second_id": "NAMIB-154000-133000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-148000-133000",
+                  "second_id": "NAMIB-148000-133000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-055000-091000",
+                  "second_id": "NAMIB-055000-091000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-151000-133000",
+                  "second_id": "NAMIB-154000-136000",
+                  "distance_km": 4.242637859004874
+                },
+                {
+                  "first_id": "NAMIB-160000-154000",
+                  "second_id": "NAMIB-160000-157000",
+                  "distance_km": 2.9999555598113394
+                },
+                {
+                  "first_id": "NAMIB-163000-130000",
+                  "second_id": "NAMIB-160000-133000",
+                  "distance_km": 4.242565191928527
+                },
+                {
+                  "first_id": "NAMIB-160000-160000",
+                  "second_id": "NAMIB-160000-160000",
+                  "distance_km": 0.0
+                }
+              ]
+            },
+            {
+              "radius_km": 40,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "NAMIB-157000-136000",
+                  "second_id": "NAMIB-157000-136000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-163000-160000",
+                  "second_id": "NAMIB-163000-160000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-157000-139000",
+                  "second_id": "NAMIB-157000-139000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-154000-133000",
+                  "second_id": "NAMIB-154000-133000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-148000-133000",
+                  "second_id": "NAMIB-148000-133000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-055000-091000",
+                  "second_id": "NAMIB-055000-091000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "NAMIB-151000-133000",
+                  "second_id": "NAMIB-154000-136000",
+                  "distance_km": 4.242637859004874
+                },
+                {
+                  "first_id": "NAMIB-160000-154000",
+                  "second_id": "NAMIB-160000-157000",
+                  "distance_km": 2.9999555598113394
+                },
+                {
+                  "first_id": "NAMIB-163000-130000",
+                  "second_id": "NAMIB-160000-133000",
+                  "distance_km": 4.242565191928527
+                },
+                {
+                  "first_id": "NAMIB-160000-160000",
+                  "second_id": "NAMIB-160000-160000",
+                  "distance_km": 0.0
+                }
+              ]
+            }
+          ],
+          "winners": [
+            {
+              "id": "NAMIB-157000-136000",
+              "region": "Namib, Namibia",
+              "latitude": -24.673939215033304,
+              "longitude": 16.563156924985954,
+              "easting_m": 57000,
+              "northing_m": 36000,
+              "footprint": [
+                [
+                  16.464694584801943,
+                  -24.76455678224944
+                ],
+                [
+                  16.662434307288915,
+                  -24.763808442692245
+                ],
+                [
+                  16.661477371288974,
+                  -24.583256413677834
+                ],
+                [
+                  16.464023280705426,
+                  -24.584002001871724
+                ],
+                [
+                  16.464694584801943,
+                  -24.76455678224944
+                ]
+              ]
+            },
+            {
+              "id": "NAMIB-157000-136000",
+              "region": "Namib, Namibia",
+              "latitude": -24.673939215033304,
+              "longitude": 16.563156924985954,
+              "easting_m": 57000,
+              "northing_m": 36000,
+              "footprint": [
+                [
+                  16.464694584801943,
+                  -24.76455678224944
+                ],
+                [
+                  16.662434307288915,
+                  -24.763808442692245
+                ],
+                [
+                  16.661477371288974,
+                  -24.583256413677834
+                ],
+                [
+                  16.464023280705426,
+                  -24.584002001871724
+                ],
+                [
+                  16.464694584801943,
+                  -24.76455678224944
+                ]
+              ]
+            }
+          ],
+          "minimax_rank_choice": {
+            "id": "NAMIB-157000-136000",
+            "name": "Namib, Namibia study window",
+            "region": "Namib, Namibia",
+            "latitude": -24.673939215033304,
+            "longitude": 16.563156924985954,
+            "source_ids": [
+              "nasadem"
+            ],
+            "image": "NAMIB-157000-136000.png",
+            "footprint": [
+              [
+                16.464694584801943,
+                -24.76455678224944
+              ],
+              [
+                16.662434307288915,
+                -24.763808442692245
+              ],
+              [
+                16.661477371288974,
+                -24.583256413677834
+              ],
+              [
+                16.464023280705426,
+                -24.584002001871724
+              ],
+              [
+                16.464694584801943,
+                -24.76455678224944
+              ]
+            ],
+            "ranks": [
+              1,
+              1
+            ],
+            "features": {
+              "500": {
+                "relief_m": 81.53803544771768,
+                "slope_median_deg": 0.3298228184319618,
+                "slope_p90_deg": 0.896866251891468,
+                "residual_rms_m": 12.758891284477764
+              },
+              "1000": {
+                "relief_m": 81.25158818186742,
+                "slope_median_deg": 0.27765515727610335,
+                "slope_p90_deg": 0.6516771807604589,
+                "residual_rms_m": 12.340319811025298
+              }
+            }
+          }
+        }
+      ],
+      "between_method_distance_km": [
+        8482.859701888268,
+        8483.95736123538
+      ],
+      "between_method_region_changes": [
+        true,
+        true
+      ]
+    },
+    {
+      "target_id": "apollo17",
+      "target_name": "Taurus-Littrow",
+      "body": "Moon",
+      "methods": [
+        {
+          "method": "scalar",
+          "top_ten_exact_overlap": 6,
+          "winner_distance_km": 0.0,
+          "winner_footprint_iou": 1.0,
+          "geographic_matches": [
+            {
+              "radius_km": 5,
+              "matched_pairs": 9,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-163000-052000",
+                  "second_id": "ATACAMA-163000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-049000",
+                  "second_id": "ATACAMA-160000-046000",
+                  "distance_km": 2.9999555557458866
+                },
+                {
+                  "first_id": "ATACAMA-160000-046000",
+                  "second_id": "ATACAMA-160000-043000",
+                  "distance_km": 2.9999555558968165
+                },
+                {
+                  "first_id": "ATACAMA-157000-046000",
+                  "second_id": "ATACAMA-157000-046000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-049000",
+                  "second_id": "ATACAMA-157000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-052000",
+                  "second_id": "ATACAMA-160000-049000",
+                  "distance_km": 2.9999555555923108
+                },
+                {
+                  "first_id": "ATACAMA-154000-043000",
+                  "second_id": "ATACAMA-157000-043000",
+                  "distance_km": 2.999959889227964
+                },
+                {
+                  "first_id": "ATACAMA-157000-043000",
+                  "second_id": "ATACAMA-160000-040000",
+                  "distance_km": 4.24264068712019
+                },
+                {
+                  "first_id": "ATACAMA-154000-040000",
+                  "second_id": "ATACAMA-154000-037000",
+                  "distance_km": 2.999964000501396
+                }
+              ]
+            },
+            {
+              "radius_km": 10,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-163000-052000",
+                  "second_id": "ATACAMA-160000-043000",
+                  "distance_km": 9.486613694225387
+                },
+                {
+                  "first_id": "ATACAMA-160000-049000",
+                  "second_id": "ATACAMA-160000-040000",
+                  "distance_km": 8.999866667669565
+                },
+                {
+                  "first_id": "ATACAMA-160000-046000",
+                  "second_id": "ATACAMA-160000-046000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-046000",
+                  "second_id": "ATACAMA-157000-046000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-049000",
+                  "second_id": "ATACAMA-157000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-052000",
+                  "second_id": "ATACAMA-160000-049000",
+                  "distance_km": 2.9999555555923108
+                },
+                {
+                  "first_id": "ATACAMA-154000-043000",
+                  "second_id": "ATACAMA-160000-037000",
+                  "distance_km": 8.485281217106305
+                },
+                {
+                  "first_id": "ATACAMA-157000-043000",
+                  "second_id": "ATACAMA-157000-043000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-055000",
+                  "second_id": "ATACAMA-163000-052000",
+                  "distance_km": 2.9999509999028473
+                },
+                {
+                  "first_id": "ATACAMA-154000-040000",
+                  "second_id": "ATACAMA-154000-037000",
+                  "distance_km": 2.999964000501396
+                }
+              ]
+            },
+            {
+              "radius_km": 20,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-163000-052000",
+                  "second_id": "ATACAMA-163000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-049000",
+                  "second_id": "ATACAMA-160000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-046000",
+                  "second_id": "ATACAMA-160000-046000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-046000",
+                  "second_id": "ATACAMA-157000-046000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-049000",
+                  "second_id": "ATACAMA-157000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-052000",
+                  "second_id": "ATACAMA-160000-043000",
+                  "distance_km": 8.999866667208757
+                },
+                {
+                  "first_id": "ATACAMA-154000-043000",
+                  "second_id": "ATACAMA-160000-037000",
+                  "distance_km": 8.485281217106305
+                },
+                {
+                  "first_id": "ATACAMA-157000-043000",
+                  "second_id": "ATACAMA-157000-043000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-055000",
+                  "second_id": "ATACAMA-160000-040000",
+                  "distance_km": 15.296744755415332
+                },
+                {
+                  "first_id": "ATACAMA-154000-040000",
+                  "second_id": "ATACAMA-154000-037000",
+                  "distance_km": 2.999964000501396
+                }
+              ]
+            },
+            {
+              "radius_km": 40,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-163000-052000",
+                  "second_id": "ATACAMA-163000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-049000",
+                  "second_id": "ATACAMA-160000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-046000",
+                  "second_id": "ATACAMA-160000-046000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-046000",
+                  "second_id": "ATACAMA-157000-046000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-049000",
+                  "second_id": "ATACAMA-157000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-052000",
+                  "second_id": "ATACAMA-160000-043000",
+                  "distance_km": 8.999866667208757
+                },
+                {
+                  "first_id": "ATACAMA-154000-043000",
+                  "second_id": "ATACAMA-160000-037000",
+                  "distance_km": 8.485281217106305
+                },
+                {
+                  "first_id": "ATACAMA-157000-043000",
+                  "second_id": "ATACAMA-157000-043000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-055000",
+                  "second_id": "ATACAMA-160000-040000",
+                  "distance_km": 15.296744755415332
+                },
+                {
+                  "first_id": "ATACAMA-154000-040000",
+                  "second_id": "ATACAMA-154000-037000",
+                  "distance_km": 2.999964000501396
+                }
+              ]
+            }
+          ],
+          "winners": [
+            {
+              "id": "ATACAMA-163000-052000",
+              "region": "Atacama, Chile",
+              "latitude": -24.432102838110165,
+              "longitude": -68.37875806443283,
+              "easting_m": 63000,
+              "northing_m": -48000,
+              "footprint": [
+                [
+                  -68.47699620610454,
+                  -24.522750869970107
+                ],
+                [
+                  -68.27963931434343,
+                  -24.521948570907828
+                ],
+                [
+                  -68.28065849466905,
+                  -24.341391668069296
+                ],
+                [
+                  -68.47773618356722,
+                  -24.342190973630665
+                ],
+                [
+                  -68.47699620610454,
+                  -24.522750869970107
+                ]
+              ]
+            },
+            {
+              "id": "ATACAMA-163000-052000",
+              "region": "Atacama, Chile",
+              "latitude": -24.432102838110165,
+              "longitude": -68.37875806443283,
+              "easting_m": 63000,
+              "northing_m": -48000,
+              "footprint": [
+                [
+                  -68.47699620610454,
+                  -24.522750869970107
+                ],
+                [
+                  -68.27963931434343,
+                  -24.521948570907828
+                ],
+                [
+                  -68.28065849466905,
+                  -24.341391668069296
+                ],
+                [
+                  -68.47773618356722,
+                  -24.342190973630665
+                ],
+                [
+                  -68.47699620610454,
+                  -24.522750869970107
+                ]
+              ]
+            }
+          ],
+          "minimax_rank_choice": {
+            "id": "ATACAMA-163000-052000",
+            "name": "Atacama, Chile study window",
+            "region": "Atacama, Chile",
+            "latitude": -24.432102838110165,
+            "longitude": -68.37875806443283,
+            "source_ids": [
+              "nasadem"
+            ],
+            "image": "ATACAMA-163000-052000.png",
+            "footprint": [
+              [
+                -68.47699620610454,
+                -24.522750869970107
+              ],
+              [
+                -68.27963931434343,
+                -24.521948570907828
+              ],
+              [
+                -68.28065849466905,
+                -24.341391668069296
+              ],
+              [
+                -68.47773618356722,
+                -24.342190973630665
+              ],
+              [
+                -68.47699620610454,
+                -24.522750869970107
+              ]
+            ],
+            "ranks": [
+              1,
+              1
+            ],
+            "features": {
+              "500": {
+                "relief_m": 1332.2435087926237,
+                "slope_median_deg": 6.187013930992425,
+                "slope_p90_deg": 18.308438324933718,
+                "residual_rms_m": 226.6965177145345
+              },
+              "1000": {
+                "relief_m": 1312.1876061118637,
+                "slope_median_deg": 5.500901387473612,
+                "slope_p90_deg": 14.206459489350546,
+                "residual_rms_m": 216.6263675817743
+              }
+            }
+          }
+        },
+        {
+          "method": "multigroup",
+          "top_ten_exact_overlap": 8,
+          "winner_distance_km": 0.0,
+          "winner_footprint_iou": 1.0,
+          "geographic_matches": [
+            {
+              "radius_km": 5,
+              "matched_pairs": 8,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-163000-052000",
+                  "second_id": "ATACAMA-163000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-055000",
+                  "second_id": "ATACAMA-163000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-049000",
+                  "second_id": "ATACAMA-157000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-049000",
+                  "second_id": "ATACAMA-154000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-052000",
+                  "second_id": "ATACAMA-157000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-052000",
+                  "second_id": "ATACAMA-160000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-052000",
+                  "second_id": "ATACAMA-154000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-073000-037000",
+                  "second_id": "ATACAMA-073000-037000",
+                  "distance_km": 0.0
+                }
+              ]
+            },
+            {
+              "radius_km": 10,
+              "matched_pairs": 8,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-163000-052000",
+                  "second_id": "ATACAMA-163000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-055000",
+                  "second_id": "ATACAMA-163000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-049000",
+                  "second_id": "ATACAMA-157000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-049000",
+                  "second_id": "ATACAMA-154000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-052000",
+                  "second_id": "ATACAMA-157000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-052000",
+                  "second_id": "ATACAMA-160000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-052000",
+                  "second_id": "ATACAMA-154000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-073000-037000",
+                  "second_id": "ATACAMA-073000-037000",
+                  "distance_km": 0.0
+                }
+              ]
+            },
+            {
+              "radius_km": 20,
+              "matched_pairs": 8,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-163000-052000",
+                  "second_id": "ATACAMA-163000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-055000",
+                  "second_id": "ATACAMA-163000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-049000",
+                  "second_id": "ATACAMA-157000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-049000",
+                  "second_id": "ATACAMA-154000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-052000",
+                  "second_id": "ATACAMA-157000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-052000",
+                  "second_id": "ATACAMA-160000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-052000",
+                  "second_id": "ATACAMA-154000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-073000-037000",
+                  "second_id": "ATACAMA-073000-037000",
+                  "distance_km": 0.0
+                }
+              ]
+            },
+            {
+              "radius_km": 40,
+              "matched_pairs": 8,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-163000-052000",
+                  "second_id": "ATACAMA-163000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-055000",
+                  "second_id": "ATACAMA-163000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-049000",
+                  "second_id": "ATACAMA-157000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-049000",
+                  "second_id": "ATACAMA-154000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-052000",
+                  "second_id": "ATACAMA-157000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-052000",
+                  "second_id": "ATACAMA-160000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-052000",
+                  "second_id": "ATACAMA-154000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-073000-037000",
+                  "second_id": "ATACAMA-073000-037000",
+                  "distance_km": 0.0
+                }
+              ]
+            }
+          ],
+          "winners": [
+            {
+              "id": "ATACAMA-163000-052000",
+              "region": "Atacama, Chile",
+              "latitude": -24.432102838110165,
+              "longitude": -68.37875806443283,
+              "easting_m": 63000,
+              "northing_m": -48000,
+              "footprint": [
+                [
+                  -68.47699620610454,
+                  -24.522750869970107
+                ],
+                [
+                  -68.27963931434343,
+                  -24.521948570907828
+                ],
+                [
+                  -68.28065849466905,
+                  -24.341391668069296
+                ],
+                [
+                  -68.47773618356722,
+                  -24.342190973630665
+                ],
+                [
+                  -68.47699620610454,
+                  -24.522750869970107
+                ]
+              ]
+            },
+            {
+              "id": "ATACAMA-163000-052000",
+              "region": "Atacama, Chile",
+              "latitude": -24.432102838110165,
+              "longitude": -68.37875806443283,
+              "easting_m": 63000,
+              "northing_m": -48000,
+              "footprint": [
+                [
+                  -68.47699620610454,
+                  -24.522750869970107
+                ],
+                [
+                  -68.27963931434343,
+                  -24.521948570907828
+                ],
+                [
+                  -68.28065849466905,
+                  -24.341391668069296
+                ],
+                [
+                  -68.47773618356722,
+                  -24.342190973630665
+                ],
+                [
+                  -68.47699620610454,
+                  -24.522750869970107
+                ]
+              ]
+            }
+          ],
+          "minimax_rank_choice": {
+            "id": "ATACAMA-163000-052000",
+            "name": "Atacama, Chile study window",
+            "region": "Atacama, Chile",
+            "latitude": -24.432102838110165,
+            "longitude": -68.37875806443283,
+            "source_ids": [
+              "nasadem"
+            ],
+            "image": "ATACAMA-163000-052000.png",
+            "footprint": [
+              [
+                -68.47699620610454,
+                -24.522750869970107
+              ],
+              [
+                -68.27963931434343,
+                -24.521948570907828
+              ],
+              [
+                -68.28065849466905,
+                -24.341391668069296
+              ],
+              [
+                -68.47773618356722,
+                -24.342190973630665
+              ],
+              [
+                -68.47699620610454,
+                -24.522750869970107
+              ]
+            ],
+            "ranks": [
+              1,
+              1
+            ],
+            "features": {
+              "500": {
+                "relief_m": 1332.2435087926237,
+                "slope_median_deg": 6.187013930992425,
+                "slope_p90_deg": 18.308438324933718,
+                "residual_rms_m": 226.6965177145345
+              },
+              "1000": {
+                "relief_m": 1312.1876061118637,
+                "slope_median_deg": 5.500901387473612,
+                "slope_p90_deg": 14.206459489350546,
+                "residual_rms_m": 216.6263675817743
+              }
+            }
+          }
+        }
+      ],
+      "between_method_distance_km": [
+        0.0,
+        0.0
+      ],
+      "between_method_region_changes": [
+        false,
+        false
+      ]
+    },
+    {
+      "target_id": "shackleton",
+      "target_name": "Shackleton rim",
+      "body": "Moon",
+      "methods": [
+        {
+          "method": "scalar",
+          "top_ten_exact_overlap": 6,
+          "winner_distance_km": 2.9999715555615785,
+          "winner_footprint_iou": 0.7391304347826086,
+          "geographic_matches": [
+            {
+              "radius_km": 5,
+              "matched_pairs": 9,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-154000-052000",
+                  "second_id": "ATACAMA-157000-052000",
+                  "distance_km": 2.9999715555615785
+                },
+                {
+                  "first_id": "ATACAMA-076000-037000",
+                  "second_id": "ATACAMA-076000-037000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-052000",
+                  "second_id": "ATACAMA-160000-052000",
+                  "distance_km": 2.9999715555908457
+                },
+                {
+                  "first_id": "ATACAMA-073000-037000",
+                  "second_id": "ATACAMA-073000-037000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-076000-040000",
+                  "second_id": "ATACAMA-076000-040000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-151000-049000",
+                  "second_id": "ATACAMA-154000-049000",
+                  "distance_km": 2.9999678889482824
+                },
+                {
+                  "first_id": "ATACAMA-151000-052000",
+                  "second_id": "ATACAMA-154000-052000",
+                  "distance_km": 2.9999715555284885
+                },
+                {
+                  "first_id": "ATACAMA-148000-043000",
+                  "second_id": "ATACAMA-151000-043000",
+                  "distance_km": 2.999959889144195
+                },
+                {
+                  "first_id": "ATACAMA-154000-049000",
+                  "second_id": "ATACAMA-157000-049000",
+                  "distance_km": 2.9999678889825443
+                }
+              ]
+            },
+            {
+              "radius_km": 10,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-154000-052000",
+                  "second_id": "ATACAMA-154000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-076000-037000",
+                  "second_id": "ATACAMA-076000-037000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-052000",
+                  "second_id": "ATACAMA-157000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-073000-037000",
+                  "second_id": "ATACAMA-073000-037000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-076000-040000",
+                  "second_id": "ATACAMA-076000-040000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-151000-049000",
+                  "second_id": "ATACAMA-157000-049000",
+                  "distance_km": 5.999935777926072
+                },
+                {
+                  "first_id": "ATACAMA-151000-052000",
+                  "second_id": "ATACAMA-160000-052000",
+                  "distance_km": 8.999914666664024
+                },
+                {
+                  "first_id": "ATACAMA-148000-043000",
+                  "second_id": "ATACAMA-151000-043000",
+                  "distance_km": 2.999959889144195
+                },
+                {
+                  "first_id": "ATACAMA-145000-043000",
+                  "second_id": "ATACAMA-154000-046000",
+                  "distance_km": 9.486650833592417
+                },
+                {
+                  "first_id": "ATACAMA-154000-049000",
+                  "second_id": "ATACAMA-154000-049000",
+                  "distance_km": 0.0
+                }
+              ]
+            },
+            {
+              "radius_km": 20,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-154000-052000",
+                  "second_id": "ATACAMA-154000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-076000-037000",
+                  "second_id": "ATACAMA-076000-037000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-052000",
+                  "second_id": "ATACAMA-157000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-073000-037000",
+                  "second_id": "ATACAMA-073000-037000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-076000-040000",
+                  "second_id": "ATACAMA-076000-040000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-151000-049000",
+                  "second_id": "ATACAMA-157000-049000",
+                  "distance_km": 5.999935777926072
+                },
+                {
+                  "first_id": "ATACAMA-151000-052000",
+                  "second_id": "ATACAMA-160000-052000",
+                  "distance_km": 8.999914666664024
+                },
+                {
+                  "first_id": "ATACAMA-148000-043000",
+                  "second_id": "ATACAMA-151000-043000",
+                  "distance_km": 2.999959889144195
+                },
+                {
+                  "first_id": "ATACAMA-145000-043000",
+                  "second_id": "ATACAMA-154000-046000",
+                  "distance_km": 9.486650833592417
+                },
+                {
+                  "first_id": "ATACAMA-154000-049000",
+                  "second_id": "ATACAMA-154000-049000",
+                  "distance_km": 0.0
+                }
+              ]
+            },
+            {
+              "radius_km": 40,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-154000-052000",
+                  "second_id": "ATACAMA-154000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-076000-037000",
+                  "second_id": "ATACAMA-076000-037000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-052000",
+                  "second_id": "ATACAMA-157000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-073000-037000",
+                  "second_id": "ATACAMA-073000-037000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-076000-040000",
+                  "second_id": "ATACAMA-076000-040000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-151000-049000",
+                  "second_id": "ATACAMA-157000-049000",
+                  "distance_km": 5.999935777926072
+                },
+                {
+                  "first_id": "ATACAMA-151000-052000",
+                  "second_id": "ATACAMA-160000-052000",
+                  "distance_km": 8.999914666664024
+                },
+                {
+                  "first_id": "ATACAMA-148000-043000",
+                  "second_id": "ATACAMA-151000-043000",
+                  "distance_km": 2.999959889144195
+                },
+                {
+                  "first_id": "ATACAMA-145000-043000",
+                  "second_id": "ATACAMA-154000-046000",
+                  "distance_km": 9.486650833592417
+                },
+                {
+                  "first_id": "ATACAMA-154000-049000",
+                  "second_id": "ATACAMA-154000-049000",
+                  "distance_km": 0.0
+                }
+              ]
+            }
+          ],
+          "winners": [
+            {
+              "id": "ATACAMA-154000-052000",
+              "region": "Atacama, Chile",
+              "latitude": -24.43243745974515,
+              "longitude": -68.46750598090202,
+              "easting_m": 54000,
+              "northing_m": -48000,
+              "footprint": [
+                [
+                  -68.56580753830885,
+                  -24.523028812392067
+                ],
+                [
+                  -68.36844960578281,
+                  -24.522341122714725
+                ],
+                [
+                  -68.36934314828778,
+                  -24.341782755211735
+                ],
+                [
+                  -68.56642186630327,
+                  -24.342467878994537
+                ],
+                [
+                  -68.56580753830885,
+                  -24.523028812392067
+                ]
+              ]
+            },
+            {
+              "id": "ATACAMA-157000-052000",
+              "region": "Atacama, Chile",
+              "latitude": -24.432331638977825,
+              "longitude": -68.43792329077473,
+              "easting_m": 57000,
+              "northing_m": -48000,
+              "footprint": [
+                [
+                  -68.53620371820799,
+                  -24.522941895518013
+                ],
+                [
+                  -68.33884611481587,
+                  -24.522216002449817
+                ],
+                [
+                  -68.33978153727132,
+                  -24.341658101789
+                ],
+                [
+                  -68.53685992983635,
+                  -24.3423812864252
+                ],
+                [
+                  -68.53620371820799,
+                  -24.522941895518013
+                ]
+              ]
+            }
+          ],
+          "minimax_rank_choice": {
+            "id": "ATACAMA-157000-052000",
+            "name": "Atacama, Chile study window",
+            "region": "Atacama, Chile",
+            "latitude": -24.432331638977825,
+            "longitude": -68.43792329077473,
+            "source_ids": [
+              "nasadem"
+            ],
+            "image": "ATACAMA-157000-052000.png",
+            "footprint": [
+              [
+                -68.53620371820799,
+                -24.522941895518013
+              ],
+              [
+                -68.33884611481587,
+                -24.522216002449817
+              ],
+              [
+                -68.33978153727132,
+                -24.341658101789
+              ],
+              [
+                -68.53685992983635,
+                -24.3423812864252
+              ],
+              [
+                -68.53620371820799,
+                -24.522941895518013
+              ]
+            ],
+            "ranks": [
+              3,
+              1
+            ],
+            "features": {
+              "500": {
+                "relief_m": 1333.2246107437463,
+                "slope_median_deg": 6.466086438678657,
+                "slope_p90_deg": 14.459600820058311,
+                "residual_rms_m": 225.3214149199618
+              },
+              "1000": {
+                "relief_m": 1317.057693779243,
+                "slope_median_deg": 5.574803059826908,
+                "slope_p90_deg": 11.807206678295222,
+                "residual_rms_m": 217.85373712297726
+              }
+            }
+          }
+        },
+        {
+          "method": "multigroup",
+          "top_ten_exact_overlap": 10,
+          "winner_distance_km": 6.708074687152641,
+          "winner_footprint_iou": 0.4234875444839858,
+          "geographic_matches": [
+            {
+              "radius_km": 5,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-157000-052000",
+                  "second_id": "ATACAMA-157000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-055000",
+                  "second_id": "ATACAMA-157000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-055000",
+                  "second_id": "ATACAMA-163000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-052000",
+                  "second_id": "ATACAMA-154000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-052000",
+                  "second_id": "ATACAMA-160000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-055000",
+                  "second_id": "ATACAMA-160000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-049000",
+                  "second_id": "ATACAMA-154000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-055000",
+                  "second_id": "ATACAMA-154000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-049000",
+                  "second_id": "ATACAMA-157000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-052000",
+                  "second_id": "ATACAMA-163000-052000",
+                  "distance_km": 0.0
+                }
+              ]
+            },
+            {
+              "radius_km": 10,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-157000-052000",
+                  "second_id": "ATACAMA-157000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-055000",
+                  "second_id": "ATACAMA-157000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-055000",
+                  "second_id": "ATACAMA-163000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-052000",
+                  "second_id": "ATACAMA-154000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-052000",
+                  "second_id": "ATACAMA-160000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-055000",
+                  "second_id": "ATACAMA-160000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-049000",
+                  "second_id": "ATACAMA-154000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-055000",
+                  "second_id": "ATACAMA-154000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-049000",
+                  "second_id": "ATACAMA-157000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-052000",
+                  "second_id": "ATACAMA-163000-052000",
+                  "distance_km": 0.0
+                }
+              ]
+            },
+            {
+              "radius_km": 20,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-157000-052000",
+                  "second_id": "ATACAMA-157000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-055000",
+                  "second_id": "ATACAMA-157000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-055000",
+                  "second_id": "ATACAMA-163000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-052000",
+                  "second_id": "ATACAMA-154000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-052000",
+                  "second_id": "ATACAMA-160000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-055000",
+                  "second_id": "ATACAMA-160000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-049000",
+                  "second_id": "ATACAMA-154000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-055000",
+                  "second_id": "ATACAMA-154000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-049000",
+                  "second_id": "ATACAMA-157000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-052000",
+                  "second_id": "ATACAMA-163000-052000",
+                  "distance_km": 0.0
+                }
+              ]
+            },
+            {
+              "radius_km": 40,
+              "matched_pairs": 10,
+              "pairs": [
+                {
+                  "first_id": "ATACAMA-157000-052000",
+                  "second_id": "ATACAMA-157000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-055000",
+                  "second_id": "ATACAMA-157000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-055000",
+                  "second_id": "ATACAMA-163000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-052000",
+                  "second_id": "ATACAMA-154000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-052000",
+                  "second_id": "ATACAMA-160000-052000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-160000-055000",
+                  "second_id": "ATACAMA-160000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-049000",
+                  "second_id": "ATACAMA-154000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-154000-055000",
+                  "second_id": "ATACAMA-154000-055000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-157000-049000",
+                  "second_id": "ATACAMA-157000-049000",
+                  "distance_km": 0.0
+                },
+                {
+                  "first_id": "ATACAMA-163000-052000",
+                  "second_id": "ATACAMA-163000-052000",
+                  "distance_km": 0.0
+                }
+              ]
+            }
+          ],
+          "winners": [
+            {
+              "id": "ATACAMA-157000-052000",
+              "region": "Atacama, Chile",
+              "latitude": -24.432331638977825,
+              "longitude": -68.43792329077473,
+              "easting_m": 57000,
+              "northing_m": -48000,
+              "footprint": [
+                [
+                  -68.53620371820799,
+                  -24.522941895518013
+                ],
+                [
+                  -68.33884611481587,
+                  -24.522216002449817
+                ],
+                [
+                  -68.33978153727132,
+                  -24.341658101789
+                ],
+                [
+                  -68.53685992983635,
+                  -24.3423812864252
+                ],
+                [
+                  -68.53620371820799,
+                  -24.522941895518013
+                ]
+              ]
+            },
+            {
+              "id": "ATACAMA-163000-055000",
+              "region": "Atacama, Chile",
+              "latitude": -24.405019011508124,
+              "longitude": -68.37888992733937,
+              "easting_m": 63000,
+              "northing_m": -45000,
+              "footprint": [
+                [
+                  -68.4771075567042,
+                  -24.495667161331454
+                ],
+                [
+                  -68.2797926789263,
+                  -24.49486531215971
+                ],
+                [
+                  -68.28081071362477,
+                  -24.314307759000783
+                ],
+                [
+                  -68.47784670236983,
+                  -24.315106616704263
+                ],
+                [
+                  -68.4771075567042,
+                  -24.495667161331454
+                ]
+              ]
+            }
+          ],
+          "minimax_rank_choice": {
+            "id": "ATACAMA-157000-052000",
+            "name": "Atacama, Chile study window",
+            "region": "Atacama, Chile",
+            "latitude": -24.432331638977825,
+            "longitude": -68.43792329077473,
+            "source_ids": [
+              "nasadem"
+            ],
+            "image": "ATACAMA-157000-052000.png",
+            "footprint": [
+              [
+                -68.53620371820799,
+                -24.522941895518013
+              ],
+              [
+                -68.33884611481587,
+                -24.522216002449817
+              ],
+              [
+                -68.33978153727132,
+                -24.341658101789
+              ],
+              [
+                -68.53685992983635,
+                -24.3423812864252
+              ],
+              [
+                -68.53620371820799,
+                -24.522941895518013
+              ]
+            ],
+            "ranks": [
+              1,
+              2
+            ],
+            "features": {
+              "500": {
+                "relief_m": 1333.2246107437463,
+                "slope_median_deg": 6.466086438678657,
+                "slope_p90_deg": 14.459600820058311,
+                "residual_rms_m": 225.3214149199618
+              },
+              "1000": {
+                "relief_m": 1317.057693779243,
+                "slope_median_deg": 5.574803059826908,
+                "slope_p90_deg": 11.807206678295222,
+                "residual_rms_m": 217.85373712297726
+              }
+            }
+          }
+        }
+      ],
+      "between_method_distance_km": [
+        2.9999715555615785,
+        6.708074687152641
+      ],
+      "between_method_region_changes": [
+        false,
+        false
+      ]
+    }
+  ],
+  "limitations": [
+    "Only the Namib and Atacama source pools are searched; no global or previously unrecognized geological-site claim.",
+    "20 km windows at 3 km stride overlap strongly; 3,693 windows are not 3,693 independent sites.",
+    "Scoring contracts differ in observables, weighting and sensitivity aggregation, so the comparison cannot identify a single causal ingredient.",
+    "The multigroup score already includes alternate support; small support shifts there are partly by design.",
+    "Eligibility, geology, access, environmental comparability and field utility remain unverified for every shortlist.",
+    "Earth gravity, atmosphere, radiation and polar illumination are not reproduced by a terrain match."
+  ],
+  "claim": "Original project-level geographic sensitivity result; literature priority and a new geological analogue are not established."
+}
