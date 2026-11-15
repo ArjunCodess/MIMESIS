@@ -1,0 +1,71 @@
+{
+  "id": "mimesis-global-dryland-frame-v6",
+  "schema_version": "1.0",
+  "parent": "mimesis-natural-land-v5",
+  "scope": "A presampled climate-domain feasibility frame, not a measured terrain null or an analogue discovery.",
+  "sampling": {
+    "seed": 2026111406,
+    "maximum_attempts": 100000,
+    "proposal_crs": "EPSG:6933",
+    "nasadem_latitude_bounds": [-56.0, 60.0],
+    "context_m": 80000.0,
+    "ai_maximum": 0.2,
+    "strata": [{"symbol": "BWh", "count": 50}, {"symbol": "BWk", "count": 50}]
+  },
+  "selection_contract": [
+    "Draw uniform coordinates in the EPSG:6933 equal-area rectangle covering -180 to 180 degrees and the declared NASADEM latitude band, using NumPy PCG64 in the recorded seed and order.",
+    "Eligibility uses the native climate pixel at the proposed center. ET0 must be observed, finite and positive; AI raw times 0.0001 must be at most 0.2; historical 1991-2020 Koppen symbol must equal the available stratum. AI has no usable TIFF nodata tag, so ET0's explicit 65535 nodata jointly masks AI, including ocean zeros.",
+    "Every context is the inverse image of a local WGS84 azimuthal-equidistant 80 km square. Reject the whole circumscribed disk if its conservative geographic envelope exceeds the NASADEM latitude band or crosses the antimeridian.",
+    "Require center geodesic distance at least sqrt(2) times 80 km from every already accepted block and the separately declared control contexts. Disjoint enclosing disks guarantee that these context squares do not overlap; this is stricter than polygon intersection.",
+    "Process each proposal in order and retain exactly one primary rejection reason, in order: latitude envelope, antimeridian envelope, missing ET0, missing AI, AI threshold, missing Koppen, other Koppen class, filled stratum, known-control overlap, sampled-context overlap. Stop once both quotas fill or maximum_attempts is exhausted.",
+    "There is no replacement after terrain, imagery, geology, climate support summaries or rankings are inspected. Any unavailable source or later gate failure remains attached to its frozen block.",
+    "The equal 50/50 allocation is disproportionate stratification, not an area-weighted sample of all deserts. Non-overlap prevents shared contexts, not geological, climatic, sensor or statistical dependence. Terrain/geological stratification and inferential weights require future observations and a new declared analysis.",
+    "Context climate summaries are descriptive, after the draw, and never change membership. A center climate label does not assert that every pixel in its 80 km context has that climate or is natural land."
+  ],
+  "sources": [
+    {
+      "id": "global_ai_et0_v31",
+      "article": 7504448,
+      "version": 7,
+      "archive": "7504448/Global-AI_ET0__annual_v3_1.zip",
+      "archive_bytes": 645783906,
+      "archive_md5": "ef3f6f53a082fb07365954b468cca55f",
+      "download_url": "https://ndownloader.figshare.com/files/56300327",
+      "doi": "https://doi.org/10.6084/m9.figshare.7504448.v7",
+      "members": [
+        "Global-AI_ET0__annual_v3_1/ai_v31_yr.tif",
+        "Global-AI_ET0__annual_v3_1/et0_v31_yr.tif",
+        "Global-AI_ET0__annual_v3_1/ai_v31_yr.tif.xml",
+        "Global-AI_ET0__annual_v3_1/et0_v31_yr.tif.xml",
+        "Global-AI_ET0__annual_v3_1/Global AI_ET0 v3.1 - Readme.docx"
+      ],
+      "citation": "Zomer, R.J.; Xu, J.; Trabucco, A. 2022. Version 3 of the Global Aridity Index and Potential Evapotranspiration Database. Scientific Data 9, 409. https://doi.org/10.1038/s41597-022-01493-1"
+    },
+    {
+      "id": "koppen_geiger_v2",
+      "article": 21789074,
+      "version": 2,
+      "archive": "21789074/koppen_geiger_tif.zip",
+      "archive_bytes": 130618411,
+      "archive_md5": "7fc2f5a15d4f5fe0ce59c9a9b502aa09",
+      "download_url": "https://ndownloader.figshare.com/files/61012822",
+      "doi": "https://doi.org/10.6084/m9.figshare.21789074.v2",
+      "members": ["1991_2020/koppen_geiger_0p00833333.tif", "legend.txt"],
+      "citation": "Beck, H.E., et al. 2023. High-resolution (1 km) Koppen-Geiger maps for 1901-2099 based on constrained CMIP6 projections. Scientific Data 10, 724. https://doi.org/10.1038/s41597-023-02549-6; January 2026 corrected dataset version 2."
+    }
+  ],
+  "known_controls": [
+    {"id": "known-mojave", "region_id": "mojave", "longitude": -116.0, "latitude": 35.0, "role": "separate known-region control context", "coordinate_status": "Existing project region center, not a published exact analogue footprint", "prior_source": "https://doi.org/10.1029/2019EA000720"},
+    {"id": "known-anti-atlas", "region_id": "morocco", "longitude": -7.0, "latitude": 30.0, "role": "separate known-region control context", "coordinate_status": "Existing project region center, not a published exact analogue footprint", "prior_source": "https://www.hou.usra.edu/meetings/lifeonmars2019/pdf/5041.pdf"},
+    {"id": "known-namib", "region_id": "namib", "longitude": 16.0, "latitude": -25.0, "role": "separate known-region control context", "coordinate_status": "Existing project region center, not a published exact analogue footprint", "prior_source": "https://thesis.caltech.edu/10953/"}
+  ],
+  "current_regions": "configs/discovery.json",
+  "context_summary_spacing_m": 2000,
+  "restrictions": [
+    "No global 30 m DEM is downloaded by this workflow. NASADEM HGT/SWB/NUM URLs are an acquisition manifest whose remote availability and actual valid coverage are unverified.",
+    "The historical Koppen archive supplies no confidence raster. Confidence is missing and cannot be reconstructed from the class codes.",
+    "AI/ET0 uses 1970-2000 modelled climatology and Koppen uses 1991-2020 classification. They have different temporal support and partially related climate inputs, so they are separate products without guaranteed independent ancestry.",
+    "AI article metadata says CC BY 4.0 while its original readme and article description say noncommercial use and commercial permission. Preserve both statements and flag the conflict. Original rasters/readme remain local; resolve terms before commercial use or raw redistribution.",
+    "Climate-domain eligibility does not establish terrain similarity, geological process equivalence, mission usefulness, novelty or independence. Existing v4/v5 conclusions remain unchanged."
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "protocol": {
+    "$defs": {
+      "ChallengeSpec": {
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "coarser_support",
+              "lookalike",
+              "mask",
+              "repeated_acquisition",
+              "registration",
+              "height"
+            ],
+            "title": "Kind",
+            "type": "string"
+          },
+          "evidence": {
+            "minLength": 1,
+            "title": "Evidence",
+            "type": "string"
+          },
+          "parameters": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "title": "Parameters",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "kind",
+          "evidence",
+          "parameters"
+        ],
+        "title": "ChallengeSpec",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "title": "Id",
+        "type": "string"
+      },
+      "mode": {
+        "default": "confirmatory",
+        "enum": [
+          "confirmatory",
+          "synthetic_workflow_check"
+        ],
+        "title": "Mode",
+        "type": "string"
+      },
+      "calibration_passed": {
+        "default": false,
+        "title": "Calibration Passed",
+        "type": "boolean"
+      },
+      "prior_art_cleared": {
+        "default": false,
+        "title": "Prior Art Cleared",
+        "type": "boolean"
+      },
+      "coarse_scales": {
+        "description": "Slope degrees and relief metres; fixed during calibration",
+        "maxItems": 2,
+        "minItems": 2,
+        "prefixItems": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          }
+        ],
+        "title": "Coarse Scales",
+        "type": "array"
+      },
+      "fine_bounds": {
+        "description": "Maximum sector-pattern RMS differences: slope degrees and roughness metres",
+        "maxItems": 2,
+        "minItems": 2,
+        "prefixItems": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          }
+        ],
+        "title": "Fine Bounds",
+        "type": "array"
+      },
+      "maximum_diameter_ratio": {
+        "minimum": 1,
+        "title": "Maximum Diameter Ratio",
+        "type": "number"
+      },
+      "heldout_earth_setting": {
+        "title": "Heldout Earth Setting",
+        "type": "string"
+      },
+      "seed": {
+        "default": 2026,
+        "title": "Seed",
+        "type": "integer"
+      },
+      "pairings": {
+        "items": {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "type": "array"
+        },
+        "minItems": 1,
+        "title": "Pairings",
+        "type": "array"
+      },
+      "challenges": {
+        "items": {
+          "$ref": "#/$defs/ChallengeSpec"
+        },
+        "title": "Challenges",
+        "type": "array"
+      }
+    },
+    "required": [
+      "id",
+      "coarse_scales",
+      "fine_bounds",
+      "maximum_diameter_ratio",
+      "heldout_earth_setting",
+      "pairings"
+    ],
+    "title": "Protocol",
+    "type": "object"
+  },
+  "packet": {
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "title": "Id",
+        "type": "string"
+      },
+      "body": {
+        "enum": [
+          "earth",
+          "moon",
+          "mars"
+        ],
+        "title": "Body",
+        "type": "string"
+      },
+      "setting": {
+        "title": "Setting",
+        "type": "string"
+      },
+      "ancestry_group": {
+        "title": "Ancestry Group",
+        "type": "string"
+      },
+      "role": {
+        "enum": [
+          "candidate",
+          "calibration",
+          "evaluation",
+          "hard_negative"
+        ],
+        "title": "Role",
+        "type": "string"
+      },
+      "process": {
+        "title": "Process",
+        "type": "string"
+      },
+      "diameter_m": {
+        "exclusiveMinimum": 0,
+        "title": "Diameter M",
+        "type": "number"
+      },
+      "rim": {
+        "items": {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "type": "array"
+        },
+        "minItems": 4,
+        "title": "Rim",
+        "type": "array"
+      },
+      "rim_crs": {
+        "minLength": 1,
+        "title": "Rim Crs",
+        "type": "string"
+      },
+      "rim_source": {
+        "minLength": 1,
+        "title": "Rim Source",
+        "type": "string"
+      },
+      "exact_identity_verified": {
+        "title": "Exact Identity Verified",
+        "type": "boolean"
+      },
+      "quality_verified": {
+        "title": "Quality Verified",
+        "type": "boolean"
+      },
+      "sector_coverage": {
+        "items": {
+          "type": "number"
+        },
+        "maxItems": 12,
+        "minItems": 12,
+        "title": "Sector Coverage",
+        "type": "array"
+      },
+      "source_hashes": {
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1,
+        "title": "Source Hashes",
+        "type": "array"
+      },
+      "independent_evidence": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Independent Evidence",
+        "type": "array"
+      },
+      "coarse": {
+        "description": "Coarse median slope in degrees, then coarse relief in metres",
+        "items": {
+          "type": "number"
+        },
+        "maxItems": 2,
+        "minItems": 2,
+        "title": "Coarse",
+        "type": "array"
+      }
+    },
+    "required": [
+      "id",
+      "body",
+      "setting",
+      "ancestry_group",
+      "role",
+      "process",
+      "diameter_m",
+      "rim",
+      "rim_crs",
+      "rim_source",
+      "exact_identity_verified",
+      "quality_verified",
+      "sector_coverage",
+      "source_hashes",
+      "independent_evidence",
+      "coarse"
+    ],
+    "title": "Packet",
+    "type": "object"
+  },
+  "fine_observation": {
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "title": "Id",
+        "type": "string"
+      },
+      "source_hash": {
+        "title": "Source Hash",
+        "type": "string"
+      },
+      "sectors": {
+        "description": "Twelve fixed north-referenced sectors, each containing slope degrees and roughness metres",
+        "items": {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "type": "array"
+        },
+        "maxItems": 12,
+        "minItems": 12,
+        "title": "Sectors",
+        "type": "array"
+      },
+      "sector_coverage": {
+        "items": {
+          "type": "number"
+        },
+        "maxItems": 12,
+        "minItems": 12,
+        "title": "Sector Coverage",
+        "type": "array"
+      }
+    },
+    "required": [
+      "id",
+      "source_hash",
+      "sectors",
+      "sector_coverage"
+    ],
+    "title": "FineObservation",
+    "type": "object"
+  }
+}

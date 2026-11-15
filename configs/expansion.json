@@ -1,0 +1,65 @@
+{
+  "id": "mimesis-context-corrected-v3",
+  "parent_protocol": "mimesis-exploratory-expansion-v2",
+  "status": "Exploratory correction after the v2 audit; features and weights retained, shortlist geometry and alternative matching corrected",
+  "regions": [
+    {
+      "id": "atacama",
+      "name": "Atacama, Chile",
+      "latitude": -24,
+      "longitude": -69,
+      "bounds": [
+        -70,
+        -25,
+        -68,
+        -23
+      ],
+      "tiles": [
+        "s24w070",
+        "s24w069",
+        "s25w070",
+        "s25w069"
+      ]
+    },
+    {
+      "id": "namib",
+      "name": "Namib, Namibia",
+      "latitude": -25,
+      "longitude": 16,
+      "bounds": [
+        15,
+        -26,
+        17,
+        -24
+      ],
+      "tiles": [
+        "s25e015",
+        "s25e016",
+        "s26e015",
+        "s26e016"
+      ]
+    }
+  ],
+  "source_family": "NASADEM_HGT.001",
+  "source_selection": "Adjacent complete tiles expand each declared region before any v2 ranks are viewed",
+  "extent_m": 232000,
+  "search_half_extent_m": 63000,
+  "stride_m": 3000,
+  "retain_v1": true,
+  "selection_rule": {
+    "minimum_context_separation_m": 80000,
+    "maximum_context_coverage_difference": 0.02,
+    "maximum_local_coverage_difference": 0.02,
+    "slope_category_edges_deg": [
+      1,
+      3,
+      8
+    ],
+    "relief_category_edges_m": [
+      100,
+      500,
+      1500
+    ],
+    "alternative_rank_rule": "Lower robust rank than its nominated match; same slope and relief bins; closest nominal loss, seeded tie then stable ID"
+  }
+}

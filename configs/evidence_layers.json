@@ -1,0 +1,18 @@
+{
+  "version": "evidence-inventory-v4",
+  "policy": "Availability refers to actual acquired usable evidence. Catalogue metadata never enables a task. Missing data remain missing; thermal context never offsets vacuum, gravity or radiation differences.",
+  "layers": [
+    {"id": "nasadem", "body": "Earth", "state": "acquired", "role": "terrain_ranking", "version": "001", "source_url": "https://doi.org/10.5067/MEaSUREs/NASADEM/NASADEM_HGT.001"},
+    {"id": "mola", "body": "Mars", "state": "acquired", "role": "terrain_ranking", "source_url": "https://pds-geosciences.wustl.edu/missions/mgs/megdr.html"},
+    {"id": "lola", "body": "Moon", "state": "acquired", "role": "terrain_ranking", "source_url": "https://imbrium.mit.edu/"},
+    {"id": "hls", "body": "Earth", "state": "acquired_quality_masked", "role": "separate_optical", "source_url": "https://hls.gsfc.nasa.gov/"},
+    {"id": "ctx_optical", "body": "Mars", "state": "partial_coverage", "role": "separate_optical", "source_url": "https://trek.nasa.gov/"},
+    {"id": "ctx_stereo", "body": "Mars", "state": "jezero_local_pair_measured", "role": "finer_local_terrain", "source_url": "https://stac.astrogeology.usgs.gov/api/collections/mro_ctx_controlled_usgs_dtms", "ancestry": "Stereo observations, absolutely aligned to MOLA"},
+    {"id": "kaguya_stereo", "body": "Moon", "state": "acquired_insufficient_selected_coverage", "role": "polar_finer_terrain", "source_url": "https://stac.astrogeology.usgs.gov/", "ancestry": "Stereo observations with LOLA reference control"},
+    {"id": "emit_crism", "body": "Earth/Mars", "state": "no_verified_paired_spectra", "role": "optional_material_experiment", "required_to_activate": ["reflectance cubes", "wavelength and response tables", "quality masks", "Earth uncertainty", "overlapping target/candidate footprints", "processing and rights metadata"], "source_url": "https://earth.jpl.nasa.gov/emit/"},
+    {"id": "ecostress_tes", "body": "Earth/Mars", "state": "not_acquired_as_verified_pair", "role": "optional_unweighted_thermal_context", "source_url": "https://ecostress.jpl.nasa.gov/", "limitation": "Instantaneous land-surface temperature is not thermal inertia; local time, season and retrieval assumptions must be retained"},
+    {"id": "diviner", "body": "Moon", "state": "not_acquired", "role": "optional_unweighted_polar_thermal_context", "source_url": "https://pds-geosciences.wustl.edu/missions/lro/diviner.htm", "limitation": "Earth cannot reproduce lunar vacuum or permanently shadowed thermal conditions"},
+    {"id": "external_review", "state": "not_performed", "role": "independent_relevance_review"},
+    {"id": "field_validation", "state": "not_performed", "role": "field_measurements"}
+  ]
+}

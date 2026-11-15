@@ -1,0 +1,24 @@
+{
+  "id": "discovery_v10",
+  "state": "pilot_stopped_at_calibration",
+  "selection_state": "not_frozen",
+  "nominations": [],
+  "withheld_evaluation": "not_started",
+  "source_reports": "artifacts/reports/discovery_v10",
+  "required_source_contracts": [
+    "exact feature polygons and geological labels",
+    "defensible lunar smoothing support and quality treatment",
+    "independent control bank and corroboration"
+  ],
+  "proposed_support_m": [
+    10,
+    20,
+    40
+  ],
+  "independent_geological_validation": false,
+  "lunar_native_confidence": "data/raw/discovery_v10/moon_quality/NAC_DTM_TRANQPIT1_CONF.IMG",
+  "earth_registered_alternative": "data/raw/discovery_v10/earth/USGS_1M_12_x29y482_ID_SouthernGaps_D23.tif",
+  "earth_registered_source_qa": "artifacts/reports/discovery_v10/registered_earth_gap_source_qa.json",
+  "caves_registration": "unresolved; required for cloud-to-world fusion, not for use of the separate registered DEM",
+  "caves_archive_inventory": "artifacts/reports/discovery_v10/caves_archive_inventory.json"
+}

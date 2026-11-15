@@ -1,0 +1,252 @@
+{
+  "rubric_id": "visible-landform-rubric-v3",
+  "assessment_author": "Codex model-assisted visual inspection",
+  "reviewer_status": "model_assisted_not_independent_expert_review",
+  "blinding": "Evidence sheets omit numerical ranks and losses, but the assessor built the ranking and knows shortlist roles; not independently blinded",
+  "target_assessments": {
+    "jezero": {
+      "statuses": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "observations": [
+        "The central and eastern scene contains a continuous smooth-looking floor unit interrupted by craters; no numeric slope is inferred from tone.",
+        "An arcuate, textured rim/margin is visible west and south of the central floor within the 80 km camera context.",
+        "The camera image resolves the floor-to-margin boundary along the western and southern arcs; this supports a regional mapping exercise, not shared Earth/Mars origin."
+      ]
+    },
+    "nili": {
+      "statuses": [
+        "unassessable",
+        "unassessable",
+        "unassessable"
+      ],
+      "observations": [
+        "The cached CTX service returned no valid image coverage over this window.",
+        "No usable separate camera view was acquired for the margin requirement.",
+        "No transition can be assessed from transparent or corrupt source tiles."
+      ]
+    },
+    "isidis": {
+      "statuses": [
+        "supported",
+        "contradicted",
+        "contradicted"
+      ],
+      "observations": [
+        "A comparatively smooth, crater-populated plain is resolved over the central study footprint.",
+        "The inspected 80 km crop does not resolve the organized basin/ridge margin required by this floor-margin rubric; isolated small crater rims are not substituted for that regional requirement.",
+        "A broad floor-to-regional-margin transition is absent from this crop. This rejects the selected target/task pairing, not all possible plain-mapping tasks for Isidis."
+      ]
+    },
+    "syrtis": {
+      "statuses": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "observations": [
+        "Broad smooth-looking terrain occurs on both sides of a curving boundary through the central scene.",
+        "A continuous scarp-like, lobate boundary traverses the context from north to south. Interpretation is morphological; neither composition nor elevation amplitude is determined by the optical view.",
+        "The organized boundary and adjoining floor-like terrain are spatially resolved. Linear wind streaks and mosaic brightness differences are not counted as terrain ridges."
+      ]
+    },
+    "apollo17": {
+      "statuses": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "observations": [
+        "The dark valley floor occupies the central footprint, between brighter textured masses.",
+        "Large, organized massifs bound the valley within the WAC context.",
+        "The WAC image resolves the valley-floor/massif boundaries. Shadowed pixels and radiometric contrast are not numerical slope observations."
+      ]
+    },
+    "shackleton": {
+      "statuses": [
+        "unassessable",
+        "unassessable",
+        "unassessable"
+      ],
+      "observations": [
+        "No polar optical mosaic was acquired.",
+        "The equirectangular WAC source is not repurposed as a validated polar margin layer.",
+        "Polar darkness and unacquired imagery prevent a paired transition assessment."
+      ]
+    }
+  },
+  "earth_assessments": {
+    "ATACAMA-154000-142000": {
+      "statuses": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "observations": [
+        "A continuous basin-floor-like unit occupies the northeastern and central context and adjoins the central 20 km footprint. This is a landform interpretation, not a mineral identification from brightness.",
+        "An organized north-south ridge/mass-defined margin runs along the western and southwestern side of the floor-like unit.",
+        "The ridge-to-floor transition is resolved within the study footprint and adjacent context; fans, roads and rectilinear industrial features are also visible and restrict natural-surface and field-transfer claims."
+      ],
+      "counterevidence": [
+        "Rectilinear industrial surfaces and roads occur in the 80 km context and near the local footprint.",
+        "Masked bright/water-like areas remove approximately 4.7 percent of local optical coverage; source classification does not prove their composition.",
+        "The Earth floor is in an established salt-basin analogue region and is not an impact-crater replica."
+      ]
+    },
+    "NAMIB-157000-136000": {
+      "statuses": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "observations": [
+        "A broad, comparatively smooth-looking plain adjoins the central footprint to the north and east.",
+        "Dissected, organized bedrock-like relief is visible in the western and southwestern context.",
+        "The camera scene resolves the irregular plain-to-dissected-margin transition across the local and contextual views; it does not establish a volcanic origin."
+      ],
+      "counterevidence": [
+        "Earth drainage dissection and Martian wind streaks/flow-like boundaries do not imply shared formative processes."
+      ]
+    },
+    "NAMIB-163000-160000": {
+      "statuses": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "observations": [
+        "A laterally extensive smooth-looking unit occupies the eastern and central context.",
+        "A textured, dissected mass-defined margin is visible to the west of that unit.",
+        "A distinct irregular boundary separates the floor-like unit and margin; the mapping task may transfer while material and process interpretations remain unknown."
+      ],
+      "counterevidence": [
+        "Small atmospheric/bright-mask holes and different Earth/Mars acquisition geometry remain visible."
+      ]
+    },
+    "NAMIB-160000-103000": {
+      "statuses": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "observations": [
+        "Broad pale floor-like strips adjoin the central dissected terrain and extend into the eastern context.",
+        "Organized ridged masses occupy the western and central scene.",
+        "The interleaving floor-like strips and ridge margins are resolved for a regional mapping rehearsal, with no shared-origin inference."
+      ],
+      "counterevidence": [
+        "The Earth image displays a dendritic/dissected arrangement that differs from the target's smoother scarp-like organization."
+      ]
+    },
+    "ATACAMA-106000-091000": {
+      "statuses": [
+        "unassessable",
+        "supported",
+        "unassessable"
+      ],
+      "observations": [
+        "The local window contains dissected ridges and fans; the image alone does not resolve a coherent broad floor-like unit comparable with the Taurus-Littrow valley floor.",
+        "Organized ridge terrain is resolved within the central and northern context.",
+        "Many narrow fan/ridge transitions are visible, but a valley-floor-to-massif transition matching the declared requirement remains ambiguous."
+      ],
+      "counterevidence": [
+        "Industrial rectangular surfaces, roads and masked areas occur in the surrounding Earth context."
+      ]
+    },
+    "NAMIB-139000-055000": {
+      "statuses": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "observations": [
+        "A broad smoother dune/floor-like unit in the northwest adjoins the central 20 km footprint. Tone alone is not treated as an elevation measurement.",
+        "An organized dissected mass-defined margin occupies the central and eastern context.",
+        "The image resolves the irregular contact between the smoother unit and dissected margin; this supports a coarse mapping exercise without implying a shared volcanic origin."
+      ],
+      "counterevidence": [
+        "Dunes and terrestrial drainage form a different small-scale arrangement from the smoother Martian scarp-like boundary."
+      ]
+    },
+    "ATACAMA-136000-133000": {
+      "statuses": [
+        "unassessable",
+        "supported",
+        "unassessable"
+      ],
+      "observations": [
+        "Floor-like fan surfaces flank the central ridge, but the camera image does not disambiguate a coherent broad floor counterpart to the Taurus-Littrow valley floor.",
+        "An organized north-south ridge is resolved through the central scene.",
+        "Multiple fan/ridge contacts are visible; correspondence to the target valley-floor/massif boundary remains ambiguous."
+      ],
+      "counterevidence": [
+        "Roads, rectilinear industrial surfaces and masked bright areas occur in the context."
+      ]
+    },
+    "MOJAVE-142000-046000": {
+      "statuses": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "observations": [
+        "A broad smooth-looking floor occupies the center and eastern side of the 20 km footprint.",
+        "Dissected ridge and mass-defined margins bound the floor to the west and north across the 80 km context.",
+        "The camera image resolves the irregular floor-to-margin contact. Human field circles, roads and rectilinear areas occupy part of the footprint."
+      ],
+      "counterevidence": [
+        "Irrigated circular fields and roads modify the modern Earth floor; the terrain DEM and image dates differ. The Earth basin is not an impact crater counterpart or a mineral match."
+      ]
+    },
+    "MOROCCO-103000-100000": {
+      "statuses": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "observations": [
+        "A broad, comparatively smooth central unit extends through the local footprint.",
+        "Organized parallel and curved ridge belts border the floor-like unit in the context.",
+        "Distinct smoother and dissected units meet across the footprint and context. Their physical origin cannot be assigned from color."
+      ],
+      "counterevidence": [
+        "The Earth parallel ridge belts and drainage pattern differ from the enclosed crater-rim geometry of Jezero. This supports a coarse mapping exercise, not shared origin."
+      ]
+    },
+    "MOJAVE-136000-040000": {
+      "statuses": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "observations": [
+        "A broad smooth-looking plain occupies the central and eastern local footprint.",
+        "Organized dissected masses and ridge margins occur in the western and northern context.",
+        "The boundary between smoother floor and dissected margin is resolved in the image."
+      ],
+      "counterevidence": [
+        "Human fields and roads modify the Earth footprint. The terrestrial drainage organization differs from the Martian scarp and flow-like boundary."
+      ]
+    },
+    "MOJAVE-070000-163000": {
+      "statuses": [
+        "unassessable",
+        "supported",
+        "unassessable"
+      ],
+      "observations": [
+        "The footprint is dominated by branching valley and ridge terrain; a broad floor comparable to the lunar valley is ambiguous.",
+        "Organized dissected ridges occur through the context.",
+        "Several branching transitions are visible, but their correspondence to the declared broad lunar floor-to-massif transition is ambiguous."
+      ],
+      "counterevidence": [
+        "The Earth valley network is branching and dissected rather than a clearly resolved broad lunar-like floor."
+      ]
+    }
+  },
+  "default_earth_assessment": "If the source coverage gate fails, all Earth requirements are unassessable rather than interpreted from the available fragment. No default positive labels are supplied.",
+  "id": "model-assisted-v4-36-frozen-comparisons",
+  "inspection_record": "All six v4 contact sheets inspected after the 36 IDs were frozen. Roles known; no independent blinding. Only clear and resolvable scenes receive interpretations."
+}

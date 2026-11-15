@@ -1,0 +1,42 @@
+[
+  {
+    "candidate_id": "MOJAVE-142000-046000",
+    "target_id": "jezero",
+    "requested_level": "new_characterization_of_known_analogue",
+    "novelty_decision": "known_analogue_context",
+    "source_urls": [
+      "https://repository.hou.usra.edu/server/api/core/bitstreams/023fd785-e5d5-4dce-a466-6144bbcbb4c8/content",
+      "https://doi.org/10.1029/2019EA000720"
+    ],
+    "reviewed_at": "2026-11-14T05:27:20.923534+00:00",
+    "assessor": "Codex model-assisted literature review, not an independent librarian or geologist",
+    "rationale": "The separately acquired optical observations support the frozen coarse floor/margin mapping rubric. Prior regional analogue studies are documented, so this release adds a reproducible characterization while exact-footprint/task novelty remains unresolved."
+  },
+  {
+    "candidate_id": "MOROCCO-103000-100000",
+    "target_id": "jezero",
+    "requested_level": "new_characterization_of_known_analogue",
+    "novelty_decision": "known_analogue_context",
+    "source_urls": [
+      "https://www.hou.usra.edu/meetings/lifeonmars2019/pdf/5041.pdf"
+    ],
+    "reviewed_at": "2026-11-14T05:27:20.923534+00:00",
+    "assessor": "Codex model-assisted literature review, not an independent librarian or geologist",
+    "rationale": "The separately acquired optical observations support the frozen coarse floor/margin mapping rubric. Prior regional analogue studies are documented, so this release adds a reproducible characterization while exact-footprint/task novelty remains unresolved."
+  },
+  {
+    "candidate_id": "NAMIB-157000-136000",
+    "target_id": "syrtis",
+    "requested_level": "new_characterization_of_known_analogue",
+    "novelty_decision": "known_analogue_context",
+    "source_urls": [
+      "https://thesis.caltech.edu/10953/",
+      "https://davenquinn.com/blog/2020/10/mapboard-gis",
+      "https://www.mme.gov.na/files/publications/0b4_Comms%20GSN%2017%203.%20Lorenz%2C%20Titan-Namibia%2C%202016.pdf",
+      "https://www.eppcgs.org/article/doi/10.26464/epp2022042"
+    ],
+    "reviewed_at": "2026-11-14T05:27:20.923534+00:00",
+    "assessor": "Codex model-assisted literature review, not an independent librarian or geologist",
+    "rationale": "The separately acquired optical observations support the frozen coarse floor/margin mapping rubric. Prior regional analogue studies are documented, so this release adds a reproducible characterization while exact-footprint/task novelty remains unresolved."
+  }
+]

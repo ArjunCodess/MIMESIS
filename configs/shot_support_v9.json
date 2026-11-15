@@ -1,0 +1,24 @@
+{
+  "experiment_id": "shot_support_v9",
+  "claim_level": "exploratory_observation_support_characterization",
+  "body": "Mars",
+  "coordinate_convention": "IAU2000 planetocentric latitude, east longitude in degrees",
+  "projection_radius_m": 3396000,
+  "half_width_m": 40000,
+  "output_spacing_m": 500,
+  "maximum_nearest_shot_m": 1000,
+  "max_time_gap_s": 0.3,
+  "footprint_model": "point sampling only; no shot-footprint averaging or instrumental error model",
+  "interpolation": "bilinear Earth DEM sampling followed by linear TIN; no extrapolation; nearest-point distance capped at 1000 m",
+  "quality_rule": "retain A=0 only where attitude exists; original PEDR shot good/bad bit unavailable in ODE CSV, retain unknown shot quality and label it",
+  "earth_fields": ["namib", "mojave", "atacama"],
+  "earth_source": "Existing NASADEM projected fields at 125 m; centered 80 km support diagnostic, not new independent DEM observations",
+  "targets": [
+    {"id": "prospective-01", "latitude": 17.08833719414728, "longitude": 71.79562793934451},
+    {"id": "prospective-02", "latitude": 6.926660071175803, "longitude": 70.03249181924662},
+    {"id": "prospective-03", "latitude": 2.794149672623606, "longitude": 5.762734100650954},
+    {"id": "prospective-04", "latitude": 2.3499676824828395, "longitude": 2.726136756087241},
+    {"id": "prospective-05", "latitude": 35.47498853481284, "longitude": 8.302160148237443},
+    {"id": "prospective-06", "latitude": 33.759933937485634, "longitude": 70.17773238001442}
+  ]
+}

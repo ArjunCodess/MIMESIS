@@ -1,0 +1,740 @@
+{
+  "id": "mimesis-global-eligibility-v9",
+  "frozen_at": "2026-11-14T18:13:40.342535+00:00",
+  "scope": "Exploratory Earth-only eligibility inventory. All V8 target ranks were inspected; this is not confirmatory and computes no target results.",
+  "frame_sha256": "5a5796e1ed7457e67bcf7da5d47cc0154c07d2a010bf6d88dfd71c8d590bb73e",
+  "block_ids": [
+    "GLOBAL-0001",
+    "GLOBAL-0002",
+    "GLOBAL-0003",
+    "GLOBAL-0004",
+    "GLOBAL-0005",
+    "GLOBAL-0006",
+    "GLOBAL-0007",
+    "GLOBAL-0008",
+    "GLOBAL-0009",
+    "GLOBAL-0010",
+    "GLOBAL-0011",
+    "GLOBAL-0012",
+    "GLOBAL-0013",
+    "GLOBAL-0014",
+    "GLOBAL-0015",
+    "GLOBAL-0016",
+    "GLOBAL-0017",
+    "GLOBAL-0018",
+    "GLOBAL-0019",
+    "GLOBAL-0020",
+    "GLOBAL-0021",
+    "GLOBAL-0022",
+    "GLOBAL-0023",
+    "GLOBAL-0024",
+    "GLOBAL-0025",
+    "GLOBAL-0026",
+    "GLOBAL-0027",
+    "GLOBAL-0028",
+    "GLOBAL-0029",
+    "GLOBAL-0030",
+    "GLOBAL-0031",
+    "GLOBAL-0032",
+    "GLOBAL-0033",
+    "GLOBAL-0034",
+    "GLOBAL-0035",
+    "GLOBAL-0036",
+    "GLOBAL-0037",
+    "GLOBAL-0038",
+    "GLOBAL-0039",
+    "GLOBAL-0040",
+    "GLOBAL-0041",
+    "GLOBAL-0042",
+    "GLOBAL-0043",
+    "GLOBAL-0044",
+    "GLOBAL-0045",
+    "GLOBAL-0046",
+    "GLOBAL-0047",
+    "GLOBAL-0048",
+    "GLOBAL-0049",
+    "GLOBAL-0050",
+    "GLOBAL-0051",
+    "GLOBAL-0052",
+    "GLOBAL-0053",
+    "GLOBAL-0054",
+    "GLOBAL-0055",
+    "GLOBAL-0056",
+    "GLOBAL-0057",
+    "GLOBAL-0058",
+    "GLOBAL-0059",
+    "GLOBAL-0060",
+    "GLOBAL-0061",
+    "GLOBAL-0062",
+    "GLOBAL-0063",
+    "GLOBAL-0064",
+    "GLOBAL-0065",
+    "GLOBAL-0066",
+    "GLOBAL-0067",
+    "GLOBAL-0068",
+    "GLOBAL-0069",
+    "GLOBAL-0070",
+    "GLOBAL-0071",
+    "GLOBAL-0072",
+    "GLOBAL-0073",
+    "GLOBAL-0074",
+    "GLOBAL-0075",
+    "GLOBAL-0076",
+    "GLOBAL-0077",
+    "GLOBAL-0078",
+    "GLOBAL-0079",
+    "GLOBAL-0080",
+    "GLOBAL-0081",
+    "GLOBAL-0082",
+    "GLOBAL-0083",
+    "GLOBAL-0084",
+    "GLOBAL-0085",
+    "GLOBAL-0086",
+    "GLOBAL-0087",
+    "GLOBAL-0088",
+    "GLOBAL-0089",
+    "GLOBAL-0090",
+    "GLOBAL-0091",
+    "GLOBAL-0092",
+    "GLOBAL-0093",
+    "GLOBAL-0094",
+    "GLOBAL-0095",
+    "GLOBAL-0096",
+    "GLOBAL-0097",
+    "GLOBAL-0098",
+    "GLOBAL-0099",
+    "GLOBAL-0100"
+  ],
+  "context_m": 80000,
+  "local_m": 20000,
+  "spacing_m": 125,
+  "padding_m": 2000,
+  "buffer_m": 500,
+  "terrain_valid_minimum": 0.95,
+  "natural_valid_minimum": 0.95,
+  "hls_valid_minimum": 0.95,
+  "worldcover": {
+    "year": 2021,
+    "version": "v200",
+    "modified_classes": [
+      40,
+      50,
+      80
+    ],
+    "known_classes": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      95,
+      100
+    ],
+    "aggregation": "Native per-category max, including native unknown, onto125m cells. Mapped crop/builtup/permanent-water buffered500m plus conservative cell-footprint allowance spacing*sqrt(2). Unknown is invalid, never natural.",
+    "source_revision": "masked_support_v2"
+  },
+  "hls": {
+    "short_name": "HLSL30",
+    "version": "2.0",
+    "start": "2025-06-01T00:00:00Z",
+    "end": "2025-12-31T23:59:59Z",
+    "season_policy": "Same fixed June-December2025 calendar window for every block, without hemisphere-specific tuning; it does not imply equivalent phenological season. All available observations, sorted date then sceneID; OR of cells with native clear Fmask and validB02/B03/B04. No scene selection by terrain rank.",
+    "invalid_bits": 63,
+    "fill": 255,
+    "aggregation": "Any invalid native contributor invalidates that observation cell; native missing footprint invalid. Clear coverage OR across qualifying scenes.",
+    "acquisition_order": "Breadth-first across MGRS tiles, then per-tile lowest catalogue cloud fraction, date, stable sceneID. This affects transfer priority only; all acquired qualifying scenes remain in fixed-date clear coverage OR. Metadata does not establish pixel-level clear coverage.",
+    "selected_scenes_per_mgrs_tile": 3,
+    "selection_policy": "For each catalogue MGRStile intersecting any frozenpaddedcontext, select at most3scenes by ascending metadata cloudpercent, acquisitiondatetime,stableID. Freeze this metadata-only subset before corrected V9 natural masks or new target results. Retain unselected catalogue records. All selected qualifying native clear pixels combine by OR; never add scenes based on candidate/target outcomes."
+  },
+  "osm": {
+    "available_extracts": [
+      "chile",
+      "namibia",
+      "morocco",
+      "qinghai"
+    ],
+    "index_url": "https://download.geofabrik.de/index-v1.json",
+    "landuse": [
+      "farmland",
+      "farmyard",
+      "industrial",
+      "quarry",
+      "construction",
+      "landfill"
+    ],
+    "source_rule": "Country/province extracts only, all available intersecting jurisdictions combined. Exact Geofabrik distribution polygon must cover padded field before source coverage passes. OSM absence never proves physical absence. Missing/incomplete ways/areas invalidate source completeness."
+  },
+  "sensitivity": [],
+  "restrictions": [
+    "No changed center, replacement, extra region, target comparison or rank computation.",
+    "95percent primary terrain and natural-land thresholds retained; no90/85sensitivity introduced.",
+    "WorldCover2021 and OSM2026 do not establish modification at NASADEM2000 epoch.",
+    "Mapping/source coverage does not establish OSM real-world completeness or independently verified natural land.",
+    "Original Figshare7504448/21789074 archives and all V3-V8 records remain unchanged."
+  ],
+  "revision": 2,
+  "amendment": {
+    "revision": 2,
+    "amended_at": "2026-11-14T18:40:42.606915+00:00",
+    "preliminary_report_hash": "d153d5a85198547bd729e0b6e6eae0dbd5997e180863cc4b12f70b12441f1730",
+    "preliminary_summary": {
+      "frozen_contexts": 100,
+      "measured_contexts": 100,
+      "eligible_contexts": 0,
+      "status_counts": {
+        "excluded_observed_natural_land_upper_bound": 49,
+        "unknown_missing_required_layers": 33,
+        "excluded_terrain": 18
+      },
+      "layer_status_counts": {
+        "terrain": {
+          "measured_pass": 89,
+          "measured_insufficient_valid_terrain": 10,
+          "missing_source_tiles": 1
+        },
+        "worldcover": {
+          "measured_pass": 35,
+          "measured_insufficient_natural_land": 65
+        },
+        "osm": {
+          "measured_extract_coverage_complete": 5,
+          "missing_or_incomplete_jurisdiction_coverage": 95
+        },
+        "hls": {
+          "missing_observations": 98,
+          "measured_insufficient_clear_coverage": 2
+        }
+      },
+      "strata": {
+        "BWh": {
+          "excluded_observed_natural_land_upper_bound": 18,
+          "unknown_missing_required_layers": 21,
+          "excluded_terrain": 11
+        },
+        "BWk": {
+          "unknown_missing_required_layers": 12,
+          "excluded_observed_natural_land_upper_bound": 31,
+          "excluded_terrain": 7
+        }
+      },
+      "per_region_counts": {
+        "GLOBAL-0001": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0002": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0003": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0004": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0005": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0006": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0007": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0008": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0009": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0010": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0011": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0012": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0013": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0014": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0015": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0016": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0017": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0018": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0019": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0020": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0021": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0022": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0023": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0024": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0025": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0026": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0027": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0028": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0029": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0030": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0031": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0032": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0033": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0034": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0035": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0036": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0037": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0038": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0039": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0040": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0041": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0042": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0043": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0044": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0045": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0046": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0047": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0048": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0049": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0050": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0051": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0052": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0053": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0054": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0055": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0056": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0057": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0058": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0059": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0060": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0061": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0062": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0063": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0064": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0065": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0066": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0067": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0068": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0069": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0070": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0071": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0072": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0073": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0074": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0075": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0076": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0077": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0078": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0079": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0080": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0081": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0082": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0083": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0084": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0085": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0086": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0087": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0088": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0089": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0090": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0091": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        },
+        "GLOBAL-0092": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0093": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0094": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_terrain"
+        },
+        "GLOBAL-0095": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0096": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0097": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0098": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0099": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "excluded_observed_natural_land_upper_bound"
+        },
+        "GLOBAL-0100": {
+          "context_count": 1,
+          "eligible": 0,
+          "status": "unknown_missing_required_layers"
+        }
+      }
+    },
+    "preliminary_config": "data/raw/earth/global_eligibility_v9/preliminary_config.json",
+    "preliminary_report": "artifacts/reports/global_eligibility_v9.preliminary.json",
+    "preliminary_cache": "data/processed/global_eligibility_v9/preliminary_raw_support",
+    "prior_exposure": "All V8 target ranks and the entire100-block V9 raw125m-source/upper-bound inventory were inspected. The metadata-only3scene/tile HLS subset was frozen before masked500/1000/eroded outcomes. This amendment is exploratory, not a new preregistration.",
+    "change": "Keep exact100centers/geometry,500mbuffer and95percent thresholds. Add2km numericalpadding through only additional WorldCover geographic strips; apply mapped natural/unknown masks before Gaussian smoothing, record actual masked500/1000/eroded features and require sufficient95percent post-mask analysis support. All original82kmclips preserved."
+  },
+  "masked_terrain": {
+    "rule": "Mask native-valid125m staging elevations beforeGaussian smoothing;500/1000m GaussianFWHM,validweight>.999,centered bilinearresampling ontoexact80kmcontext/20kmlocal. Require95percent local/contextvalidity forbothprimarytiers and measurableeroded500msensitivity, using unchangedV5/V6 implementation.",
+    "numerical_padding_m": 2000,
+    "features": "src/mimesis/terrain.py::features",
+    "mask_smoothing": "src/mimesis/terrain.py::smooth_grid",
+    "no_target_computation": true
+  }
+}

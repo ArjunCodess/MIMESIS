@@ -1,0 +1,866 @@
+[
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KDP.2025359T143108.v2.0/HLS.L30.T19KDP.2025359T143108.v2.0.B02.tiff",
+    "bytes": 9633209,
+    "sha256": "4b56a3e67a07326cdbd69bfc455f5cbeff688b776bb0af8934491c8ffcef3e2c",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KDP.2025359T143108.v2.0/HLS.L30.T19KDP.2025359T143108.v2.0.B03.tiff",
+    "bytes": 9867301,
+    "sha256": "0b27b61581758b7cc653cc1d8b6355335efe09fb0d783459d99d6deb49748a21",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KDP.2025359T143108.v2.0/HLS.L30.T19KDP.2025359T143108.v2.0.B04.tiff",
+    "bytes": 10078403,
+    "sha256": "8011e47a24186aa812d6a4fa60676b70359c52c78fd5ffbebebb96653d7dfa4a",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KDP.2025359T143108.v2.0/HLS.L30.T19KDP.2025359T143108.v2.0.Fmask.tiff",
+    "bytes": 767404,
+    "sha256": "b2c9567df42e914626bbe9fa2416f9abebc7ef1df380438422fee3e90246f595",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KDP.2025359T143108.v2.0/HLS.L30.T19KDP.2025359T143108.v2.0_stac.json",
+    "bytes": 6709,
+    "sha256": "91596ebd3401edc9ae67c3e15662c0edaa8cc5b2b52dc984c189ee58a3c09b08",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KDQ.2025359T143108.v2.0/HLS.L30.T19KDQ.2025359T143108.v2.0.B02.tiff",
+    "bytes": 4449731,
+    "sha256": "1d43768f702aa5d05c821afca164a6658f03f6ac4c64fdba9b039b65b3c8dcf1",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KDQ.2025359T143108.v2.0/HLS.L30.T19KDQ.2025359T143108.v2.0.B03.tiff",
+    "bytes": 4568391,
+    "sha256": "8d92e0b9e011e51856d7e904c0287501f5224e20fe3152b4e429f986423d1a82",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KDQ.2025359T143108.v2.0/HLS.L30.T19KDQ.2025359T143108.v2.0.B04.tiff",
+    "bytes": 4669909,
+    "sha256": "f7d8412e4ed42574bc9df3a1de75b94297bc4e570319a14da75a1050a18b1670",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KDQ.2025359T143108.v2.0/HLS.L30.T19KDQ.2025359T143108.v2.0.Fmask.tiff",
+    "bytes": 260152,
+    "sha256": "7a1c85cbbd615369cbbef65ee5ed70389332b3051c5f94fe356a76da6d2d55e1",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KDQ.2025359T143108.v2.0/HLS.L30.T19KDQ.2025359T143108.v2.0_stac.json",
+    "bytes": 6718,
+    "sha256": "3c66b1da8401554fa335e5f5c068f0a9e68b8269ba5bbd6f9d68bf53fe461391",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KEP.2025359T143108.v2.0/HLS.L30.T19KEP.2025359T143108.v2.0.B02.tiff",
+    "bytes": 23781315,
+    "sha256": "94141f00557521f62f5a67b5f21d1774783d3dc8d424252e3a5afa0897eb9bce",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KEP.2025359T143108.v2.0/HLS.L30.T19KEP.2025359T143108.v2.0.B03.tiff",
+    "bytes": 24492727,
+    "sha256": "fee4d295ac2765b4ccfeb96b818154470d29ec4e6a0eae2d4d5be8011eda20b3",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KEP.2025359T143108.v2.0/HLS.L30.T19KEP.2025359T143108.v2.0.B04.tiff",
+    "bytes": 25216674,
+    "sha256": "1ef3f22a2e9c109cf7faf98f9127670765a328348865a7d205e6caa414890b32",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KEP.2025359T143108.v2.0/HLS.L30.T19KEP.2025359T143108.v2.0.Fmask.tiff",
+    "bytes": 1401491,
+    "sha256": "8e3cfd4c054dfb3899188a825b00edf3d6015458c768d8f8721f47a8a795d8a2",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KEP.2025359T143108.v2.0/HLS.L30.T19KEP.2025359T143108.v2.0_stac.json",
+    "bytes": 6718,
+    "sha256": "f0298aaa42336bd79c7eae4064bd92153327c560509a135d2835cdedfd68b585",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KEQ.2025359T143108.v2.0.B02.tiff",
+    "bytes": 23452585,
+    "sha256": "7f86c00f35cad95f0cf1139532b3ca30fad9b607c5d21f396f937a9146681506",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KEQ.2025359T143108.v2.0.B03.tiff",
+    "bytes": 24171804,
+    "sha256": "be7f50a009b410e8bd2b935710c01cb8916361a7cc21c0898c5829fa533dddab",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KEQ.2025359T143108.v2.0.B04.tiff",
+    "bytes": 24903241,
+    "sha256": "7eeb311e7f1b8d2b60037d7f91f52dd1600f36c9f2d32f0fdd59dbda524c7b89",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KEQ.2025359T143108.v2.0.B05.tiff",
+    "bytes": 25181648,
+    "sha256": "36a57c10f1b9ad21a67d8c6fad4af386c4d4d9f0227b2d6ed3f017c43dd21118",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KEQ.2025359T143108.v2.0.Fmask.tiff",
+    "bytes": 810107,
+    "sha256": "06255cdfc25cdd6f6e860656264b64de06cefac2cf83665b875d07cebbd6d3cd",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T19KEQ.2025359T143108.v2.0_stac.json",
+    "bytes": 6743,
+    "sha256": "ed96f4a4d56ce02b6fc5d238d7160986bfa057e88942e5c85df5276001c4c3bf",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JWM.2025349T085748.v2.0/HLS.L30.T33JWM.2025349T085748.v2.0.B02.tiff",
+    "bytes": 11354264,
+    "sha256": "42db73217061e6e9aeaebd0eb4a0beef6b28c53ad3219595e0f8d8b388c0c1ed",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JWM.2025349T085748.v2.0/HLS.L30.T33JWM.2025349T085748.v2.0.B03.tiff",
+    "bytes": 12366449,
+    "sha256": "d4f64d5e343b183d8e33a938b08d97c925bc74ca1193dec3eed273dea5c34737",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JWM.2025349T085748.v2.0/HLS.L30.T33JWM.2025349T085748.v2.0.B04.tiff",
+    "bytes": 13131769,
+    "sha256": "46e11b4369bbb6440d17894c88476d0d18e0c7d21dbb0fc926b24c96c3fa8989",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JWM.2025349T085748.v2.0/HLS.L30.T33JWM.2025349T085748.v2.0.Fmask.tiff",
+    "bytes": 190418,
+    "sha256": "17f1f1f734ab9aa5ab97869fc5c6da2b4508b929656570d32632ed6e9c70718c",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JWM.2025349T085748.v2.0/HLS.L30.T33JWM.2025349T085748.v2.0_stac.json",
+    "bytes": 6707,
+    "sha256": "2334e8ada709f4fe4ca9c072632effc7f82dc5d9cf5c7bc94f423d1183dfd5b0",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JWN.2025349T085748.v2.0/HLS.L30.T33JWN.2025349T085748.v2.0.B02.tiff",
+    "bytes": 15568689,
+    "sha256": "6b909cad5c16e4494c3a1039e249a2373fb2b810c1da64a1b6f389901c5e056c",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JWN.2025349T085748.v2.0/HLS.L30.T33JWN.2025349T085748.v2.0.B03.tiff",
+    "bytes": 17028238,
+    "sha256": "0f0b6481921a2f091a085e6ffe50e63c7bace501db904c16c8719db469cc90de",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JWN.2025349T085748.v2.0/HLS.L30.T33JWN.2025349T085748.v2.0.B04.tiff",
+    "bytes": 18340951,
+    "sha256": "cefd2bc7ed25cf7a8eb5cdec967c532643239a9c61ca22f5d113cd2b3bd02acf",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JWN.2025349T085748.v2.0/HLS.L30.T33JWN.2025349T085748.v2.0.Fmask.tiff",
+    "bytes": 275160,
+    "sha256": "9b3b5e30553eb45a0f56900e4d52d5d0b9a6524cc7c0acc816bce0ef50f55d28",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JWN.2025349T085748.v2.0/HLS.L30.T33JWN.2025349T085748.v2.0_stac.json",
+    "bytes": 6710,
+    "sha256": "988bf8b7f68fd90c74fc53fc7cf90c05ad75ee34f49500a257a7394318a5d914",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JXM.2025358T085137.v2.0/HLS.L30.T33JXM.2025358T085137.v2.0.B02.tiff",
+    "bytes": 21713463,
+    "sha256": "2edcf049e22c32fab14be7d58af9a3e4f30e399027c8b647c67faea54e313e6c",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JXM.2025358T085137.v2.0/HLS.L30.T33JXM.2025358T085137.v2.0.B03.tiff",
+    "bytes": 23069055,
+    "sha256": "564ba83248f26df38e2eb1eb69b0681bfe361e500906a5055efd8f13ef610d3c",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JXM.2025358T085137.v2.0/HLS.L30.T33JXM.2025358T085137.v2.0.B04.tiff",
+    "bytes": 24451447,
+    "sha256": "14fd779b3be7fab4a13ed729e83d789fb006392285247b4a1b62b722c156484a",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JXM.2025358T085137.v2.0/HLS.L30.T33JXM.2025358T085137.v2.0.Fmask.tiff",
+    "bytes": 455901,
+    "sha256": "4f05446af30878b9294d64fec54f2ed7c33ca8f68ac6ab40aa30050ffac6d015",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JXM.2025358T085137.v2.0/HLS.L30.T33JXM.2025358T085137.v2.0_stac.json",
+    "bytes": 6736,
+    "sha256": "18faca37ae943252a693ba5e1afdb46f0848d349b559be759e9975cca93e7343",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JXN.2025342T085138.v2.0/HLS.L30.T33JXN.2025342T085138.v2.0.B02.tiff",
+    "bytes": 22619393,
+    "sha256": "445d57e5675647f254809d0db6501f821c0adabe5d545f08f6bec3b1f61adf7f",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JXN.2025342T085138.v2.0/HLS.L30.T33JXN.2025342T085138.v2.0.B03.tiff",
+    "bytes": 23964261,
+    "sha256": "1b3420424a9f3e187978175a34b82ec8f7ef6d40d6cfc276a2b89a144c247c4d",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JXN.2025342T085138.v2.0/HLS.L30.T33JXN.2025342T085138.v2.0.B04.tiff",
+    "bytes": 25266100,
+    "sha256": "b74153d1588a0b868d6eacc7d6d130a814405e22d7f468ebf8537e4ce493620b",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JXN.2025342T085138.v2.0/HLS.L30.T33JXN.2025342T085138.v2.0.Fmask.tiff",
+    "bytes": 942731,
+    "sha256": "fa20c1c0a8dfcc8d52df44de458aab25da2e29f5c036251c1d815269a1877dc8",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33JXN.2025342T085138.v2.0/HLS.L30.T33JXN.2025342T085138.v2.0_stac.json",
+    "bytes": 6707,
+    "sha256": "fe0af5d7a57ff10bc1732cce75b363a6bef14d9a460ad09b672cc4c53d7ca06a",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33KWP.2025349T085724.v2.0/HLS.L30.T33KWP.2025349T085724.v2.0.B02.tiff",
+    "bytes": 20198504,
+    "sha256": "80574fdadd538d29d9e0c6e59292508f3c67b2d19934f25d05dae07e3e15ba1e",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33KWP.2025349T085724.v2.0/HLS.L30.T33KWP.2025349T085724.v2.0.B03.tiff",
+    "bytes": 21607320,
+    "sha256": "0870a6df9a144d510365a6d100efbffdc223823dc5feca13480838c405843e22",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33KWP.2025349T085724.v2.0/HLS.L30.T33KWP.2025349T085724.v2.0.B04.tiff",
+    "bytes": 22911758,
+    "sha256": "d3e2692dbff305f874d41b2d985f24a3753460d5a14f920e3e199925c0d6a2d3",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33KWP.2025349T085724.v2.0/HLS.L30.T33KWP.2025349T085724.v2.0.Fmask.tiff",
+    "bytes": 447824,
+    "sha256": "0ef39dad5e5d80ddada1c27bfbe8f2631e5d130565f01a972f862f749f0e9e00",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33KWP.2025349T085724.v2.0/HLS.L30.T33KWP.2025349T085724.v2.0_stac.json",
+    "bytes": 6736,
+    "sha256": "8de3a37b4b514beb93ac3b5575c8963ba7712c83953a7f88bcc73f13455ebd5e",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33KXP.2025358T085113.v2.0/HLS.L30.T33KXP.2025358T085113.v2.0.B02.tiff",
+    "bytes": 24100184,
+    "sha256": "a39f1761e1598f0ae3bde733f4cd0cd00451b410a8336698fc0d992470bd07cc",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33KXP.2025358T085113.v2.0/HLS.L30.T33KXP.2025358T085113.v2.0.B03.tiff",
+    "bytes": 25209477,
+    "sha256": "b63dcf9e86b51d9a1fb1cd29e7ad08deccc6cce0fecbece15b8b6bc8e33ac565",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33KXP.2025358T085113.v2.0/HLS.L30.T33KXP.2025358T085113.v2.0.B04.tiff",
+    "bytes": 26222839,
+    "sha256": "3f5416070b78584848be75ac048cac7767e0c80fdbab6dea390ea558b3f110d4",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33KXP.2025358T085113.v2.0/HLS.L30.T33KXP.2025358T085113.v2.0.Fmask.tiff",
+    "bytes": 1749453,
+    "sha256": "4939aeb5186ba910ff315012420f572838d839b4fce0307fb59cf91377a422f1",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/hls/HLS.L30.T33KXP.2025358T085113.v2.0/HLS.L30.T33KXP.2025358T085113.v2.0_stac.json",
+    "bytes": 6711,
+    "sha256": "18f11d1f9b0eb6bfbbf28f817c61ae175ab48323c7b7bbdc45810dd1e8fc508d",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s24w069/s24w069.hgt",
+    "bytes": 25934402,
+    "sha256": "1100aac80491111946579a05652edbcba11e1fcb6433e1f762d86c2f5193e14e",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s24w069/s24w069.num",
+    "bytes": 12967201,
+    "sha256": "94cf9013ca13b60142bd576f6a29d0bfdb893d5aeba25944900b908c61a068e4",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s24w069/s24w069.swb",
+    "bytes": 12967201,
+    "sha256": "4cbf8de81a5d581c95864b2339d1b68e57e138cdf6d4b3c1fe4a8f06e25be19e",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s24w069.cmr.xml",
+    "bytes": 5180,
+    "sha256": "ecfa5dcc4209b462298f2ed75d27909a9919167db4442cb8637f6718cfb1f19a",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s24w070/acquisition.json",
+    "bytes": 359,
+    "sha256": "f6b1225a5656e1e061980eca710efe8eab0b7995c862cf22ee0f6c15778da3d8",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s24w070/NASADEM_HGT_s24w070.zip",
+    "bytes": 11893843,
+    "sha256": "99cbd2c8bdb320e7d68e8022e0fbdbfad2b12e05680c9ab18c43c8efa975a12e",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s24w070/s24w070.hgt",
+    "bytes": 25934402,
+    "sha256": "dac7facd9e16d2edcb34133b6489e3e13fc43cc7699ceba69f6c93b5ffcdcef6",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s24w070/s24w070.num",
+    "bytes": 12967201,
+    "sha256": "19a535fc159807c2a0d22542233a5890b80b36bb9f65be580ebeb778fa6b5010",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s24w070/s24w070.swb",
+    "bytes": 12967201,
+    "sha256": "2d45fb6ba27adae975d3e359d4f41e3953aa516a71d1c398ffd92f78419eb3b3",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25e015/acquisition.json",
+    "bytes": 359,
+    "sha256": "7ebaeba280ed00119f20ebe38cc50b4fdf54bcb6e841362eaf723d26a258bf2a",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25e015/NASADEM_HGT_s25e015.zip",
+    "bytes": 13846299,
+    "sha256": "6954b2cb9b7b951717812dfe3dd56dc462d171a68326a804be649fa7480dbfd5",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25e015/s25e015.hgt",
+    "bytes": 25934402,
+    "sha256": "20e77a508339c157fa0f9497be0743470328de80962a8d3a8eff2f8e6e2c52b8",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25e015/s25e015.num",
+    "bytes": 12967201,
+    "sha256": "38322361aec93250801cb434b83e57d0bb612aa28d940fd95ecf3dc75f5cf038",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25e015/s25e015.swb",
+    "bytes": 12967201,
+    "sha256": "e47549cc72469c03a4352052cabef673610c657781aa4f63c83d5c52748f4ef3",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25e016/acquisition.json",
+    "bytes": 359,
+    "sha256": "c7e5afa0914d45048d3a8ff2670fb9611afcd704b1bc11eff223defb90e6a5fe",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25e016/NASADEM_HGT_s25e016.zip",
+    "bytes": 10518053,
+    "sha256": "f338ed95d7f024c26a9bd9cf64fa4d97180a16aaa4a8d65af1512d6c4749f52a",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25e016/s25e016.hgt",
+    "bytes": 25934402,
+    "sha256": "71335b6e591d245453a1e57479ebd7c06aee15a3eddd22278f0c41e8379fd87f",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25e016/s25e016.num",
+    "bytes": 12967201,
+    "sha256": "f31eab510fee9c606d1ebf9b944f4dc91e465a57891ba897abad2ba013332cb3",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25e016/s25e016.swb",
+    "bytes": 12967201,
+    "sha256": "e47549cc72469c03a4352052cabef673610c657781aa4f63c83d5c52748f4ef3",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25w069/acquisition.json",
+    "bytes": 359,
+    "sha256": "bbe85ac37bd69e39482953560ec92a65aecfdde6a6d1b1f33f0acbdd3eb4356d",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25w069/NASADEM_HGT_s25w069.zip",
+    "bytes": 13837115,
+    "sha256": "0bf7b325fd309c98c3e89a43137f940d95878e20e8a7f5026f10a4632898ee69",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25w069/s25w069.hgt",
+    "bytes": 25934402,
+    "sha256": "f1ec048c7ed55fe1801043b94486f4711026de1b068f178b79deb5bd870f8f58",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25w069/s25w069.num",
+    "bytes": 12967201,
+    "sha256": "b359bc1116e74fb5bf65ab2ab7d22cbef5618141a552f8d572675af085999ff0",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25w069/s25w069.swb",
+    "bytes": 12967201,
+    "sha256": "8eaa2196f307f909a164b5b87df7e29dc0813780a2abd945068b4ff5a2a06c81",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25w070/acquisition.json",
+    "bytes": 359,
+    "sha256": "7ff6f7604c2511bd9d6d97143db09b421872ccebe8791ff944cc5050d55f09da",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25w070/NASADEM_HGT_s25w070.zip",
+    "bytes": 12390568,
+    "sha256": "900ad34ea8fd8e72afae599e236b39d5bae2d74e2b4a80980106fa3cd90a1244",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25w070/s25w070.hgt",
+    "bytes": 25934402,
+    "sha256": "23c81aeedf2bdb8e537a28a002722ddbe377da698bad1f372e61d1b12b81ff27",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25w070/s25w070.num",
+    "bytes": 12967201,
+    "sha256": "e0524a7bf07c54f947648cf320009161156834fe7e4636c7af55efd6e89d280f",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s25w070/s25w070.swb",
+    "bytes": 12967201,
+    "sha256": "a5566df5920e147ae1f50a45ceca1f0b86333b4cc9c62dcfedd65b7a13a9036f",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s26e015/acquisition.json",
+    "bytes": 359,
+    "sha256": "be5bba11c8503905b9ba56496a0917bb7d344314f8f190a38c5ff41a93c3169a",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s26e015/NASADEM_HGT_s26e015.zip",
+    "bytes": 14080467,
+    "sha256": "7a958951d061f2075d798cf65c2db5162901af4733483fcc05f8c19d7ee05c80",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s26e015/s26e015.hgt",
+    "bytes": 25934402,
+    "sha256": "5ebc0e03f4d28a7d732e274e1d96905fec2cf74b288341d9b8d0501842b68c6b",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s26e015/s26e015.num",
+    "bytes": 12967201,
+    "sha256": "78e1c176b340063d32127a1b0c783e4e628b74e6b22c9639581af7bf6ab9aa81",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s26e015/s26e015.swb",
+    "bytes": 12967201,
+    "sha256": "e47549cc72469c03a4352052cabef673610c657781aa4f63c83d5c52748f4ef3",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s26e016/acquisition.json",
+    "bytes": 359,
+    "sha256": "a5fb28820fd78aa72a1009ad0cbffcc5045065e39aaa7b79697111576051e523",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s26e016/NASADEM_HGT_s26e016.zip",
+    "bytes": 11670507,
+    "sha256": "889ed5c0e9b10c19c2b1ae232196ae7c6917c61dc3ca5f9922742c1d0fe8c526",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s26e016/s26e016.hgt",
+    "bytes": 25934402,
+    "sha256": "6dd1649da3be63ccf08a39498c3962bdf8d3d25463c4321fdf69e619be9ae880",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s26e016/s26e016.num",
+    "bytes": 12967201,
+    "sha256": "0b77cc3283647e4814ff3d89526fbfcfcd0884154c1811edff4410017b6c840a",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/earth/nasadem/NASADEM_HGT_s26e016/s26e016.swb",
+    "bytes": 12967201,
+    "sha256": "e47549cc72469c03a4352052cabef673610c657781aa4f63c83d5c52748f4ef3",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/100-365.tile",
+    "bytes": 113408,
+    "sha256": "f5e186406af2c91ad422d2c1eb157d03e0c0a96694b9a5b691549abcb9b3d9d1",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/100-366.tile",
+    "bytes": 96989,
+    "sha256": "838e32197e6dfb588ead76a4317f6bee749575aac90ece9580ea9dbfd6526424",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/100-367.tile",
+    "bytes": 121483,
+    "sha256": "a97e7fc6d324472b0220f079d005d27a473957b4450943b3e5694fab0a9330ee",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/101-365.tile",
+    "bytes": 112867,
+    "sha256": "231b5885750fb5dc23c393da9b9bf34dc6e70475e2a940b2f4b650cb75a82808",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/101-366.tile",
+    "bytes": 89181,
+    "sha256": "2e2a6fb57d460ca5517d7a9abf055623ef96d8f80dea1827ab8fadf852a4cdf0",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/101-367.tile",
+    "bytes": 116946,
+    "sha256": "cbd240b7f119f2376f383a972ff0a986d5e3f9626e78f5d670e38c375116d658",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/102-365.tile",
+    "bytes": 121244,
+    "sha256": "6de3887197e8d8c14bc54924fa04478d7c5a0987dcde6108b280235d7e0b8279",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/102-366.tile",
+    "bytes": 108903,
+    "sha256": "069d8bb7bbd07107e4c504b2d43f6b2848af5908d2b943e3bd6c744e77ea2c31",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/102-367.tile",
+    "bytes": 114392,
+    "sha256": "f88eb4593bfb2dcf2e67fb81af6ec8d580ecf05bb6f0e28b853d6970f498bd61",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/108-378.tile",
+    "bytes": 101201,
+    "sha256": "f41667e83458e1a13ec83136f511163117e26717a9a0ebcd69802a24c0e0b651",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/108-379.tile",
+    "bytes": 107687,
+    "sha256": "568a8547f9f24504efabe8171369879fe0e1627021cbebf7148fa7cd19139f96",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/108-380.tile",
+    "bytes": 103793,
+    "sha256": "bc69511c6381d9428c5bc5f4da827cc4a1eaec113be91952284f1ce7dfe0cc74",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/109-378.tile",
+    "bytes": 102614,
+    "sha256": "1ea75cf0d3dcc71e19d16b1386f87a3d3f71cd4dbe4502cc9211d80451eebb6b",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/109-379.tile",
+    "bytes": 104687,
+    "sha256": "5a10a3e50d16385a017054a0792dc088fed6b9b9ae04b7893e4ac6691473e1f0",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/109-380.tile",
+    "bytes": 104363,
+    "sha256": "0581b0ed4264985eaa1df02b46b9904ad540a3d04b81ec9e4eb1c3454f14adc2",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/110-378.tile",
+    "bytes": 99587,
+    "sha256": "f6f4c0af23181bf21d247617bcd89d3366d3ca87e21afc503059804ad65bf9c0",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/110-379.tile",
+    "bytes": 90844,
+    "sha256": "5a174e95a0563e1769ea5c9325ad085405b4ec954ecd1fe5d8f487e59ff67cb5",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/110-380.tile",
+    "bytes": 113874,
+    "sha256": "e0d0990bd1fa753bbbe6bea45632403a84ba862f1e508f1fc381625e27c350b5",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/115-353.tile",
+    "bytes": 73632,
+    "sha256": "bb028c2a0d5688b2ff8cb04a6f19d428b18f1b47423ae7d5d44d1e810804646c",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/115-354.tile",
+    "bytes": 72360,
+    "sha256": "1fddf74849d086c14a591a6008d8d54a00a72445bbc1d0c6ec072777c5facbd1",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/115-355.tile",
+    "bytes": 68072,
+    "sha256": "a0d71078e5a13750381aee31215aad127e3c30dd0d970b910af940e5cd6169fc",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/116-353.tile",
+    "bytes": 68248,
+    "sha256": "701745ba1b86c0079b81623d74ef64aa1c2aa245a7c2bc94ffc125033e4be8b8",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/116-354.tile",
+    "bytes": 71684,
+    "sha256": "b529edfa3a07362880bd779319b83ffe8e0eb1dede0e581e6e5457bda1427884",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/116-355.tile",
+    "bytes": 78703,
+    "sha256": "b3900e81197fa597a3512c2883f3b55453fa04f963fd19faba36c8f2a0b2bf77",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/117-353.tile",
+    "bytes": 81454,
+    "sha256": "435319433e987aa0ac21c345940d042f2592322760fe4a2757e0e13014e5e188",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/117-354.tile",
+    "bytes": 85326,
+    "sha256": "d21f66f38b00b02ce4b51d50f5b47e27c40538678571e8ebc823a927d08c713d",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/117-355.tile",
+    "bytes": 68769,
+    "sha256": "30e491f3bf28a5990ada94bd33bdfb2cc45b515755823f60c2a91c8fb76863f6",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/95-361.rejected",
+    "bytes": 109626,
+    "sha256": "ec8d26f297c65ab04c7bc297f9a4d1154c9140554c51a89d45cf99c70ed88607",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/95-362.rejected",
+    "bytes": 107016,
+    "sha256": "2eea9dc8321812ab2ba5676461263777015701438f6df9c491ba9384b6e4be55",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/95-363.rejected",
+    "bytes": 89083,
+    "sha256": "8af6f6ffd72d4a978e640ffcebb251bb8d5b8547dfe910f1c68e69188bc8cb52",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/96-361.rejected",
+    "bytes": 99286,
+    "sha256": "a3e1392a568d5f8d6a53b0749a75d09b2f3e906644e6ab1b4f98f724018ed1ef",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/96-362.rejected",
+    "bytes": 88169,
+    "sha256": "afdd50a561f6984447575fa16ca6ef9d8a98f370da7a2fa3d06cb43fca440ba0",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/96-363.rejected",
+    "bytes": 88403,
+    "sha256": "369b937c183e86140855ad1be3dba989e1b157364f538377a3a9de596503186b",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/97-361.rejected",
+    "bytes": 94251,
+    "sha256": "b2bf93e9894523f01011d6f7f0f05542a2a13868098ce2e811c35f3b0dd2bbdd",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/97-362.rejected",
+    "bytes": 90766,
+    "sha256": "95bdc58c6db7b43935b2f53d7d8a3546f9356296e96aed672d6d73125ee3cadd",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/imagery/CTX_beta01_uncontrolled_5m_Caltech/8/97-363.rejected",
+    "bytes": 97065,
+    "sha256": "a91fe562d8aeb0cb48b3791a9f26b42409d6dc8b906252f957e9b4cdd185b643",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/mola/megt44n000hb.E1EB16wg.img.part",
+    "bytes": 78184448,
+    "sha256": "29feaa35bc66c10c7ee71d240761fa1166fa5b784ac775f7837210f320a3b4e4",
+    "status": "interrupted_download_preserved"
+  },
+  {
+    "path": "data/raw/mars/mola/megt44n000hb.hdr",
+    "bytes": 1029,
+    "sha256": "4871add22f0e8096281ea6c3b79fc0555a541cf72785e4abe87055e38970d20a",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/mola/megt44n000hb.img",
+    "bytes": 129761280,
+    "sha256": "14022166079edafc99650f354e5a634e6eb2c2ea544b444c01cd8ee55437df36",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/mars/mola/megt44n000hb.lbl.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "status": "empty_supplied_file"
+  },
+  {
+    "path": "data/raw/mars/mola/megt44n000hb.xml",
+    "bytes": 15513,
+    "sha256": "f6de640ed5603eb03395616214c9a5707c9d49273f699d2cbeec53e93df6bd08",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/moon/imagery/LRO_WAC_Mosaic_Global_303ppd/7/48-148.tile",
+    "bytes": 31948,
+    "sha256": "5fa832dd275ae5cba8a7e8477de1704af25c815e6d5e927feb08b07ac278a664",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/moon/imagery/LRO_WAC_Mosaic_Global_303ppd/7/48-149.tile",
+    "bytes": 34503,
+    "sha256": "a917752d9e1af37ee6c6af7f4df9186ce19727999d4f9d27b04fc3652587d4c8",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/moon/imagery/LRO_WAC_Mosaic_Global_303ppd/7/48-150.tile",
+    "bytes": 40889,
+    "sha256": "36a5f203e969e2780d16b8c6b931dcdf516e6f4c323087af38bad47c50fbd4a1",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/moon/imagery/LRO_WAC_Mosaic_Global_303ppd/7/49-148.tile",
+    "bytes": 32849,
+    "sha256": "e73d036ab47454359f8bd126f08e8577a01d4afe30250ca28287c3465d93ec24",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/moon/imagery/LRO_WAC_Mosaic_Global_303ppd/7/49-149.tile",
+    "bytes": 34971,
+    "sha256": "5649cc282565cfc2bcb126cf6e1471dde3562c53f0b14a2cf5fde6e8a272d5da",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/moon/imagery/LRO_WAC_Mosaic_Global_303ppd/7/49-150.tile",
+    "bytes": 41297,
+    "sha256": "7619eeb4faa9cce12458b1ed1ac11857d2b8421fefd806add6f93cf80470d628",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/moon/imagery/LRO_WAC_Mosaic_Global_303ppd/7/50-148.tile",
+    "bytes": 35304,
+    "sha256": "4c2cbd0852ac651f3aa091a60c6facc8f62062f6e24dc59defda0ddcd80c4047",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/moon/imagery/LRO_WAC_Mosaic_Global_303ppd/7/50-149.tile",
+    "bytes": 34246,
+    "sha256": "f82ebcb1c20eace79039d822fc3a5d6a846286e9f420f54e1e234399459aca82",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/moon/imagery/LRO_WAC_Mosaic_Global_303ppd/7/50-150.tile",
+    "bytes": 39487,
+    "sha256": "55429adcc1de206b01aa81b13146e9de05eb524e2a2f684d6d0f0e6ccf52374f",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/moon/lola/ldem_64.C-kihkdY.img.part",
+    "bytes": 12353536,
+    "sha256": "facb673a93efb5303a928f576a58eae774973626a624d1881257487f294305df",
+    "status": "interrupted_download_preserved"
+  },
+  {
+    "path": "data/raw/moon/lola/ldem_64.img",
+    "bytes": 530841600,
+    "sha256": "1c4958699d4cffd7e777d51421b6044bba300aa0bef286a544309efb082cdbd6",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/moon/lola/ldem_64.lbl.txt",
+    "bytes": 5128,
+    "sha256": "4e7a94c76c716a147b21ccf07669d004246b0d1b017b7d63d50befaa1a34142d",
+    "status": "present"
+  },
+  {
+    "path": "data/raw/moon/lola/ldem_64.xml",
+    "bytes": 11947,
+    "sha256": "13d388574ee3ac3f5afb66a1ca6aea6c42fcb38ecad8e8f9b4dc08f6964b6c18",
+    "status": "present"
+  }
+]

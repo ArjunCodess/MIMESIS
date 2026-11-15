@@ -1,0 +1,25 @@
+{
+  "id": "mimesis-bounded-pilot-v1",
+  "task": "regional_geomorphological_mapping",
+  "window_m": 20000,
+  "context_m": 80000,
+  "supports_m": [500, 1000],
+  "minimum_valid_fraction": 0.95,
+  "earth_stride_m": 1000,
+  "weights": [0.4, 0.25, 0.15, 0.2],
+  "groups": ["slope", "relief_position", "roughness_organization", "multiscale_context"],
+  "tolerances": {"slope_w1_degrees": 8, "relief_m": 1000, "tpi_m": 250, "residual_m": 300, "anisotropy": 0.5, "context_relief_m": 2000},
+  "tolerance_status": "Predeclared engineering assumptions; not calibrated against relevance judgments",
+  "provisional_maximum_loss": 0.35,
+  "scenario_seed": 20261114,
+  "random_weight_scenarios": 32,
+  "targets": [
+    {"id": "jezero", "name": "Jezero crater", "body": "Mars", "latitude": 18.38, "longitude": 77.58, "split": "development", "source": "mola"},
+    {"id": "nili", "name": "Nili Fossae", "body": "Mars", "latitude": 22.0, "longitude": 75.0, "split": "development", "source": "mola"},
+    {"id": "isidis", "name": "Isidis Planitia", "body": "Mars", "latitude": 12.9, "longitude": 87.0, "split": "held_out", "source": "mola"},
+    {"id": "syrtis", "name": "Syrtis Major", "body": "Mars", "latitude": 8.4, "longitude": 69.5, "split": "held_out", "source": "mola"},
+    {"id": "apollo17", "name": "Taurus-Littrow", "body": "Moon", "latitude": 20.19, "longitude": 30.77, "split": "development", "source": "lola"},
+    {"id": "shackleton", "name": "Shackleton rim", "body": "Moon", "latitude": -89.5, "longitude": 0, "split": "held_out", "source": "lola"}
+  ],
+  "scope_deviations": ["One supplied Earth tile, not the planned multiple regions", "Overlapping windows are not independent samples", "No labeled controls or independent relevance judgments supplied", "No source-error estimates: weight, support and mask runs are sensitivity scenarios", "No discovery or base-suitability claim is authorized by descriptor rankings"]
+}

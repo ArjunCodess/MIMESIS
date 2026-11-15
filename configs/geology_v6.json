@@ -1,0 +1,103 @@
+{
+  "id": "geology-reference-intake-v6",
+  "source": {
+    "title": "Geologic map of Jezero crater and the Nili Planum region, Mars",
+    "authors": ["Vivian Z. Sun", "Kathryn M. Stack"],
+    "year": 2020,
+    "url": "https://doi.org/10.3133/sim3464",
+    "publisher_url": "https://pubs.usgs.gov/sim/3464/",
+    "download_base_url": "https://pubs.usgs.gov/sim/3464/",
+    "publication_scale": 75000,
+    "digitizing_scale": 20000,
+    "body": "Mars",
+    "body_radius_m": 3396190,
+    "latitude_convention": "planetocentric",
+    "longitude_convention": "east-positive",
+    "geodatabase": "sim3464_JezeroNili_FINAL/Geodatabase/Nili.gdb",
+    "layers": ["MapBoundary", "GeoContacts", "GeoUnits_v1"],
+    "files": [
+      {"name": "sim3464_database.zip", "bytes": 349336873, "sha256": "a88bd53a5573743cc4a20036c10e585106d08a433ad2f34af269e9cea1529f87"},
+      {"name": "sim3464.pdf", "bytes": 36406378, "sha256": "51da76ebbaafc36e31fab13766832a8613bcda5e1b6b188532f8d25f8d74df2f"},
+      {"name": "sim3464_pamphlet.pdf", "bytes": 728435, "sha256": "6bba9b47ae894ab79170dbbc977e82f2217cccd13929de9dfd74ab85c0677bac"},
+      {"name": "sim3464_metadata.xml", "bytes": 20924, "sha256": "e4ede0b7465190319c81babfb9359d4e84710cb82deebe331219ef26130927fd"},
+      {"name": "sim3464_metadata.txt", "bytes": 20767, "sha256": "24f129b9ae7ac670f620ea5397860703f1051e53a10ea8f3871f7ed82fb5acd5"}
+    ]
+  },
+  "raw_directory": "data/raw/mars/geology/sim3464",
+  "calibration_window": {"id": "jezero", "body": "Mars", "latitude": 18.38, "longitude": 77.58, "side_m": 20000, "radius_m": 3396190},
+  "prospective_targets_path": "configs/prospective_targets_v5.json",
+  "reference_policy": {
+    "role": "previously inspected Jezero calibration reference",
+    "blind_target_truth": false,
+    "registration_offset_range_m": [100, 200],
+    "registration_qualifier": "Metadata describes random offsets of about 100-200 m relative to the July 2020 controlled CTX mosaic. This is not a confidence interval or a validated geological tolerance.",
+    "geological_tolerance_m": null,
+    "automatic_accuracy_assessment_allowed": false,
+    "requirements_for_future_contact_scoring": "Independently check registration to the evaluation imagery, justify geological tolerance for each certainty class, obtain independent authored reference/reviewer evidence, then freeze the evaluation protocol.",
+    "contact_semantics": {
+      "certain": "Two units are clearly distinguished at map scale. This does not certify absolute position.",
+      "approximate": "A transition is interpreted, but its exact location is obscured or uncertain at map scale.",
+      "inferred": "Retain separately if a future source contains it; SIM3464 has no records with this TYPE.",
+      "boundary": "Map frame, excluded from geological contact statistics."
+    },
+    "linework_method": {"vertex_spacing_m": 75, "smoothing_tolerance_m": 40, "citation": "Pamphlet printed page 4, PDF page 8"},
+    "crs_conflict": "Pamphlet methodology says central meridian 77.3 E, but all acquired vector layers, supplied PRJ and metadata declare 77.5 E. Calculations and exports use the actual 77.5 E vector CRS; no coordinate relabeling or manual shift is applied."
+  },
+  "prior_work": {
+    "inherited_audit_path": "configs/discovery_novelty_audit.json",
+    "source_access_path": "data/metadata/prior_work_v6_source_access.json",
+    "candidate_footprints_path": "artifacts/reports/discovery_investigations.json",
+    "catalogues": [
+      {
+        "id": "usgs-known-sites-2020",
+        "title": "Known Terrestrial Analog Sites for Planetary Science",
+        "url": "https://www.usgs.gov/data/known-terrestrial-analog-sites-planetary-science",
+        "doi": "10.5066/P9J72921",
+        "author": "Marc A. Hunter",
+        "year": 2020,
+        "representation": "point layer",
+        "license": "CC0 1.0, per USGS landing page",
+        "metadata_verification": "USGS landing page read through the web tool on 2026-11-14; direct HTTP request returned empty 202.",
+        "feature_access": "not_acquired",
+        "feature_endpoint_attempt": "https://www.sciencebase.gov/catalog/item/5f88940b82cebb8c13d912ee?format=json",
+        "feature_endpoint_status": 403,
+        "spatial_intersection_performed": false,
+        "match_status": "unknown",
+        "limitation": "Catalogue metadata is verified, but point records were unavailable. No spatial match, nonmatch or catalogue absence is asserted. Points would not establish a full published footprint even if available."
+      }
+    ],
+    "refreshed_sources": [
+      {
+        "id": "antiatlas2019",
+        "verification": "Acquired and inspected original one-page conference abstract 5041, Mars Extant Life 2019.",
+        "finding": "Anti-Atlas carbonate sequences were explicitly investigated in relation to the Jezero/Midway Mars 2020 targets. This is prior material and biosignature context, not validation of terrain transfer.",
+        "exact_spatial_overlap": "unresolved; abstract supplies regional/transect names without a registered footprint"
+      },
+      {
+        "id": "bristol2016",
+        "verification": "Acquired original 104-page Biosignature Preservation and Detection workshop proceedings; inspected PDF page 68, abstract 2081.",
+        "finding": "Bristol Dry Lake was proposed as an ancient Martian lake analogue using evaporite, brine and nearby basalt observations. The abstract discusses Miyamoto crater as a possible comparison, so it does not establish an exact Bristol/Jezero mapping association.",
+        "exact_spatial_overlap": "unresolved; no registered field footprint was recovered from the abstract"
+      },
+      {
+        "id": "martin2020",
+        "verification": "Crossref DOI metadata and publisher-registered abstract acquired. Publisher result checked; full article was not newly acquired in this intake.",
+        "finding": "The authored abstract establishes prior Mojave lacustrine-volcanic analogue instrument and geological-unit mapping work. It does not prove overlap with the MIMESIS 20 km footprint.",
+        "exact_spatial_overlap": "unresolved in this intake; no spatial inference from the shared Mojave name"
+      },
+      {
+        "id": "quinn2018",
+        "verification": "Author thesis repository metadata checked; existing acquired thesis and relevant excerpt PDF page 271, printed page 256 inspected.",
+        "finding": "The thesis studies southern Naukluft structure and Northeast Syrtis stratigraphy and compares Northeast Syrtis with Namibian Neoproterozoic reference sections. The historical MIMESIS southern Syrtis target is a different context, so this blocks broad regional originality claims without proving an identical task or footprint.",
+        "exact_spatial_overlap": "unresolved; regional methodological comparison only"
+      }
+    ],
+    "rules": [
+      "No unlisted site, different coordinate, changed weight or new rank is novel by default.",
+      "Separate prior region, prior target/process association and exact footprint/task overlap.",
+      "Regional precedent does not prove exact footprint duplication; unresolved exact overlap does not establish novelty.",
+      "Historical v4 leads remain historical. This audit does not reverse their v5 land-mask rejection.",
+      "A catalogue point or literature association is not an independent task-performance label."
+    ]
+  }
+}

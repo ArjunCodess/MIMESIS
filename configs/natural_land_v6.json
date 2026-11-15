@@ -1,0 +1,134 @@
+{
+  "id": "mimesis-observable-natural-land-v6",
+  "parent": "mimesis-natural-land-v5",
+  "frozen_at": "2026-11-14T08:09:51.210038+00:00",
+  "scope": "Exploratory eligibility follow-up; v5 outcomes already inspected, no untouched confirmatory claim. Thresholds and controls unchanged.",
+  "mask": {
+    "source": "ESA WorldCover 2021 v200 classes40/50 plus current OSM highways and landuse farmland/industrial/quarry/construction/landfill",
+    "buffers_m": [
+      500,
+      1000
+    ],
+    "minimum_valid_fraction": 0.95,
+    "required_unknown_handling": "Missing WorldCover coverage excluded; OSM absence never called verified natural land",
+    "timing": "Apply source mask before Gaussian smoothing/derivatives. Source epochs differ; no causal claim about historical DEM flattening."
+  },
+  "eligibility": {
+    "minimum_earth_clear_local_fraction": 0.95,
+    "minimum_earth_clear_context_fraction": 0.95,
+    "minimum_planetary_camera_valid_fraction": 0.95,
+    "interpretation": "Availability-only prefilter changes the v5 search population; images may still be used for frozen morphology observations, never as numerical colour similarity."
+  },
+  "declustering": {
+    "minimum_context_separation_m": 80000,
+    "order": "robust loss, nominal loss, stable candidate ID",
+    "independence": "Nonoverlap does not prove independence"
+  },
+  "new_targets": {
+    "collection": "mro_ctx_controlled_usgs_dtms",
+    "bbox": [
+      0.5,
+      0.5,
+      89.5,
+      43.5
+    ],
+    "catalog_limit": 1000,
+    "order": "SHA256(20261114 + STAC item ID)",
+    "count": 6,
+    "minimum_separation_from_old_and_new_m": 80000,
+    "local_stereo_minimum_valid_fraction": 0.95,
+    "selection_uses": "metadata geometry and local validity only; no Earth matching or morphology outcome",
+    "window_m": 20000,
+    "context_m": 80000,
+    "fine_analysis_spacing_m": 100,
+    "fine_source_limit": "CTX stereo is MOLA-aligned; Copernicus DSM can contain SRTM auxiliary fill, so independence is limited and recorded."
+  },
+  "controls": {
+    "policy": "One nomination and one seeded lower-ranked, same-region, nonoverlapping control with fixed matching tolerances; unfilled controls remain explicit",
+    "median_slope_tolerance_deg": 0.2,
+    "relief_tolerance_m": 30,
+    "seed": 20261114,
+    "minimum_context_separation_m": 80000,
+    "rejected_gemini_rank_band": "Ranks30-100 may not exist after context declustering; no impossible rank-band guarantee"
+  },
+  "statistics": {
+    "unit": "One frozen planetary target, conditional on a complete nomination/control pair",
+    "primary": "Descriptive paired differences in normalized joint slope/curvature Wasserstein distance and hypsometric integral difference",
+    "significance": "Report exact paired sign/randomization test when enough independent target units exist; five of six wins alone is not p<.05. No independence inferred from window count."
+  },
+  "contact_reference": {
+    "global_map": "SIM3292 scale1:20000000 is context only, not 200m contact ground truth",
+    "fine_reference_required": "Published fine-scale contact with defensible positional accuracy or separately authored blinded expert annotation",
+    "no_reference": "No boundary F1 or rehearsal-utility claim without an appropriate actual reference"
+  },
+  "forbidden_claims": [
+    "new analogue discovery from ranking",
+    "verified anthropogenic flattening without causal evidence",
+    "complete natural-land classification",
+    "independent expert validation from model agreement",
+    "200m accuracy from a 1:20million map"
+  ],
+  "followup": {
+    "imagery": "All locally acquired HLS scenes intersecting the full232km field; chronological then ID order, latest valid observation wins. Clear mask OR across scenes, exact source index retained.",
+    "mask": "Existing WorldCover native class mask plus available PBF highways and assembled landuse areas, before smoothing. Missing OSM stays unknown as a source limitation.",
+    "controls": "Same v5 physical tolerances and80km separation; zero swaps after finer evidence",
+    "spatial_completeness": "Country/province extracts may omit adjacent jurisdictions and OSM is incomplete; no road-free or fully natural claim",
+    "global_frame": "Separate sampled climate frame, never substituted into this bounded ranking",
+    "scene_metadata_files": [
+      "data/raw/earth/hls/HLS.L30.T11SNT.2025159T182141.v2.0/HLS.L30.T11SNT.2025159T182141.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T11SNU.2025159T182117.v2.0/HLS.L30.T11SNU.2025159T182117.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T11SNV.2025159T182117.v2.0/HLS.L30.T11SNV.2025159T182117.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T11SPT.2025160T181527.v2.0/HLS.L30.T11SPT.2025160T181527.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T11SPU.2025160T181527.v2.0/HLS.L30.T11SPU.2025160T181527.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T11SPV.2025168T181514.v2.0/HLS.L30.T11SPV.2025168T181514.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T19KDP.2025359T143108.v2.0/HLS.L30.T19KDP.2025359T143108.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T19KDQ.2025359T143108.v2.0/HLS.L30.T19KDQ.2025359T143108.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T19KEP.2025359T143108.v2.0/HLS.L30.T19KEP.2025359T143108.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T19KEQ.2025359T143108.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T28RES.2025299T112347.v2.0/HLS.L30.T28RES.2025299T112347.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T28RES.2025306T112958.v2.0/HLS.L30.T28RES.2025306T112958.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T28RET.2025163T112304.v2.0/HLS.L30.T28RET.2025163T112304.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T28RET.2025306T112958.v2.0/HLS.L30.T28RET.2025306T112958.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T28RFS.2025299T112347.v2.0/HLS.L30.T28RFS.2025299T112347.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T28RFT.2025235T112336.v2.0/HLS.L30.T28RFT.2025235T112336.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T29RNN.2025175T105826.v2.0/HLS.L30.T29RNN.2025175T105826.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T29RNP.2025206T110425.v2.0/HLS.L30.T29RNP.2025206T110425.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T29RNQ.2025206T110401.v2.0/HLS.L30.T29RNQ.2025206T110401.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T29RPN.2025199T105812.v2.0/HLS.L30.T29RPN.2025199T105812.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T29RPP.2025199T105812.v2.0/HLS.L30.T29RPP.2025199T105812.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T29RPQ.2025199T105749.v2.0/HLS.L30.T29RPQ.2025199T105749.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T29RPQ.2025238T110411.v2.0/HLS.L30.T29RPQ.2025238T110411.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T29RQN.2025152T105137.v2.0/HLS.L30.T29RQN.2025152T105137.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T29RQP.2025152T105137.v2.0/HLS.L30.T29RQP.2025152T105137.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T29RQP.2025199T105812.v2.0/HLS.L30.T29RQP.2025199T105812.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T29RQQ.2025152T105113.v2.0/HLS.L30.T29RQQ.2025152T105113.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T29RQQ.2025199T105749.v2.0/HLS.L30.T29RQQ.2025199T105749.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T30RTT.2025152T105137.v2.0/HLS.L30.T30RTT.2025152T105137.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T30RTU.2025152T105137.v2.0/HLS.L30.T30RTU.2025152T105137.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T30RTV.2025152T105113.v2.0/HLS.L30.T30RTV.2025152T105113.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33JVM.2025165T085706.v2.0/HLS.L30.T33JVM.2025165T085706.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33JVN.2025165T085706.v2.0/HLS.L30.T33JVN.2025165T085706.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33JWM.2025158T085112.v2.0/HLS.L30.T33JWM.2025158T085112.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33JWM.2025349T085748.v2.0/HLS.L30.T33JWM.2025349T085748.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33JWN.2025157T085702.v2.0/HLS.L30.T33JWN.2025157T085702.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33JWN.2025349T085748.v2.0/HLS.L30.T33JWN.2025349T085748.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33JXM.2025167T084510.v2.0/HLS.L30.T33JXM.2025167T084510.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33JXM.2025358T085137.v2.0/HLS.L30.T33JXM.2025358T085137.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33JXN.2025158T085048.v2.0/HLS.L30.T33JXN.2025158T085048.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33JXN.2025342T085138.v2.0/HLS.L30.T33JXN.2025342T085138.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33JYM.2025166T085100.v2.0/HLS.L30.T33JYM.2025166T085100.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33JYN.2025167T084446.v2.0/HLS.L30.T33JYN.2025167T084446.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33KVP.2025165T085642.v2.0/HLS.L30.T33KVP.2025165T085642.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33KWP.2025157T085638.v2.0/HLS.L30.T33KWP.2025157T085638.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33KWP.2025349T085724.v2.0/HLS.L30.T33KWP.2025349T085724.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33KXP.2025157T085638.v2.0/HLS.L30.T33KXP.2025157T085638.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33KXP.2025358T085113.v2.0/HLS.L30.T33KXP.2025358T085113.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T33KYP.2025159T084418.v2.0/HLS.L30.T33KYP.2025159T084418.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T46SEF.2025167T042052.v2.0/HLS.L30.T46SEF.2025167T042052.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T46SEG.2025198T042649.v2.0/HLS.L30.T46SEG.2025198T042649.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T46SEG.2025255T042103.v2.0/HLS.L30.T46SEG.2025255T042103.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T46SFF.2025224T041441.v2.0/HLS.L30.T46SFF.2025224T041441.v2.0_stac.json",
+      "data/raw/earth/hls/HLS.L30.T46SFG.2025224T041441.v2.0/HLS.L30.T46SFG.2025224T041441.v2.0_stac.json"
+    ]
+  }
+}

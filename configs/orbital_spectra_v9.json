@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "experiment_id": "orbital_spectra_v9",
+  "frozen_utc": "2026-11-14T18:14:23.320000Z",
+  "claim_ceiling": "exploratory_known_control_observability",
+  "freeze_scope": "Seasonal catalogue and review bbox already known; first mask inspected before freeze. No reflectance band maps inspected. These are exploratory engineering rules, not a blind preregistration.",
+  "seasonal_manifest": "data/metadata/puga_emit_seasonal_mask_selection_20261114.json",
+  "source_root": "data/raw/earth/spectroscopy/puga_emit_preflight",
+  "roi": {"id": "puga_review_bbox", "bbox_wsen": [78.295, 33.215, 78.335, 33.230], "registration": "provisional_review_bbox_not_registered_to_field_specimens", "positive_label": null, "matched_negative_label": null},
+  "selection": "Inventory all eleven July-October catalogue intersections; report every outcome. Do not select by absorption strength.",
+  "reflectance_acquisition": {"rule": "First date-ordered seasonal scene with at least one quality-eligible native center in the unchanged bbox", "selection_exposure": "All seasonal mask counts inspected before this acquisition rule; no reflectance band maps inspected", "source_access": "Verified HTTPS HDF5 byte ranges only, explicitly named derived native rectangle", "maximum_transferred_bytes_per_source_asset": 536870912, "derived_product_role": "descriptive_known_control_observability_not_geological_validation"},
+  "quality": {"required_zero_flags": ["Cloud flag", "Cirrus flag", "Water flag", "Spacecraft Flag", "Dilated Cloud Flag", "Aggregate Flag"], "exclude_interpolated_bands": true, "require_uncertainty": true, "masked_intervals_um": [[1.35, 1.45], [1.80, 1.96]], "minimum_roi_native_centers": 1},
+  "diagnostics": [{"id": "1900", "interval_um": [1.88, 1.92]}, {"id": "2200", "interval_um": [2.18, 2.23]}],
+  "sources": [
+    "https://lpdaac.usgs.gov/documents/1569/EMITL2ARFL_User_Guide_v1.pdf",
+    "https://nasa.github.io/LPDAAC-Data-Resources/external/How_to_use_EMIT_Quality_data.html",
+    "https://github.com/nasa/EMIT-Data-Resources/blob/main/python/modules/emit_tools.py",
+    "https://opendap.earthdata.nasa.gov/",
+    "https://docs.opendap.org/index.php/DAP2%3A_Constraint_Expressions",
+    "https://pds-geosciences.wustl.edu/missions/mro/crism.htm",
+    "https://pds-geosciences.wustl.edu/mro/mro-m-crism-5-rdr-mptargeted-v1/mrocr_4001/bundle_crism_mtrdr.xml"
+  ]
+}

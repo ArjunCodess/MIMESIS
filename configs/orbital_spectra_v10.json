@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "experiment_id": "orbital_spectra_v10",
+  "frozen_utc": "2026-11-14T18:38:21Z",
+  "exposure": "Exploratory follow-up after the V9 reflectance plot showed a 2.2 um depression. Before depth calculation, all 55 eligible centers were checked to retain the 18 fixed diagnostic channels. This is not a blind or confirmatory test.",
+  "baseline_report": "artifacts/reports/orbital_spectra_v9.json",
+  "baseline_config": "configs/orbital_spectra_v9.json",
+  "archive_protocol": "configs/puga_control_v6.json",
+  "output": "artifacts/reports/orbital_spectra_v10.json",
+  "question": "What fixed continuum-relative feature is observable in the acquired provisional Puga ROI, and how does it descriptively compare with all 14 field and 10 laboratory archive spectra after a declared EMIT Gaussian FWHM approximation?",
+  "claim_ceiling": "exploratory_known_region_cross_observable_characterization",
+  "response": {"model": "Gaussian FWHM approximation integrated over native wavelengths", "minimum_gaussian_mass_inside_native_axis": 0.99, "native_resolution_caveat": "Native FieldSpec SWIR resolution is about 8 nm and is already convolved into the archive. Applying EMIT Gaussian FWHM additionally smooths these spectra; this is not exact deconvolution or an exact sensor response transfer."},
+  "feature": {"id": "fixed_2200", "left_shoulder_um": [2.10, 2.14], "search_um": [2.18, 2.23], "right_shoulder_um": [2.40, 2.44], "minimum_channels_per_region": 2, "rationale": "Reuse V6 shoulders chosen before orbital analysis and V9 fixed narrow diagnostic. Straight continuum joins mean shoulder reflectance at mean shoulder wavelengths. Shoulders are engineering references, not independently established absorption-free regions."},
+  "support_policy": "Require every fixed shoulder and search channel for each spectrum. No pair-specific deletion, extrapolation, best specimen selection, mineral labels, significance or classification accuracy. An ROI mean diagnostic uses only native centers complete on all required feature channels; retain all incomplete center outcomes.",
+  "diagnostic_exclusions": [{"id": "1900", "state": "abstain", "reason": "1.80-1.96 um atmospheric exclusion remains fixed"}],
+  "sources": ["https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2022JE007299", "https://www.hou.usra.edu/meetings/lpsc2023/pdf/1464.pdf", "https://www.hou.usra.edu/meetings/lpsc2019/pdf/1194.pdf", "https://lpdaac.usgs.gov/documents/1569/EMITL2ARFL_User_Guide_v1.pdf"]
+}

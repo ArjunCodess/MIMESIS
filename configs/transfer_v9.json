@@ -1,0 +1,22 @@
+{
+  "id": "mimesis-transfer-v9",
+  "status": "exploratory_feasibility_design",
+  "earth_population": "Frozen 100-context V8 climate frame only; qualified membership exclusively from global_eligibility_v9",
+  "catalog_url": "https://stac.astrogeology.usgs.gov/api/search",
+  "collection": "mro_ctx_controlled_usgs_dtms",
+  "catalog_page_limit": 100,
+  "catalog_max_pages": 10,
+  "catalog_selection": "First ten catalogue pages in provider order, retained with exact query and hashes; bounded metadata inventory, not random or complete Mars sample",
+  "local_width_m": 20000,
+  "context_width_m": 80000,
+  "minimum_local_valid_fraction": 0.95,
+  "slope_match_tolerance_deg": 1.0,
+  "relief_match_tolerance_m": 100.0,
+  "fine_support_sensitivity_m": [100, 200, 300],
+  "fine_metric": "Wasserstein-1 on slope and planar Laplacian; existing validation.compare_fine",
+  "normalization": "slope/5 degrees and Laplacian/.001m-1; fixed engineering scales",
+  "target_freeze": "Blocked until local valid pixels, actual context nonoverlap, quality, independent reference and exposure audit are verified; existing 12 targets are inspected calibration/exploratory cases",
+  "source_independence": "CTX is controlled to MOLA; GLO30 DEM-only filled ancestry is unknown without FLM/HEM/EDM/WBM",
+  "human_utility": "Blocked until controlled Earth rehearsal intervention with blinded independent people and independent reference",
+  "inference": "Superiority requires justified independent units and prespecified test; otherwise inconclusive or missing-data abstention. No equivalence from p>=.05."
+}

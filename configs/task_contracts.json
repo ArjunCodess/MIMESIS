@@ -1,0 +1,44 @@
+{
+  "version": "task-contracts-v1",
+  "tasks": [
+    {
+      "id": "regional_geomorphological_mapping",
+      "version": "1.0",
+      "title": "Regional floor and margin mapping rehearsal",
+      "scientific_question": "Which terrestrial landform arrangements support floor-to-margin mapping practice at regional support?",
+      "weights": [0.4, 0.25, 0.15, 0.2],
+      "allowed_support_tiers": [500, 1000],
+      "required_measurements": ["terrain", "separate_optical_assessment"],
+      "minimum_valid_area": 0.95,
+      "terrain_requirements": ["basin_floor", "ridge_margin", "relief_transition"],
+      "reviewer_status": "model_assisted_not_independent",
+      "excluded_transfer_claims": ["vacuum", "radiation", "gravity_response", "bearing_strength", "mineral_abundance", "base_safety"]
+    },
+    {
+      "id": "terrain_diversity_sampling",
+      "version": "1.0",
+      "title": "Terrain-diversity sampling rehearsal",
+      "scientific_question": "Can two separated sites represent more measured terrain classes than independently ranked sites?",
+      "weights": [0.25, 0.3, 0.2, 0.25],
+      "allowed_support_tiers": [500, 1000],
+      "required_measurements": ["terrain", "subwindow_descriptors"],
+      "minimum_valid_area": 0.95,
+      "terrain_requirements": ["low_slope_floor", "rugged_margin", "relief_transition"],
+      "reviewer_status": "unvalidated_descriptor_experiment",
+      "excluded_transfer_claims": ["mineral_composition", "biosignatures", "resource_abundance", "drilling_mechanics", "field_performance"]
+    }
+  ],
+  "suite": {
+    "id": "terrain-coverage-v1",
+    "subwindow_m": 4000,
+    "subwindow_scales": [2, 5, 100, 30],
+    "class_rules": "floor: median slope <=1 degree and relief <=100m; margin: slope >=3 degrees or relief >=200m; transition: other valid; missing: unclassified",
+    "requirement_weights": [0.4, 0.3, 0.3, 0],
+    "requirement_tolerance": 0.35,
+    "minimum_reportable_coverage": 0.8,
+    "minimum_context_separation_m": 80000,
+    "seed": 20261114,
+    "scenarios": ["500m", "1000m", "eroded_validity"],
+    "scenario_limits": "Support/mask scenarios only; no calibrated measurement-error model or claim of all possible uncertainties"
+  }
+}

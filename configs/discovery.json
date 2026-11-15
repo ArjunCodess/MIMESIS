@@ -1,0 +1,157 @@
+{
+  "id": "mimesis-discovery-v4",
+  "parent_protocol": "mimesis-context-corrected-v3",
+  "status": "New exploratory search requested after v3; all original targets previously inspected; no confirmatory holdout claim",
+  "regions": [
+    {
+      "id": "atacama",
+      "name": "Atacama, Chile",
+      "latitude": -24,
+      "longitude": -69,
+      "bounds": [
+        -70,
+        -25,
+        -68,
+        -23
+      ],
+      "tiles": [
+        "s24w070",
+        "s24w069",
+        "s25w070",
+        "s25w069"
+      ]
+    },
+    {
+      "id": "namib",
+      "name": "Namib, Namibia",
+      "latitude": -25,
+      "longitude": 16,
+      "bounds": [
+        15,
+        -26,
+        17,
+        -24
+      ],
+      "tiles": [
+        "s25e015",
+        "s25e016",
+        "s26e015",
+        "s26e016"
+      ]
+    },
+    {
+      "id": "mojave",
+      "name": "Mojave, United States",
+      "latitude": 35,
+      "longitude": -116,
+      "bounds": [
+        -118,
+        34,
+        -114,
+        36
+      ],
+      "tiles": [
+        "n34w118",
+        "n34w117",
+        "n34w116",
+        "n34w115",
+        "n35w118",
+        "n35w117",
+        "n35w116",
+        "n35w115"
+      ]
+    },
+    {
+      "id": "morocco",
+      "name": "Anti-Atlas, Morocco",
+      "latitude": 30,
+      "longitude": -7,
+      "bounds": [
+        -9,
+        29,
+        -5,
+        31
+      ],
+      "tiles": [
+        "n29w009",
+        "n29w008",
+        "n29w007",
+        "n29w006",
+        "n30w009",
+        "n30w008",
+        "n30w007",
+        "n30w006"
+      ]
+    },
+    {
+      "id": "qaidam",
+      "name": "Qaidam, China",
+      "latitude": 37,
+      "longitude": 94,
+      "bounds": [
+        92,
+        36,
+        96,
+        38
+      ],
+      "tiles": [
+        "n36e092",
+        "n36e093",
+        "n36e094",
+        "n36e095",
+        "n37e092",
+        "n37e093",
+        "n37e094",
+        "n37e095"
+      ]
+    },
+    {
+      "id": "lanzarote",
+      "name": "Lanzarote, Spain",
+      "latitude": 29,
+      "longitude": -14,
+      "bounds": [
+        -16,
+        28,
+        -12,
+        30
+      ],
+      "tiles": [
+        "n28w016",
+        "n28w015",
+        "n28w014",
+        "n28w013",
+        "n29w016",
+        "n29w015",
+        "n29w014",
+        "n29w013"
+      ]
+    }
+  ],
+  "source_family": "NASADEM_HGT.001",
+  "source_selection": "Adjacent complete tiles expand each declared region before any v2 ranks are viewed",
+  "extent_m": 232000,
+  "search_half_extent_m": 63000,
+  "stride_m": 3000,
+  "retain_v1": true,
+  "selection_rule": {
+    "minimum_context_separation_m": 80000,
+    "maximum_context_coverage_difference": 0.02,
+    "maximum_local_coverage_difference": 0.02,
+    "slope_category_edges_deg": [
+      1,
+      3,
+      8
+    ],
+    "relief_category_edges_m": [
+      100,
+      500,
+      1500
+    ],
+    "alternative_rank_rule": "Lower robust rank than its nominated match; same slope and relief bins; closest nominal loss, seeded tie then stable ID"
+  },
+  "frozen_at": "2026-11-14T05:01:18.686532+00:00",
+  "imagery_selection": "Lowest metadata cloud fraction then scene ID at a fixed 3x3 geographic grid, June-December 2025; unavailable points retained",
+  "known_region_policy": "All six are previously used planetary analogue regions. No new-region claim is permitted; evaluate exact footprint, task and target separately.",
+  "prospective_claim": "Task-specific association or new quantitative characterization only after all evidence gates; no compulsory positive result."
+}

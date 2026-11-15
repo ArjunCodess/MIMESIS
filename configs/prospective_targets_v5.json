@@ -1,0 +1,291 @@
+{
+  "protocol_hash": "03c066c3152d11db9cdf3fcceb93c0566139b3f1c4e9a479de4cb11ea85454c7",
+  "catalog_sha256": "155cf623a4fff2a99ca85771595eeda2be761150d7fc5689ad199817a889dd01",
+  "targets": [
+    {
+      "id": "prospective-01",
+      "name": "Prospective CTX AOI 1",
+      "body": "Mars",
+      "latitude": 17.08833719414728,
+      "longitude": 71.79562793934451,
+      "split": "prospective_quality_selected",
+      "source": "mola",
+      "stereo_source_id": "P17_007767_1972_XN_17N288W__P21_009270_1973_XN_17N288W",
+      "stereo_path": "data/raw/mars/prospective_stereo/P17_007767_1972_XN_17N288W__P21_009270_1973_XN_17N288W.tif",
+      "stereo_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/P17_007767_1972_XN_17N288W__P21_009270_1973_XN_17N288W/P17_007767_1972_XN_17N288W__P21_009270_1973_XN_17N288W_dtm.tif",
+      "stereo_sha256": "5e042e6d8a4bb60af3e61be5bcdbe39624d56253ed6692ffb1f5eec1532ddb67",
+      "stereo_valid_fraction": 0.98713125,
+      "stereo_metadata": {
+        "crs": "PROJCS[\"Mars (2015) - Sphere / Ocentric / Equirectangular, clon = 0\",GEOGCS[\"Mars (2015) - Sphere / Ocentric\",DATUM[\"Mars (2015) - Sphere\",SPHEROID[\"Mars (2015) - Sphere\",3396190,0,AUTHORITY[\"IAU\",\"49900\"]],AUTHORITY[\"IAU\",\"49900\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"49900\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"49900\"]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"49910\"]]",
+        "source_grid_spacing_m": [
+          20.267475754653493,
+          20.267475754653493
+        ],
+        "nodata": -32767.0,
+        "body_radius_m": 3396190
+      },
+      "orthoimage": {
+        "roles": [
+          "data"
+        ],
+        "href": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/P17_007767_1972_XN_17N288W__P21_009270_1973_XN_17N288W/P17_007767_1972_XN_17N288W__P21_009270_1973_XN_17N288W_orthoimage.tif",
+        "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "title": "Orthoimage",
+        "raster:bands": [
+          {
+            "data_type": "float32",
+            "nodata": -32767,
+            "statistics": {
+              "mean": 0.493,
+              "maximum": 1.071,
+              "stddev": 0.211,
+              "minimum": -0.08
+            }
+          }
+        ],
+        "key": "orthoimage"
+      },
+      "selection_rule": "Fixed hash order, geometry, exclusion distance and measured validity only; no Earth rank or fine morphology used"
+    },
+    {
+      "id": "prospective-02",
+      "name": "Prospective CTX AOI 2",
+      "body": "Mars",
+      "latitude": 6.926660071175803,
+      "longitude": 70.03249181924662,
+      "split": "prospective_quality_selected",
+      "source": "mola",
+      "stereo_source_id": "F05_037726_1870_XN_07N290W__J04_046179_1891_XN_09N290W",
+      "stereo_path": "data/raw/mars/prospective_stereo/F05_037726_1870_XN_07N290W__J04_046179_1891_XN_09N290W.tif",
+      "stereo_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/F05_037726_1870_XN_07N290W__J04_046179_1891_XN_09N290W/F05_037726_1870_XN_07N290W__J04_046179_1891_XN_09N290W_dtm.tif",
+      "stereo_sha256": "1db1ebfe13c2b349b1371e46a8dd55f920ca820c8fab272f138b7ed2455d8f79",
+      "stereo_valid_fraction": 0.98603125,
+      "stereo_metadata": {
+        "crs": "PROJCS[\"Mars (2015) - Sphere / Ocentric / Equirectangular, clon = 0\",GEOGCS[\"Mars (2015) - Sphere / Ocentric\",DATUM[\"Mars (2015) - Sphere\",SPHEROID[\"Mars (2015) - Sphere\",3396190,0,AUTHORITY[\"IAU\",\"49900\"]],AUTHORITY[\"IAU\",\"49900\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"49900\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"49900\"]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"49910\"]]",
+        "source_grid_spacing_m": [
+          20.047657325737116,
+          20.047657325737116
+        ],
+        "nodata": -32767.0,
+        "body_radius_m": 3396190
+      },
+      "orthoimage": {
+        "roles": [
+          "data"
+        ],
+        "href": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/F05_037726_1870_XN_07N290W__J04_046179_1891_XN_09N290W/F05_037726_1870_XN_07N290W__J04_046179_1891_XN_09N290W_orthoimage.tif",
+        "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "title": "Orthoimage",
+        "raster:bands": [
+          {
+            "data_type": "float32",
+            "nodata": -32767,
+            "statistics": {
+              "mean": 0.327,
+              "maximum": 0.884,
+              "stddev": 0.057,
+              "minimum": -0.275
+            }
+          }
+        ],
+        "key": "orthoimage"
+      },
+      "selection_rule": "Fixed hash order, geometry, exclusion distance and measured validity only; no Earth rank or fine morphology used"
+    },
+    {
+      "id": "prospective-03",
+      "name": "Prospective CTX AOI 3",
+      "body": "Mars",
+      "latitude": 2.794149672623606,
+      "longitude": 5.762734100650954,
+      "split": "prospective_quality_selected",
+      "source": "mola",
+      "stereo_source_id": "N07_065249_1828_XN_02N354W__N08_065381_1828_XN_02N354W",
+      "stereo_path": "data/raw/mars/prospective_stereo/N07_065249_1828_XN_02N354W__N08_065381_1828_XN_02N354W.tif",
+      "stereo_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/N07_065249_1828_XN_02N354W__N08_065381_1828_XN_02N354W/N07_065249_1828_XN_02N354W__N08_065381_1828_XN_02N354W_dtm.tif",
+      "stereo_sha256": "e5349a3455a0df37a2149c41d9db328f37b7aa0473010737739b0402213bc7f0",
+      "stereo_valid_fraction": 0.99989375,
+      "stereo_metadata": {
+        "crs": "PROJCS[\"Mars (2015) - Sphere / Ocentric / Equirectangular, clon = 0\",GEOGCS[\"Mars (2015) - Sphere / Ocentric\",DATUM[\"Mars (2015) - Sphere\",SPHEROID[\"Mars (2015) - Sphere\",3396190,0,AUTHORITY[\"IAU\",\"49900\"]],AUTHORITY[\"IAU\",\"49900\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"49900\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"49900\"]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"49910\"]]",
+        "source_grid_spacing_m": [
+          20.008940171638088,
+          20.008940171638088
+        ],
+        "nodata": -32767.0,
+        "body_radius_m": 3396190
+      },
+      "orthoimage": {
+        "roles": [
+          "data"
+        ],
+        "href": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/N07_065249_1828_XN_02N354W__N08_065381_1828_XN_02N354W/N07_065249_1828_XN_02N354W__N08_065381_1828_XN_02N354W_orthoimage.tif",
+        "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "title": "Orthoimage",
+        "raster:bands": [
+          {
+            "data_type": "float32",
+            "nodata": -32767,
+            "statistics": {
+              "mean": 0.63,
+              "maximum": 0.988,
+              "stddev": 0.151,
+              "minimum": 0.088
+            }
+          }
+        ],
+        "key": "orthoimage"
+      },
+      "selection_rule": "Fixed hash order, geometry, exclusion distance and measured validity only; no Earth rank or fine morphology used"
+    },
+    {
+      "id": "prospective-04",
+      "name": "Prospective CTX AOI 4",
+      "body": "Mars",
+      "latitude": 2.3499676824828395,
+      "longitude": 2.726136756087241,
+      "split": "prospective_quality_selected",
+      "source": "mola",
+      "stereo_source_id": "F01_036067_1823_XI_02N357W__F02_036423_1823_XI_02N357W",
+      "stereo_path": "data/raw/mars/prospective_stereo/F01_036067_1823_XI_02N357W__F02_036423_1823_XI_02N357W.tif",
+      "stereo_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/F01_036067_1823_XI_02N357W__F02_036423_1823_XI_02N357W/F01_036067_1823_XI_02N357W__F02_036423_1823_XI_02N357W_dtm.tif",
+      "stereo_sha256": "179f2fee2bce97292648dbd806af9e4556faa5c49f5f2c426a591a27c3406f35",
+      "stereo_valid_fraction": 1.0,
+      "stereo_metadata": {
+        "crs": "PROJCS[\"Mars (2015) - Sphere / Ocentric / Equirectangular, clon = 0\",GEOGCS[\"Mars (2015) - Sphere / Ocentric\",DATUM[\"Mars (2015) - Sphere\",SPHEROID[\"Mars (2015) - Sphere\",3396190,0,AUTHORITY[\"IAU\",\"49900\"]],AUTHORITY[\"IAU\",\"49900\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"49900\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"49900\"]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"49910\"]]",
+        "source_grid_spacing_m": [
+          20.003020627924744,
+          20.003020627924744
+        ],
+        "nodata": -32767.0,
+        "body_radius_m": 3396190
+      },
+      "orthoimage": {
+        "roles": [
+          "data"
+        ],
+        "href": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/F01_036067_1823_XI_02N357W__F02_036423_1823_XI_02N357W/F01_036067_1823_XI_02N357W__F02_036423_1823_XI_02N357W_orthoimage.tif",
+        "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "title": "Orthoimage",
+        "raster:bands": [
+          {
+            "data_type": "float32",
+            "nodata": -32767,
+            "statistics": {
+              "mean": 0.5,
+              "maximum": 1.326,
+              "stddev": 0.145,
+              "minimum": -0.099
+            }
+          }
+        ],
+        "key": "orthoimage"
+      },
+      "selection_rule": "Fixed hash order, geometry, exclusion distance and measured validity only; no Earth rank or fine morphology used"
+    },
+    {
+      "id": "prospective-05",
+      "name": "Prospective CTX AOI 5",
+      "body": "Mars",
+      "latitude": 35.47498853481284,
+      "longitude": 8.302160148237443,
+      "split": "prospective_quality_selected",
+      "source": "mola",
+      "stereo_source_id": "J03_046036_2157_XN_35N351W__J04_046181_2157_XN_35N351W",
+      "stereo_path": "data/raw/mars/prospective_stereo/J03_046036_2157_XN_35N351W__J04_046181_2157_XN_35N351W.tif",
+      "stereo_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/J03_046036_2157_XN_35N351W__J04_046181_2157_XN_35N351W/J03_046036_2157_XN_35N351W__J04_046181_2157_XN_35N351W_dtm.tif",
+      "stereo_sha256": "2e29a18f392d60c5a0bf249c05e230e1ccfbaabe83287b693f122b5a707f689e",
+      "stereo_valid_fraction": 1.0,
+      "stereo_metadata": {
+        "crs": "PROJCS[\"Mars (2015) - Sphere / Ocentric / Equirectangular, clon = 0\",GEOGCS[\"Mars (2015) - Sphere / Ocentric\",DATUM[\"Mars (2015) - Sphere\",SPHEROID[\"Mars (2015) - Sphere\",3396190,0,AUTHORITY[\"IAU\",\"49900\"]],AUTHORITY[\"IAU\",\"49900\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"49900\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"49900\"]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"49910\"]]",
+        "source_grid_spacing_m": [
+          20.2318396734929,
+          20.2318396734929
+        ],
+        "nodata": -32767.0,
+        "body_radius_m": 3396190
+      },
+      "orthoimage": {
+        "roles": [
+          "data"
+        ],
+        "href": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/J03_046036_2157_XN_35N351W__J04_046181_2157_XN_35N351W/J03_046036_2157_XN_35N351W__J04_046181_2157_XN_35N351W_orthoimage.tif",
+        "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "title": "Orthoimage",
+        "raster:bands": [
+          {
+            "data_type": "float32",
+            "nodata": -32767,
+            "statistics": {
+              "mean": 0.555,
+              "maximum": 1.361,
+              "stddev": 0.135,
+              "minimum": -0.117
+            }
+          }
+        ],
+        "key": "orthoimage"
+      },
+      "selection_rule": "Fixed hash order, geometry, exclusion distance and measured validity only; no Earth rank or fine morphology used"
+    },
+    {
+      "id": "prospective-06",
+      "name": "Prospective CTX AOI 6",
+      "body": "Mars",
+      "latitude": 33.759933937485634,
+      "longitude": 70.17773238001442,
+      "split": "prospective_quality_selected",
+      "source": "mola",
+      "stereo_source_id": "D02_027889_2140_XI_34N289W__F02_036394_2144_XI_34N289W",
+      "stereo_path": "data/raw/mars/prospective_stereo/D02_027889_2140_XI_34N289W__F02_036394_2144_XI_34N289W.tif",
+      "stereo_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/D02_027889_2140_XI_34N289W__F02_036394_2144_XI_34N289W/D02_027889_2140_XI_34N289W__F02_036394_2144_XI_34N289W_dtm.tif",
+      "stereo_sha256": "9a9343966db3235c9aed6298bf50a3ea476c17b1815259cf78e0f32ecc42bc76",
+      "stereo_valid_fraction": 0.999875,
+      "stereo_metadata": {
+        "crs": "PROJCS[\"Mars (2015) - Sphere / Ocentric / Equirectangular, clon = 0\",GEOGCS[\"Mars (2015) - Sphere / Ocentric\",DATUM[\"Mars (2015) - Sphere\",SPHEROID[\"Mars (2015) - Sphere\",3396190,0,AUTHORITY[\"IAU\",\"49900\"]],AUTHORITY[\"IAU\",\"49900\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"49900\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"49900\"]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"49910\"]]",
+        "source_grid_spacing_m": [
+          20.22771858801609,
+          20.22771858801609
+        ],
+        "nodata": -32767.0,
+        "body_radius_m": 3396190
+      },
+      "orthoimage": {
+        "roles": [
+          "data"
+        ],
+        "href": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/D02_027889_2140_XI_34N289W__F02_036394_2144_XI_34N289W/D02_027889_2140_XI_34N289W__F02_036394_2144_XI_34N289W_orthoimage.tif",
+        "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "title": "Orthoimage",
+        "raster:bands": [
+          {
+            "data_type": "float32",
+            "nodata": -32767,
+            "statistics": {
+              "mean": 0.527,
+              "maximum": 1.245,
+              "stddev": 0.152,
+              "minimum": -0.394
+            }
+          }
+        ],
+        "key": "orthoimage"
+      },
+      "selection_rule": "Fixed hash order, geometry, exclusion distance and measured validity only; no Earth rank or fine morphology used"
+    }
+  ],
+  "excluded": [
+    {
+      "id": "J01_045137_2012_XN_21N285W__J01_045071_2012_XN_21N285W",
+      "reason": "Overlaps old or previously frozen new 80km context"
+    },
+    {
+      "id": "K14_058800_1963_XN_16N331W__K13_058589_1963_XN_16N331W",
+      "reason": "Local stereo validity below .95",
+      "valid_fraction": 0.23725625
+    }
+  ],
+  "requested_count": 6,
+  "unfilled_count": 0,
+  "selection_status": "frozen_before_masked_Earth_ranking",
+  "limitation": "Quality-selected subset of the retained catalogue query, not six random global Martian targets. No fine contact reference or independent relevance labels are assumed."
+}
