@@ -1,0 +1,90 @@
+{
+  "files": [
+    {
+      "product": "IRIDIUMPIT1",
+      "path": "data/raw/discovery_v11/moon/IRIDIUMPIT1/user-downloads/NAC_DTM_IRIDIUMPIT1_E454N3312.IMG",
+      "bytes": 168472848,
+      "sha256": "f018e01a71440cbec5e3d7338fc6a8255876133c7fc47f78897b5df4f9854a87",
+      "driver": "PDS",
+      "dtype": "float32",
+      "shape": [
+        13451,
+        3131
+      ],
+      "nodata": -3.4028226550889045e+38,
+      "interpretation": "native floating-point terrain"
+    },
+    {
+      "product": "IRIDIUMPIT1",
+      "path": "data/raw/discovery_v11/moon/IRIDIUMPIT1/user-downloads/NAC_DTM_IRIDIUMPIT1_E454N3312.PYR.TIF",
+      "bytes": 62599294,
+      "sha256": "5264c9edc350f5910e2579c5b87ac8e44f92dfde828b1aae8c93142d25e677ca",
+      "driver": "GTiff",
+      "dtype": "uint8",
+      "shape": [
+        13451,
+        3131
+      ],
+      "nodata": null,
+      "interpretation": "display/pyramid image; not native terrain heights"
+    },
+    {
+      "product": "IRIDIUMPIT1",
+      "path": "data/raw/discovery_v11/moon/IRIDIUMPIT1/user-downloads/NAC_DTM_IRIDIUMPIT1_E454N3312.TIF",
+      "bytes": 42169534,
+      "sha256": "66ae9ad7f25a54fba7b0749b1504bfeec8eabbd97887ab54a3ec6c48ada289ff",
+      "driver": "GTiff",
+      "dtype": "uint8",
+      "shape": [
+        13451,
+        3131
+      ],
+      "nodata": 0.0,
+      "interpretation": "display/pyramid image; not native terrain heights"
+    },
+    {
+      "product": "FECNDITATS2",
+      "path": "data/raw/discovery_v11/moon/FECNDITATS2/user-downloads/NAC_DTM_FECNDITATS2_E009S0488.IMG",
+      "bytes": 756596680,
+      "sha256": "1538a5668ba179d7bb14fc6ade8b60357aff4b88faeb6b8f52649442ccf89f23",
+      "driver": "PDS",
+      "dtype": "float32",
+      "shape": [
+        29329,
+        6449
+      ],
+      "nodata": -3.4028226550889045e+38,
+      "interpretation": "native floating-point terrain"
+    },
+    {
+      "product": "FECNDITATS2",
+      "path": "data/raw/discovery_v11/moon/FECNDITATS2/user-downloads/NAC_DTM_FECNDITATS2_E009S0488.PYR.TIF",
+      "bytes": 264147776,
+      "sha256": "cf43f6190ab0e3bf97e2108c86bf76feb0f9340eedd0d99d1e0a870a834cf391",
+      "driver": "GTiff",
+      "dtype": "uint8",
+      "shape": [
+        29329,
+        6449
+      ],
+      "nodata": null,
+      "interpretation": "display/pyramid image; not native terrain heights"
+    },
+    {
+      "product": "FECNDITATS2",
+      "path": "data/raw/discovery_v11/moon/FECNDITATS2/user-downloads/NAC_DTM_FECNDITATS2_E009S0488.TIF",
+      "bytes": 189377998,
+      "sha256": "0ebd155661e92449073ed952ac8e2921cc6303e69b57aa63a7abf3d268550cf2",
+      "driver": "GTiff",
+      "dtype": "uint8",
+      "shape": [
+        29329,
+        6449
+      ],
+      "nodata": 0.0,
+      "interpretation": "display/pyramid image; not native terrain heights"
+    }
+  ],
+  "confidence_status": "These downloads are terrain and display products. They do not resolve undocumented native confidence codes at these two sites.",
+  "received_from": "User download; organized locally from the repository root. Raw rasters remain excluded from Git."
+}
