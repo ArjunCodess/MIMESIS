@@ -40,6 +40,9 @@ artifacts/demo/
 !.env.example
 *.log
 artifacts/paper/build/
+artifacts/submission/build/
+artifacts/presentation/build/
+artifacts/presentation/*.zip
 artifacts/paper/preview/
 artifacts/paper/overleaf-check-*/
 artifacts/reports/submission-audit-2026-11-15/*/
