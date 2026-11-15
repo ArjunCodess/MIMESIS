@@ -8,112 +8,26 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{microtype}
-\title{MIMESIS: Sampling and source quality in Earth--Moon--Mars terrain comparisons}
+\title{MIMESIS: Geographic stability in Earth--Moon--Mars terrain analogue screening}
 \author{Arjun Vijay Prakash\\
 Grade XI, City Montessori School, Kanpur Road\\
 Lucknow, India\\
 \url{https://arjuncodess.is-a.dev/}}
 \date{November 15, 2026}
-\renewcommand{\shorttitle}{MIMESIS: sampling and source quality}
+\renewcommand{\shorttitle}{MIMESIS: geographic stability}
 \renewcommand{\headeright}{Research draft}
 \renewcommand{\undertitle}{Exploratory research report}
-\hypersetup{pdftitle={MIMESIS: Sampling and source quality},pdfauthor={Arjun Vijay Prakash},colorlinks=true,linkcolor=black,urlcolor=blue,citecolor=black}
+\hypersetup{pdftitle={MIMESIS: Geographic stability in terrain analogue screening},pdfauthor={Arjun Vijay Prakash},colorlinks=true,linkcolor=black,urlcolor=blue,citecolor=black}
 \begin{document}
 \maketitle
-\begin{abstract}
-Two lunar pit calibration products fail the source requirements for a proposed Earth--Moon--Mars exterior-terrain comparison. In atlas-based circular funnel proxies, successful-correlation coverage is 93.42\% at Mare Tranquillitatis and 97.37\% at Marius Hills. After masking the neighborhoods needed for a 10 m Gaussian standard deviation and slope estimation, usable coverage falls to 0\% and 1.56\%, respectively; both have zero usable coverage at 20 and 40 m. The requirement was 95\%. Six analytical-plane controls recover their known terrain, while all 120 source-mask sensitivity runs on these two sites fail. The pilot therefore stops before nomination and withheld evaluation. Earlier regional diagnostics remain informative: 18 transfers of actual MOLA point patterns onto Earth terrain reduce median slope under linear reconstruction, and a saved 100-context inventory qualifies no context while retaining 33 unknown outcomes. The report provides measured source limitations and a reproducible research record. It establishes no new geological analogue, rehearsal benefit or permanent-base location.
-\end{abstract}
-\keywords{planetary analogues \and MOLA \and NASADEM \and observation support \and reproducibility}
-
-\section{Research question and scope}
-The practical question is whether measured Earth terrain can nominate environments for a specified planetary mapping exercise. A numerical match is a starting hypothesis. Different sampling patterns, missing observations and geological processes can produce similar terrain descriptors, so the workspace keeps those questions separate.
-
-The initial screen compares 20 km study windows inside 80 km contexts on 500 m and 1 km analysis grids. Existing lunar and Martian reference cases remain available in the application. This report covers the v9 observation-support and eligibility records, feature-scale v10 calibration, and an attributed v11 ranking replication and transfer diagnostic. The earlier v6 paired-control failure remains context. Previously inspected targets remain exploratory or calibration material; none is presented as an untouched validation case.
-
-The result is a measured limit on this comparison procedure. It is accompanied by the inputs, masks, failed cases and code needed to reproduce it. Permanent-base selection additionally requires hazards, illumination, resources, thermal conditions, communications and engineering evidence outside this terrain study.
-
-\section{Observations and methods}
-\subsection{Terrain screening}
-The workspace derives descriptors from decoded Earth and planetary elevation products, preserving body-specific coordinates and source lineage. Absolute elevation is excluded from cross-body discrepancy. Shared-bin slope distributions use Wasserstein-1 distance; other descriptors represent relief, position, terrain organization and multiscale context. Group weights are 0.40, 0.25, 0.15 and 0.20 respectively. The robust score is the maximum across 35 declared sensitivity scenarios, including weight perturbations, alternative grid spacing and mask erosion. These choices are protocol assumptions, not independently calibrated geological relevance probabilities.
-
-For a scalar descriptor $j$, the normalized discrepancy is
-\begin{equation}
-\ell_j = \min\!\left(1,\frac{|x_j-y_j|}{\tau_j}\right)^2,
-\end{equation}
-where $\tau_j$ is the declared tolerance. Valid local and contextual terrain coverage must meet the protocol threshold. Resampling onto a finer grid does not create finer source detail. ODE distinguishes individual along-track PEDR measurements from gridded MEGDR products \cite{ode}.
-
-\subsection{Actual point-support transfer}
-Six bounded ODE exports contain 103,371 returned points; 102,240 remain after square clipping and the retained attitude rule. Each pattern is projected into an 80 km metric context and transferred to the existing Namib, Mojave and Atacama NASADEM fields. Bilinear sampling of the Earth field at those positions precedes linear triangulated interpolation onto a 500 m grid. No extrapolation is allowed, and reconstructed cells farther than 1,000 m from a retained point are excluded. Derivatives are compared on their shared valid mask.
-
-For each field and pattern we compute elevation RMSE and changes in median slope, absolute planar Laplacian and percentile relief. In particular,
-\begin{equation}
-\Delta s = \operatorname{median}_{M}(s_{\mathrm{sampled}})
-          - \operatorname{median}_{M}(s_{\mathrm{baseline}}),
-\end{equation}
-where $M$ is the common derivative-valid mask. The experiment transfers point geometry; it does not reproduce the laser footprint, instrumental noise or original MEGDR interpolation. Original per-shot good/bad flags and unique source-shot identifiers are absent from these exports. Unknown shot quality remains a stated limitation rather than an inferred pass.
-
-CTX control-subset residuals are recorded separately. USGS documents that these stereo DTMs are aligned to MOLA and have missing stereo pixels \cite{ctx}. Their agreement with MOLA therefore cannot serve as fully independent elevation validation.
-
-\subsection{Observation eligibility and spectroscopy}
-The global inventory preserves 100 presampled, non-overlapping dryland contexts, split between 50 BWh and 50 BWk contexts. Terrain, WorldCover, OSM and HLS checks are applied without computing new planetary rankings. Missing source coverage is unknown. Observed natural fractions remain upper bounds until all required mapped-source coverage passes. The saved inventory and later acquisition logs represent different states; downloading a file does not update an already measured result.
-
-The orbital branch retains 11 seasonal EMIT masks and selects native centers using the required zero flags. One scene has actual reflectance and supplied channel-uncertainty analysis. Native-center counts are not area estimates. A fixed 1.80--1.96 $\mu$m exclusion removes the 1.90 $\mu$m diagnostic. Per-channel posterior standard deviations alone do not supply covariance for a geological mean or continuum-removed uncertainty \cite{emit}. Independent registered positive and negative geological zones are required before a material-validation claim.
-
-\section{Results}
-\subsection{Sampling geometry changes terrain descriptors}
-All 18 point-support transfers reduce median slope on their common masks, as shown in Figure~\ref{fig:support}. Elevation RMSE spans approximately 14.33--28.65 m. Common derivative-valid coverage spans approximately 35.5--56.4\%; the excluded area is substantial and belongs in the interpretation. These comparisons reuse three Earth fields and six correlated orbital sampling patterns, so they are not 18 independent geological replications. No significance test or rank-improvement claim is made.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.78\linewidth]{shot-support-summary.png}
-\caption{Median slope changes after actual MOLA point-pattern transfer to three Earth elevation fields. Each point compares baseline and reconstructed surfaces on the same derivative-valid mask. Grouped bars identify the three Earth fields; contexts are separate sampling patterns.}
-\label{fig:support}
-\end{figure}
-
-The direction of change is consistent with smoothing by the declared reconstruction, but the experiment does not isolate point geometry from interpolation or demonstrate the behavior of the original MOLA gridding. A useful next comparison would hold those choices explicit across alternative reconstruction methods and evaluate independent, task-specific outcomes.
-
-\subsection{Eligibility and paired-control feasibility}
-The saved v9 inventory qualifies zero of 100 frozen contexts. It records 18 terrain exclusions, 49 observed natural-land upper-bound exclusions and 33 unknown outcomes due to missing required layers, as shown in Figure~\ref{fig:gates}. The 49 are exclusions under the declared mapped-source gate, not complete descriptions of every land-use feature. The 33 unknown outcomes cannot be treated as unsuitable terrain.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.74\linewidth]{eligibility-summary.png}
-\caption{Mutually exclusive final states in the saved v9 eligibility record. Pending observations prevent interpreting zero qualified contexts as evidence that suitable Earth environments do not exist.}
-\label{fig:gates}
-\end{figure}
-
-In the earlier bounded v6 pool, 37 and 34 Namib windows pass the respective 500 m and 1 km configurations. Exact geometry gives zero separated context pairs among 666 and 561 enumerated pairs. Their center spans are only 12 km by 54 km, so an 80 km context-separation requirement cannot be met. Relaxing descriptor matching alone cannot repair that spatial limitation. The v9 transfer record contains zero completed pairs, and all 12 inspected planetary target cases abstain.
-
-\subsection{Geological and spectral evidence remains incomplete}
-The Jezero calibration square intersects seven mapped unit classes and 248.128 km of clipped contacts from USGS SIM 3464 \cite{jezero}. The six prospective Mars windows lie outside that reference. It supplies calibration context, without furnishing contact-accuracy outcomes for those windows.
-
-Five of 11 EMIT scenes contain quality-eligible native centers within the provisional box. Only one has reflectance-and-uncertainty analysis. The CRISM branch has acquired seven small source assets, but its inspected product is a contract example without assigned geological labels, and its reflectance cube is absent. There is no validated EMIT--CRISM geological pair. Earlier Puga laboratory/field comparisons remain known-sample controls and cannot substitute for registered orbital geology.
-
-\section{Pit-study calibration}
-Neither lunar calibration proxy passes the proposed source-support requirement. Tranquillitatis has 93.42\% successful-correlation coverage before neighborhood masking; Marius Hills has 97.37\%. At a 10 m Gaussian standard deviation, usable exterior coverage is 0\% and 1.56\%, respectively. Both have zero usable coverage at 20 and 40 m. These results fail the 95\% requirement and stop the current pilot before selection.
-
-The intended test asks whether an Earth feature selected from outline and coarse exterior terrain predicts finer exterior structure around both a lunar and a Martian feature. The acquired packet includes both lunar DTMs and native confidence images, Elysium DTM \texttt{DTEEC\_046730\_2110\_055169\_2110\_A01}, registered Earth terrain and NAIP imagery, and NASA's Indian Tunnel surveys \cite{caves,naip,pit,marius}. Published atlas centers and maximum funnel diameters define the lunar calibration proxies; they are not independently mapped rims. Appendix~\ref{app:pilot} records the sources.
-
-Six complete analytical-plane controls recover their known slope and negligible plane residual. The same planes fail under the acquired quality masks, showing that the immediate rejection follows the source support rather than unknown topography. After the initial failures, calibration sensitivities varied the two published funnel diameters, five center positions, three supports and inclusion of manually edited elevations. None of the 120 runs passes. They describe two sites, not 120 independent observations. Appendix~\ref{app:protocol} gives the method and outcomes.
-
-No nomination, matched-control selection or withheld geological outcome was produced. This executes the pilot's stopping rule without completing the proposed confirmatory triad study. It neither disproves a physical analogy nor demonstrates a new one. Existing volcanic analogue and roughness work already constrains broad novelty claims \cite{roughness,jingpo,asymmetry,cotm}.
-
-\section{Interpretation and required evidence}
-The regional sampling experiment changes measured terrain descriptors; the pit calibration shows that high native pixel coverage can leave little support for a neighborhood-based measurement. The latter follows from the spatial arrangement of rejected pixels and the declared kernel, not a newly inferred geological process. The conclusion applies to these products and masks, rather than every possible measurement of these pits.
-
-Three evidence gaps prevent advancing to a discovery claim. Complete original PEDR records, including source identities and quality fields, are needed to resolve the unknown-quality diagnostic. Registered geological positive and negative zones, source-valid finer terrain and defensible contact uncertainty are needed to test process relevance. Independent blinded mapping-task outcomes are needed to assess rehearsal utility. No automated model review can replace those independent observations or participants.
-
-These are different dependencies. More image downloads can improve observability but cannot establish geological truth or human utility. The interrupted HLS acquisition log ends with an HTTP 502 failure; resuming acquisition and rerunning eligibility is necessary before replacing the saved inventory counts. OSM extract availability also does not establish mapped-road completeness.
-
-\section{Reproducibility, availability and disclosure}
-The application provides four entry points: Explore, Evidence, Methods and Data. Explore preserves the earlier terrain-screening bundle; Evidence labels the later records separately. Earlier experiments remain inspectable as archives. The v9 figures are generated directly from saved JSON by \path{scripts/build_paper_figures.py}; the accompanying \path{evidence-manifest.json} records SHA-256 hashes for the four v9 source records. These records are derived artifacts whose observation ancestry is documented in their manifests, not new independent measurements.
-
-The regional support diagnostic is reproduced by \path{scripts/characterize_shot_support_v9.py}. The pit audit and publication steps are \path{scripts/audit_pit_calibration_v10.py} and \path{scripts/publish_pit_study_v10.py}; their record includes every run and a configuration hash. Source queries, configuration, absent fields and source hashes remain in the report and metadata directories. Acquiring missing observations requires the relevant source access; credentials are excluded from exports. Raw redistribution must respect each source license, including unresolved climate-input licensing statements.
-
-Codex assisted with implementation, analysis code, writing and checks. No independent geological expert assessment, field validation, event submission or peer review is claimed. The project was built by Arjun Vijay Prakash, a Grade XI student at City Montessori School, Kanpur Road, Lucknow, India. The affiliation identifies the author and does not imply institutional review or endorsement. This PDF uses the \texttt{arxiv} style linked in the supplied Overleaf template \cite{template}; its typography does not imply arXiv deposition or journal acceptance.
+\input{main-text.tex}
 
 \begingroup\small
 \begin{thebibliography}{99}
+\bibitem{framework} J. C. Stern and colleagues. \emph{A Comprehensive Framework for Assessing Terrestrial Analogue Field Sites for Ocean Worlds}. Journal of Geophysical Research: Planets 130, e2024JE008803 (2025). \url{https://doi.org/10.1029/2024JE008803}.
+\bibitem{nasadem} NASA LP DAAC. \emph{NASADEM Merged DEM Global 1 arc second V001}. \url{https://doi.org/10.5067/MEaSUREs/NASADEM/NASADEM_HGT.001}.
+\bibitem{mola} PDS Geosciences Node. \emph{MGS MOLA Mission Experiment Gridded Data Records}. \url{https://pds-geosciences.wustl.edu/missions/mgs/megdr.html}.
+\bibitem{lola} PDS Geosciences Node. \emph{LRO Lunar Orbiter Laser Altimeter}. Source products retained in the bundle manifest. \url{https://pds-geosciences.wustl.edu/missions/lro/lola.htm}.
 \bibitem{ode} Washington University in St. Louis, Geosciences Node. \emph{MOLA PEDR Query Page}. \url{https://ode.rsl.wustl.edu/mars/pagehelp/Content/Web_Interface/Tools_Tab/MOLA_PEDR_Query_Page.htm}.
 \bibitem{ctx} USGS Astrogeology. \emph{Mars ASP Generated CTX DTMs and Orthoimages}. \url{https://stac.astrogeology.usgs.gov/docs/data/mars/ctxdtms/}.
 \bibitem{emit} NASA LP DAAC. \emph{EMIT L2A Reflectance User Guide, version 1}. \url{https://lpdaac.usgs.gov/documents/1569/EMITL2ARFL_User_Guide_v1.pdf}.
@@ -286,7 +200,7 @@ The result measures ranking sensitivity under this particular scalar baseline. I
 
 Source work for a revised pit procedure inventories 278 lunar atlas entries and joins 1,062 Martian catalogue features to 1,377 DTM footprints, excluding one invalid polygon. Nine feature points intersect seven Martian products. Native coverage is audited for five lunar features and nine Martian intersections. Eight US 3DEP entrance-locator crops and a 5 m IGN Lanzarote crop are acquired, but exact rims, local source quality and independent controls are incomplete. IRIDIUMPIT1 and FECNDITATS2 contain native confidence codes outside their published lookups; their coverage is unassessable, not zero. INGENIIPIT conforms to its lookup but fails the original Gaussian support test.
 
-A revised local-plane estimator uses observed centers, at least 80\% of available geometric neighbor weight and condition number at most twenty. The original 95\% scored-sector requirement remains. Its analytical controls and a North Procellarum 2 mask at 40 m are promising numerical checks, not geological calibration. No confirmatory bank, nomination, withheld result or discovery is established. Public competitors and close morphometric papers are credited as prior work, not incorporated as MIMESIS discoveries.
+A revised local-plane estimator uses observed centers, at least 80\% of available geometric neighbor weight and condition number at most twenty. The original 95\% scored-sector requirement remains. Its analytical controls and a North Procellarum 2 mask at 40 m are promising numerical checks, not geological calibration. No confirmatory bank, nomination, withheld result or discovery is established. The geographic follow-up adds new calculations to the regional records without completing the feature-scale study.
 
 The four-page application exposes records and exports. Codex assisted Arjun Vijay Prakash with implementation, analysis and writing; independent expert review is not claimed. Original CAVES products retain research-use restrictions and remain outside the public repository and paper archive. A completed software workflow and a completed scientific experiment are separate outcomes.
 
