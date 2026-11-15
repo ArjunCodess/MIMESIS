@@ -18,11 +18,12 @@
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{footline}{}
 \hypersetup{pdftitle={MIMESIS: Seven-slide pitch},pdfauthor={Arjun Vijay Prakash},colorlinks=true,urlcolor=Ink}
-\newcommand{\bodyfont}{\fontsize{16}{23}\selectfont}
-\newcommand{\smallfont}{\fontsize{13}{17}\selectfont}
+\newcommand{\bodyfont}{\fontsize{14}{20}\selectfont}
+\newcommand{\smallfont}{\fontsize{11}{15}\selectfont}
 \newcommand{\puttext}[4]{\node[anchor=north west,inner sep=0,text width=#3cm,align=left] at ([xshift=#1cm,yshift=-#2cm]current page.north west) {\raggedright #4\par};}
 \newcommand{\putimage}[4]{\node[anchor=north west,inner sep=0] at ([xshift=#1cm,yshift=-#2cm]current page.north west) {\includegraphics[width=#3cm]{#4}};}
-\newcommand{\heading}[1]{\node[anchor=north,inner sep=0,text width=29cm,align=center] at ([yshift=-1.05cm]current page.north) {\fontsize{26}{32}\selectfont\bfseries #1};\draw[Line,line width=.45pt] ([xshift=1.2cm,yshift=-2.45cm]current page.north west)--([xshift=-1.2cm,yshift=-2.45cm]current page.north east);}
+\newcommand{\putscreenshot}[4]{\node[anchor=north west,inner sep=0] at ([xshift=#1cm,yshift=-#2cm]current page.north west) {\includegraphics[width=#3cm,trim=240bp 0 240bp 0,clip]{#4}};}
+\newcommand{\heading}[1]{\node[anchor=north,inner sep=0,text width=29cm,align=center] at ([yshift=-1.05cm]current page.north) {\fontsize{23}{29}\selectfont\bfseries #1};\draw[Line,line width=.45pt] ([xshift=1.2cm,yshift=-2.45cm]current page.north west)--([xshift=-1.2cm,yshift=-2.45cm]current page.north east);}
 \newcommand{\footer}{\draw[Line,line width=.45pt] ([xshift=1.2cm,yshift=1.15cm]current page.south west)--([xshift=-1.2cm,yshift=1.15cm]current page.south east);\node[anchor=west,inner sep=0,text=Muted] at ([xshift=1.2cm,yshift=.64cm]current page.south west) {\fontsize{11}{13}\selectfont MIMESIS / NASA Space Apps 2026};\node[anchor=east,inner sep=0,text=Muted] at ([xshift=-1.2cm,yshift=.64cm]current page.south east) {\fontsize{11}{13}\selectfont\insertframenumber\ / 7};}
 \hyphenpenalty=10000
 \exhyphenpenalty=10000
@@ -31,11 +32,11 @@
 \begin{tikzpicture}[remember picture,overlay]
 \heading{MIMESIS}
 
-\puttext{1.3}{3.5}{7.8}{\editorial\fontsize{26}{33}\selectfont Find Earth places to prepare for the Moon and Mars.}
-\puttext{1.3}{7.9}{7.6}{\bodyfont Pick a space target. Compare Earth's land shapes. See which places deserve a closer look.}
-\puttext{1.3}{11.6}{7.6}{\bodyfont Maps, measurements and sources in one tool.}
-\putimage{9.8}{3.35}{20.9}{images/explore.png}
-\puttext{9.8}{15.3}{20.9}{\smallfont\color{Muted}Explore: the working website. These views come from height maps.}
+\puttext{1.3}{3.5}{11.3}{\editorial\fontsize{23}{30}\selectfont Find Earth places to prepare for the Moon and Mars.}
+\puttext{1.3}{7.9}{10.9}{\bodyfont Pick a space target. Compare Earth's land shapes. See which places deserve a closer look.}
+\puttext{1.3}{11.6}{10.9}{\bodyfont Maps, measurements and sources in one tool.}
+\putscreenshot{13.9}{3.3}{16.7}{images/explore.png}
+\puttext{13.9}{15.9}{16.7}{\smallfont\color{Muted}Explore: the working website. These views come from height maps.}
 \puttext{1.3}{14.75}{8.0}{\fontsize{17}{21}\selectfont\bfseries Arjun Vijay Prakash\par\normalfont\fontsize{12}{17}\selectfont Grade XI, City Montessori School\par Kanpur Road, Lucknow, India}
 \footer
 \end{tikzpicture}
@@ -44,12 +45,12 @@
 \begin{tikzpicture}[remember picture,overlay]
 \heading{How it works}
 
-\puttext{1.4}{3.55}{9.4}{\editorial\fontsize{25}{32}\selectfont NASA maps.\par Three worlds.}
+\puttext{1.4}{3.55}{9.4}{\editorial\fontsize{23}{29}\selectfont NASA maps.\par Three worlds.}
 \puttext{1.4}{6.05}{9.3}{\bodyfont\textbf{Earth / NASADEM}\par Namib and Atacama.\par\vspace{8mm}\textbf{Mars / MOLA}\par Four areas, including Jezero.\par\vspace{8mm}\textbf{Moon / LOLA}\par Taurus--Littrow and Shackleton.}
 \puttext{13.0}{3.6}{17.3}{\bodyfont\textbf{1. Compare land shapes}\par Look at height changes, slopes and roughness.}
 \puttext{13.0}{6.7}{17.3}{\bodyfont\textbf{2. Change the settings}\par Use two map scales and two comparison methods.}
 \puttext{13.0}{9.8}{17.3}{\bodyfont\textbf{3. Check the location}\par Does the choice stay nearby or move far away?}
-\puttext{13.0}{13.2}{17.3}{\fontsize{16}{23}\selectfont\color{Moss}3,693 Earth areas / six space targets\par Each Earth area is 20 km wide.}
+\puttext{13.0}{13.2}{17.3}{\fontsize{14}{20}\selectfont\color{Moss}3,693 Earth areas / six space targets\par Each Earth area is 20 km wide.}
 \puttext{1.4}{15.6}{29}{\smallfont\color{Muted}The search covers two regions. Neighboring areas overlap, so they are not independent sites.}
 \footer
 \end{tikzpicture}
@@ -58,15 +59,15 @@
 \begin{tikzpicture}[remember picture,overlay]
 \heading{Same ground}
 
-\putimage{1.3}{3.3}{22.0}{images/evidence.png}
-\puttext{24.1}{3.7}{6.6}{\bodyfont\bfseries Matching Nili Fossae on Mars}
-\puttext{24.1}{5.35}{6.6}{\editorial\fontsize{31}{38}\selectfont 0 / 10}
-\puttext{24.1}{6.8}{6.6}{\fontsize{15}{21}\selectfont same top-ten entries}
-\puttext{24.1}{9.05}{6.6}{\editorial\fontsize{31}{38}\selectfont 3 km}
-\puttext{24.1}{10.5}{6.6}{\fontsize{15}{21}\selectfont between winning areas}
-\puttext{24.1}{12.5}{6.6}{\editorial\fontsize{31}{38}\selectfont 73.9\%}
-\puttext{24.1}{13.95}{6.6}{\fontsize{15}{21}\selectfont overlap between the areas}
-\puttext{1.4}{15.95}{22}{\smallfont\color{Muted}Different entries can cover the same place. Overlap = shared ground divided by combined area.}
+\putscreenshot{1.3}{3.3}{16.8}{images/evidence.png}
+\puttext{20.1}{3.7}{10.5}{\bodyfont\bfseries Matching Nili Fossae on Mars}
+\puttext{20.1}{5.35}{10.5}{\editorial\fontsize{24}{31}\selectfont 0 / 10}
+\puttext{20.1}{6.8}{10.5}{\fontsize{13}{19}\selectfont same top-ten entries}
+\puttext{20.1}{9.05}{10.5}{\editorial\fontsize{24}{31}\selectfont 3 km}
+\puttext{20.1}{10.5}{10.5}{\fontsize{13}{19}\selectfont between winning areas}
+\puttext{20.1}{12.5}{10.5}{\editorial\fontsize{24}{31}\selectfont 73.9\%}
+\puttext{20.1}{13.95}{10.5}{\fontsize{13}{19}\selectfont overlap between the areas}
+\puttext{1.4}{16.0}{29}{\smallfont\color{Muted}Different entries can cover the same place. Overlap = shared ground divided by combined area.}
 \footer
 \end{tikzpicture}
 \end{frame}
@@ -74,9 +75,9 @@
 \begin{tikzpicture}[remember picture,overlay]
 \heading{Different choices}
 
-\puttext{1.5}{3.3}{13.4}{\editorial\fontsize{27}{34}\selectfont Up to 24.2 km}
+\puttext{1.5}{3.3}{13.4}{\editorial\fontsize{24}{31}\selectfont Up to 24.2 km}
 \puttext{1.5}{4.85}{13.4}{\bodyfont Change the map scale.}
-\puttext{17.0}{3.3}{13.5}{\editorial\fontsize{27}{34}\selectfont Over 8,300 km}
+\puttext{17.0}{3.3}{13.5}{\editorial\fontsize{24}{31}\selectfont Over 8,300 km}
 \puttext{17.0}{4.85}{13.5}{\bodyfont Change the comparison method:\par Jezero and Syrtis switch between Namibia and Chile.}
 \putimage{2.4}{7.0}{27.2}{images/contract-displacement.png}
 \puttext{1.5}{16.05}{29}{\smallfont\color{Muted}Shown: largest moves for each target. This compares whole methods; it does not show which method is better.}
@@ -88,11 +89,11 @@
 \heading{The website}
 
 \puttext{1.3}{3.05}{14.3}{\bodyfont\bfseries Methods}
-\puttext{16.4}{3.05}{14.3}{\bodyfont\bfseries Data}
-\putimage{1.3}{4.15}{14.3}{images/methods.png}
-\putimage{16.4}{4.15}{14.3}{images/data.png}
-\puttext{1.3}{13.2}{14.0}{\bodyfont See how each comparison is made.}
-\puttext{16.4}{13.2}{14.0}{\bodyfont See NASA sources and missing map coverage.}
+\puttext{17.5}{3.05}{14.3}{\bodyfont\bfseries Data}
+\putscreenshot{1.3}{3.9}{13.2}{images/methods.png}
+\putscreenshot{17.5}{3.9}{13.2}{images/data.png}
+\puttext{1.3}{14.0}{13.2}{\bodyfont See how each comparison is made.}
+\puttext{17.5}{14.0}{13.2}{\bodyfont See NASA sources and missing map coverage.}
 \puttext{1.3}{15.5}{29.4}{\smallfont\color{Muted}Download the maps and measurements to review them yourself.}
 \footer
 \end{tikzpicture}
@@ -101,28 +102,29 @@
 \begin{tikzpicture}[remember picture,overlay]
 \heading{Honest checks}
 
-\putimage{1.3}{3.3}{21.7}{images/pit-study.png}
-\puttext{24.0}{3.55}{6.7}{\bodyfont\bfseries The lunar pit check}
-\puttext{24.0}{5.25}{6.7}{\editorial\fontsize{31}{38}\selectfont 0\%}
-\puttext{24.0}{6.75}{6.7}{\fontsize{15}{21}\selectfont usable area for this measurement. We require 95\%.}
-\puttext{24.0}{10.0}{6.7}{\bodyfont Both lunar cases fail. We stop the match rather than claim a result.}
-\puttext{24.0}{13.25}{6.7}{\fontsize{15}{21}\selectfont Nine tests check the code. They cannot replace field checks.}
-\puttext{1.4}{15.9}{22}{\smallfont\color{Muted}Trying different quality settings did not make either lunar case pass. The paper includes all failed cases.}
+\putscreenshot{1.3}{3.3}{16.8}{images/pit-study.png}
+\puttext{20.1}{3.55}{10.5}{\bodyfont\bfseries The lunar pit check}
+\puttext{20.1}{5.25}{10.5}{\editorial\fontsize{24}{31}\selectfont 0–1.56\%}
+\puttext{20.1}{6.75}{10.5}{\fontsize{13}{19}\selectfont usable area across two cases. We require 95\%.}
+\puttext{20.1}{10.0}{10.5}{\bodyfont Both lunar cases fail. We stop the match rather than claim a result.}
+\puttext{20.1}{13.25}{10.5}{\fontsize{13}{19}\selectfont Nine tests check the code. They cannot replace field checks.}
+\puttext{1.4}{16.0}{29}{\smallfont\color{Muted}Trying different quality settings did not make either lunar case pass. The paper includes all failed cases.}
 \footer
 \end{tikzpicture}
 \end{frame}
+\hypersetup{urlcolor=Paper}
 \setbeamercolor{background canvas}{bg=Ink}\setbeamercolor{normal text}{fg=Paper}\colorlet{Muted}{Paper!65!Ink}\colorlet{Line}{Paper!20!Ink}
 \begin{frame}[plain]
 \begin{tikzpicture}[remember picture,overlay,text=Paper]
 \heading{Why it matters}
 
-\puttext{1.5}{3.6}{13.4}{\editorial\fontsize{27}{34}\selectfont Know why a place was chosen.}
+\puttext{1.5}{3.6}{13.4}{\editorial\fontsize{24}{31}\selectfont Know why a place was chosen.}
 \puttext{1.5}{7.0}{13.4}{\bodyfont Help researchers choose what to study next, before planning fieldwork.}
 \puttext{1.5}{10.6}{13.4}{\bodyfont\textbf{Next step}\par Check the geology and test whether these places help real exploration tasks.}
 \puttext{18.0}{3.75}{12.3}{\bodyfont\textbf{Ready to use}\par\vspace{5mm}Working website\par\vspace{4mm}Maps and measurements\par\vspace{4mm}Ten-page research paper\par\vspace{4mm}Open code and editable slides}
-\puttext{18.0}{10.6}{12.3}{\bodyfont\textbf{One area for further study}\par Namibia: 25.16? S, 16.06? E.\par A research candidate, not an approved field site.}
-\puttext{1.5}{14.55}{29}{\fontsize{16}{22}\selectfont We found a problem with how rankings are read. We have not confirmed a new Earth test site.}
-\puttext{1.5}{15.75}{29}{\fontsize{16}{20}\selectfont\href{https://github.com/ArjunCodess/MIMESIS}{\color{Paper}github.com/ArjunCodess/MIMESIS}}
+\puttext{18.0}{10.6}{12.3}{\bodyfont\textbf{One area for further study}\par Namibia: 25.16° S, 16.06° E.\par A research candidate, not an approved field site.}
+\puttext{1.5}{14.55}{29}{\fontsize{14}{20}\selectfont We found a problem with how rankings are read. We have not confirmed a new Earth test site.}
+\puttext{1.5}{15.75}{29}{\fontsize{14}{19}\selectfont\href{https://github.com/ArjunCodess/MIMESIS}{github.com/ArjunCodess/MIMESIS}}
 \footer
 \end{tikzpicture}
 \end{frame}

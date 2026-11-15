@@ -44,4 +44,3 @@ The precise term for the shared-ground measure is intersection-over-union: share
 
 The Namibia example on slide 7 is the Nili scalar compromise window centred at 25.16248 degrees south, 16.05951 degrees east. It ranks 17 and 19 at the two scales, outside both top tens. It is not an approved field location. The wider regions are established analogue environments; a previously unrecognised geological site has not been established here. Earth also does not reproduce lunar vacuum and gravity, the Martian atmosphere or their radiation environments.
 
-Arjun Vijay Prakash built MIMESIS. Codex assisted with implementation, analysis code and writing. Original data terms and research citations remain in the paper and source manifests.
