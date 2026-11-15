@@ -1,0 +1,516 @@
+{
+  "id": "mimesis-transfer-v9",
+  "status": "exploratory_feasibility_with_missing_data_abstention",
+  "generated_at": "2026-11-14T18:21:30.615241+00:00",
+  "config": {
+    "id": "mimesis-transfer-v9",
+    "status": "exploratory_feasibility_design",
+    "earth_population": "Frozen 100-context V8 climate frame only; qualified membership exclusively from global_eligibility_v9",
+    "catalog_url": "https://stac.astrogeology.usgs.gov/api/search",
+    "collection": "mro_ctx_controlled_usgs_dtms",
+    "catalog_page_limit": 100,
+    "catalog_max_pages": 10,
+    "catalog_selection": "First ten catalogue pages in provider order, retained with exact query and hashes; bounded metadata inventory, not random or complete Mars sample",
+    "local_width_m": 20000,
+    "context_width_m": 80000,
+    "minimum_local_valid_fraction": 0.95,
+    "slope_match_tolerance_deg": 1.0,
+    "relief_match_tolerance_m": 100.0,
+    "fine_support_sensitivity_m": [
+      100,
+      200,
+      300
+    ],
+    "fine_metric": "Wasserstein-1 on slope and planar Laplacian; existing validation.compare_fine",
+    "normalization": "slope/5 degrees and Laplacian/.001m-1; fixed engineering scales",
+    "target_freeze": "Blocked until local valid pixels, actual context nonoverlap, quality, independent reference and exposure audit are verified; existing 12 targets are inspected calibration/exploratory cases",
+    "source_independence": "CTX is controlled to MOLA; GLO30 DEM-only filled ancestry is unknown without FLM/HEM/EDM/WBM",
+    "human_utility": "Blocked until controlled Earth rehearsal intervention with blinded independent people and independent reference",
+    "inference": "Superiority requires justified independent units and prespecified test; otherwise inconclusive or missing-data abstention. No equivalence from p>=.05."
+  },
+  "sources": [
+    {
+      "path": "configs/transfer_v9.json",
+      "sha256": "f1b9457eddf68c00d9d1b3b4fc4fa26ee9479a8010e2058373f845ff70f8f53e"
+    },
+    {
+      "path": "apps/web/public/research/natural_land_v6.json",
+      "sha256": "11d41ed0d73f36326ba8fcbacaaf801b3bd784f2c16d774b64b14d68ae6453e5"
+    },
+    {
+      "path": "apps/web/public/research/global_terrain_v8.json",
+      "sha256": "27d8b3401d330541a9f3236456e99cdce4555966e612c9fb184f7ccb2edf6e59"
+    },
+    {
+      "path": "configs/prospective_targets_v5.json",
+      "sha256": "6cd037d21ef414939cc9aa1f94518c6b65a20f33882386f6d00263d3c44f2552"
+    },
+    {
+      "path": "src/mimesis/transfer.py",
+      "sha256": "1baf5b75701e970d300ef17bcbec28e475c44927e3196c11e53e5c1fcfd23a27"
+    },
+    {
+      "path": "scripts/build_transfer_v9.py",
+      "sha256": "23d22e4736d2666b01ae2bbe53e487765c640969befb53a06041e9e572b2acc9"
+    }
+  ],
+  "v6_exact_feasibility": {
+    "500": {
+      "total_pairs": 666,
+      "geometry_pass": 0,
+      "slope_pass": 666,
+      "relief_pass": 666,
+      "all_constraints_pass": 0,
+      "feasible_pairs": [],
+      "missing_descriptor_pairs": [],
+      "state": "no_feasible_pair",
+      "interpretation": "Exact enumeration of pair constraints; edge count is not a maximum matching or an independent sample size",
+      "matching_scope": "Slope/relief tolerances are a new V9 exploratory sensitivity, not a reproduction of all frozen V6 control rules. The zero geometry count does not depend on these tolerances.",
+      "eligible_count": 37,
+      "regions": [
+        "namib"
+      ],
+      "center_span_easting_m": 12000,
+      "center_span_northing_m": 54000
+    },
+    "1000": {
+      "total_pairs": 561,
+      "geometry_pass": 0,
+      "slope_pass": 561,
+      "relief_pass": 561,
+      "all_constraints_pass": 0,
+      "feasible_pairs": [],
+      "missing_descriptor_pairs": [],
+      "state": "no_feasible_pair",
+      "interpretation": "Exact enumeration of pair constraints; edge count is not a maximum matching or an independent sample size",
+      "matching_scope": "Slope/relief tolerances are a new V9 exploratory sensitivity, not a reproduction of all frozen V6 control rules. The zero geometry count does not depend on these tolerances.",
+      "eligible_count": 34,
+      "regions": [
+        "namib"
+      ],
+      "center_span_easting_m": 12000,
+      "center_span_northing_m": 54000
+    }
+  },
+  "catalogue": {
+    "pages": [
+      {
+        "path": "data/metadata/transfer_v9/ctx-page-001.json",
+        "sha256": "33685d53b32fc62f1cf73501030febd63d5d3c6cfe72a0b8f6cac8e8527fe9f8",
+        "url": "https://stac.astrogeology.usgs.gov/api/search?collections=mro_ctx_controlled_usgs_dtms&limit=100",
+        "http_status": 200,
+        "retrieved_at": "2026-11-14T18:15:47.822594+00:00"
+      },
+      {
+        "path": "data/metadata/transfer_v9/ctx-page-002.json",
+        "sha256": "b51e34eb0d82b71c359fb9ff0cd32ded2364981620948f7bdb43bbab4fff7f10",
+        "url": "https://g6goyz4w56.execute-api.us-west-2.amazonaws.com/prod/search?collections=mro_ctx_controlled_usgs_dtms&limit=100&next=2024-01-01T00%3A00%3A00Z%2CP22_009831_1874_XI_07N125W__K05_055192_1874_XN_07N125W%2Cmro_ctx_controlled_usgs_dtms",
+        "http_status": 200,
+        "retrieved_at": "2026-11-14T18:15:50.347404+00:00"
+      },
+      {
+        "path": "data/metadata/transfer_v9/ctx-page-003.json",
+        "sha256": "0d43d15f398d7a966938a7bb4af826651e86b437af8a54ea270c17c46b3b536d",
+        "url": "https://g6goyz4w56.execute-api.us-west-2.amazonaws.com/prod/search?collections=mro_ctx_controlled_usgs_dtms&next=2024-01-01T00%3A00%3A00Z%2CP22_009698_1707_XN_09S093W__P20_008841_1717_XN_08S093W%2Cmro_ctx_controlled_usgs_dtms&limit=100",
+        "http_status": 200,
+        "retrieved_at": "2026-11-14T18:15:51.857212+00:00"
+      },
+      {
+        "path": "data/metadata/transfer_v9/ctx-page-004.json",
+        "sha256": "05c680f12ca1dc71b8561915ae61c32d8de65d2f3a50ea3bebad4d3acfee0e54",
+        "url": "https://g6goyz4w56.execute-api.us-west-2.amazonaws.com/prod/search?collections=mro_ctx_controlled_usgs_dtms&next=2024-01-01T00%3A00%3A00Z%2CP22_009606_1666_XN_13S097W__P04_002565_1675_XN_12S098W%2Cmro_ctx_controlled_usgs_dtms&limit=100",
+        "http_status": 200,
+        "retrieved_at": "2026-11-14T18:15:54.105430+00:00"
+      },
+      {
+        "path": "data/metadata/transfer_v9/ctx-page-005.json",
+        "sha256": "f443bbeb6c7d09618bcf8d105d16b8bba70d85e8dc290f135de710375baad4b5",
+        "url": "https://g6goyz4w56.execute-api.us-west-2.amazonaws.com/prod/search?collections=mro_ctx_controlled_usgs_dtms&next=2024-01-01T00%3A00%3A00Z%2CP22_009530_1653_XI_14S184W__G09_021925_1653_XN_14S184W%2Cmro_ctx_controlled_usgs_dtms&limit=100",
+        "http_status": 200,
+        "retrieved_at": "2026-11-14T18:15:57.094158+00:00"
+      },
+      {
+        "path": "data/metadata/transfer_v9/ctx-page-006.json",
+        "sha256": "45cf0a7b6b0c4264ae0bbe5559505bb71375513467e9ca868aca9c069ece8e77",
+        "url": "https://g6goyz4w56.execute-api.us-west-2.amazonaws.com/prod/search?collections=mro_ctx_controlled_usgs_dtms&next=2024-01-01T00%3A00%3A00Z%2CP22_009476_1756_XN_04S150W__P20_008909_1793_XN_00S151W%2Cmro_ctx_controlled_usgs_dtms&limit=100",
+        "http_status": 200,
+        "retrieved_at": "2026-11-14T18:15:59.332596+00:00"
+      },
+      {
+        "path": "data/metadata/transfer_v9/ctx-page-007.json",
+        "sha256": "069f6f0ef0aade78394d7748150500d489c7284ce8bd9fa9b879983c4c556496",
+        "url": "https://g6goyz4w56.execute-api.us-west-2.amazonaws.com/prod/search?collections=mro_ctx_controlled_usgs_dtms&next=2024-01-01T00%3A00%3A00Z%2CP21_009319_1651_XN_14S184W__P07_003900_1653_XI_14S184W%2Cmro_ctx_controlled_usgs_dtms&limit=100",
+        "http_status": 200,
+        "retrieved_at": "2026-11-14T18:16:01.962929+00:00"
+      },
+      {
+        "path": "data/metadata/transfer_v9/ctx-page-008.json",
+        "sha256": "fb902bd1137914d76d8e5da46f95df8c6badb4774b86d922d6e24cd8ba1f9bea",
+        "url": "https://g6goyz4w56.execute-api.us-west-2.amazonaws.com/prod/search?collections=mro_ctx_controlled_usgs_dtms&next=2024-01-01T00%3A00%3A00Z%2CP21_009294_1752_XI_04S222W__G05_020054_1749_XN_05S222W%2Cmro_ctx_controlled_usgs_dtms&limit=100",
+        "http_status": 200,
+        "retrieved_at": "2026-11-14T18:16:04.492178+00:00"
+      },
+      {
+        "path": "data/metadata/transfer_v9/ctx-page-009.json",
+        "sha256": "c48cb5495800a6a483da66f6dac05623b16fd50be929766ad2dd3c61770242e1",
+        "url": "https://g6goyz4w56.execute-api.us-west-2.amazonaws.com/prod/search?collections=mro_ctx_controlled_usgs_dtms&next=2024-01-01T00%3A00%3A00Z%2CP21_009186_1795_XN_00S155W__P18_008250_1819_XN_01N155W%2Cmro_ctx_controlled_usgs_dtms&limit=100",
+        "http_status": 200,
+        "retrieved_at": "2026-11-14T18:16:07.036305+00:00"
+      },
+      {
+        "path": "data/metadata/transfer_v9/ctx-page-010.json",
+        "sha256": "fba076eb40010c1229fab0c36c58a9755f5f7b1c40786fec367fe61bf7577d42",
+        "url": "https://g6goyz4w56.execute-api.us-west-2.amazonaws.com/prod/search?collections=mro_ctx_controlled_usgs_dtms&next=2024-01-01T00%3A00%3A00Z%2CP21_009053_1751_XI_04S123W__B02_010398_1751_XI_04S123W%2Cmro_ctx_controlled_usgs_dtms&limit=100",
+        "http_status": 200,
+        "retrieved_at": "2026-11-14T18:16:10.136702+00:00"
+      }
+    ],
+    "provider_number_matched": 44628,
+    "item_count": 1000,
+    "complete_catalogue": false,
+    "selection": "First ten catalogue pages in provider order, retained with exact query and hashes; bounded metadata inventory, not random or complete Mars sample",
+    "dtm_pixels_downloaded": false,
+    "inventory_source": {
+      "path": "data/metadata/transfer_v9/ctx-inventory.json",
+      "sha256": "b09e7d76da01f3b8c627db1eed0700f488e9e8dcc44488e30d0fd8f2a29ca166"
+    }
+  },
+  "earth_eligibility": {
+    "state": "missing_eligibility_abstention",
+    "qualified_count": 0,
+    "missing_eligibility_is_not_pass": true
+  },
+  "global_pair_diagnostics": {
+    "total_pairs": 0,
+    "geometry_pass": 0,
+    "slope_pass": 0,
+    "relief_pass": 0,
+    "all_constraints_pass": 0,
+    "feasible_pairs": [],
+    "missing_descriptor_pairs": [],
+    "state": "no_feasible_pair",
+    "interpretation": "Exact enumeration of pair constraints; edge count is not a maximum matching or an independent sample size"
+  },
+  "controls": {
+    "pairs": [],
+    "exclusions": [],
+    "rule": "Target-ID order, frozen rank nomination, nearest slope/relief match then ID; greedy allocation is not maximum cardinality"
+  },
+  "cases": [
+    {
+      "target_id": "jezero",
+      "body": "Mars",
+      "exposure": "already_inspected_not_blind",
+      "pair": null,
+      "state": "missing_data_abstention",
+      "missing": [
+        "qualified_unused_Earth_pair"
+      ],
+      "reference": {
+        "state": "missing_reference_abstention",
+        "missing": [
+          "source_identifier",
+          "independent_authorship",
+          "coverage_verified",
+          "positional_accuracy_m",
+          "geological_method",
+          "tolerance_justification",
+          "blinding_verified"
+        ],
+        "contact_f1": null
+      },
+      "human_rehearsal": "no_controlled_intervention_or_independent_participants"
+    },
+    {
+      "target_id": "nili",
+      "body": "Mars",
+      "exposure": "already_inspected_not_blind",
+      "pair": null,
+      "state": "missing_data_abstention",
+      "missing": [
+        "qualified_unused_Earth_pair"
+      ],
+      "reference": {
+        "state": "missing_reference_abstention",
+        "missing": [
+          "source_identifier",
+          "independent_authorship",
+          "coverage_verified",
+          "positional_accuracy_m",
+          "geological_method",
+          "tolerance_justification",
+          "blinding_verified"
+        ],
+        "contact_f1": null
+      },
+      "human_rehearsal": "no_controlled_intervention_or_independent_participants"
+    },
+    {
+      "target_id": "isidis",
+      "body": "Mars",
+      "exposure": "already_inspected_not_blind",
+      "pair": null,
+      "state": "missing_data_abstention",
+      "missing": [
+        "qualified_unused_Earth_pair"
+      ],
+      "reference": {
+        "state": "missing_reference_abstention",
+        "missing": [
+          "source_identifier",
+          "independent_authorship",
+          "coverage_verified",
+          "positional_accuracy_m",
+          "geological_method",
+          "tolerance_justification",
+          "blinding_verified"
+        ],
+        "contact_f1": null
+      },
+      "human_rehearsal": "no_controlled_intervention_or_independent_participants"
+    },
+    {
+      "target_id": "syrtis",
+      "body": "Mars",
+      "exposure": "already_inspected_not_blind",
+      "pair": null,
+      "state": "missing_data_abstention",
+      "missing": [
+        "qualified_unused_Earth_pair"
+      ],
+      "reference": {
+        "state": "missing_reference_abstention",
+        "missing": [
+          "source_identifier",
+          "independent_authorship",
+          "coverage_verified",
+          "positional_accuracy_m",
+          "geological_method",
+          "tolerance_justification",
+          "blinding_verified"
+        ],
+        "contact_f1": null
+      },
+      "human_rehearsal": "no_controlled_intervention_or_independent_participants"
+    },
+    {
+      "target_id": "apollo17",
+      "body": "Moon",
+      "exposure": "already_inspected_not_blind",
+      "pair": null,
+      "state": "missing_data_abstention",
+      "missing": [
+        "qualified_unused_Earth_pair"
+      ],
+      "reference": {
+        "state": "missing_reference_abstention",
+        "missing": [
+          "source_identifier",
+          "independent_authorship",
+          "coverage_verified",
+          "positional_accuracy_m",
+          "geological_method",
+          "tolerance_justification",
+          "blinding_verified"
+        ],
+        "contact_f1": null
+      },
+      "human_rehearsal": "no_controlled_intervention_or_independent_participants"
+    },
+    {
+      "target_id": "shackleton",
+      "body": "Moon",
+      "exposure": "already_inspected_not_blind",
+      "pair": null,
+      "state": "missing_data_abstention",
+      "missing": [
+        "qualified_unused_Earth_pair"
+      ],
+      "reference": {
+        "state": "missing_reference_abstention",
+        "missing": [
+          "source_identifier",
+          "independent_authorship",
+          "coverage_verified",
+          "positional_accuracy_m",
+          "geological_method",
+          "tolerance_justification",
+          "blinding_verified"
+        ],
+        "contact_f1": null
+      },
+      "human_rehearsal": "no_controlled_intervention_or_independent_participants"
+    },
+    {
+      "target_id": "prospective-01",
+      "body": "Mars",
+      "exposure": "already_inspected_not_blind",
+      "pair": null,
+      "state": "missing_data_abstention",
+      "missing": [
+        "qualified_unused_Earth_pair"
+      ],
+      "reference": {
+        "state": "missing_reference_abstention",
+        "missing": [
+          "source_identifier",
+          "independent_authorship",
+          "coverage_verified",
+          "positional_accuracy_m",
+          "geological_method",
+          "tolerance_justification",
+          "blinding_verified"
+        ],
+        "contact_f1": null
+      },
+      "human_rehearsal": "no_controlled_intervention_or_independent_participants"
+    },
+    {
+      "target_id": "prospective-02",
+      "body": "Mars",
+      "exposure": "already_inspected_not_blind",
+      "pair": null,
+      "state": "missing_data_abstention",
+      "missing": [
+        "qualified_unused_Earth_pair"
+      ],
+      "reference": {
+        "state": "missing_reference_abstention",
+        "missing": [
+          "source_identifier",
+          "independent_authorship",
+          "coverage_verified",
+          "positional_accuracy_m",
+          "geological_method",
+          "tolerance_justification",
+          "blinding_verified"
+        ],
+        "contact_f1": null
+      },
+      "human_rehearsal": "no_controlled_intervention_or_independent_participants"
+    },
+    {
+      "target_id": "prospective-03",
+      "body": "Mars",
+      "exposure": "already_inspected_not_blind",
+      "pair": null,
+      "state": "missing_data_abstention",
+      "missing": [
+        "qualified_unused_Earth_pair"
+      ],
+      "reference": {
+        "state": "missing_reference_abstention",
+        "missing": [
+          "source_identifier",
+          "independent_authorship",
+          "coverage_verified",
+          "positional_accuracy_m",
+          "geological_method",
+          "tolerance_justification",
+          "blinding_verified"
+        ],
+        "contact_f1": null
+      },
+      "human_rehearsal": "no_controlled_intervention_or_independent_participants"
+    },
+    {
+      "target_id": "prospective-04",
+      "body": "Mars",
+      "exposure": "already_inspected_not_blind",
+      "pair": null,
+      "state": "missing_data_abstention",
+      "missing": [
+        "qualified_unused_Earth_pair"
+      ],
+      "reference": {
+        "state": "missing_reference_abstention",
+        "missing": [
+          "source_identifier",
+          "independent_authorship",
+          "coverage_verified",
+          "positional_accuracy_m",
+          "geological_method",
+          "tolerance_justification",
+          "blinding_verified"
+        ],
+        "contact_f1": null
+      },
+      "human_rehearsal": "no_controlled_intervention_or_independent_participants"
+    },
+    {
+      "target_id": "prospective-05",
+      "body": "Mars",
+      "exposure": "already_inspected_not_blind",
+      "pair": null,
+      "state": "missing_data_abstention",
+      "missing": [
+        "qualified_unused_Earth_pair"
+      ],
+      "reference": {
+        "state": "missing_reference_abstention",
+        "missing": [
+          "source_identifier",
+          "independent_authorship",
+          "coverage_verified",
+          "positional_accuracy_m",
+          "geological_method",
+          "tolerance_justification",
+          "blinding_verified"
+        ],
+        "contact_f1": null
+      },
+      "human_rehearsal": "no_controlled_intervention_or_independent_participants"
+    },
+    {
+      "target_id": "prospective-06",
+      "body": "Mars",
+      "exposure": "already_inspected_not_blind",
+      "pair": null,
+      "state": "missing_data_abstention",
+      "missing": [
+        "qualified_unused_Earth_pair"
+      ],
+      "reference": {
+        "state": "missing_reference_abstention",
+        "missing": [
+          "source_identifier",
+          "independent_authorship",
+          "coverage_verified",
+          "positional_accuracy_m",
+          "geological_method",
+          "tolerance_justification",
+          "blinding_verified"
+        ],
+        "contact_f1": null
+      },
+      "human_rehearsal": "no_controlled_intervention_or_independent_participants"
+    }
+  ],
+  "inference": {
+    "state": "missing_data_abstention",
+    "pair_count": 0,
+    "missing_pairs": 12,
+    "one_sided_p": null
+  },
+  "summary": {
+    "existing_case_count": 12,
+    "qualified_earth_blocks": 0,
+    "complete_transfer_pairs": 0,
+    "catalogue_item_count": 1000,
+    "geometry_feasible_items": 427,
+    "metadata_candidates_outside_prior_contexts": 427,
+    "new_targets_frozen": 0
+  },
+  "claim": "Exact bounded feasibility and metadata inventory only; no new blind validation, analogue discovery, equivalence or human utility established",
+  "source_limits": [
+    "CTX is aligned to MOLA: fully independent ancestry is not established",
+    "20m posting is not effective resolution; fixed 100/200/300m support sensitivities precede future evaluation",
+    "GLO30 DEM alone cannot establish FLM/HEM/EDM/WBM filled ancestry; independence unknown",
+    "SIM3464 Jezero is inspected calibration only; no inherited universal contact tolerance",
+    "Local 20km stereo coverage is distinct from coarse 80km MOLA context ranking; no 80% fine context gate",
+    "Metadata-only local coverage retains unknown valid pixels and reference availability",
+    "No complete pairs currently means missing-data abstention, not a negative analogue result"
+  ],
+  "record_hash": "0e9a9f8847834b00d53175785d99a8287aa06973092c4e68a5583a59176d1663",
+  "source_report_hash": "33b3aea67760f83ea9e249b41edfb98c7e79eb6eee98fdf59531948000e8fec2"
+}

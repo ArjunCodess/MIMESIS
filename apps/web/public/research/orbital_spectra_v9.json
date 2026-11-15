@@ -1,0 +1,976 @@
+{
+  "schema_version": 1,
+  "experiment_id": "orbital_spectra_v9",
+  "generated_utc": "2026-11-14T18:23:17.672871+00:00",
+  "config_sha256": "23bc8268d6d9480ea2ff05ec6b5ba3adb80b2d50fd2a5245000285ec583a0727",
+  "seasonal_manifest_sha256": "96f51a985b763c8bdfd9a2dec83e9afa2ba2d586ff4d8ec4a7a09cafb8679052",
+  "implementation_sha256": {
+    "G:\\arjuncodess\\MIMESIS\\scripts\\characterize_orbital_spectra.py": "2281b3d42541fe02c13350f098ba0dfda2221d491d33b4036ff5a9e27e4ed8ba",
+    "src\\mimesis\\orbital_spectra.py": "93759abf7a137a3d0da194d5fe87eac32bcfc0f490f05f8a552670b1470d1b13"
+  },
+  "claim_ceiling": "exploratory_known_control_observability",
+  "roi": {
+    "id": "puga_review_bbox",
+    "bbox_wsen": [
+      78.295,
+      33.215,
+      78.335,
+      33.23
+    ],
+    "registration": "provisional_review_bbox_not_registered_to_field_specimens",
+    "positive_label": null,
+    "matched_negative_label": null
+  },
+  "summary": {
+    "expected_seasonal_granules": 11,
+    "acquired_masks": 11,
+    "missing_masks": 0,
+    "scenes_with_quality_eligible_native_centers": 5,
+    "scenes_with_reflectance_and_uncertainty_analysis": 0,
+    "analysis_state": "orbital_validation_abstains_without_independent_registered_geological_controls",
+    "roi_area_state": "not_estimated_native_center_counts_are_not_area",
+    "independent_geological_positive_negative_pairs": 0
+  },
+  "limitations": [
+    "Review bbox has not been registered to archived specimens",
+    "No independently documented matched negative geological zone is available",
+    "July-October acquisition does not establish snow-free ground",
+    "Channel uncertainty does not provide spatial or continuum covariance",
+    "1900 diagnostic must abstain under the fixed 1.80-1.96 um atmospheric mask",
+    "No phase identification, classification accuracy, AUC or new-site claim is supported"
+  ],
+  "quality_policy": {
+    "required_zero_flags": [
+      "Cloud flag",
+      "Cirrus flag",
+      "Water flag",
+      "Spacecraft Flag",
+      "Dilated Cloud Flag",
+      "Aggregate Flag"
+    ],
+    "exclude_interpolated_bands": true,
+    "require_uncertainty": true,
+    "masked_intervals_um": [
+      [
+        1.35,
+        1.45
+      ],
+      [
+        1.8,
+        1.96
+      ]
+    ],
+    "minimum_roi_native_centers": 1
+  },
+  "sources": [
+    "https://lpdaac.usgs.gov/documents/1569/EMITL2ARFL_User_Guide_v1.pdf",
+    "https://nasa.github.io/LPDAAC-Data-Resources/external/How_to_use_EMIT_Quality_data.html",
+    "https://github.com/nasa/EMIT-Data-Resources/blob/main/python/modules/emit_tools.py",
+    "https://opendap.earthdata.nasa.gov/",
+    "https://docs.opendap.org/index.php/DAP2%3A_Constraint_Expressions",
+    "https://pds-geosciences.wustl.edu/missions/mro/crism.htm",
+    "https://pds-geosciences.wustl.edu/mro/mro-m-crism-5-rdr-mptargeted-v1/mrocr_4001/bundle_crism_mtrdr.xml"
+  ],
+  "granules": [
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20230806T051732_2321804_019",
+      "cmr_id": "G2746710330-LPCLOUD",
+      "time_start": "2023-08-06T05:17:32.000Z",
+      "assets": {
+        "reflectance": {
+          "filename": "EMIT_L2A_RFL_001_20230806T051732_2321804_019.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230806T051732_2321804_019/EMIT_L2A_RFL_001_20230806T051732_2321804_019.nc",
+          "state": "missing"
+        },
+        "mask": {
+          "filename": "EMIT_L2A_MASK_001_20230806T051732_2321804_019.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230806T051732_2321804_019/EMIT_L2A_MASK_001_20230806T051732_2321804_019.nc",
+          "state": "acquired",
+          "bytes": 49941286,
+          "sha256": "ff5dbe582032aceaca81b56bdcd62a901b3cddb48f1c9d11cf35dc4ee32d9cc7"
+        },
+        "uncertainty": {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20230806T051732_2321804_019.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230806T051732_2321804_019/EMIT_L2A_RFLUNCERT_001_20230806T051732_2321804_019.nc",
+          "state": "missing"
+        }
+      },
+      "roi_quality": {
+        "native_roi_centers": 1331,
+        "native_clear_centers": 55,
+        "clear_fraction_of_native_centers": 0.04132231404958678,
+        "native_rectangle_inclusive": [
+          653,
+          710,
+          0,
+          45
+        ],
+        "flagged_native_centers": {
+          "Cloud flag": 0,
+          "Cirrus flag": 0,
+          "Water flag": 979,
+          "Spacecraft Flag": 979,
+          "Dilated Cloud Flag": 530,
+          "Aggregate Flag": 1276
+        },
+        "glt_cells_mapping_to_clear_native_roi": 74,
+        "count_interpretation": "Native centers and repeated GLT cells are neither area estimates nor independent geological replicates"
+      },
+      "analysis_state": "reflectance_and_uncertainty_missing"
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20230925T092326_2326806_018",
+      "cmr_id": "G2772968029-LPCLOUD",
+      "time_start": "2023-09-25T09:23:26.000Z",
+      "assets": {
+        "reflectance": {
+          "filename": "EMIT_L2A_RFL_001_20230925T092326_2326806_018.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230925T092326_2326806_018/EMIT_L2A_RFL_001_20230925T092326_2326806_018.nc",
+          "state": "missing"
+        },
+        "mask": {
+          "filename": "EMIT_L2A_MASK_001_20230925T092326_2326806_018.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230925T092326_2326806_018/EMIT_L2A_MASK_001_20230925T092326_2326806_018.nc",
+          "state": "acquired",
+          "bytes": 50444158,
+          "sha256": "b9591218b9dc72b698e19c25ca27fd28afabf6f0659b8f217ac40137f687ee2f"
+        },
+        "uncertainty": {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20230925T092326_2326806_018.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230925T092326_2326806_018/EMIT_L2A_RFLUNCERT_001_20230925T092326_2326806_018.nc",
+          "state": "missing"
+        }
+      },
+      "roi_quality": {
+        "native_roi_centers": 1459,
+        "native_clear_centers": 0,
+        "clear_fraction_of_native_centers": 0.0,
+        "native_rectangle_inclusive": [
+          949,
+          1005,
+          611,
+          668
+        ],
+        "flagged_native_centers": {
+          "Cloud flag": 495,
+          "Cirrus flag": 326,
+          "Water flag": 0,
+          "Spacecraft Flag": 0,
+          "Dilated Cloud Flag": 1459,
+          "Aggregate Flag": 1459
+        },
+        "glt_cells_mapping_to_clear_native_roi": 0,
+        "count_interpretation": "Native centers and repeated GLT cells are neither area estimates nor independent geological replicates"
+      },
+      "analysis_state": "no_quality_eligible_centers"
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20230929T074732_2327205_019",
+      "cmr_id": "G2775842496-LPCLOUD",
+      "time_start": "2023-09-29T07:47:32.000Z",
+      "assets": {
+        "reflectance": {
+          "filename": "EMIT_L2A_RFL_001_20230929T074732_2327205_019.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230929T074732_2327205_019/EMIT_L2A_RFL_001_20230929T074732_2327205_019.nc",
+          "state": "missing"
+        },
+        "uncertainty": {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20230929T074732_2327205_019.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230929T074732_2327205_019/EMIT_L2A_RFLUNCERT_001_20230929T074732_2327205_019.nc",
+          "state": "missing"
+        },
+        "mask": {
+          "filename": "EMIT_L2A_MASK_001_20230929T074732_2327205_019.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230929T074732_2327205_019/EMIT_L2A_MASK_001_20230929T074732_2327205_019.nc",
+          "state": "acquired",
+          "bytes": 49855397,
+          "sha256": "b0f6dae42da2231c3f71580849857910b299b3e0d87f2ba34d5607667b6e07a4"
+        }
+      },
+      "roi_quality": {
+        "native_roi_centers": 790,
+        "native_clear_centers": 0,
+        "clear_fraction_of_native_centers": 0.0,
+        "native_rectangle_inclusive": [
+          399,
+          446,
+          1211,
+          1241
+        ],
+        "flagged_native_centers": {
+          "Cloud flag": 24,
+          "Cirrus flag": 0,
+          "Water flag": 0,
+          "Spacecraft Flag": 0,
+          "Dilated Cloud Flag": 790,
+          "Aggregate Flag": 790
+        },
+        "glt_cells_mapping_to_clear_native_roi": 0,
+        "count_interpretation": "Native centers and repeated GLT cells are neither area estimates nor independent geological replicates"
+      },
+      "analysis_state": "no_quality_eligible_centers"
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20231027T044239_2330003_011",
+      "cmr_id": "G2792649002-LPCLOUD",
+      "time_start": "2023-10-27T04:42:39.000Z",
+      "assets": {
+        "reflectance": {
+          "filename": "EMIT_L2A_RFL_001_20231027T044239_2330003_011.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20231027T044239_2330003_011/EMIT_L2A_RFL_001_20231027T044239_2330003_011.nc",
+          "state": "missing"
+        },
+        "uncertainty": {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20231027T044239_2330003_011.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20231027T044239_2330003_011/EMIT_L2A_RFLUNCERT_001_20231027T044239_2330003_011.nc",
+          "state": "missing"
+        },
+        "mask": {
+          "filename": "EMIT_L2A_MASK_001_20231027T044239_2330003_011.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20231027T044239_2330003_011/EMIT_L2A_MASK_001_20231027T044239_2330003_011.nc",
+          "state": "acquired",
+          "bytes": 50356463,
+          "sha256": "f9e4f3e64dc3cd6cdb2efec15c650f2ebdb8ec52fdf8a21cd912589ea1132cf6"
+        }
+      },
+      "roi_quality": {
+        "native_roi_centers": 1326,
+        "native_clear_centers": 0,
+        "clear_fraction_of_native_centers": 0.0,
+        "native_rectangle_inclusive": [
+          1199,
+          1258,
+          1197,
+          1241
+        ],
+        "flagged_native_centers": {
+          "Cloud flag": 9,
+          "Cirrus flag": 0,
+          "Water flag": 0,
+          "Spacecraft Flag": 0,
+          "Dilated Cloud Flag": 1326,
+          "Aggregate Flag": 1326
+        },
+        "glt_cells_mapping_to_clear_native_roi": 0,
+        "count_interpretation": "Native centers and repeated GLT cells are neither area estimates nor independent geological replicates"
+      },
+      "analysis_state": "no_quality_eligible_centers"
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20231027T044251_2330003_012",
+      "cmr_id": "G2792645916-LPCLOUD",
+      "time_start": "2023-10-27T04:42:51.000Z",
+      "assets": {
+        "mask": {
+          "filename": "EMIT_L2A_MASK_001_20231027T044251_2330003_012.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20231027T044251_2330003_012/EMIT_L2A_MASK_001_20231027T044251_2330003_012.nc",
+          "state": "acquired",
+          "bytes": 50474179,
+          "sha256": "6287e32f5c3e5f0702258584bb78b603b2e09c0860d9679cd58dfb3f6b87da0e"
+        },
+        "reflectance": {
+          "filename": "EMIT_L2A_RFL_001_20231027T044251_2330003_012.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20231027T044251_2330003_012/EMIT_L2A_RFL_001_20231027T044251_2330003_012.nc",
+          "state": "missing"
+        },
+        "uncertainty": {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20231027T044251_2330003_012.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20231027T044251_2330003_012/EMIT_L2A_RFLUNCERT_001_20231027T044251_2330003_012.nc",
+          "state": "missing"
+        }
+      },
+      "roi_quality": {
+        "native_roi_centers": 0,
+        "native_clear_centers": 0,
+        "clear_fraction_of_native_centers": null,
+        "native_rectangle_inclusive": null,
+        "flagged_native_centers": {
+          "Cloud flag": 0,
+          "Cirrus flag": 0,
+          "Water flag": 0,
+          "Spacecraft Flag": 0,
+          "Dilated Cloud Flag": 0,
+          "Aggregate Flag": 0
+        },
+        "glt_cells_mapping_to_clear_native_roi": 0,
+        "count_interpretation": "Native centers and repeated GLT cells are neither area estimates nor independent geological replicates"
+      },
+      "analysis_state": "no_quality_eligible_centers"
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20240802T055339_2421504_006",
+      "cmr_id": "G3183284716-LPCLOUD",
+      "time_start": "2024-08-02T05:53:39.000Z",
+      "assets": {
+        "reflectance": {
+          "filename": "EMIT_L2A_RFL_001_20240802T055339_2421504_006.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240802T055339_2421504_006/EMIT_L2A_RFL_001_20240802T055339_2421504_006.nc",
+          "state": "missing"
+        },
+        "mask": {
+          "filename": "EMIT_L2A_MASK_001_20240802T055339_2421504_006.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240802T055339_2421504_006/EMIT_L2A_MASK_001_20240802T055339_2421504_006.nc",
+          "state": "acquired",
+          "bytes": 50880985,
+          "sha256": "2ae9af8187d67839ad0115b99f37e811bfe7cc39eb34ef9483a8b6f92166204a"
+        },
+        "uncertainty": {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20240802T055339_2421504_006.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240802T055339_2421504_006/EMIT_L2A_RFLUNCERT_001_20240802T055339_2421504_006.nc",
+          "state": "missing"
+        }
+      },
+      "roi_quality": {
+        "native_roi_centers": 1465,
+        "native_clear_centers": 4,
+        "clear_fraction_of_native_centers": 0.0027303754266211604,
+        "native_rectangle_inclusive": [
+          190,
+          247,
+          642,
+          698
+        ],
+        "flagged_native_centers": {
+          "Cloud flag": 0,
+          "Cirrus flag": 0,
+          "Water flag": 1461,
+          "Spacecraft Flag": 1461,
+          "Dilated Cloud Flag": 0,
+          "Aggregate Flag": 1461
+        },
+        "glt_cells_mapping_to_clear_native_roi": 7,
+        "count_interpretation": "Native centers and repeated GLT cells are neither area estimates nor independent geological replicates"
+      },
+      "analysis_state": "reflectance_and_uncertainty_missing"
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20240806T041819_2421903_008",
+      "cmr_id": "G3188671327-LPCLOUD",
+      "time_start": "2024-08-06T04:18:19.000Z",
+      "assets": {
+        "reflectance": {
+          "filename": "EMIT_L2A_RFL_001_20240806T041819_2421903_008.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240806T041819_2421903_008/EMIT_L2A_RFL_001_20240806T041819_2421903_008.nc",
+          "state": "missing"
+        },
+        "uncertainty": {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20240806T041819_2421903_008.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240806T041819_2421903_008/EMIT_L2A_RFLUNCERT_001_20240806T041819_2421903_008.nc",
+          "state": "missing"
+        },
+        "mask": {
+          "filename": "EMIT_L2A_MASK_001_20240806T041819_2421903_008.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240806T041819_2421903_008/EMIT_L2A_MASK_001_20240806T041819_2421903_008.nc",
+          "state": "acquired",
+          "bytes": 50103565,
+          "sha256": "89578bc6f982106e58888e63f04f266b3f2c733aa707842880634a1dc45a6bb7"
+        }
+      },
+      "roi_quality": {
+        "native_roi_centers": 1483,
+        "native_clear_centers": 519,
+        "clear_fraction_of_native_centers": 0.34996628455832773,
+        "native_rectangle_inclusive": [
+          599,
+          656,
+          1052,
+          1108
+        ],
+        "flagged_native_centers": {
+          "Cloud flag": 0,
+          "Cirrus flag": 0,
+          "Water flag": 0,
+          "Spacecraft Flag": 0,
+          "Dilated Cloud Flag": 430,
+          "Aggregate Flag": 964
+        },
+        "glt_cells_mapping_to_clear_native_roi": 718,
+        "count_interpretation": "Native centers and repeated GLT cells are neither area estimates nor independent geological replicates"
+      },
+      "analysis_state": "reflectance_and_uncertainty_missing"
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20240925T082937_2426906_010",
+      "cmr_id": "G3251192155-LPCLOUD",
+      "time_start": "2024-09-25T08:29:37.000Z",
+      "assets": {
+        "reflectance": {
+          "filename": "EMIT_L2A_RFL_001_20240925T082937_2426906_010.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240925T082937_2426906_010/EMIT_L2A_RFL_001_20240925T082937_2426906_010.nc",
+          "state": "missing"
+        },
+        "uncertainty": {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20240925T082937_2426906_010.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240925T082937_2426906_010/EMIT_L2A_RFLUNCERT_001_20240925T082937_2426906_010.nc",
+          "state": "missing"
+        },
+        "mask": {
+          "filename": "EMIT_L2A_MASK_001_20240925T082937_2426906_010.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240925T082937_2426906_010/EMIT_L2A_MASK_001_20240925T082937_2426906_010.nc",
+          "state": "acquired",
+          "bytes": 79743869,
+          "sha256": "86fc5718e460d008a1f41fb0b762106ffe8e6632145453a23e0c7c7a2cd1fbdb"
+        }
+      },
+      "roi_quality": {
+        "native_roi_centers": 1495,
+        "native_clear_centers": 0,
+        "clear_fraction_of_native_centers": 0.0,
+        "native_rectangle_inclusive": [
+          734,
+          791,
+          388,
+          445
+        ],
+        "flagged_native_centers": {
+          "Cloud flag": 16,
+          "Cirrus flag": 0,
+          "Water flag": 0,
+          "Spacecraft Flag": 0,
+          "Dilated Cloud Flag": 1495,
+          "Aggregate Flag": 1495
+        },
+        "glt_cells_mapping_to_clear_native_roi": 0,
+        "count_interpretation": "Native centers and repeated GLT cells are neither area estimates nor independent geological replicates"
+      },
+      "analysis_state": "no_quality_eligible_centers"
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20240929T065345_2427305_006",
+      "cmr_id": "G3252901521-LPCLOUD",
+      "time_start": "2024-09-29T06:53:45.000Z",
+      "assets": {
+        "reflectance": {
+          "filename": "EMIT_L2A_RFL_001_20240929T065345_2427305_006.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240929T065345_2427305_006/EMIT_L2A_RFL_001_20240929T065345_2427305_006.nc",
+          "state": "missing"
+        },
+        "uncertainty": {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20240929T065345_2427305_006.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240929T065345_2427305_006/EMIT_L2A_RFLUNCERT_001_20240929T065345_2427305_006.nc",
+          "state": "missing"
+        },
+        "mask": {
+          "filename": "EMIT_L2A_MASK_001_20240929T065345_2427305_006.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240929T065345_2427305_006/EMIT_L2A_MASK_001_20240929T065345_2427305_006.nc",
+          "state": "acquired",
+          "bytes": 50102220,
+          "sha256": "d489f4769f514be0e294eea1c697902e06792fa1ae24e939417ea7cb68acd5c0"
+        }
+      },
+      "roi_quality": {
+        "native_roi_centers": 1492,
+        "native_clear_centers": 65,
+        "clear_fraction_of_native_centers": 0.0435656836461126,
+        "native_rectangle_inclusive": [
+          672,
+          729,
+          997,
+          1054
+        ],
+        "flagged_native_centers": {
+          "Cloud flag": 33,
+          "Cirrus flag": 0,
+          "Water flag": 0,
+          "Spacecraft Flag": 0,
+          "Dilated Cloud Flag": 1427,
+          "Aggregate Flag": 1427
+        },
+        "glt_cells_mapping_to_clear_native_roi": 87,
+        "count_interpretation": "Native centers and repeated GLT cells are neither area estimates nor independent geological replicates"
+      },
+      "analysis_state": "reflectance_and_uncertainty_missing"
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20251002T051227_2527503_021",
+      "cmr_id": "G3791104332-LPCLOUD",
+      "time_start": "2025-10-02T05:12:27.000Z",
+      "assets": {
+        "reflectance": {
+          "filename": "EMIT_L2A_RFL_001_20251002T051227_2527503_021.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20251002T051227_2527503_021/EMIT_L2A_RFL_001_20251002T051227_2527503_021.nc",
+          "state": "missing"
+        },
+        "uncertainty": {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20251002T051227_2527503_021.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20251002T051227_2527503_021/EMIT_L2A_RFLUNCERT_001_20251002T051227_2527503_021.nc",
+          "state": "missing"
+        },
+        "mask": {
+          "filename": "EMIT_L2A_MASK_001_20251002T051227_2527503_021.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20251002T051227_2527503_021/EMIT_L2A_MASK_001_20251002T051227_2527503_021.nc",
+          "state": "acquired",
+          "bytes": 49379041,
+          "sha256": "5d3f561fb08fddbb5e404d1a39d0ee3b1f52b505c291766f69f9057ce07c3a99"
+        }
+      },
+      "roi_quality": {
+        "native_roi_centers": 0,
+        "native_clear_centers": 0,
+        "clear_fraction_of_native_centers": null,
+        "native_rectangle_inclusive": null,
+        "flagged_native_centers": {
+          "Cloud flag": 0,
+          "Cirrus flag": 0,
+          "Water flag": 0,
+          "Spacecraft Flag": 0,
+          "Dilated Cloud Flag": 0,
+          "Aggregate Flag": 0
+        },
+        "glt_cells_mapping_to_clear_native_roi": 0,
+        "count_interpretation": "Native centers and repeated GLT cells are neither area estimates nor independent geological replicates"
+      },
+      "analysis_state": "no_quality_eligible_centers"
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20251002T051239_2527503_022",
+      "cmr_id": "G3791101949-LPCLOUD",
+      "time_start": "2025-10-02T05:12:39.000Z",
+      "assets": {
+        "reflectance": {
+          "filename": "EMIT_L2A_RFL_001_20251002T051239_2527503_022.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20251002T051239_2527503_022/EMIT_L2A_RFL_001_20251002T051239_2527503_022.nc",
+          "state": "missing"
+        },
+        "uncertainty": {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20251002T051239_2527503_022.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20251002T051239_2527503_022/EMIT_L2A_RFLUNCERT_001_20251002T051239_2527503_022.nc",
+          "state": "missing"
+        },
+        "mask": {
+          "filename": "EMIT_L2A_MASK_001_20251002T051239_2527503_022.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20251002T051239_2527503_022/EMIT_L2A_MASK_001_20251002T051239_2527503_022.nc",
+          "state": "acquired",
+          "bytes": 49437800,
+          "sha256": "7720e9b4fe95da884f65ab86b87ca8848ce67bb4d10113f45c5d0d17c91ab0ad"
+        }
+      },
+      "roi_quality": {
+        "native_roi_centers": 1458,
+        "native_clear_centers": 111,
+        "clear_fraction_of_native_centers": 0.07613168724279835,
+        "native_rectangle_inclusive": [
+          35,
+          92,
+          515,
+          572
+        ],
+        "flagged_native_centers": {
+          "Cloud flag": 0,
+          "Cirrus flag": 0,
+          "Water flag": 71,
+          "Spacecraft Flag": 0,
+          "Dilated Cloud Flag": 1347,
+          "Aggregate Flag": 1347
+        },
+        "glt_cells_mapping_to_clear_native_roi": 158,
+        "count_interpretation": "Native centers and repeated GLT cells are neither area estimates nor independent geological replicates"
+      },
+      "analysis_state": "reflectance_and_uncertainty_missing"
+    }
+  ],
+  "crism": {
+    "state": "no_registered_geological_control_cube_acquired",
+    "verified_product_contract": "MTRDR IF is corrected I/F; WV supplies wavelengths, IN processing information and DE geometry. SU/SR summary products are not reflectance cubes. PDS4 bundle exists; exact geological control IDs remain unselected.",
+    "pds4_bundle": "https://pds-geosciences.wustl.edu/mro/mro-m-crism-5-rdr-mptargeted-v1/mrocr_4001/bundle_crism_mtrdr.xml",
+    "acquired_catalog_assets": [
+      {
+        "url": "https://pds-geosciences.wustl.edu/mro/mro-m-crism-5-rdr-mptargeted-v1/mrocr_4001/bundle_crism_mtrdr.xml",
+        "path": "data\\raw\\mars\\spectroscopy\\crism_mtrdr_preflight\\bundle_crism_mtrdr.xml",
+        "sha256": "d2d6de791b255cd693d6fe415b041b031bd48d9815c872ce7ff8caa95837eb4c",
+        "bytes": 5941,
+        "logical_identifier": "urn:nasa:pds:mro_crism_mtrdr",
+        "title": "Mars Reconnaissance Orbiter CRISM MTRDR Bundle",
+        "referenced_files": [
+          "readme.txt"
+        ]
+      },
+      {
+        "url": "https://pds-geosciences.wustl.edu/mro/mro-m-crism-5-rdr-mptargeted-v1/mrocr_4001/mtrdr/2006/2006_273/hrs00002847/hrs00002847_07_if173j_mtr3.xml",
+        "path": "data\\raw\\mars\\spectroscopy\\crism_mtrdr_preflight\\hrs00002847_07_if173j_mtr3.xml",
+        "sha256": "8205bb6a82d714f8abb523e72e836f8b938b066aba74c42eeb44291e8448f2f8",
+        "bytes": 14994,
+        "logical_identifier": "urn:nasa:pds:mro_crism_mtrdr:data_mtrdr:hrs00002847_07_if173j_mtr3",
+        "title": "hrs00002847_07_if173j_mtr3 MTRDR IF",
+        "referenced_files": [
+          "hrs00002847_07_if173j_mtr3.img",
+          "hrs00002847_07_if173j_mtr3.hdr",
+          "hrs00002847_07_if173j_mtr3.lbl"
+        ]
+      },
+      {
+        "url": "https://pds-geosciences.wustl.edu/mro/mro-m-crism-5-rdr-mptargeted-v1/mrocr_4001/mtrdr/2006/2006_273/hrs00002847/hrs00002847_07_if173j_mtr3.hdr",
+        "path": "data\\raw\\mars\\spectroscopy\\crism_mtrdr_preflight\\hrs00002847_07_if173j_mtr3.hdr",
+        "sha256": "262c9d24f5f041b9aebbd7e96b58c45737a4748ee3447ef19c43a9c32193f5d4",
+        "bytes": 14848
+      },
+      {
+        "url": "https://pds-geosciences.wustl.edu/mro/mro-m-crism-5-rdr-mptargeted-v1/mrocr_4001/mtrdr/2006/2006_273/hrs00002847/hrs00002847_07_wv173j_mtr3.xml",
+        "path": "data\\raw\\mars\\spectroscopy\\crism_mtrdr_preflight\\hrs00002847_07_wv173j_mtr3.xml",
+        "sha256": "b9cb176c92f8aef99872b319e200bc898bb0084a23852397258c8e0226adebc3",
+        "bytes": 7691,
+        "logical_identifier": "urn:nasa:pds:mro_crism_mtrdr:data_mtrdr:hrs00002847_07_wv173j_mtr3",
+        "title": "hrs00002847_07_wv173j_mtr3 MTRDR WV",
+        "referenced_files": [
+          "hrs00002847_07_wv173j_mtr3.tab",
+          "hrs00002847_07_wv173j_mtr3.lbl"
+        ]
+      },
+      {
+        "url": "https://pds-geosciences.wustl.edu/mro/mro-m-crism-5-rdr-mptargeted-v1/mrocr_4001/mtrdr/2006/2006_273/hrs00002847/hrs00002847_07_wv173j_mtr3.tab",
+        "path": "data\\raw\\mars\\spectroscopy\\crism_mtrdr_preflight\\hrs00002847_07_wv173j_mtr3.tab",
+        "sha256": "bc54157f4c376e5f4cb4242e091978b9efd2bb2b8a72a71fb39a1c8b61f146b3",
+        "bytes": 14670
+      },
+      {
+        "url": "https://pds-geosciences.wustl.edu/mro/mro-m-crism-5-rdr-mptargeted-v1/mrocr_4001/mtrdr/2006/2006_273/hrs00002847/hrs00002847_07_in173j_mtr3.xml",
+        "path": "data\\raw\\mars\\spectroscopy\\crism_mtrdr_preflight\\hrs00002847_07_in173j_mtr3.xml",
+        "sha256": "a745eaf47464128ed9bea5c9dcc9cae322e307cdb585b7f1fe3158de039a46f6",
+        "bytes": 22260,
+        "logical_identifier": "urn:nasa:pds:mro_crism_mtrdr:data_mtrdr:hrs00002847_07_in173j_mtr3",
+        "title": "hrs00002847_07_in173j_mtr3 MTRDR IN",
+        "referenced_files": [
+          "hrs00002847_07_in173j_mtr3.img",
+          "hrs00002847_07_in173j_mtr3.hdr",
+          "hrs00002847_07_in173j_mtr3.lbl"
+        ]
+      },
+      {
+        "url": "https://pds-geosciences.wustl.edu/mro/mro-m-crism-5-rdr-mptargeted-v1/mrocr_4001/mtrdr/2006/2006_273/hrs00002847/hrs00002847_07_de173l_mtr1.xml",
+        "path": "data\\raw\\mars\\spectroscopy\\crism_mtrdr_preflight\\hrs00002847_07_de173l_mtr1.xml",
+        "sha256": "09b974765599398de0ca2f22807ddf85f93dfb08e5fd9bdb112444def31637a9",
+        "bytes": 28483,
+        "logical_identifier": "urn:nasa:pds:mro_crism_mtrdr:data_mtrdr:hrs00002847_07_de173l_mtr1",
+        "title": "hrs00002847_07_de173l_mtr1 MTRDR DE",
+        "referenced_files": [
+          "hrs00002847_07_de173l_mtr1.img",
+          "hrs00002847_07_de173l_mtr1.hdr",
+          "hrs00002847_07_de173l_mtr1.lbl"
+        ]
+      }
+    ],
+    "actual_wv_table_summary": {
+      "bands": 489,
+      "good_bands": 489,
+      "wavelength_range_um": [
+        0.43613,
+        3.8967600000000004
+      ],
+      "fwhm_range_um": [
+        0.00861,
+        0.01748
+      ],
+      "quantity": "Source PDS4 WV nanometres converted to micrometres; FWHM only supports a Gaussian response approximation"
+    },
+    "catalog_example_role": "First archive directory inspected only to verify product contracts; hrs00002847 is not a selected mineral positive or negative control"
+  },
+  "acquisition_requests": [
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20230806T051732_2321804_019",
+      "native_rectangle_inclusive": [
+        653,
+        710,
+        0,
+        45
+      ],
+      "estimated_float32_bytes_per_cube_rectangle_285_bands": 3041520,
+      "opendap_catalogued_service": "https://opendap.earthdata.nasa.gov/collections/C2408750690-LPCLOUD/granules/EMIT_L2A_RFL_001_20230806T051732_2321804_019",
+      "subset_state": "Service catalogued; authenticated DMR variable paths and successful response not yet verified. Do not treat this as an acquired subset.",
+      "reflectance_projection_dap2_candidate": "reflectance[653:1:710][0:1:45][0:1:284]",
+      "uncertainty_projection_dap2_candidate": "reflectance_uncertainty[653:1:710][0:1:45][0:1:284]",
+      "required_metadata": [
+        "sensor_band_parameters/wavelengths",
+        "sensor_band_parameters/fwhm",
+        "location/lat",
+        "location/lon",
+        "geotransform",
+        "source native rectangle offsets"
+      ],
+      "missing_asset_requests": [
+        {
+          "filename": "EMIT_L2A_RFL_001_20230806T051732_2321804_019.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230806T051732_2321804_019/EMIT_L2A_RFL_001_20230806T051732_2321804_019.nc",
+          "state": "missing"
+        },
+        {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20230806T051732_2321804_019.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230806T051732_2321804_019/EMIT_L2A_RFLUNCERT_001_20230806T051732_2321804_019.nc",
+          "state": "missing"
+        }
+      ]
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20230925T092326_2326806_018",
+      "native_rectangle_inclusive": [
+        949,
+        1005,
+        611,
+        668
+      ],
+      "estimated_float32_bytes_per_cube_rectangle_285_bands": 3768840,
+      "opendap_catalogued_service": "https://opendap.earthdata.nasa.gov/collections/C2408750690-LPCLOUD/granules/EMIT_L2A_RFL_001_20230925T092326_2326806_018",
+      "subset_state": "Service catalogued; authenticated DMR variable paths and successful response not yet verified. Do not treat this as an acquired subset.",
+      "reflectance_projection_dap2_candidate": "reflectance[949:1:1005][611:1:668][0:1:284]",
+      "uncertainty_projection_dap2_candidate": "reflectance_uncertainty[949:1:1005][611:1:668][0:1:284]",
+      "required_metadata": [
+        "sensor_band_parameters/wavelengths",
+        "sensor_band_parameters/fwhm",
+        "location/lat",
+        "location/lon",
+        "geotransform",
+        "source native rectangle offsets"
+      ],
+      "missing_asset_requests": [
+        {
+          "filename": "EMIT_L2A_RFL_001_20230925T092326_2326806_018.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230925T092326_2326806_018/EMIT_L2A_RFL_001_20230925T092326_2326806_018.nc",
+          "state": "missing"
+        },
+        {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20230925T092326_2326806_018.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230925T092326_2326806_018/EMIT_L2A_RFLUNCERT_001_20230925T092326_2326806_018.nc",
+          "state": "missing"
+        }
+      ]
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20230929T074732_2327205_019",
+      "native_rectangle_inclusive": [
+        399,
+        446,
+        1211,
+        1241
+      ],
+      "estimated_float32_bytes_per_cube_rectangle_285_bands": 1696320,
+      "opendap_catalogued_service": "https://opendap.earthdata.nasa.gov/collections/C2408750690-LPCLOUD/granules/EMIT_L2A_RFL_001_20230929T074732_2327205_019",
+      "subset_state": "Service catalogued; authenticated DMR variable paths and successful response not yet verified. Do not treat this as an acquired subset.",
+      "reflectance_projection_dap2_candidate": "reflectance[399:1:446][1211:1:1241][0:1:284]",
+      "uncertainty_projection_dap2_candidate": "reflectance_uncertainty[399:1:446][1211:1:1241][0:1:284]",
+      "required_metadata": [
+        "sensor_band_parameters/wavelengths",
+        "sensor_band_parameters/fwhm",
+        "location/lat",
+        "location/lon",
+        "geotransform",
+        "source native rectangle offsets"
+      ],
+      "missing_asset_requests": [
+        {
+          "filename": "EMIT_L2A_RFL_001_20230929T074732_2327205_019.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230929T074732_2327205_019/EMIT_L2A_RFL_001_20230929T074732_2327205_019.nc",
+          "state": "missing"
+        },
+        {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20230929T074732_2327205_019.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230929T074732_2327205_019/EMIT_L2A_RFLUNCERT_001_20230929T074732_2327205_019.nc",
+          "state": "missing"
+        }
+      ]
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20231027T044239_2330003_011",
+      "native_rectangle_inclusive": [
+        1199,
+        1258,
+        1197,
+        1241
+      ],
+      "estimated_float32_bytes_per_cube_rectangle_285_bands": 3078000,
+      "opendap_catalogued_service": "https://opendap.earthdata.nasa.gov/collections/C2408750690-LPCLOUD/granules/EMIT_L2A_RFL_001_20231027T044239_2330003_011",
+      "subset_state": "Service catalogued; authenticated DMR variable paths and successful response not yet verified. Do not treat this as an acquired subset.",
+      "reflectance_projection_dap2_candidate": "reflectance[1199:1:1258][1197:1:1241][0:1:284]",
+      "uncertainty_projection_dap2_candidate": "reflectance_uncertainty[1199:1:1258][1197:1:1241][0:1:284]",
+      "required_metadata": [
+        "sensor_band_parameters/wavelengths",
+        "sensor_band_parameters/fwhm",
+        "location/lat",
+        "location/lon",
+        "geotransform",
+        "source native rectangle offsets"
+      ],
+      "missing_asset_requests": [
+        {
+          "filename": "EMIT_L2A_RFL_001_20231027T044239_2330003_011.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20231027T044239_2330003_011/EMIT_L2A_RFL_001_20231027T044239_2330003_011.nc",
+          "state": "missing"
+        },
+        {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20231027T044239_2330003_011.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20231027T044239_2330003_011/EMIT_L2A_RFLUNCERT_001_20231027T044239_2330003_011.nc",
+          "state": "missing"
+        }
+      ]
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20240802T055339_2421504_006",
+      "native_rectangle_inclusive": [
+        190,
+        247,
+        642,
+        698
+      ],
+      "estimated_float32_bytes_per_cube_rectangle_285_bands": 3768840,
+      "opendap_catalogued_service": "https://opendap.earthdata.nasa.gov/collections/C2408750690-LPCLOUD/granules/EMIT_L2A_RFL_001_20240802T055339_2421504_006",
+      "subset_state": "Service catalogued; authenticated DMR variable paths and successful response not yet verified. Do not treat this as an acquired subset.",
+      "reflectance_projection_dap2_candidate": "reflectance[190:1:247][642:1:698][0:1:284]",
+      "uncertainty_projection_dap2_candidate": "reflectance_uncertainty[190:1:247][642:1:698][0:1:284]",
+      "required_metadata": [
+        "sensor_band_parameters/wavelengths",
+        "sensor_band_parameters/fwhm",
+        "location/lat",
+        "location/lon",
+        "geotransform",
+        "source native rectangle offsets"
+      ],
+      "missing_asset_requests": [
+        {
+          "filename": "EMIT_L2A_RFL_001_20240802T055339_2421504_006.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240802T055339_2421504_006/EMIT_L2A_RFL_001_20240802T055339_2421504_006.nc",
+          "state": "missing"
+        },
+        {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20240802T055339_2421504_006.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240802T055339_2421504_006/EMIT_L2A_RFLUNCERT_001_20240802T055339_2421504_006.nc",
+          "state": "missing"
+        }
+      ]
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20240806T041819_2421903_008",
+      "native_rectangle_inclusive": [
+        599,
+        656,
+        1052,
+        1108
+      ],
+      "estimated_float32_bytes_per_cube_rectangle_285_bands": 3768840,
+      "opendap_catalogued_service": "https://opendap.earthdata.nasa.gov/collections/C2408750690-LPCLOUD/granules/EMIT_L2A_RFL_001_20240806T041819_2421903_008",
+      "subset_state": "Service catalogued; authenticated DMR variable paths and successful response not yet verified. Do not treat this as an acquired subset.",
+      "reflectance_projection_dap2_candidate": "reflectance[599:1:656][1052:1:1108][0:1:284]",
+      "uncertainty_projection_dap2_candidate": "reflectance_uncertainty[599:1:656][1052:1:1108][0:1:284]",
+      "required_metadata": [
+        "sensor_band_parameters/wavelengths",
+        "sensor_band_parameters/fwhm",
+        "location/lat",
+        "location/lon",
+        "geotransform",
+        "source native rectangle offsets"
+      ],
+      "missing_asset_requests": [
+        {
+          "filename": "EMIT_L2A_RFL_001_20240806T041819_2421903_008.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240806T041819_2421903_008/EMIT_L2A_RFL_001_20240806T041819_2421903_008.nc",
+          "state": "missing"
+        },
+        {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20240806T041819_2421903_008.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240806T041819_2421903_008/EMIT_L2A_RFLUNCERT_001_20240806T041819_2421903_008.nc",
+          "state": "missing"
+        }
+      ]
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20240925T082937_2426906_010",
+      "native_rectangle_inclusive": [
+        734,
+        791,
+        388,
+        445
+      ],
+      "estimated_float32_bytes_per_cube_rectangle_285_bands": 3834960,
+      "opendap_catalogued_service": "https://opendap.earthdata.nasa.gov/collections/C2408750690-LPCLOUD/granules/EMIT_L2A_RFL_001_20240925T082937_2426906_010",
+      "subset_state": "Service catalogued; authenticated DMR variable paths and successful response not yet verified. Do not treat this as an acquired subset.",
+      "reflectance_projection_dap2_candidate": "reflectance[734:1:791][388:1:445][0:1:284]",
+      "uncertainty_projection_dap2_candidate": "reflectance_uncertainty[734:1:791][388:1:445][0:1:284]",
+      "required_metadata": [
+        "sensor_band_parameters/wavelengths",
+        "sensor_band_parameters/fwhm",
+        "location/lat",
+        "location/lon",
+        "geotransform",
+        "source native rectangle offsets"
+      ],
+      "missing_asset_requests": [
+        {
+          "filename": "EMIT_L2A_RFL_001_20240925T082937_2426906_010.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240925T082937_2426906_010/EMIT_L2A_RFL_001_20240925T082937_2426906_010.nc",
+          "state": "missing"
+        },
+        {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20240925T082937_2426906_010.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240925T082937_2426906_010/EMIT_L2A_RFLUNCERT_001_20240925T082937_2426906_010.nc",
+          "state": "missing"
+        }
+      ]
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20240929T065345_2427305_006",
+      "native_rectangle_inclusive": [
+        672,
+        729,
+        997,
+        1054
+      ],
+      "estimated_float32_bytes_per_cube_rectangle_285_bands": 3834960,
+      "opendap_catalogued_service": "https://opendap.earthdata.nasa.gov/collections/C2408750690-LPCLOUD/granules/EMIT_L2A_RFL_001_20240929T065345_2427305_006",
+      "subset_state": "Service catalogued; authenticated DMR variable paths and successful response not yet verified. Do not treat this as an acquired subset.",
+      "reflectance_projection_dap2_candidate": "reflectance[672:1:729][997:1:1054][0:1:284]",
+      "uncertainty_projection_dap2_candidate": "reflectance_uncertainty[672:1:729][997:1:1054][0:1:284]",
+      "required_metadata": [
+        "sensor_band_parameters/wavelengths",
+        "sensor_band_parameters/fwhm",
+        "location/lat",
+        "location/lon",
+        "geotransform",
+        "source native rectangle offsets"
+      ],
+      "missing_asset_requests": [
+        {
+          "filename": "EMIT_L2A_RFL_001_20240929T065345_2427305_006.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240929T065345_2427305_006/EMIT_L2A_RFL_001_20240929T065345_2427305_006.nc",
+          "state": "missing"
+        },
+        {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20240929T065345_2427305_006.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240929T065345_2427305_006/EMIT_L2A_RFLUNCERT_001_20240929T065345_2427305_006.nc",
+          "state": "missing"
+        }
+      ]
+    },
+    {
+      "granule_id": "EMIT_L2A_RFL_001_20251002T051239_2527503_022",
+      "native_rectangle_inclusive": [
+        35,
+        92,
+        515,
+        572
+      ],
+      "estimated_float32_bytes_per_cube_rectangle_285_bands": 3834960,
+      "opendap_catalogued_service": "https://opendap.earthdata.nasa.gov/collections/C2408750690-LPCLOUD/granules/EMIT_L2A_RFL_001_20251002T051239_2527503_022",
+      "subset_state": "Service catalogued; authenticated DMR variable paths and successful response not yet verified. Do not treat this as an acquired subset.",
+      "reflectance_projection_dap2_candidate": "reflectance[35:1:92][515:1:572][0:1:284]",
+      "uncertainty_projection_dap2_candidate": "reflectance_uncertainty[35:1:92][515:1:572][0:1:284]",
+      "required_metadata": [
+        "sensor_band_parameters/wavelengths",
+        "sensor_band_parameters/fwhm",
+        "location/lat",
+        "location/lon",
+        "geotransform",
+        "source native rectangle offsets"
+      ],
+      "missing_asset_requests": [
+        {
+          "filename": "EMIT_L2A_RFL_001_20251002T051239_2527503_022.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20251002T051239_2527503_022/EMIT_L2A_RFL_001_20251002T051239_2527503_022.nc",
+          "state": "missing"
+        },
+        {
+          "filename": "EMIT_L2A_RFLUNCERT_001_20251002T051239_2527503_022.nc",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20251002T051239_2527503_022/EMIT_L2A_RFLUNCERT_001_20251002T051239_2527503_022.nc",
+          "state": "missing"
+        }
+      ]
+    }
+  ],
+  "record_hash": "e2ccb22c98f82410767e90fcc4770364217ea739854ad2322b0095955ebc49d0"
+}

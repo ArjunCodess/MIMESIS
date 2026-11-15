@@ -1,0 +1,1629 @@
+{
+  "schema_version": "1.0",
+  "audit_id": "mimesis-jezero-novelty-audit-2026-11-14",
+  "audit_date": "2026-11-14",
+  "status": "completed_with_limits",
+  "scope": {
+    "target_id": "jezero",
+    "target_name": "Jezero crater, Mars",
+    "target_center": {
+      "latitude": 18.38,
+      "longitude": 77.58
+    },
+    "task": "regional_geomorphological_mapping",
+    "task_definition": "Rank 20 km Earth windows by morphometric similarity to a 20 km Jezero window, using 80 km context and four descriptor groups: slope, relief position, roughness/organization, and multiscale context.",
+    "window_m": 20000,
+    "context_m": 80000,
+    "supports_m": [
+      500,
+      1000
+    ],
+    "earth_stride_m": 3000,
+    "descriptor_groups": [
+      "slope",
+      "relief_position",
+      "roughness_organization",
+      "multiscale_context"
+    ],
+    "candidate_count": 4,
+    "question": "Is there a public prior association for any of the six exact 20 km candidate footprints, or for the exact terrain-ranking task?",
+    "exact_footprint_definition": "A published or publicly documented 20 km square at the candidate center, or an equivalent polygon matching the project bounding box.",
+    "exact_task_definition": "Task-specific regional geomorphological analogue mapping from Earth to Jezero; a change of grid spacing, weights or candidate IDs alone cannot establish scientific novelty.",
+    "outside_scope": [
+      "Mineral or spectral similarity alone",
+      "Astrobiology or habitability similarity alone",
+      "Dune-form similarity alone",
+      "Rover trafficability or landing-site engineering",
+      "Field validation or new sample collection",
+      "Proof that no prior association exists anywhere"
+    ],
+    "exact_task_parameter_correction": "The delegated v2 draft mistakenly described a 1 km Earth stride. The actual expansion uses 3 km. Executed query strings are preserved as executed, not silently rewritten."
+  },
+  "bundle_context": {
+    "evidence_packets": "artifacts/reports/evidence_packets.json",
+    "web_bundle": "apps/web/public/research/bundle.json",
+    "release_status": "docs/release-status.md",
+    "bundle_novelty_status_at_audit": "pending",
+    "bundle_candidate_status_at_audit": "not_audited",
+    "bundle_claim_at_audit": "Model-assisted remote-sensing assessment; no independently validated or new analogue is established.",
+    "note": "This audit supplies the focused Jezero ledger requested by docs/release-status.md. It does not modify the bundle or promote any candidate."
+  },
+  "method": {
+    "query_date": "2026-11-14",
+    "query_window": "single-day audit",
+    "sources_used": [
+      "DuckDuckGo HTML",
+      "Bing",
+      "OpenAlex API",
+      "Crossref API",
+      "Figshare API",
+      "NASA web pages",
+      "UNESCO web page",
+      "Cussen project pages",
+      "DOI landing metadata"
+    ],
+    "inspection_level": "Public pages, bibliographic metadata, and abstracts. No paywalled full text was read.",
+    "exact_string_policy": "Exact-string results were used as evidence only where the engine honored quotes and returned an interpretable result. Bing results were not used as exact-string zero evidence because quotes were not honored. OpenAlex and Crossref counts are bibliographic and tokenized, not exhaustive full-text searches.",
+    "language_coverage": "English and Spanish project/agency pages. No systematic Spanish-language literature search.",
+    "peer_review_policy": "Project pages, agency pages, conference abstracts, preprints, and datasets are labeled as such. Peer-review status was not inferred.",
+    "parent_verification": "Parent checked the Cussen author page, NASA overview and original smectite paper; DOI metadata checked through Crossref for Namib dune, Chilean salars and Atacama-Jezero clay work. The 57 delegated query logs are retained as provenance, not independently replicated searches."
+  },
+  "candidates": [
+    {
+      "candidate_id": "ATACAMA-154000-142000",
+      "role": "nomination",
+      "region": "Atacama, Chile",
+      "center": {
+        "latitude": -23.61987507365594,
+        "longitude": -68.47084204412747
+      },
+      "bbox": {
+        "west": -68.56912998630884,
+        "south": -23.710470850358377,
+        "east": -68.37241826711639,
+        "north": -23.52921700486394
+      },
+      "window_m": 20000,
+      "public_site_name": null,
+      "candidate_id_public": false,
+      "known_regional_association": true,
+      "regional_association_ids": [
+        "KA-01",
+        "KA-02",
+        "KA-03",
+        "KA-04",
+        "KA-05",
+        "KA-06",
+        "KA-07",
+        "KA-10",
+        "KA-11"
+      ],
+      "exact_footprint_status": "unresolved",
+      "exact_footprint_finding": "no_public_match_found_in_queried_sources",
+      "exact_footprint_note": "The candidate center lies in the broader Salar de Atacama region. The Cussen page maps the salar at 23.5 S, 68 W and compares it with Jezero, but it does not publish a 20 km footprint matching this bounding box. No public record of the project-internal ID was found.",
+      "exact_task_status": "unresolved",
+      "exact_task_finding": "no_exact_public_match_found_in_queried_sources",
+      "exact_task_note": "The Cussen work is mineral/spectral and index-based, not a four-group morphometric terrain ranking of 20 km windows.",
+      "novelty_status": "not_established",
+      "footprint": [
+        [
+          -68.56853607034458,
+          -23.710470850358377
+        ],
+        [
+          -68.37241826711639,
+          -23.709794616778268
+        ],
+        [
+          -68.37328212061117,
+          -23.52921700486394
+        ],
+        [
+          -68.56912998630884,
+          -23.52989072379352
+        ],
+        [
+          -68.56853607034458,
+          -23.710470850358377
+        ]
+      ],
+      "status": "unresolved",
+      "scope_note": "Known regional analogue context does not establish this exact footprint/task; no new association claim is authorized"
+    },
+    {
+      "candidate_id": "NAMIB-112000-070000",
+      "role": "nomination",
+      "region": "Namib, Namibia",
+      "center": {
+        "latitude": -25.27077169840674,
+        "longitude": 16.119132611665044
+      },
+      "bbox": {
+        "west": 16.01984082950403,
+        "south": -25.361089071930074,
+        "east": 16.218570969305066,
+        "north": -25.180387187762324
+      },
+      "window_m": 20000,
+      "public_site_name": null,
+      "candidate_id_public": false,
+      "known_regional_association": true,
+      "regional_association_ids": [
+        "KA-12",
+        "KA-14",
+        "KA-15"
+      ],
+      "exact_footprint_status": "unresolved",
+      "exact_footprint_finding": "no_public_match_found_in_queried_sources",
+      "exact_footprint_note": "The candidate lies in the broader Namib desert region. Published work treats the Namib as a Mars dune-form analogue, but no source publishes this exact 20 km window. No public record of the project-internal ID was found.",
+      "exact_task_status": "unresolved",
+      "exact_task_finding": "no_exact_public_match_found_in_queried_sources",
+      "exact_task_note": "Dune-form and regional geomorphology comparisons are not the four-group morphometric ranking task.",
+      "novelty_status": "not_established",
+      "footprint": [
+        [
+          16.019870105423017,
+          -25.361089071930074
+        ],
+        [
+          16.218570969305066,
+          -25.360929592817314
+        ],
+        [
+          16.218248936304903,
+          -25.180387187762324
+        ],
+        [
+          16.01984082950403,
+          -25.180546078697372
+        ],
+        [
+          16.019870105423017,
+          -25.361089071930074
+        ]
+      ],
+      "status": "unresolved",
+      "scope_note": "Known regional analogue context does not establish this exact footprint/task; no new association claim is authorized"
+    },
+    {
+      "candidate_id": "NAMIB-082000-151000",
+      "role": "nomination",
+      "region": "Namib, Namibia",
+      "center": {
+        "latitude": -24.53947848747596,
+        "longitude": 15.822352350669822
+      },
+      "bbox": {
+        "west": 15.72346020834556,
+        "south": -24.62984320271068,
+        "east": 15.921102164131318,
+        "north": -24.44904778067897
+      },
+      "window_m": 20000,
+      "public_site_name": null,
+      "candidate_id_public": false,
+      "known_regional_association": true,
+      "regional_association_ids": [
+        "KA-12",
+        "KA-14",
+        "KA-15"
+      ],
+      "exact_footprint_status": "unresolved",
+      "exact_footprint_finding": "no_public_match_found_in_queried_sources",
+      "exact_footprint_note": "The candidate lies in the broader Namib desert region. No source publishes this exact 20 km window. No public record of the project-internal ID was found.",
+      "exact_task_status": "unresolved",
+      "exact_task_finding": "no_exact_public_match_found_in_queried_sources",
+      "exact_task_note": "No public work ranks this window against Jezero using the project descriptor groups.",
+      "novelty_status": "not_established",
+      "footprint": [
+        [
+          15.72346020834556,
+          -24.62960753236129
+        ],
+        [
+          15.920988531710949,
+          -24.62984320271068
+        ],
+        [
+          15.921102164131318,
+          -24.449282585125385
+        ],
+        [
+          15.723857917966487,
+          -24.44904778067897
+        ],
+        [
+          15.72346020834556,
+          -24.62960753236129
+        ]
+      ],
+      "status": "unresolved",
+      "scope_note": "Known regional analogue context does not establish this exact footprint/task; no new association claim is authorized"
+    },
+    {
+      "candidate_id": "ATACAMA-040000-037000",
+      "known_regional_association": true,
+      "exact_footprint_status": "unresolved",
+      "exact_task_status": "unresolved",
+      "regional_association_ids": [
+        "KA-01",
+        "KA-02",
+        "KA-05"
+      ],
+      "role": "matched_alternative",
+      "region": "Atacama, Chile",
+      "center": {
+        "latitude": -24.567638097780964,
+        "longitude": -69.59228939330416
+      },
+      "footprint": [
+        [
+          -69.6914951153647,
+          -24.657500359849013
+        ],
+        [
+          -69.49392707598648,
+          -24.658266602783403
+        ],
+        [
+          -69.49322504540066,
+          -24.47770958755761
+        ],
+        [
+          -69.69051230377318,
+          -24.476946205310114
+        ],
+        [
+          -69.6914951153647,
+          -24.657500359849013
+        ]
+      ],
+      "bbox": {
+        "west": -69.6914951153647,
+        "south": -24.658266602783403,
+        "east": -69.49322504540066,
+        "north": -24.476946205310114
+      },
+      "status": "unresolved",
+      "novelty_status": "not_established",
+      "scope_note": "Known regional analogue context does not establish this exact footprint/task; no new association claim is authorized"
+    }
+  ],
+  "queries": [
+    {
+      "id": "Q01",
+      "date": "2026-11-14",
+      "engine": "DuckDuckGo HTML",
+      "field": "web",
+      "query": "\"Namib\" \"Jezero\" analogue",
+      "quotes_honored": true,
+      "result_count": 0,
+      "count_type": "returned_results",
+      "outcome": "no_results",
+      "notes": "Page reported 'No results found'."
+    },
+    {
+      "id": "Q02",
+      "date": "2026-11-14",
+      "engine": "DuckDuckGo HTML",
+      "field": "web",
+      "query": "\"Salar de Atacama\" \"Mars analog\" CRISM",
+      "quotes_honored": true,
+      "result_count": 0,
+      "count_type": "returned_results",
+      "outcome": "no_results",
+      "notes": "Page reported 'No results found'."
+    },
+    {
+      "id": "Q03",
+      "date": "2026-11-14",
+      "engine": "DuckDuckGo HTML",
+      "field": "web",
+      "query": "\"Jezero\" \"terrestrial analogue\" terrain",
+      "quotes_honored": true,
+      "result_count": 1,
+      "count_type": "returned_results",
+      "outcome": "results_but_no_exact_match",
+      "notes": "One irrelevant serpentinization result; no terrain-ranking match."
+    },
+    {
+      "id": "Q04",
+      "date": "2026-11-14",
+      "engine": "Bing",
+      "field": "web",
+      "query": "\"Atacama\" \"Jezero\"",
+      "quotes_honored": false,
+      "result_count": 43900,
+      "count_type": "reported_result_estimate",
+      "outcome": "not_usable_as_exact_match",
+      "notes": "Bing returned generic Atacama results and did not honor quotes. Not treated as exact-string zero evidence."
+    },
+    {
+      "id": "Q05",
+      "date": "2026-11-14",
+      "engine": "Bing",
+      "field": "web",
+      "query": "\"ATACAMA-154000-142000\"",
+      "quotes_honored": false,
+      "result_count": null,
+      "count_type": "not_available",
+      "outcome": "not_usable_as_exact_match",
+      "notes": "Bing returned generic Atacama results; the candidate ID was not matched. Not treated as exact-string zero evidence."
+    },
+    {
+      "id": "Q06",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"Salar de Atacama Jezero\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Bibliographic title/abstract search."
+    },
+    {
+      "id": "Q07",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"Mars analog terrain ranking\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "No public title/abstract match for the exact task phrase."
+    },
+    {
+      "id": "Q08",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"Namib Mars\"",
+      "quotes_honored": null,
+      "result_count": 36,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Most results refer to the Martian 'Namib Dune' in Gale crater, not Namibia. The direct Earth-Namib dune comparison is Bourke & Goudie 2009."
+    },
+    {
+      "id": "Q09",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"Namib desert Mars analogue\"",
+      "quotes_honored": null,
+      "result_count": 2,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Bourke & Goudie 2009 and a 2006 mega-yardang study. No exact footprint."
+    },
+    {
+      "id": "Q10",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"Namib sand sea Mars\"",
+      "quotes_honored": null,
+      "result_count": 1,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Transverse aeolian ridges at ExoMars candidate sites; not a Namib-focused exact-footprint study."
+    },
+    {
+      "id": "Q11",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"Namib gravel plain Mars\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "No title/abstract match."
+    },
+    {
+      "id": "Q12",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"Namib gypsum Mars\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "No title/abstract match."
+    },
+    {
+      "id": "Q13",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"Jezero Atacama\"",
+      "quotes_honored": null,
+      "result_count": 4,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Shi et al. 2022 is the relevant mineral/geochemical hit; others concern tumbleweed rovers or OSF deposits."
+    },
+    {
+      "id": "Q14",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"Atacama Jezero analog\"",
+      "quotes_honored": null,
+      "result_count": 1,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "2026 EPSC tumbleweed rover abstract; not a terrain-ranking study."
+    },
+    {
+      "id": "Q15",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"Jezero terrain analog\"",
+      "quotes_honored": null,
+      "result_count": 12,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Mineral and geological analog papers; no exact terrain-ranking match."
+    },
+    {
+      "id": "Q16",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"Jezero analogue Earth\"",
+      "quotes_honored": null,
+      "result_count": 36,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Mostly mineral/formation analogs; no exact footprint or four-group ranking."
+    },
+    {
+      "id": "Q17",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"terrain analog machine learning Mars\"",
+      "quotes_honored": null,
+      "result_count": 3,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "No exact task match."
+    },
+    {
+      "id": "Q18",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"planetary analog site selection\"",
+      "quotes_honored": null,
+      "result_count": 38,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Field and mission site selection; not automated terrain ranking."
+    },
+    {
+      "id": "Q19",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"morphometric Mars analog\"",
+      "quotes_honored": null,
+      "result_count": 24,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Quantitative landform comparisons; no Jezero 20 km window ranking."
+    },
+    {
+      "id": "Q20",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"topographic analog Mars\"",
+      "quotes_honored": null,
+      "result_count": 117,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Broad geomorphic analog literature; no exact task."
+    },
+    {
+      "id": "Q21",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"planetary terrain matching\"",
+      "quotes_honored": null,
+      "result_count": 153,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Rover localization and terrain mapping; 'matching' has a different meaning."
+    },
+    {
+      "id": "Q22",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"Earth Mars terrain similarity\"",
+      "quotes_honored": null,
+      "result_count": 80,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Vehicle mobility criteria, permafrost features, and lava-tube comparisons; not analog-window ranking."
+    },
+    {
+      "id": "Q23",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"analogue site selection DEM\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "No title/abstract match."
+    },
+    {
+      "id": "Q24",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"morphometric terrain analog\"",
+      "quotes_honored": null,
+      "result_count": 11,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Landform-specific morphometry (planetary pits, lava flows, tsunami deposits); no Jezero window ranking."
+    },
+    {
+      "id": "Q25",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"planetary analog ranking\"",
+      "quotes_honored": null,
+      "result_count": 4,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Results were unrelated to terrain ranking (TPDZI toolkit, lunar traversability, exoplanet detection, ring architecture)."
+    },
+    {
+      "id": "Q26",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"terrain similarity Mars Earth\"",
+      "quotes_honored": null,
+      "result_count": 80,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Same top results as the Earth-Mars similarity query."
+    },
+    {
+      "id": "Q27",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "search",
+      "query": "\"NAMIB-112000-070000\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Project-internal candidate ID."
+    },
+    {
+      "id": "Q28",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "search",
+      "query": "\"-23.619875\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Atacama candidate center latitude."
+    },
+    {
+      "id": "Q29",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "search",
+      "query": "\"-68.470842\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Atacama candidate center longitude."
+    },
+    {
+      "id": "Q30",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "search",
+      "query": "\"ATACAMA-154000-142000\"",
+      "quotes_honored": null,
+      "result_count": 3,
+      "count_type": "database_total",
+      "outcome": "false_positive_tokenization",
+      "notes": "Tokenized to Atacama; results are spectroscopy/astronomy papers and unrelated to the candidate."
+    },
+    {
+      "id": "Q31",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "search",
+      "query": "\"Salar de Atacama 20 km Jezero\"",
+      "quotes_honored": null,
+      "result_count": 19,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Fuzzy; includes the 2020 wet-smectites study; no exact task."
+    },
+    {
+      "id": "Q32",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "search",
+      "query": "\"NAMIB-088000-103000\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Project-internal candidate ID."
+    },
+    {
+      "id": "Q33",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "search",
+      "query": "\"NAMIB-082000-151000\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Project-internal candidate ID."
+    },
+    {
+      "id": "Q34",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "search",
+      "query": "\"NAMIB-043000-040000\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Project-internal candidate ID."
+    },
+    {
+      "id": "Q35",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "search",
+      "query": "\"NAMIB-052000-088000\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Project-internal candidate ID."
+    },
+    {
+      "id": "Q36",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "search",
+      "query": "\"-24.972870\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Namib candidate center latitude."
+    },
+    {
+      "id": "Q37",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "search",
+      "query": "\"-24.539478\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Namib candidate center latitude."
+    },
+    {
+      "id": "Q38",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "search",
+      "query": "\"-25.540546\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Namib candidate center latitude."
+    },
+    {
+      "id": "Q39",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "search",
+      "query": "\"-25.107567\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Namib candidate center latitude."
+    },
+    {
+      "id": "Q40",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "search",
+      "query": "\"23.619875\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Unsigned Atacama latitude variant."
+    },
+    {
+      "id": "Q41",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "search",
+      "query": "\"68.470842\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Unsigned Atacama longitude variant."
+    },
+    {
+      "id": "Q42",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "search",
+      "query": "\"24.972870\" \"15.881155\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Unsigned Namib center pair."
+    },
+    {
+      "id": "Q43",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "search",
+      "query": "\"25.270772\" \"16.119133\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Unsigned Namib center pair."
+    },
+    {
+      "id": "Q44",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "fulltext.search",
+      "query": "\"-23.619875\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Bibliographic full-text index; not exhaustive."
+    },
+    {
+      "id": "Q45",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "fulltext.search",
+      "query": "\"-68.470842\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Bibliographic full-text index; not exhaustive."
+    },
+    {
+      "id": "Q46",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "fulltext.search",
+      "query": "\"-25.270772\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "Bibliographic full-text index; not exhaustive."
+    },
+    {
+      "id": "Q47",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "fulltext.search",
+      "query": "\"ATACAMA-154000-142000\"",
+      "quotes_honored": null,
+      "result_count": 3,
+      "count_type": "database_total",
+      "outcome": "false_positive_tokenization",
+      "notes": "Unrelated spectroscopy/astronomy results; the filter tokenizes the ID."
+    },
+    {
+      "id": "Q48",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "fulltext.search",
+      "query": "Salar",
+      "quotes_honored": null,
+      "result_count": 116159,
+      "count_type": "database_total",
+      "outcome": "too_broad_not_interpretable",
+      "notes": "An attempted multi-term fulltext filter for 'Salar de Atacama' plus Jezero was split during shell invocation; only 'Salar' executed. The count is too broad to interpret as a Salar de Atacama-Jezero query."
+    },
+    {
+      "id": "Q49",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "fulltext.search",
+      "query": "\"Namib Jezero terrain\"",
+      "quotes_honored": null,
+      "result_count": 48,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Broad Jezero mission papers; no exact Namib footprint match."
+    },
+    {
+      "id": "Q50",
+      "date": "2026-11-14",
+      "engine": "Crossref API",
+      "field": "query.bibliographic",
+      "query": "Jezero crater terrestrial analog terrain",
+      "quotes_honored": null,
+      "result_count": 217095,
+      "count_type": "total_results_estimate",
+      "outcome": "fuzzy_results_no_exact_match",
+      "notes": "Top hits include a 2023 GSA abstract on a Michigan pro-glacial delta as a Jezero analog and a 2026 GSA abstract on the Wedington Sandstone. Fuzzy count is not a precision measure."
+    },
+    {
+      "id": "Q51",
+      "date": "2026-11-14",
+      "engine": "Crossref API",
+      "field": "query.bibliographic",
+      "query": "Namib desert Mars analogue dune",
+      "quotes_honored": null,
+      "result_count": 167679,
+      "count_type": "total_results_estimate",
+      "outcome": "fuzzy_results_no_exact_match",
+      "notes": "Top hits were Namib ecology and groundwater papers, not Mars dune analogs. Fuzzy count is not a precision measure."
+    },
+    {
+      "id": "Q52",
+      "date": "2026-11-14",
+      "engine": "Crossref API",
+      "field": "query.bibliographic",
+      "query": "Atacama Salar Jezero CRISM",
+      "quotes_honored": null,
+      "result_count": 14522,
+      "count_type": "total_results_estimate",
+      "outcome": "fuzzy_results_no_exact_match",
+      "notes": "Top hits include a 2014 Jezero CRISM mineral identification, a Salar de Llamara brines study, BRDF modeling, and lithium. No exact footprint/task match."
+    },
+    {
+      "id": "Q53",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"terrain roughness Mars analog\"",
+      "quotes_honored": null,
+      "result_count": 14,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Includes scale-dependent topographic roughness of Hawaiian volcanic terrain as a Mars landing-site analog, Mars layered-deposit roughness, and lava-field analog work. No exact 20 km Jezero ranking."
+    },
+    {
+      "id": "Q54",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"geomorphometric Mars analog\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "No title/abstract match."
+    },
+    {
+      "id": "Q55",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"DEM similarity Mars Earth\"",
+      "quotes_honored": null,
+      "result_count": 13,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Fault-scaling, magma-emplacement, Nili Fossae mudflow, and Hale crater ejecta studies; no analog-window ranking."
+    },
+    {
+      "id": "Q56",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"planetary terrain similarity\"",
+      "quotes_honored": null,
+      "result_count": 103,
+      "count_type": "database_total",
+      "outcome": "results_but_no_exact_match",
+      "notes": "Traversability, hazard detection, artificial-object search, boundary-layer, and radar studies; no exact task match."
+    },
+    {
+      "id": "Q57",
+      "date": "2026-11-14",
+      "engine": "OpenAlex API",
+      "field": "title_and_abstract.search",
+      "query": "\"analog site ranking Mars\"",
+      "quotes_honored": null,
+      "result_count": 0,
+      "count_type": "database_total",
+      "outcome": "no_results",
+      "notes": "No title/abstract match."
+    },
+    {
+      "id": "P1",
+      "date": "2026-11-14",
+      "engine": "web search",
+      "query": "\"Atacama\" \"Jezero\" \"terrain\" analogue mapping",
+      "scope": "Parent supplementary search for corrected shortlist",
+      "outcome": "Broad prior regional/mapping work returned; no exact-footprint association established",
+      "result_count": null,
+      "notes": "Returned results only; no exhaustive or exact-string-zero inference"
+    },
+    {
+      "id": "P2",
+      "date": "2026-11-14",
+      "engine": "web search",
+      "query": "\"25.2708\" \"16.1191\" Mars",
+      "scope": "Parent supplementary search for corrected shortlist",
+      "outcome": "Broad prior regional/mapping work returned; no exact-footprint association established",
+      "result_count": null,
+      "notes": "Returned results only; no exhaustive or exact-string-zero inference"
+    },
+    {
+      "id": "P3",
+      "date": "2026-11-14",
+      "engine": "web search",
+      "query": "\"24.5395\" \"15.8224\" Mars",
+      "scope": "Parent supplementary search for corrected shortlist",
+      "outcome": "Broad prior regional/mapping work returned; no exact-footprint association established",
+      "result_count": null,
+      "notes": "Returned results only; no exhaustive or exact-string-zero inference"
+    },
+    {
+      "id": "P4",
+      "date": "2026-11-14",
+      "engine": "web search",
+      "query": "\"Atacama\" \"24.57\" \"69.59\" Mars analogue",
+      "scope": "Parent supplementary search for corrected shortlist",
+      "outcome": "Broad prior regional/mapping work returned; no exact-footprint association established",
+      "result_count": null,
+      "notes": "Returned results only; no exhaustive or exact-string-zero inference"
+    }
+  ],
+  "access_failures": [
+    {
+      "date": "2026-11-14",
+      "engine": "DuckDuckGo HTML",
+      "outcome": "bot_challenge",
+      "notes": "Follow-up exact-string requests returned a bot challenge after the first three queries."
+    },
+    {
+      "date": "2026-11-14",
+      "engine": "Brave Search",
+      "outcome": "http_429",
+      "notes": "Rate-limited; no results retrieved."
+    },
+    {
+      "date": "2026-11-14",
+      "engine": "Startpage",
+      "outcome": "javascript_verification",
+      "notes": "Verification page; no results retrieved."
+    },
+    {
+      "date": "2026-11-14",
+      "engine": "Mojeek",
+      "outcome": "javascript_required",
+      "notes": "Search interface required JavaScript; no results retrieved."
+    }
+  ],
+  "known_associations": [
+    {
+      "id": "KA-01",
+      "region": "Atacama, Chile",
+      "related_candidate_ids": [
+        "ATACAMA-154000-142000"
+      ],
+      "association_type": "regional_astrobiology_analog",
+      "source_title": "Planetary Analogs",
+      "source_author": "NASA",
+      "year": 2026,
+      "url": "https://science.nasa.gov/solar-system/planetary-analogs/",
+      "doi": null,
+      "inspection_level": "full_page_inspected",
+      "peer_review_status": "agency_web_page_not_peer_reviewed",
+      "scope": "Atacama Desert regional; not a 20 km footprint",
+      "finding": "Features the Atacama Desert as a Mars analog for astrobiology ('Looking for Life', Mars Analog).",
+      "exact_footprint_evidence": false,
+      "exact_task_evidence": false,
+      "notes": "Establishes a familiar regional association, not the candidate footprint."
+    },
+    {
+      "id": "KA-02",
+      "region": "Atacama, Chile",
+      "related_candidate_ids": [
+        "ATACAMA-154000-142000"
+      ],
+      "association_type": "regional_astrobiology_field_site",
+      "source_title": "Astrobiology Field Sites",
+      "source_author": "NASA Astrobiology",
+      "year": 2026,
+      "url": "https://astrobiology.nasa.gov/research-locations/",
+      "doi": null,
+      "inspection_level": "full_page_inspected",
+      "peer_review_status": "agency_web_page_not_peer_reviewed",
+      "scope": "Atacama Desert regional",
+      "finding": "Lists Atacama Desert, Chile as 'a suitable analog for ancient Mars' and describes life-detection and drilling tests.",
+      "exact_footprint_evidence": false,
+      "exact_task_evidence": false,
+      "notes": "Regional field-site listing; no 20 km footprint or terrain ranking."
+    },
+    {
+      "id": "KA-03",
+      "region": "Atacama, Chile",
+      "related_candidate_ids": [
+        "ATACAMA-154000-142000"
+      ],
+      "association_type": "regional_soil_astrobiology_analog",
+      "source_title": "Mars-Like Soils in the Atacama Desert, Chile, and the Dry Limit of Microbial Life",
+      "source_author": "Navarro-Gonz\u00c3\u00a1lez, R. et al.",
+      "year": 2003,
+      "url": "https://doi.org/10.1126/science.1089143",
+      "doi": "10.1126/science.1089143",
+      "journal": "Science 302:1018-1021",
+      "inspection_level": "metadata_and_abstract",
+      "peer_review_status": "peer_reviewed_journal_article",
+      "scope": "Atacama soils regional; not a 20 km footprint",
+      "finding": "Establishes Atacama soils as Mars-like and a dry limit for microbial life.",
+      "exact_footprint_evidence": false,
+      "exact_task_evidence": false,
+      "notes": "Soil/astrobiology association, not terrain morphometry."
+    },
+    {
+      "id": "KA-04",
+      "region": "Atacama, Chile",
+      "related_candidate_ids": [
+        "ATACAMA-154000-142000"
+      ],
+      "association_type": "regional_material_astrobiology_analog",
+      "source_title": "Endolithic Cyanobacteria in Halite Rocks from the Hyperarid Core of the Atacama Desert",
+      "source_author": "Wierzchos, J. et al.",
+      "year": 2006,
+      "url": "https://doi.org/10.1089/ast.2006.6.415",
+      "doi": "10.1089/ast.2006.6.415",
+      "journal": "Astrobiology 6(3):415-422",
+      "inspection_level": "metadata_and_abstract",
+      "peer_review_status": "peer_reviewed_journal_article",
+      "scope": "Hyperarid Atacama; material/astrobiology",
+      "finding": "Reports endolithic cyanobacteria in halite rocks as a Mars-relevant material analog.",
+      "exact_footprint_evidence": false,
+      "exact_task_evidence": false,
+      "notes": "Material/astrobiology association, not terrain."
+    },
+    {
+      "id": "KA-05",
+      "region": "Atacama, Chile",
+      "related_candidate_ids": [
+        "ATACAMA-154000-142000"
+      ],
+      "association_type": "regional_mineral_analog",
+      "source_title": "Remote sensing and in situ mineralogic survey of the Chilean salars: An analog to Mars evaporate deposits?",
+      "source_author": "Flahaut, J. et al.",
+      "year": 2017,
+      "url": "https://doi.org/10.1016/j.icarus.2016.09.041",
+      "doi": "10.1016/j.icarus.2016.09.041",
+      "journal": "Icarus 282:152-173",
+      "inspection_level": "metadata_and_abstract",
+      "peer_review_status": "peer_reviewed_journal_article",
+      "scope": "Chilean salars regional mineralogy",
+      "finding": "Compares Chilean salar mineralogy with Martian evaporite deposits.",
+      "exact_footprint_evidence": false,
+      "exact_task_evidence": false,
+      "notes": "Regional mineral association; not the exact Salar de Atacama 20 km window or terrain ranking."
+    },
+    {
+      "id": "KA-06",
+      "region": "Atacama, Chile",
+      "related_candidate_ids": [
+        "ATACAMA-154000-142000"
+      ],
+      "association_type": "regional_mineral_geochemical_analog",
+      "source_title": "Gamma-CaSO4 With Abnormally High Stability From a Hyperarid Region on Earth and From Mars",
+      "source_author": "Shi, E. et al.",
+      "year": 2022,
+      "url": "https://doi.org/10.1029/2021JE007108",
+      "doi": "10.1029/2021JE007108",
+      "journal": "Journal of Geophysical Research: Planets 127(3)",
+      "inspection_level": "metadata_and_abstract",
+      "peer_review_status": "peer_reviewed_journal_article",
+      "scope": "Atacama soil and Martian meteorite; mineral/geochemical",
+      "finding": "Compares Atacama soil gamma-CaSO4 with a Martian meteorite; the abstract mentions Perseverance sampling at Jezero.",
+      "exact_footprint_evidence": false,
+      "exact_task_evidence": false,
+      "notes": "Mineral/geochemical link that mentions Jezero, not a terrain or footprint association."
+    },
+    {
+      "id": "KA-07",
+      "region": "Atacama, Chile",
+      "related_candidate_ids": [
+        "ATACAMA-154000-142000"
+      ],
+      "association_type": "regional_mineral_spectral_analog_with_synthetic_jezero_comparison",
+      "source_title": "An\u00c3\u00a1logo Planetario Atacama - Salar de Atacama",
+      "source_author": "Cussen",
+      "year": 2026,
+      "url": "https://cussen.cl/proyectos/6-Space-Mining/Atacama-Analog/",
+      "doi": null,
+      "inspection_level": "full_page_inspected",
+      "peer_review_status": "author_project_page_not_peer_reviewed",
+      "scope": "Salar de Atacama regional mineral mapping at 23.5 S, 68 W",
+      "finding": "Maps Salar de Atacama minerals with Sentinel-2 and ASTER and compares 14 Mars mineral groups. The page states that 12/14 Atacama equivalents are author-assigned confidence, not field-measured detections, and that r = 0.97 compares a real Atacama spectrum with a synthetic model of the CRISM Jezero spectrum, not real CRISM data. The CAPI indices are proposed and pending field validation.",
+      "exact_footprint_evidence": false,
+      "exact_task_evidence": false,
+      "notes": "Directly blocks a broad 'first Salar de Atacama-Jezero association' claim, but does not establish the exact 20 km footprint or the four-group terrain task."
+    },
+    {
+      "id": "KA-08",
+      "region": "Jezero crater, Mars",
+      "related_candidate_ids": [],
+      "association_type": "target_mineral_context_and_proposed_indices",
+      "source_title": "An\u00c3\u00a1lisis CRISM Marte - Cr\u00c3\u00a1ter Jezero",
+      "source_author": "Cussen",
+      "year": 2026,
+      "url": "https://cussen.cl/proyectos/6-Space-Mining/Jezero-CRISM/",
+      "doi": null,
+      "inspection_level": "full_page_inspected",
+      "peer_review_status": "author_project_page_not_peer_reviewed",
+      "scope": "Jezero CRISM mineral mapping",
+      "finding": "Maps Mg-carbonate, Fe/Mg smectites, olivine, and pyroxene at Jezero with CRISM TRDR data and proposes CMPI indices. The page states that CMPI indices are proposed, pending validation, and not from published literature.",
+      "exact_footprint_evidence": false,
+      "exact_task_evidence": false,
+      "notes": "Target mineral context and proposed spectral indices; no Earth footprint or terrain ranking."
+    },
+    {
+      "id": "KA-09",
+      "region": "Atacama, Chile / Jezero, Mars",
+      "related_candidate_ids": [
+        "ATACAMA-154000-142000"
+      ],
+      "association_type": "proposed_spectral_index_framework",
+      "source_title": "Framework",
+      "source_author": "Cussen",
+      "year": 2026,
+      "url": "https://cussen.cl/framework/",
+      "doi": null,
+      "inspection_level": "full_page_inspected",
+      "peer_review_status": "author_project_page_not_peer_reviewed",
+      "scope": "Experimental spectral indices; CAPI and CMPI families",
+      "finding": "Lists CAPI and CMPI indices and labels them experimental, proposed during a remote-sensing master's, pending validation, and without independent validation.",
+      "exact_footprint_evidence": false,
+      "exact_task_evidence": false,
+      "notes": "Method/index context; not a validated terrain-ranking method."
+    },
+    {
+      "id": "KA-10",
+      "region": "Atacama, Chile",
+      "related_candidate_ids": [
+        "ATACAMA-154000-142000"
+      ],
+      "association_type": "regional_resource_remote_sensing",
+      "source_title": "Ore Prospecting in Mars Analog: Field and Remote Sensing Mapping of the Atacama Desert, Chile",
+      "source_author": "Ci\u00c4\u2026\u00c5\u00bcela, M.; Ci\u00c4\u2026\u00c5\u00bcela, J.",
+      "year": 2024,
+      "url": "https://doi.org/10.2139/ssrn.4886823",
+      "doi": "10.2139/ssrn.4886823",
+      "inspection_level": "metadata_only",
+      "peer_review_status": "preprint_not_peer_reviewed",
+      "scope": "Atacama regional ore prospecting",
+      "finding": "Regional field and remote-sensing mapping for ore prospecting in the Atacama.",
+      "exact_footprint_evidence": false,
+      "exact_task_evidence": false,
+      "notes": "Resource/remote-sensing context; not Jezero terrain ranking."
+    },
+    {
+      "id": "KA-11",
+      "region": "Atacama, Chile",
+      "related_candidate_ids": [
+        "ATACAMA-154000-142000"
+      ],
+      "association_type": "regional_material_astrobiology_analog",
+      "source_title": "Inhabited subsurface wet smectites in the hyperarid core of the Atacama Desert as an analog for the search for life on Mars",
+      "source_author": "Az\u00c3\u00baa-Bustos, A. et al.",
+      "year": 2020,
+      "url": "https://doi.org/10.1038/s41598-020-76302-z",
+      "doi": "10.1038/s41598-020-76302-z",
+      "journal": "Scientific Reports 10",
+      "inspection_level": "metadata_and_abstract",
+      "peer_review_status": "peer_reviewed_journal_article",
+      "scope": "Hyperarid Atacama; material/astrobiology",
+      "finding": "Reports wet smectites in the hyperarid Atacama as a Mars life-search analog.",
+      "exact_footprint_evidence": false,
+      "exact_task_evidence": false,
+      "notes": "Material/astrobiology association; no terrain ranking."
+    },
+    {
+      "id": "KA-12",
+      "region": "Namib, Namibia",
+      "related_candidate_ids": [
+        "NAMIB-112000-070000",
+        "NAMIB-088000-103000",
+        "NAMIB-082000-151000",
+        "NAMIB-043000-040000",
+        "NAMIB-052000-088000"
+      ],
+      "association_type": "regional_dune_morphology_analog",
+      "source_title": "Varieties of barchan form in the Namib Desert and on Mars",
+      "source_author": "Bourke, M. C.; Goudie, A. S.",
+      "year": 2009,
+      "url": "https://doi.org/10.1016/j.aeolia.2009.05.002",
+      "doi": "10.1016/j.aeolia.2009.05.002",
+      "journal": "Aeolian Research",
+      "inspection_level": "metadata_only",
+      "peer_review_status": "peer_reviewed_journal_article",
+      "scope": "Namib dune forms regional",
+      "finding": "Compares Namib barchan forms with Mars and supports Namibia as a Mars analogue for dune-form controls.",
+      "exact_footprint_evidence": false,
+      "exact_task_evidence": false,
+      "notes": "Regional dune morphology; not the exact 20 km windows or four-group ranking."
+    },
+    {
+      "id": "KA-13",
+      "region": "Namib, Namibia",
+      "related_candidate_ids": [
+        "NAMIB-112000-070000",
+        "NAMIB-088000-103000",
+        "NAMIB-082000-151000",
+        "NAMIB-043000-040000",
+        "NAMIB-052000-088000"
+      ],
+      "association_type": "regional_dune_imagery_non_mars_comparison",
+      "source_title": "Planetary Analogs - Wind-blown dunes on Earth and Titan",
+      "source_author": "NASA",
+      "year": 2026,
+      "url": "https://science.nasa.gov/solar-system/planetary-analogs/",
+      "doi": null,
+      "inspection_level": "full_page_inspected",
+      "peer_review_status": "agency_web_page_not_peer_reviewed",
+      "scope": "Namibia dune satellite image paired with Titan dunes",
+      "finding": "Pairs a Namibia dune satellite image with Titan dunes; the inspected section makes no Jezero or Mars terrain-ranking claim.",
+      "exact_footprint_evidence": false,
+      "exact_task_evidence": false,
+      "notes": "Useful disambiguation: not every Namib dune image on a NASA analog page is a Mars/Jezero analog."
+    },
+    {
+      "id": "KA-14",
+      "region": "Namib, Namibia",
+      "related_candidate_ids": [
+        "NAMIB-112000-070000",
+        "NAMIB-088000-103000",
+        "NAMIB-082000-151000",
+        "NAMIB-043000-040000",
+        "NAMIB-052000-088000"
+      ],
+      "association_type": "regional_geomorphology_context",
+      "source_title": "Namib Sand Sea",
+      "source_author": "UNESCO World Heritage Centre",
+      "year": null,
+      "url": "https://whc.unesco.org/en/list/1430/",
+      "doi": null,
+      "inspection_level": "full_page_inspected",
+      "peer_review_status": "agency_web_page_not_peer_reviewed",
+      "scope": "Namib Sand Sea regional geomorphology",
+      "finding": "Describes dune fields, gravel plains, inselbergs, and ephemeral rivers. The inspected page makes no Mars or Jezero claim.",
+      "exact_footprint_evidence": false,
+      "exact_task_evidence": false,
+      "notes": "Regional geomorphology context, not a Mars analog claim."
+    },
+    {
+      "id": "KA-15",
+      "region": "Namib, Namibia / Atacama, Chile",
+      "related_candidate_ids": [
+        "ATACAMA-154000-142000",
+        "NAMIB-112000-070000",
+        "NAMIB-088000-103000",
+        "NAMIB-082000-151000",
+        "NAMIB-043000-040000",
+        "NAMIB-052000-088000"
+      ],
+      "association_type": "regional_dune_segmentation_dataset",
+      "source_title": "High-Resolution Semantic Segmentation Dataset of Aeolian Dunes in Five Mars-Analog Regions on Earth",
+      "source_author": "Luo, K.",
+      "year": 2026,
+      "url": "https://doi.org/10.6084/m9.figshare.31168627.v2",
+      "doi": "10.6084/m9.figshare.31168627.v2",
+      "published_date": "2026-11-12",
+      "inspection_level": "dataset_metadata_and_description",
+      "peer_review_status": "dataset_not_peer_reviewed",
+      "scope": "Five regional dune maps: Namib, Atacama, Mojave, Qaidam, Yilgarn",
+      "finding": "Provides high-resolution dune segmentation for five Mars-analog regions, including Namib.tif and Atacama.tif. It is regional dune classification, not Jezero-specific, not the six 20 km footprints, and not a terrain-ranking task.",
+      "exact_footprint_evidence": false,
+      "exact_task_evidence": false,
+      "notes": "Published two days before the audit; very recent but different scope."
+    },
+    {
+      "id": "KA-16",
+      "region": "Michigan, USA",
+      "related_candidate_ids": [],
+      "association_type": "jezero_process_sediment_analog",
+      "source_title": "A Pleistocene pro-glacial lacustrine delta deposit in Michigan, USA - a terrestrial analog of the ancient delta-lake system and flood deposits at Jezero crater, Mars",
+      "source_author": "GSA abstract authors",
+      "year": 2023,
+      "url": "https://doi.org/10.1130/abs/2023nc-386922",
+      "doi": "10.1130/abs/2023nc-386922",
+      "inspection_level": "metadata_only",
+      "peer_review_status": "conference_abstract_not_full_paper",
+      "scope": "Process/sediment analog to Jezero delta-lake system",
+      "finding": "Proposes a Pleistocene pro-glacial lacustrine delta as a terrestrial analog of the Jezero delta-lake system and flood deposits.",
+      "exact_footprint_evidence": false,
+      "exact_task_evidence": false,
+      "notes": "Process/sediment analog, not terrain ranking or an exact footprint."
+    },
+    {
+      "id": "KA-17",
+      "region": "Arkansas, USA",
+      "related_candidate_ids": [],
+      "association_type": "jezero_stratigraphic_mineralogic_analog",
+      "source_title": "XRD and Major Element Analysis of the Wedington Sandstone Member, Arkansas, as a Terrestrial Analog to the Shenandoah Formation, Western Fan, Jezero Crater, Mars",
+      "source_author": "GSA abstract authors",
+      "year": 2026,
+      "url": "https://doi.org/10.1130/abs/2026am-17384",
+      "doi": "10.1130/abs/2026am-17384",
+      "inspection_level": "metadata_only",
+      "peer_review_status": "conference_abstract_not_full_paper",
+      "scope": "Stratigraphic/mineralogical analog to Jezero's Shenandoah Formation",
+      "finding": "Proposes the Wedington Sandstone Member as a terrestrial analog to the Shenandoah Formation in Jezero's western fan.",
+      "exact_footprint_evidence": false,
+      "exact_task_evidence": false,
+      "notes": "Stratigraphic/mineralogical analog; no terrain ranking."
+    }
+  ],
+  "task_prior_art": [
+    {
+      "id": "TP-01",
+      "source_title": "Map Matching Scheme for Position Estimation of Planetary Explorer in Natural Terrain",
+      "year": 2007,
+      "url": "https://doi.org/10.1109/robot.2007.364017",
+      "doi": "10.1109/robot.2007.364017",
+      "relation": "different_problem",
+      "finding": "Uses terrain matching for rover localization, not for ranking terrestrial analog windows.",
+      "exact_task_match": false
+    },
+    {
+      "id": "TP-02",
+      "source_title": "Terrain mapping for a roving planetary explorer",
+      "year": 1989,
+      "url": "https://doi.org/10.1109/robot.1989.100111",
+      "doi": "10.1109/robot.1989.100111",
+      "relation": "different_problem",
+      "finding": "Rover terrain mapping and navigation, not analog-site ranking.",
+      "exact_task_match": false
+    },
+    {
+      "id": "TP-03",
+      "source_title": "Earth-Mars similarity criteria for exploring martian vehicles",
+      "year": 2006,
+      "url": "https://doi.org/10.1016/j.actaastro.2005.07.001",
+      "doi": "10.1016/j.actaastro.2005.07.001",
+      "relation": "adjacent_mobility_criteria",
+      "finding": "Defines Earth-Mars similarity criteria for vehicle mobility and testing, not a four-group morphometric ranking of 20 km windows.",
+      "exact_task_match": false
+    },
+    {
+      "id": "TP-04",
+      "source_title": "Morphometric constraints on the formation of new terrestrial analogs for planetary pits",
+      "year": 2022,
+      "url": "https://doi.org/10.1130/b36523.1",
+      "doi": "10.1130/b36523.1",
+      "relation": "adjacent_morphometric_analog",
+      "finding": "Uses morphometry to constrain terrestrial analogs for planetary pits. Landform-specific; not a Jezero 20 km window ranking.",
+      "exact_task_match": false
+    },
+    {
+      "id": "TP-05",
+      "source_title": "Morphometric Analysis of the Jingpo Lake Volcanic Field: A Terrestrial Analog for Lunar Lava Flow",
+      "year": 2026,
+      "url": "https://doi.org/10.3390/rs18030512",
+      "doi": "10.3390/rs18030512",
+      "relation": "adjacent_morphometric_analog",
+      "finding": "Quantitative morphometric comparison of a terrestrial volcanic field with lunar lava flows. Not a Jezero terrain ranking.",
+      "exact_task_match": false
+    },
+    {
+      "id": "TP-06",
+      "source_title": "Morphometric Analysis of the 2004 Banda Aceh Tsunami Deposits as Analogs for Martian Paleotsunami Features",
+      "year": 2025,
+      "url": "https://doi.org/10.5194/egusphere-egu25-9022",
+      "doi": "10.5194/egusphere-egu25-9022",
+      "relation": "adjacent_morphometric_analog",
+      "finding": "Uses morphometric analysis to compare terrestrial tsunami deposits with Martian paleotsunami features. Landform-specific; not the project task.",
+      "exact_task_match": false
+    },
+    {
+      "id": "TP-07",
+      "source_title": "Topographic Roughness of Hawaiian Volcanic Terrains: A Scale-Dependent Analysis of a Potential Mars Landing Site Analog",
+      "year": 2006,
+      "url": "http://ui.adsabs.harvard.edu/abs/2006AGUFM.P34B..08M/abstract",
+      "doi": null,
+      "relation": "adjacent_scale_dependent_roughness_analog",
+      "finding": "Analyzes scale-dependent topographic roughness of Hawaiian volcanic terrain as a potential Mars landing-site analog. Landing-site and landform specific; not a 20 km window ranking against Jezero.",
+      "exact_task_match": false
+    }
+  ],
+  "assessment": {
+    "regional_association": {
+      "status": "established",
+      "summary": "The Atacama Desert is a long-standing Mars astrobiology and mineral analog, and the Namib is a Mars dune-form analog. These associations are regional. They do not establish any of the six exact 20 km footprints."
+    },
+    "salar_atacama_jezero_specific_association": {
+      "status": "asserted_not_independently_validated",
+      "summary": "The Cussen project page directly compares Salar de Atacama mineral maps with a synthetic model of the CRISM Jezero spectrum and with 14 Mars mineral groups. The page itself states that 12/14 Atacama equivalents are author-assigned confidence, not field-measured detections, and that r = 0.97 is against a synthetic model, not real CRISM data. The work is not peer-reviewed and its indices are pending validation. This blocks a broad claim that a Salar de Atacama-Jezero association is new, but it does not establish the exact footprint or the terrain task."
+    },
+    "exact_footprint": {
+      "status": "unresolved",
+      "summary": "No public record was found for any of the six project-internal candidate IDs or their exact 20 km bounding boxes in the queried sources. The Atacama candidate lies in the broader Salar de Atacama region discussed by Cussen, and the Namib candidates lie in the broader Namib region discussed in dune literature, but no inspected source publishes these exact footprints. Absence of a match is not proof that no prior footprint record exists."
+    },
+    "exact_task": {
+      "status": "unresolved",
+      "summary": "Exact task-specific association remains unresolved. Regional analogue mapping and morphology comparisons are existing research topics. Matching only a grid size, stride or identical descriptor implementation is not the criterion for scientific novelty."
+    },
+    "novelty": {
+      "status": "not_established",
+      "summary": "The audit found no exact public match in the queried sources, but this is not proof of novelty. The existing bundle claim remains appropriate: model-assisted remote-sensing assessment; no independently validated or new analogue is established."
+    }
+  },
+  "claim_guidance": [
+    "Do not describe any candidate as newly discovered, first, unique, unprecedented, or previously unassociated.",
+    "Do not claim that the exact 20 km footprints are novel; label them unresolved.",
+    "Do not claim that the four-group terrain-ranking task is novel; label it unresolved.",
+    "Do not claim peer review or independent validation for the Cussen project pages or their CAPI/CMPI indices.",
+    "Do not describe the Cussen r = 0.97 as a comparison with real CRISM data; the page says it uses a synthetic model of the Jezero spectrum.",
+    "Do not treat the 12/14 Atacama mineral equivalents as field-measured detections; the page says they are author-assigned confidence.",
+    "Use 'no public match found in the queried sources' rather than 'no prior work exists'.",
+    "Keep the regional association separate from the exact footprint and exact task claims."
+  ],
+  "evidence_limits": [
+    "No peer-reviewed publication was found for the exact six footprints or the exact four-group ranking task. That is absence of evidence in the queried sources, not evidence of absence.",
+    "General web search coverage was incomplete: DuckDuckGo returned a bot challenge after the first queries; Brave returned HTTP 429; Startpage and Mojeek required JavaScript; Bing did not honor quotes and was not used as exact-string zero evidence.",
+    "OpenAlex and Crossref are bibliographic indexes with incomplete full-text coverage. Counts are tokenized and fuzzy, not exhaustive precision measures.",
+    "Candidate IDs are project-internal and have no public site names. There is no published footprint polygon to search for directly.",
+    "The Cussen pages are author project pages, not peer-reviewed publications. The CAPI/CMPI indices are proposed, pending validation, and explicitly without independent validation.",
+    "The Cussen r = 0.97 comparison uses a synthetic model of the Jezero CRISM spectrum, not real CRISM data. The 12/14 mineral equivalents are author-assigned confidence, not field-measured detections.",
+    "No paywalled full text was read. Paper assessments rely on metadata, titles, and abstracts.",
+    "The 2026 Figshare dune segmentation dataset was published 2026-11-12 and is regional; it is not evidence about the six exact footprints or the Jezero terrain-ranking task.",
+    "Project optical imagery was inspected separately but is not independent published evidence and is not used here to establish a scientific association.",
+    "No field validation, local expert consultation, or independent scientific review was performed.",
+    "The corrected v3 shortlist has four Jezero footprints and two unfilled alternative slots under 80 km context separation. The prior six-footprint audit remains archived; new western Atacama footprint only has a bounded supplementary coordinate/regional search."
+  ],
+  "coverage_gaps": [
+    "Google Scholar was not queried.",
+    "Web of Science and Scopus were not available.",
+    "Spanish-language and local Chilean/Namibian literature was not systematically searched.",
+    "Mission planning documents and unindexed conference proceedings were not systematically searched.",
+    "No reverse image search or commercial satellite archive search was performed.",
+    "No systematic search of geological survey reports or national archives was performed."
+  ],
+  "source_index": [
+    {
+      "label": "Cussen Atacama Analog",
+      "url": "https://cussen.cl/proyectos/6-Space-Mining/Atacama-Analog/"
+    },
+    {
+      "label": "Cussen Jezero CRISM",
+      "url": "https://cussen.cl/proyectos/6-Space-Mining/Jezero-CRISM/"
+    },
+    {
+      "label": "Cussen Framework",
+      "url": "https://cussen.cl/framework/"
+    },
+    {
+      "label": "NASA Planetary Analogs",
+      "url": "https://science.nasa.gov/solar-system/planetary-analogs/"
+    },
+    {
+      "label": "NASA Astrobiology Field Sites",
+      "url": "https://astrobiology.nasa.gov/research-locations/"
+    },
+    {
+      "label": "UNESCO Namib Sand Sea",
+      "url": "https://whc.unesco.org/en/list/1430/"
+    },
+    {
+      "label": "Figshare dune segmentation dataset",
+      "url": "https://doi.org/10.6084/m9.figshare.31168627.v2"
+    },
+    {
+      "label": "Bourke and Goudie 2009",
+      "url": "https://doi.org/10.1016/j.aeolia.2009.05.002"
+    },
+    {
+      "label": "Flahaut et al. 2017",
+      "url": "https://doi.org/10.1016/j.icarus.2016.09.041"
+    },
+    {
+      "label": "Navarro-Gonzalez et al. 2003",
+      "url": "https://doi.org/10.1126/science.1089143"
+    },
+    {
+      "label": "Wierzchos et al. 2006",
+      "url": "https://doi.org/10.1089/ast.2006.6.415"
+    },
+    {
+      "label": "Shi et al. 2022",
+      "url": "https://doi.org/10.1029/2021JE007108"
+    },
+    {
+      "label": "Ci\u00c4\u2026\u00c5\u00bcela and Ci\u00c4\u2026\u00c5\u00bcela 2024",
+      "url": "https://doi.org/10.2139/ssrn.4886823"
+    },
+    {
+      "label": "Az\u00c3\u00baa-Bustos et al. 2020",
+      "url": "https://doi.org/10.1038/s41598-020-76302-z"
+    },
+    {
+      "label": "Michigan pro-glacial delta abstract",
+      "url": "https://doi.org/10.1130/abs/2023nc-386922"
+    },
+    {
+      "label": "Wedington Sandstone abstract",
+      "url": "https://doi.org/10.1130/abs/2026am-17384"
+    },
+    {
+      "label": "Terrain matching for planetary explorer",
+      "url": "https://doi.org/10.1109/robot.2007.364017"
+    },
+    {
+      "label": "Terrain mapping for roving planetary explorer",
+      "url": "https://doi.org/10.1109/robot.1989.100111"
+    },
+    {
+      "label": "Earth-Mars similarity criteria",
+      "url": "https://doi.org/10.1016/j.actaastro.2005.07.001"
+    },
+    {
+      "label": "Morphometric constraints for planetary pits",
+      "url": "https://doi.org/10.1130/b36523.1"
+    },
+    {
+      "label": "Jingpo Lake volcanic field morphometry",
+      "url": "https://doi.org/10.3390/rs18030512"
+    },
+    {
+      "label": "Banda Aceh tsunami deposit morphometry",
+      "url": "https://doi.org/10.5194/egusphere-egu25-9022"
+    },
+    {
+      "label": "Hawaiian topographic roughness Mars landing-site analog",
+      "url": "http://ui.adsabs.harvard.edu/abs/2006AGUFM.P34B..08M/abstract"
+    }
+  ],
+  "parent_audit_archive": "artifacts/archive/expansion-v2/novelty_audit.json",
+  "parent_completion": {
+    "reason": "OpenCode quota exhausted after writing a draft ledger and report",
+    "status": "Draft checked, corrected and completed directly by Codex",
+    "independence": "All work remains model-assisted; no human scholarly reviewer"
+  }
+}

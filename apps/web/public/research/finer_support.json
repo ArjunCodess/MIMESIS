@@ -1,0 +1,118 @@
+[
+  {
+    "target_id": "jezero",
+    "source_id": "P18_007925_1987_XN_18N282W__P19_008650_1987_XI_18N282W",
+    "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/P18_007925_1987_XN_18N282W__P19_008650_1987_XI_18N282W/P18_007925_1987_XN_18N282W__P19_008650_1987_XI_18N282W_dtm.tif",
+    "sha256": "2acf3fb601fc9728c88cf9b768cc20c0f51dd6ef143936d429f7ca1623ca1ba0",
+    "license": "CC0-1.0",
+    "source_description": "This is a digital terrain model (DTM) extracted from Context Camera (CTX) stereo images from the Mars Reconnaissance Orbiter mission. This data product is a DTM from stereo images acquired at approximately 6 meters/pixel resolution, which allows an output DTM resolution of 20 meters/pixel. The DTM was generated using the Ames Stereo Pipeline software (https://github.com/NeoGeographyToolkit/StereoPipeline)and using automated methods. All MRO CTX images were relatively controlled to one another before DTM generation. The final DTM is absolutely aligned to MOLA. Therefore,these are absolutely controlled DTMs and orthoimages. The isis_provenance and asp_provenance metadata files provide reproducible workflows for the generation of these DTM products. Input data were first relatively aligned and photogrammetrically controlled at the Mars quad level. Next, community sensor model (CSM) Image Support Data (ISDs) were created to support processing using the CSM in ASP. Low resolution, 100mpp DTMs were then generated for each stereopair and used to seed the generation of a high resolution DTM. This high resolution DTM was aligned to MOLA using a two step pc_align process. Fro the aligned point cloud the final DEM was extracted at the described post spacing and a final adjustment made to align with the Mars aeroid (geoid). All products for release were then converted to cloud optimized geotiffs (COGs) and appropriate metadata generated.",
+    "metadata": {
+      "crs": "PROJCS[\"Mars (2015) - Sphere / Ocentric / Equirectangular, clon = 0\",GEOGCS[\"Mars (2015) - Sphere / Ocentric\",DATUM[\"Mars (2015) - Sphere\",SPHEROID[\"Mars (2015) - Sphere\",3396190,0,AUTHORITY[\"IAU\",\"49900\"]],AUTHORITY[\"IAU\",\"49900\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"49900\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"49900\"]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"49910\"]]",
+      "source_grid_spacing_m": [
+        20.162955124498982,
+        20.162955124498982
+      ],
+      "nodata": -32767.0,
+      "body_radius_m": 3396190
+    },
+    "analysis_spacing_m": 100,
+    "window_m": 20000,
+    "effective_support": "100m analysis spacing; stereo matching precision and effective resolution not independently calibrated",
+    "planetary": {
+      "valid_fraction": 0.998625,
+      "relief_m": 164.4522533759764,
+      "slope_median_deg": 1.2371226443199002,
+      "slope_p90_deg": 3.442439392637476
+    },
+    "state": "available_local_comparison",
+    "lineage": "CTX stereo is absolutely aligned to MOLA; Kaguya product alignment to LOLA must be consulted in the retained provenance. Separate local surface observations, shared reference control; not fully independent absolute heights.",
+    "earth_comparisons": [
+      {
+        "candidate_id": "ATACAMA-154000-142000",
+        "earth": {
+          "valid_fraction": 1.0,
+          "relief_m": 221.21809684645086,
+          "slope_median_deg": 0.4348735746368678,
+          "slope_p90_deg": 4.434033806705231
+        },
+        "paired_state": "measured_local_comparison"
+      },
+      {
+        "candidate_id": "MOJAVE-142000-046000",
+        "earth": {
+          "valid_fraction": 1.0,
+          "relief_m": 207.4162834941459,
+          "slope_median_deg": 0.8552478078892187,
+          "slope_p90_deg": 2.4443558928223217
+        },
+        "paired_state": "measured_local_comparison"
+      },
+      {
+        "candidate_id": "MOROCCO-103000-100000",
+        "earth": {
+          "valid_fraction": 1.0,
+          "relief_m": 159.26455021432082,
+          "slope_median_deg": 0.81087528049293,
+          "slope_p90_deg": 3.2355779378240963
+        },
+        "paired_state": "measured_local_comparison"
+      }
+    ]
+  },
+  {
+    "target_id": "syrtis",
+    "source_id": "D07_029999_1890_XN_09N291W__D07_029854_1891_XN_09N290W",
+    "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/ctx/controlled/usgs/D07_029999_1890_XN_09N291W__D07_029854_1891_XN_09N290W/D07_029999_1890_XN_09N291W__D07_029854_1891_XN_09N290W_dtm.tif",
+    "sha256": "83f6ad8d1d979ca6e07e09e0d4fc8b2be58f6e9a2e4d4cfec26782161a61b1bb",
+    "license": "CC0-1.0",
+    "source_description": "This is a digital terrain model (DTM) extracted from Context Camera (CTX) stereo images from the Mars Reconnaissance Orbiter mission. This data product is a DTM from stereo images acquired at approximately 6 meters/pixel resolution, which allows an output DTM resolution of 20 meters/pixel. The DTM was generated using the Ames Stereo Pipeline software (https://github.com/NeoGeographyToolkit/StereoPipeline)and using automated methods. All MRO CTX images were relatively controlled to one another before DTM generation. The final DTM is absolutely aligned to MOLA. Therefore,these are absolutely controlled DTMs and orthoimages. The isis_provenance and asp_provenance metadata files provide reproducible workflows for the generation of these DTM products. Input data were first relatively aligned and photogrammetrically controlled at the Mars quad level. Next, community sensor model (CSM) Image Support Data (ISDs) were created to support processing using the CSM in ASP. Low resolution, 100mpp DTMs were then generated for each stereopair and used to seed the generation of a high resolution DTM. This high resolution DTM was aligned to MOLA using a two step pc_align process. Fro the aligned point cloud the final DEM was extracted at the described post spacing and a final adjustment made to align with the Mars aeroid (geoid). All products for release were then converted to cloud optimized geotiffs (COGs) and appropriate metadata generated.",
+    "metadata": {
+      "crs": "PROJCS[\"Mars (2015) - Sphere / Ocentric / Equirectangular, clon = 0\",GEOGCS[\"Mars (2015) - Sphere / Ocentric\",DATUM[\"Mars (2015) - Sphere\",SPHEROID[\"Mars (2015) - Sphere\",3396190,0,AUTHORITY[\"IAU\",\"49900\"]],AUTHORITY[\"IAU\",\"49900\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"49900\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"49900\"]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"49910\"]]",
+      "source_grid_spacing_m": [
+        20.092203446499425,
+        20.092203446499425
+      ],
+      "nodata": -32767.0,
+      "body_radius_m": 3396190
+    },
+    "analysis_spacing_m": 100,
+    "window_m": 20000,
+    "effective_support": "100m analysis spacing; stereo matching precision and effective resolution not independently calibrated",
+    "planetary": {
+      "valid_fraction": 0.0,
+      "relief_m": null,
+      "slope_median_deg": null,
+      "slope_p90_deg": null
+    },
+    "state": "insufficient_stereo_coverage",
+    "lineage": "CTX stereo is absolutely aligned to MOLA; Kaguya product alignment to LOLA must be consulted in the retained provenance. Separate local surface observations, shared reference control; not fully independent absolute heights."
+  },
+  {
+    "target_id": "shackleton",
+    "source_id": "TC2W2B0_01_01658S896E0024__TC1W2B0_01_01658S891E0216",
+    "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/moon/kaguya/terrain_camera/usgs_dtms_v2/TC2W2B0_01_01658S896E0024__TC1W2B0_01_01658S891E0216/TC2W2B0_01_01658S896E0024__TC1W2B0_01_01658S891E0216-DEM.tif",
+    "sha256": "fd43b3304724e2ca906e3da0752e2406232894e076d6bdf91e3fc5b770947073",
+    "license": "CC0-1.0",
+    "source_description": "This is a digital terrain model (DTM) created from a Kaguya (SELENE) Terrain Camera (TC) stereopair acquired by the Japan Aerospace Exploration Agency (JAXA).",
+    "metadata": {
+      "crs": "PROJCS[\"Moon (2015) - Sphere / Ocentric / South Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0,AUTHORITY[\"IAU\",\"30100\"]],AUTHORITY[\"IAU\",\"30100\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"30100\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"30100\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"30135\"]]",
+      "source_grid_spacing_m": [
+        33.307547159501944,
+        33.307547159501944
+      ],
+      "nodata": -32767.0,
+      "body_radius_m": 1737400
+    },
+    "analysis_spacing_m": 100,
+    "window_m": 20000,
+    "effective_support": "100m analysis spacing; stereo matching precision and effective resolution not independently calibrated",
+    "planetary": {
+      "valid_fraction": 0.16705,
+      "relief_m": 1715.8624675872368,
+      "slope_median_deg": 9.321606639584157,
+      "slope_p90_deg": 14.323079774725791
+    },
+    "state": "insufficient_stereo_coverage",
+    "lineage": "CTX stereo is absolutely aligned to MOLA; Kaguya product alignment to LOLA must be consulted in the retained provenance. Separate local surface observations, shared reference control; not fully independent absolute heights."
+  }
+]

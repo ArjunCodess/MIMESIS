@@ -1,0 +1,35 @@
+{
+  "id": "pit_calibration_audit_v10",
+  "phase": "calibration_only",
+  "minimum_valid_fraction": 0.95,
+  "supports_m": [10, 20, 40],
+  "primary_quality_classes": [10, 11, 12, 13, 14],
+  "edited_quality_sensitivity": [15],
+  "center_offsets_m": [[0, 0], [5, 0], [-5, 0], [0, 5], [0, -5]],
+  "offset_interpretation": "Declared sensitivity distances, not a calibrated registration error distribution",
+  "cases": [
+    {
+      "id": "tranquillitatis",
+      "name": "Mare Tranquillitatis pit",
+      "atlas_url": "https://lroc.im-ldi.com/atlases/pits/3",
+      "center_lat_lon": [8.3355, 33.222],
+      "funnel_diameters_m": [140, 146],
+      "terrain": "data/raw/discovery_v10/moon/NAC_DTM_TRANQPIT1.TIF",
+      "confidence": "data/raw/discovery_v10/moon_quality/NAC_DTM_TRANQPIT1_CONF.IMG",
+      "source_record": "artifacts/reports/discovery_v10/lunar_calibration_proxy.json"
+    },
+    {
+      "id": "marius",
+      "name": "Marius Hills pit",
+      "atlas_url": "https://lroc.im-ldi.com/atlases/pits/1",
+      "center_lat_lon": [14.0917, 303.2299],
+      "funnel_diameters_m": [79, 92],
+      "terrain": "data/raw/discovery_v10/moon_marius/NAC_DTM_MARIUSPIT01.TIF",
+      "confidence": "data/raw/discovery_v10/moon_marius/NAC_DTM_MARIUSPIT01_CONF.IMG",
+      "source_record": "artifacts/reports/discovery_v10/marius_calibration_proxy.json"
+    }
+  ],
+  "geometry_interpretation": "Published minimum and maximum funnel diameters used as circular calibration bounds, not mapped rim polygons",
+  "controls": "Known analytical planes with complete masks, and the same planes under each acquired quality mask; algorithm checks, not geological positives or negatives",
+  "decision": "Do not enter selection or validation unless calibration has a complete source-valid packet; do not count sectors or sensitivity runs as independent sites"
+}

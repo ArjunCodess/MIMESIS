@@ -1,0 +1,88 @@
+{
+  "source_url": "https://pds-geosciences.wustl.edu/mgs/urn-nasa-pds-mgs_mola_topography_derived/meg128/megc44n000hb.img",
+  "sha256": "cfb4d7e3626106ef4ed2a466eb03a538feed9c163be99e860b7ae8700a8ecab5",
+  "label_sha256": "65e44d550d0117766b9bd52cc5f1d307263fe031767ba57938413c5078bea1f5",
+  "results": [
+    {
+      "target_id": "jezero",
+      "analysis_spacing_m": 500,
+      "local_zero_count_fraction": 0.61875,
+      "context_zero_count_fraction": 0.6748828125,
+      "maximum_in_window_distance_to_observed_bin_m": 3162.2776601683795,
+      "interpretation": "Fraction of analysis-cell centers mapping to native bins with zero recorded observations; not independent shot count, true PEDR track positions or a calibrated effective-resolution estimate"
+    },
+    {
+      "target_id": "nili",
+      "analysis_spacing_m": 500,
+      "local_zero_count_fraction": 0.76625,
+      "context_zero_count_fraction": 0.669609375,
+      "maximum_in_window_distance_to_observed_bin_m": 4123.105625617661,
+      "interpretation": "Fraction of analysis-cell centers mapping to native bins with zero recorded observations; not independent shot count, true PEDR track positions or a calibrated effective-resolution estimate"
+    },
+    {
+      "target_id": "isidis",
+      "analysis_spacing_m": 500,
+      "local_zero_count_fraction": 0.6425,
+      "context_zero_count_fraction": 0.694921875,
+      "maximum_in_window_distance_to_observed_bin_m": 5024.9378105604455,
+      "interpretation": "Fraction of analysis-cell centers mapping to native bins with zero recorded observations; not independent shot count, true PEDR track positions or a calibrated effective-resolution estimate"
+    },
+    {
+      "target_id": "syrtis",
+      "analysis_spacing_m": 500,
+      "local_zero_count_fraction": 0.678125,
+      "context_zero_count_fraction": 0.711484375,
+      "maximum_in_window_distance_to_observed_bin_m": 3162.2776601683795,
+      "interpretation": "Fraction of analysis-cell centers mapping to native bins with zero recorded observations; not independent shot count, true PEDR track positions or a calibrated effective-resolution estimate"
+    },
+    {
+      "target_id": "prospective-01",
+      "analysis_spacing_m": 500,
+      "local_zero_count_fraction": 0.713125,
+      "context_zero_count_fraction": 0.7220703125,
+      "maximum_in_window_distance_to_observed_bin_m": 5000.0,
+      "interpretation": "Fraction of analysis-cell centers mapping to native bins with zero recorded observations; not independent shot count, true PEDR track positions or a calibrated effective-resolution estimate"
+    },
+    {
+      "target_id": "prospective-02",
+      "analysis_spacing_m": 500,
+      "local_zero_count_fraction": 0.750625,
+      "context_zero_count_fraction": 0.7454296875,
+      "maximum_in_window_distance_to_observed_bin_m": 6500.0,
+      "interpretation": "Fraction of analysis-cell centers mapping to native bins with zero recorded observations; not independent shot count, true PEDR track positions or a calibrated effective-resolution estimate"
+    },
+    {
+      "target_id": "prospective-03",
+      "analysis_spacing_m": 500,
+      "local_zero_count_fraction": 0.543125,
+      "context_zero_count_fraction": 0.6940625,
+      "maximum_in_window_distance_to_observed_bin_m": 5099.019513592785,
+      "interpretation": "Fraction of analysis-cell centers mapping to native bins with zero recorded observations; not independent shot count, true PEDR track positions or a calibrated effective-resolution estimate"
+    },
+    {
+      "target_id": "prospective-04",
+      "analysis_spacing_m": 500,
+      "local_zero_count_fraction": 0.76375,
+      "context_zero_count_fraction": 0.68453125,
+      "maximum_in_window_distance_to_observed_bin_m": 3354.1019662496847,
+      "interpretation": "Fraction of analysis-cell centers mapping to native bins with zero recorded observations; not independent shot count, true PEDR track positions or a calibrated effective-resolution estimate"
+    },
+    {
+      "target_id": "prospective-05",
+      "analysis_spacing_m": 500,
+      "local_zero_count_fraction": 0.71625,
+      "context_zero_count_fraction": 0.6848046875,
+      "maximum_in_window_distance_to_observed_bin_m": 3041.38126514911,
+      "interpretation": "Fraction of analysis-cell centers mapping to native bins with zero recorded observations; not independent shot count, true PEDR track positions or a calibrated effective-resolution estimate"
+    },
+    {
+      "target_id": "prospective-06",
+      "analysis_spacing_m": 500,
+      "local_zero_count_fraction": 0.73625,
+      "context_zero_count_fraction": 0.6990625,
+      "maximum_in_window_distance_to_observed_bin_m": 3640.0549446402592,
+      "interpretation": "Fraction of analysis-cell centers mapping to native bins with zero recorded observations; not independent shot count, true PEDR track positions or a calibrated effective-resolution estimate"
+    }
+  ],
+  "limitation": "Individual PEDR shot coordinates were not acquired. Binned counts diagnose interpolation exposure but cannot recreate the MEGDR gridding kernel or establish symmetric cross-body support."
+}

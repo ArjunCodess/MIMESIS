@@ -1,0 +1,74 @@
+[
+  {
+    "target_id": "jezero",
+    "split": "development",
+    "body": "Mars",
+    "top10_jaccard_500_vs_1000": 0.5384615384615384,
+    "rank_spearman": 0.996138069740922,
+    "robust_winner": "ATACAMA-154000-142000",
+    "nominal_winner": "ATACAMA-154000-145000",
+    "slope_only_winner": "NAMIB-163000-100000",
+    "robust_minimum": 0.004449999932109164,
+    "rank_stability_warning": true
+  },
+  {
+    "target_id": "nili",
+    "split": "development",
+    "body": "Mars",
+    "top10_jaccard_500_vs_1000": 0.8181818181818182,
+    "rank_spearman": 0.9808432888700757,
+    "robust_winner": "NAMIB-103000-106000",
+    "nominal_winner": "NAMIB-103000-106000",
+    "slope_only_winner": "NAMIB-115000-079000",
+    "robust_minimum": 0.01580400917792208,
+    "rank_stability_warning": false
+  },
+  {
+    "target_id": "isidis",
+    "split": "held_out",
+    "body": "Mars",
+    "top10_jaccard_500_vs_1000": 0.8181818181818182,
+    "rank_spearman": 0.9951552958260794,
+    "robust_winner": "NAMIB-163000-139000",
+    "nominal_winner": "NAMIB-163000-136000",
+    "slope_only_winner": "NAMIB-160000-142000",
+    "robust_minimum": 0.005738460303372493,
+    "rank_stability_warning": false
+  },
+  {
+    "target_id": "syrtis",
+    "split": "held_out",
+    "body": "Mars",
+    "top10_jaccard_500_vs_1000": 0.5384615384615384,
+    "rank_spearman": 0.9977553987198662,
+    "robust_winner": "NAMIB-157000-136000",
+    "nominal_winner": "NAMIB-157000-133000",
+    "slope_only_winner": "NAMIB-154000-136000",
+    "robust_minimum": 0.0015497770421204187,
+    "rank_stability_warning": true
+  },
+  {
+    "target_id": "apollo17",
+    "split": "development",
+    "body": "Moon",
+    "top10_jaccard_500_vs_1000": 0.6666666666666666,
+    "rank_spearman": 0.9903698892148638,
+    "robust_winner": "ATACAMA-163000-052000",
+    "nominal_winner": "ATACAMA-163000-052000",
+    "slope_only_winner": "NAMIB-109000-097000",
+    "robust_minimum": 0.23150417598224324,
+    "rank_stability_warning": false
+  },
+  {
+    "target_id": "shackleton",
+    "split": "held_out",
+    "body": "Moon",
+    "top10_jaccard_500_vs_1000": 1.0,
+    "rank_spearman": 0.9818854504082891,
+    "robust_winner": "ATACAMA-157000-052000",
+    "nominal_winner": "ATACAMA-157000-052000",
+    "slope_only_winner": "NAMIB-115000-145000",
+    "robust_minimum": 0.2609496586017582,
+    "rank_stability_warning": false
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "validated_at": "2026-11-14T06:35:53.767324+00:00",
+  "experiment": "mimesis-v5-masked-land-prospective-feasibility",
+  "python": {
+    "command": "python -m pytest -q --junitxml=artifacts/reports/python-tests.xml",
+    "passed": 84,
+    "failed": 0,
+    "errors": 0
+  },
+  "browser": {
+    "command": "npx playwright test",
+    "passed": 6,
+    "failed": 0,
+    "viewports": [
+      "1440x1000 desktop Chromium",
+      "390px mobile Chromium"
+    ],
+    "coverage": [
+      "v5 buffer switch, attrition, fresh target gaps, source support, review limits",
+      "v4 task and region filters, suites, evidence exports",
+      "v3 archived target/tier/search/export workflow",
+      "keyboard tabs, horizontal overflow, zero page errors, axe WCAG2/2.1A/AA"
+    ],
+    "axe_violations": 0,
+    "fix_verified": "Mobile navigation wraps all six buttons without pointer interception"
+  },
+  "production_build": {
+    "command": "npm run build",
+    "status": "passed"
+  },
+  "lint": {
+    "command": "python -m ruff check src services scripts tests",
+    "status": "passed"
+  },
+  "dependency_audit": {
+    "command": "npm audit --omit=dev",
+    "vulnerabilities": 0
+  },
+  "source_reproduction": {
+    "v3": "passed earlier after expanded source acquisition",
+    "v4": {
+      "status": "passed",
+      "command": "python scripts/verify_discovery.py",
+      "scope": "Fresh raw-source isolated frozen manifest; complete both-task/tier rankings, suites, investigations, benchmarks, coverage and protocol/data/record/implementation hashes match; published files unchanged."
+    },
+    "v5": {
+      "status": "passed",
+      "command": "python scripts/verify_natural_land.py",
+      "scope": "Complete masked records from frozen projected fields/masks; original WorldCover clip SHA verified. Not fresh raw-to-mask processing."
+    }
+  },
+  "react_doctor": {
+    "score": 71,
+    "reported_warnings": 11,
+    "maintainability_warnings": 9,
+    "reviewed_diagnostics": [
+      {
+        "rule": "no-array-index-as-key",
+        "classification": "false_positive_for_current_immutable_list",
+        "confidence": "high",
+        "reason": "Unfilled slots are a frozen noneditable list with no stateful children; item replacement cannot transfer child state."
+      },
+      {
+        "rule": "no-fetch-in-effect",
+        "classification": "no_observed_correctness_bug",
+        "confidence": "high",
+        "reason": "The optional static record is fetched once on panel mount, response validated at Zod boundary and aborted on unmount; no request uses mutable query state. Error state is displayed."
+      }
+    ],
+    "remaining": "Four large components, three complexity and two duplicate JSX warnings are maintainability debt, not a claim of clean static analysis."
+  },
+  "scientific_review": {
+    "independent_expert_review": "not_performed",
+    "model_critique": "supplied Gemini review reconciled against source metadata and falsifiable tests",
+    "new_discovery": "not_established",
+    "v4_frozen_comparisons": 36,
+    "v5_new_targets": 6,
+    "v5_combined_eligible_500m": 7,
+    "v5_combined_eligible_1000m": 1,
+    "v5_complete_target_pairs": 0,
+    "field_validation": "not_performed",
+    "global_null": "not_acquired",
+    "exact_PEDR_track_matching": "not_performed",
+    "OSM_extracts": "unavailable"
+  }
+}

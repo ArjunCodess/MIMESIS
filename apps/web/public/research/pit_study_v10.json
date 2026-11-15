@@ -1,0 +1,239 @@
+{
+  "id": "pit_study_v10",
+  "state": "stopped_at_calibration",
+  "minimum_valid_fraction": 0.95,
+  "cases": [
+    {
+      "id": "tranquillitatis",
+      "name": "Mare Tranquillitatis pit",
+      "atlas_url": "https://lroc.im-ldi.com/atlases/pits/3",
+      "center_lat_lon": [
+        8.3355,
+        33.222
+      ],
+      "proxy_diameter_m": 146,
+      "pixel_m": 2.0,
+      "raw_valid_fraction": 0.9342463571940441,
+      "supports": [
+        {
+          "support_m": 10,
+          "image": "pit-tranquillitatis-10m.png",
+          "mobile_image": "pit-tranquillitatis-10m-mobile.png",
+          "valid_fraction": 0.0,
+          "expected_cells": 62795,
+          "measured_cells": 0
+        },
+        {
+          "support_m": 20,
+          "image": "pit-tranquillitatis-20m.png",
+          "mobile_image": "pit-tranquillitatis-20m-mobile.png",
+          "valid_fraction": 0.0,
+          "expected_cells": 62795,
+          "measured_cells": 0
+        },
+        {
+          "support_m": 40,
+          "image": "pit-tranquillitatis-40m.png",
+          "mobile_image": "pit-tranquillitatis-40m-mobile.png",
+          "valid_fraction": 0.0,
+          "expected_cells": 62795,
+          "measured_cells": 0
+        }
+      ]
+    },
+    {
+      "id": "marius",
+      "name": "Marius Hills pit",
+      "atlas_url": "https://lroc.im-ldi.com/atlases/pits/1",
+      "center_lat_lon": [
+        14.0917,
+        303.2299
+      ],
+      "proxy_diameter_m": 92,
+      "pixel_m": 4.0,
+      "raw_valid_fraction": 0.9737053070386403,
+      "supports": [
+        {
+          "support_m": 10,
+          "image": "pit-marius-10m.png",
+          "mobile_image": "pit-marius-10m-mobile.png",
+          "valid_fraction": 0.015552348885682219,
+          "expected_cells": 6237,
+          "measured_cells": 97
+        },
+        {
+          "support_m": 20,
+          "image": "pit-marius-20m.png",
+          "mobile_image": "pit-marius-20m-mobile.png",
+          "valid_fraction": 0.0,
+          "expected_cells": 6237,
+          "measured_cells": 0
+        },
+        {
+          "support_m": 40,
+          "image": "pit-marius-40m.png",
+          "mobile_image": "pit-marius-40m-mobile.png",
+          "valid_fraction": 0.0,
+          "expected_cells": 6237,
+          "measured_cells": 0
+        }
+      ]
+    }
+  ],
+  "sensitivity_runs": 120,
+  "lunar_calibration_sites": 2,
+  "analytical_controls": [
+    {
+      "case": "tranquillitatis",
+      "support_m": 10,
+      "expected_slope_deg": 12.604382648379184,
+      "maximum_slope_error_deg": 3.4869884757426917e-12,
+      "maximum_plane_residual_std_m": 1.0019081591626258e-12,
+      "complete_mask_state": "measured",
+      "acquired_quality_mask_state": "insufficient_valid_exterior",
+      "acquired_mask_valid_fraction": 0.0
+    },
+    {
+      "case": "tranquillitatis",
+      "support_m": 20,
+      "expected_slope_deg": 12.604382648379184,
+      "maximum_slope_error_deg": 1.7568169141668477e-12,
+      "maximum_plane_residual_std_m": 1.4112389046114987e-12,
+      "complete_mask_state": "measured",
+      "acquired_quality_mask_state": "insufficient_valid_exterior",
+      "acquired_mask_valid_fraction": 0.0
+    },
+    {
+      "case": "tranquillitatis",
+      "support_m": 40,
+      "expected_slope_deg": 12.604382648379184,
+      "maximum_slope_error_deg": 8.01136934569513e-13,
+      "maximum_plane_residual_std_m": 1.7920295248702555e-12,
+      "complete_mask_state": "measured",
+      "acquired_quality_mask_state": "insufficient_valid_exterior",
+      "acquired_mask_valid_fraction": 0.0
+    },
+    {
+      "case": "marius",
+      "support_m": 10,
+      "expected_slope_deg": 12.604382648379184,
+      "maximum_slope_error_deg": 4.444444812179427e-12,
+      "maximum_plane_residual_std_m": 6.555504703394211e-12,
+      "complete_mask_state": "measured",
+      "acquired_quality_mask_state": "insufficient_valid_exterior",
+      "acquired_mask_valid_fraction": 0.015552348885682219
+    },
+    {
+      "case": "marius",
+      "support_m": 20,
+      "expected_slope_deg": 12.604382648379184,
+      "maximum_slope_error_deg": 8.194334100153355e-12,
+      "maximum_plane_residual_std_m": 9.294661602323491e-12,
+      "complete_mask_state": "measured",
+      "acquired_quality_mask_state": "insufficient_valid_exterior",
+      "acquired_mask_valid_fraction": 0.0
+    },
+    {
+      "case": "marius",
+      "support_m": 40,
+      "expected_slope_deg": 12.604382648379184,
+      "maximum_slope_error_deg": 7.956302283673722e-12,
+      "maximum_plane_residual_std_m": 1.2524339610638121e-11,
+      "complete_mask_state": "measured",
+      "acquired_quality_mask_state": "insufficient_valid_exterior",
+      "acquired_mask_valid_fraction": 0.0
+    }
+  ],
+  "stages": [
+    {
+      "stage": "Source feasibility",
+      "state": "partial",
+      "detail": "Earth, Moon and Mars sources acquired; exact feature packets remain unqualified."
+    },
+    {
+      "stage": "Calibration",
+      "state": "failed",
+      "detail": "Neither lunar calibration proxy passes at any proposed support, including all declared sensitivities."
+    },
+    {
+      "stage": "Freeze",
+      "state": "not_entered",
+      "detail": "The plan requires successful calibration before freezing a study."
+    },
+    {
+      "stage": "Search",
+      "state": "not_run",
+      "detail": "No joint or separate Earth nomination was made."
+    },
+    {
+      "stage": "Challenge",
+      "state": "not_run",
+      "detail": "No withheld outcomes or independent geological control results exist."
+    },
+    {
+      "stage": "Discovery decision",
+      "state": "no_discovery_established",
+      "detail": "The current pilot stops at source support; no new analogue is claimed."
+    },
+    {
+      "stage": "Communicate",
+      "state": "delivered",
+      "detail": "Measured failures, retained sources, website and paper share this decision."
+    }
+  ],
+  "nominations": [],
+  "withheld_outcomes": [],
+  "claim": "No Earth-Moon-Mars analogue discovery established.",
+  "geometry_limit": "Atlas-based circular funnel proxies, not independently mapped rims.",
+  "source_manifest": {
+    "calibration_audit_v10.json": {
+      "path": "artifacts/reports/discovery_v10/calibration_audit_v10.json",
+      "sha256": "84aa417bfd46cac9176fe78e5edab30589d1c26343a0ef2f669b297410503f0e"
+    },
+    "lunar_calibration_proxy.json": {
+      "path": "artifacts/reports/discovery_v10/lunar_calibration_proxy.json",
+      "sha256": "8c1e87c8fe47225f9d65c268b0e9458611656e79fe73922bb712ce2f06f4f407"
+    },
+    "marius_calibration_proxy.json": {
+      "path": "artifacts/reports/discovery_v10/marius_calibration_proxy.json",
+      "sha256": "5db19b1399617bc695a8c4d9a1309d8906e3b499e57b6b2ee0ab32d657383c22"
+    },
+    "registered_earth_source_qa.json": {
+      "path": "artifacts/reports/discovery_v10/registered_earth_source_qa.json",
+      "sha256": "2cc679f02f2ecbd0b8990f049d0c275938304469270fb915d9e70823aac8f86e"
+    },
+    "registered_earth_gap_source_qa.json": {
+      "path": "artifacts/reports/discovery_v10/registered_earth_gap_source_qa.json",
+      "sha256": "e156c6d038c7169e0e243394d6b22a9f5ffaf7647b5f7117ee3d2ff7f466cc4e"
+    },
+    "caves_surface_support.json": {
+      "path": "artifacts/reports/discovery_v10/caves_surface_support.json",
+      "sha256": "07c66f357de63f92c98c2aa188104ae76a4f40e02c6b3a27e5b2f3620dd32eb8"
+    },
+    "caves_archive_inventory.json": {
+      "path": "artifacts/reports/discovery_v10/caves_archive_inventory.json",
+      "sha256": "415dff9e0466a10160cf21e176b7b875c62549e16d1d3823bdb3c1057d4dac0a"
+    },
+    "caves_point_cloud_qa.json": {
+      "path": "artifacts/reports/discovery_v10/caves_point_cloud_qa.json",
+      "sha256": "db0f73f30eeea13161afb064f3cf2e854c09e2e641c194b19fa3a777d3657cf7"
+    }
+  },
+  "source_credits": [
+    "LROC / NASA / Arizona State University",
+    "USGS 3DEP",
+    "USDA NAIP / USGS"
+  ],
+  "earth_context": {
+    "image": "pit-earth-context.png",
+    "crs": "NAD83 / UTM zone 12N",
+    "bounds": [
+      295000,
+      4812600,
+      295650,
+      4813400
+    ],
+    "use": "Search crop, not a nominated feature"
+  },
+  "restricted_sources": "Original CAVES point clouds and photographs are excluded from public assets."
+}

@@ -1,0 +1,1651 @@
+{
+  "protocol": "configs/pit_calibration_audit_v10.json",
+  "protocol_sha256": "f3fca277c8b7eb6d67e904aa6e3c1c31e2bded5999153e41ce343541b7d927fd",
+  "phase": "calibration; all cases already exposed",
+  "cases": [
+    {
+      "id": "tranquillitatis",
+      "name": "Mare Tranquillitatis pit",
+      "runs": [
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57728,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57728,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57728,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57730,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57730,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57730,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57730,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57730,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57730,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57729,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57729,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57729,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57729,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57729,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57729,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62795,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62795,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62795,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62773,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62773,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62773,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62773,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62773,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62773,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62780,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62780,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62780,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62780,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62780,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62780,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57728,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57728,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57728,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57730,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57730,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57730,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57730,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57730,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57730,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57729,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57729,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57729,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57729,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57729,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 140,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 57729,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62795,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62795,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62795,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62773,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62773,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62773,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62773,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62773,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62773,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62780,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62780,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62780,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62780,
+          "measured_cells": 0,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62780,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 146,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 62780,
+          "measured_cells": 0,
+          "support_m": 40
+        }
+      ],
+      "number_of_sensitivity_runs": 60,
+      "complete_measurements": 0,
+      "site_count": 1
+    },
+    {
+      "id": "marius",
+      "name": "Marius Hills pit",
+      "runs": [
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.012605955227124538,
+          "expected_cells": 4601,
+          "measured_cells": 58,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4601,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4601,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.011321576311778794,
+          "expected_cells": 4593,
+          "measured_cells": 52,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4593,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4593,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.012837249782419496,
+          "expected_cells": 4596,
+          "measured_cells": 59,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4596,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4596,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.013266637668551544,
+          "expected_cells": 4598,
+          "measured_cells": 61,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4598,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4598,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.010862480990658266,
+          "expected_cells": 4603,
+          "measured_cells": 50,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4603,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4603,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.015552348885682219,
+          "expected_cells": 6237,
+          "measured_cells": 97,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6237,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6237,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.016519647153167602,
+          "expected_cells": 6235,
+          "measured_cells": 103,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6235,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6235,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.01459971121450345,
+          "expected_cells": 6233,
+          "measured_cells": 91,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6233,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6233,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.014595028067361668,
+          "expected_cells": 6235,
+          "measured_cells": 91,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6235,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6235,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.01654884318766067,
+          "expected_cells": 6224,
+          "measured_cells": 103,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6224,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": false,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6224,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.012605955227124538,
+          "expected_cells": 4601,
+          "measured_cells": 58,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4601,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4601,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.011321576311778794,
+          "expected_cells": 4593,
+          "measured_cells": 52,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4593,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4593,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.012837249782419496,
+          "expected_cells": 4596,
+          "measured_cells": 59,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4596,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4596,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.013266637668551544,
+          "expected_cells": 4598,
+          "measured_cells": 61,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4598,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4598,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.010862480990658266,
+          "expected_cells": 4603,
+          "measured_cells": 50,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4603,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 79,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 4603,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.015552348885682219,
+          "expected_cells": 6237,
+          "measured_cells": 97,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6237,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6237,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.016519647153167602,
+          "expected_cells": 6235,
+          "measured_cells": 103,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6235,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6235,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.01459971121450345,
+          "expected_cells": 6233,
+          "measured_cells": 91,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6233,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            -5,
+            0
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6233,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.014595028067361668,
+          "expected_cells": 6235,
+          "measured_cells": 91,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6235,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6235,
+          "measured_cells": 0,
+          "support_m": 40
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.01654884318766067,
+          "expected_cells": 6224,
+          "measured_cells": 103,
+          "support_m": 10
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6224,
+          "measured_cells": 0,
+          "support_m": 20
+        },
+        {
+          "diameter_m": 92,
+          "center_offset_m": [
+            0,
+            -5
+          ],
+          "include_edited": true,
+          "state": "insufficient_valid_exterior",
+          "valid_fraction": 0.0,
+          "expected_cells": 6224,
+          "measured_cells": 0,
+          "support_m": 40
+        }
+      ],
+      "number_of_sensitivity_runs": 60,
+      "complete_measurements": 0,
+      "site_count": 1
+    }
+  ],
+  "analytical_controls": [
+    {
+      "case": "tranquillitatis",
+      "support_m": 10,
+      "expected_slope_deg": 12.604382648379184,
+      "maximum_slope_error_deg": 3.4869884757426917e-12,
+      "maximum_plane_residual_std_m": 1.0019081591626258e-12,
+      "complete_mask_state": "measured",
+      "acquired_quality_mask_state": "insufficient_valid_exterior",
+      "acquired_mask_valid_fraction": 0.0
+    },
+    {
+      "case": "tranquillitatis",
+      "support_m": 20,
+      "expected_slope_deg": 12.604382648379184,
+      "maximum_slope_error_deg": 1.7568169141668477e-12,
+      "maximum_plane_residual_std_m": 1.4112389046114987e-12,
+      "complete_mask_state": "measured",
+      "acquired_quality_mask_state": "insufficient_valid_exterior",
+      "acquired_mask_valid_fraction": 0.0
+    },
+    {
+      "case": "tranquillitatis",
+      "support_m": 40,
+      "expected_slope_deg": 12.604382648379184,
+      "maximum_slope_error_deg": 8.01136934569513e-13,
+      "maximum_plane_residual_std_m": 1.7920295248702555e-12,
+      "complete_mask_state": "measured",
+      "acquired_quality_mask_state": "insufficient_valid_exterior",
+      "acquired_mask_valid_fraction": 0.0
+    },
+    {
+      "case": "marius",
+      "support_m": 10,
+      "expected_slope_deg": 12.604382648379184,
+      "maximum_slope_error_deg": 4.444444812179427e-12,
+      "maximum_plane_residual_std_m": 6.555504703394211e-12,
+      "complete_mask_state": "measured",
+      "acquired_quality_mask_state": "insufficient_valid_exterior",
+      "acquired_mask_valid_fraction": 0.015552348885682219
+    },
+    {
+      "case": "marius",
+      "support_m": 20,
+      "expected_slope_deg": 12.604382648379184,
+      "maximum_slope_error_deg": 8.194334100153355e-12,
+      "maximum_plane_residual_std_m": 9.294661602323491e-12,
+      "complete_mask_state": "measured",
+      "acquired_quality_mask_state": "insufficient_valid_exterior",
+      "acquired_mask_valid_fraction": 0.0
+    },
+    {
+      "case": "marius",
+      "support_m": 40,
+      "expected_slope_deg": 12.604382648379184,
+      "maximum_slope_error_deg": 7.956302283673722e-12,
+      "maximum_plane_residual_std_m": 1.2524339610638121e-11,
+      "complete_mask_state": "measured",
+      "acquired_quality_mask_state": "insufficient_valid_exterior",
+      "acquired_mask_valid_fraction": 0.0
+    }
+  ],
+  "total_sensitivity_runs": 120,
+  "lunar_calibration_sites": 2,
+  "decision": "stop_current_pilot_before_selection",
+  "claim": "Case-level source-support results. Sensitivities and synthetic controls do not supply geological validation or population inference."
+}
