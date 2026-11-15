@@ -1,0 +1,13 @@
+{
+  "rule": "Lowest metadata cloud fraction then scene ID at a fixed 3x3 geographic grid, June-December 2025; unavailable points retained",
+  "scenes": [
+    "HLS.L30.T29RPN.2025199T105812.v2.0",
+    "HLS.L30.T29RPP.2025199T105812.v2.0",
+    "HLS.L30.T29RPQ.2025199T105749.v2.0",
+    "HLS.L30.T29RPQ.2025238T110411.v2.0",
+    "HLS.L30.T29RQN.2025152T105137.v2.0",
+    "HLS.L30.T29RQP.2025199T105812.v2.0",
+    "HLS.L30.T29RQQ.2025199T105749.v2.0"
+  ],
+  "uncovered_points": []
+}

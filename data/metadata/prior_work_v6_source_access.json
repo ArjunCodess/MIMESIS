@@ -1,0 +1,62 @@
+[
+  {
+    "id": "antiatlas2019",
+    "requested_url": "https://www.hou.usra.edu/meetings/lifeonmars2019/pdf/5041.pdf",
+    "resolved_url": "https://www.hou.usra.edu/meetings/lifeonmars2019/pdf/5041.pdf",
+    "status_code": 200,
+    "accessed_at": "2026-11-14T08:12:25.019518+00:00",
+    "content_type": "application/pdf",
+    "bytes_received": 103082,
+    "local_path": "data/metadata/prior_work_v6_antiatlas2019.pdf",
+    "sha256": "b988d4af4bc96711ce48e33d01b93f7baa7b54c282b24c97f4c97b42b3f05b35"
+  },
+  {
+    "id": "quinn2018",
+    "requested_url": "https://thesis.caltech.edu/10953/",
+    "resolved_url": "https://thesis.caltech.edu/10953/",
+    "status_code": 200,
+    "accessed_at": "2026-11-14T08:12:22.717655+00:00",
+    "content_type": "text/html; charset=utf-8",
+    "bytes_received": 5366,
+    "local_path": "data/metadata/prior_work_v6_quinn2018.html",
+    "sha256": "152b9884441b06fff2232e81cd2fed8d94cf11dab9b54e62705c4caeca2661b7"
+  },
+  {
+    "id": "known_sites_landing",
+    "requested_url": "https://www.usgs.gov/data/known-terrestrial-analog-sites-planetary-science",
+    "resolved_url": "https://www.usgs.gov/data/known-terrestrial-analog-sites-planetary-science",
+    "status_code": 202,
+    "accessed_at": "2026-11-14T08:12:22.708162+00:00",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes_received": 0,
+    "local_path": "data/metadata/prior_work_v6_known_sites_landing.html",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "id": "sciencebase",
+    "requested_url": "https://www.sciencebase.gov/catalog/item/5f88940b82cebb8c13d912ee?format=json",
+    "resolved_url": "https://www.sciencebase.gov/catalog/item/5f88940b82cebb8c13d912ee?format=json",
+    "status_code": 403,
+    "accessed_at": "2026-11-14T08:12:23.188038+00:00",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes_received": 5668
+  },
+  {
+    "id": "bristol2016",
+    "requested_url": "https://repository.hou.usra.edu/server/api/core/bitstreams/023fd785-e5d5-4dce-a466-6144bbcbb4c8/content",
+    "status_code": 200,
+    "local_path": "data/metadata/prior_work_v6_bristol.pdf",
+    "sha256": "d7682c26c68f363f1f5ab9fb8992ba7f171931a02c260e9805903564797c3f3b",
+    "accessed_at": "2026-11-14T08:12:25.040918+00:00",
+    "access_note": "Acquired in preceding intake step in this session"
+  },
+  {
+    "id": "martin2020",
+    "requested_url": "https://api.crossref.org/works/10.1029/2019EA000720",
+    "status_code": 200,
+    "local_path": "data/metadata/prior_work_v6_martin_crossref.json",
+    "sha256": "dbc17f703fbd3c7ab06ae3d9d2e8cee166836a763bff1b152007e177434167dd",
+    "accessed_at": "2026-11-14T08:12:25.041036+00:00",
+    "access_note": "Acquired in preceding intake step in this session"
+  }
+]

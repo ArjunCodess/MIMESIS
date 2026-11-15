@@ -1,0 +1,5565 @@
+{
+  "source_family": "NASADEM_HGT.001",
+  "unique_tile_count": 426,
+  "block_tile_reference_count": 444,
+  "uncompressed_required_member_bytes": 22096110504,
+  "availability": "geometric manifest only, remote availability and valid terrain support unverified",
+  "tiles": [
+    {
+      "tile": "n10e047",
+      "block_ids": [
+        "GLOBAL-0059"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n10e047/NASADEM_HGT_n10e047.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n10e047.hgt": 25934402,
+        "n10e047.swb": 12967201,
+        "n10e047.num": 12967201
+      }
+    },
+    {
+      "tile": "n10e048",
+      "block_ids": [
+        "GLOBAL-0059"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n10e048/NASADEM_HGT_n10e048.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n10e048.hgt": 25934402,
+        "n10e048.swb": 12967201,
+        "n10e048.num": 12967201
+      }
+    },
+    {
+      "tile": "n10e049",
+      "block_ids": [
+        "GLOBAL-0041"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n10e049/NASADEM_HGT_n10e049.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n10e049.hgt": 25934402,
+        "n10e049.swb": 12967201,
+        "n10e049.num": 12967201
+      }
+    },
+    {
+      "tile": "n10e050",
+      "block_ids": [
+        "GLOBAL-0041"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n10e050/NASADEM_HGT_n10e050.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n10e050.hgt": 25934402,
+        "n10e050.swb": 12967201,
+        "n10e050.num": 12967201
+      }
+    },
+    {
+      "tile": "n11e047",
+      "block_ids": [
+        "GLOBAL-0059"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n11e047/NASADEM_HGT_n11e047.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n11e047.hgt": 25934402,
+        "n11e047.swb": 12967201,
+        "n11e047.num": 12967201
+      }
+    },
+    {
+      "tile": "n11e048",
+      "block_ids": [
+        "GLOBAL-0059"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n11e048/NASADEM_HGT_n11e048.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n11e048.hgt": 25934402,
+        "n11e048.swb": 12967201,
+        "n11e048.num": 12967201
+      }
+    },
+    {
+      "tile": "n11e049",
+      "block_ids": [
+        "GLOBAL-0041"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n11e049/NASADEM_HGT_n11e049.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n11e049.hgt": 25934402,
+        "n11e049.swb": 12967201,
+        "n11e049.num": 12967201
+      }
+    },
+    {
+      "tile": "n11e050",
+      "block_ids": [
+        "GLOBAL-0041"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n11e050/NASADEM_HGT_n11e050.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n11e050.hgt": 25934402,
+        "n11e050.swb": 12967201,
+        "n11e050.num": 12967201
+      }
+    },
+    {
+      "tile": "n12e024",
+      "block_ids": [
+        "GLOBAL-0042"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n12e024/NASADEM_HGT_n12e024.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n12e024.hgt": 25934402,
+        "n12e024.swb": 12967201,
+        "n12e024.num": 12967201
+      }
+    },
+    {
+      "tile": "n12e025",
+      "block_ids": [
+        "GLOBAL-0042"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n12e025/NASADEM_HGT_n12e025.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n12e025.hgt": 25934402,
+        "n12e025.swb": 12967201,
+        "n12e025.num": 12967201
+      }
+    },
+    {
+      "tile": "n13e001",
+      "block_ids": [
+        "GLOBAL-0035"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n13e001/NASADEM_HGT_n13e001.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n13e001.hgt": 25934402,
+        "n13e001.swb": 12967201,
+        "n13e001.num": 12967201
+      }
+    },
+    {
+      "tile": "n13e002",
+      "block_ids": [
+        "GLOBAL-0035"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n13e002/NASADEM_HGT_n13e002.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n13e002.hgt": 25934402,
+        "n13e002.swb": 12967201,
+        "n13e002.num": 12967201
+      }
+    },
+    {
+      "tile": "n13e024",
+      "block_ids": [
+        "GLOBAL-0042"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n13e024/NASADEM_HGT_n13e024.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n13e024.hgt": 25934402,
+        "n13e024.swb": 12967201,
+        "n13e024.num": 12967201
+      }
+    },
+    {
+      "tile": "n13e025",
+      "block_ids": [
+        "GLOBAL-0042"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n13e025/NASADEM_HGT_n13e025.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n13e025.hgt": 25934402,
+        "n13e025.swb": 12967201,
+        "n13e025.num": 12967201
+      }
+    },
+    {
+      "tile": "n14e001",
+      "block_ids": [
+        "GLOBAL-0035"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n14e001/NASADEM_HGT_n14e001.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n14e001.hgt": 25934402,
+        "n14e001.swb": 12967201,
+        "n14e001.num": 12967201
+      }
+    },
+    {
+      "tile": "n14e002",
+      "block_ids": [
+        "GLOBAL-0035"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n14e002/NASADEM_HGT_n14e002.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n14e002.hgt": 25934402,
+        "n14e002.swb": 12967201,
+        "n14e002.num": 12967201
+      }
+    },
+    {
+      "tile": "n15w003",
+      "block_ids": [
+        "GLOBAL-0026"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n15w003/NASADEM_HGT_n15w003.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n15w003.hgt": 25934402,
+        "n15w003.swb": 12967201,
+        "n15w003.num": 12967201
+      }
+    },
+    {
+      "tile": "n15w004",
+      "block_ids": [
+        "GLOBAL-0026"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n15w004/NASADEM_HGT_n15w004.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n15w004.hgt": 25934402,
+        "n15w004.swb": 12967201,
+        "n15w004.num": 12967201
+      }
+    },
+    {
+      "tile": "n15w016",
+      "block_ids": [
+        "GLOBAL-0047"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n15w016/NASADEM_HGT_n15w016.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n15w016.hgt": 25934402,
+        "n15w016.swb": 12967201,
+        "n15w016.num": 12967201
+      }
+    },
+    {
+      "tile": "n15w017",
+      "block_ids": [
+        "GLOBAL-0047"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n15w017/NASADEM_HGT_n15w017.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n15w017.hgt": 25934402,
+        "n15w017.swb": 12967201,
+        "n15w017.num": 12967201
+      }
+    },
+    {
+      "tile": "n16w003",
+      "block_ids": [
+        "GLOBAL-0026"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n16w003/NASADEM_HGT_n16w003.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n16w003.hgt": 25934402,
+        "n16w003.swb": 12967201,
+        "n16w003.num": 12967201
+      }
+    },
+    {
+      "tile": "n16w004",
+      "block_ids": [
+        "GLOBAL-0026"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n16w004/NASADEM_HGT_n16w004.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n16w004.hgt": 25934402,
+        "n16w004.swb": 12967201,
+        "n16w004.num": 12967201
+      }
+    },
+    {
+      "tile": "n16w016",
+      "block_ids": [
+        "GLOBAL-0047"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n16w016/NASADEM_HGT_n16w016.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n16w016.hgt": 25934402,
+        "n16w016.swb": 12967201,
+        "n16w016.num": 12967201
+      }
+    },
+    {
+      "tile": "n16w017",
+      "block_ids": [
+        "GLOBAL-0047"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n16w017/NASADEM_HGT_n16w017.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n16w017.hgt": 25934402,
+        "n16w017.swb": 12967201,
+        "n16w017.num": 12967201
+      }
+    },
+    {
+      "tile": "n17e018",
+      "block_ids": [
+        "GLOBAL-0036"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n17e018/NASADEM_HGT_n17e018.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n17e018.hgt": 25934402,
+        "n17e018.swb": 12967201,
+        "n17e018.num": 12967201
+      }
+    },
+    {
+      "tile": "n17e019",
+      "block_ids": [
+        "GLOBAL-0020",
+        "GLOBAL-0036"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n17e019/NASADEM_HGT_n17e019.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n17e019.hgt": 25934402,
+        "n17e019.swb": 12967201,
+        "n17e019.num": 12967201
+      }
+    },
+    {
+      "tile": "n17e020",
+      "block_ids": [
+        "GLOBAL-0020"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n17e020/NASADEM_HGT_n17e020.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n17e020.hgt": 25934402,
+        "n17e020.swb": 12967201,
+        "n17e020.num": 12967201
+      }
+    },
+    {
+      "tile": "n17e032",
+      "block_ids": [
+        "GLOBAL-0046"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n17e032/NASADEM_HGT_n17e032.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n17e032.hgt": 25934402,
+        "n17e032.swb": 12967201,
+        "n17e032.num": 12967201
+      }
+    },
+    {
+      "tile": "n17e033",
+      "block_ids": [
+        "GLOBAL-0046"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n17e033/NASADEM_HGT_n17e033.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n17e033.hgt": 25934402,
+        "n17e033.swb": 12967201,
+        "n17e033.num": 12967201
+      }
+    },
+    {
+      "tile": "n17w013",
+      "block_ids": [
+        "GLOBAL-0015"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n17w013/NASADEM_HGT_n17w013.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n17w013.hgt": 25934402,
+        "n17w013.swb": 12967201,
+        "n17w013.num": 12967201
+      }
+    },
+    {
+      "tile": "n17w014",
+      "block_ids": [
+        "GLOBAL-0015"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n17w014/NASADEM_HGT_n17w014.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n17w014.hgt": 25934402,
+        "n17w014.swb": 12967201,
+        "n17w014.num": 12967201
+      }
+    },
+    {
+      "tile": "n18e001",
+      "block_ids": [
+        "GLOBAL-0011"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n18e001/NASADEM_HGT_n18e001.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n18e001.hgt": 25934402,
+        "n18e001.swb": 12967201,
+        "n18e001.num": 12967201
+      }
+    },
+    {
+      "tile": "n18e002",
+      "block_ids": [
+        "GLOBAL-0011"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n18e002/NASADEM_HGT_n18e002.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n18e002.hgt": 25934402,
+        "n18e002.swb": 12967201,
+        "n18e002.num": 12967201
+      }
+    },
+    {
+      "tile": "n18e008",
+      "block_ids": [
+        "GLOBAL-0045"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n18e008/NASADEM_HGT_n18e008.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n18e008.hgt": 25934402,
+        "n18e008.swb": 12967201,
+        "n18e008.num": 12967201
+      }
+    },
+    {
+      "tile": "n18e009",
+      "block_ids": [
+        "GLOBAL-0045"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n18e009/NASADEM_HGT_n18e009.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n18e009.hgt": 25934402,
+        "n18e009.swb": 12967201,
+        "n18e009.num": 12967201
+      }
+    },
+    {
+      "tile": "n18e018",
+      "block_ids": [
+        "GLOBAL-0036"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n18e018/NASADEM_HGT_n18e018.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n18e018.hgt": 25934402,
+        "n18e018.swb": 12967201,
+        "n18e018.num": 12967201
+      }
+    },
+    {
+      "tile": "n18e019",
+      "block_ids": [
+        "GLOBAL-0020",
+        "GLOBAL-0036"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n18e019/NASADEM_HGT_n18e019.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n18e019.hgt": 25934402,
+        "n18e019.swb": 12967201,
+        "n18e019.num": 12967201
+      }
+    },
+    {
+      "tile": "n18e020",
+      "block_ids": [
+        "GLOBAL-0020"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n18e020/NASADEM_HGT_n18e020.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n18e020.hgt": 25934402,
+        "n18e020.swb": 12967201,
+        "n18e020.num": 12967201
+      }
+    },
+    {
+      "tile": "n18e032",
+      "block_ids": [
+        "GLOBAL-0046"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n18e032/NASADEM_HGT_n18e032.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n18e032.hgt": 25934402,
+        "n18e032.swb": 12967201,
+        "n18e032.num": 12967201
+      }
+    },
+    {
+      "tile": "n18e033",
+      "block_ids": [
+        "GLOBAL-0046"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n18e033/NASADEM_HGT_n18e033.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n18e033.hgt": 25934402,
+        "n18e033.swb": 12967201,
+        "n18e033.num": 12967201
+      }
+    },
+    {
+      "tile": "n18e048",
+      "block_ids": [
+        "GLOBAL-0002"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n18e048/NASADEM_HGT_n18e048.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n18e048.hgt": 25934402,
+        "n18e048.swb": 12967201,
+        "n18e048.num": 12967201
+      }
+    },
+    {
+      "tile": "n18e049",
+      "block_ids": [
+        "GLOBAL-0002"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n18e049/NASADEM_HGT_n18e049.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n18e049.hgt": 25934402,
+        "n18e049.swb": 12967201,
+        "n18e049.num": 12967201
+      }
+    },
+    {
+      "tile": "n18w013",
+      "block_ids": [
+        "GLOBAL-0015"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n18w013/NASADEM_HGT_n18w013.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n18w013.hgt": 25934402,
+        "n18w013.swb": 12967201,
+        "n18w013.num": 12967201
+      }
+    },
+    {
+      "tile": "n18w014",
+      "block_ids": [
+        "GLOBAL-0015"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n18w014/NASADEM_HGT_n18w014.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n18w014.hgt": 25934402,
+        "n18w014.swb": 12967201,
+        "n18w014.num": 12967201
+      }
+    },
+    {
+      "tile": "n19e001",
+      "block_ids": [
+        "GLOBAL-0011"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n19e001/NASADEM_HGT_n19e001.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n19e001.hgt": 25934402,
+        "n19e001.swb": 12967201,
+        "n19e001.num": 12967201
+      }
+    },
+    {
+      "tile": "n19e002",
+      "block_ids": [
+        "GLOBAL-0011"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n19e002/NASADEM_HGT_n19e002.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n19e002.hgt": 25934402,
+        "n19e002.swb": 12967201,
+        "n19e002.num": 12967201
+      }
+    },
+    {
+      "tile": "n19e008",
+      "block_ids": [
+        "GLOBAL-0045"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n19e008/NASADEM_HGT_n19e008.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n19e008.hgt": 25934402,
+        "n19e008.swb": 12967201,
+        "n19e008.num": 12967201
+      }
+    },
+    {
+      "tile": "n19e009",
+      "block_ids": [
+        "GLOBAL-0045"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n19e009/NASADEM_HGT_n19e009.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n19e009.hgt": 25934402,
+        "n19e009.swb": 12967201,
+        "n19e009.num": 12967201
+      }
+    },
+    {
+      "tile": "n19e048",
+      "block_ids": [
+        "GLOBAL-0002"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n19e048/NASADEM_HGT_n19e048.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n19e048.hgt": 25934402,
+        "n19e048.swb": 12967201,
+        "n19e048.num": 12967201
+      }
+    },
+    {
+      "tile": "n19e049",
+      "block_ids": [
+        "GLOBAL-0002"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n19e049/NASADEM_HGT_n19e049.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n19e049.hgt": 25934402,
+        "n19e049.swb": 12967201,
+        "n19e049.num": 12967201
+      }
+    },
+    {
+      "tile": "n20e009",
+      "block_ids": [
+        "GLOBAL-0050"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n20e009/NASADEM_HGT_n20e009.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n20e009.hgt": 25934402,
+        "n20e009.swb": 12967201,
+        "n20e009.num": 12967201
+      }
+    },
+    {
+      "tile": "n20e010",
+      "block_ids": [
+        "GLOBAL-0050"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n20e010/NASADEM_HGT_n20e010.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n20e010.hgt": 25934402,
+        "n20e010.swb": 12967201,
+        "n20e010.num": 12967201
+      }
+    },
+    {
+      "tile": "n20e019",
+      "block_ids": [
+        "GLOBAL-0028"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n20e019/NASADEM_HGT_n20e019.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n20e019.hgt": 25934402,
+        "n20e019.swb": 12967201,
+        "n20e019.num": 12967201
+      }
+    },
+    {
+      "tile": "n20e020",
+      "block_ids": [
+        "GLOBAL-0028"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n20e020/NASADEM_HGT_n20e020.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n20e020.hgt": 25934402,
+        "n20e020.swb": 12967201,
+        "n20e020.num": 12967201
+      }
+    },
+    {
+      "tile": "n20e047",
+      "block_ids": [
+        "GLOBAL-0054"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n20e047/NASADEM_HGT_n20e047.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n20e047.hgt": 25934402,
+        "n20e047.swb": 12967201,
+        "n20e047.num": 12967201
+      }
+    },
+    {
+      "tile": "n20e048",
+      "block_ids": [
+        "GLOBAL-0054"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n20e048/NASADEM_HGT_n20e048.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n20e048.hgt": 25934402,
+        "n20e048.swb": 12967201,
+        "n20e048.num": 12967201
+      }
+    },
+    {
+      "tile": "n20w009",
+      "block_ids": [
+        "GLOBAL-0010"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n20w009/NASADEM_HGT_n20w009.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n20w009.hgt": 25934402,
+        "n20w009.swb": 12967201,
+        "n20w009.num": 12967201
+      }
+    },
+    {
+      "tile": "n20w010",
+      "block_ids": [
+        "GLOBAL-0010"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n20w010/NASADEM_HGT_n20w010.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n20w010.hgt": 25934402,
+        "n20w010.swb": 12967201,
+        "n20w010.num": 12967201
+      }
+    },
+    {
+      "tile": "n21e009",
+      "block_ids": [
+        "GLOBAL-0050"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n21e009/NASADEM_HGT_n21e009.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n21e009.hgt": 25934402,
+        "n21e009.swb": 12967201,
+        "n21e009.num": 12967201
+      }
+    },
+    {
+      "tile": "n21e010",
+      "block_ids": [
+        "GLOBAL-0050"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n21e010/NASADEM_HGT_n21e010.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n21e010.hgt": 25934402,
+        "n21e010.swb": 12967201,
+        "n21e010.num": 12967201
+      }
+    },
+    {
+      "tile": "n21e019",
+      "block_ids": [
+        "GLOBAL-0028"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n21e019/NASADEM_HGT_n21e019.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n21e019.hgt": 25934402,
+        "n21e019.swb": 12967201,
+        "n21e019.num": 12967201
+      }
+    },
+    {
+      "tile": "n21e020",
+      "block_ids": [
+        "GLOBAL-0028"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n21e020/NASADEM_HGT_n21e020.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n21e020.hgt": 25934402,
+        "n21e020.swb": 12967201,
+        "n21e020.num": 12967201
+      }
+    },
+    {
+      "tile": "n21e023",
+      "block_ids": [
+        "GLOBAL-0027"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n21e023/NASADEM_HGT_n21e023.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n21e023.hgt": 25934402,
+        "n21e023.swb": 12967201,
+        "n21e023.num": 12967201
+      }
+    },
+    {
+      "tile": "n21e024",
+      "block_ids": [
+        "GLOBAL-0027"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n21e024/NASADEM_HGT_n21e024.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n21e024.hgt": 25934402,
+        "n21e024.swb": 12967201,
+        "n21e024.num": 12967201
+      }
+    },
+    {
+      "tile": "n21e047",
+      "block_ids": [
+        "GLOBAL-0054"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n21e047/NASADEM_HGT_n21e047.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n21e047.hgt": 25934402,
+        "n21e047.swb": 12967201,
+        "n21e047.num": 12967201
+      }
+    },
+    {
+      "tile": "n21e048",
+      "block_ids": [
+        "GLOBAL-0054"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n21e048/NASADEM_HGT_n21e048.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n21e048.hgt": 25934402,
+        "n21e048.swb": 12967201,
+        "n21e048.num": 12967201
+      }
+    },
+    {
+      "tile": "n21w009",
+      "block_ids": [
+        "GLOBAL-0010"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n21w009/NASADEM_HGT_n21w009.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n21w009.hgt": 25934402,
+        "n21w009.swb": 12967201,
+        "n21w009.num": 12967201
+      }
+    },
+    {
+      "tile": "n21w010",
+      "block_ids": [
+        "GLOBAL-0010"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n21w010/NASADEM_HGT_n21w010.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n21w010.hgt": 25934402,
+        "n21w010.swb": 12967201,
+        "n21w010.num": 12967201
+      }
+    },
+    {
+      "tile": "n22e023",
+      "block_ids": [
+        "GLOBAL-0027"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n22e023/NASADEM_HGT_n22e023.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n22e023.hgt": 25934402,
+        "n22e023.swb": 12967201,
+        "n22e023.num": 12967201
+      }
+    },
+    {
+      "tile": "n22e024",
+      "block_ids": [
+        "GLOBAL-0027"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n22e024/NASADEM_HGT_n22e024.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n22e024.hgt": 25934402,
+        "n22e024.swb": 12967201,
+        "n22e024.num": 12967201
+      }
+    },
+    {
+      "tile": "n22e033",
+      "block_ids": [
+        "GLOBAL-0053"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n22e033/NASADEM_HGT_n22e033.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n22e033.hgt": 25934402,
+        "n22e033.swb": 12967201,
+        "n22e033.num": 12967201
+      }
+    },
+    {
+      "tile": "n22e034",
+      "block_ids": [
+        "GLOBAL-0053"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n22e034/NASADEM_HGT_n22e034.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n22e034.hgt": 25934402,
+        "n22e034.swb": 12967201,
+        "n22e034.num": 12967201
+      }
+    },
+    {
+      "tile": "n22e040",
+      "block_ids": [
+        "GLOBAL-0032"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n22e040/NASADEM_HGT_n22e040.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n22e040.hgt": 25934402,
+        "n22e040.swb": 12967201,
+        "n22e040.num": 12967201
+      }
+    },
+    {
+      "tile": "n22e041",
+      "block_ids": [
+        "GLOBAL-0032"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n22e041/NASADEM_HGT_n22e041.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n22e041.hgt": 25934402,
+        "n22e041.swb": 12967201,
+        "n22e041.num": 12967201
+      }
+    },
+    {
+      "tile": "n22w012",
+      "block_ids": [
+        "GLOBAL-0044"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n22w012/NASADEM_HGT_n22w012.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n22w012.hgt": 25934402,
+        "n22w012.swb": 12967201,
+        "n22w012.num": 12967201
+      }
+    },
+    {
+      "tile": "n22w013",
+      "block_ids": [
+        "GLOBAL-0044"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n22w013/NASADEM_HGT_n22w013.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n22w013.hgt": 25934402,
+        "n22w013.swb": 12967201,
+        "n22w013.num": 12967201
+      }
+    },
+    {
+      "tile": "n23e019",
+      "block_ids": [
+        "GLOBAL-0009"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n23e019/NASADEM_HGT_n23e019.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n23e019.hgt": 25934402,
+        "n23e019.swb": 12967201,
+        "n23e019.num": 12967201
+      }
+    },
+    {
+      "tile": "n23e020",
+      "block_ids": [
+        "GLOBAL-0009"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n23e020/NASADEM_HGT_n23e020.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n23e020.hgt": 25934402,
+        "n23e020.swb": 12967201,
+        "n23e020.num": 12967201
+      }
+    },
+    {
+      "tile": "n23e033",
+      "block_ids": [
+        "GLOBAL-0034",
+        "GLOBAL-0053"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n23e033/NASADEM_HGT_n23e033.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n23e033.hgt": 25934402,
+        "n23e033.swb": 12967201,
+        "n23e033.num": 12967201
+      }
+    },
+    {
+      "tile": "n23e034",
+      "block_ids": [
+        "GLOBAL-0034",
+        "GLOBAL-0053"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n23e034/NASADEM_HGT_n23e034.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n23e034.hgt": 25934402,
+        "n23e034.swb": 12967201,
+        "n23e034.num": 12967201
+      }
+    },
+    {
+      "tile": "n23e035",
+      "block_ids": [
+        "GLOBAL-0034"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n23e035/NASADEM_HGT_n23e035.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n23e035.hgt": 25934402,
+        "n23e035.swb": 12967201,
+        "n23e035.num": 12967201
+      }
+    },
+    {
+      "tile": "n23e040",
+      "block_ids": [
+        "GLOBAL-0032"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n23e040/NASADEM_HGT_n23e040.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n23e040.hgt": 25934402,
+        "n23e040.swb": 12967201,
+        "n23e040.num": 12967201
+      }
+    },
+    {
+      "tile": "n23e041",
+      "block_ids": [
+        "GLOBAL-0032"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n23e041/NASADEM_HGT_n23e041.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n23e041.hgt": 25934402,
+        "n23e041.swb": 12967201,
+        "n23e041.num": 12967201
+      }
+    },
+    {
+      "tile": "n23w012",
+      "block_ids": [
+        "GLOBAL-0044"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n23w012/NASADEM_HGT_n23w012.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n23w012.hgt": 25934402,
+        "n23w012.swb": 12967201,
+        "n23w012.num": 12967201
+      }
+    },
+    {
+      "tile": "n23w013",
+      "block_ids": [
+        "GLOBAL-0044"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n23w013/NASADEM_HGT_n23w013.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n23w013.hgt": 25934402,
+        "n23w013.swb": 12967201,
+        "n23w013.num": 12967201
+      }
+    },
+    {
+      "tile": "n24e019",
+      "block_ids": [
+        "GLOBAL-0009"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n24e019/NASADEM_HGT_n24e019.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n24e019.hgt": 25934402,
+        "n24e019.swb": 12967201,
+        "n24e019.num": 12967201
+      }
+    },
+    {
+      "tile": "n24e020",
+      "block_ids": [
+        "GLOBAL-0009"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n24e020/NASADEM_HGT_n24e020.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n24e020.hgt": 25934402,
+        "n24e020.swb": 12967201,
+        "n24e020.num": 12967201
+      }
+    },
+    {
+      "tile": "n24e033",
+      "block_ids": [
+        "GLOBAL-0034"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n24e033/NASADEM_HGT_n24e033.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n24e033.hgt": 25934402,
+        "n24e033.swb": 12967201,
+        "n24e033.num": 12967201
+      }
+    },
+    {
+      "tile": "n24e034",
+      "block_ids": [
+        "GLOBAL-0034"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n24e034/NASADEM_HGT_n24e034.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n24e034.hgt": 25934402,
+        "n24e034.swb": 12967201,
+        "n24e034.num": 12967201
+      }
+    },
+    {
+      "tile": "n24e035",
+      "block_ids": [
+        "GLOBAL-0034"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n24e035/NASADEM_HGT_n24e035.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n24e035.hgt": 25934402,
+        "n24e035.swb": 12967201,
+        "n24e035.num": 12967201
+      }
+    },
+    {
+      "tile": "n24e061",
+      "block_ids": [
+        "GLOBAL-0007"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n24e061/NASADEM_HGT_n24e061.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n24e061.hgt": 25934402,
+        "n24e061.swb": 12967201,
+        "n24e061.num": 12967201
+      }
+    },
+    {
+      "tile": "n24e062",
+      "block_ids": [
+        "GLOBAL-0007"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n24e062/NASADEM_HGT_n24e062.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n24e062.hgt": 25934402,
+        "n24e062.swb": 12967201,
+        "n24e062.num": 12967201
+      }
+    },
+    {
+      "tile": "n25e036",
+      "block_ids": [
+        "GLOBAL-0055"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n25e036/NASADEM_HGT_n25e036.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n25e036.hgt": 25934402,
+        "n25e036.swb": 12967201,
+        "n25e036.num": 12967201
+      }
+    },
+    {
+      "tile": "n25e037",
+      "block_ids": [
+        "GLOBAL-0055"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n25e037/NASADEM_HGT_n25e037.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n25e037.hgt": 25934402,
+        "n25e037.swb": 12967201,
+        "n25e037.num": 12967201
+      }
+    },
+    {
+      "tile": "n25e057",
+      "block_ids": [
+        "GLOBAL-0049"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n25e057/NASADEM_HGT_n25e057.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n25e057.hgt": 25934402,
+        "n25e057.swb": 12967201,
+        "n25e057.num": 12967201
+      }
+    },
+    {
+      "tile": "n25e058",
+      "block_ids": [
+        "GLOBAL-0049"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n25e058/NASADEM_HGT_n25e058.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n25e058.hgt": 25934402,
+        "n25e058.swb": 12967201,
+        "n25e058.num": 12967201
+      }
+    },
+    {
+      "tile": "n25e061",
+      "block_ids": [
+        "GLOBAL-0007"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n25e061/NASADEM_HGT_n25e061.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n25e061.hgt": 25934402,
+        "n25e061.swb": 12967201,
+        "n25e061.num": 12967201
+      }
+    },
+    {
+      "tile": "n25e062",
+      "block_ids": [
+        "GLOBAL-0007"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n25e062/NASADEM_HGT_n25e062.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n25e062.hgt": 25934402,
+        "n25e062.swb": 12967201,
+        "n25e062.num": 12967201
+      }
+    },
+    {
+      "tile": "n25w011",
+      "block_ids": [
+        "GLOBAL-0038"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n25w011/NASADEM_HGT_n25w011.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n25w011.hgt": 25934402,
+        "n25w011.swb": 12967201,
+        "n25w011.num": 12967201
+      }
+    },
+    {
+      "tile": "n25w012",
+      "block_ids": [
+        "GLOBAL-0038"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n25w012/NASADEM_HGT_n25w012.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n25w012.hgt": 25934402,
+        "n25w012.swb": 12967201,
+        "n25w012.num": 12967201
+      }
+    },
+    {
+      "tile": "n26e036",
+      "block_ids": [
+        "GLOBAL-0055"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n26e036/NASADEM_HGT_n26e036.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n26e036.hgt": 25934402,
+        "n26e036.swb": 12967201,
+        "n26e036.num": 12967201
+      }
+    },
+    {
+      "tile": "n26e037",
+      "block_ids": [
+        "GLOBAL-0055"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n26e037/NASADEM_HGT_n26e037.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n26e037.hgt": 25934402,
+        "n26e037.swb": 12967201,
+        "n26e037.num": 12967201
+      }
+    },
+    {
+      "tile": "n26e057",
+      "block_ids": [
+        "GLOBAL-0049"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n26e057/NASADEM_HGT_n26e057.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n26e057.hgt": 25934402,
+        "n26e057.swb": 12967201,
+        "n26e057.num": 12967201
+      }
+    },
+    {
+      "tile": "n26e058",
+      "block_ids": [
+        "GLOBAL-0049"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n26e058/NASADEM_HGT_n26e058.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n26e058.hgt": 25934402,
+        "n26e058.swb": 12967201,
+        "n26e058.num": 12967201
+      }
+    },
+    {
+      "tile": "n26e061",
+      "block_ids": [
+        "GLOBAL-0007"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n26e061/NASADEM_HGT_n26e061.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n26e061.hgt": 25934402,
+        "n26e061.swb": 12967201,
+        "n26e061.num": 12967201
+      }
+    },
+    {
+      "tile": "n26e062",
+      "block_ids": [
+        "GLOBAL-0007"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n26e062/NASADEM_HGT_n26e062.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n26e062.hgt": 25934402,
+        "n26e062.swb": 12967201,
+        "n26e062.num": 12967201
+      }
+    },
+    {
+      "tile": "n26w011",
+      "block_ids": [
+        "GLOBAL-0038"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n26w011/NASADEM_HGT_n26w011.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n26w011.hgt": 25934402,
+        "n26w011.swb": 12967201,
+        "n26w011.num": 12967201
+      }
+    },
+    {
+      "tile": "n26w012",
+      "block_ids": [
+        "GLOBAL-0038"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n26w012/NASADEM_HGT_n26w012.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n26w012.hgt": 25934402,
+        "n26w012.swb": 12967201,
+        "n26w012.num": 12967201
+      }
+    },
+    {
+      "tile": "n27w010",
+      "block_ids": [
+        "GLOBAL-0001"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n27w010/NASADEM_HGT_n27w010.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n27w010.hgt": 25934402,
+        "n27w010.swb": 12967201,
+        "n27w010.num": 12967201
+      }
+    },
+    {
+      "tile": "n27w011",
+      "block_ids": [
+        "GLOBAL-0001"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n27w011/NASADEM_HGT_n27w011.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n27w011.hgt": 25934402,
+        "n27w011.swb": 12967201,
+        "n27w011.num": 12967201
+      }
+    },
+    {
+      "tile": "n28e011",
+      "block_ids": [
+        "GLOBAL-0052"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n28e011/NASADEM_HGT_n28e011.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n28e011.hgt": 25934402,
+        "n28e011.swb": 12967201,
+        "n28e011.num": 12967201
+      }
+    },
+    {
+      "tile": "n28e012",
+      "block_ids": [
+        "GLOBAL-0052"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n28e012/NASADEM_HGT_n28e012.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n28e012.hgt": 25934402,
+        "n28e012.swb": 12967201,
+        "n28e012.num": 12967201
+      }
+    },
+    {
+      "tile": "n28w010",
+      "block_ids": [
+        "GLOBAL-0001"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n28w010/NASADEM_HGT_n28w010.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n28w010.hgt": 25934402,
+        "n28w010.swb": 12967201,
+        "n28w010.num": 12967201
+      }
+    },
+    {
+      "tile": "n28w011",
+      "block_ids": [
+        "GLOBAL-0001"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n28w011/NASADEM_HGT_n28w011.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n28w011.hgt": 25934402,
+        "n28w011.swb": 12967201,
+        "n28w011.num": 12967201
+      }
+    },
+    {
+      "tile": "n29e011",
+      "block_ids": [
+        "GLOBAL-0052"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n29e011/NASADEM_HGT_n29e011.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n29e011.hgt": 25934402,
+        "n29e011.swb": 12967201,
+        "n29e011.num": 12967201
+      }
+    },
+    {
+      "tile": "n29e012",
+      "block_ids": [
+        "GLOBAL-0052"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n29e012/NASADEM_HGT_n29e012.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n29e012.hgt": 25934402,
+        "n29e012.swb": 12967201,
+        "n29e012.num": 12967201
+      }
+    },
+    {
+      "tile": "n29e025",
+      "block_ids": [
+        "GLOBAL-0024"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n29e025/NASADEM_HGT_n29e025.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n29e025.hgt": 25934402,
+        "n29e025.swb": 12967201,
+        "n29e025.num": 12967201
+      }
+    },
+    {
+      "tile": "n29e026",
+      "block_ids": [
+        "GLOBAL-0024"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n29e026/NASADEM_HGT_n29e026.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n29e026.hgt": 25934402,
+        "n29e026.swb": 12967201,
+        "n29e026.num": 12967201
+      }
+    },
+    {
+      "tile": "n29e032",
+      "block_ids": [
+        "GLOBAL-0017"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n29e032/NASADEM_HGT_n29e032.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n29e032.hgt": 25934402,
+        "n29e032.swb": 12967201,
+        "n29e032.num": 12967201
+      }
+    },
+    {
+      "tile": "n29e033",
+      "block_ids": [
+        "GLOBAL-0017"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n29e033/NASADEM_HGT_n29e033.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n29e033.hgt": 25934402,
+        "n29e033.swb": 12967201,
+        "n29e033.num": 12967201
+      }
+    },
+    {
+      "tile": "n29e034",
+      "block_ids": [
+        "GLOBAL-0017"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n29e034/NASADEM_HGT_n29e034.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n29e034.hgt": 25934402,
+        "n29e034.swb": 12967201,
+        "n29e034.num": 12967201
+      }
+    },
+    {
+      "tile": "n30e009",
+      "block_ids": [
+        "GLOBAL-0014"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n30e009/NASADEM_HGT_n30e009.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n30e009.hgt": 25934402,
+        "n30e009.swb": 12967201,
+        "n30e009.num": 12967201
+      }
+    },
+    {
+      "tile": "n30e010",
+      "block_ids": [
+        "GLOBAL-0014"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n30e010/NASADEM_HGT_n30e010.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n30e010.hgt": 25934402,
+        "n30e010.swb": 12967201,
+        "n30e010.num": 12967201
+      }
+    },
+    {
+      "tile": "n30e025",
+      "block_ids": [
+        "GLOBAL-0024"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n30e025/NASADEM_HGT_n30e025.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n30e025.hgt": 25934402,
+        "n30e025.swb": 12967201,
+        "n30e025.num": 12967201
+      }
+    },
+    {
+      "tile": "n30e026",
+      "block_ids": [
+        "GLOBAL-0024"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n30e026/NASADEM_HGT_n30e026.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n30e026.hgt": 25934402,
+        "n30e026.swb": 12967201,
+        "n30e026.num": 12967201
+      }
+    },
+    {
+      "tile": "n30e032",
+      "block_ids": [
+        "GLOBAL-0017"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n30e032/NASADEM_HGT_n30e032.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n30e032.hgt": 25934402,
+        "n30e032.swb": 12967201,
+        "n30e032.num": 12967201
+      }
+    },
+    {
+      "tile": "n30e033",
+      "block_ids": [
+        "GLOBAL-0017"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n30e033/NASADEM_HGT_n30e033.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n30e033.hgt": 25934402,
+        "n30e033.swb": 12967201,
+        "n30e033.num": 12967201
+      }
+    },
+    {
+      "tile": "n30e034",
+      "block_ids": [
+        "GLOBAL-0017"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n30e034/NASADEM_HGT_n30e034.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n30e034.hgt": 25934402,
+        "n30e034.swb": 12967201,
+        "n30e034.num": 12967201
+      }
+    },
+    {
+      "tile": "n30e035",
+      "block_ids": [
+        "GLOBAL-0004"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n30e035/NASADEM_HGT_n30e035.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n30e035.hgt": 25934402,
+        "n30e035.swb": 12967201,
+        "n30e035.num": 12967201
+      }
+    },
+    {
+      "tile": "n30e036",
+      "block_ids": [
+        "GLOBAL-0004"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n30e036/NASADEM_HGT_n30e036.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n30e036.hgt": 25934402,
+        "n30e036.swb": 12967201,
+        "n30e036.num": 12967201
+      }
+    },
+    {
+      "tile": "n30e045",
+      "block_ids": [
+        "GLOBAL-0006"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n30e045/NASADEM_HGT_n30e045.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n30e045.hgt": 25934402,
+        "n30e045.swb": 12967201,
+        "n30e045.num": 12967201
+      }
+    },
+    {
+      "tile": "n30e046",
+      "block_ids": [
+        "GLOBAL-0006"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n30e046/NASADEM_HGT_n30e046.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n30e046.hgt": 25934402,
+        "n30e046.swb": 12967201,
+        "n30e046.num": 12967201
+      }
+    },
+    {
+      "tile": "n30e055",
+      "block_ids": [
+        "GLOBAL-0089"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n30e055/NASADEM_HGT_n30e055.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n30e055.hgt": 25934402,
+        "n30e055.swb": 12967201,
+        "n30e055.num": 12967201
+      }
+    },
+    {
+      "tile": "n30e056",
+      "block_ids": [
+        "GLOBAL-0089"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n30e056/NASADEM_HGT_n30e056.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n30e056.hgt": 25934402,
+        "n30e056.swb": 12967201,
+        "n30e056.num": 12967201
+      }
+    },
+    {
+      "tile": "n30e062",
+      "block_ids": [
+        "GLOBAL-0008"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n30e062/NASADEM_HGT_n30e062.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n30e062.hgt": 25934402,
+        "n30e062.swb": 12967201,
+        "n30e062.num": 12967201
+      }
+    },
+    {
+      "tile": "n30e063",
+      "block_ids": [
+        "GLOBAL-0008"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n30e063/NASADEM_HGT_n30e063.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n30e063.hgt": 25934402,
+        "n30e063.swb": 12967201,
+        "n30e063.num": 12967201
+      }
+    },
+    {
+      "tile": "n31e009",
+      "block_ids": [
+        "GLOBAL-0014"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n31e009/NASADEM_HGT_n31e009.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n31e009.hgt": 25934402,
+        "n31e009.swb": 12967201,
+        "n31e009.num": 12967201
+      }
+    },
+    {
+      "tile": "n31e010",
+      "block_ids": [
+        "GLOBAL-0014"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n31e010/NASADEM_HGT_n31e010.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n31e010.hgt": 25934402,
+        "n31e010.swb": 12967201,
+        "n31e010.num": 12967201
+      }
+    },
+    {
+      "tile": "n31e035",
+      "block_ids": [
+        "GLOBAL-0004"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n31e035/NASADEM_HGT_n31e035.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n31e035.hgt": 25934402,
+        "n31e035.swb": 12967201,
+        "n31e035.num": 12967201
+      }
+    },
+    {
+      "tile": "n31e036",
+      "block_ids": [
+        "GLOBAL-0004"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n31e036/NASADEM_HGT_n31e036.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n31e036.hgt": 25934402,
+        "n31e036.swb": 12967201,
+        "n31e036.num": 12967201
+      }
+    },
+    {
+      "tile": "n31e045",
+      "block_ids": [
+        "GLOBAL-0006"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n31e045/NASADEM_HGT_n31e045.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n31e045.hgt": 25934402,
+        "n31e045.swb": 12967201,
+        "n31e045.num": 12967201
+      }
+    },
+    {
+      "tile": "n31e046",
+      "block_ids": [
+        "GLOBAL-0006"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n31e046/NASADEM_HGT_n31e046.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n31e046.hgt": 25934402,
+        "n31e046.swb": 12967201,
+        "n31e046.num": 12967201
+      }
+    },
+    {
+      "tile": "n31e051",
+      "block_ids": [
+        "GLOBAL-0087"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n31e051/NASADEM_HGT_n31e051.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n31e051.hgt": 25934402,
+        "n31e051.swb": 12967201,
+        "n31e051.num": 12967201
+      }
+    },
+    {
+      "tile": "n31e052",
+      "block_ids": [
+        "GLOBAL-0087"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n31e052/NASADEM_HGT_n31e052.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n31e052.hgt": 25934402,
+        "n31e052.swb": 12967201,
+        "n31e052.num": 12967201
+      }
+    },
+    {
+      "tile": "n31e055",
+      "block_ids": [
+        "GLOBAL-0089"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n31e055/NASADEM_HGT_n31e055.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n31e055.hgt": 25934402,
+        "n31e055.swb": 12967201,
+        "n31e055.num": 12967201
+      }
+    },
+    {
+      "tile": "n31e056",
+      "block_ids": [
+        "GLOBAL-0089"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n31e056/NASADEM_HGT_n31e056.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n31e056.hgt": 25934402,
+        "n31e056.swb": 12967201,
+        "n31e056.num": 12967201
+      }
+    },
+    {
+      "tile": "n31e062",
+      "block_ids": [
+        "GLOBAL-0008"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n31e062/NASADEM_HGT_n31e062.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n31e062.hgt": 25934402,
+        "n31e062.swb": 12967201,
+        "n31e062.num": 12967201
+      }
+    },
+    {
+      "tile": "n31e063",
+      "block_ids": [
+        "GLOBAL-0008"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n31e063/NASADEM_HGT_n31e063.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n31e063.hgt": 25934402,
+        "n31e063.swb": 12967201,
+        "n31e063.num": 12967201
+      }
+    },
+    {
+      "tile": "n32e051",
+      "block_ids": [
+        "GLOBAL-0087"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n32e051/NASADEM_HGT_n32e051.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n32e051.hgt": 25934402,
+        "n32e051.swb": 12967201,
+        "n32e051.num": 12967201
+      }
+    },
+    {
+      "tile": "n32e052",
+      "block_ids": [
+        "GLOBAL-0087"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n32e052/NASADEM_HGT_n32e052.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n32e052.hgt": 25934402,
+        "n32e052.swb": 12967201,
+        "n32e052.num": 12967201
+      }
+    },
+    {
+      "tile": "n33e050",
+      "block_ids": [
+        "GLOBAL-0019"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n33e050/NASADEM_HGT_n33e050.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n33e050.hgt": 25934402,
+        "n33e050.swb": 12967201,
+        "n33e050.num": 12967201
+      }
+    },
+    {
+      "tile": "n33e051",
+      "block_ids": [
+        "GLOBAL-0019"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n33e051/NASADEM_HGT_n33e051.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n33e051.hgt": 25934402,
+        "n33e051.swb": 12967201,
+        "n33e051.num": 12967201
+      }
+    },
+    {
+      "tile": "n33e052",
+      "block_ids": [
+        "GLOBAL-0019"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n33e052/NASADEM_HGT_n33e052.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n33e052.hgt": 25934402,
+        "n33e052.swb": 12967201,
+        "n33e052.num": 12967201
+      }
+    },
+    {
+      "tile": "n33e053",
+      "block_ids": [
+        "GLOBAL-0051"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n33e053/NASADEM_HGT_n33e053.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n33e053.hgt": 25934402,
+        "n33e053.swb": 12967201,
+        "n33e053.num": 12967201
+      }
+    },
+    {
+      "tile": "n33e054",
+      "block_ids": [
+        "GLOBAL-0051"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n33e054/NASADEM_HGT_n33e054.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n33e054.hgt": 25934402,
+        "n33e054.swb": 12967201,
+        "n33e054.num": 12967201
+      }
+    },
+    {
+      "tile": "n33e057",
+      "block_ids": [
+        "GLOBAL-0060"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n33e057/NASADEM_HGT_n33e057.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n33e057.hgt": 25934402,
+        "n33e057.swb": 12967201,
+        "n33e057.num": 12967201
+      }
+    },
+    {
+      "tile": "n33e058",
+      "block_ids": [
+        "GLOBAL-0060"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n33e058/NASADEM_HGT_n33e058.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n33e058.hgt": 25934402,
+        "n33e058.swb": 12967201,
+        "n33e058.num": 12967201
+      }
+    },
+    {
+      "tile": "n33e077",
+      "block_ids": [
+        "GLOBAL-0071"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n33e077/NASADEM_HGT_n33e077.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n33e077.hgt": 25934402,
+        "n33e077.swb": 12967201,
+        "n33e077.num": 12967201
+      }
+    },
+    {
+      "tile": "n33e078",
+      "block_ids": [
+        "GLOBAL-0071"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n33e078/NASADEM_HGT_n33e078.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n33e078.hgt": 25934402,
+        "n33e078.swb": 12967201,
+        "n33e078.num": 12967201
+      }
+    },
+    {
+      "tile": "n33w002",
+      "block_ids": [
+        "GLOBAL-0043"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n33w002/NASADEM_HGT_n33w002.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n33w002.hgt": 25934402,
+        "n33w002.swb": 12967201,
+        "n33w002.num": 12967201
+      }
+    },
+    {
+      "tile": "n33w003",
+      "block_ids": [
+        "GLOBAL-0043"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n33w003/NASADEM_HGT_n33w003.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n33w003.hgt": 25934402,
+        "n33w003.swb": 12967201,
+        "n33w003.num": 12967201
+      }
+    },
+    {
+      "tile": "n34e050",
+      "block_ids": [
+        "GLOBAL-0019"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n34e050/NASADEM_HGT_n34e050.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n34e050.hgt": 25934402,
+        "n34e050.swb": 12967201,
+        "n34e050.num": 12967201
+      }
+    },
+    {
+      "tile": "n34e051",
+      "block_ids": [
+        "GLOBAL-0019"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n34e051/NASADEM_HGT_n34e051.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n34e051.hgt": 25934402,
+        "n34e051.swb": 12967201,
+        "n34e051.num": 12967201
+      }
+    },
+    {
+      "tile": "n34e052",
+      "block_ids": [
+        "GLOBAL-0019"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n34e052/NASADEM_HGT_n34e052.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n34e052.hgt": 25934402,
+        "n34e052.swb": 12967201,
+        "n34e052.num": 12967201
+      }
+    },
+    {
+      "tile": "n34e053",
+      "block_ids": [
+        "GLOBAL-0051"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n34e053/NASADEM_HGT_n34e053.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n34e053.hgt": 25934402,
+        "n34e053.swb": 12967201,
+        "n34e053.num": 12967201
+      }
+    },
+    {
+      "tile": "n34e054",
+      "block_ids": [
+        "GLOBAL-0051"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n34e054/NASADEM_HGT_n34e054.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n34e054.hgt": 25934402,
+        "n34e054.swb": 12967201,
+        "n34e054.num": 12967201
+      }
+    },
+    {
+      "tile": "n34e057",
+      "block_ids": [
+        "GLOBAL-0060"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n34e057/NASADEM_HGT_n34e057.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n34e057.hgt": 25934402,
+        "n34e057.swb": 12967201,
+        "n34e057.num": 12967201
+      }
+    },
+    {
+      "tile": "n34e058",
+      "block_ids": [
+        "GLOBAL-0060"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n34e058/NASADEM_HGT_n34e058.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n34e058.hgt": 25934402,
+        "n34e058.swb": 12967201,
+        "n34e058.num": 12967201
+      }
+    },
+    {
+      "tile": "n34e077",
+      "block_ids": [
+        "GLOBAL-0071"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n34e077/NASADEM_HGT_n34e077.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n34e077.hgt": 25934402,
+        "n34e077.swb": 12967201,
+        "n34e077.num": 12967201
+      }
+    },
+    {
+      "tile": "n34e078",
+      "block_ids": [
+        "GLOBAL-0071"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n34e078/NASADEM_HGT_n34e078.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n34e078.hgt": 25934402,
+        "n34e078.swb": 12967201,
+        "n34e078.num": 12967201
+      }
+    },
+    {
+      "tile": "n34w002",
+      "block_ids": [
+        "GLOBAL-0043"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n34w002/NASADEM_HGT_n34w002.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n34w002.hgt": 25934402,
+        "n34w002.swb": 12967201,
+        "n34w002.num": 12967201
+      }
+    },
+    {
+      "tile": "n34w003",
+      "block_ids": [
+        "GLOBAL-0043"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n34w003/NASADEM_HGT_n34w003.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n34w003.hgt": 25934402,
+        "n34w003.swb": 12967201,
+        "n34w003.num": 12967201
+      }
+    },
+    {
+      "tile": "n34w117",
+      "block_ids": [
+        "GLOBAL-0005"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n34w117/NASADEM_HGT_n34w117.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n34w117.hgt": 25934402,
+        "n34w117.swb": 12967201,
+        "n34w117.num": 12967201
+      }
+    },
+    {
+      "tile": "n34w118",
+      "block_ids": [
+        "GLOBAL-0005"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n34w118/NASADEM_HGT_n34w118.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n34w118.hgt": 25934402,
+        "n34w118.swb": 12967201,
+        "n34w118.num": 12967201
+      }
+    },
+    {
+      "tile": "n35e053",
+      "block_ids": [
+        "GLOBAL-0065"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n35e053/NASADEM_HGT_n35e053.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n35e053.hgt": 25934402,
+        "n35e053.swb": 12967201,
+        "n35e053.num": 12967201
+      }
+    },
+    {
+      "tile": "n35e054",
+      "block_ids": [
+        "GLOBAL-0065"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n35e054/NASADEM_HGT_n35e054.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n35e054.hgt": 25934402,
+        "n35e054.swb": 12967201,
+        "n35e054.num": 12967201
+      }
+    },
+    {
+      "tile": "n35e055",
+      "block_ids": [
+        "GLOBAL-0065"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n35e055/NASADEM_HGT_n35e055.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n35e055.hgt": 25934402,
+        "n35e055.swb": 12967201,
+        "n35e055.num": 12967201
+      }
+    },
+    {
+      "tile": "n35e077",
+      "block_ids": [
+        "GLOBAL-0071"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n35e077/NASADEM_HGT_n35e077.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n35e077.hgt": 25934402,
+        "n35e077.swb": 12967201,
+        "n35e077.num": 12967201
+      }
+    },
+    {
+      "tile": "n35e078",
+      "block_ids": [
+        "GLOBAL-0071"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n35e078/NASADEM_HGT_n35e078.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n35e078.hgt": 25934402,
+        "n35e078.swb": 12967201,
+        "n35e078.num": 12967201
+      }
+    },
+    {
+      "tile": "n35e081",
+      "block_ids": [
+        "GLOBAL-0096"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n35e081/NASADEM_HGT_n35e081.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n35e081.hgt": 25934402,
+        "n35e081.swb": 12967201,
+        "n35e081.num": 12967201
+      }
+    },
+    {
+      "tile": "n35e082",
+      "block_ids": [
+        "GLOBAL-0096"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n35e082/NASADEM_HGT_n35e082.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n35e082.hgt": 25934402,
+        "n35e082.swb": 12967201,
+        "n35e082.num": 12967201
+      }
+    },
+    {
+      "tile": "n35w117",
+      "block_ids": [
+        "GLOBAL-0005"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n35w117/NASADEM_HGT_n35w117.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n35w117.hgt": 25934402,
+        "n35w117.swb": 12967201,
+        "n35w117.num": 12967201
+      }
+    },
+    {
+      "tile": "n35w118",
+      "block_ids": [
+        "GLOBAL-0005"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n35w118/NASADEM_HGT_n35w118.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n35w118.hgt": 25934402,
+        "n35w118.swb": 12967201,
+        "n35w118.num": 12967201
+      }
+    },
+    {
+      "tile": "n35w119",
+      "block_ids": [
+        "GLOBAL-0057"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n35w119/NASADEM_HGT_n35w119.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n35w119.hgt": 25934402,
+        "n35w119.swb": 12967201,
+        "n35w119.num": 12967201
+      }
+    },
+    {
+      "tile": "n35w120",
+      "block_ids": [
+        "GLOBAL-0057"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n35w120/NASADEM_HGT_n35w120.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n35w120.hgt": 25934402,
+        "n35w120.swb": 12967201,
+        "n35w120.num": 12967201
+      }
+    },
+    {
+      "tile": "n35w121",
+      "block_ids": [
+        "GLOBAL-0057"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n35w121/NASADEM_HGT_n35w121.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n35w121.hgt": 25934402,
+        "n35w121.swb": 12967201,
+        "n35w121.num": 12967201
+      }
+    },
+    {
+      "tile": "n36e053",
+      "block_ids": [
+        "GLOBAL-0065"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n36e053/NASADEM_HGT_n36e053.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n36e053.hgt": 25934402,
+        "n36e053.swb": 12967201,
+        "n36e053.num": 12967201
+      }
+    },
+    {
+      "tile": "n36e054",
+      "block_ids": [
+        "GLOBAL-0065"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n36e054/NASADEM_HGT_n36e054.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n36e054.hgt": 25934402,
+        "n36e054.swb": 12967201,
+        "n36e054.num": 12967201
+      }
+    },
+    {
+      "tile": "n36e055",
+      "block_ids": [
+        "GLOBAL-0065"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n36e055/NASADEM_HGT_n36e055.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n36e055.hgt": 25934402,
+        "n36e055.swb": 12967201,
+        "n36e055.num": 12967201
+      }
+    },
+    {
+      "tile": "n36e081",
+      "block_ids": [
+        "GLOBAL-0096"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n36e081/NASADEM_HGT_n36e081.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n36e081.hgt": 25934402,
+        "n36e081.swb": 12967201,
+        "n36e081.num": 12967201
+      }
+    },
+    {
+      "tile": "n36e082",
+      "block_ids": [
+        "GLOBAL-0096"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n36e082/NASADEM_HGT_n36e082.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n36e082.hgt": 25934402,
+        "n36e082.swb": 12967201,
+        "n36e082.num": 12967201
+      }
+    },
+    {
+      "tile": "n36w111",
+      "block_ids": [
+        "GLOBAL-0098"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n36w111/NASADEM_HGT_n36w111.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n36w111.hgt": 25934402,
+        "n36w111.swb": 12967201,
+        "n36w111.num": 12967201
+      }
+    },
+    {
+      "tile": "n36w112",
+      "block_ids": [
+        "GLOBAL-0098"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n36w112/NASADEM_HGT_n36w112.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n36w112.hgt": 25934402,
+        "n36w112.swb": 12967201,
+        "n36w112.num": 12967201
+      }
+    },
+    {
+      "tile": "n36w119",
+      "block_ids": [
+        "GLOBAL-0057"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n36w119/NASADEM_HGT_n36w119.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n36w119.hgt": 25934402,
+        "n36w119.swb": 12967201,
+        "n36w119.num": 12967201
+      }
+    },
+    {
+      "tile": "n36w120",
+      "block_ids": [
+        "GLOBAL-0057"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n36w120/NASADEM_HGT_n36w120.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n36w120.hgt": 25934402,
+        "n36w120.swb": 12967201,
+        "n36w120.num": 12967201
+      }
+    },
+    {
+      "tile": "n36w121",
+      "block_ids": [
+        "GLOBAL-0057"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n36w121/NASADEM_HGT_n36w121.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n36w121.hgt": 25934402,
+        "n36w121.swb": 12967201,
+        "n36w121.num": 12967201
+      }
+    },
+    {
+      "tile": "n37e057",
+      "block_ids": [
+        "GLOBAL-0085"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n37e057/NASADEM_HGT_n37e057.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n37e057.hgt": 25934402,
+        "n37e057.swb": 12967201,
+        "n37e057.num": 12967201
+      }
+    },
+    {
+      "tile": "n37e058",
+      "block_ids": [
+        "GLOBAL-0085"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n37e058/NASADEM_HGT_n37e058.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n37e058.hgt": 25934402,
+        "n37e058.swb": 12967201,
+        "n37e058.num": 12967201
+      }
+    },
+    {
+      "tile": "n37e059",
+      "block_ids": [
+        "GLOBAL-0085"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n37e059/NASADEM_HGT_n37e059.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n37e059.hgt": 25934402,
+        "n37e059.swb": 12967201,
+        "n37e059.num": 12967201
+      }
+    },
+    {
+      "tile": "n37e077",
+      "block_ids": [
+        "GLOBAL-0021"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n37e077/NASADEM_HGT_n37e077.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n37e077.hgt": 25934402,
+        "n37e077.swb": 12967201,
+        "n37e077.num": 12967201
+      }
+    },
+    {
+      "tile": "n37e078",
+      "block_ids": [
+        "GLOBAL-0021"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n37e078/NASADEM_HGT_n37e078.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n37e078.hgt": 25934402,
+        "n37e078.swb": 12967201,
+        "n37e078.num": 12967201
+      }
+    },
+    {
+      "tile": "n37w111",
+      "block_ids": [
+        "GLOBAL-0098"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n37w111/NASADEM_HGT_n37w111.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n37w111.hgt": 25934402,
+        "n37w111.swb": 12967201,
+        "n37w111.num": 12967201
+      }
+    },
+    {
+      "tile": "n37w112",
+      "block_ids": [
+        "GLOBAL-0098"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n37w112/NASADEM_HGT_n37w112.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n37w112.hgt": 25934402,
+        "n37w112.swb": 12967201,
+        "n37w112.num": 12967201
+      }
+    },
+    {
+      "tile": "n37w116",
+      "block_ids": [
+        "GLOBAL-0069"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n37w116/NASADEM_HGT_n37w116.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n37w116.hgt": 25934402,
+        "n37w116.swb": 12967201,
+        "n37w116.num": 12967201
+      }
+    },
+    {
+      "tile": "n37w117",
+      "block_ids": [
+        "GLOBAL-0069"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n37w117/NASADEM_HGT_n37w117.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n37w117.hgt": 25934402,
+        "n37w117.swb": 12967201,
+        "n37w117.num": 12967201
+      }
+    },
+    {
+      "tile": "n38e057",
+      "block_ids": [
+        "GLOBAL-0085"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n38e057/NASADEM_HGT_n38e057.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n38e057.hgt": 25934402,
+        "n38e057.swb": 12967201,
+        "n38e057.num": 12967201
+      }
+    },
+    {
+      "tile": "n38e058",
+      "block_ids": [
+        "GLOBAL-0085"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n38e058/NASADEM_HGT_n38e058.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n38e058.hgt": 25934402,
+        "n38e058.swb": 12967201,
+        "n38e058.num": 12967201
+      }
+    },
+    {
+      "tile": "n38e059",
+      "block_ids": [
+        "GLOBAL-0085"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n38e059/NASADEM_HGT_n38e059.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n38e059.hgt": 25934402,
+        "n38e059.swb": 12967201,
+        "n38e059.num": 12967201
+      }
+    },
+    {
+      "tile": "n38e077",
+      "block_ids": [
+        "GLOBAL-0021"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n38e077/NASADEM_HGT_n38e077.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n38e077.hgt": 25934402,
+        "n38e077.swb": 12967201,
+        "n38e077.num": 12967201
+      }
+    },
+    {
+      "tile": "n38e078",
+      "block_ids": [
+        "GLOBAL-0021"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n38e078/NASADEM_HGT_n38e078.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n38e078.hgt": 25934402,
+        "n38e078.swb": 12967201,
+        "n38e078.num": 12967201
+      }
+    },
+    {
+      "tile": "n38e079",
+      "block_ids": [
+        "GLOBAL-0083"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n38e079/NASADEM_HGT_n38e079.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n38e079.hgt": 25934402,
+        "n38e079.swb": 12967201,
+        "n38e079.num": 12967201
+      }
+    },
+    {
+      "tile": "n38e080",
+      "block_ids": [
+        "GLOBAL-0083"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n38e080/NASADEM_HGT_n38e080.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n38e080.hgt": 25934402,
+        "n38e080.swb": 12967201,
+        "n38e080.num": 12967201
+      }
+    },
+    {
+      "tile": "n38e081",
+      "block_ids": [
+        "GLOBAL-0083"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n38e081/NASADEM_HGT_n38e081.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n38e081.hgt": 25934402,
+        "n38e081.swb": 12967201,
+        "n38e081.num": 12967201
+      }
+    },
+    {
+      "tile": "n38e087",
+      "block_ids": [
+        "GLOBAL-0078"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n38e087/NASADEM_HGT_n38e087.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n38e087.hgt": 25934402,
+        "n38e087.swb": 12967201,
+        "n38e087.num": 12967201
+      }
+    },
+    {
+      "tile": "n38e088",
+      "block_ids": [
+        "GLOBAL-0078"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n38e088/NASADEM_HGT_n38e088.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n38e088.hgt": 25934402,
+        "n38e088.swb": 12967201,
+        "n38e088.num": 12967201
+      }
+    },
+    {
+      "tile": "n38e089",
+      "block_ids": [
+        "GLOBAL-0078"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n38e089/NASADEM_HGT_n38e089.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n38e089.hgt": 25934402,
+        "n38e089.swb": 12967201,
+        "n38e089.num": 12967201
+      }
+    },
+    {
+      "tile": "n38w116",
+      "block_ids": [
+        "GLOBAL-0069"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n38w116/NASADEM_HGT_n38w116.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n38w116.hgt": 25934402,
+        "n38w116.swb": 12967201,
+        "n38w116.num": 12967201
+      }
+    },
+    {
+      "tile": "n38w117",
+      "block_ids": [
+        "GLOBAL-0069"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n38w117/NASADEM_HGT_n38w117.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n38w117.hgt": 25934402,
+        "n38w117.swb": 12967201,
+        "n38w117.num": 12967201
+      }
+    },
+    {
+      "tile": "n39e057",
+      "block_ids": [
+        "GLOBAL-0072"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n39e057/NASADEM_HGT_n39e057.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n39e057.hgt": 25934402,
+        "n39e057.swb": 12967201,
+        "n39e057.num": 12967201
+      }
+    },
+    {
+      "tile": "n39e058",
+      "block_ids": [
+        "GLOBAL-0072"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n39e058/NASADEM_HGT_n39e058.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n39e058.hgt": 25934402,
+        "n39e058.swb": 12967201,
+        "n39e058.num": 12967201
+      }
+    },
+    {
+      "tile": "n39e059",
+      "block_ids": [
+        "GLOBAL-0090"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n39e059/NASADEM_HGT_n39e059.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n39e059.hgt": 25934402,
+        "n39e059.swb": 12967201,
+        "n39e059.num": 12967201
+      }
+    },
+    {
+      "tile": "n39e060",
+      "block_ids": [
+        "GLOBAL-0090"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n39e060/NASADEM_HGT_n39e060.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n39e060.hgt": 25934402,
+        "n39e060.swb": 12967201,
+        "n39e060.num": 12967201
+      }
+    },
+    {
+      "tile": "n39e079",
+      "block_ids": [
+        "GLOBAL-0083"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n39e079/NASADEM_HGT_n39e079.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n39e079.hgt": 25934402,
+        "n39e079.swb": 12967201,
+        "n39e079.num": 12967201
+      }
+    },
+    {
+      "tile": "n39e080",
+      "block_ids": [
+        "GLOBAL-0083"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n39e080/NASADEM_HGT_n39e080.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n39e080.hgt": 25934402,
+        "n39e080.swb": 12967201,
+        "n39e080.num": 12967201
+      }
+    },
+    {
+      "tile": "n39e081",
+      "block_ids": [
+        "GLOBAL-0081",
+        "GLOBAL-0083"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n39e081/NASADEM_HGT_n39e081.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n39e081.hgt": 25934402,
+        "n39e081.swb": 12967201,
+        "n39e081.num": 12967201
+      }
+    },
+    {
+      "tile": "n39e082",
+      "block_ids": [
+        "GLOBAL-0081"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n39e082/NASADEM_HGT_n39e082.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n39e082.hgt": 25934402,
+        "n39e082.swb": 12967201,
+        "n39e082.num": 12967201
+      }
+    },
+    {
+      "tile": "n39e087",
+      "block_ids": [
+        "GLOBAL-0078"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n39e087/NASADEM_HGT_n39e087.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n39e087.hgt": 25934402,
+        "n39e087.swb": 12967201,
+        "n39e087.num": 12967201
+      }
+    },
+    {
+      "tile": "n39e088",
+      "block_ids": [
+        "GLOBAL-0078"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n39e088/NASADEM_HGT_n39e088.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n39e088.hgt": 25934402,
+        "n39e088.swb": 12967201,
+        "n39e088.num": 12967201
+      }
+    },
+    {
+      "tile": "n39e089",
+      "block_ids": [
+        "GLOBAL-0078"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n39e089/NASADEM_HGT_n39e089.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n39e089.hgt": 25934402,
+        "n39e089.swb": 12967201,
+        "n39e089.num": 12967201
+      }
+    },
+    {
+      "tile": "n39e090",
+      "block_ids": [
+        "GLOBAL-0058"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n39e090/NASADEM_HGT_n39e090.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n39e090.hgt": 25934402,
+        "n39e090.swb": 12967201,
+        "n39e090.num": 12967201
+      }
+    },
+    {
+      "tile": "n39e091",
+      "block_ids": [
+        "GLOBAL-0058"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n39e091/NASADEM_HGT_n39e091.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n39e091.hgt": 25934402,
+        "n39e091.swb": 12967201,
+        "n39e091.num": 12967201
+      }
+    },
+    {
+      "tile": "n39e097",
+      "block_ids": [
+        "GLOBAL-0094"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n39e097/NASADEM_HGT_n39e097.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n39e097.hgt": 25934402,
+        "n39e097.swb": 12967201,
+        "n39e097.num": 12967201
+      }
+    },
+    {
+      "tile": "n39e098",
+      "block_ids": [
+        "GLOBAL-0094"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n39e098/NASADEM_HGT_n39e098.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n39e098.hgt": 25934402,
+        "n39e098.swb": 12967201,
+        "n39e098.num": 12967201
+      }
+    },
+    {
+      "tile": "n39e099",
+      "block_ids": [
+        "GLOBAL-0094"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n39e099/NASADEM_HGT_n39e099.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n39e099.hgt": 25934402,
+        "n39e099.swb": 12967201,
+        "n39e099.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e052",
+      "block_ids": [
+        "GLOBAL-0073"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e052/NASADEM_HGT_n40e052.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e052.hgt": 25934402,
+        "n40e052.swb": 12967201,
+        "n40e052.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e053",
+      "block_ids": [
+        "GLOBAL-0073"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e053/NASADEM_HGT_n40e053.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e053.hgt": 25934402,
+        "n40e053.swb": 12967201,
+        "n40e053.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e057",
+      "block_ids": [
+        "GLOBAL-0072"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e057/NASADEM_HGT_n40e057.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e057.hgt": 25934402,
+        "n40e057.swb": 12967201,
+        "n40e057.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e058",
+      "block_ids": [
+        "GLOBAL-0072"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e058/NASADEM_HGT_n40e058.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e058.hgt": 25934402,
+        "n40e058.swb": 12967201,
+        "n40e058.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e059",
+      "block_ids": [
+        "GLOBAL-0090"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e059/NASADEM_HGT_n40e059.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e059.hgt": 25934402,
+        "n40e059.swb": 12967201,
+        "n40e059.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e060",
+      "block_ids": [
+        "GLOBAL-0090"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e060/NASADEM_HGT_n40e060.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e060.hgt": 25934402,
+        "n40e060.swb": 12967201,
+        "n40e060.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e061",
+      "block_ids": [
+        "GLOBAL-0082"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e061/NASADEM_HGT_n40e061.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e061.hgt": 25934402,
+        "n40e061.swb": 12967201,
+        "n40e061.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e062",
+      "block_ids": [
+        "GLOBAL-0082"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e062/NASADEM_HGT_n40e062.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e062.hgt": 25934402,
+        "n40e062.swb": 12967201,
+        "n40e062.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e063",
+      "block_ids": [
+        "GLOBAL-0082"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e063/NASADEM_HGT_n40e063.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e063.hgt": 25934402,
+        "n40e063.swb": 12967201,
+        "n40e063.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e064",
+      "block_ids": [
+        "GLOBAL-0064"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e064/NASADEM_HGT_n40e064.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e064.hgt": 25934402,
+        "n40e064.swb": 12967201,
+        "n40e064.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e065",
+      "block_ids": [
+        "GLOBAL-0064"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e065/NASADEM_HGT_n40e065.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e065.hgt": 25934402,
+        "n40e065.swb": 12967201,
+        "n40e065.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e080",
+      "block_ids": [
+        "GLOBAL-0062"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e080/NASADEM_HGT_n40e080.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e080.hgt": 25934402,
+        "n40e080.swb": 12967201,
+        "n40e080.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e081",
+      "block_ids": [
+        "GLOBAL-0062",
+        "GLOBAL-0081"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e081/NASADEM_HGT_n40e081.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e081.hgt": 25934402,
+        "n40e081.swb": 12967201,
+        "n40e081.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e082",
+      "block_ids": [
+        "GLOBAL-0081"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e082/NASADEM_HGT_n40e082.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e082.hgt": 25934402,
+        "n40e082.swb": 12967201,
+        "n40e082.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e084",
+      "block_ids": [
+        "GLOBAL-0075"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e084/NASADEM_HGT_n40e084.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e084.hgt": 25934402,
+        "n40e084.swb": 12967201,
+        "n40e084.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e085",
+      "block_ids": [
+        "GLOBAL-0075"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e085/NASADEM_HGT_n40e085.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e085.hgt": 25934402,
+        "n40e085.swb": 12967201,
+        "n40e085.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e090",
+      "block_ids": [
+        "GLOBAL-0058"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e090/NASADEM_HGT_n40e090.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e090.hgt": 25934402,
+        "n40e090.swb": 12967201,
+        "n40e090.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e091",
+      "block_ids": [
+        "GLOBAL-0058"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e091/NASADEM_HGT_n40e091.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e091.hgt": 25934402,
+        "n40e091.swb": 12967201,
+        "n40e091.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e092",
+      "block_ids": [
+        "GLOBAL-0080"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e092/NASADEM_HGT_n40e092.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e092.hgt": 25934402,
+        "n40e092.swb": 12967201,
+        "n40e092.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e093",
+      "block_ids": [
+        "GLOBAL-0080"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e093/NASADEM_HGT_n40e093.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e093.hgt": 25934402,
+        "n40e093.swb": 12967201,
+        "n40e093.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e097",
+      "block_ids": [
+        "GLOBAL-0094"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e097/NASADEM_HGT_n40e097.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e097.hgt": 25934402,
+        "n40e097.swb": 12967201,
+        "n40e097.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e098",
+      "block_ids": [
+        "GLOBAL-0094"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e098/NASADEM_HGT_n40e098.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e098.hgt": 25934402,
+        "n40e098.swb": 12967201,
+        "n40e098.num": 12967201
+      }
+    },
+    {
+      "tile": "n40e099",
+      "block_ids": [
+        "GLOBAL-0094"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n40e099/NASADEM_HGT_n40e099.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n40e099.hgt": 25934402,
+        "n40e099.swb": 12967201,
+        "n40e099.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e052",
+      "block_ids": [
+        "GLOBAL-0073"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e052/NASADEM_HGT_n41e052.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e052.hgt": 25934402,
+        "n41e052.swb": 12967201,
+        "n41e052.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e053",
+      "block_ids": [
+        "GLOBAL-0073"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e053/NASADEM_HGT_n41e053.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e053.hgt": 25934402,
+        "n41e053.swb": 12967201,
+        "n41e053.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e058",
+      "block_ids": [
+        "GLOBAL-0070"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e058/NASADEM_HGT_n41e058.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e058.hgt": 25934402,
+        "n41e058.swb": 12967201,
+        "n41e058.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e059",
+      "block_ids": [
+        "GLOBAL-0070"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e059/NASADEM_HGT_n41e059.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e059.hgt": 25934402,
+        "n41e059.swb": 12967201,
+        "n41e059.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e060",
+      "block_ids": [
+        "GLOBAL-0070"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e060/NASADEM_HGT_n41e060.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e060.hgt": 25934402,
+        "n41e060.swb": 12967201,
+        "n41e060.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e061",
+      "block_ids": [
+        "GLOBAL-0082"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e061/NASADEM_HGT_n41e061.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e061.hgt": 25934402,
+        "n41e061.swb": 12967201,
+        "n41e061.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e062",
+      "block_ids": [
+        "GLOBAL-0082",
+        "GLOBAL-0091"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e062/NASADEM_HGT_n41e062.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e062.hgt": 25934402,
+        "n41e062.swb": 12967201,
+        "n41e062.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e063",
+      "block_ids": [
+        "GLOBAL-0082",
+        "GLOBAL-0091"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e063/NASADEM_HGT_n41e063.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e063.hgt": 25934402,
+        "n41e063.swb": 12967201,
+        "n41e063.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e064",
+      "block_ids": [
+        "GLOBAL-0064"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e064/NASADEM_HGT_n41e064.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e064.hgt": 25934402,
+        "n41e064.swb": 12967201,
+        "n41e064.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e065",
+      "block_ids": [
+        "GLOBAL-0064"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e065/NASADEM_HGT_n41e065.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e065.hgt": 25934402,
+        "n41e065.swb": 12967201,
+        "n41e065.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e080",
+      "block_ids": [
+        "GLOBAL-0062"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e080/NASADEM_HGT_n41e080.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e080.hgt": 25934402,
+        "n41e080.swb": 12967201,
+        "n41e080.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e081",
+      "block_ids": [
+        "GLOBAL-0062"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e081/NASADEM_HGT_n41e081.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e081.hgt": 25934402,
+        "n41e081.swb": 12967201,
+        "n41e081.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e084",
+      "block_ids": [
+        "GLOBAL-0075"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e084/NASADEM_HGT_n41e084.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e084.hgt": 25934402,
+        "n41e084.swb": 12967201,
+        "n41e084.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e085",
+      "block_ids": [
+        "GLOBAL-0075"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e085/NASADEM_HGT_n41e085.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e085.hgt": 25934402,
+        "n41e085.swb": 12967201,
+        "n41e085.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e086",
+      "block_ids": [
+        "GLOBAL-0084"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e086/NASADEM_HGT_n41e086.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e086.hgt": 25934402,
+        "n41e086.swb": 12967201,
+        "n41e086.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e087",
+      "block_ids": [
+        "GLOBAL-0084"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e087/NASADEM_HGT_n41e087.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e087.hgt": 25934402,
+        "n41e087.swb": 12967201,
+        "n41e087.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e088",
+      "block_ids": [
+        "GLOBAL-0084"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e088/NASADEM_HGT_n41e088.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e088.hgt": 25934402,
+        "n41e088.swb": 12967201,
+        "n41e088.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e092",
+      "block_ids": [
+        "GLOBAL-0080"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e092/NASADEM_HGT_n41e092.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e092.hgt": 25934402,
+        "n41e092.swb": 12967201,
+        "n41e092.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e093",
+      "block_ids": [
+        "GLOBAL-0080"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e093/NASADEM_HGT_n41e093.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e093.hgt": 25934402,
+        "n41e093.swb": 12967201,
+        "n41e093.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e096",
+      "block_ids": [
+        "GLOBAL-0074"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e096/NASADEM_HGT_n41e096.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e096.hgt": 25934402,
+        "n41e096.swb": 12967201,
+        "n41e096.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e097",
+      "block_ids": [
+        "GLOBAL-0074"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e097/NASADEM_HGT_n41e097.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e097.hgt": 25934402,
+        "n41e097.swb": 12967201,
+        "n41e097.num": 12967201
+      }
+    },
+    {
+      "tile": "n41e098",
+      "block_ids": [
+        "GLOBAL-0074"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n41e098/NASADEM_HGT_n41e098.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n41e098.hgt": 25934402,
+        "n41e098.swb": 12967201,
+        "n41e098.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e058",
+      "block_ids": [
+        "GLOBAL-0070"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e058/NASADEM_HGT_n42e058.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e058.hgt": 25934402,
+        "n42e058.swb": 12967201,
+        "n42e058.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e059",
+      "block_ids": [
+        "GLOBAL-0070"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e059/NASADEM_HGT_n42e059.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e059.hgt": 25934402,
+        "n42e059.swb": 12967201,
+        "n42e059.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e060",
+      "block_ids": [
+        "GLOBAL-0070"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e060/NASADEM_HGT_n42e060.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e060.hgt": 25934402,
+        "n42e060.swb": 12967201,
+        "n42e060.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e062",
+      "block_ids": [
+        "GLOBAL-0091"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e062/NASADEM_HGT_n42e062.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e062.hgt": 25934402,
+        "n42e062.swb": 12967201,
+        "n42e062.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e063",
+      "block_ids": [
+        "GLOBAL-0091"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e063/NASADEM_HGT_n42e063.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e063.hgt": 25934402,
+        "n42e063.swb": 12967201,
+        "n42e063.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e065",
+      "block_ids": [
+        "GLOBAL-0063"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e065/NASADEM_HGT_n42e065.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e065.hgt": 25934402,
+        "n42e065.swb": 12967201,
+        "n42e065.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e066",
+      "block_ids": [
+        "GLOBAL-0063"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e066/NASADEM_HGT_n42e066.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e066.hgt": 25934402,
+        "n42e066.swb": 12967201,
+        "n42e066.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e067",
+      "block_ids": [
+        "GLOBAL-0063"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e067/NASADEM_HGT_n42e067.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e067.hgt": 25934402,
+        "n42e067.swb": 12967201,
+        "n42e067.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e086",
+      "block_ids": [
+        "GLOBAL-0084"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e086/NASADEM_HGT_n42e086.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e086.hgt": 25934402,
+        "n42e086.swb": 12967201,
+        "n42e086.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e087",
+      "block_ids": [
+        "GLOBAL-0084"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e087/NASADEM_HGT_n42e087.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e087.hgt": 25934402,
+        "n42e087.swb": 12967201,
+        "n42e087.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e088",
+      "block_ids": [
+        "GLOBAL-0084"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e088/NASADEM_HGT_n42e088.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e088.hgt": 25934402,
+        "n42e088.swb": 12967201,
+        "n42e088.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e093",
+      "block_ids": [
+        "GLOBAL-0095"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e093/NASADEM_HGT_n42e093.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e093.hgt": 25934402,
+        "n42e093.swb": 12967201,
+        "n42e093.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e094",
+      "block_ids": [
+        "GLOBAL-0095"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e094/NASADEM_HGT_n42e094.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e094.hgt": 25934402,
+        "n42e094.swb": 12967201,
+        "n42e094.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e096",
+      "block_ids": [
+        "GLOBAL-0074"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e096/NASADEM_HGT_n42e096.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e096.hgt": 25934402,
+        "n42e096.swb": 12967201,
+        "n42e096.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e097",
+      "block_ids": [
+        "GLOBAL-0074"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e097/NASADEM_HGT_n42e097.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e097.hgt": 25934402,
+        "n42e097.swb": 12967201,
+        "n42e097.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e098",
+      "block_ids": [
+        "GLOBAL-0074",
+        "GLOBAL-0088"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e098/NASADEM_HGT_n42e098.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e098.hgt": 25934402,
+        "n42e098.swb": 12967201,
+        "n42e098.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e099",
+      "block_ids": [
+        "GLOBAL-0088"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e099/NASADEM_HGT_n42e099.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e099.hgt": 25934402,
+        "n42e099.swb": 12967201,
+        "n42e099.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e101",
+      "block_ids": [
+        "GLOBAL-0067"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e101/NASADEM_HGT_n42e101.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e101.hgt": 25934402,
+        "n42e101.swb": 12967201,
+        "n42e101.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e102",
+      "block_ids": [
+        "GLOBAL-0067",
+        "GLOBAL-0100"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e102/NASADEM_HGT_n42e102.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e102.hgt": 25934402,
+        "n42e102.swb": 12967201,
+        "n42e102.num": 12967201
+      }
+    },
+    {
+      "tile": "n42e103",
+      "block_ids": [
+        "GLOBAL-0100"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n42e103/NASADEM_HGT_n42e103.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n42e103.hgt": 25934402,
+        "n42e103.swb": 12967201,
+        "n42e103.num": 12967201
+      }
+    },
+    {
+      "tile": "n43e065",
+      "block_ids": [
+        "GLOBAL-0063"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n43e065/NASADEM_HGT_n43e065.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n43e065.hgt": 25934402,
+        "n43e065.swb": 12967201,
+        "n43e065.num": 12967201
+      }
+    },
+    {
+      "tile": "n43e066",
+      "block_ids": [
+        "GLOBAL-0063"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n43e066/NASADEM_HGT_n43e066.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n43e066.hgt": 25934402,
+        "n43e066.swb": 12967201,
+        "n43e066.num": 12967201
+      }
+    },
+    {
+      "tile": "n43e067",
+      "block_ids": [
+        "GLOBAL-0063"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n43e067/NASADEM_HGT_n43e067.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n43e067.hgt": 25934402,
+        "n43e067.swb": 12967201,
+        "n43e067.num": 12967201
+      }
+    },
+    {
+      "tile": "n43e093",
+      "block_ids": [
+        "GLOBAL-0095"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n43e093/NASADEM_HGT_n43e093.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n43e093.hgt": 25934402,
+        "n43e093.swb": 12967201,
+        "n43e093.num": 12967201
+      }
+    },
+    {
+      "tile": "n43e094",
+      "block_ids": [
+        "GLOBAL-0033",
+        "GLOBAL-0095"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n43e094/NASADEM_HGT_n43e094.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n43e094.hgt": 25934402,
+        "n43e094.swb": 12967201,
+        "n43e094.num": 12967201
+      }
+    },
+    {
+      "tile": "n43e095",
+      "block_ids": [
+        "GLOBAL-0033"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n43e095/NASADEM_HGT_n43e095.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n43e095.hgt": 25934402,
+        "n43e095.swb": 12967201,
+        "n43e095.num": 12967201
+      }
+    },
+    {
+      "tile": "n43e096",
+      "block_ids": [
+        "GLOBAL-0033"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n43e096/NASADEM_HGT_n43e096.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n43e096.hgt": 25934402,
+        "n43e096.swb": 12967201,
+        "n43e096.num": 12967201
+      }
+    },
+    {
+      "tile": "n43e098",
+      "block_ids": [
+        "GLOBAL-0088"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n43e098/NASADEM_HGT_n43e098.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n43e098.hgt": 25934402,
+        "n43e098.swb": 12967201,
+        "n43e098.num": 12967201
+      }
+    },
+    {
+      "tile": "n43e099",
+      "block_ids": [
+        "GLOBAL-0088"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n43e099/NASADEM_HGT_n43e099.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n43e099.hgt": 25934402,
+        "n43e099.swb": 12967201,
+        "n43e099.num": 12967201
+      }
+    },
+    {
+      "tile": "n43e101",
+      "block_ids": [
+        "GLOBAL-0067"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n43e101/NASADEM_HGT_n43e101.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n43e101.hgt": 25934402,
+        "n43e101.swb": 12967201,
+        "n43e101.num": 12967201
+      }
+    },
+    {
+      "tile": "n43e102",
+      "block_ids": [
+        "GLOBAL-0067",
+        "GLOBAL-0100"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n43e102/NASADEM_HGT_n43e102.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n43e102.hgt": 25934402,
+        "n43e102.swb": 12967201,
+        "n43e102.num": 12967201
+      }
+    },
+    {
+      "tile": "n43e103",
+      "block_ids": [
+        "GLOBAL-0100"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n43e103/NASADEM_HGT_n43e103.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n43e103.hgt": 25934402,
+        "n43e103.swb": 12967201,
+        "n43e103.num": 12967201
+      }
+    },
+    {
+      "tile": "n43e107",
+      "block_ids": [
+        "GLOBAL-0079"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n43e107/NASADEM_HGT_n43e107.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n43e107.hgt": 25934402,
+        "n43e107.swb": 12967201,
+        "n43e107.num": 12967201
+      }
+    },
+    {
+      "tile": "n43e108",
+      "block_ids": [
+        "GLOBAL-0079"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n43e108/NASADEM_HGT_n43e108.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n43e108.hgt": 25934402,
+        "n43e108.swb": 12967201,
+        "n43e108.num": 12967201
+      }
+    },
+    {
+      "tile": "n43e109",
+      "block_ids": [
+        "GLOBAL-0079"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n43e109/NASADEM_HGT_n43e109.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n43e109.hgt": 25934402,
+        "n43e109.swb": 12967201,
+        "n43e109.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e052",
+      "block_ids": [
+        "GLOBAL-0068"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e052/NASADEM_HGT_n44e052.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e052.hgt": 25934402,
+        "n44e052.swb": 12967201,
+        "n44e052.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e053",
+      "block_ids": [
+        "GLOBAL-0068"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e053/NASADEM_HGT_n44e053.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e053.hgt": 25934402,
+        "n44e053.swb": 12967201,
+        "n44e053.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e054",
+      "block_ids": [
+        "GLOBAL-0068"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e054/NASADEM_HGT_n44e054.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e054.hgt": 25934402,
+        "n44e054.swb": 12967201,
+        "n44e054.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e068",
+      "block_ids": [
+        "GLOBAL-0025"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e068/NASADEM_HGT_n44e068.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e068.hgt": 25934402,
+        "n44e068.swb": 12967201,
+        "n44e068.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e069",
+      "block_ids": [
+        "GLOBAL-0025"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e069/NASADEM_HGT_n44e069.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e069.hgt": 25934402,
+        "n44e069.swb": 12967201,
+        "n44e069.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e070",
+      "block_ids": [
+        "GLOBAL-0025"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e070/NASADEM_HGT_n44e070.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e070.hgt": 25934402,
+        "n44e070.swb": 12967201,
+        "n44e070.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e087",
+      "block_ids": [
+        "GLOBAL-0076"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e087/NASADEM_HGT_n44e087.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e087.hgt": 25934402,
+        "n44e087.swb": 12967201,
+        "n44e087.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e088",
+      "block_ids": [
+        "GLOBAL-0076"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e088/NASADEM_HGT_n44e088.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e088.hgt": 25934402,
+        "n44e088.swb": 12967201,
+        "n44e088.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e093",
+      "block_ids": [
+        "GLOBAL-0039"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e093/NASADEM_HGT_n44e093.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e093.hgt": 25934402,
+        "n44e093.swb": 12967201,
+        "n44e093.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e094",
+      "block_ids": [
+        "GLOBAL-0033",
+        "GLOBAL-0039"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e094/NASADEM_HGT_n44e094.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e094.hgt": 25934402,
+        "n44e094.swb": 12967201,
+        "n44e094.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e095",
+      "block_ids": [
+        "GLOBAL-0033"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e095/NASADEM_HGT_n44e095.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e095.hgt": 25934402,
+        "n44e095.swb": 12967201,
+        "n44e095.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e096",
+      "block_ids": [
+        "GLOBAL-0033",
+        "GLOBAL-0099"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e096/NASADEM_HGT_n44e096.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e096.hgt": 25934402,
+        "n44e096.swb": 12967201,
+        "n44e096.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e097",
+      "block_ids": [
+        "GLOBAL-0099"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e097/NASADEM_HGT_n44e097.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e097.hgt": 25934402,
+        "n44e097.swb": 12967201,
+        "n44e097.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e100",
+      "block_ids": [
+        "GLOBAL-0093"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e100/NASADEM_HGT_n44e100.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e100.hgt": 25934402,
+        "n44e100.swb": 12967201,
+        "n44e100.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e101",
+      "block_ids": [
+        "GLOBAL-0093"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e101/NASADEM_HGT_n44e101.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e101.hgt": 25934402,
+        "n44e101.swb": 12967201,
+        "n44e101.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e102",
+      "block_ids": [
+        "GLOBAL-0093"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e102/NASADEM_HGT_n44e102.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e102.hgt": 25934402,
+        "n44e102.swb": 12967201,
+        "n44e102.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e107",
+      "block_ids": [
+        "GLOBAL-0079"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e107/NASADEM_HGT_n44e107.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e107.hgt": 25934402,
+        "n44e107.swb": 12967201,
+        "n44e107.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e108",
+      "block_ids": [
+        "GLOBAL-0079"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e108/NASADEM_HGT_n44e108.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e108.hgt": 25934402,
+        "n44e108.swb": 12967201,
+        "n44e108.num": 12967201
+      }
+    },
+    {
+      "tile": "n44e109",
+      "block_ids": [
+        "GLOBAL-0079"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n44e109/NASADEM_HGT_n44e109.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n44e109.hgt": 25934402,
+        "n44e109.swb": 12967201,
+        "n44e109.num": 12967201
+      }
+    },
+    {
+      "tile": "n45e052",
+      "block_ids": [
+        "GLOBAL-0068"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n45e052/NASADEM_HGT_n45e052.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n45e052.hgt": 25934402,
+        "n45e052.swb": 12967201,
+        "n45e052.num": 12967201
+      }
+    },
+    {
+      "tile": "n45e053",
+      "block_ids": [
+        "GLOBAL-0068"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n45e053/NASADEM_HGT_n45e053.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n45e053.hgt": 25934402,
+        "n45e053.swb": 12967201,
+        "n45e053.num": 12967201
+      }
+    },
+    {
+      "tile": "n45e054",
+      "block_ids": [
+        "GLOBAL-0068"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n45e054/NASADEM_HGT_n45e054.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n45e054.hgt": 25934402,
+        "n45e054.swb": 12967201,
+        "n45e054.num": 12967201
+      }
+    },
+    {
+      "tile": "n45e068",
+      "block_ids": [
+        "GLOBAL-0025"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n45e068/NASADEM_HGT_n45e068.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n45e068.hgt": 25934402,
+        "n45e068.swb": 12967201,
+        "n45e068.num": 12967201
+      }
+    },
+    {
+      "tile": "n45e069",
+      "block_ids": [
+        "GLOBAL-0025"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n45e069/NASADEM_HGT_n45e069.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n45e069.hgt": 25934402,
+        "n45e069.swb": 12967201,
+        "n45e069.num": 12967201
+      }
+    },
+    {
+      "tile": "n45e070",
+      "block_ids": [
+        "GLOBAL-0025"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n45e070/NASADEM_HGT_n45e070.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n45e070.hgt": 25934402,
+        "n45e070.swb": 12967201,
+        "n45e070.num": 12967201
+      }
+    },
+    {
+      "tile": "n45e087",
+      "block_ids": [
+        "GLOBAL-0076"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n45e087/NASADEM_HGT_n45e087.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n45e087.hgt": 25934402,
+        "n45e087.swb": 12967201,
+        "n45e087.num": 12967201
+      }
+    },
+    {
+      "tile": "n45e088",
+      "block_ids": [
+        "GLOBAL-0076"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n45e088/NASADEM_HGT_n45e088.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n45e088.hgt": 25934402,
+        "n45e088.swb": 12967201,
+        "n45e088.num": 12967201
+      }
+    },
+    {
+      "tile": "n45e093",
+      "block_ids": [
+        "GLOBAL-0039"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n45e093/NASADEM_HGT_n45e093.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n45e093.hgt": 25934402,
+        "n45e093.swb": 12967201,
+        "n45e093.num": 12967201
+      }
+    },
+    {
+      "tile": "n45e094",
+      "block_ids": [
+        "GLOBAL-0039"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n45e094/NASADEM_HGT_n45e094.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n45e094.hgt": 25934402,
+        "n45e094.swb": 12967201,
+        "n45e094.num": 12967201
+      }
+    },
+    {
+      "tile": "n45e096",
+      "block_ids": [
+        "GLOBAL-0099"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n45e096/NASADEM_HGT_n45e096.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n45e096.hgt": 25934402,
+        "n45e096.swb": 12967201,
+        "n45e096.num": 12967201
+      }
+    },
+    {
+      "tile": "n45e097",
+      "block_ids": [
+        "GLOBAL-0099"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n45e097/NASADEM_HGT_n45e097.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n45e097.hgt": 25934402,
+        "n45e097.swb": 12967201,
+        "n45e097.num": 12967201
+      }
+    },
+    {
+      "tile": "n45e100",
+      "block_ids": [
+        "GLOBAL-0093"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n45e100/NASADEM_HGT_n45e100.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n45e100.hgt": 25934402,
+        "n45e100.swb": 12967201,
+        "n45e100.num": 12967201
+      }
+    },
+    {
+      "tile": "n45e101",
+      "block_ids": [
+        "GLOBAL-0093"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n45e101/NASADEM_HGT_n45e101.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n45e101.hgt": 25934402,
+        "n45e101.swb": 12967201,
+        "n45e101.num": 12967201
+      }
+    },
+    {
+      "tile": "n45e102",
+      "block_ids": [
+        "GLOBAL-0093"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_n45e102/NASADEM_HGT_n45e102.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "n45e102.hgt": 25934402,
+        "n45e102.swb": 12967201,
+        "n45e102.num": 12967201
+      }
+    },
+    {
+      "tile": "s11w077",
+      "block_ids": [
+        "GLOBAL-0061"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s11w077/NASADEM_HGT_s11w077.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s11w077.hgt": 25934402,
+        "s11w077.swb": 12967201,
+        "s11w077.num": 12967201
+      }
+    },
+    {
+      "tile": "s11w078",
+      "block_ids": [
+        "GLOBAL-0061"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s11w078/NASADEM_HGT_s11w078.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s11w078.hgt": 25934402,
+        "s11w078.swb": 12967201,
+        "s11w078.num": 12967201
+      }
+    },
+    {
+      "tile": "s12w077",
+      "block_ids": [
+        "GLOBAL-0061"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s12w077/NASADEM_HGT_s12w077.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s12w077.hgt": 25934402,
+        "s12w077.swb": 12967201,
+        "s12w077.num": 12967201
+      }
+    },
+    {
+      "tile": "s12w078",
+      "block_ids": [
+        "GLOBAL-0061"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s12w078/NASADEM_HGT_s12w078.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s12w078.hgt": 25934402,
+        "s12w078.swb": 12967201,
+        "s12w078.num": 12967201
+      }
+    },
+    {
+      "tile": "s15w074",
+      "block_ids": [
+        "GLOBAL-0097"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s15w074/NASADEM_HGT_s15w074.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s15w074.hgt": 25934402,
+        "s15w074.swb": 12967201,
+        "s15w074.num": 12967201
+      }
+    },
+    {
+      "tile": "s15w075",
+      "block_ids": [
+        "GLOBAL-0097"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s15w075/NASADEM_HGT_s15w075.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s15w075.hgt": 25934402,
+        "s15w075.swb": 12967201,
+        "s15w075.num": 12967201
+      }
+    },
+    {
+      "tile": "s16w072",
+      "block_ids": [
+        "GLOBAL-0018"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s16w072/NASADEM_HGT_s16w072.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s16w072.hgt": 25934402,
+        "s16w072.swb": 12967201,
+        "s16w072.num": 12967201
+      }
+    },
+    {
+      "tile": "s16w073",
+      "block_ids": [
+        "GLOBAL-0018"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s16w073/NASADEM_HGT_s16w073.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s16w073.hgt": 25934402,
+        "s16w073.swb": 12967201,
+        "s16w073.num": 12967201
+      }
+    },
+    {
+      "tile": "s16w074",
+      "block_ids": [
+        "GLOBAL-0097"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s16w074/NASADEM_HGT_s16w074.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s16w074.hgt": 25934402,
+        "s16w074.swb": 12967201,
+        "s16w074.num": 12967201
+      }
+    },
+    {
+      "tile": "s16w075",
+      "block_ids": [
+        "GLOBAL-0097"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s16w075/NASADEM_HGT_s16w075.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s16w075.hgt": 25934402,
+        "s16w075.swb": 12967201,
+        "s16w075.num": 12967201
+      }
+    },
+    {
+      "tile": "s17w072",
+      "block_ids": [
+        "GLOBAL-0018"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s17w072/NASADEM_HGT_s17w072.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s17w072.hgt": 25934402,
+        "s17w072.swb": 12967201,
+        "s17w072.num": 12967201
+      }
+    },
+    {
+      "tile": "s17w073",
+      "block_ids": [
+        "GLOBAL-0018"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s17w073/NASADEM_HGT_s17w073.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s17w073.hgt": 25934402,
+        "s17w073.swb": 12967201,
+        "s17w073.num": 12967201
+      }
+    },
+    {
+      "tile": "s18e011",
+      "block_ids": [
+        "GLOBAL-0003"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s18e011/NASADEM_HGT_s18e011.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s18e011.hgt": 25934402,
+        "s18e011.swb": 12967201,
+        "s18e011.num": 12967201
+      }
+    },
+    {
+      "tile": "s18e012",
+      "block_ids": [
+        "GLOBAL-0003"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s18e012/NASADEM_HGT_s18e012.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s18e012.hgt": 25934402,
+        "s18e012.swb": 12967201,
+        "s18e012.num": 12967201
+      }
+    },
+    {
+      "tile": "s19e011",
+      "block_ids": [
+        "GLOBAL-0003"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s19e011/NASADEM_HGT_s19e011.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s19e011.hgt": 25934402,
+        "s19e011.swb": 12967201,
+        "s19e011.num": 12967201
+      }
+    },
+    {
+      "tile": "s19e012",
+      "block_ids": [
+        "GLOBAL-0003"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s19e012/NASADEM_HGT_s19e012.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s19e012.hgt": 25934402,
+        "s19e012.swb": 12967201,
+        "s19e012.num": 12967201
+      }
+    },
+    {
+      "tile": "s21e025",
+      "block_ids": [
+        "GLOBAL-0022"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s21e025/NASADEM_HGT_s21e025.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s21e025.hgt": 25934402,
+        "s21e025.swb": 12967201,
+        "s21e025.num": 12967201
+      }
+    },
+    {
+      "tile": "s21e026",
+      "block_ids": [
+        "GLOBAL-0022"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s21e026/NASADEM_HGT_s21e026.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s21e026.hgt": 25934402,
+        "s21e026.swb": 12967201,
+        "s21e026.num": 12967201
+      }
+    },
+    {
+      "tile": "s22e025",
+      "block_ids": [
+        "GLOBAL-0022"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s22e025/NASADEM_HGT_s22e025.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s22e025.hgt": 25934402,
+        "s22e025.swb": 12967201,
+        "s22e025.num": 12967201
+      }
+    },
+    {
+      "tile": "s22e026",
+      "block_ids": [
+        "GLOBAL-0022"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s22e026/NASADEM_HGT_s22e026.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s22e026.hgt": 25934402,
+        "s22e026.swb": 12967201,
+        "s22e026.num": 12967201
+      }
+    },
+    {
+      "tile": "s23e125",
+      "block_ids": [
+        "GLOBAL-0031"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s23e125/NASADEM_HGT_s23e125.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s23e125.hgt": 25934402,
+        "s23e125.swb": 12967201,
+        "s23e125.num": 12967201
+      }
+    },
+    {
+      "tile": "s23e126",
+      "block_ids": [
+        "GLOBAL-0016",
+        "GLOBAL-0031"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s23e126/NASADEM_HGT_s23e126.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s23e126.hgt": 25934402,
+        "s23e126.swb": 12967201,
+        "s23e126.num": 12967201
+      }
+    },
+    {
+      "tile": "s23e127",
+      "block_ids": [
+        "GLOBAL-0016"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s23e127/NASADEM_HGT_s23e127.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s23e127.hgt": 25934402,
+        "s23e127.swb": 12967201,
+        "s23e127.num": 12967201
+      }
+    },
+    {
+      "tile": "s23w069",
+      "block_ids": [
+        "GLOBAL-0066"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s23w069/NASADEM_HGT_s23w069.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s23w069.hgt": 25934402,
+        "s23w069.swb": 12967201,
+        "s23w069.num": 12967201
+      }
+    },
+    {
+      "tile": "s23w070",
+      "block_ids": [
+        "GLOBAL-0066"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s23w070/NASADEM_HGT_s23w070.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s23w070.hgt": 25934402,
+        "s23w070.swb": 12967201,
+        "s23w070.num": 12967201
+      }
+    },
+    {
+      "tile": "s24e125",
+      "block_ids": [
+        "GLOBAL-0031"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s24e125/NASADEM_HGT_s24e125.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s24e125.hgt": 25934402,
+        "s24e125.swb": 12967201,
+        "s24e125.num": 12967201
+      }
+    },
+    {
+      "tile": "s24e126",
+      "block_ids": [
+        "GLOBAL-0016",
+        "GLOBAL-0031"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s24e126/NASADEM_HGT_s24e126.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s24e126.hgt": 25934402,
+        "s24e126.swb": 12967201,
+        "s24e126.num": 12967201
+      }
+    },
+    {
+      "tile": "s24e127",
+      "block_ids": [
+        "GLOBAL-0016"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s24e127/NASADEM_HGT_s24e127.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s24e127.hgt": 25934402,
+        "s24e127.swb": 12967201,
+        "s24e127.num": 12967201
+      }
+    },
+    {
+      "tile": "s24w069",
+      "block_ids": [
+        "GLOBAL-0066"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s24w069/NASADEM_HGT_s24w069.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s24w069.hgt": 25934402,
+        "s24w069.swb": 12967201,
+        "s24w069.num": 12967201
+      }
+    },
+    {
+      "tile": "s24w070",
+      "block_ids": [
+        "GLOBAL-0066"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s24w070/NASADEM_HGT_s24w070.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s24w070.hgt": 25934402,
+        "s24w070.swb": 12967201,
+        "s24w070.num": 12967201
+      }
+    },
+    {
+      "tile": "s26e017",
+      "block_ids": [
+        "GLOBAL-0030"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s26e017/NASADEM_HGT_s26e017.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s26e017.hgt": 25934402,
+        "s26e017.swb": 12967201,
+        "s26e017.num": 12967201
+      }
+    },
+    {
+      "tile": "s26e018",
+      "block_ids": [
+        "GLOBAL-0030"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s26e018/NASADEM_HGT_s26e018.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s26e018.hgt": 25934402,
+        "s26e018.swb": 12967201,
+        "s26e018.num": 12967201
+      }
+    },
+    {
+      "tile": "s26e125",
+      "block_ids": [
+        "GLOBAL-0023"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s26e125/NASADEM_HGT_s26e125.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s26e125.hgt": 25934402,
+        "s26e125.swb": 12967201,
+        "s26e125.num": 12967201
+      }
+    },
+    {
+      "tile": "s26e126",
+      "block_ids": [
+        "GLOBAL-0023"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s26e126/NASADEM_HGT_s26e126.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s26e126.hgt": 25934402,
+        "s26e126.swb": 12967201,
+        "s26e126.num": 12967201
+      }
+    },
+    {
+      "tile": "s27e017",
+      "block_ids": [
+        "GLOBAL-0030"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s27e017/NASADEM_HGT_s27e017.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s27e017.hgt": 25934402,
+        "s27e017.swb": 12967201,
+        "s27e017.num": 12967201
+      }
+    },
+    {
+      "tile": "s27e018",
+      "block_ids": [
+        "GLOBAL-0030"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s27e018/NASADEM_HGT_s27e018.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s27e018.hgt": 25934402,
+        "s27e018.swb": 12967201,
+        "s27e018.num": 12967201
+      }
+    },
+    {
+      "tile": "s27e125",
+      "block_ids": [
+        "GLOBAL-0023"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s27e125/NASADEM_HGT_s27e125.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s27e125.hgt": 25934402,
+        "s27e125.swb": 12967201,
+        "s27e125.num": 12967201
+      }
+    },
+    {
+      "tile": "s27e126",
+      "block_ids": [
+        "GLOBAL-0023"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s27e126/NASADEM_HGT_s27e126.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s27e126.hgt": 25934402,
+        "s27e126.swb": 12967201,
+        "s27e126.num": 12967201
+      }
+    },
+    {
+      "tile": "s27w070",
+      "block_ids": [
+        "GLOBAL-0092"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s27w070/NASADEM_HGT_s27w070.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s27w070.hgt": 25934402,
+        "s27w070.swb": 12967201,
+        "s27w070.num": 12967201
+      }
+    },
+    {
+      "tile": "s27w071",
+      "block_ids": [
+        "GLOBAL-0092"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s27w071/NASADEM_HGT_s27w071.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s27w071.hgt": 25934402,
+        "s27w071.swb": 12967201,
+        "s27w071.num": 12967201
+      }
+    },
+    {
+      "tile": "s28e018",
+      "block_ids": [
+        "GLOBAL-0040"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s28e018/NASADEM_HGT_s28e018.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s28e018.hgt": 25934402,
+        "s28e018.swb": 12967201,
+        "s28e018.num": 12967201
+      }
+    },
+    {
+      "tile": "s28e019",
+      "block_ids": [
+        "GLOBAL-0040"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s28e019/NASADEM_HGT_s28e019.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s28e019.hgt": 25934402,
+        "s28e019.swb": 12967201,
+        "s28e019.num": 12967201
+      }
+    },
+    {
+      "tile": "s28e140",
+      "block_ids": [
+        "GLOBAL-0056"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s28e140/NASADEM_HGT_s28e140.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s28e140.hgt": 25934402,
+        "s28e140.swb": 12967201,
+        "s28e140.num": 12967201
+      }
+    },
+    {
+      "tile": "s28e141",
+      "block_ids": [
+        "GLOBAL-0056"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s28e141/NASADEM_HGT_s28e141.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s28e141.hgt": 25934402,
+        "s28e141.swb": 12967201,
+        "s28e141.num": 12967201
+      }
+    },
+    {
+      "tile": "s28w067",
+      "block_ids": [
+        "GLOBAL-0086"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s28w067/NASADEM_HGT_s28w067.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s28w067.hgt": 25934402,
+        "s28w067.swb": 12967201,
+        "s28w067.num": 12967201
+      }
+    },
+    {
+      "tile": "s28w068",
+      "block_ids": [
+        "GLOBAL-0086"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s28w068/NASADEM_HGT_s28w068.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s28w068.hgt": 25934402,
+        "s28w068.swb": 12967201,
+        "s28w068.num": 12967201
+      }
+    },
+    {
+      "tile": "s28w070",
+      "block_ids": [
+        "GLOBAL-0092"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s28w070/NASADEM_HGT_s28w070.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s28w070.hgt": 25934402,
+        "s28w070.swb": 12967201,
+        "s28w070.num": 12967201
+      }
+    },
+    {
+      "tile": "s28w071",
+      "block_ids": [
+        "GLOBAL-0092"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s28w071/NASADEM_HGT_s28w071.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s28w071.hgt": 25934402,
+        "s28w071.swb": 12967201,
+        "s28w071.num": 12967201
+      }
+    },
+    {
+      "tile": "s29e016",
+      "block_ids": [
+        "GLOBAL-0029"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s29e016/NASADEM_HGT_s29e016.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s29e016.hgt": 25934402,
+        "s29e016.swb": 12967201,
+        "s29e016.num": 12967201
+      }
+    },
+    {
+      "tile": "s29e017",
+      "block_ids": [
+        "GLOBAL-0029"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s29e017/NASADEM_HGT_s29e017.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s29e017.hgt": 25934402,
+        "s29e017.swb": 12967201,
+        "s29e017.num": 12967201
+      }
+    },
+    {
+      "tile": "s29e018",
+      "block_ids": [
+        "GLOBAL-0040"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s29e018/NASADEM_HGT_s29e018.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s29e018.hgt": 25934402,
+        "s29e018.swb": 12967201,
+        "s29e018.num": 12967201
+      }
+    },
+    {
+      "tile": "s29e019",
+      "block_ids": [
+        "GLOBAL-0040"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s29e019/NASADEM_HGT_s29e019.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s29e019.hgt": 25934402,
+        "s29e019.swb": 12967201,
+        "s29e019.num": 12967201
+      }
+    },
+    {
+      "tile": "s29e119",
+      "block_ids": [
+        "GLOBAL-0037"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s29e119/NASADEM_HGT_s29e119.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s29e119.hgt": 25934402,
+        "s29e119.swb": 12967201,
+        "s29e119.num": 12967201
+      }
+    },
+    {
+      "tile": "s29e120",
+      "block_ids": [
+        "GLOBAL-0037"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s29e120/NASADEM_HGT_s29e120.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s29e120.hgt": 25934402,
+        "s29e120.swb": 12967201,
+        "s29e120.num": 12967201
+      }
+    },
+    {
+      "tile": "s29e140",
+      "block_ids": [
+        "GLOBAL-0056"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s29e140/NASADEM_HGT_s29e140.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s29e140.hgt": 25934402,
+        "s29e140.swb": 12967201,
+        "s29e140.num": 12967201
+      }
+    },
+    {
+      "tile": "s29e141",
+      "block_ids": [
+        "GLOBAL-0056"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s29e141/NASADEM_HGT_s29e141.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s29e141.hgt": 25934402,
+        "s29e141.swb": 12967201,
+        "s29e141.num": 12967201
+      }
+    },
+    {
+      "tile": "s29w067",
+      "block_ids": [
+        "GLOBAL-0086"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s29w067/NASADEM_HGT_s29w067.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s29w067.hgt": 25934402,
+        "s29w067.swb": 12967201,
+        "s29w067.num": 12967201
+      }
+    },
+    {
+      "tile": "s29w068",
+      "block_ids": [
+        "GLOBAL-0077",
+        "GLOBAL-0086"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s29w068/NASADEM_HGT_s29w068.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s29w068.hgt": 25934402,
+        "s29w068.swb": 12967201,
+        "s29w068.num": 12967201
+      }
+    },
+    {
+      "tile": "s29w069",
+      "block_ids": [
+        "GLOBAL-0077"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s29w069/NASADEM_HGT_s29w069.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s29w069.hgt": 25934402,
+        "s29w069.swb": 12967201,
+        "s29w069.num": 12967201
+      }
+    },
+    {
+      "tile": "s30e016",
+      "block_ids": [
+        "GLOBAL-0029"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s30e016/NASADEM_HGT_s30e016.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s30e016.hgt": 25934402,
+        "s30e016.swb": 12967201,
+        "s30e016.num": 12967201
+      }
+    },
+    {
+      "tile": "s30e017",
+      "block_ids": [
+        "GLOBAL-0029"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s30e017/NASADEM_HGT_s30e017.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s30e017.hgt": 25934402,
+        "s30e017.swb": 12967201,
+        "s30e017.num": 12967201
+      }
+    },
+    {
+      "tile": "s30e018",
+      "block_ids": [
+        "GLOBAL-0013"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s30e018/NASADEM_HGT_s30e018.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s30e018.hgt": 25934402,
+        "s30e018.swb": 12967201,
+        "s30e018.num": 12967201
+      }
+    },
+    {
+      "tile": "s30e019",
+      "block_ids": [
+        "GLOBAL-0013"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s30e019/NASADEM_HGT_s30e019.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s30e019.hgt": 25934402,
+        "s30e019.swb": 12967201,
+        "s30e019.num": 12967201
+      }
+    },
+    {
+      "tile": "s30e119",
+      "block_ids": [
+        "GLOBAL-0037"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s30e119/NASADEM_HGT_s30e119.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s30e119.hgt": 25934402,
+        "s30e119.swb": 12967201,
+        "s30e119.num": 12967201
+      }
+    },
+    {
+      "tile": "s30e120",
+      "block_ids": [
+        "GLOBAL-0037"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s30e120/NASADEM_HGT_s30e120.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s30e120.hgt": 25934402,
+        "s30e120.swb": 12967201,
+        "s30e120.num": 12967201
+      }
+    },
+    {
+      "tile": "s30w068",
+      "block_ids": [
+        "GLOBAL-0077"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s30w068/NASADEM_HGT_s30w068.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s30w068.hgt": 25934402,
+        "s30w068.swb": 12967201,
+        "s30w068.num": 12967201
+      }
+    },
+    {
+      "tile": "s30w069",
+      "block_ids": [
+        "GLOBAL-0048",
+        "GLOBAL-0077"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s30w069/NASADEM_HGT_s30w069.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s30w069.hgt": 25934402,
+        "s30w069.swb": 12967201,
+        "s30w069.num": 12967201
+      }
+    },
+    {
+      "tile": "s30w070",
+      "block_ids": [
+        "GLOBAL-0048"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s30w070/NASADEM_HGT_s30w070.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s30w070.hgt": 25934402,
+        "s30w070.swb": 12967201,
+        "s30w070.num": 12967201
+      }
+    },
+    {
+      "tile": "s31e018",
+      "block_ids": [
+        "GLOBAL-0013"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s31e018/NASADEM_HGT_s31e018.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s31e018.hgt": 25934402,
+        "s31e018.swb": 12967201,
+        "s31e018.num": 12967201
+      }
+    },
+    {
+      "tile": "s31e019",
+      "block_ids": [
+        "GLOBAL-0013"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s31e019/NASADEM_HGT_s31e019.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s31e019.hgt": 25934402,
+        "s31e019.swb": 12967201,
+        "s31e019.num": 12967201
+      }
+    },
+    {
+      "tile": "s31e124",
+      "block_ids": [
+        "GLOBAL-0012"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s31e124/NASADEM_HGT_s31e124.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s31e124.hgt": 25934402,
+        "s31e124.swb": 12967201,
+        "s31e124.num": 12967201
+      }
+    },
+    {
+      "tile": "s31e125",
+      "block_ids": [
+        "GLOBAL-0012"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s31e125/NASADEM_HGT_s31e125.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s31e125.hgt": 25934402,
+        "s31e125.swb": 12967201,
+        "s31e125.num": 12967201
+      }
+    },
+    {
+      "tile": "s31w069",
+      "block_ids": [
+        "GLOBAL-0048"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s31w069/NASADEM_HGT_s31w069.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s31w069.hgt": 25934402,
+        "s31w069.swb": 12967201,
+        "s31w069.num": 12967201
+      }
+    },
+    {
+      "tile": "s31w070",
+      "block_ids": [
+        "GLOBAL-0048"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s31w070/NASADEM_HGT_s31w070.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s31w070.hgt": 25934402,
+        "s31w070.swb": 12967201,
+        "s31w070.num": 12967201
+      }
+    },
+    {
+      "tile": "s32e124",
+      "block_ids": [
+        "GLOBAL-0012"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s32e124/NASADEM_HGT_s32e124.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s32e124.hgt": 25934402,
+        "s32e124.swb": 12967201,
+        "s32e124.num": 12967201
+      }
+    },
+    {
+      "tile": "s32e125",
+      "block_ids": [
+        "GLOBAL-0012"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s32e125/NASADEM_HGT_s32e125.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s32e125.hgt": 25934402,
+        "s32e125.swb": 12967201,
+        "s32e125.num": 12967201
+      }
+    },
+    {
+      "tile": "s33e124",
+      "block_ids": [
+        "GLOBAL-0012"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s33e124/NASADEM_HGT_s33e124.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s33e124.hgt": 25934402,
+        "s33e124.swb": 12967201,
+        "s33e124.num": 12967201
+      }
+    },
+    {
+      "tile": "s33e125",
+      "block_ids": [
+        "GLOBAL-0012"
+      ],
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s33e125/NASADEM_HGT_s33e125.zip",
+      "status": "not_requested_remote_availability_unverified",
+      "expected_members": {
+        "s33e125.hgt": 25934402,
+        "s33e125.swb": 12967201,
+        "s33e125.num": 12967201
+      }
+    }
+  ]
+}

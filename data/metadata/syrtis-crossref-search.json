@@ -1,0 +1,1189 @@
+[
+  {
+    "query": "Namib Syrtis Major analogue mapping",
+    "service": "Crossref works",
+    "requested_rows": 20,
+    "results": [
+      {
+        "title": [
+          "Syrtis Major (MC-13)"
+        ],
+        "doi": "10.1017/9781139567428.018",
+        "url": "https://doi.org/10.1017/9781139567428.018",
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              8,
+              22
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Geologic map of the Syrtis Major Quadrangle of Mars"
+        ],
+        "doi": "10.3133/i995",
+        "url": "https://doi.org/10.3133/i995",
+        "published": {
+          "date-parts": [
+            [
+              1977
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Controlled photomosaic of the Syrtis Major Southwest Quadrangle of Mars"
+        ],
+        "doi": "10.3133/i1413",
+        "url": "https://doi.org/10.3133/i1413",
+        "published": {
+          "date-parts": [
+            [
+              1982
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Controlled photomosaic of the Syrtis Major Northwest Quadrangle of Mars"
+        ],
+        "doi": "10.3133/i1415",
+        "url": "https://doi.org/10.3133/i1415",
+        "published": {
+          "date-parts": [
+            [
+              1982
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Syrtis Major"
+        ],
+        "doi": "10.1888/0333750888/4425",
+        "url": "https://doi.org/10.1888/0333750888/4425",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Controlled photomosaic of the Syrtis Major Northeast Quadrangle of Mars"
+        ],
+        "doi": "10.3133/i1414",
+        "url": "https://doi.org/10.3133/i1414",
+        "published": {
+          "date-parts": [
+            [
+              1982
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Controlled photomosaic of the Syrtis Major Southeast Quadrangle of Mars"
+        ],
+        "doi": "10.3133/i1412",
+        "url": "https://doi.org/10.3133/i1412",
+        "published": {
+          "date-parts": [
+            [
+              1982
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Controlled photomosaic and revised shaded relief of the Syrtis Major Quadrangle of Mars"
+        ],
+        "doi": "10.3133/i1704",
+        "url": "https://doi.org/10.3133/i1704",
+        "published": {
+          "date-parts": [
+            [
+              1985
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Shaded relief map of the Syrtis Major Quadrangle of Mars"
+        ],
+        "doi": "10.3133/i929",
+        "url": "https://doi.org/10.3133/i929",
+        "published": {
+          "date-parts": [
+            [
+              1975
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Syrtis Major and Isidis Basin contact: Morphological and topographic characteristics of Syrtis Major lava flows and material of the Vastitas Borealis Formation"
+        ],
+        "doi": "10.1029/2002je001994",
+        "url": "https://doi.org/10.1029/2002je001994",
+        "published": {
+          "date-parts": [
+            [
+              2003,
+              6
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": true
+      },
+      {
+        "title": [
+          "Revised shaded relief map and controlled color photomosaic of the Syrtis Major Quadrangle (MC-13) of Mars"
+        ],
+        "doi": "10.3133/i2484",
+        "url": "https://doi.org/10.3133/i2484",
+        "published": {
+          "date-parts": [
+            [
+              1998
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Role of Glaciers in Halting Syrtis Major Lava Flows to Preserve and Divert a Fluvial System"
+        ],
+        "doi": "10.31390/gradschool_theses.5030",
+        "url": "https://doi.org/10.31390/gradschool_theses.5030",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "The deposition and alteration history of the northeast Syrtis Major layered sulfates"
+        ],
+        "doi": "10.31223/osf.io/fzhk7",
+        "url": "https://doi.org/10.31223/osf.io/fzhk7",
+        "published": {
+          "date-parts": [
+            [
+              2018,
+              10,
+              13
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "The geological history of Northeast Syrtis Major, Mars"
+        ],
+        "doi": "10.1016/j.icarus.2017.03.030",
+        "url": "https://doi.org/10.1016/j.icarus.2017.03.030",
+        "published": {
+          "date-parts": [
+            [
+              2017,
+              9
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Tectonics of Syrtis Major Planum on Mars"
+        ],
+        "doi": "10.1007/bf00117193",
+        "url": "https://doi.org/10.1007/bf00117193",
+        "published": {
+          "date-parts": [
+            [
+              1989,
+              9
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Syrtis major: A low\u2010relief volcanic shield"
+        ],
+        "doi": "10.1029/jb087ib12p09852",
+        "url": "https://doi.org/10.1029/jb087ib12p09852",
+        "published": {
+          "date-parts": [
+            [
+              1982,
+              1
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": true
+      },
+      {
+        "title": [
+          "An in\u2010situ record of major environmental transitions on early Mars at Northeast Syrtis Major"
+        ],
+        "doi": "10.1029/2012gl051594",
+        "url": "https://doi.org/10.1029/2012gl051594",
+        "published": {
+          "date-parts": [
+            [
+              2012,
+              6
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": true
+      },
+      {
+        "title": [
+          "The 1969 opposition effect of Mars full disk, Syrtis Major and Arabia"
+        ],
+        "doi": "10.1016/0019-1035(70)90091-6",
+        "url": "https://doi.org/10.1016/0019-1035(70)90091-6",
+        "published": {
+          "date-parts": [
+            [
+              1970,
+              11
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Syrtis"
+        ],
+        "doi": "10.1163/1574-9347_bnp_e1127800",
+        "url": "https://doi.org/10.1163/1574-9347_bnp_e1127800",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Syrtis, n."
+        ],
+        "doi": "10.1093/oed/1508070515",
+        "url": "https://doi.org/10.1093/oed/1508070515",
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              2
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      }
+    ]
+  },
+  {
+    "query": "Naukluft Mars analogue floor margin",
+    "service": "Crossref works",
+    "requested_rows": 20,
+    "results": [
+      {
+        "title": [
+          "Field observations of Mars analogue subglacial drainage systems in Kangerlussuaq - Greenland ice sheet western margin."
+        ],
+        "doi": "10.5194/epsc2024-1039",
+        "url": "https://doi.org/10.5194/epsc2024-1039",
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              3
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": true
+      },
+      {
+        "title": [
+          "Mars Analogue Sites"
+        ],
+        "doi": "10.1007/springerreference_223201",
+        "url": "https://doi.org/10.1007/springerreference_223201",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Assessing surface-exposed old ice along the Greenland Ice Sheet margin as an analogue for the Northern Polar Layered Deposits on Mars"
+        ],
+        "doi": "10.5194/epsc2020-1065",
+        "url": "https://doi.org/10.5194/epsc2020-1065",
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              2
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": true
+      },
+      {
+        "title": [
+          "The Mars Lab: An Immersive Mars Analogue Exploration Mission to Promote STEM Education for Secondary School Students"
+        ],
+        "doi": "10.26226/morressier.59c106ead462b80292389f9d",
+        "url": "https://doi.org/10.26226/morressier.59c106ead462b80292389f9d",
+        "published": {
+          "date-parts": [
+            [
+              2017,
+              9,
+              24
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Geoscience in support of a Mars methane analogue mission"
+        ],
+        "doi": "10.22215/etd/2012-07283",
+        "url": "https://doi.org/10.22215/etd/2012-07283",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Mars Analogue Mission Crew 159 at MDRS: Christmas on Mars"
+        ],
+        "doi": "10.2514/6.2016-2351",
+        "url": "https://doi.org/10.2514/6.2016-2351",
+        "published": {
+          "date-parts": [
+            [
+              2016,
+              5,
+              13
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Geochemical and mineralogical analysis of Mars analogue materials and the creation of the International Space Analogue Rock Store (ISAR)"
+        ],
+        "doi": "10.70675/dd370899zcdf4z459czb64cz6299c3bddf00",
+        "url": "https://doi.org/10.70675/dd370899zcdf4z459czb64cz6299c3bddf00",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": true
+      },
+      {
+        "title": [
+          "Mars Analogue Sites"
+        ],
+        "doi": "10.1007/978-3-642-27833-4_939-3",
+        "url": "https://doi.org/10.1007/978-3-642-27833-4_939-3",
+        "published": {
+          "date-parts": [
+            [
+              2014
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "The Comparison of Mars Analogue Brines in Different Evaporation Settings"
+        ],
+        "doi": "10.14418/wes01.2.466",
+        "url": "https://doi.org/10.14418/wes01.2.466",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Planning and Scheduling for the Poland Mars Analogue Simulation- PMAS 2017"
+        ],
+        "doi": "10.26226/morressier.59c106e9d462b80292389d31",
+        "url": "https://doi.org/10.26226/morressier.59c106e9d462b80292389d31",
+        "published": {
+          "date-parts": [
+            [
+              2017,
+              9,
+              25
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Mars Analogue Sites"
+        ],
+        "doi": "10.1007/978-3-662-44185-5_939",
+        "url": "https://doi.org/10.1007/978-3-662-44185-5_939",
+        "published": {
+          "date-parts": [
+            [
+              2015
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Elevated Flat Floor Depressions in the Southern Highlands of Mars"
+        ],
+        "doi": "10.18130/v3tm2q",
+        "url": "https://doi.org/10.18130/v3tm2q",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Mars analogue found in India"
+        ],
+        "doi": "10.1038/nindia.2010.15",
+        "url": "https://doi.org/10.1038/nindia.2010.15",
+        "published": {
+          "date-parts": [
+            [
+              2010,
+              2,
+              19
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Mars Analogue Sites"
+        ],
+        "doi": "10.1007/978-3-642-11274-4_939",
+        "url": "https://doi.org/10.1007/978-3-642-11274-4_939",
+        "published": {
+          "date-parts": [
+            [
+              2011
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Mars Analogue Sites"
+        ],
+        "doi": "10.1007/978-3-662-65093-6_939",
+        "url": "https://doi.org/10.1007/978-3-662-65093-6_939",
+        "published": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Antarctic Isolation as a Mars Habitat Analogue"
+        ],
+        "doi": "10.3726/b18618",
+        "url": "https://doi.org/10.3726/b18618",
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              9,
+              30
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Weathering and Sulfate Formation in Sulfur Springs St. Lucia; A Mars Analogue Site"
+        ],
+        "doi": "10.14418/wes01.2.160",
+        "url": "https://doi.org/10.14418/wes01.2.160",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "SHERLOC Raman Mineral Detections of the Mars 2020\u00a0Crater Floor Campaign"
+        ],
+        "doi": "10.22541/essoar.167336607.79705743/v1",
+        "url": "https://doi.org/10.22541/essoar.167336607.79705743/v1",
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              1,
+              10
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [],
+        "doi": "10.54499/2024.03653.bd",
+        "url": "https://doi.org/10.54499/2024.03653.bd",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Mars rover wraps survey of Jezero crater\u2019s surprising volcanic floor"
+        ],
+        "doi": "10.1126/science.adb1996",
+        "url": "https://doi.org/10.1126/science.adb1996",
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              3,
+              10
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      }
+    ]
+  },
+  {
+    "query": "Pro Namib planetary analogue",
+    "service": "Crossref works",
+    "requested_rows": 20,
+    "results": [
+      {
+        "title": [
+          "Oxygen-17 excesses of the Central Namib gypcretes: spatial distribution"
+        ],
+        "doi": "10.1016/s0012-821x(01)00446-0",
+        "url": "https://doi.org/10.1016/s0012-821x(01)00446-0",
+        "published": {
+          "date-parts": [
+            [
+              2001,
+              10
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Analogue lunar research for commercial exploitation of in-situ resources and planetary exploration - Applications in the PRO-ACT project"
+        ],
+        "doi": "10.5194/egusphere-egu21-9180",
+        "url": "https://doi.org/10.5194/egusphere-egu21-9180",
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              3,
+              4
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": true
+      },
+      {
+        "title": [
+          "Educational Resources for EPN24 Planetary Field Analogue Sites"
+        ],
+        "doi": "10.5194/epsc2021-407",
+        "url": "https://doi.org/10.5194/epsc2021-407",
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              2
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": true
+      },
+      {
+        "title": [
+          "Investigation of the controls on dune colour in the Namib Sand Sea using mineral magnetic analyses"
+        ],
+        "doi": "10.1016/s0012-821x(97)00154-4",
+        "url": "https://doi.org/10.1016/s0012-821x(97)00154-4",
+        "published": {
+          "date-parts": [
+            [
+              1997,
+              11
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Educational Resources for EPN24 Planetary Field Analogue Sites"
+        ],
+        "doi": "10.5194/epsc2022-612",
+        "url": "https://doi.org/10.5194/epsc2022-612",
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              9,
+              23
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": true
+      },
+      {
+        "title": [
+          "Complex Manoeuvres for the Wheel-on-Leg Planetary Analogue MAMMOTH Rover"
+        ],
+        "doi": "10.26226/morressier.59c106ead462b80292389f0c",
+        "url": "https://doi.org/10.26226/morressier.59c106ead462b80292389f0c",
+        "published": {
+          "date-parts": [
+            [
+              2017,
+              9,
+              26
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Human Leukotriene A4 Hydrolase in complex with Pro-Gly-Pro analogue"
+        ],
+        "doi": "10.2210/pdb4ms6/pdb",
+        "url": "https://doi.org/10.2210/pdb4ms6/pdb",
+        "published": {
+          "date-parts": [
+            [
+              2014,
+              3,
+              12
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "The formation of the Namib Sand Sea inferred from the spatial pattern of magnetic rock fragments"
+        ],
+        "doi": "10.1016/j.epsl.2014.03.041",
+        "url": "https://doi.org/10.1016/j.epsl.2014.03.041",
+        "published": {
+          "date-parts": [
+            [
+              2014,
+              6
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Spatio-temporal diversification pattern of Brinckia (Coleoptera: Tenebrionidae) in the Namib coastal belt"
+        ],
+        "doi": "10.1016/j.gloplacha.2023.104312",
+        "url": "https://doi.org/10.1016/j.gloplacha.2023.104312",
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              12
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "A comparative study of the atmospheric water vapor in the Atacama and Namib Desert"
+        ],
+        "doi": "10.1016/j.gloplacha.2023.104320",
+        "url": "https://doi.org/10.1016/j.gloplacha.2023.104320",
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              1
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "The astrobiological potential of the Makgadikgadi Basin, Botswana: Field analogue for planetary exploration"
+        ],
+        "doi": "10.1016/j.pss.2024.105943",
+        "url": "https://doi.org/10.1016/j.pss.2024.105943",
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              9
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "On the hypersonic analogue as applied to planetary interaction with the solar plasma"
+        ],
+        "doi": "10.1016/0032-0633(67)90160-2",
+        "url": "https://doi.org/10.1016/0032-0633(67)90160-2",
+        "published": {
+          "date-parts": [
+            [
+              1967,
+              3
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [],
+        "doi": "10.3030/101183089",
+        "url": "https://doi.org/10.3030/101183089",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Political Thought in the Planetary Situation of the Anthropocene"
+        ],
+        "doi": "10.5817/pf25-2-42180",
+        "url": "https://doi.org/10.5817/pf25-2-42180",
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              12
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": true
+      },
+      {
+        "title": [
+          "Hands-on teaching using a Planetary Analogue Rock Collection (PARC) to augment education in planetary science and engineering"
+        ],
+        "doi": "10.5194/epsc2026-874",
+        "url": "https://doi.org/10.5194/epsc2026-874",
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              2
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": true
+      },
+      {
+        "title": [
+          "Late Neogene passive margin denudation history\u00e2\u0080\u0094cosmogenic isotope measurements from the central Namib desert"
+        ],
+        "doi": "10.1016/s0921-8181(01)00104-7",
+        "url": "https://doi.org/10.1016/s0921-8181(01)00104-7",
+        "published": {
+          "date-parts": [
+            [
+              2001,
+              10
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "The Himalayas\u2014a modern analogue for Archaean crustal evolution"
+        ],
+        "doi": "10.1016/0012-821x(88)90069-6",
+        "url": "https://doi.org/10.1016/0012-821x(88)90069-6",
+        "published": {
+          "date-parts": [
+            [
+              1988,
+              1
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "An analogue of a result of Carath\u00e9odory"
+        ],
+        "doi": "10.21136/cpm.1981.108278",
+        "url": "https://doi.org/10.21136/cpm.1981.108278",
+        "published": {
+          "date-parts": [
+            [
+              1981
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Educational Resources for the EPN24 Planetary Field Analogue Sites"
+        ],
+        "doi": "10.5194/epsc2020-612",
+        "url": "https://doi.org/10.5194/epsc2020-612",
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              2
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": true
+      },
+      {
+        "title": [
+          "AustroMars and PolAres: Measuring forward contamination during Mars-analogue missions"
+        ],
+        "doi": "10.1016/j.pss.2008.07.021",
+        "url": "https://doi.org/10.1016/j.pss.2008.07.021",
+        "published": {
+          "date-parts": [
+            [
+              2009,
+              5
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      }
+    ]
+  },
+  {
+    "query": "Zaris Mars analogue",
+    "service": "Crossref works",
+    "requested_rows": 20,
+    "results": [
+      {
+        "title": [
+          "Mars Analogue Sites"
+        ],
+        "doi": "10.1007/springerreference_223201",
+        "url": "https://doi.org/10.1007/springerreference_223201",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "The Mars Lab: An Immersive Mars Analogue Exploration Mission to Promote STEM Education for Secondary School Students"
+        ],
+        "doi": "10.26226/morressier.59c106ead462b80292389f9d",
+        "url": "https://doi.org/10.26226/morressier.59c106ead462b80292389f9d",
+        "published": {
+          "date-parts": [
+            [
+              2017,
+              9,
+              24
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Geoscience in support of a Mars methane analogue mission"
+        ],
+        "doi": "10.22215/etd/2012-07283",
+        "url": "https://doi.org/10.22215/etd/2012-07283",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Geochemical and mineralogical analysis of Mars analogue materials and the creation of the International Space Analogue Rock Store (ISAR)"
+        ],
+        "doi": "10.70675/dd370899zcdf4z459czb64cz6299c3bddf00",
+        "url": "https://doi.org/10.70675/dd370899zcdf4z459czb64cz6299c3bddf00",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": true
+      },
+      {
+        "title": [
+          "Mars Analogue Mission Crew 159 at MDRS: Christmas on Mars"
+        ],
+        "doi": "10.2514/6.2016-2351",
+        "url": "https://doi.org/10.2514/6.2016-2351",
+        "published": {
+          "date-parts": [
+            [
+              2016,
+              5,
+              13
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "The Comparison of Mars Analogue Brines in Different Evaporation Settings"
+        ],
+        "doi": "10.14418/wes01.2.466",
+        "url": "https://doi.org/10.14418/wes01.2.466",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Mars Analogue Sites"
+        ],
+        "doi": "10.1007/978-3-642-27833-4_939-3",
+        "url": "https://doi.org/10.1007/978-3-642-27833-4_939-3",
+        "published": {
+          "date-parts": [
+            [
+              2014
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Planning and Scheduling for the Poland Mars Analogue Simulation- PMAS 2017"
+        ],
+        "doi": "10.26226/morressier.59c106e9d462b80292389d31",
+        "url": "https://doi.org/10.26226/morressier.59c106e9d462b80292389d31",
+        "published": {
+          "date-parts": [
+            [
+              2017,
+              9,
+              25
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Mars Analogue Sites"
+        ],
+        "doi": "10.1007/978-3-662-44185-5_939",
+        "url": "https://doi.org/10.1007/978-3-662-44185-5_939",
+        "published": {
+          "date-parts": [
+            [
+              2015
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Mars analogue found in India"
+        ],
+        "doi": "10.1038/nindia.2010.15",
+        "url": "https://doi.org/10.1038/nindia.2010.15",
+        "published": {
+          "date-parts": [
+            [
+              2010,
+              2,
+              19
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Mars Analogue Sites"
+        ],
+        "doi": "10.1007/978-3-642-11274-4_939",
+        "url": "https://doi.org/10.1007/978-3-642-11274-4_939",
+        "published": {
+          "date-parts": [
+            [
+              2011
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Mars Analogue Sites"
+        ],
+        "doi": "10.1007/978-3-662-65093-6_939",
+        "url": "https://doi.org/10.1007/978-3-662-65093-6_939",
+        "published": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Weathering and Sulfate Formation in Sulfur Springs St. Lucia; A Mars Analogue Site"
+        ],
+        "doi": "10.14418/wes01.2.160",
+        "url": "https://doi.org/10.14418/wes01.2.160",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Antarctic Isolation as a Mars Habitat Analogue"
+        ],
+        "doi": "10.3726/b18618",
+        "url": "https://doi.org/10.3726/b18618",
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              9,
+              30
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [],
+        "doi": "10.54499/2024.03653.bd",
+        "url": "https://doi.org/10.54499/2024.03653.bd",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Searching for traces of life in a Mars analogue rock : The Kitty\u2019s Gap Chert"
+        ],
+        "doi": "10.70675/d5e6642dz41c6z4e3bzb7f5z6bc58cf11c86",
+        "url": "https://doi.org/10.70675/d5e6642dz41c6z4e3bzb7f5z6bc58cf11c86",
+        "published": null,
+        "abstract_available_in_retrieved_metadata": true
+      },
+      {
+        "title": [
+          "Megafans on Mars"
+        ],
+        "doi": "10.1017/9781108525923.020",
+        "url": "https://doi.org/10.1017/9781108525923.020",
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              5,
+              18
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Mars-analogue calcium sulfate veins record evidence of ancient subsurface life"
+        ],
+        "doi": "10.5194/epsc2020-1049",
+        "url": "https://doi.org/10.5194/epsc2020-1049",
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              2
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": true
+      },
+      {
+        "title": [
+          "Missions to Mars: Characterisation of Mars analogue rocks for the International Space Analogue Rockstore (ISAR)"
+        ],
+        "doi": "10.1016/j.pss.2013.04.006",
+        "url": "https://doi.org/10.1016/j.pss.2013.04.006",
+        "published": {
+          "date-parts": [
+            [
+              2013,
+              7
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": false
+      },
+      {
+        "title": [
+          "Understanding the flow mechanism of rock glaciers of Mars through analogue modeling"
+        ],
+        "doi": "10.22541/essoar.174756235.52280795/v1",
+        "url": "https://doi.org/10.22541/essoar.174756235.52280795/v1",
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              18
+            ]
+          ]
+        },
+        "abstract_available_in_retrieved_metadata": true
+      }
+    ]
+  }
+]

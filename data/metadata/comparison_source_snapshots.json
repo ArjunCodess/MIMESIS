@@ -1,0 +1,68 @@
+[
+  {
+    "repository": "MahmoudAdelbghany/ODYSSEY",
+    "commit": "5c45ad947dc137b4d117a088cded4cee7f7e0fca",
+    "files": 225,
+    "manifest": "data/raw/comparison_sources/MahmoudAdelbghany/ODYSSEY/5c45ad947dc137b4d117a088cded4cee7f7e0fca/_snapshot.json"
+  },
+  {
+    "repository": "TayyabXtreme/Twin_World_Nasa_Space_APP_Challenge_2026",
+    "commit": "296c4fba0b50059369b45eba36c84fc079c9b756",
+    "files": 1002,
+    "manifest": "data/raw/comparison_sources/TayyabXtreme/Twin_World_Nasa_Space_APP_Challenge_2026/296c4fba0b50059369b45eba36c84fc079c9b756/_snapshot.json"
+  },
+  {
+    "repository": "end13s/analog-atlas",
+    "commit": "1323ea9d70da6e4e21c3c2594e840fc448986d4b",
+    "files": 30,
+    "manifest": "data/raw/comparison_sources/end13s/analog-atlas/1323ea9d70da6e4e21c3c2594e840fc448986d4b/_snapshot.json"
+  },
+  {
+    "repository": "Gharbawy1/Nasa-2026",
+    "commit": "450eca5ddfe6f882db4755cffdf4c46afe18969a",
+    "files": 161,
+    "manifest": "data/raw/comparison_sources/Gharbawy1/Nasa-2026/450eca5ddfe6f882db4755cffdf4c46afe18969a/_snapshot.json"
+  },
+  {
+    "repository": "azrialahmad/earth-analog-explorer",
+    "commit": "6a27cb760c4a1eb26dd08264baf5da754e7c731f",
+    "files": 140,
+    "manifest": "data/raw/comparison_sources/azrialahmad/earth-analog-explorer/6a27cb760c4a1eb26dd08264baf5da754e7c731f/_snapshot.json"
+  },
+  {
+    "repository": "shishir-kuet/terrestrial-analog-finder",
+    "commit": "421e80fc67706ba9a8de644eed34ef2d7a11a91a",
+    "files": 75,
+    "manifest": "data/raw/comparison_sources/shishir-kuet/terrestrial-analog-finder/421e80fc67706ba9a8de644eed34ef2d7a11a91a/_snapshot.json"
+  },
+  {
+    "repository": "es-ratt/earthtwin",
+    "commit": "36e3b423995e412d44391cd5760fa2368f949d78",
+    "files": 122,
+    "manifest": "data/raw/comparison_sources/es-ratt/earthtwin/36e3b423995e412d44391cd5760fa2368f949d78/_snapshot.json"
+  },
+  {
+    "repository": "Yakiyo/terra-nova",
+    "commit": "3bda2fb9814c8f5ff24488a6f86c38e5fd72a164",
+    "files": 176,
+    "manifest": "data/raw/comparison_sources/Yakiyo/terra-nova/3bda2fb9814c8f5ff24488a6f86c38e5fd72a164/_snapshot.json"
+  },
+  {
+    "repository": "escapeboy/analog-twin",
+    "commit": "819055eef1ac3432621b337dc92bdc8762b0eb36",
+    "files": 188,
+    "manifest": "data/raw/comparison_sources/escapeboy/analog-twin/819055eef1ac3432621b337dc92bdc8762b0eb36/_snapshot.json"
+  },
+  {
+    "repository": "KraKEn-bit/TerraNova",
+    "commit": "3bda2fb9814c8f5ff24488a6f86c38e5fd72a164",
+    "files": 176,
+    "manifest": "data/raw/comparison_sources/KraKEn-bit/TerraNova/3bda2fb9814c8f5ff24488a6f86c38e5fd72a164/_snapshot.json"
+  },
+  {
+    "repository": "PuneetKumar1790/Analog-Finder",
+    "commit": "af054a7d6b26af2c95d3090b4f232e45bdcffff4",
+    "files": 35,
+    "manifest": "data/raw/comparison_sources/PuneetKumar1790/Analog-Finder/af054a7d6b26af2c95d3090b4f232e45bdcffff4/_snapshot.json"
+  }
+]
