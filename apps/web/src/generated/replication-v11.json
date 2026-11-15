@@ -1,0 +1,1004 @@
+{
+  "upstream": {
+    "repository": "https://github.com/shishir-kuet/terrestrial-analog-finder",
+    "commit": "421e80fc67706ba9a8de644eed34ef2d7a11a91a",
+    "experiments_reproduced": 7,
+    "targets": 12,
+    "reference_earth_pool": 469,
+    "scope": "Replay of scores and feature/weight sensitivity from upstream processed records, not independent reconstruction of raw DEMs"
+  },
+  "adaptation": {
+    "source_bundle_sha256": "aecf468961d815a14c57968a853c3563407672bd814984aed1685d543801ad76",
+    "method_reference": "https://github.com/shishir-kuet/terrestrial-analog-finder",
+    "implementation": "Independent four-scalar adaptation; log10(value+1) relief/roughness, identity slopes, fixed 500 m reference-pool IQR scales with standard-deviation fallback, equal-weight RMS distance",
+    "features": [
+      "relief_m",
+      "slope_median_deg",
+      "slope_p90_deg",
+      "residual_rms_m"
+    ],
+    "scales": [
+      0.36993709419737675,
+      1.6954897402829276,
+      3.507352838020612,
+      0.31393890914606004
+    ],
+    "reference_candidates": 3693,
+    "cases": [
+      {
+        "target_id": "jezero",
+        "target_name": "Jezero crater",
+        "body": "Mars",
+        "supports": [
+          {
+            "support_m": 500,
+            "ranked": 3693,
+            "top_ten": [
+              {
+                "id": "NAMIB-043000-061000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.350984091362342,
+                "longitude": 15.433747193028664,
+                "distance": 0.08045806393119445
+              },
+              {
+                "id": "NAMIB-145000-145000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.593090026020793,
+                "longitude": 16.44430977507267,
+                "distance": 0.10896969977657393
+              },
+              {
+                "id": "NAMIB-058000-091000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.080664137763726,
+                "longitude": 15.583680086275908,
+                "distance": 0.10966144738882656
+              },
+              {
+                "id": "NAMIB-145000-142000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.620173521035777,
+                "longitude": 16.444405917401266,
+                "distance": 0.11472518466952288
+              },
+              {
+                "id": "NAMIB-040000-067000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.296706319610575,
+                "longitude": 15.404208850304482,
+                "distance": 0.11511336902055919
+              },
+              {
+                "id": "NAMIB-163000-103000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.971609262127984,
+                "longitude": 16.623929643898055,
+                "distance": 0.11624908344082602
+              },
+              {
+                "id": "NAMIB-145000-148000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.56600643334121,
+                "longitude": 16.444213739909088,
+                "distance": 0.11751485027359282
+              },
+              {
+                "id": "NAMIB-148000-127000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.755497971381033,
+                "longitude": 16.47454722392304,
+                "distance": 0.11802020767436491
+              },
+              {
+                "id": "NAMIB-046000-037000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.567736416572735,
+                "longitude": 15.462593724454218,
+                "distance": 0.12005600260393931
+              },
+              {
+                "id": "NAMIB-040000-064000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.323786957961786,
+                "longitude": 15.404076895202563,
+                "distance": 0.12066447591123598
+              }
+            ]
+          },
+          {
+            "support_m": 1000,
+            "ranked": 3693,
+            "top_ten": [
+              {
+                "id": "NAMIB-046000-085000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.13444660031747,
+                "longitude": 15.464497095784774,
+                "distance": 0.04676178023349427
+              },
+              {
+                "id": "NAMIB-046000-037000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.567736416572735,
+                "longitude": 15.462593724454218,
+                "distance": 0.050230533980909924
+              },
+              {
+                "id": "NAMIB-058000-088000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.10774590908535,
+                "longitude": 15.583588534713735,
+                "distance": 0.05609268555345606
+              },
+              {
+                "id": "NAMIB-043000-061000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.350984091362342,
+                "longitude": 15.433747193028664,
+                "distance": 0.05824097768036763
+              },
+              {
+                "id": "NAMIB-145000-145000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.593090026020793,
+                "longitude": 16.44430977507267,
+                "distance": 0.05946722178168436
+              },
+              {
+                "id": "NAMIB-040000-067000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.296706319610575,
+                "longitude": 15.404208850304482,
+                "distance": 0.061425793964739656
+              },
+              {
+                "id": "NAMIB-145000-148000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.56600643334121,
+                "longitude": 16.444213739909088,
+                "distance": 0.06222017748161329
+              },
+              {
+                "id": "NAMIB-058000-091000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.080664137763726,
+                "longitude": 15.583680086275908,
+                "distance": 0.072583374549034
+              },
+              {
+                "id": "NAMIB-040000-070000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.26962558135732,
+                "longitude": 15.404340658560004,
+                "distance": 0.08109888363003478
+              },
+              {
+                "id": "NAMIB-049000-085000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.134550774505463,
+                "longitude": 15.49424697156835,
+                "distance": 0.0820029976393646
+              }
+            ]
+          }
+        ],
+        "top_candidate_changes": true,
+        "top_ten_overlap": 6
+      },
+      {
+        "target_id": "nili",
+        "target_name": "Nili Fossae",
+        "body": "Mars",
+        "supports": [
+          {
+            "support_m": 500,
+            "ranked": 3693,
+            "top_ten": [
+              {
+                "id": "NAMIB-073000-037000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.568466132813818,
+                "longitude": 15.731295784150829,
+                "distance": 0.29390887470645816
+              },
+              {
+                "id": "NAMIB-103000-106000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.945831958730455,
+                "longitude": 16.029704641265432,
+                "distance": 0.3125011147253938
+              },
+              {
+                "id": "NAMIB-124000-082000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.162302261679258,
+                "longitude": 16.238054721745538,
+                "distance": 0.34637074202357754
+              },
+              {
+                "id": "NAMIB-097000-100000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.999997031767307,
+                "longitude": 15.9702823450329,
+                "distance": 0.3543983065117704
+              },
+              {
+                "id": "NAMIB-091000-157000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.485389506188447,
+                "longitude": 15.911214445964003,
+                "distance": 0.3766342758242417
+              },
+              {
+                "id": "NAMIB-088000-160000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.458284624348277,
+                "longitude": 15.881644770204264,
+                "distance": 0.3788496019433128
+              },
+              {
+                "id": "NAMIB-088000-163000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.43120020603107,
+                "longitude": 15.88167023778271,
+                "distance": 0.38047271817597295
+              },
+              {
+                "id": "NAMIB-097000-130000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.729167735454165,
+                "longitude": 15.970347124446159,
+                "distance": 0.38325405156191916
+              },
+              {
+                "id": "NAMIB-094000-112000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.89165760694475,
+                "longitude": 15.940616689768685,
+                "distance": 0.3833574638090103
+              },
+              {
+                "id": "NAMIB-100000-100000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.0,
+                "longitude": 16.0,
+                "distance": 0.38338634651645725
+              }
+            ]
+          },
+          {
+            "support_m": 1000,
+            "ranked": 3693,
+            "top_ten": [
+              {
+                "id": "NAMIB-073000-040000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.541385865455425,
+                "longitude": 15.731355764216726,
+                "distance": 0.2657680970434424
+              },
+              {
+                "id": "NAMIB-112000-082000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.16244521060819,
+                "longitude": 16.11902745317815,
+                "distance": 0.26838058823962074
+              },
+              {
+                "id": "NAMIB-103000-103000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.97291454450502,
+                "longitude": 16.029711144491166,
+                "distance": 0.2755096385393873
+              },
+              {
+                "id": "NAMIB-070000-037000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.568409076418725,
+                "longitude": 15.701439853829175,
+                "distance": 0.2924522550973523
+              },
+              {
+                "id": "NAMIB-058000-040000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.54104071677867,
+                "longitude": 15.582109758887425,
+                "distance": 0.3018314361204464
+              },
+              {
+                "id": "NAMIB-121000-082000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.162346933174668,
+                "longitude": 16.208297932006726,
+                "distance": 0.30234243037323355
+              },
+              {
+                "id": "NAMIB-097000-091000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.08124390170321,
+                "longitude": 15.970262770027395,
+                "distance": 0.30503459267382554
+              },
+              {
+                "id": "NAMIB-097000-094000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.054161710444042,
+                "longitude": 15.970269302299844,
+                "distance": 0.3061610111550918
+              },
+              {
+                "id": "NAMIB-118000-082000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.162385648503694,
+                "longitude": 16.17854112207624,
+                "distance": 0.3073392812986388
+              },
+              {
+                "id": "NAMIB-121000-085000",
+                "name": "Namib, Namibia study window",
+                "latitude": -25.135265117770796,
+                "longitude": 16.208252053309444,
+                "distance": 0.3089666581537506
+              }
+            ]
+          }
+        ],
+        "top_candidate_changes": true,
+        "top_ten_overlap": 0
+      },
+      {
+        "target_id": "isidis",
+        "target_name": "Isidis Planitia",
+        "body": "Mars",
+        "supports": [
+          {
+            "support_m": 500,
+            "ranked": 3693,
+            "top_ten": [
+              {
+                "id": "NAMIB-160000-142000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.619658095287413,
+                "longitude": 16.592539595934582,
+                "distance": 0.06542053078459142
+              },
+              {
+                "id": "NAMIB-163000-142000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.61953733918212,
+                "longitude": 16.622166175429893,
+                "distance": 0.07792767447526806
+              },
+              {
+                "id": "NAMIB-160000-139000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.646741207759305,
+                "longitude": 16.59266792601904,
+                "distance": 0.08172701534985401
+              },
+              {
+                "id": "NAMIB-157000-145000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.592689687290207,
+                "longitude": 16.562791182374095,
+                "distance": 0.08721700839059636
+              },
+              {
+                "id": "NAMIB-163000-145000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.592454195447853,
+                "longitude": 16.62203157969271,
+                "distance": 0.09121344382121939
+              },
+              {
+                "id": "NAMIB-160000-145000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.59257488487561,
+                "longitude": 16.592411408881375,
+                "distance": 0.09735551787218015
+              },
+              {
+                "id": "NAMIB-160000-148000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.56549157660351,
+                "longitude": 16.5922833647104,
+                "distance": 0.09805318035799676
+              },
+              {
+                "id": "NAMIB-160000-136000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.673824222211728,
+                "longitude": 16.59279639928406,
+                "distance": 0.13240660692669953
+              },
+              {
+                "id": "NAMIB-157000-142000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.619772961127307,
+                "longitude": 16.56291296065013,
+                "distance": 0.14642755947964803
+              },
+              {
+                "id": "NAMIB-157000-148000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.56560631563639,
+                "longitude": 16.562669539837138,
+                "distance": 0.147691739236388
+              }
+            ]
+          },
+          {
+            "support_m": 1000,
+            "ranked": 3693,
+            "top_ten": [
+              {
+                "id": "NAMIB-160000-142000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.619658095287413,
+                "longitude": 16.592539595934582,
+                "distance": 0.07673411090972619
+              },
+              {
+                "id": "NAMIB-163000-142000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.61953733918212,
+                "longitude": 16.622166175429893,
+                "distance": 0.0898404908873297
+              },
+              {
+                "id": "NAMIB-157000-145000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.592689687290207,
+                "longitude": 16.562791182374095,
+                "distance": 0.09240230890224763
+              },
+              {
+                "id": "NAMIB-160000-139000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.646741207759305,
+                "longitude": 16.59266792601904,
+                "distance": 0.09434301364137045
+              },
+              {
+                "id": "NAMIB-160000-148000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.56549157660351,
+                "longitude": 16.5922833647104,
+                "distance": 0.11545091550446938
+              },
+              {
+                "id": "NAMIB-163000-145000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.592454195447853,
+                "longitude": 16.62203157969271,
+                "distance": 0.11871553568112013
+              },
+              {
+                "id": "NAMIB-160000-145000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.59257488487561,
+                "longitude": 16.592411408881375,
+                "distance": 0.12368550734170475
+              },
+              {
+                "id": "NAMIB-160000-136000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.673824222211728,
+                "longitude": 16.59279639928406,
+                "distance": 0.13824335906724694
+              },
+              {
+                "id": "NAMIB-163000-151000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.538287614340703,
+                "longitude": 16.62176283813787,
+                "distance": 0.13902272824217485
+              },
+              {
+                "id": "NAMIB-157000-142000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.619772961127307,
+                "longitude": 16.56291296065013,
+                "distance": 0.1393816015157187
+              }
+            ]
+          }
+        ],
+        "top_candidate_changes": false,
+        "top_ten_overlap": 9
+      },
+      {
+        "target_id": "syrtis",
+        "target_name": "Syrtis Major",
+        "body": "Mars",
+        "supports": [
+          {
+            "support_m": 500,
+            "ranked": 3693,
+            "top_ten": [
+              {
+                "id": "ATACAMA-160000-160000",
+                "name": "Atacama, Chile study window",
+                "latitude": -23.457139254778834,
+                "longitude": -68.41277377226592,
+                "distance": 0.16889561555917543
+              },
+              {
+                "id": "ATACAMA-160000-163000",
+                "name": "Atacama, Chile study window",
+                "latitude": -23.430051910903828,
+                "longitude": -68.41289436424283,
+                "distance": 0.18468159415640145
+              },
+              {
+                "id": "NAMIB-154000-151000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.538631641383652,
+                "longitude": 16.532940549787902,
+                "distance": 0.18790727863492201
+              },
+              {
+                "id": "ATACAMA-154000-151000",
+                "name": "Atacama, Chile study window",
+                "latitude": -23.538614103178045,
+                "longitude": -68.47116948831987,
+                "distance": 0.1892292346206611
+              },
+              {
+                "id": "ATACAMA-151000-151000",
+                "name": "Atacama, Chile study window",
+                "latitude": -23.538712372315743,
+                "longitude": -68.50054871229719,
+                "distance": 0.20210281783393275
+              },
+              {
+                "id": "ATACAMA-157000-154000",
+                "name": "Atacama, Chile study window",
+                "latitude": -23.51142309741049,
+                "longitude": -68.44190526106874,
+                "distance": 0.20414485525624032
+              },
+              {
+                "id": "NAMIB-157000-151000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.538522846245588,
+                "longitude": 16.562548032897897,
+                "distance": 0.21738335734545736
+              },
+              {
+                "id": "NAMIB-157000-154000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.511439279197496,
+                "longitude": 16.562426661415344,
+                "distance": 0.21979112629398423
+              },
+              {
+                "id": "NAMIB-151000-151000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.53873455592585,
+                "longitude": 16.503333016717953,
+                "distance": 0.225545639455362
+              },
+              {
+                "id": "ATACAMA-163000-163000",
+                "name": "Atacama, Chile study window",
+                "latitude": -23.429937053283517,
+                "longitude": -68.38353944018398,
+                "distance": 0.2269601964537192
+              }
+            ]
+          },
+          {
+            "support_m": 1000,
+            "ranked": 3693,
+            "top_ten": [
+              {
+                "id": "ATACAMA-160000-163000",
+                "name": "Atacama, Chile study window",
+                "latitude": -23.430051910903828,
+                "longitude": -68.41289436424283,
+                "distance": 0.15190938004041316
+              },
+              {
+                "id": "ATACAMA-160000-160000",
+                "name": "Atacama, Chile study window",
+                "latitude": -23.457139254778834,
+                "longitude": -68.41277377226592,
+                "distance": 0.16374820167917428
+              },
+              {
+                "id": "ATACAMA-157000-154000",
+                "name": "Atacama, Chile study window",
+                "latitude": -23.51142309741049,
+                "longitude": -68.44190526106874,
+                "distance": 0.16545766339604492
+              },
+              {
+                "id": "ATACAMA-154000-151000",
+                "name": "Atacama, Chile study window",
+                "latitude": -23.538614103178045,
+                "longitude": -68.47116948831987,
+                "distance": 0.17851292869567315
+              },
+              {
+                "id": "ATACAMA-151000-151000",
+                "name": "Atacama, Chile study window",
+                "latitude": -23.538712372315743,
+                "longitude": -68.50054871229719,
+                "distance": 0.18038974290013055
+              },
+              {
+                "id": "NAMIB-154000-151000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.538631641383652,
+                "longitude": 16.532940549787902,
+                "distance": 0.19163633671280547
+              },
+              {
+                "id": "NAMIB-148000-163000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.430496055557953,
+                "longitude": 16.473317284253408,
+                "distance": 0.2029388779369399
+              },
+              {
+                "id": "ATACAMA-163000-163000",
+                "name": "Atacama, Chile study window",
+                "latitude": -23.429937053283517,
+                "longitude": -68.38353944018398,
+                "distance": 0.2127134477756163
+              },
+              {
+                "id": "NAMIB-058000-163000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.430672092227447,
+                "longitude": 15.58584699027361,
+                "distance": 0.21526698649393752
+              },
+              {
+                "id": "NAMIB-145000-160000",
+                "name": "Namib, Namibia study window",
+                "latitude": -24.457671087567256,
+                "longitude": 16.443830668676398,
+                "distance": 0.2192652647703771
+              }
+            ]
+          }
+        ],
+        "top_candidate_changes": true,
+        "top_ten_overlap": 7
+      },
+      {
+        "target_id": "apollo17",
+        "target_name": "Taurus-Littrow",
+        "body": "Moon",
+        "supports": [
+          {
+            "support_m": 500,
+            "ranked": 3693,
+            "top_ten": [
+              {
+                "id": "ATACAMA-163000-052000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.432102838110165,
+                "longitude": -68.37875806443283,
+                "distance": 0.8769367757659153
+              },
+              {
+                "id": "ATACAMA-160000-049000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.459303893370457,
+                "longitude": -68.40821492541613,
+                "distance": 0.9588701998127908
+              },
+              {
+                "id": "ATACAMA-160000-046000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.486387590862023,
+                "longitude": -68.40808905829994,
+                "distance": 0.9825320828365163
+              },
+              {
+                "id": "ATACAMA-157000-046000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.48649925659172,
+                "longitude": -68.43768427653737,
+                "distance": 1.0666365858221485
+              },
+              {
+                "id": "ATACAMA-157000-049000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.45941549649313,
+                "longitude": -68.43780385085239,
+                "distance": 1.0860697841967737
+              },
+              {
+                "id": "ATACAMA-160000-052000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.43222009841964,
+                "longitude": -68.40834065106729,
+                "distance": 1.0952217195743732
+              },
+              {
+                "id": "ATACAMA-154000-043000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.513688918151086,
+                "longitude": -68.46716613648461,
+                "distance": 1.1020885714196742
+              },
+              {
+                "id": "ATACAMA-157000-043000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.513582919193613,
+                "longitude": -68.43756456769056,
+                "distance": 1.1109448064635596
+              },
+              {
+                "id": "ATACAMA-163000-055000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.405019011508124,
+                "longitude": -68.37888992733937,
+                "distance": 1.12691270620489
+              },
+              {
+                "id": "ATACAMA-154000-040000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.540772542653965,
+                "longitude": -68.46705260002011,
+                "distance": 1.1271932007105425
+              }
+            ]
+          },
+          {
+            "support_m": 1000,
+            "ranked": 3693,
+            "top_ten": [
+              {
+                "id": "ATACAMA-163000-052000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.432102838110165,
+                "longitude": -68.37875806443283,
+                "distance": 1.172356690047762
+              },
+              {
+                "id": "ATACAMA-160000-046000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.486387590862023,
+                "longitude": -68.40808905829994,
+                "distance": 1.206425244576214
+              },
+              {
+                "id": "ATACAMA-160000-043000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.513471190814247,
+                "longitude": -68.4079630495723,
+                "distance": 1.224168362760296
+              },
+              {
+                "id": "ATACAMA-157000-046000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.48649925659172,
+                "longitude": -68.43768427653737,
+                "distance": 1.2356581980560142
+              },
+              {
+                "id": "ATACAMA-157000-043000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.513582919193613,
+                "longitude": -68.43756456769056,
+                "distance": 1.248547951519991
+              },
+              {
+                "id": "ATACAMA-160000-049000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.459303893370457,
+                "longitude": -68.40821492541613,
+                "distance": 1.2605318567015298
+              },
+              {
+                "id": "ATACAMA-157000-049000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.45941549649313,
+                "longitude": -68.43780385085239,
+                "distance": 1.3068956468386532
+              },
+              {
+                "id": "ATACAMA-160000-040000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.54055469314719,
+                "longitude": -68.40783689908658,
+                "distance": 1.321071364501338
+              },
+              {
+                "id": "ATACAMA-154000-037000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.56785606954095,
+                "longitude": -68.4669389358394,
+                "distance": 1.3247953138330313
+              },
+              {
+                "id": "ATACAMA-160000-037000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.567638097780964,
+                "longitude": -68.40771060669583,
+                "distance": 1.3254085407327258
+              }
+            ]
+          }
+        ],
+        "top_candidate_changes": false,
+        "top_ten_overlap": 6
+      },
+      {
+        "target_id": "shackleton",
+        "target_name": "Shackleton rim",
+        "body": "Moon",
+        "supports": [
+          {
+            "support_m": 500,
+            "ranked": 3693,
+            "top_ten": [
+              {
+                "id": "ATACAMA-154000-052000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.43243745974515,
+                "longitude": -68.46750598090202,
+                "distance": 0.1917307303409857
+              },
+              {
+                "id": "ATACAMA-076000-037000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.568601769833595,
+                "longitude": -69.23691695630754,
+                "distance": 0.30601272347901615
+              },
+              {
+                "id": "ATACAMA-157000-052000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.432331638977825,
+                "longitude": -68.43792329077473,
+                "distance": 0.31044761802244664
+              },
+              {
+                "id": "ATACAMA-073000-037000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.568553012155444,
+                "longitude": -69.26653150759859,
+                "distance": 0.3119800045742653
+              },
+              {
+                "id": "ATACAMA-076000-040000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.541517824703323,
+                "longitude": -69.23686643732924,
+                "distance": 0.3340970044899356
+              },
+              {
+                "id": "ATACAMA-151000-049000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.459621533703825,
+                "longitude": -68.49698185058222,
+                "distance": 0.341783571903307
+              },
+              {
+                "id": "ATACAMA-151000-052000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.43253756068408,
+                "longitude": -68.49708871879584,
+                "distance": 0.3750979488271711
+              },
+              {
+                "id": "ATACAMA-148000-043000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.513883727651706,
+                "longitude": -68.52636941543314,
+                "distance": 0.3751509537667646
+              },
+              {
+                "id": "ATACAMA-145000-043000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.513972538125632,
+                "longitude": -68.55597112025397,
+                "distance": 0.3771535714496406
+              },
+              {
+                "id": "ATACAMA-154000-049000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.459521376616784,
+                "longitude": -68.46739282679367,
+                "distance": 0.37913711449448506
+              }
+            ]
+          },
+          {
+            "support_m": 1000,
+            "ranked": 3693,
+            "top_ten": [
+              {
+                "id": "ATACAMA-157000-052000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.432331638977825,
+                "longitude": -68.43792329077473,
+                "distance": 0.20139508833421013
+              },
+              {
+                "id": "ATACAMA-154000-049000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.459521376616784,
+                "longitude": -68.46739282679367,
+                "distance": 0.2421903325385209
+              },
+              {
+                "id": "ATACAMA-160000-052000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.43222009841964,
+                "longitude": -68.40834065106729,
+                "distance": 0.26078013405036754
+              },
+              {
+                "id": "ATACAMA-154000-052000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.43243745974515,
+                "longitude": -68.46750598090202,
+                "distance": 0.27670693029155763
+              },
+              {
+                "id": "ATACAMA-073000-037000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.568553012155444,
+                "longitude": -69.26653150759859,
+                "distance": 0.3043792639460409
+              },
+              {
+                "id": "ATACAMA-076000-037000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.568601769833595,
+                "longitude": -69.23691695630754,
+                "distance": 0.32365022411846067
+              },
+              {
+                "id": "ATACAMA-076000-040000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.541517824703323,
+                "longitude": -69.23686643732924,
+                "distance": 0.33530561489881305
+              },
+              {
+                "id": "ATACAMA-151000-043000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.513789187648996,
+                "longitude": -68.49676775328774,
+                "distance": 0.33678759740576175
+              },
+              {
+                "id": "ATACAMA-154000-046000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.486605196112073,
+                "longitude": -68.46727954536512,
+                "distance": 0.3480314634768554
+              },
+              {
+                "id": "ATACAMA-157000-049000",
+                "name": "Atacama, Chile study window",
+                "latitude": -24.45941549649313,
+                "longitude": -68.43780385085239,
+                "distance": 0.35547743405061216
+              }
+            ]
+          }
+        ],
+        "top_candidate_changes": true,
+        "top_ten_overlap": 6
+      }
+    ],
+    "interpretation": "Exploratory sensitivity on previously inspected terrain records; existing source eligibility limits remain. Not a new feature-scale triad or independent validation.",
+    "claim": "Rank changes quantify sensitivity to the declared derivative support in this scalar baseline; no geological novelty established"
+  },
+  "figure": "baseline-support-v11.png",
+  "confirmatory_state": "Source qualification incomplete; no new triad or geological discovery",
+  "source_hashes": {
+    "terrain_finder_replay.json": "c601fbeda4d47e055541045ef98aaecd88c7e14797f36c065292d0a687ae955b",
+    "scalar_baseline_transfer.json": "7bf19dec0815a3061156f95b2b12f99e39ac4ae29524a16843d6c4f05308898f"
+  }
+}
