@@ -4,6 +4,33 @@ An Earth, Moon and Mars terrain research workspace with an interactive explorer,
 
 Built by [Arjun Vijay Prakash](https://arjuncodess.is-a.dev/), Grade XI, City Montessori School, Kanpur Road, Lucknow, India.
 
+## The website
+
+### Explore
+
+![Explore: planetary terrain beside ranked Earth study areas](artifacts/presentation/images/explore.png)
+
+### Evidence
+
+![Evidence: nearby Earth windows can overlap despite different rankings](artifacts/presentation/images/evidence.png)
+
+<details>
+<summary>Methods, data and lunar quality checks</summary>
+
+### Methods
+
+![Methods: analysis scale, terrain measurements and evidence requirements](artifacts/presentation/images/methods.png)
+
+### Data
+
+![Data: NASA sources, imagery coverage and downloadable measurements](artifacts/presentation/images/data.png)
+
+### Lunar quality check
+
+![Lunar pit check: source quality stops the comparison before a stronger claim](artifacts/presentation/images/pit-study.png)
+
+</details>
+
 ## Run
 
 Use Python 3.11+ and Node.js 22+.
@@ -62,6 +89,12 @@ OpenStreetMap-derived records credit [OpenStreetMap contributors](https://www.op
 
 The NASA Planetary Pits and Caves Analog Dataset is by Uland Wong, Warren Whittaker, Heather Jones and Red Whittaker, December 2014. Its original clouds and photographs remain excluded: research/academic permission does not authorize public database redistribution or commercial use. Original climate rasters are also excluded where provider terms remain unresolved.
 
-Source Sans 3 by Adobe and Newsreader by Production Type use the SIL Open Font License; their full licenses accompany the bundled fonts. Lucide icons use ISC. Design guidance adapted from [unslop by Damir Sokolovsky](https://github.com/heydamir/unslop) is credited under CC BY 4.0.
+Source Sans 3 by Adobe, Inter Tight by the Inter Project Authors and Newsreader by Production Type use the SIL Open Font License; their full licenses accompany the bundled fonts. Lucide icons use ISC. Design guidance adapted from [unslop by Damir Sokolovsky](https://github.com/heydamir/unslop) is credited under CC BY 4.0.
 
-The software is MIT licensed. Source data retain their own terms. Codex assisted with implementation, analysis and writing; independent geological review and NASA endorsement are not claimed.
+The software is MIT licensed. Source data retain their own terms. Independent geological review and NASA endorsement are not claimed.
+
+## SI tool use
+
+OpenAI Codex assisted with Python and TypeScript code, data-processing scripts, analysis design, debugging, literature review, website layouts, presentation layouts and writing. This includes editing the paper, README, pitch and submission text. Model-assisted visual interpretations are identified in the evidence records and remain provisional.
+
+The original observations come from the cited NASA and partner datasets. SI tools did not generate the source terrain observations or replace missing measurements with invented data. The website screenshots are actual captures supplied by Arjun Vijay Prakash. No SI-generated imagery or audio is included, and no NASA logos or branding were generated or modified.
